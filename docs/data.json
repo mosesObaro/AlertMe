@@ -1,44 +1,730 @@
 {
   "meta": {
     "last_updated": "2026-08-24",
-    "total_items": 1,
-    "high_relevance_count": 1,
-    "papers_count": 1,
+    "total_items": 11,
+    "high_relevance_count": 3,
+    "papers_count": 6,
     "conferences_count": 0,
     "opportunities_count": 0
   },
-  "trends": [],
-  "supervisors": [],
+  "trends": [
+    {
+      "topic": "Edge AI",
+      "direction": "↑↑",
+      "status": "Surging",
+      "recent_count": 8,
+      "historical_count": 0
+    },
+    {
+      "topic": "Federated Learning",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 1,
+      "historical_count": 0
+    },
+    {
+      "topic": "TinyML",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 1,
+      "historical_count": 0
+    },
+    {
+      "topic": "6G + Edge",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Edge Security",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Computation Offloading",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Device-Edge-Cloud",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Edge Inference",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Resource Allocation",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Split Learning",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Edge Caching",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    }
+  ],
+  "supervisors": [
+    {
+      "name": "Prof.Anu Jyothy",
+      "publication_count": 3,
+      "average_relevance": 8.2,
+      "topics": [
+        "Edge AI",
+        "TinyML"
+      ],
+      "recent_papers": [
+        {
+          "title": "Edge AI in Wearable Devices",
+          "url": "https://doi.org/10.26634/javr.4.1.1116",
+          "date": "2028-06-15",
+          "score": 8.2
+        }
+      ],
+      "institution": "Academic Institution"
+    },
+    {
+      "name": "Shiva Shrestha",
+      "publication_count": 3,
+      "average_relevance": 7.8,
+      "topics": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "recent_papers": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "institution": "Academic Institution"
+    },
+    {
+      "name": "Kazi Shaharair Sharif",
+      "publication_count": 3,
+      "average_relevance": 7.8,
+      "topics": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "recent_papers": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "institution": "Academic Institution"
+    },
+    {
+      "name": "Zongxing Xie",
+      "publication_count": 3,
+      "average_relevance": 7.8,
+      "topics": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "recent_papers": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "institution": "Academic Institution"
+    },
+    {
+      "name": "Jiajing Huang",
+      "publication_count": 3,
+      "average_relevance": 7.8,
+      "topics": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "recent_papers": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "institution": "Academic Institution"
+    }
+  ],
   "items": [
     {
-      "title": "Dashboard Test Paper",
-      "url": "https://example.com/paper",
-      "source": "ACM",
+      "title": "Edge AI in Wearable Devices",
+      "url": "https://doi.org/10.26634/javr.4.1.1116",
+      "source": "Crossref",
       "source_tier": "tier1_academic_standards",
       "item_type": "paper",
-      "authors": [],
-      "doi": null,
+      "authors": [
+        "Prof.Anu Jyothy"
+      ],
+      "doi": "10.26634/javr.4.1.1116",
       "arxiv_id": null,
-      "publication_date": "2026-08-24",
+      "publication_date": "2028-06-15",
       "discovery_date": "2026-08-24",
-      "abstract": "",
-      "venue": "",
+      "abstract": "Wearable technologies have progressed from basic fitness trackers and digital watches into smart systems that can check vital signs, alert for anomalies, and transmit personalized health data. Existing cloud-native structures used by wearable technology face drawbacks, including delays in communication, reliance on reliable internet connections, privacy concerns, and toomuchenergyusage.EdgeArtificialIntelligence(EdgeAI),the layer of AI processing where the computational and intelligent capabilities are at the data source itself, offers a compelling alternative. If a sensor provides its data to an Edge AI-enabled wearabledevice,thedevicecanuseitsonboardcomputingtohelp integratethedataandascribemeaningaswellasprovideinsights. Thisuseof processingdatawithinthe wearabledevice,allowsfor actionable insights and decision making with little latency, and relieves the concern of sensitive user information traversing the internet.Recentadvancementsinlow-powerhardwaresuchasmicrocontrollersandAIaccelerators,inconjunctionwithoptimized machinelearningframeworkslikeTensorFlowLiteandTinyML, has opened the door to power highly efficient delivery of AI algorithms onsmaller-wearable devices.This allowsforagreater capabilityinmultipleareas,suchashealthcaremonitoring,fitness tracking, stress detection, and activity recognition. Furthermore, Edge AI enhances battery life, conserves bandwidth, and enables constant productivity even when not connected. The Edge AI movement is at the forefront of the next generation of wearables, allowing for a smooth integration of intelligence, mobility, and human design in response to the growing demands for smarter, moreprivate,andmoreefficienttechnology.",
+      "venue": "i-manager's Journal on Augmented &amp; Virtual Reality",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_63b367fd21f3e86a",
+      "id": "doi_19ffaa8d7ab542d7",
       "score": {
-        "topic_score": 0.0,
-        "credibility_score": 0.0,
-        "recency_score": 0.0,
+        "topic_score": 3.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.2,
+        "matched_topics": [
+          "Edge AI",
+          "TinyML"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Key research area match: TinyML (+0.4)",
+          "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+          "✓ Upcoming date: 2028-06-15 (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Existing cloud-native structures used by wearable technology face drawbacks, including delays in communication, reliance on reliable internet connections, privacy concerns, and toomuchenergyusage.EdgeArtificialIntelligence(EdgeAI),the layer of AI processing where the computational and intelligent capabilities are at the data source itself, offers a compelling alternative",
+        "methodology": "Thisuseof processingdatawithinthe wearabledevice,allowsfor actionable insights and decision making with little latency, and relieves the concern of sensitive user information traversing the internet.Recentadvancementsinlow-powerhardwaresuchasmicrocontrollersandAIaccelerators,inconjunctionwithoptimized machinelearningframeworkslikeTensorFlowLiteandTinyML, has opened the door to power highly efficient delivery of AI algorithms onsmaller-wearable devices.This allowsforagreater capabilityinmultipleareas,suchashealthcaremonitoring,fitness tracking, stress detection, and activity recognition",
+        "key_contribution": "The Edge AI movement is at the forefront of the next generation of wearables, allowing for a smooth integration of intelligence, mobility, and human design in response to the growing demands for smarter, moreprivate,andmoreefficienttechnology.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.2/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {}
+    },
+    {
+      "title": "Future VLSI Architectures for Neuromorphic Computing, Edge AI and Sustainable Systems",
+      "url": "https://doi.org/10.61877/ijmrp.v3i7.293",
+      "source": "Crossref",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "R Bhaskar Nihal Varma"
+      ],
+      "doi": "10.61877/ijmrp.v3i7.293",
+      "arxiv_id": null,
+      "publication_date": "2027-07-25",
+      "discovery_date": "2026-08-24",
+      "abstract": "The future of Very Large Scale Integration (VLSI) architectures is being fundamentally reshaped by the intersecting demands of Neuromorphic computing, edge artificial intelligence (AI), and sustainable electronic systems. As traditional CMOS scaling nears its physical limitations, researchers are exploring bio-inspired Neuromorphic designs that mimic the brain's energy-efficient computing mechanisms using spiking neural networks (SNNs), as demonstrated by platforms like Intel’s Loihi and IBM’s True North (Davies et al., 2018; Merolla et al., 2014). In parallel, edge AI is driving the need for VLSI systems capable of performing high-speed, low-latency inference directly on-device, thus reducing reliance on cloud infrastructure. Hardware accelerators such as Eyeriss and Google’s EdgeTPU offer promising solutions through energy-aware architecture and domain-specific design (Chen et al., 2019; Jouppi et al., 2017). These innovations are increasingly evaluated not just on performance, but also on ecological impact. Emerging sustainable VLSI solutions include non-volatile memory technologies like ReRAM and PCM, in memory computing approaches that reduce data movement, and eco-friendly materials like carbon nanotubes and organic semiconductors (Sebastian et al., 2020; Rajendran et al., 2020). However, despite significant advancements, challenges persist in fabrication scalability, algorithm-hardware co-design, and lifecycle sustainability assessment. This paper explores the synergetic evolution of these domains and highlights the critical need for interdisciplinary collaboration to develop future VLSI architectures that are intelligent, efficient, and environmentally responsible. The convergence of Neuromorphic computing, edge AI, and green hardware marks a paradigm shift, positioning VLSI not only as a medium for computation but as a cornerstone of sustainable technological progress.",
+      "venue": "International Journal for Multidimensional Research Perspectives",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_f2bed25970b1baf8",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "MEC",
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title), MEC (Abstract)",
+          "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+          "✓ Upcoming date: 2027-07-25 (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "As traditional CMOS scaling nears its physical limitations, researchers are exploring bio-inspired Neuromorphic designs that mimic the brain's energy-efficient computing mechanisms using spiking neural networks (SNNs), as demonstrated by platforms like Intel’s Loihi and IBM’s True North (Davies et al., 2018; Merolla et al., 2014)",
+        "methodology": "The future of Very Large Scale Integration (VLSI) architectures is being fundamentally reshaped by the intersecting demands of Neuromorphic computing, edge artificial intelligence (AI), and sustainable electronic systems",
+        "key_contribution": "The convergence of Neuromorphic computing, edge AI, and green hardware marks a paradigm shift, positioning VLSI not only as a medium for computation but as a cornerstone of sustainable technological progress.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {}
+    },
+    {
+      "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+      "url": "http://arxiv.org/abs/2608.21172v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Shiva Shrestha",
+        "Kazi Shaharair Sharif",
+        "Zongxing Xie",
+        "Jiajing Huang",
+        "Anhao Xiang",
+        "Honghui Xu"
+      ],
+      "doi": null,
+      "arxiv_id": "2608.21172v1",
+      "publication_date": "2026-08-21",
+      "discovery_date": "2026-08-24",
+      "abstract": "Federated fine-tuning enables large language models to adapt on edge devices without centralizing private data, but practical deployments must address hardware instability and adversarial update corruption together. Thermally constrained clients may throttle, slow local training, or delay synchronous aggregation, while Byzantine clients and communication-layer adversaries can corrupt the updates used to form the global model. To address these challenges, we present Thermo-FL, a thermal-aware federated LoRA fine-tuning framework that uses device temperature as an active control signal for local adapter training and sparse update transmission. On the client side, Thermo-FL adjusts the active LoRA-layer fraction and transmitted update density as devices heat or cool, reducing workload under thermal stress. On the server side, Thermo-FL introduces TERRA, a robust aggregation pipeline for dynamically sparse LoRA updates that combines norm filtering, mask-aware directional validation, adaptive active-coordinate clipping, and mask-aware aggregation. We evaluate Thermo-FL using both a large-scale emulator and a Jetson-based physical testbed. In the emulator, Thermo-FL improves robustness under adversarial sparse aggregation and achieves the strongest BoolQ accuracy across clean and attack settings while remaining competitive on GSM8K. In the physical prototype, Thermo-FL stabilizes device temperature, reduces compressed upload size through bitmap sparse encoding, and preserves GSM8K utility under sign-flip/scale and MITM perturbations. These results show that secure edge LLM adaptation should jointly consider hardware behavior, workload regulation, sparse communication, and aggregation robustness.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_9561a67df6924e3e",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (3d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates cs.LG and cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "To address these challenges, we present Thermo-FL, a thermal-aware federated LoRA fine-tuning framework that uses device temperature as an active control signal for local adapter training and sparse update transmission",
+        "methodology": "Federated fine-tuning enables large language models to adapt on edge devices without centralizing private data, but practical deployments must address hardware instability and adversarial update corruption together",
+        "key_contribution": "In the emulator, Thermo-FL improves robustness under adversarial sparse aggregation and achieves the strongest BoolQ accuracy across clean and attack settings while remaining competitive on GSM8K",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {}
+    },
+    {
+      "title": "Neuromorphic Computing: Current Progress and the Future of Brain-Inspired Computing",
+      "url": "https://doi.org/10.64823/ijter.2621029",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Jisna C Jeejo",
+        "Habeeba M A"
+      ],
+      "doi": "10.64823/ijter.2621029",
+      "arxiv_id": null,
+      "publication_date": "2026-08-23",
+      "discovery_date": "2026-08-24",
+      "abstract": "Neuromorphic computing borrows its design logic from the nervous system rather than from the von Neumann architecture that has dominated computing for seventy years. Instead of shuttling data back and forth between separate memory and processing units, it favors event-driven communication, computation that happens close to (or inside) memory, and massive parallelism across simple processing elements. This paper takes stock of where the field currently stands: spiking neural networks, digital and analog processors, memristive and other emerging devices, the software ecosystems that support them, and application areas ranging from robotics and edge intelligence to biomedical monitoring and event-based vision. What emerges from the recent literature is a field that has largely moved past small proof-of-concept chips and is now building larger, more programmable platforms with tighter hardware-algorithm integration. Even so, real obstacles remain around training methods, benchmarking practices, programmability, device variability, and fabrication, and it is still unclear how much of the field's energy advantage survives contact with general-purpose workloads. The view taken here is that brain-inspired computing is heading toward a hybrid future: conventional digital processors will keep doing what they do best, while event-driven and in-memory accelerators take over the workloads where they have a genuine edge. Neuromorphic computing is therefore unlikely to displace mainstream AI hardware outright, but it looks well positioned to become a key ingredient in low-power, adaptive, real-time intelligence at the edge. Keywords: edge AI; neuromorphic computing; brain-inspired computing; spiking neural networks; memristors; in-memory computing",
+      "venue": "International Journal of Technology & Emerging Research",
+      "topics": [
+        "Neuromorphic engineering",
+        "Computer science",
+        "Von Neumann architecture",
+        "Computer architecture",
+        "Unconventional computing",
+        "Artificial intelligence",
+        "Field (mathematics)",
+        "Artificial neural network",
+        "Robotics",
+        "Computation",
+        "Reservoir computing",
+        "Edge computing",
+        "Applications of artificial intelligence",
+        "Key (lock)",
+        "Software",
+        "Edge device",
+        "Memristor",
+        "Computer engineering",
+        "Adaptability",
+        "Embedded system",
+        "Efficient energy use",
+        "Spiking neural network",
+        "Benchmarking",
+        "Massively parallel",
+        "Architecture",
+        "Enhanced Data Rates for GSM Evolution",
+        "Robot",
+        "Analog computer",
+        "Image processing",
+        "Information processing"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_03f6f32d1d705640",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "Edge AI",
+          "Edge Intelligence"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Intelligence (Abstract), Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
+    },
+    {
+      "title": "Enhancing Real Time Decision Intelligence through Federated Learning Integration in Edge Computing Networks",
+      "url": "https://doi.org/10.1504/ijcis.2028.10073919",
+      "source": "Crossref",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "M.S. Bennet Praba",
+        "M.Vinay Kumar",
+        "K.B. Anusha",
+        "Nitin Tiwari",
+        "Nidal Al Said",
+        "K. Kandan"
+      ],
+      "doi": "10.1504/ijcis.2028.10073919",
+      "arxiv_id": null,
+      "publication_date": "2028",
+      "discovery_date": "2026-08-24",
+      "abstract": "",
+      "venue": "International Journal of Critical Infrastructures",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_0110be4434aab043",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
         "stage_boost": 0.0,
         "phd_boost": 0.0,
         "negative_penalty": 0.0,
-        "final_score": 9.0,
-        "matched_topics": [],
-        "reasons": []
+        "final_score": 6.8,
+        "matched_topics": [
+          "Edge Computing",
+          "Federated Learning"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+          "✓ Upcoming date: 2028 (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "[Code/Benchmark] ability-spec/central-asian-voice-benchmark (★ 0)",
+      "url": "https://github.com/ability-spec/central-asian-voice-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "ability-spec"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-24",
+      "discovery_date": "2026-08-24",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_7a0ff13fb952f014",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] stellar-experimental/stellar-rpc-benchmarks (★ 0)",
+      "url": "https://github.com/stellar-experimental/stellar-rpc-benchmarks",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "stellar-experimental"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-24",
+      "discovery_date": "2026-08-24",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_8fa905fa590c2f8f",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
+      "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-06-17",
+      "discovery_date": "2026-08-24",
+      "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_e5fb999eaf167239",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "• Published >30d ago (68d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "The Energy Blind Spot: NVIDIA's Flagship Edge AI Hardware Cannot Support Process-Level Energy Attribution",
+      "url": "http://arxiv.org/abs/2605.27599v3",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Deepak Panigrahy",
+        "Aakash Tyagi"
+      ],
+      "doi": null,
+      "arxiv_id": "2605.27599v3",
+      "publication_date": "2026-05-26",
+      "discovery_date": "2026-08-24",
+      "abstract": "Agentic AI workloads - where a single user goal triggers multi-step orchestration, tool calls, retries, and failure recovery - are being targeted for edge deployment, with NVIDIA, Dell, HP, ASUS, MSI, Acer, and Gigabyte all shipping GB10-based desktop AI systems in 2026. Prior work shows orchestration structure dominates agentic energy cost and CPU-side processing accounts for up to 44% of total dynamic energy. We report a systematic energy-observability audit of the ASUS Ascent GX10 (GB10 SoC) and find that the platform exposes no CPU energy counter, no INA power-rail monitor, no IPMI/BMC, and no SCMI powercap protocol through any supported software interface. The only on-device energy telemetry is instantaneous GPU power via NVML. We further discover that the MediaTek firmware already computes per-rail energy internally via an undocumented ACPI interface (SPBM), but NVIDIA states there are \"no plans to expose CPU rail information.\" On-device per-process energy attribution - as performed on x86 via RAPL - is therefore not reproducible on this platform through supported interfaces. We formalize a hardware requirements specification for energy-attributed AI, propose an interim calibration bridge for per-domain energy decomposition - confirmed on the Acer Veriton GN100 where CPU energy accumulators are live - and identify a standards-track path via SCMI powercap. Our findings motivate the low-carbon computing community to demand energy observability as a first-class hardware requirement.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.LG",
+        "cs.AI",
+        "cs.AR",
+        "cs.DC",
+        "cs.PF"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_f5051238752cdadc",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "• Published >30d ago (90d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "InfiniEdge AI and the Orchestra of Orchestrators: Bringing AI to the Edge, Responsibly",
+      "url": "https://lfedge.org/infiniedge-ai-and-the-orchestra-of-orchestrators-bringing-ai-to-the-edge-responsibly/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-03-19",
+      "discovery_date": "2026-08-24",
+      "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_bbcc09dac6d60110",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "• Published >30d ago (158d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "InfiniEdge AI and AIOps: Establishing a Foundation for Intelligent Edge Operations",
+      "url": "https://lfedge.org/infiniedge-ai-and-aiops-establishing-a-foundation-for-intelligent-edge-operations/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2025-11-19",
+      "discovery_date": "2026-08-24",
+      "abstract": "Authors: Andreas Spanner Contributor: Ivan Necas The mission of InfiniEdge AI is to bring advanced AI capabilities to the edge and distributed environments. The AIOps initiative focuses on the application...",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_8eeaa41959e6a157",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "• Published >30d ago (278d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
       },
       "intelligence": null,
       "raw_metadata": {}

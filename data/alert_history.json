@@ -1,1 +1,166 @@
-[]
+[
+  {
+    "title": "Edge AI in Wearable Devices",
+    "url": "https://doi.org/10.26634/javr.4.1.1116",
+    "source": "Crossref",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Prof.Anu Jyothy"
+    ],
+    "doi": "10.26634/javr.4.1.1116",
+    "arxiv_id": null,
+    "publication_date": "2028-06-15",
+    "discovery_date": "2026-08-24",
+    "abstract": "Wearable technologies have progressed from basic fitness trackers and digital watches into smart systems that can check vital signs, alert for anomalies, and transmit personalized health data. Existing cloud-native structures used by wearable technology face drawbacks, including delays in communication, reliance on reliable internet connections, privacy concerns, and toomuchenergyusage.EdgeArtificialIntelligence(EdgeAI),the layer of AI processing where the computational and intelligent capabilities are at the data source itself, offers a compelling alternative. If a sensor provides its data to an Edge AI-enabled wearabledevice,thedevicecanuseitsonboardcomputingtohelp integratethedataandascribemeaningaswellasprovideinsights. Thisuseof processingdatawithinthe wearabledevice,allowsfor actionable insights and decision making with little latency, and relieves the concern of sensitive user information traversing the internet.Recentadvancementsinlow-powerhardwaresuchasmicrocontrollersandAIaccelerators,inconjunctionwithoptimized machinelearningframeworkslikeTensorFlowLiteandTinyML, has opened the door to power highly efficient delivery of AI algorithms onsmaller-wearable devices.This allowsforagreater capabilityinmultipleareas,suchashealthcaremonitoring,fitness tracking, stress detection, and activity recognition. Furthermore, Edge AI enhances battery life, conserves bandwidth, and enables constant productivity even when not connected. The Edge AI movement is at the forefront of the next generation of wearables, allowing for a smooth integration of intelligence, mobility, and human design in response to the growing demands for smarter, moreprivate,andmoreefficienttechnology.",
+    "venue": "i-manager's Journal on Augmented &amp; Virtual Reality",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_19ffaa8d7ab542d7",
+    "score": {
+      "topic_score": 3.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 8.2,
+      "matched_topics": [
+        "Edge AI",
+        "TinyML"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title)",
+        "✓ Key research area match: TinyML (+0.4)",
+        "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+        "✓ Upcoming date: 2028-06-15 (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Existing cloud-native structures used by wearable technology face drawbacks, including delays in communication, reliance on reliable internet connections, privacy concerns, and toomuchenergyusage.EdgeArtificialIntelligence(EdgeAI),the layer of AI processing where the computational and intelligent capabilities are at the data source itself, offers a compelling alternative",
+      "methodology": "Thisuseof processingdatawithinthe wearabledevice,allowsfor actionable insights and decision making with little latency, and relieves the concern of sensitive user information traversing the internet.Recentadvancementsinlow-powerhardwaresuchasmicrocontrollersandAIaccelerators,inconjunctionwithoptimized machinelearningframeworkslikeTensorFlowLiteandTinyML, has opened the door to power highly efficient delivery of AI algorithms onsmaller-wearable devices.This allowsforagreater capabilityinmultipleareas,suchashealthcaremonitoring,fitness tracking, stress detection, and activity recognition",
+      "key_contribution": "The Edge AI movement is at the forefront of the next generation of wearables, allowing for a smooth integration of intelligence, mobility, and human design in response to the growing demands for smarter, moreprivate,andmoreefficienttechnology.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "8.2/10",
+      "is_ai_generated": false
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+    "url": "http://arxiv.org/abs/2608.21172v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Shiva Shrestha",
+      "Kazi Shaharair Sharif",
+      "Zongxing Xie",
+      "Jiajing Huang",
+      "Anhao Xiang",
+      "Honghui Xu"
+    ],
+    "doi": null,
+    "arxiv_id": "2608.21172v1",
+    "publication_date": "2026-08-21",
+    "discovery_date": "2026-08-24",
+    "abstract": "Federated fine-tuning enables large language models to adapt on edge devices without centralizing private data, but practical deployments must address hardware instability and adversarial update corruption together. Thermally constrained clients may throttle, slow local training, or delay synchronous aggregation, while Byzantine clients and communication-layer adversaries can corrupt the updates used to form the global model. To address these challenges, we present Thermo-FL, a thermal-aware federated LoRA fine-tuning framework that uses device temperature as an active control signal for local adapter training and sparse update transmission. On the client side, Thermo-FL adjusts the active LoRA-layer fraction and transmitted update density as devices heat or cool, reducing workload under thermal stress. On the server side, Thermo-FL introduces TERRA, a robust aggregation pipeline for dynamically sparse LoRA updates that combines norm filtering, mask-aware directional validation, adaptive active-coordinate clipping, and mask-aware aggregation. We evaluate Thermo-FL using both a large-scale emulator and a Jetson-based physical testbed. In the emulator, Thermo-FL improves robustness under adversarial sparse aggregation and achieves the strongest BoolQ accuracy across clean and attack settings while remaining competitive on GSM8K. In the physical prototype, Thermo-FL stabilizes device temperature, reduces compressed upload size through bitmap sparse encoding, and preserves GSM8K utility under sign-flip/scale and MITM perturbations. These results show that secure edge LLM adaptation should jointly consider hardware behavior, workload regulation, sparse communication, and aggregation robustness.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_9561a67df6924e3e",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.8,
+      "matched_topics": [
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (3d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates cs.LG and cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "To address these challenges, we present Thermo-FL, a thermal-aware federated LoRA fine-tuning framework that uses device temperature as an active control signal for local adapter training and sparse update transmission",
+      "methodology": "Federated fine-tuning enables large language models to adapt on edge devices without centralizing private data, but practical deployments must address hardware instability and adversarial update corruption together",
+      "key_contribution": "In the emulator, Thermo-FL improves robustness under adversarial sparse aggregation and achieves the strongest BoolQ accuracy across clean and attack settings while remaining competitive on GSM8K",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.8/10",
+      "is_ai_generated": false
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Future VLSI Architectures for Neuromorphic Computing, Edge AI and Sustainable Systems",
+    "url": "https://doi.org/10.61877/ijmrp.v3i7.293",
+    "source": "Crossref",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "R Bhaskar Nihal Varma"
+    ],
+    "doi": "10.61877/ijmrp.v3i7.293",
+    "arxiv_id": null,
+    "publication_date": "2027-07-25",
+    "discovery_date": "2026-08-24",
+    "abstract": "The future of Very Large Scale Integration (VLSI) architectures is being fundamentally reshaped by the intersecting demands of Neuromorphic computing, edge artificial intelligence (AI), and sustainable electronic systems. As traditional CMOS scaling nears its physical limitations, researchers are exploring bio-inspired Neuromorphic designs that mimic the brain's energy-efficient computing mechanisms using spiking neural networks (SNNs), as demonstrated by platforms like Intel’s Loihi and IBM’s True North (Davies et al., 2018; Merolla et al., 2014). In parallel, edge AI is driving the need for VLSI systems capable of performing high-speed, low-latency inference directly on-device, thus reducing reliance on cloud infrastructure. Hardware accelerators such as Eyeriss and Google’s EdgeTPU offer promising solutions through energy-aware architecture and domain-specific design (Chen et al., 2019; Jouppi et al., 2017). These innovations are increasingly evaluated not just on performance, but also on ecological impact. Emerging sustainable VLSI solutions include non-volatile memory technologies like ReRAM and PCM, in memory computing approaches that reduce data movement, and eco-friendly materials like carbon nanotubes and organic semiconductors (Sebastian et al., 2020; Rajendran et al., 2020). However, despite significant advancements, challenges persist in fabrication scalability, algorithm-hardware co-design, and lifecycle sustainability assessment. This paper explores the synergetic evolution of these domains and highlights the critical need for interdisciplinary collaboration to develop future VLSI architectures that are intelligent, efficient, and environmentally responsible. The convergence of Neuromorphic computing, edge AI, and green hardware marks a paradigm shift, positioning VLSI not only as a medium for computation but as a cornerstone of sustainable technological progress.",
+    "venue": "International Journal for Multidimensional Research Perspectives",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_f2bed25970b1baf8",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.8,
+      "matched_topics": [
+        "MEC",
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title), MEC (Abstract)",
+        "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+        "✓ Upcoming date: 2027-07-25 (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "As traditional CMOS scaling nears its physical limitations, researchers are exploring bio-inspired Neuromorphic designs that mimic the brain's energy-efficient computing mechanisms using spiking neural networks (SNNs), as demonstrated by platforms like Intel’s Loihi and IBM’s True North (Davies et al., 2018; Merolla et al., 2014)",
+      "methodology": "The future of Very Large Scale Integration (VLSI) architectures is being fundamentally reshaped by the intersecting demands of Neuromorphic computing, edge artificial intelligence (AI), and sustainable electronic systems",
+      "key_contribution": "The convergence of Neuromorphic computing, edge AI, and green hardware marks a paradigm shift, positioning VLSI not only as a medium for computation but as a cornerstone of sustainable technological progress.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.8/10",
+      "is_ai_generated": false
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  }
+]
