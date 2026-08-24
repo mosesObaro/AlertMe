@@ -1,0 +1,59 @@
+# User Profile & Alert System Preferences
+
+phd_target:
+  field: "Edge Computing"
+  related_fields:
+    - "Edge Intelligence"
+    - "Edge AI"
+    - "Distributed Systems"
+    - "IoT"
+    - "Cloud Computing"
+    - "5G"
+    - "6G"
+  target_application_period: "2027-01-01" # Target PhD application deadline (YYYY-MM-DD)
+
+learning_stage:
+  # Current stage: 1=Foundational, 2=Distributed Systems, 3=Cloud/Edge Basics, 4=Edge AI/Advanced
+  current_level: 3
+  current_topics:
+    - "Edge AI"
+    - "Computation Offloading"
+    - "Distributed Inference"
+  stage_boost_multiplier: 1.25 # Multiplier applied to items matching current_topics
+
+research_interests:
+  - "Edge Intelligence"
+  - "Device-Edge-Cloud Orchestration"
+  - "Resource Allocation and Scheduling"
+  - "Energy-Efficient Edge Inference"
+  - "Federated Learning at Network Edge"
+
+location:
+  country: "Nigeria"
+  preferred_study_regions:
+    - "Global"
+    - "Europe"
+    - "North America"
+    - "Asia"
+
+email_preferences:
+  provider: "resend" # Options: resend, brevo, smtp, sendgrid, console
+  sender_email: "research-alert@resend.dev" # Or verified domain / smtp user
+  recipient_email: "${EMAIL_RECIPIENT}" # Injected from environment / GitHub secret
+  daily_digest: true
+  weekly_digest: true
+  urgent_alerts: true
+
+alert_thresholds:
+  minimum_score: 6.5 # Minimum score to store/consider
+  daily_digest_min_score: 7.5 # Score threshold for daily email
+  weekly_digest_min_score: 6.8 # Score threshold for weekly digest
+  urgent_alert_min_score: 9.0 # Immediate alert threshold
+  daily_limit: 10 # Max items in daily email
+  weekly_limit: 20 # Max items in weekly digest
+
+ai_summarization:
+  enabled: false # Set true to enable optional LLM-powered deep analysis
+  provider: "gemini" # Options: gemini, groq, openai, ollama
+  api_key_env: "LLM_API_KEY" # Env var name containing API key
+  model: "gemini-1.5-flash"

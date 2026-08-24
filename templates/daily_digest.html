@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ subject }}</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #1a202c;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 28px 24px;
+      text-align: left;
+      border-bottom: 3px solid #3b82f6;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .header .subtitle {
+      margin-top: 6px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .content {
+      padding: 24px;
+    }
+    .section-title {
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #475569;
+      margin-top: 24px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 16px;
+      transition: all 0.2s ease;
+    }
+    .card-top {
+      border-left: 4px solid #ef4444;
+    }
+    .card-paper {
+      border-left: 4px solid #3b82f6;
+    }
+    .card-opp {
+      border-left: 4px solid #10b981;
+    }
+    .card-conf {
+      border-left: 4px solid #f59e0b;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+    .item-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f172a;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .item-title:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .score-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 12px;
+      color: #ffffff;
+      white-space: nowrap;
+      margin-left: 8px;
+    }
+    .score-critical { background: #dc2626; }
+    .score-high { background: #ea580c; }
+    .score-good { background: #2563eb; }
+    .item-meta {
+      font-size: 12px;
+      color: #64748b;
+      margin-bottom: 10px;
+    }
+    .intel-box {
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 13px;
+      margin-top: 10px;
+      border: 1px solid #edf2f7;
+    }
+    .intel-row {
+      margin-bottom: 6px;
+    }
+    .intel-label {
+      font-weight: 700;
+      color: #334155;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .reasons-box {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #475569;
+      background: #f1f5f9;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
+    .footer {
+      background: #f8fafc;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+    }
+    .footer a {
+      color: #3b82f6;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>EDGE COMPUTING PhD RESEARCH INTELLIGENCE</h1>
+      <div class="subtitle">Daily Academic Intelligence &bull; {{ date_str }} &bull; {{ total_items }} High-Priority Discoveries</div>
+    </div>
+
+    <div class="content">
+      {% if top_developments %}
+      <div class="section-title">🔥 Top Developments</div>
+      {% for item in top_developments %}
+      <div class="card card-top">
+        <div class="card-header">
+          <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+          <span class="score-badge {% if item.score.final_score >= 9.0 %}score-critical{% elif item.score.final_score >= 8.0 %}score-high{% else %}score-good{% endif %}">
+            {{ item.score.final_score }}/10
+          </span>
+        </div>
+        <div class="item-meta">
+          <strong>Source:</strong> {{ item.source }} &bull; <strong>Date:</strong> {{ item.publication_date }}
+          {% if item.authors %}&bull; <strong>Authors:</strong> {{ item.authors[:3]|join(', ') }}{% endif %}
+        </div>
+        {% if item.intelligence %}
+        <div class="intel-box">
+          <div class="intel-row"><span class="intel-label">Why it matters:</span> {{ item.intelligence.why_it_matters }}</div>
+          {% if item.intelligence.research_problem != "Not determinable from available metadata." %}
+          <div class="intel-row"><span class="intel-label">Research Problem:</span> {{ item.intelligence.research_problem }}</div>
+          {% endif %}
+          {% if item.intelligence.methodology != "Not determinable from available metadata." %}
+          <div class="intel-row"><span class="intel-label">Method:</span> {{ item.intelligence.methodology }}</div>
+          {% endif %}
+          {% if item.intelligence.key_contribution != "Not determinable from available metadata." %}
+          <div class="intel-row"><span class="intel-label">Key Finding:</span> {{ item.intelligence.key_contribution }}</div>
+          {% endif %}
+          <div class="intel-row"><span class="intel-label">Potential Gap:</span> <em>{{ item.intelligence.potential_gap }}</em></div>
+        </div>
+        {% endif %}
+        {% if item.score.reasons %}
+        <div class="reasons-box">
+          <strong>Why you received this:</strong> {{ item.score.reasons[:3]|join(' &bull; ') }}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% if papers %}
+      <div class="section-title">📚 Newly Published Research Papers</div>
+      {% for item in papers %}
+      <div class="card card-paper">
+        <div class="card-header">
+          <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+          <span class="score-badge {% if item.score.final_score >= 9.0 %}score-critical{% elif item.score.final_score >= 8.0 %}score-high{% else %}score-good{% endif %}">
+            {{ item.score.final_score }}/10
+          </span>
+        </div>
+        <div class="item-meta">
+          <strong>Venue:</strong> {{ item.venue or item.source }} &bull; <strong>Date:</strong> {{ item.publication_date }}
+          {% if item.authors %}&bull; <strong>Authors:</strong> {{ item.authors[:2]|join(', ') }}{% endif %}
+        </div>
+        <div style="font-size: 13px; color: #334155; margin-bottom: 8px;">
+          {{ item.abstract[:280] }}{% if item.abstract|length > 280 %}...{% endif %}
+        </div>
+        {% if item.score.reasons %}
+        <div class="reasons-box">
+          <strong>Why you received this:</strong> {{ item.score.reasons[:2]|join(' &bull; ') }}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% if opportunities %}
+      <div class="section-title">🎓 PhD & Research Opportunities</div>
+      {% for item in opportunities %}
+      <div class="card card-opp">
+        <div class="card-header">
+          <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+          <span class="score-badge score-good">{{ item.score.final_score }}/10</span>
+        </div>
+        <div class="item-meta">
+          <strong>Institution:</strong> {{ item.institution or item.source }}
+        </div>
+        <div style="font-size: 13px; color: #334155;">{{ item.abstract[:250] }}</div>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% if conferences %}
+      <div class="section-title">📅 Conferences & Upcoming CFPs</div>
+      {% for item in conferences %}
+      <div class="card card-conf">
+        <div class="card-header">
+          <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+          <span class="score-badge score-high">{{ item.score.final_score }}/10</span>
+        </div>
+        <div class="item-meta">
+          {% if item.deadline %}<strong>Deadline:</strong> {{ item.deadline }} &bull; {% endif %}
+          <strong>Venue:</strong> {{ item.venue }}
+        </div>
+        <div style="font-size: 13px; color: #334155;">{{ item.abstract }}</div>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      {% if total_items == 0 %}
+      <div style="text-align: center; padding: 40px 20px; color: #64748b;">
+        <p style="font-size: 16px; margin-bottom: 8px;">No high-priority Edge Computing developments were detected today.</p>
+        <p style="font-size: 13px;">The system only delivers items meeting strict quality and PhD relevance thresholds.</p>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="footer">
+      Automated PhD Intelligence System &bull; <a href="{{ dashboard_url }}">View Research Dashboard</a><br>
+      Optimized for signal over volume. To adjust learning topics, update <code>config/profile.yaml</code>.
+    </div>
+  </div>
+</body>
+</html>

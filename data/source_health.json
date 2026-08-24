@@ -1,0 +1,222 @@
+[
+  {
+    "name": "arXiv Edge Computing",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:05.441194+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 30
+  },
+  {
+    "name": "OpenAlex Works",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:07.026035+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 30
+  },
+  {
+    "name": "Crossref Works",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:08.734566+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 25
+  },
+  {
+    "name": "Semantic Scholar",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:10.096827+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "ETSI Standards RSS",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:25.851936+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "NIST Computer Security / IoT RSS",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:29.797545+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 40
+  },
+  {
+    "name": "Linux Foundation / LF Edge Blog",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:30.748571+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 10
+  },
+  {
+    "name": "CNCF (Cloud Native Computing Foundation) Blog",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:18:33.055481+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "CMU Living Edge Lab News",
+    "tier": "tier2_university_lab",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:19:24.103474+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "Princeton EDGE Lab Updates",
+    "tier": "tier2_university_lab",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:19:32.110618+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "MIT CSAIL News",
+    "tier": "tier2_university_lab",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:19:38.142934+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "Berkeley RISELab / SkyLab Blog",
+    "tier": "tier2_university_lab",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:29.851431+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 3
+  },
+  {
+    "name": "Conferences & CFPs",
+    "tier": "tier3_conference",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:31.058396+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 21
+  },
+  {
+    "name": "Google Research Blog",
+    "tier": "tier4_industry",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:32.997592+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 25
+  },
+  {
+    "name": "Microsoft Research Blog",
+    "tier": "tier4_industry",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:35.009755+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 10
+  },
+  {
+    "name": "AWS Architecture & HPC Blog",
+    "tier": "tier4_industry",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:36.263639+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 20
+  },
+  {
+    "name": "Qualcomm Research Blog",
+    "tier": "tier4_industry",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:37.231013+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "Ericsson Research Blog",
+    "tier": "tier4_industry",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:45.793879+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "PhD & Fellowship Opportunities",
+    "tier": "tier2_university_lab",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:20:53.790745+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 0
+  },
+  {
+    "name": "GitHub Benchmarks",
+    "tier": "tier1_academic_standards",
+    "enabled": true,
+    "status": "Healthy",
+    "last_run": "2026-08-24T20:21:02.432106+00:00",
+    "success_count": 1,
+    "failure_count": 0,
+    "last_error": null,
+    "total_items_discovered": 15
+  }
+]

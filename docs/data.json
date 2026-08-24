@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "last_updated": "2026-08-24",
+    "total_items": 1,
+    "high_relevance_count": 1,
+    "papers_count": 1,
+    "conferences_count": 0,
+    "opportunities_count": 0
+  },
+  "trends": [],
+  "supervisors": [],
+  "items": [
+    {
+      "title": "Dashboard Test Paper",
+      "url": "https://example.com/paper",
+      "source": "ACM",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-24",
+      "discovery_date": "2026-08-24",
+      "abstract": "",
+      "venue": "",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_63b367fd21f3e86a",
+      "score": {
+        "topic_score": 0.0,
+        "credibility_score": 0.0,
+        "recency_score": 0.0,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 9.0,
+        "matched_topics": [],
+        "reasons": []
+      },
+      "intelligence": null,
+      "raw_metadata": {}
+    }
+  ]
+}

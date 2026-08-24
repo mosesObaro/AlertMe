@@ -1,0 +1,156 @@
+# Discovery Sources Configuration by Credibility Tier
+
+tier1_academic_and_standards:
+  # Academic APIs
+  - name: "arXiv CS.DC / CS.AI / CS.NI"
+    type: "arxiv_api"
+    enabled: true
+    categories: ["cs.DC", "cs.NI", "cs.AI", "cs.SY"]
+    query: 'all:"edge computing" OR all:"edge intelligence" OR all:"edge AI" OR all:"mobile edge computing"'
+    max_results: 30
+    credibility_weight: 1.0
+
+  - name: "OpenAlex Works API"
+    type: "openalex_api"
+    enabled: true
+    search_query: "edge computing OR edge intelligence OR mobile edge computing"
+    max_results: 30
+    credibility_weight: 1.0
+
+  - name: "Crossref API (IEEE / ACM / Springer)"
+    type: "crossref_api"
+    enabled: true
+    query: "edge computing edge intelligence"
+    rows: 25
+    credibility_weight: 1.0
+
+  - name: "Semantic Scholar Graph API"
+    type: "semantic_scholar_api"
+    enabled: true
+    query: "edge computing resource allocation offloading"
+    limit: 25
+    credibility_weight: 1.0
+
+  # Standards RSS Feeds
+  - name: "ETSI Standards RSS"
+    type: "rss"
+    enabled: true
+    url: "https://www.etsi.org/newsroom/news?format=feed&type=rss"
+    credibility_weight: 1.0
+    category: "standards"
+
+  - name: "NIST Computer Security / IoT RSS"
+    type: "rss"
+    enabled: true
+    url: "https://www.nist.gov/news-events/news/rss.xml"
+    credibility_weight: 1.0
+    category: "standards"
+
+  - name: "Linux Foundation / LF Edge Blog"
+    type: "rss"
+    enabled: true
+    url: "https://www.lfedge.org/feed/"
+    credibility_weight: 0.9
+    category: "open_source_standards"
+
+  - name: "CNCF (Cloud Native Computing Foundation) Blog"
+    type: "rss"
+    enabled: true
+    url: "https://www.cncf.io/feed/"
+    credibility_weight: 0.9
+    category: "cloud_native"
+
+tier2_universities_and_labs:
+  - name: "CMU Living Edge Lab News"
+    type: "rss"
+    enabled: true
+    url: "https://www.cmu.edu/news/stories/rss.xml"
+    institution: "Carnegie Mellon University"
+    credibility_weight: 0.95
+
+  - name: "Princeton EDGE Lab Updates"
+    type: "rss"
+    enabled: true
+    url: "https://edge.princeton.edu/feed/"
+    institution: "Princeton University"
+    credibility_weight: 0.95
+
+  - name: "MIT CSAIL & AI Research"
+    type: "rss"
+    enabled: true
+    url: "https://news.mit.edu/rss/topic/artificial-intelligence2"
+    institution: "MIT"
+    credibility_weight: 0.95
+
+  - name: "Berkeley RISELab / SkyLab Blog"
+    type: "rss"
+    enabled: true
+    url: "https://sky.cs.berkeley.edu/feed/"
+    institution: "UC Berkeley"
+    credibility_weight: 0.95
+
+tier3_conferences:
+  - name: "WikiCFP Edge Computing Feeds"
+    type: "rss"
+    enabled: true
+    url: "http://www.wikicfp.com/cfp/rss?cat=edge%20computing"
+    credibility_weight: 0.85
+    category: "cfp"
+
+  - name: "USENIX Upcoming Events & Deadlines"
+    type: "rss"
+    enabled: true
+    url: "https://www.usenix.org/conferences/upcoming/feed"
+    credibility_weight: 0.9
+    category: "cfp"
+
+  - name: "IEEE Communications Society Conferences"
+    type: "rss"
+    enabled: true
+    url: "https://www.comsoc.org/conferences-events/rss.xml"
+    credibility_weight: 0.9
+    category: "cfp"
+
+tier4_industry_research:
+  - name: "Google Research Blog"
+    type: "rss"
+    enabled: true
+    url: "https://blog.research.google/atom.xml"
+    organization: "Google Research"
+    credibility_weight: 0.8
+
+  - name: "Microsoft Research Blog"
+    type: "rss"
+    enabled: true
+    url: "https://www.microsoft.com/en-us/research/feed/"
+    organization: "Microsoft Research"
+    credibility_weight: 0.8
+
+  - name: "AWS Architecture & HPC Blog"
+    type: "rss"
+    enabled: true
+    url: "https://aws.amazon.com/blogs/architecture/feed/"
+    organization: "Amazon Web Services"
+    credibility_weight: 0.75
+
+  - name: "Meta AI / FAIR Blog"
+    type: "rss"
+    enabled: true
+    url: "https://ai.meta.com/blog/rss/"
+    organization: "Meta FAIR"
+    credibility_weight: 0.8
+
+opportunities_and_fellowships:
+  - name: "Jobs.ac.uk Computer Science PhDs"
+    type: "rss"
+    enabled: true
+    url: "https://www.jobs.ac.uk/jobs/computer-science-phds.rss"
+    category: "phd_openings"
+    credibility_weight: 0.9
+
+  - name: "FindAPhD Computer Science"
+    type: "rss"
+    enabled: true
+    url: "https://www.findaphd.com/phds/computer-science/?01M0"
+    category: "phd_openings"
+    credibility_weight: 0.85

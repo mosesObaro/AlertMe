@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ subject }}</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f1f5f9;
+      color: #0f172a;
+      margin: 0;
+      padding: 24px 12px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+    .header {
+      background: linear-gradient(135deg, #090d16 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 32px 28px;
+      border-bottom: 4px solid #3b82f6;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .header .subtitle {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+    .content {
+      padding: 28px;
+    }
+    .section-title {
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #1e293b;
+      margin-top: 32px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+    }
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    .card-top { border-left: 4px solid #ef4444; }
+    .card-paper { border-left: 4px solid #3b82f6; }
+    .card-opp { border-left: 4px solid #10b981; }
+    .card-conf { border-left: 4px solid #f59e0b; }
+    .card-study { border-left: 4px solid #8b5cf6; background: #fdf4ff; border-color: #f0abfc; }
+    .item-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f172a;
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .item-title:hover {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+    .score-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 12px;
+      color: #ffffff;
+      margin-left: 8px;
+    }
+    .score-critical { background: #dc2626; }
+    .score-high { background: #ea580c; }
+    .score-good { background: #2563eb; }
+    .item-meta {
+      font-size: 12px;
+      color: #64748b;
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+    .intel-box {
+      background: #f8fafc;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 13px;
+      margin-top: 10px;
+      border: 1px solid #e2e8f0;
+    }
+    .intel-label {
+      font-weight: 700;
+      color: #334155;
+      font-size: 11px;
+      text-transform: uppercase;
+    }
+    .trend-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    .trend-table th, .trend-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .trend-table th {
+      background: #f8fafc;
+      font-weight: 600;
+      color: #475569;
+    }
+    .trend-up { color: #dc2626; font-weight: bold; }
+    .trend-rising { color: #ea580c; font-weight: bold; }
+    .trend-steady { color: #64748b; }
+    .trend-down { color: #94a3b8; }
+    .study-box {
+      background: #fbfbfe;
+      border: 1px solid #e0e7ff;
+      border-radius: 8px;
+      padding: 18px;
+      margin-top: 12px;
+    }
+    .study-row {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .study-tag {
+      font-weight: 700;
+      color: #4338ca;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .footer {
+      background: #f8fafc;
+      padding: 24px;
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+    }
+    .footer a { color: #3b82f6; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>EDGE COMPUTING PhD INTELLIGENCE &bull; WEEKLY DIGEST</h1>
+      <div class="subtitle">Weekly Research Briefing &bull; {{ date_str }} &bull; {{ total_items }} Key Discoveries</div>
+    </div>
+
+    <div class="content">
+      <!-- 1. STUDY FOCUS FOR NEXT WEEK -->
+      {% if study_guide %}
+      <div class="section-title">🎯 Recommended Focus for Next Week</div>
+      <div class="study-box">
+        <h3 style="margin-top: 0; color: #1e1b4b; font-size: 16px;">Target Topic: {{ study_guide.focus_topic }}</h3>
+        
+        <div class="study-row">
+          <span class="study-tag">1. Core Concept to Master</span>
+          {{ study_guide.concept }}
+        </div>
+
+        <div class="study-row">
+          <span class="study-tag">2. Primary Paper to Read</span>
+          <a href="{{ study_guide.paper_url }}" target="_blank" style="color: #2563eb; font-weight: 600;">{{ study_guide.paper_title }}</a>
+        </div>
+
+        <div class="study-row">
+          <span class="study-tag">3. Practical Exercise / Simulation</span>
+          {{ study_guide.practical_exercise }}
+        </div>
+
+        <div class="study-row">
+          <span class="study-tag">4. Research Question to Investigate</span>
+          <em>"{{ study_guide.research_question }}"</em>
+        </div>
+
+        {% if study_guide.event_opportunity %}
+        <div class="study-row" style="margin-bottom: 0;">
+          <span class="study-tag">5. Key Event / Opportunity</span>
+          <a href="{{ study_guide.event_opportunity.url }}" target="_blank" style="color: #059669; font-weight: 600;">{{ study_guide.event_opportunity.title }}</a> ({{ study_guide.event_opportunity.type }})
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+
+      <!-- 2. TOP DEVELOPMENTS -->
+      {% if top_developments %}
+      <div class="section-title">🔥 Most Important Developments This Week</div>
+      {% for item in top_developments %}
+      <div class="card card-top">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+          <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+          <span class="score-badge {% if item.score.final_score >= 9.0 %}score-critical{% elif item.score.final_score >= 8.0 %}score-high{% else %}score-good{% endif %}">
+            {{ item.score.final_score }}/10
+          </span>
+        </div>
+        <div class="item-meta">
+          <strong>Venue:</strong> {{ item.venue or item.source }} &bull; <strong>Date:</strong> {{ item.publication_date }}
+          {% if item.authors %}&bull; <strong>Authors:</strong> {{ item.authors[:3]|join(', ') }}{% endif %}
+        </div>
+        {% if item.intelligence %}
+        <div class="intel-box">
+          <div><span class="intel-label">Why it matters:</span> {{ item.intelligence.why_it_matters }}</div>
+          <div style="margin-top: 4px;"><span class="intel-label">Potential Research Gap:</span> <em>{{ item.intelligence.potential_gap }}</em></div>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      <!-- 3. EMERGING RESEARCH THEMES (30-DAY VELOCITY) -->
+      {% if trends %}
+      <div class="section-title">📈 Emerging Research Trends (Observed in Monitored Sources)</div>
+      <table class="trend-table">
+        <thead>
+          <tr>
+            <th>Topic / Paradigm</th>
+            <th>Observed Trend</th>
+            <th>Status</th>
+            <th>Recent Volume</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for trend in trends[:7] %}
+          <tr>
+            <td><strong>{{ trend.topic }}</strong></td>
+            <td>
+              <span class="{% if trend.direction == '↑↑' %}trend-up{% elif trend.direction == '↑' %}trend-rising{% elif trend.direction == '↓' %}trend-down{% else %}trend-steady{% endif %}">
+                {{ trend.direction }}
+              </span>
+            </td>
+            <td>{{ trend.status }}</td>
+            <td>{{ trend.recent_count }} publications</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      {% endif %}
+
+      <!-- 4. RESEARCHERS TO WATCH -->
+      {% if supervisors %}
+      <div class="section-title">👤 Researchers to Watch (Potential PhD Supervisors)</div>
+      <div style="font-size: 12px; color: #64748b; margin-bottom: 8px;">
+        <em>Identified from recurring high-relevance publications in your target topics. (Explore group pages for vacancies).</em>
+      </div>
+      {% for sup in supervisors[:4] %}
+      <div class="card" style="border-left: 4px solid #6366f1;">
+        <div style="font-size: 15px; font-weight: 700; color: #1e1b4b;">{{ sup.name }}</div>
+        <div style="font-size: 12px; color: #64748b; margin-top: 2px;">
+          {{ sup.institution }} &bull; {{ sup.publication_count }} relevant works (Avg Relevance: {{ sup.average_relevance }}/10)
+        </div>
+        {% if sup.topics %}
+        <div style="font-size: 11px; color: #4338ca; margin-top: 4px;">
+          <strong>Topics:</strong> {{ sup.topics[:4]|join(', ') }}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      <!-- 5. PAPERS -->
+      {% if papers %}
+      <div class="section-title">📚 Selected Academic Papers</div>
+      {% for item in papers %}
+      <div class="card card-paper">
+        <div style="display: flex; justify-content: space-between;">
+          <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+          <span class="score-badge score-good">{{ item.score.final_score }}/10</span>
+        </div>
+        <div class="item-meta">{{ item.venue or item.source }} &bull; {{ item.publication_date }}</div>
+        <div style="font-size: 13px; color: #334155;">{{ item.abstract[:220] }}...</div>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      <!-- 6. PHD OPPORTUNITIES & CONFERENCES -->
+      {% if opportunities or conferences %}
+      <div class="section-title">🎓 Opportunities & Upcoming Deadlines</div>
+      {% for item in opportunities %}
+      <div class="card card-opp">
+        <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+        <div class="item-meta">{{ item.institution or item.source }}</div>
+        <div style="font-size: 13px; color: #334155;">{{ item.abstract[:200] }}</div>
+      </div>
+      {% endfor %}
+      {% for item in conferences %}
+      <div class="card card-conf">
+        <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
+        <div class="item-meta">{% if item.deadline %}<strong>Deadline:</strong> {{ item.deadline }} &bull; {% endif %}{{ item.venue }}</div>
+        <div style="font-size: 13px; color: #334155;">{{ item.abstract }}</div>
+      </div>
+      {% endfor %}
+      {% endif %}
+    </div>
+
+    <div class="footer">
+      Edge PhD Research Intelligence &bull; <a href="{{ dashboard_url }}">Online Knowledge Base</a><br>
+      Delivered automatically via GitHub Actions.
+    </div>
+  </div>
+</body>
+</html>

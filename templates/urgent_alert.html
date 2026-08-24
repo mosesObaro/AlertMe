@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ subject }}</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #fff5f5; color: #1a202c; padding: 20px; }
+    .container { max-width: 600px; margin: 0 auto; background: #ffffff; border-radius: 8px; border-top: 5px solid #dc2626; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h1 { font-size: 18px; color: #991b1b; margin-top: 0; }
+    .meta { font-size: 13px; color: #64748b; margin-bottom: 12px; }
+    .btn { display: inline-block; background: #dc2626; color: #ffffff; padding: 10px 18px; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 14px; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚨 HIGH-PRIORITY EDGE COMPUTING ALERT</h1>
+    <h2><a href="{{ item.url }}" style="color: #0f172a; text-decoration: none;">{{ item.title }}</a></h2>
+    <div class="meta">
+      <strong>Type:</strong> {{ item.item_type }} &bull; <strong>Venue/Source:</strong> {{ item.venue or item.source }}
+      {% if item.deadline %}&bull; <strong>Deadline:</strong> <span style="color: #dc2626; font-weight: bold;">{{ item.deadline }}</span>{% endif %}
+    </div>
+    <div style="font-size: 14px; line-height: 1.5; color: #334155;">
+      {{ item.abstract }}
+    </div>
+    {% if item.intelligence %}
+    <div style="background: #f8fafc; padding: 12px; border-radius: 6px; margin-top: 14px; font-size: 13px;">
+      <strong>Why this is critical:</strong> {{ item.intelligence.why_it_matters }}
+    </div>
+    {% endif %}
+    <a href="{{ item.url }}" class="btn" target="_blank">View Details &rarr;</a>
+  </div>
+</body>
+</html>

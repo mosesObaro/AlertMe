@@ -1,0 +1,43 @@
+name: Source Health Check
+
+on:
+  schedule:
+    - cron: "0 0 1,15 * *" # Twice a month health audit
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Test All Configured Sources
+        run: |
+          python -m src.cli test-sources
+
+      - name: Commit Health Report
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/source_health.json
+          if git diff --staged --quiet; then
+            echo "No health status changes."
+          else
+            git commit -m "chore(health): update source health metrics [skip ci]"
+            git push
+          fi

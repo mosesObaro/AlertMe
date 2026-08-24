@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edge Computing PhD Research Intelligence</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="logo-badge">PhD INTELLIGENCE</span>
+        <h1>Edge Computing Research Hub</h1>
+      </div>
+      <div class="nav-actions">
+        <span id="last-updated" class="update-badge">Updated: Loading...</span>
+        <button id="theme-toggle" class="btn-icon" title="Toggle Dark/Light Mode">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- Summary Metrics -->
+    <section class="metrics-grid">
+      <div class="metric-card">
+        <div class="metric-value" id="metric-total">-</div>
+        <div class="metric-label">Monitored Items</div>
+      </div>
+      <div class="metric-card highlight-metric">
+        <div class="metric-value" id="metric-high-relevance">-</div>
+        <div class="metric-label">High Relevance (≥7.5)</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" id="metric-papers">-</div>
+        <div class="metric-label">Research Papers</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" id="metric-confs">-</div>
+        <div class="metric-label">Conferences & CFPs</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" id="metric-opps">-</div>
+        <div class="metric-label">PhD Opportunities</div>
+      </div>
+    </section>
+
+    <!-- Two-column Layout: Sidebar Trends & Main Feed -->
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <!-- Emerging Trends Widget -->
+        <div class="panel">
+          <h3>📈 Observed Research Trends</h3>
+          <p class="panel-subtitle">Topic frequency velocity across monitored sources</p>
+          <div id="trends-list" class="trends-list">
+            <div class="loading-spinner">Loading trends...</div>
+          </div>
+        </div>
+
+        <!-- Researchers to Watch Widget -->
+        <div class="panel">
+          <h3>👤 Researchers to Watch</h3>
+          <p class="panel-subtitle">Prolific authors in your target topics</p>
+          <div id="supervisors-list" class="supervisors-list">
+            <div class="loading-spinner">Loading researchers...</div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="content-feed">
+        <!-- Search and Filter Controls -->
+        <div class="controls-bar">
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search title, author, topic, or abstract...">
+          </div>
+          <div class="filters-row">
+            <div class="filter-pills" id="type-filters">
+              <button class="pill active" data-type="all">All</button>
+              <button class="pill" data-type="paper">Papers</button>
+              <button class="pill" data-type="phd_opportunity">PhD Openings</button>
+              <button class="pill" data-type="conference_cfp">CFPs & Deadlines</button>
+              <button class="pill" data-type="standards_update">Standards</button>
+              <button class="pill" data-type="benchmark_code">Code/Benchmarks</button>
+            </div>
+            <div class="score-select">
+              <label for="min-score-select">Min Score:</label>
+              <select id="min-score-select">
+                <option value="0">All Scores (0+)</option>
+                <option value="6.5">Moderate (6.5+)</option>
+                <option value="7.5" selected>High (7.5+)</option>
+                <option value="8.5">Very High (8.5+)</option>
+                <option value="9.0">Critical (9.0+)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Research Items List -->
+        <div id="items-container" class="items-container">
+          <div class="loading-spinner">Loading research items...</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>Edge Computing PhD Research Intelligence Assistant &bull; Hosted on GitHub Actions Free Infrastructure</p>
+      <p class="footer-sub">Autonomous academic discovery, transparent multi-factor scoring & PhD preparation intelligence.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

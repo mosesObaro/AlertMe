@@ -1,0 +1,496 @@
+{
+  "Prof.Anu Jyothy": {
+    "name": "Prof.Anu Jyothy",
+    "publication_count": 2,
+    "average_relevance": 8.2,
+    "topics": [
+      "Edge AI",
+      "TinyML"
+    ],
+    "recent_papers": [
+      {
+        "title": "Edge AI in Wearable Devices",
+        "url": "https://doi.org/10.26634/javr.4.1.1116",
+        "date": "2028-06-15",
+        "score": 8.2
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Shiva Shrestha": {
+    "name": "Shiva Shrestha",
+    "publication_count": 2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "recent_papers": [
+      {
+        "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+        "url": "http://arxiv.org/abs/2608.21172v1",
+        "date": "2026-08-21",
+        "score": 7.8
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Kazi Shaharair Sharif": {
+    "name": "Kazi Shaharair Sharif",
+    "publication_count": 2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "recent_papers": [
+      {
+        "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+        "url": "http://arxiv.org/abs/2608.21172v1",
+        "date": "2026-08-21",
+        "score": 7.8
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Zongxing Xie": {
+    "name": "Zongxing Xie",
+    "publication_count": 2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "recent_papers": [
+      {
+        "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+        "url": "http://arxiv.org/abs/2608.21172v1",
+        "date": "2026-08-21",
+        "score": 7.8
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Jiajing Huang": {
+    "name": "Jiajing Huang",
+    "publication_count": 2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "recent_papers": [
+      {
+        "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+        "url": "http://arxiv.org/abs/2608.21172v1",
+        "date": "2026-08-21",
+        "score": 7.8
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Anhao Xiang": {
+    "name": "Anhao Xiang",
+    "publication_count": 2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "recent_papers": [
+      {
+        "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+        "url": "http://arxiv.org/abs/2608.21172v1",
+        "date": "2026-08-21",
+        "score": 7.8
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Honghui Xu": {
+    "name": "Honghui Xu",
+    "publication_count": 2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.LG",
+      "cs.DC"
+    ],
+    "recent_papers": [
+      {
+        "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+        "url": "http://arxiv.org/abs/2608.21172v1",
+        "date": "2026-08-21",
+        "score": 7.8
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "R Bhaskar Nihal Varma": {
+    "name": "R Bhaskar Nihal Varma",
+    "publication_count": 2,
+    "average_relevance": 7.8,
+    "topics": [
+      "Edge AI",
+      "MEC"
+    ],
+    "recent_papers": [
+      {
+        "title": "Future VLSI Architectures for Neuromorphic Computing, Edge AI and Sustainable Systems",
+        "url": "https://doi.org/10.61877/ijmrp.v3i7.293",
+        "date": "2027-07-25",
+        "score": 7.8
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Ehzaz Mustafa": {
+    "name": "Ehzaz Mustafa",
+    "publication_count": 1,
+    "average_relevance": 7.7,
+    "topics": [
+      "IoT",
+      "Mobile Edge Computing",
+      "MEC",
+      "Computation Offloading",
+      "Internet of Things",
+      "Edge Computing",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+        "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+        "date": "2025",
+        "score": 7.7
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Junaid Shuja": {
+    "name": "Junaid Shuja",
+    "publication_count": 1,
+    "average_relevance": 7.7,
+    "topics": [
+      "IoT",
+      "Mobile Edge Computing",
+      "MEC",
+      "Computation Offloading",
+      "Internet of Things",
+      "Edge Computing",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+        "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+        "date": "2025",
+        "score": 7.7
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Faisal Rehman": {
+    "name": "Faisal Rehman",
+    "publication_count": 1,
+    "average_relevance": 7.7,
+    "topics": [
+      "IoT",
+      "Mobile Edge Computing",
+      "MEC",
+      "Computation Offloading",
+      "Internet of Things",
+      "Edge Computing",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+        "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+        "date": "2025",
+        "score": 7.7
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Abdallah Namoun": {
+    "name": "Abdallah Namoun",
+    "publication_count": 1,
+    "average_relevance": 7.7,
+    "topics": [
+      "IoT",
+      "Mobile Edge Computing",
+      "MEC",
+      "Computation Offloading",
+      "Internet of Things",
+      "Edge Computing",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+        "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+        "date": "2025",
+        "score": 7.7
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Mazhar Ali": {
+    "name": "Mazhar Ali",
+    "publication_count": 1,
+    "average_relevance": 7.7,
+    "topics": [
+      "IoT",
+      "Mobile Edge Computing",
+      "MEC",
+      "Computation Offloading",
+      "Internet of Things",
+      "Edge Computing",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+        "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+        "date": "2025",
+        "score": 7.7
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Abdullah Alourani": {
+    "name": "Abdullah Alourani",
+    "publication_count": 1,
+    "average_relevance": 7.7,
+    "topics": [
+      "IoT",
+      "Mobile Edge Computing",
+      "MEC",
+      "Computation Offloading",
+      "Internet of Things",
+      "Edge Computing",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+        "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+        "date": "2025",
+        "score": 7.7
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Zhenli He": {
+    "name": "Zhenli He",
+    "publication_count": 1,
+    "average_relevance": 7.3,
+    "topics": [
+      "MEC",
+      "Cloud Computing",
+      "Computation Offloading",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+        "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+        "date": "2025-01-01",
+        "score": 7.3
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Ying Guo": {
+    "name": "Ying Guo",
+    "publication_count": 1,
+    "average_relevance": 7.3,
+    "topics": [
+      "MEC",
+      "Cloud Computing",
+      "Computation Offloading",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+        "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+        "date": "2025-01-01",
+        "score": 7.3
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Xiaolong Zhai": {
+    "name": "Xiaolong Zhai",
+    "publication_count": 1,
+    "average_relevance": 7.3,
+    "topics": [
+      "MEC",
+      "Cloud Computing",
+      "Computation Offloading",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+        "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+        "date": "2025-01-01",
+        "score": 7.3
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Mingxiong Zhao": {
+    "name": "Mingxiong Zhao",
+    "publication_count": 1,
+    "average_relevance": 7.3,
+    "topics": [
+      "MEC",
+      "Cloud Computing",
+      "Computation Offloading",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+        "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+        "date": "2025-01-01",
+        "score": 7.3
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Wei Zhou": {
+    "name": "Wei Zhou",
+    "publication_count": 1,
+    "average_relevance": 7.3,
+    "topics": [
+      "MEC",
+      "Cloud Computing",
+      "Computation Offloading",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+        "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+        "date": "2025-01-01",
+        "score": 7.3
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Keqin Li": {
+    "name": "Keqin Li",
+    "publication_count": 1,
+    "average_relevance": 7.3,
+    "topics": [
+      "MEC",
+      "Cloud Computing",
+      "Computation Offloading",
+      "Resource Allocation"
+    ],
+    "recent_papers": [
+      {
+        "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+        "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+        "date": "2025-01-01",
+        "score": 7.3
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Jisna C Jeejo": {
+    "name": "Jisna C Jeejo",
+    "publication_count": 2,
+    "average_relevance": 7.2,
+    "topics": [
+      "Neuromorphic engineering",
+      "Computer science",
+      "Von Neumann architecture",
+      "Computer architecture",
+      "Unconventional computing",
+      "Artificial intelligence",
+      "Field (mathematics)",
+      "Artificial neural network",
+      "Robotics",
+      "Computation",
+      "Reservoir computing",
+      "Edge computing",
+      "Applications of artificial intelligence",
+      "Key (lock)",
+      "Software",
+      "Edge device",
+      "Memristor",
+      "Computer engineering",
+      "Adaptability",
+      "Embedded system",
+      "Efficient energy use",
+      "Spiking neural network",
+      "Benchmarking",
+      "Massively parallel",
+      "Architecture",
+      "Enhanced Data Rates for GSM Evolution",
+      "Robot",
+      "Analog computer",
+      "Image processing",
+      "Information processing"
+    ],
+    "recent_papers": [
+      {
+        "title": "Neuromorphic Computing: Current Progress and the Future of Brain-Inspired Computing",
+        "url": "https://doi.org/10.64823/ijter.2621029",
+        "date": "2026-08-23",
+        "score": 7.2
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Habeeba M A": {
+    "name": "Habeeba M A",
+    "publication_count": 2,
+    "average_relevance": 7.2,
+    "topics": [
+      "Neuromorphic engineering",
+      "Computer science",
+      "Von Neumann architecture",
+      "Computer architecture",
+      "Unconventional computing",
+      "Artificial intelligence",
+      "Field (mathematics)",
+      "Artificial neural network",
+      "Robotics",
+      "Computation",
+      "Reservoir computing",
+      "Edge computing",
+      "Applications of artificial intelligence",
+      "Key (lock)",
+      "Software",
+      "Edge device",
+      "Memristor",
+      "Computer engineering",
+      "Adaptability",
+      "Embedded system",
+      "Efficient energy use",
+      "Spiking neural network",
+      "Benchmarking",
+      "Massively parallel",
+      "Architecture",
+      "Enhanced Data Rates for GSM Evolution",
+      "Robot",
+      "Analog computer",
+      "Image processing",
+      "Information processing"
+    ],
+    "recent_papers": [
+      {
+        "title": "Neuromorphic Computing: Current Progress and the Future of Brain-Inspired Computing",
+        "url": "https://doi.org/10.64823/ijter.2621029",
+        "date": "2026-08-23",
+        "score": 7.2
+      }
+    ],
+    "institution": "Academic Institution"
+  }
+}

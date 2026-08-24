@@ -1,0 +1,63 @@
+EDGE COMPUTING PhD RESEARCH INTELLIGENCE — WEEKLY DIGEST
+Briefing for {{ date_str }} ({{ total_items }} Items)
+
+{% if study_guide %}
+============================================================
+🎯 RECOMMENDED FOCUS FOR NEXT WEEK: {{ study_guide.focus_topic }}
+============================================================
+1. Concept to Master:
+   {{ study_guide.concept }}
+
+2. Primary Paper:
+   {{ study_guide.paper_title }}
+   Link: {{ study_guide.paper_url }}
+
+3. Practical Exercise:
+   {{ study_guide.practical_exercise }}
+
+4. Research Question:
+   "{{ study_guide.research_question }}"
+
+{% if study_guide.event_opportunity %}
+5. Event / Opportunity:
+   {{ study_guide.event_opportunity.title }}
+   Link: {{ study_guide.event_opportunity.url }}
+{% endif %}
+============================================================
+{% endif %}
+
+{% if top_developments %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥 TOP DEVELOPMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for item in top_developments %}
+{{ loop.index }}. {{ item.title }} ({{ item.score.final_score }}/10)
+   Venue: {{ item.venue or item.source }}
+   Link: {{ item.url }}
+   Why it matters: {{ item.intelligence.why_it_matters }}
+   Potential Gap: {{ item.intelligence.potential_gap }}
+----------------------------------------
+{% endfor %}
+{% endif %}
+
+{% if trends %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📈 EMERGING RESEARCH TRENDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for trend in trends[:7] %}
+• {{ trend.topic }}: {{ trend.direction }} ({{ trend.status }} — {{ trend.recent_count }} papers)
+{% endfor %}
+{% endif %}
+
+{% if supervisors %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👤 RESEARCHERS TO WATCH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for sup in supervisors[:4] %}
+• {{ sup.name }} ({{ sup.institution }})
+  {{ sup.publication_count }} relevant publications | Avg Score: {{ sup.average_relevance }}/10
+{% endfor %}
+{% endif %}
+
+--
+Edge PhD Research Assistant | Free Infrastructure

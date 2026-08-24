@@ -1,0 +1,26 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+*.egg-info/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Logs & Temporary files
+logs/*.log
+*.tmp
+data/output/
+
+# OS Specific
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local Environment Overrides (Never commit secrets!)
+.env
+.env.local

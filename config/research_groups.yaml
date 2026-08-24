@@ -1,0 +1,58 @@
+# Prominent Research Groups and Labs in Edge Computing & Distributed Systems
+
+research_groups:
+  - name: "Living Edge Lab"
+    lead: "Mahadev Satyanarayanan (Satya)"
+    university: "Carnegie Mellon University"
+    country: "USA"
+    website: "https://allegro.cs.cmu.edu/"
+    topics: ["Cloudlets", "Wearable Cognitive Assistance", "Edge Computing Architectures"]
+
+  - name: "EDGE Lab"
+    lead: "Mung Chiang"
+    university: "Princeton / Purdue University"
+    country: "USA"
+    website: "https://edge.princeton.edu/"
+    topics: ["Fog Networking", "Edge Resource Allocation", "Edge Pricing and Economics"]
+
+  - name: "Sky Computing Lab / RISELab"
+    lead: "Ion Stoica, Joseph Gonzalez"
+    university: "UC Berkeley"
+    country: "USA"
+    website: "https://sky.cs.berkeley.edu/"
+    topics: ["Sky Computing", "Distributed AI", "Ray", "Serverless Edge"]
+
+  - name: "Distributed Systems Group (DSG)"
+    lead: "Schahram Dustdar"
+    university: "TU Wien"
+    country: "Austria"
+    website: "https://dsg.tuwien.ac.at/"
+    topics: ["Edge-Cloud Continuum", "Elastic Computing", "Distributed AI Systems"]
+
+  - name: "Chair of Connected Mobility"
+    lead: "Jörg Ott"
+    university: "Technical University of Munich (TUM)"
+    country: "Germany"
+    website: "https://www.cm.in.tum.de/"
+    topics: ["Edge Computing for Connected Mobility", "IoT", "Opportunistic Networks"]
+
+  - name: "Computer Laboratory - Systems Research Group"
+    lead: "Jon Crowcroft"
+    university: "University of Cambridge"
+    country: "UK"
+    website: "https://www.cl.cam.ac.uk/research/srg/"
+    topics: ["Decentralized Edge Systems", "Data Privacy", "Edge AI Networking"]
+
+  - name: "Wireless Networks and Communications Group (WNCG)"
+    lead: "Jeffrey Andrews, Sanjay Shakkottai"
+    university: "UT Austin"
+    country: "USA"
+    website: "https://wncg.org/"
+    topics: ["6G Wireless", "Mobile Edge Intelligence", "Cellular Edge Optimization"]
+
+  - name: "Mobile & Networked Systems Group"
+    lead: "Ketan Mayer-Patel"
+    university: "UNC Chapel Hill"
+    country: "USA"
+    website: "https://cs.unc.edu/"
+    topics: ["Edge Video Analytics", "Distributed Multimedia", "Latency Optimization"]

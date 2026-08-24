@@ -1,0 +1,64 @@
+EDGE COMPUTING PhD RESEARCH INTELLIGENCE
+Daily Academic Intelligence — {{ date_str }} ({{ total_items }} Items)
+
+{% if top_developments %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔥 TOP DEVELOPMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for item in top_developments %}
+{{ loop.index }}. {{ item.title }}
+Relevance: {{ item.score.final_score }}/10 | Venue: {{ item.venue or item.source }}
+Link: {{ item.url }}
+
+Why it matters:
+{{ item.intelligence.why_it_matters }}
+
+Potential Research Gap:
+{{ item.intelligence.potential_gap }}
+
+Why you received this:
+{{ item.score.reasons[:3]|join(' | ') }}
+
+----------------------------------------
+{% endfor %}
+{% endif %}
+
+{% if papers %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 PAPERS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for item in papers %}
+• {{ item.title }} ({{ item.score.final_score }}/10)
+  Venue: {{ item.venue or item.source }}
+  Link: {{ item.url }}
+{% endfor %}
+{% endif %}
+
+{% if opportunities %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎓 PHD & RESEARCH OPPORTUNITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for item in opportunities %}
+• {{ item.title }} ({{ item.score.final_score }}/10)
+  Institution: {{ item.institution or item.source }}
+  Link: {{ item.url }}
+{% endfor %}
+{% endif %}
+
+{% if conferences %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📅 CONFERENCES & CFPs
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for item in conferences %}
+• {{ item.title }}
+  {% if item.deadline %}Deadline: {{ item.deadline }}{% endif %}
+  Link: {{ item.url }}
+{% endfor %}
+{% endif %}
+
+{% if total_items == 0 %}
+No high-priority Edge Computing developments were detected today.
+{% endif %}
+
+--
+Edge PhD Research Assistant | Signal over Volume

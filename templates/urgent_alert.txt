@@ -1,0 +1,17 @@
+🚨 HIGH-PRIORITY EDGE COMPUTING ALERT
+
+Title: {{ item.title }}
+Venue/Source: {{ item.venue or item.source }}
+{% if item.deadline %}Deadline: {{ item.deadline }}{% endif %}
+Link: {{ item.url }}
+
+Abstract / Summary:
+{{ item.abstract }}
+
+{% if item.intelligence %}
+Why this is critical:
+{{ item.intelligence.why_it_matters }}
+{% endif %}
+
+--
+Edge PhD Research Intelligence

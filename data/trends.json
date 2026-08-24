@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "Edge AI",
+    "direction": "↑↑",
+    "status": "Surging",
+    "recent_count": 8,
+    "historical_count": 0
+  },
+  {
+    "topic": "Federated Learning",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 1,
+    "historical_count": 0
+  },
+  {
+    "topic": "TinyML",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 1,
+    "historical_count": 0
+  },
+  {
+    "topic": "6G + Edge",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Edge Security",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Computation Offloading",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Device-Edge-Cloud",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Edge Inference",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Resource Allocation",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Split Learning",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Edge Caching",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  }
+]
