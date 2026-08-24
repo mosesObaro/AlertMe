@@ -38,7 +38,7 @@ location:
 
 email_preferences:
   provider: "resend" # Options: resend, brevo, smtp, sendgrid, console
-  sender_email: "research-alert@resend.dev" # Or verified domain / smtp user
+  sender_email: "onboarding@resend.dev" # Default free tier sender for Resend
   recipient_email: "${EMAIL_RECIPIENT}" # Injected from environment / GitHub secret
   daily_digest: true
   weekly_digest: true

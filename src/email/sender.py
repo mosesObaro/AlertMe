@@ -24,7 +24,7 @@ class EmailSender:
         ).lower()
         self.sender_email = (
             os.environ.get("SENDER_EMAIL") or
-            self.config.get("sender_email", "research-alert@resend.dev")
+            self.config.get("sender_email", "onboarding@resend.dev")
         )
         self.recipient_email = (
             os.environ.get("EMAIL_RECIPIENT") or
