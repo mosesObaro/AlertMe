@@ -3,7 +3,21 @@
     "topic": "Edge AI",
     "direction": "↑↑",
     "status": "Surging",
-    "recent_count": 8,
+    "recent_count": 9,
+    "historical_count": 0
+  },
+  {
+    "topic": "Computation Offloading",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
+    "historical_count": 0
+  },
+  {
+    "topic": "Resource Allocation",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
     "historical_count": 0
   },
   {
@@ -35,13 +49,6 @@
     "historical_count": 0
   },
   {
-    "topic": "Computation Offloading",
-    "direction": "→",
-    "status": "Stable",
-    "recent_count": 0,
-    "historical_count": 0
-  },
-  {
     "topic": "Device-Edge-Cloud",
     "direction": "→",
     "status": "Stable",
@@ -50,13 +57,6 @@
   },
   {
     "topic": "Edge Inference",
-    "direction": "→",
-    "status": "Stable",
-    "recent_count": 0,
-    "historical_count": 0
-  },
-  {
-    "topic": "Resource Allocation",
     "direction": "→",
     "status": "Stable",
     "recent_count": 0,

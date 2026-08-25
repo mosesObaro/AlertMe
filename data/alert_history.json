@@ -162,5 +162,70 @@
     },
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+    "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+    "source": "Semantic Scholar",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Ehzaz Mustafa",
+      "Junaid Shuja",
+      "Faisal Rehman",
+      "Abdallah Namoun",
+      "Mazhar Ali",
+      "Abdullah Alourani"
+    ],
+    "doi": "10.1109/ACCESS.2025.3573929",
+    "arxiv_id": null,
+    "publication_date": "2025",
+    "discovery_date": "2026-08-25",
+    "abstract": "Computation offloading transfers resource-intensive tasks from local Internet of Things (IoT) devices to powerful edge servers, which minimizes latency and reduces the computational load on IoT devices. Deep Reinforcement Learning (DRL) is widely utilized to optimize computation offloading decisions. However, previous studies fall short in two main ways: firstly, they do not collectively optimize the comprehensive state space, and secondly, their reliance on Q-learning and Deep Q Networks (DQN) makes it challenging for agents to discern the optimal action in large action spaces, as many actions may possess similar values. In this paper, we introduce a multi-branch Dueling Deep Q Network (MBDDQN) that tackles the challenges of high-dimensional state-action spaces and long-term cost optimizations in dynamic environments. The Dueling DQN alleviates the complexity of simultaneous offloading and resource allocation decisions, with each branch independently controlling a subset of the decision variables to scale efficiently with an increasing number of IoT devices, thereby avoiding the combinatorial explosion of potential actions. Furthermore, we implement a long short-term memory (LSTM) network with distinct advantage-value layers to enhance both short-term action selection and long-term system cost estimation, as well as improve the temporal learning capacity of the model. Finally, we propose an innovative adaptive cost-weighting mechanism within the reward function to dynamically balance competing objectives, including energy consumption, latency, and bandwidth utilization. Unlike prior works that use fixed reward structures, we leverage weighted state-action advantage values to dynamically adjust the optimization variables. This approach also enables the agent to self-tune, allowing it to prioritize delay minimization in delay-sensitive scenarios and energy conservation in resource-constrained environments. Simulation results demonstrate the superiority of the proposed scheme compared to benchmarks. For instance, MBDDQN reduces delay by 17.88% over DQN and 12.28% over DDPG. Additionally, regarding energy consumption, MBDDQN achieves a 10.1% improvement over DQN and a 7.64% enhancement over DDPG.",
+    "venue": "IEEE Access",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_4ed4c2109cdc1610",
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 2.5,
+      "recency_score": 0.2,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.7,
+      "matched_topics": [
+        "Mobile Edge Computing",
+        "Resource Allocation",
+        "Internet of Things",
+        "Computation Offloading",
+        "IoT",
+        "Edge Computing",
+        "MEC"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Title)",
+        "✓ Key research area match: Computation Offloading, Resource Allocation (+0.8)",
+        "✓ Tier 1 Academic/Standards source: Semantic Scholar (+2.5)",
+        "• Published >30d ago (365d ago) (+0.2)",
+        "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "However, previous studies fall short in two main ways: firstly, they do not collectively optimize the comprehensive state space, and secondly, their reliance on Q-learning and Deep Q Networks (DQN) makes it challenging for agents to discern the optimal action in large action spaces, as many actions may possess similar values",
+      "methodology": "Deep Reinforcement Learning (DRL) is widely utilized to optimize computation offloading decisions",
+      "key_contribution": "Computation offloading transfers resource-intensive tasks from local Internet of Things (IoT) devices to powerful edge servers, which minimizes latency and reduces the computational load on IoT devices",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.7/10",
+      "is_ai_generated": false
+    },
+    "raw_metadata": {
+      "citation_count": 19
+    },
+    "alert_mode": "daily"
   }
 ]
