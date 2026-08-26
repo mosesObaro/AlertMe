@@ -23,13 +23,18 @@ class SemanticScholarCollector(BaseCollector):
         self.limit = limit
 
     def fetch(self) -> List[ResearchItem]:
+        import os
         params = {
             "query": self.query,
             "limit": min(self.limit, 50),
             "fields": "title,authors,abstract,venue,year,publicationDate,externalIds,url,citationCount,openAccessPdf"
         }
+        headers = {}
+        s2_key = os.environ.get("SEMANTIC_SCHOLAR_API_KEY") or os.environ.get("S2_API_KEY")
+        if s2_key:
+            headers["x-api-key"] = s2_key
 
-        response = self.requester.get(S2_API_URL, params=params)
+        response = self.requester.get(S2_API_URL, params=params, headers=headers)
         if not response or response.status_code != 200:
             logger.warning(f"Failed to fetch Semantic Scholar data. Status: {getattr(response, 'status_code', 'None')}")
             return []

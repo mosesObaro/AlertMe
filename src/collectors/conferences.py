@@ -22,8 +22,7 @@ class ConferenceCollector(BaseCollector):
         super().__init__(name=name, tier=CredibilityTier.TIER3_CONFERENCE.value, enabled=enabled)
         self.conferences_config = conferences_config or []
         self.cfp_feeds = cfp_feeds or [
-            "http://www.wikicfp.com/cfp/rss?cat=edge%20computing",
-            "https://www.usenix.org/conferences/upcoming/feed"
+            "http://www.wikicfp.com/cfp/rss?cat=edge%20computing"
         ]
 
     def fetch(self) -> List[ResearchItem]:

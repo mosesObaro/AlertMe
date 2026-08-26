@@ -61,18 +61,11 @@ tier1_academic_and_standards:
     category: "cloud_native"
 
 tier2_universities_and_labs:
-  - name: "CMU Living Edge Lab News"
+  - name: "Cambridge University Research News"
     type: "rss"
     enabled: true
-    url: "https://www.cmu.edu/news/stories/rss.xml"
-    institution: "Carnegie Mellon University"
-    credibility_weight: 0.95
-
-  - name: "Princeton EDGE Lab Updates"
-    type: "rss"
-    enabled: true
-    url: "https://edge.princeton.edu/feed/"
-    institution: "Princeton University"
+    url: "https://www.cam.ac.uk/news/feed"
+    institution: "University of Cambridge"
     credibility_weight: 0.95
 
   - name: "MIT CSAIL & AI Research"
@@ -133,11 +126,11 @@ tier4_industry_research:
     organization: "Amazon Web Services"
     credibility_weight: 0.75
 
-  - name: "Meta AI / FAIR Blog"
+  - name: "Meta AI Research Blog"
     type: "rss"
     enabled: true
-    url: "https://ai.meta.com/blog/rss/"
-    organization: "Meta FAIR"
+    url: "https://engineering.fb.com/category/ai-research/feed/"
+    organization: "Meta AI"
     credibility_weight: 0.8
 
 opportunities_and_fellowships:
