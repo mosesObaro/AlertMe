@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-25",
-    "total_items": 16,
+    "last_updated": "2026-08-26",
+    "total_items": 11,
     "high_relevance_count": 4,
-    "papers_count": 9,
+    "papers_count": 7,
     "conferences_count": 0,
     "opportunities_count": 0
   },
@@ -12,25 +12,25 @@
       "topic": "Edge AI",
       "direction": "↑↑",
       "status": "Surging",
-      "recent_count": 9,
+      "recent_count": 8,
+      "historical_count": 0
+    },
+    {
+      "topic": "Federated Learning",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 1,
       "historical_count": 0
     },
     {
       "topic": "Computation Offloading",
       "direction": "↑",
       "status": "Rising",
-      "recent_count": 2,
+      "recent_count": 1,
       "historical_count": 0
     },
     {
       "topic": "Resource Allocation",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
-      "historical_count": 0
-    },
-    {
-      "topic": "Federated Learning",
       "direction": "↑",
       "status": "Rising",
       "recent_count": 1,
@@ -405,195 +405,8 @@
       },
       "raw_metadata": {
         "citation_count": 19
-      }
-    },
-    {
-      "title": "[Code/Benchmark] lysyloxidase/KneeMechBridge (★ 0)",
-      "url": "https://github.com/lysyloxidase/KneeMechBridge",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "lysyloxidase"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-25",
-      "discovery_date": "2026-08-25",
-      "abstract": "Traceable reduced-order Python framework for multiscale knee mechanobiology, uncertainty propagation, validation maturity, reproducible benchmarks, and a research dashboard—explicitly not a clinical model. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [
-        "biomechanics",
-        "digital-shadow",
-        "knee-biomechanics",
-        "mechanobiology",
-        "multiscale-modeling",
-        "osteoarthritis",
-        "python",
-        "reproducible-research",
-        "research-software",
-        "scientific-computing",
-        "streamlit",
-        "uncertainty-quantification"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_3b932d0b0f97d0b5",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 7.3,
-        "matched_topics": [
-          "MEC"
-        ],
-        "reasons": [
-          "✓ Primary topic match: MEC (Title)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
       },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
-      "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
-      "source": "Semantic Scholar",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "paper",
-      "authors": [
-        "Zhenli He",
-        "Ying Guo",
-        "Xiaolong Zhai",
-        "Mingxiong Zhao",
-        "Wei Zhou",
-        "Keqin Li"
-      ],
-      "doi": "10.1109/TCC.2025.3538090",
-      "arxiv_id": null,
-      "publication_date": "2025-01-01",
-      "discovery_date": "2026-08-25",
-      "abstract": "Mobile-Edge Cloud Computing (MECC) plays a crucial role in balancing low-latency services at the edge with the computational capabilities of cloud data centers (DCs). However, many existing studies focus on single-provider settings or limit their analysis to interactions between mobile devices (MDs) and edge servers (ESs), often overlooking the competition that occurs among ESs from different providers. This article introduces an innovative two-layer game framework that captures independent self-interested competition among MDs and ESs, providing a more accurate reflection of multi-vendor environments. Additionally, the framework explores the influence of cloud-edge collaboration on ES competition, offering new insights into these dynamics. The proposed model extends previous research by developing algorithms that optimize task offloading and resource allocation strategies for both MDs and ESs, ensuring the convergence to Nash equilibrium in both layers. Simulation results demonstrate the potential of the framework to improve resource efficiency and system responsiveness in multi-provider MECC environments.",
-      "venue": "IEEE Transactions on Cloud Computing",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_9cb0244267a28a69",
-      "score": {
-        "topic_score": 3.6,
-        "credibility_score": 2.5,
-        "recency_score": 0.2,
-        "stage_boost": 1.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 7.3,
-        "matched_topics": [
-          "Cloud Computing",
-          "Computation Offloading",
-          "Resource Allocation",
-          "MEC"
-        ],
-        "reasons": [
-          "✓ Primary topic match: MEC (Abstract), Computation Offloading (Title)",
-          "✓ Key research area match: Computation Offloading, Resource Allocation (+0.8)",
-          "✓ Tier 1 Academic/Standards source: Semantic Scholar (+2.5)",
-          "• Published >30d ago (601d ago) (+0.2)",
-          "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "citation_count": 18
-      }
-    },
-    {
-      "title": "Neuromorphic Computing: Current Progress and the Future of Brain-Inspired Computing",
-      "url": "https://doi.org/10.64823/ijter.2621029",
-      "source": "OpenAlex",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "paper",
-      "authors": [
-        "Jisna C Jeejo",
-        "Habeeba M A"
-      ],
-      "doi": "10.64823/ijter.2621029",
-      "arxiv_id": null,
-      "publication_date": "2026-08-23",
-      "discovery_date": "2026-08-25",
-      "abstract": "Neuromorphic computing borrows its design logic from the nervous system rather than from the von Neumann architecture that has dominated computing for seventy years. Instead of shuttling data back and forth between separate memory and processing units, it favors event-driven communication, computation that happens close to (or inside) memory, and massive parallelism across simple processing elements. This paper takes stock of where the field currently stands: spiking neural networks, digital and analog processors, memristive and other emerging devices, the software ecosystems that support them, and application areas ranging from robotics and edge intelligence to biomedical monitoring and event-based vision. What emerges from the recent literature is a field that has largely moved past small proof-of-concept chips and is now building larger, more programmable platforms with tighter hardware-algorithm integration. Even so, real obstacles remain around training methods, benchmarking practices, programmability, device variability, and fabrication, and it is still unclear how much of the field's energy advantage survives contact with general-purpose workloads. The view taken here is that brain-inspired computing is heading toward a hybrid future: conventional digital processors will keep doing what they do best, while event-driven and in-memory accelerators take over the workloads where they have a genuine edge. Neuromorphic computing is therefore unlikely to displace mainstream AI hardware outright, but it looks well positioned to become a key ingredient in low-power, adaptive, real-time intelligence at the edge. Keywords: edge AI; neuromorphic computing; brain-inspired computing; spiking neural networks; memristors; in-memory computing",
-      "venue": "International Journal of Technology & Emerging Research",
-      "topics": [
-        "Neuromorphic engineering",
-        "Computer science",
-        "Von Neumann architecture",
-        "Computer architecture",
-        "Unconventional computing",
-        "Artificial intelligence",
-        "Field (mathematics)",
-        "Artificial neural network",
-        "Robotics",
-        "Computation",
-        "Reservoir computing",
-        "Edge computing",
-        "Applications of artificial intelligence",
-        "Key (lock)",
-        "Software",
-        "Edge device",
-        "Memristor",
-        "Computer engineering",
-        "Adaptability",
-        "Embedded system",
-        "Efficient energy use",
-        "Spiking neural network",
-        "Benchmarking",
-        "Massively parallel",
-        "Architecture",
-        "Enhanced Data Rates for GSM Evolution",
-        "Robot",
-        "Analog computer",
-        "Image processing",
-        "Information processing"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_03f6f32d1d705640",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 1.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 7.2,
-        "matched_topics": [
-          "Edge AI",
-          "Edge Intelligence"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Intelligence (Abstract), Edge AI (Abstract)",
-          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)",
-          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "cited_by_count": 0
-      }
+      "alert_mode": "daily"
     },
     {
       "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -612,7 +425,7 @@
       "doi": null,
       "arxiv_id": "2608.21910v1",
       "publication_date": "2026-08-22",
-      "discovery_date": "2026-08-25",
+      "discovery_date": "2026-08-26",
       "abstract": "Latency-sensitive edge AI services must balance strict deadlines, output quality, and limited compute and energy budgets. However, static CPU provisioning wastes resources because inference cost varies substantially across inputs, model variants, and runtime conditions. We present PRISM, a prediction-guided runtime framework that jointly selects model variants and CPU allocations for containerized edge microservices. Using container-level energy monitoring and lightweight regression models, PRISM adapts each pipeline stage in place and minimizes predicted CPU-package energy under deadline, resource, and offline model-level Quality of Result (QoR) constraints. We evaluate PRISM on more than 52,000 requests in an Automatic License Plate Recognition (ALPR) pipeline with detection and recognition stages. For detection, PRISM reduces energy consumption by 36 % compared to the strongest static configuration while preserving a comparable success rate and using less than half of the average CPU allocation. For recognition, it reaches near-static-best performance with lower average CPU allocation. These results show that predictive in-place adaptation is a practical mechanism for making time-sensitive AI microservice pipelines more energy-efficient at the edge.",
       "venue": "arXiv CS",
       "topics": [
@@ -626,11 +439,11 @@
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
-        "recency_score": 1.5,
+        "recency_score": 1.2,
         "stage_boost": 1.0,
         "phd_boost": 0.0,
         "negative_penalty": 0.0,
-        "final_score": 7.2,
+        "final_score": 6.9,
         "matched_topics": [
           "Edge AI",
           "MEC"
@@ -638,7 +451,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Abstract), MEC (Abstract)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (3d ago) (+1.5)",
+          "✓ Published within last week (4d ago) (+1.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -662,7 +475,7 @@
       "doi": "10.1504/ijcis.2028.10073919",
       "arxiv_id": null,
       "publication_date": "2028",
-      "discovery_date": "2026-08-25",
+      "discovery_date": "2026-08-26",
       "abstract": "",
       "venue": "International Journal of Critical Infrastructures",
       "topics": [],
@@ -680,8 +493,8 @@
         "negative_penalty": 0.0,
         "final_score": 6.8,
         "matched_topics": [
-          "Federated Learning",
-          "Edge Computing"
+          "Edge Computing",
+          "Federated Learning"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
@@ -693,18 +506,18 @@
       "raw_metadata": {}
     },
     {
-      "title": "[Code/Benchmark] Aleeza-Nadeem/healthcare-claim-denial-pipeline-and-benchmarkin (★ 0)",
-      "url": "https://github.com/Aleeza-Nadeem/healthcare-claim-denial-pipeline-and-benchmarkin",
+      "title": "[Code/Benchmark] MarcW88/benchmark_competitors (★ 0)",
+      "url": "https://github.com/MarcW88/benchmark_competitors",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "Aleeza-Nadeem"
+        "MarcW88"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-08-25",
-      "discovery_date": "2026-08-25",
+      "publication_date": "2026-08-26",
+      "discovery_date": "2026-08-26",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -712,97 +525,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_175cfe6b9b52632a",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] LB1uee/UnsteadyBenchmark (★ 0)",
-      "url": "https://github.com/LB1uee/UnsteadyBenchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "LB1uee"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-25",
-      "discovery_date": "2026-08-25",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_ee4beea8cdd7e7b5",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] bsiepe/var-predictability-benchmark (★ 0)",
-      "url": "https://github.com/bsiepe/var-predictability-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "bsiepe"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-25",
-      "discovery_date": "2026-08-25",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_cbcf01d73005de44",
+      "id": "item_37ca903db122050c",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -839,7 +562,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-08-25",
+      "discovery_date": "2026-08-26",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -862,7 +585,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (69d ago) (+0.2)",
+          "• Published >30d ago (70d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -882,7 +605,7 @@
       "doi": null,
       "arxiv_id": "2605.27599v3",
       "publication_date": "2026-05-26",
-      "discovery_date": "2026-08-25",
+      "discovery_date": "2026-08-26",
       "abstract": "Agentic AI workloads - where a single user goal triggers multi-step orchestration, tool calls, retries, and failure recovery - are being targeted for edge deployment, with NVIDIA, Dell, HP, ASUS, MSI, Acer, and Gigabyte all shipping GB10-based desktop AI systems in 2026. Prior work shows orchestration structure dominates agentic energy cost and CPU-side processing accounts for up to 44% of total dynamic energy. We report a systematic energy-observability audit of the ASUS Ascent GX10 (GB10 SoC) and find that the platform exposes no CPU energy counter, no INA power-rail monitor, no IPMI/BMC, and no SCMI powercap protocol through any supported software interface. The only on-device energy telemetry is instantaneous GPU power via NVML. We further discover that the MediaTek firmware already computes per-rail energy internally via an undocumented ACPI interface (SPBM), but NVIDIA states there are \"no plans to expose CPU rail information.\" On-device per-process energy attribution - as performed on x86 via RAPL - is therefore not reproducible on this platform through supported interfaces. We formalize a hardware requirements specification for energy-attributed AI, propose an interim calibration bridge for per-domain energy decomposition - confirmed on the Acer Veriton GN100 where CPU energy accumulators are live - and identify a standards-track path via SCMI powercap. Our findings motivate the low-carbon computing community to demand energy observability as a first-class hardware requirement.",
       "venue": "arXiv CS",
       "topics": [
@@ -911,7 +634,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "• Published >30d ago (91d ago) (+0.2)",
+          "• Published >30d ago (92d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -930,7 +653,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-08-25",
+      "discovery_date": "2026-08-26",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -953,7 +676,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (159d ago) (+0.2)",
+          "• Published >30d ago (160d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -972,7 +695,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2025-11-19",
-      "discovery_date": "2026-08-25",
+      "discovery_date": "2026-08-26",
       "abstract": "Authors: Andreas Spanner Contributor: Ivan Necas The mission of InfiniEdge AI is to bring advanced AI capabilities to the edge and distributed environments. The AIOps initiative focuses on the application...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -995,7 +718,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (279d ago) (+0.2)",
+          "• Published >30d ago (280d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
