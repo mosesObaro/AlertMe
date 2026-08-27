@@ -594,5 +594,45 @@
       }
     ],
     "institution": "Academic Institution"
+  },
+  "Navaneetha Krishnan Kamalakannan": {
+    "name": "Navaneetha Krishnan Kamalakannan",
+    "publication_count": 1,
+    "average_relevance": 7.2,
+    "topics": [
+      "eess.SP",
+      "cs.DC",
+      "cs.IT",
+      "cs.NI"
+    ],
+    "recent_papers": [
+      {
+        "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
+        "url": "http://arxiv.org/abs/2608.26040v1",
+        "date": "2026-08-26",
+        "score": 7.2
+      }
+    ],
+    "institution": "Academic Institution"
+  },
+  "Harinisri Velmurugan": {
+    "name": "Harinisri Velmurugan",
+    "publication_count": 1,
+    "average_relevance": 7.2,
+    "topics": [
+      "eess.SP",
+      "cs.DC",
+      "cs.IT",
+      "cs.NI"
+    ],
+    "recent_papers": [
+      {
+        "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
+        "url": "http://arxiv.org/abs/2608.26040v1",
+        "date": "2026-08-26",
+        "score": 7.2
+      }
+    ],
+    "institution": "Academic Institution"
   }
 }
