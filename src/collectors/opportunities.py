@@ -19,8 +19,7 @@ class OpportunityCollector(BaseCollector):
     ):
         super().__init__(name=name, tier=CredibilityTier.TIER2_UNIVERSITY_LAB.value, enabled=enabled)
         self.feeds = feeds or [
-            "https://www.jobs.ac.uk/jobs/computer-science-phds.rss",
-            "https://academicpositions.com/rss/all.xml"
+            "https://www.jobs.ac.uk/jobs/computer-science-phds.rss"
         ]
 
     def fetch(self) -> List[ResearchItem]:

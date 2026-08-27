@@ -46,7 +46,7 @@ email_preferences:
 
 alert_thresholds:
   minimum_score: 6.5 # Minimum score to store/consider
-  daily_digest_min_score: 7.5 # Score threshold for daily email
+  daily_digest_min_score: 7.0 # Score threshold for daily email
   weekly_digest_min_score: 6.8 # Score threshold for weekly digest
   urgent_alert_min_score: 9.0 # Immediate alert threshold
   daily_limit: 10 # Max items in daily email

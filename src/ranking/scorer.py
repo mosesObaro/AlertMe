@@ -2,7 +2,7 @@
 
 import datetime
 import re
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Tuple
 from dateutil import parser as date_parser
 from src.models import ResearchItem, ScoreBreakdown, ItemType, CredibilityTier
 from src.utils.config_loader import ConfigManager
@@ -66,9 +66,19 @@ class RelevanceScorer:
         item.score = breakdown
         return breakdown
 
-    def _compute_topic_score(self, item: ResearchItem, reasons: List[str]) -> tuple:
-        title_lower = item.title.lower()
-        abstract_lower = item.abstract.lower()
+    @staticmethod
+    def _matches_topic_in_text(topic: str, text: str) -> bool:
+        t_low = topic.strip().lower()
+        if not t_low or not text:
+            return False
+        # For short acronyms/words, require word boundaries to avoid false positives (e.g. "mec" in "mechanism")
+        if len(t_low) <= 4 or " " not in t_low:
+            return bool(re.search(r"(?<!\w)" + re.escape(t_low) + r"(?!\w)", text))
+        return t_low in text
+
+    def _compute_topic_score(self, item: ResearchItem, reasons: List[str]) -> Tuple[float, List[str]]:
+        title_lower = (item.title or "").lower()
+        abstract_lower = (item.abstract or "").lower()
         combined_text = f"{title_lower} {abstract_lower}"
 
         primary_topics = self.config.primary_topics
@@ -82,25 +92,22 @@ class RelevanceScorer:
 
         # Check Primary Topics
         for topic in primary_topics:
-            t_low = topic.lower()
-            if t_low in title_lower:
+            if self._matches_topic_in_text(topic, title_lower):
                 primary_matches.append(f"{topic} (Title)")
                 matched.append(topic)
-            elif t_low in abstract_lower:
+            elif self._matches_topic_in_text(topic, abstract_lower):
                 primary_matches.append(f"{topic} (Abstract)")
                 matched.append(topic)
 
         # Check Specific Research Sub-Topics
         for topic in research_topics:
-            t_low = topic.lower()
-            if t_low in title_lower or t_low in abstract_lower:
+            if self._matches_topic_in_text(topic, title_lower) or self._matches_topic_in_text(topic, abstract_lower):
                 research_matches.append(topic)
                 matched.append(topic)
 
         # Check Secondary Topics
         for topic in secondary_topics:
-            t_low = topic.lower()
-            if t_low in title_lower or t_low in abstract_lower:
+            if self._matches_topic_in_text(topic, title_lower) or self._matches_topic_in_text(topic, abstract_lower):
                 secondary_matches.append(topic)
                 matched.append(topic)
 

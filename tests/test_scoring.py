@@ -98,3 +98,17 @@ def test_phd_opportunity_boost(scorer):
     breakdown = scorer.score_item(item)
     assert breakdown.phd_boost > 0
     assert any("PhD / Fellowship Opportunity" in r for r in breakdown.reasons)
+
+
+def test_acronym_word_boundary_avoids_substring_collision(scorer):
+    """Test that short acronyms like MEC do not trigger on words like mechanism or mechanical."""
+    item = ResearchItem(
+        title="Biochemical Mechanisms of Cell Division",
+        url="https://example.com/bio",
+        source="Biology Journal",
+        abstract="We analyze the enzymatic mechanism of cell regeneration."
+    )
+    breakdown = scorer.score_item(item)
+    assert "MEC (Title)" not in breakdown.reasons
+    assert "MEC (Abstract)" not in breakdown.reasons
+    assert breakdown.topic_score == 0.0
