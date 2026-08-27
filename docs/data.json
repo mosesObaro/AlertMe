@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-08-27",
-    "total_items": 14,
+    "total_items": 16,
     "high_relevance_count": 4,
     "papers_count": 10,
     "conferences_count": 0,
@@ -26,14 +26,14 @@
       "topic": "Computation Offloading",
       "direction": "↑",
       "status": "Rising",
-      "recent_count": 1,
+      "recent_count": 2,
       "historical_count": 0
     },
     {
       "topic": "Resource Allocation",
       "direction": "↑",
       "status": "Rising",
-      "recent_count": 1,
+      "recent_count": 2,
       "historical_count": 0
     },
     {
@@ -409,6 +409,58 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+      "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+      "source": "Semantic Scholar",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Zhenli He",
+        "Ying Guo",
+        "Xiaolong Zhai",
+        "Mingxiong Zhao",
+        "Wei Zhou",
+        "Keqin Li"
+      ],
+      "doi": "10.1109/TCC.2025.3538090",
+      "arxiv_id": null,
+      "publication_date": "2025-01-01",
+      "discovery_date": "2026-08-27",
+      "abstract": "Mobile-Edge Cloud Computing (MECC) plays a crucial role in balancing low-latency services at the edge with the computational capabilities of cloud data centers (DCs). However, many existing studies focus on single-provider settings or limit their analysis to interactions between mobile devices (MDs) and edge servers (ESs), often overlooking the competition that occurs among ESs from different providers. This article introduces an innovative two-layer game framework that captures independent self-interested competition among MDs and ESs, providing a more accurate reflection of multi-vendor environments. Additionally, the framework explores the influence of cloud-edge collaboration on ES competition, offering new insights into these dynamics. The proposed model extends previous research by developing algorithms that optimize task offloading and resource allocation strategies for both MDs and ESs, ensuring the convergence to Nash equilibrium in both layers. Simulation results demonstrate the potential of the framework to improve resource efficiency and system responsiveness in multi-provider MECC environments.",
+      "venue": "IEEE Transactions on Cloud Computing",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_9cb0244267a28a69",
+      "score": {
+        "topic_score": 3.6,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.3,
+        "matched_topics": [
+          "Computation Offloading",
+          "Cloud Computing",
+          "Resource Allocation"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Computation Offloading (Title)",
+          "✓ Key research area match: Computation Offloading, Resource Allocation (+0.8)",
+          "✓ Tier 1 Academic/Standards source: Semantic Scholar (+2.5)",
+          "• Published >30d ago (603d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "citation_count": 18
+      }
+    },
+    {
       "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
       "url": "http://arxiv.org/abs/2608.26040v1",
       "source": "arXiv",
@@ -444,9 +496,9 @@
         "negative_penalty": 0.0,
         "final_score": 7.2,
         "matched_topics": [
+          "6G",
           "Edge AI",
-          "IoT",
-          "6G"
+          "IoT"
         ],
         "reasons": [
           "✓ Primary topic match: Edge AI (Abstract)",
@@ -495,11 +547,10 @@
         "negative_penalty": 0.0,
         "final_score": 6.9,
         "matched_topics": [
-          "Edge AI",
-          "MEC"
+          "Edge AI"
         ],
         "reasons": [
-          "✓ Primary topic match: Edge AI (Abstract), MEC (Abstract)",
+          "✓ Primary topic match: Edge AI (Abstract)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
           "✓ Published within last week (5d ago) (+1.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
@@ -543,8 +594,8 @@
         "negative_penalty": 0.0,
         "final_score": 6.8,
         "matched_topics": [
-          "Edge Computing",
-          "Federated Learning"
+          "Federated Learning",
+          "Edge Computing"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
@@ -556,69 +607,8 @@
       "raw_metadata": {}
     },
     {
-      "title": "Minimising mutation load as a mechanism for low-dose hyper-radiosensitivity and induced radioresistance",
-      "url": "https://doi.org/10.1038/s41598-026-65215-y",
-      "source": "OpenAlex",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "paper",
-      "authors": [
-        "Szabolcs Polgár",
-        "Balázs G. Madas"
-      ],
-      "doi": "10.1038/s41598-026-65215-y",
-      "arxiv_id": null,
-      "publication_date": "2026-08-25",
-      "discovery_date": "2026-08-27",
-      "abstract": "Abstract Low-dose hyper-radiosensitivity (HRS) and induced radioresistance (IRR) are unexpected features of cellular survival curves that challenge classical radiobiological models. While often interpreted phenomenologically, their underlying biological purpose remains unclear. Here we propose that these effects reflect an evolved strategy by which tissues minimise mutational burden through context-dependent cell elimination. We introduce the Minimum Mutation Load (MML) model, a mechanistic framework in which irradiated cells assess their survival based on local intercellular signals that reflect neighbourhood damage. This cooperative behaviour balances the benefit of removing highly damaged cells with the mutational cost of their replacement. Using a curated dataset of 99 clonogenic survival experiments, we show that the MML model replicates key features of HRS and IRR across diverse conditions, with an average adjusted R² of 0.74, and performs comparably to the established Induced Repair (IR) model. Unlike the IR model, which is phenomenological, the MML model provides biologically interpretable parameters with independent theoretical grounding. The model suggests that mutation minimisation may be an organising principle of tissue homeostasis. These findings support a new conceptual framework in which tissue-level cooperation, rather than purely cell-intrinsic responses, governs somatic maintenance and cancer suppression.",
-      "venue": "Scientific Reports",
-      "topics": [
-        "Radioresistance",
-        "Radiosensitivity",
-        "Mechanism (biology)",
-        "Mutation",
-        "Radiation tolerance",
-        "Biology",
-        "Genetics",
-        "Physics",
-        "Irradiation",
-        "Nuclear physics",
-        "Radiation therapy",
-        "Medicine",
-        "Internal medicine",
-        "Cell culture",
-        "Gene",
-        "Quantum mechanics"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_c4aedfd6bb805ae5",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.8,
-        "matched_topics": [
-          "MEC"
-        ],
-        "reasons": [
-          "✓ Primary topic match: MEC (Title)",
-          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "cited_by_count": 1
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Amir-Yazdanpanah/benchmark-vc707 (★ 0)",
-      "url": "https://github.com/Amir-Yazdanpanah/benchmark-vc707",
+      "title": "[Code/Benchmark] Amir-Yazdanpanah/benchmark-virtex-7 (★ 0)",
+      "url": "https://github.com/Amir-Yazdanpanah/benchmark-virtex-7",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
@@ -636,7 +626,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_81af32a4580847da",
+      "id": "item_082d3ab6797ffb5b",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -662,26 +652,26 @@
       }
     },
     {
-      "title": "[Code/Benchmark] AnanyaMangaj/classification-model-benchmarking (★ 1)",
-      "url": "https://github.com/AnanyaMangaj/classification-model-benchmarking",
+      "title": "[Code/Benchmark] Eternal-Infamy/eternal-infamy-benchmarks.github.io (★ 0)",
+      "url": "https://github.com/Eternal-Infamy/eternal-infamy-benchmarks.github.io",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "AnanyaMangaj"
+        "Eternal-Infamy"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-08-26",
+      "publication_date": "2026-08-27",
       "discovery_date": "2026-08-27",
-      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_74cf5505229c61cd",
+      "id": "item_fa1bf3f9417bf2ef",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -696,13 +686,103 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
           "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
           "✓ Open Benchmark / Research Artifact (+0.5)"
         ]
       },
       "intelligence": null,
       "raw_metadata": {
-        "stars": 1,
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] Agentic-AI-for-EIC/eic-streaming-tracking-benchmark (★ 0)",
+      "url": "https://github.com/Agentic-AI-for-EIC/eic-streaming-tracking-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "Agentic-AI-for-EIC"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-27",
+      "discovery_date": "2026-08-27",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_5469afbbca9eedff",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] stonescoding/rna-virus-benchmark (★ 0)",
+      "url": "https://github.com/stonescoding/rna-virus-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "stonescoding"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-27",
+      "discovery_date": "2026-08-27",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_8ad41491c3a53564",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
         "forks": 0
       }
     },

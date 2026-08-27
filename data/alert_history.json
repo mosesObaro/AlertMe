@@ -227,5 +227,109 @@
       "citation_count": 19
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+    "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+    "source": "Semantic Scholar",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Zhenli He",
+      "Ying Guo",
+      "Xiaolong Zhai",
+      "Mingxiong Zhao",
+      "Wei Zhou",
+      "Keqin Li"
+    ],
+    "doi": "10.1109/TCC.2025.3538090",
+    "arxiv_id": null,
+    "publication_date": "2025-01-01",
+    "discovery_date": "2026-08-27",
+    "abstract": "Mobile-Edge Cloud Computing (MECC) plays a crucial role in balancing low-latency services at the edge with the computational capabilities of cloud data centers (DCs). However, many existing studies focus on single-provider settings or limit their analysis to interactions between mobile devices (MDs) and edge servers (ESs), often overlooking the competition that occurs among ESs from different providers. This article introduces an innovative two-layer game framework that captures independent self-interested competition among MDs and ESs, providing a more accurate reflection of multi-vendor environments. Additionally, the framework explores the influence of cloud-edge collaboration on ES competition, offering new insights into these dynamics. The proposed model extends previous research by developing algorithms that optimize task offloading and resource allocation strategies for both MDs and ESs, ensuring the convergence to Nash equilibrium in both layers. Simulation results demonstrate the potential of the framework to improve resource efficiency and system responsiveness in multi-provider MECC environments.",
+    "venue": "IEEE Transactions on Cloud Computing",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_9cb0244267a28a69",
+    "score": {
+      "topic_score": 3.6,
+      "credibility_score": 2.5,
+      "recency_score": 0.2,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.3,
+      "matched_topics": [
+        "Computation Offloading",
+        "Cloud Computing",
+        "Resource Allocation"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Computation Offloading (Title)",
+        "✓ Key research area match: Computation Offloading, Resource Allocation (+0.8)",
+        "✓ Tier 1 Academic/Standards source: Semantic Scholar (+2.5)",
+        "• Published >30d ago (603d ago) (+0.2)",
+        "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+      ]
+    },
+    "intelligence": null,
+    "raw_metadata": {
+      "citation_count": 18
+    },
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
+    "url": "http://arxiv.org/abs/2608.26040v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Navaneetha Krishnan Kamalakannan",
+      "Harinisri Velmurugan"
+    ],
+    "doi": null,
+    "arxiv_id": "2608.26040v1",
+    "publication_date": "2026-08-26",
+    "discovery_date": "2026-08-27",
+    "abstract": "Decentralized wireless collectives including vehicular swarms, IoT clusters, and edge AI networks require communication protocols that maintain robustness under dynamic topologies and heterogeneous link quality. While Random Linear Network Coding (RLNC) provides algebraic resilience against packet erasures, its performance degrades significantly when peers exhibit diverse channel conditions. This paper presents Adaptive Peer Clustering with Hierarchical RLNC (APC-RLNC), a system that dynamically groups peers by exponentially weighted moving average (EWMA) reliability metrics and applies multi-tier network coding within and across clusters. We formalize the clustering optimization problem, derive closed-form decoding probability bounds for Markov erasure channels, and prove O(sqrt(T)) regret for online reconfiguration under the Follow-the-Regularized-Leader (FTRL) framework. Our implementation includes both a high-fidelity network simulator and a proof-of-concept testbed deployment on Jetson Nano edge devices. Evaluation across diverse scenarios including high-mobility vehicular networks, burst-error channels, and adversarial interference demonstrates 5.2-9.8 percentage-point packet delivery ratio (PDR) improvements, 10-23% latency reductions, and up to 30% higher node retention compared to state-of-the-art baselines. The system exhibits linear scalability to 500+ nodes and maintains real-time reconfiguration overhead below 3%. APC-RLNC establishes adaptive clustering as a foundational primitive for AI-native 6G wireless systems.",
+    "venue": "arXiv CS",
+    "topics": [
+      "eess.SP",
+      "cs.DC",
+      "cs.IT",
+      "cs.NI"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_84cf3599cac9456a",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "6G",
+        "Edge AI",
+        "IoT"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Abstract)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
