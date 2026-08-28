@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-08-27",
-    "total_items": 16,
+    "last_updated": "2026-08-28",
+    "total_items": 11,
     "high_relevance_count": 4,
-    "papers_count": 10,
+    "papers_count": 9,
     "conferences_count": 0,
     "opportunities_count": 0
   },
@@ -19,22 +19,22 @@
       "topic": "Federated Learning",
       "direction": "↑",
       "status": "Rising",
-      "recent_count": 2,
+      "recent_count": 1,
       "historical_count": 0
     },
     {
       "topic": "Computation Offloading",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
-      "historical_count": 0
+      "direction": "→",
+      "status": "Steady",
+      "recent_count": 1,
+      "historical_count": 1
     },
     {
       "topic": "Resource Allocation",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
-      "historical_count": 0
+      "direction": "→",
+      "status": "Steady",
+      "recent_count": 1,
+      "historical_count": 1
     },
     {
       "topic": "TinyML",
@@ -458,7 +458,8 @@
       "intelligence": null,
       "raw_metadata": {
         "citation_count": 18
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
@@ -508,7 +509,8 @@
         ]
       },
       "intelligence": null,
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -527,7 +529,7 @@
       "doi": null,
       "arxiv_id": "2608.21910v1",
       "publication_date": "2026-08-22",
-      "discovery_date": "2026-08-27",
+      "discovery_date": "2026-08-28",
       "abstract": "Latency-sensitive edge AI services must balance strict deadlines, output quality, and limited compute and energy budgets. However, static CPU provisioning wastes resources because inference cost varies substantially across inputs, model variants, and runtime conditions. We present PRISM, a prediction-guided runtime framework that jointly selects model variants and CPU allocations for containerized edge microservices. Using container-level energy monitoring and lightweight regression models, PRISM adapts each pipeline stage in place and minimizes predicted CPU-package energy under deadline, resource, and offline model-level Quality of Result (QoR) constraints. We evaluate PRISM on more than 52,000 requests in an Automatic License Plate Recognition (ALPR) pipeline with detection and recognition stages. For detection, PRISM reduces energy consumption by 36 % compared to the strongest static configuration while preserving a comparable success rate and using less than half of the average CPU allocation. For recognition, it reaches near-static-best performance with lower average CPU allocation. These results show that predictive in-place adaptation is a practical mechanism for making time-sensitive AI microservice pipelines more energy-efficient at the edge.",
       "venue": "arXiv CS",
       "topics": [
@@ -552,7 +554,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Abstract)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (5d ago) (+1.2)",
+          "✓ Published within last week (6d ago) (+1.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -576,7 +578,7 @@
       "doi": "10.1504/ijcis.2028.10073919",
       "arxiv_id": null,
       "publication_date": "2028",
-      "discovery_date": "2026-08-27",
+      "discovery_date": "2026-08-28",
       "abstract": "",
       "venue": "International Journal of Critical Infrastructures",
       "topics": [],
@@ -607,268 +609,6 @@
       "raw_metadata": {}
     },
     {
-      "title": "[Code/Benchmark] Amir-Yazdanpanah/benchmark-virtex-7 (★ 0)",
-      "url": "https://github.com/Amir-Yazdanpanah/benchmark-virtex-7",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Amir-Yazdanpanah"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-27",
-      "discovery_date": "2026-08-27",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_082d3ab6797ffb5b",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Eternal-Infamy/eternal-infamy-benchmarks.github.io (★ 0)",
-      "url": "https://github.com/Eternal-Infamy/eternal-infamy-benchmarks.github.io",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Eternal-Infamy"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-27",
-      "discovery_date": "2026-08-27",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_fa1bf3f9417bf2ef",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Agentic-AI-for-EIC/eic-streaming-tracking-benchmark (★ 0)",
-      "url": "https://github.com/Agentic-AI-for-EIC/eic-streaming-tracking-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Agentic-AI-for-EIC"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-27",
-      "discovery_date": "2026-08-27",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_5469afbbca9eedff",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] stonescoding/rna-virus-benchmark (★ 0)",
-      "url": "https://github.com/stonescoding/rna-virus-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "stonescoding"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-27",
-      "discovery_date": "2026-08-27",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_8ad41491c3a53564",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "Smart Industrial Frameworks Integrating Physics-Informed Machine Learning and Additive Manufacturing for High-Performance Engineering",
-      "url": "https://doi.org/10.60087/jaigs.v10i01.492",
-      "source": "OpenAlex",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "paper",
-      "authors": [
-        "Fahmina Afrin"
-      ],
-      "doi": "10.60087/jaigs.v10i01.492",
-      "arxiv_id": null,
-      "publication_date": "2026-08-26",
-      "discovery_date": "2026-08-27",
-      "abstract": "Physics-informed machine learning, digital twins, and additive manufacturing are a new direction for the creation of intelligent, adaptive, and high-performance engineering systems that are being integrated into a smart industrial framework. The strategy combines multimodal sensing, data fusion, physics-based modeling, machine learning, process optimization, and closed-loop control, and addresses the challenges of enhancing manufacturing performance across the product life cycle. In physics-informed machine learning, physics principles are incorporated into the data-driven models, which enhances prediction accuracy, decreases the need for large data sets, and facilitates generalization from model to model for different process conditions. Digital twins are virtual models of AM systems that support real-time monitoring and anomaly detection, predictive analysis, virtual experiments, and adaptive process control. The combination of edge computing and intelligent controllers enhances quick decision-making processes during the fabrication process. Aerospace, defense, biomedical engineering, and advanced composite manufacturing are just a few of the applications that show promise for achieving better dimensional accuracy, defect reduction, lightweight design, energy efficiency, material utilization, and process traceability. Industrial deployment is, however, hindered by the lack of high-quality datasets, class imbalance, limited model transferability, interoperability, high computational requirements, cybersecurity, certification, and lifecycle governance. For scalable implementation, standardized data formats, open architectures, benchmark datasets, federated learning, hybrid modeling, and rigorous validation procedures are all important. In general, physics-based informed intelligence and adaptive AM create a promising basis for reliable, efficient, traceable, and environmentally friendly high-performance engineering.",
-      "venue": "Journal of Artificial Intelligence General science (JAIGS) ISSN 3006-4023",
-      "topics": [
-        "Digital manufacturing",
-        "Machine learning",
-        "Process (computing)",
-        "Computer science",
-        "Artificial intelligence",
-        "Benchmark (surveying)",
-        "Software deployment",
-        "Manufacturing engineering",
-        "Systems engineering",
-        "Scalability",
-        "Smart manufacturing",
-        "Industrial engineering",
-        "Machine tool",
-        "Anomaly detection",
-        "Computer-integrated manufacturing",
-        "Industry 4.0",
-        "Engineering",
-        "Process development execution system",
-        "Data modeling",
-        "Virtual machine",
-        "Predictive modelling",
-        "Enhanced Data Rates for GSM Evolution",
-        "Generalization",
-        "Process modeling",
-        "Product (mathematics)",
-        "Software engineering",
-        "Interpretability",
-        "Class (philosophy)",
-        "Big data",
-        "Predictive maintenance",
-        "Industrial production",
-        "Machining",
-        "New product development",
-        "Work in process",
-        "Manufacturing"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_139c64ae20889ef2",
-      "score": {
-        "topic_score": 2.6,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.6,
-        "matched_topics": [
-          "Energy Efficiency",
-          "Edge Computing",
-          "Federated Learning"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Key research area match: Energy Efficiency (+0.4)",
-          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "cited_by_count": 0
-      }
-    },
-    {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
       "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
       "source": "Linux Foundation / LF Edge Blog",
@@ -880,7 +620,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-08-27",
+      "discovery_date": "2026-08-28",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -903,7 +643,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (71d ago) (+0.2)",
+          "• Published >30d ago (72d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -923,7 +663,7 @@
       "doi": null,
       "arxiv_id": "2605.27599v3",
       "publication_date": "2026-05-26",
-      "discovery_date": "2026-08-27",
+      "discovery_date": "2026-08-28",
       "abstract": "Agentic AI workloads - where a single user goal triggers multi-step orchestration, tool calls, retries, and failure recovery - are being targeted for edge deployment, with NVIDIA, Dell, HP, ASUS, MSI, Acer, and Gigabyte all shipping GB10-based desktop AI systems in 2026. Prior work shows orchestration structure dominates agentic energy cost and CPU-side processing accounts for up to 44% of total dynamic energy. We report a systematic energy-observability audit of the ASUS Ascent GX10 (GB10 SoC) and find that the platform exposes no CPU energy counter, no INA power-rail monitor, no IPMI/BMC, and no SCMI powercap protocol through any supported software interface. The only on-device energy telemetry is instantaneous GPU power via NVML. We further discover that the MediaTek firmware already computes per-rail energy internally via an undocumented ACPI interface (SPBM), but NVIDIA states there are \"no plans to expose CPU rail information.\" On-device per-process energy attribution - as performed on x86 via RAPL - is therefore not reproducible on this platform through supported interfaces. We formalize a hardware requirements specification for energy-attributed AI, propose an interim calibration bridge for per-domain energy decomposition - confirmed on the Acer Veriton GN100 where CPU energy accumulators are live - and identify a standards-track path via SCMI powercap. Our findings motivate the low-carbon computing community to demand energy observability as a first-class hardware requirement.",
       "venue": "arXiv CS",
       "topics": [
@@ -952,7 +692,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "• Published >30d ago (93d ago) (+0.2)",
+          "• Published >30d ago (94d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -971,7 +711,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-08-27",
+      "discovery_date": "2026-08-28",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -994,7 +734,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (161d ago) (+0.2)",
+          "• Published >30d ago (162d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

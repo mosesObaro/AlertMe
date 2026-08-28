@@ -10,22 +10,22 @@
     "topic": "Federated Learning",
     "direction": "↑",
     "status": "Rising",
-    "recent_count": 2,
+    "recent_count": 1,
     "historical_count": 0
   },
   {
     "topic": "Computation Offloading",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
-    "historical_count": 0
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 1,
+    "historical_count": 1
   },
   {
     "topic": "Resource Allocation",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
-    "historical_count": 0
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 1,
+    "historical_count": 1
   },
   {
     "topic": "TinyML",
