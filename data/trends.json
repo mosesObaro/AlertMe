@@ -10,7 +10,7 @@
     "topic": "Federated Learning",
     "direction": "↑",
     "status": "Rising",
-    "recent_count": 1,
+    "recent_count": 2,
     "historical_count": 0
   },
   {
@@ -29,6 +29,13 @@
   },
   {
     "topic": "TinyML",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 1,
+    "historical_count": 0
+  },
+  {
+    "topic": "Split Learning",
     "direction": "↑",
     "status": "Rising",
     "recent_count": 1,
@@ -57,13 +64,6 @@
   },
   {
     "topic": "Edge Inference",
-    "direction": "→",
-    "status": "Stable",
-    "recent_count": 0,
-    "historical_count": 0
-  },
-  {
-    "topic": "Split Learning",
     "direction": "→",
     "status": "Stable",
     "recent_count": 0,

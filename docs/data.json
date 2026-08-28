@@ -1,9 +1,9 @@
 {
   "meta": {
     "last_updated": "2026-08-28",
-    "total_items": 11,
+    "total_items": 14,
     "high_relevance_count": 4,
-    "papers_count": 9,
+    "papers_count": 10,
     "conferences_count": 0,
     "opportunities_count": 0
   },
@@ -19,7 +19,7 @@
       "topic": "Federated Learning",
       "direction": "↑",
       "status": "Rising",
-      "recent_count": 1,
+      "recent_count": 2,
       "historical_count": 0
     },
     {
@@ -38,6 +38,13 @@
     },
     {
       "topic": "TinyML",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 1,
+      "historical_count": 0
+    },
+    {
+      "topic": "Split Learning",
       "direction": "↑",
       "status": "Rising",
       "recent_count": 1,
@@ -66,13 +73,6 @@
     },
     {
       "topic": "Edge Inference",
-      "direction": "→",
-      "status": "Stable",
-      "recent_count": 0,
-      "historical_count": 0
-    },
-    {
-      "topic": "Split Learning",
       "direction": "→",
       "status": "Stable",
       "recent_count": 0,
@@ -596,8 +596,8 @@
         "negative_penalty": 0.0,
         "final_score": 6.8,
         "matched_topics": [
-          "Federated Learning",
-          "Edge Computing"
+          "Edge Computing",
+          "Federated Learning"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
@@ -607,6 +607,151 @@
       },
       "intelligence": null,
       "raw_metadata": {}
+    },
+    {
+      "title": "[Code/Benchmark] Pukujan/retrieval-benchmarker (★ 0)",
+      "url": "https://github.com/Pukujan/retrieval-benchmarker",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "Pukujan"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-28",
+      "discovery_date": "2026-08-28",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_dd38473dbc12deff",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] valeriocardoso/harness-benchmark (★ 0)",
+      "url": "https://github.com/valeriocardoso/harness-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "valeriocardoso"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-28",
+      "discovery_date": "2026-08-28",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_892c957e24152a05",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "CollaFuse: Collaborative Diffusion Models",
+      "url": "https://doi.org/10.1613/jair.1.20934",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Simeon Allmendinger",
+        "Domenique Zipperling",
+        "Lukas Struppek",
+        "Niklas Kühl"
+      ],
+      "doi": "10.1613/jair.1.20934",
+      "arxiv_id": null,
+      "publication_date": "2026-08-27",
+      "discovery_date": "2026-08-28",
+      "abstract": "In the landscape of generative artificial intelligence, diffusion-based models have emerged as a promising method for generating synthetic images. However, the application of diffusion models poses numerous challenges, particularly concerning data availability, computational requirements, and privacy. Traditional approaches to address these shortcomings, like federated learning, often impose significant computational burdens on individual clients, especially those with constrained resources. In response to these challenges, we introduce the novel approach CollaFuse for distributed collaborative diffusion models inspired by split learning. Our approach facilitates collaborative training of diffusion models while alleviating client computational burdens during image synthesis. This reduced computational burden is achieved by retaining data and computationally inexpensive processes locally at each client while outsourcing the computationally expensive processes to shared, more efficient server resources. Through experiments on the common datasets CelebA, CIFAR-10, and Animals-withAttributes2, our approach demonstrates enhanced performance while decreasing information disclosure as it reduces the necessity for sharing raw data. These capabilities hold significant potential across various application areas, including the design of edge computing solutions. Thus, our work advances distributed machine learning by contributing to the evolution of collaborative diffusion models.",
+      "venue": "Journal of Artificial Intelligence Research",
+      "topics": [
+        "Diffusion",
+        "Computer science",
+        "Thermodynamics",
+        "Physics"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_74d72a9eb2ea6ed1",
+      "score": {
+        "topic_score": 2.6,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.6,
+        "matched_topics": [
+          "Distributed Machine Learning",
+          "Edge Computing",
+          "Federated Learning",
+          "Split Learning"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Key research area match: Split Learning (+0.4)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
     },
     {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
