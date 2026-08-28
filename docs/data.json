@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-08-28",
-    "total_items": 14,
+    "total_items": 13,
     "high_relevance_count": 4,
     "papers_count": 10,
     "conferences_count": 0,
@@ -596,8 +596,8 @@
         "negative_penalty": 0.0,
         "final_score": 6.8,
         "matched_topics": [
-          "Edge Computing",
-          "Federated Learning"
+          "Federated Learning",
+          "Edge Computing"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
@@ -609,26 +609,26 @@
       "raw_metadata": {}
     },
     {
-      "title": "[Code/Benchmark] Pukujan/retrieval-benchmarker (★ 0)",
-      "url": "https://github.com/Pukujan/retrieval-benchmarker",
+      "title": "[Code/Benchmark] dtcxzyw/llvm-codegen-benchmark (★ 13)",
+      "url": "https://github.com/dtcxzyw/llvm-codegen-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "Pukujan"
+        "dtcxzyw"
       ],
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-08-28",
       "discovery_date": "2026-08-28",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "abstract": "Open source edge computing repository. (Stars: 13, Forks: 3)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_dd38473dbc12deff",
+      "id": "item_0f762468ae8667f2",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -649,53 +649,8 @@
       },
       "intelligence": null,
       "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] valeriocardoso/harness-benchmark (★ 0)",
-      "url": "https://github.com/valeriocardoso/harness-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "valeriocardoso"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-08-28",
-      "discovery_date": "2026-08-28",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_892c957e24152a05",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
+        "stars": 13,
+        "forks": 3
       }
     },
     {
@@ -736,9 +691,9 @@
         "negative_penalty": 0.0,
         "final_score": 6.6,
         "matched_topics": [
+          "Federated Learning",
           "Distributed Machine Learning",
           "Edge Computing",
-          "Federated Learning",
           "Split Learning"
         ],
         "reasons": [
