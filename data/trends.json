@@ -35,13 +35,6 @@
     "historical_count": 0
   },
   {
-    "topic": "Split Learning",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 1,
-    "historical_count": 0
-  },
-  {
     "topic": "6G + Edge",
     "direction": "→",
     "status": "Stable",
@@ -64,6 +57,13 @@
   },
   {
     "topic": "Edge Inference",
+    "direction": "→",
+    "status": "Stable",
+    "recent_count": 0,
+    "historical_count": 0
+  },
+  {
+    "topic": "Split Learning",
     "direction": "→",
     "status": "Stable",
     "recent_count": 0,

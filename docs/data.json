@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-08-29",
-    "total_items": 12,
+    "last_updated": "2026-08-30",
+    "total_items": 15,
     "high_relevance_count": 4,
     "papers_count": 10,
     "conferences_count": 0,
@@ -44,13 +44,6 @@
       "historical_count": 0
     },
     {
-      "topic": "Split Learning",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 1,
-      "historical_count": 0
-    },
-    {
       "topic": "6G + Edge",
       "direction": "→",
       "status": "Stable",
@@ -73,6 +66,13 @@
     },
     {
       "topic": "Edge Inference",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Split Learning",
       "direction": "→",
       "status": "Stable",
       "recent_count": 0,
@@ -513,55 +513,6 @@
       "alert_mode": "daily"
     },
     {
-      "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
-      "url": "http://arxiv.org/abs/2608.21910v1",
-      "source": "arXiv",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "preprint",
-      "authors": [
-        "Uwe Gropengießer",
-        "Thomas Reuter",
-        "Dominik Schön",
-        "Osama Abboud",
-        "Xun Xiao",
-        "Max Mühlhäuser"
-      ],
-      "doi": null,
-      "arxiv_id": "2608.21910v1",
-      "publication_date": "2026-08-22",
-      "discovery_date": "2026-08-29",
-      "abstract": "Latency-sensitive edge AI services must balance strict deadlines, output quality, and limited compute and energy budgets. However, static CPU provisioning wastes resources because inference cost varies substantially across inputs, model variants, and runtime conditions. We present PRISM, a prediction-guided runtime framework that jointly selects model variants and CPU allocations for containerized edge microservices. Using container-level energy monitoring and lightweight regression models, PRISM adapts each pipeline stage in place and minimizes predicted CPU-package energy under deadline, resource, and offline model-level Quality of Result (QoR) constraints. We evaluate PRISM on more than 52,000 requests in an Automatic License Plate Recognition (ALPR) pipeline with detection and recognition stages. For detection, PRISM reduces energy consumption by 36 % compared to the strongest static configuration while preserving a comparable success rate and using less than half of the average CPU allocation. For recognition, it reaches near-static-best performance with lower average CPU allocation. These results show that predictive in-place adaptation is a practical mechanism for making time-sensitive AI microservice pipelines more energy-efficient at the edge.",
-      "venue": "arXiv CS",
-      "topics": [
-        "cs.DC"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "arxiv_5b4d9246fe00ac0b",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.2,
-        "stage_boost": 1.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.9,
-        "matched_topics": [
-          "Edge AI"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge AI (Abstract)",
-          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (7d ago) (+1.2)",
-          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {}
-    },
-    {
       "title": "Enhancing Real Time Decision Intelligence through Federated Learning Integration in Edge Computing Networks",
       "url": "https://doi.org/10.1504/ijcis.2028.10073919",
       "source": "Crossref",
@@ -578,7 +529,7 @@
       "doi": "10.1504/ijcis.2028.10073919",
       "arxiv_id": null,
       "publication_date": "2028",
-      "discovery_date": "2026-08-29",
+      "discovery_date": "2026-08-30",
       "abstract": "",
       "venue": "International Journal of Critical Infrastructures",
       "topics": [],
@@ -609,34 +560,192 @@
       "raw_metadata": {}
     },
     {
-      "title": "CollaFuse: Collaborative Diffusion Models",
-      "url": "https://doi.org/10.1613/jair.1.20934",
+      "title": "[Code/Benchmark] sjarmak/omni-benchmark (★ 0)",
+      "url": "https://github.com/sjarmak/omni-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "sjarmak"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-30",
+      "discovery_date": "2026-08-30",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_4d8c89c48681f76d",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] 065024-Ditsya/agentic-ai-superset-benchmark (★ 0)",
+      "url": "https://github.com/065024-Ditsya/agentic-ai-superset-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "065024-Ditsya"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-30",
+      "discovery_date": "2026-08-30",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_6f99f81d7938707a",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] gbbarra/llm-evidence-extraction-benchmark-ptbr (★ 0)",
+      "url": "https://github.com/gbbarra/llm-evidence-extraction-benchmark-ptbr",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "gbbarra"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-08-30",
+      "discovery_date": "2026-08-30",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_d2c9f41da09a3f48",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "SCALABLE SMART CITY PLATFORM USING IOT AND CLOUD COMPUTING",
+      "url": "https://doi.org/10.5281/zenodo.22161331",
       "source": "OpenAlex",
       "source_tier": "tier1_academic_standards",
       "item_type": "paper",
       "authors": [
-        "Simeon Allmendinger",
-        "Domenique Zipperling",
-        "Lukas Struppek",
-        "Niklas Kühl"
+        "1*Mustapha Malami Idina, 2Abubakar Jibo Magayaki, 3Mubarak Jibril Yeldu"
       ],
-      "doi": "10.1613/jair.1.20934",
+      "doi": "10.5281/zenodo.22161331",
       "arxiv_id": null,
-      "publication_date": "2026-08-27",
-      "discovery_date": "2026-08-29",
-      "abstract": "In the landscape of generative artificial intelligence, diffusion-based models have emerged as a promising method for generating synthetic images. However, the application of diffusion models poses numerous challenges, particularly concerning data availability, computational requirements, and privacy. Traditional approaches to address these shortcomings, like federated learning, often impose significant computational burdens on individual clients, especially those with constrained resources. In response to these challenges, we introduce the novel approach CollaFuse for distributed collaborative diffusion models inspired by split learning. Our approach facilitates collaborative training of diffusion models while alleviating client computational burdens during image synthesis. This reduced computational burden is achieved by retaining data and computationally inexpensive processes locally at each client while outsourcing the computationally expensive processes to shared, more efficient server resources. Through experiments on the common datasets CelebA, CIFAR-10, and Animals-withAttributes2, our approach demonstrates enhanced performance while decreasing information disclosure as it reduces the necessity for sharing raw data. These capabilities hold significant potential across various application areas, including the design of edge computing solutions. Thus, our work advances distributed machine learning by contributing to the evolution of collaborative diffusion models.",
-      "venue": "Journal of Artificial Intelligence Research",
+      "publication_date": "2026-09-01",
+      "discovery_date": "2026-08-30",
+      "abstract": "Rapid urbanization has significantly increased pressure on transportation systems, healthcare, energy distribution, environmental monitoring, waste management, public safety, and other municipal services. Traditional city management approaches are increasingly unable to process the enormous volume of heterogeneous data generated by modern urban environments. The integration of the Internet of Things (IoT) with cloud computing provides an effective solution for developing scalable smart city platforms capable of supporting real-time monitoring, intelligent decision-making, and efficient resource management. This paper presents a scalable cloud-enabled smart city architecture that integrates IoT sensing devices, edge gateways, cloud infrastructure, big data analytics, and artificial intelligence to support multiple smart city services within a unified platform. The proposed architecture employs a layered framework consisting of perception, communication, edge computing, cloud services, data analytics, application, and security layers to improve scalability, interoperability, reliability, and service availability. The study critically reviews recent advances in IoT cloud integration, identifies major challenges including security, privacy, latency, interoperability, and energy efficiency, and proposes practical strategies for addressing these limitations through containerization, micro services,edge cloud collaboration, and AI-driven resource orchestration. The proposed framework demonstrates how cloud computing can dynamically allocate computational resources to accommodate growing IoT deployments while maintaining quality of service. The paper concludes that scalable IoT-cloud platforms represent the foundation for next-generation smart cities and recommends future integration with digital twins, federated learning, block chain, and 6G communication technologies for improved sustainability and resilience.",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
       "topics": [
-        "Diffusion",
+        "Enhanced Data Rates for GSM Evolution",
+        "Resource efficiency",
+        "Process (computing)",
+        "Distributed computing",
+        "Edge device",
+        "Smart objects",
+        "Cloud computing security",
+        "Computer network",
+        "Efficient energy use",
+        "Computer security",
+        "Edge computing",
+        "Resource management (computing)",
+        "Internet of Things",
+        "Smart city",
+        "Big data",
+        "Data science",
+        "Cloud computing",
+        "The Internet",
+        "Scalability",
+        "Block (permutation group theory)",
+        "Service (business)",
+        "Wireless sensor network",
         "Computer science",
-        "Thermodynamics",
-        "Physics"
+        "Urbanization",
+        "Quality of service",
+        "Service-oriented architecture",
+        "Multitier architecture",
+        "Energy consumption",
+        "Resource (disambiguation)",
+        "Architecture"
       ],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "doi_74d72a9eb2ea6ed1",
+      "id": "doi_712654abd00274db",
       "score": {
         "topic_score": 2.6,
         "credibility_score": 2.5,
@@ -646,22 +755,74 @@
         "negative_penalty": 0.0,
         "final_score": 6.6,
         "matched_topics": [
-          "Split Learning",
+          "IoT",
+          "Edge Computing",
           "Federated Learning",
-          "Distributed Machine Learning",
-          "Edge Computing"
+          "Internet of Things",
+          "Cloud Computing",
+          "Energy Efficiency",
+          "6G"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Key research area match: Split Learning (+0.4)",
+          "✓ Key research area match: Energy Efficiency (+0.4)",
           "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)"
+          "✓ Upcoming date: 2026-09-01 (+1.5)"
         ]
       },
       "intelligence": null,
       "raw_metadata": {
         "cited_by_count": 0
       }
+    },
+    {
+      "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
+      "url": "http://arxiv.org/abs/2608.21910v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Uwe Gropengießer",
+        "Thomas Reuter",
+        "Dominik Schön",
+        "Osama Abboud",
+        "Xun Xiao",
+        "Max Mühlhäuser"
+      ],
+      "doi": null,
+      "arxiv_id": "2608.21910v1",
+      "publication_date": "2026-08-22",
+      "discovery_date": "2026-08-30",
+      "abstract": "Latency-sensitive edge AI services must balance strict deadlines, output quality, and limited compute and energy budgets. However, static CPU provisioning wastes resources because inference cost varies substantially across inputs, model variants, and runtime conditions. We present PRISM, a prediction-guided runtime framework that jointly selects model variants and CPU allocations for containerized edge microservices. Using container-level energy monitoring and lightweight regression models, PRISM adapts each pipeline stage in place and minimizes predicted CPU-package energy under deadline, resource, and offline model-level Quality of Result (QoR) constraints. We evaluate PRISM on more than 52,000 requests in an Automatic License Plate Recognition (ALPR) pipeline with detection and recognition stages. For detection, PRISM reduces energy consumption by 36 % compared to the strongest static configuration while preserving a comparable success rate and using less than half of the average CPU allocation. For recognition, it reaches near-static-best performance with lower average CPU allocation. These results show that predictive in-place adaptation is a practical mechanism for making time-sensitive AI microservice pipelines more energy-efficient at the edge.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_5b4d9246fe00ac0b",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 0.8,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Published within last 2 weeks (8d ago) (+0.8)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {}
     },
     {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
@@ -675,7 +836,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-08-29",
+      "discovery_date": "2026-08-30",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -698,7 +859,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (73d ago) (+0.2)",
+          "• Published >30d ago (74d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -718,7 +879,7 @@
       "doi": null,
       "arxiv_id": "2605.27599v3",
       "publication_date": "2026-05-26",
-      "discovery_date": "2026-08-29",
+      "discovery_date": "2026-08-30",
       "abstract": "Agentic AI workloads - where a single user goal triggers multi-step orchestration, tool calls, retries, and failure recovery - are being targeted for edge deployment, with NVIDIA, Dell, HP, ASUS, MSI, Acer, and Gigabyte all shipping GB10-based desktop AI systems in 2026. Prior work shows orchestration structure dominates agentic energy cost and CPU-side processing accounts for up to 44% of total dynamic energy. We report a systematic energy-observability audit of the ASUS Ascent GX10 (GB10 SoC) and find that the platform exposes no CPU energy counter, no INA power-rail monitor, no IPMI/BMC, and no SCMI powercap protocol through any supported software interface. The only on-device energy telemetry is instantaneous GPU power via NVML. We further discover that the MediaTek firmware already computes per-rail energy internally via an undocumented ACPI interface (SPBM), but NVIDIA states there are \"no plans to expose CPU rail information.\" On-device per-process energy attribution - as performed on x86 via RAPL - is therefore not reproducible on this platform through supported interfaces. We formalize a hardware requirements specification for energy-attributed AI, propose an interim calibration bridge for per-domain energy decomposition - confirmed on the Acer Veriton GN100 where CPU energy accumulators are live - and identify a standards-track path via SCMI powercap. Our findings motivate the low-carbon computing community to demand energy observability as a first-class hardware requirement.",
       "venue": "arXiv CS",
       "topics": [
@@ -747,7 +908,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "• Published >30d ago (95d ago) (+0.2)",
+          "• Published >30d ago (96d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -766,7 +927,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-08-29",
+      "discovery_date": "2026-08-30",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -789,7 +950,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (163d ago) (+0.2)",
+          "• Published >30d ago (164d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
