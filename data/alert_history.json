@@ -331,5 +331,53 @@
     "intelligence": null,
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "Enhancing Real Time Decision Intelligence through Federated Learning Integration in Edge Computing Networks",
+    "url": "https://doi.org/10.1504/ijcis.2028.10073919",
+    "source": "Crossref",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "M.S. Bennet Praba",
+      "M.Vinay Kumar",
+      "K.B. Anusha",
+      "Nitin Tiwari",
+      "Nidal Al Said",
+      "K. Kandan"
+    ],
+    "doi": "10.1504/ijcis.2028.10073919",
+    "arxiv_id": null,
+    "publication_date": "2028",
+    "discovery_date": "2026-08-30",
+    "abstract": "",
+    "venue": "International Journal of Critical Infrastructures",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_0110be4434aab043",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 6.8,
+      "matched_topics": [
+        "Edge Computing",
+        "Federated Learning"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title)",
+        "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+        "✓ Upcoming date: 2028 (+1.5)"
+      ]
+    },
+    "intelligence": null,
+    "raw_metadata": {},
+    "alert_mode": "weekly"
   }
 ]
