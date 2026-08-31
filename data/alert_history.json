@@ -379,5 +379,92 @@
     "intelligence": null,
     "raw_metadata": {},
     "alert_mode": "weekly"
+  },
+  {
+    "title": "Bibliometric Analysis of Hybrid Cloud Computing",
+    "url": "https://doi.org/10.58812/wsist.v4i02.3092",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Loso Judijanto"
+    ],
+    "doi": "10.58812/wsist.v4i02.3092",
+    "arxiv_id": null,
+    "publication_date": "2026-08-31",
+    "discovery_date": "2026-08-31",
+    "abstract": "Hybrid cloud computing has emerged as a critical technological paradigm that enables organizations to combine the flexibility of public cloud services with the control and security of private cloud infrastructures. This study aims to examine the intellectual development, research trends, collaboration patterns, and emerging themes in hybrid cloud computing literature using a bibliometric analysis approach. Data were collected from the Scopus database and analyzed using VOSviewer to identify publication trends, influential literature, author and country collaboration networks, and keyword co-occurrence patterns. The findings reveal that hybrid cloud computing research has expanded significantly, with major contributions focusing on computation offloading, cloud-edge integration, Internet of Things (IoT), resource management, task scheduling, and optimization algorithms. Citation analysis highlights those influential studies primarily address improving computational efficiency, reducing latency, and optimizing resource utilization in distributed cloud environments. The collaboration analysis demonstrates that countries such as China, India, and the United States play central roles in advancing hybrid cloud research, although global collaboration remains concentrated within specific research networks. Furthermore, keyword analysis indicates a transition from traditional cloud infrastructure studies toward advanced research areas involving artificial intelligence, edge computing, cybersecurity, energy efficiency, and green computing. This study provides valuable insights into the evolution of hybrid cloud computing research and identifies future opportunities for developing intelligent, secure, and sustainable cloud ecosystems.",
+    "venue": "West Science Information System and Technology",
+    "topics": [
+      "Cloud computing",
+      "Computer science",
+      "Data science",
+      "Flexibility (engineering)",
+      "The Internet",
+      "Scopus",
+      "Cloud computing security",
+      "Big data",
+      "Benchmarking",
+      "Resource (disambiguation)",
+      "Cloud testing",
+      "Utility computing",
+      "Long tail",
+      "Knowledge management",
+      "Citation",
+      "Bibliometrics",
+      "Access control",
+      "World Wide Web",
+      "Trend analysis",
+      "Task (project management)",
+      "Virtualization",
+      "Emerging technologies",
+      "Management science",
+      "Interoperability",
+      "Distributed computing",
+      "e-Science"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_227c9759f5b52bb4",
+    "score": {
+      "topic_score": 3.0,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 8.0,
+      "matched_topics": [
+        "IoT",
+        "Edge Computing",
+        "Internet of Things",
+        "Cloud Computing",
+        "Energy Efficiency",
+        "Computation Offloading",
+        "Task Scheduling"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Abstract), Computation Offloading (Abstract)",
+        "✓ Key research area match: Computation Offloading, Task Scheduling (+0.8)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Freshly published (0d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Cloud computing and Computer science. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "The findings reveal that hybrid cloud computing research has expanded significantly, with major contributions focusing on computation offloading, cloud-edge integration, Internet of Things (IoT), resource management, task scheduling, and optimization algorithms",
+      "key_contribution": "The collaboration analysis demonstrates that countries such as China, India, and the United States play central roles in advancing hybrid cloud research, although global collaboration remains concentrated within specific research networks",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "8.0/10",
+      "is_ai_generated": false
+    },
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
   }
 ]

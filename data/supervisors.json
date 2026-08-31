@@ -634,5 +634,47 @@
       }
     ],
     "institution": "Academic Institution"
+  },
+  "Loso Judijanto": {
+    "name": "Loso Judijanto",
+    "publication_count": 1,
+    "average_relevance": 8.0,
+    "topics": [
+      "Cloud computing",
+      "Computer science",
+      "Data science",
+      "Flexibility (engineering)",
+      "The Internet",
+      "Scopus",
+      "Cloud computing security",
+      "Big data",
+      "Benchmarking",
+      "Resource (disambiguation)",
+      "Cloud testing",
+      "Utility computing",
+      "Long tail",
+      "Knowledge management",
+      "Citation",
+      "Bibliometrics",
+      "Access control",
+      "World Wide Web",
+      "Trend analysis",
+      "Task (project management)",
+      "Virtualization",
+      "Emerging technologies",
+      "Management science",
+      "Interoperability",
+      "Distributed computing",
+      "e-Science"
+    ],
+    "recent_papers": [
+      {
+        "title": "Bibliometric Analysis of Hybrid Cloud Computing",
+        "url": "https://doi.org/10.58812/wsist.v4i02.3092",
+        "date": "2026-08-31",
+        "score": 8.0
+      }
+    ],
+    "institution": "Academic Institution"
   }
 }
