@@ -3,14 +3,14 @@
     "topic": "Edge AI",
     "direction": "↑↑",
     "status": "Surging",
-    "recent_count": 7,
-    "historical_count": 1
+    "recent_count": 5,
+    "historical_count": 2
   },
   {
     "topic": "Federated Learning",
-    "direction": "↑↑",
-    "status": "Surging",
-    "recent_count": 3,
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
     "historical_count": 0
   },
   {
