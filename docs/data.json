@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-04",
-    "total_items": 17,
+    "last_updated": "2026-09-05",
+    "total_items": 14,
     "high_relevance_count": 5,
-    "papers_count": 11,
+    "papers_count": 10,
     "conferences_count": 1,
     "opportunities_count": 0
   },
@@ -608,8 +608,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-04",
-      "discovery_date": "2026-09-04",
+      "publication_date": "2026-09-05",
+      "discovery_date": "2026-09-05",
       "abstract": "International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing [Tirana, Albania] [Mar 24, 2027 - Mar 26, 2027]",
       "venue": "Conference CFP",
       "topics": [],
@@ -689,61 +689,48 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "CReIS: Computation Reuse through image similarity in ICN-based edge computing",
-      "url": "https://doi.org/10.1007/s11227-026-08818-6",
-      "source": "OpenAlex",
+      "title": "[Code/Benchmark] kaurnarinder11/llm-benchmarking-suite (★ 0)",
+      "url": "https://github.com/kaurnarinder11/llm-benchmarking-suite",
+      "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
-      "item_type": "paper",
+      "item_type": "benchmark_code",
       "authors": [
-        "Atiyeh Javaheri",
-        "Ali Bohlooli",
-        "Kamal Jamshidi"
+        "kaurnarinder11"
       ],
-      "doi": "10.1007/s11227-026-08818-6",
+      "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-02",
-      "discovery_date": "2026-09-04",
-      "abstract": "",
-      "venue": "The Journal of Supercomputing",
-      "topics": [
-        "Reuse",
-        "Computation",
-        "Computer science",
-        "Image (mathematics)",
-        "Similarity (geometry)",
-        "Enhanced Data Rates for GSM Evolution",
-        "Parallel computing",
-        "Computer graphics (images)",
-        "Artificial intelligence",
-        "Algorithm",
-        "Engineering",
-        "Waste management"
-      ],
+      "publication_date": "2026-09-05",
+      "discovery_date": "2026-09-05",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "doi_74a0a1b547d0d8bf",
+      "id": "item_33f975240fa5a518",
       "score": {
-        "topic_score": 2.8,
+        "topic_score": 2.2,
         "credibility_score": 2.5,
         "recency_score": 1.5,
         "stage_boost": 0.0,
-        "phd_boost": 0.0,
+        "phd_boost": 0.5,
         "negative_penalty": 0.0,
-        "final_score": 6.8,
+        "final_score": 6.7,
         "matched_topics": [
           "Edge Computing"
         ],
         "reasons": [
-          "✓ Primary topic match: Edge Computing (Title)",
-          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)"
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
         ]
       },
       "intelligence": null,
       "raw_metadata": {
-        "cited_by_count": 1
+        "stars": 0,
+        "forks": 0
       }
     },
     {
@@ -759,7 +746,7 @@
       "doi": null,
       "arxiv_id": "2609.00875v1",
       "publication_date": "2026-09-01",
-      "discovery_date": "2026-09-04",
+      "discovery_date": "2026-09-05",
       "abstract": "Satellite mega-constellations are emerging as large-scale sensing, communication, and computation fabrics, yet their learning architectures remain largely inherited from terrestrial federated learning and ground-centric mission operations--- ill-suited to satellites that differ by orders of magnitude in Size, Weight, Power, and Cost (SWAP-C), radiation tolerance, link availability, and propagation delay. We propose a heterogeneous federated learning method based on the FractalNet architecture for orbital edge intelligence. We formalize contact-window-constrained, depth-heterogeneous federated optimization and introduce a distributed path scheduler that assigns model depth as a function of SWAP-C constraints, predicted inter-satellite contacts, and training statistics. To reduce message overhead and energy consumption, each tier pools updates periodically rather than at every contact opportunity, and a three-tier agentic control plane governs in-space scheduling, anomaly escalation, and policy-governed autonomy. As a case study, we apply the framework to wildfire detection, where each orbital shell naturally learns a different semantic level of situational awareness: pixel-scale thermal anomalies at low Earth orbit (LEO), regional fire-front dynamics at medium Earth orbit (MEO), and larger-scale risk propagation at geostationary or high Earth orbit (GEO/HEO). Experiments on simulated mega-constellations validate the approach across convergence, communication efficiency, energy adaptation, scheduled-pooling savings, robustness, and latency.",
       "venue": "arXiv CS",
       "topics": [
@@ -776,11 +763,11 @@
       "score": {
         "topic_score": 2.8,
         "credibility_score": 2.5,
-        "recency_score": 1.5,
+        "recency_score": 1.2,
         "stage_boost": 0.0,
         "phd_boost": 0.0,
         "negative_penalty": 0.0,
-        "final_score": 6.8,
+        "final_score": 6.5,
         "matched_topics": [
           "Edge Intelligence",
           "Federated Learning"
@@ -788,146 +775,11 @@
         "reasons": [
           "✓ Primary topic match: Edge Intelligence (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (3d ago) (+1.5)"
+          "✓ Published within last week (4d ago) (+1.2)"
         ]
       },
       "intelligence": null,
       "raw_metadata": {}
-    },
-    {
-      "title": "[Code/Benchmark] shoumik27/agentic-compromise-benchmark (★ 0)",
-      "url": "https://github.com/shoumik27/agentic-compromise-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "shoumik27"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-04",
-      "discovery_date": "2026-09-04",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_8a9d5b4d8c6c2a44",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Ultimaker/CuraEngineBenchmarks (★ 0)",
-      "url": "https://github.com/Ultimaker/CuraEngineBenchmarks",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Ultimaker"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-04",
-      "discovery_date": "2026-09-04",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_2daae8a21a25778b",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] raquelb-santos/rag_benchmark (★ 0)",
-      "url": "https://github.com/raquelb-santos/rag_benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "raquelb-santos"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-03",
-      "discovery_date": "2026-09-04",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_7157cb71f71739f3",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
     },
     {
       "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -946,7 +798,7 @@
       "doi": null,
       "arxiv_id": "2608.21910v1",
       "publication_date": "2026-08-22",
-      "discovery_date": "2026-09-04",
+      "discovery_date": "2026-09-05",
       "abstract": "Latency-sensitive edge AI services must balance strict deadlines, output quality, and limited compute and energy budgets. However, static CPU provisioning wastes resources because inference cost varies substantially across inputs, model variants, and runtime conditions. We present PRISM, a prediction-guided runtime framework that jointly selects model variants and CPU allocations for containerized edge microservices. Using container-level energy monitoring and lightweight regression models, PRISM adapts each pipeline stage in place and minimizes predicted CPU-package energy under deadline, resource, and offline model-level Quality of Result (QoR) constraints. We evaluate PRISM on more than 52,000 requests in an Automatic License Plate Recognition (ALPR) pipeline with detection and recognition stages. For detection, PRISM reduces energy consumption by 36 % compared to the strongest static configuration while preserving a comparable success rate and using less than half of the average CPU allocation. For recognition, it reaches near-static-best performance with lower average CPU allocation. These results show that predictive in-place adaptation is a practical mechanism for making time-sensitive AI microservice pipelines more energy-efficient at the edge.",
       "venue": "arXiv CS",
       "topics": [
@@ -971,7 +823,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Abstract)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last 2 weeks (13d ago) (+0.8)",
+          "✓ Published within last 2 weeks (14d ago) (+0.8)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -990,7 +842,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-04",
+      "discovery_date": "2026-09-05",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -1013,7 +865,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (79d ago) (+0.2)",
+          "• Published >30d ago (80d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -1032,7 +884,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-04",
+      "discovery_date": "2026-09-05",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -1055,7 +907,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (169d ago) (+0.2)",
+          "• Published >30d ago (170d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
