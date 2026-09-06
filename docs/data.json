@@ -627,8 +627,8 @@
         "negative_penalty": 0.0,
         "final_score": 6.9,
         "matched_topics": [
-          "Edge Computing",
-          "Mobile Edge Computing"
+          "Mobile Edge Computing",
+          "Edge Computing"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Title)",
@@ -689,13 +689,13 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] SunnyS29/sourdough-network-benchmark (★ 0)",
-      "url": "https://github.com/SunnyS29/sourdough-network-benchmark",
+      "title": "[Code/Benchmark] Parth-Udawant/distilbert-onnx-quantization-benchmark (★ 0)",
+      "url": "https://github.com/Parth-Udawant/distilbert-onnx-quantization-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "SunnyS29"
+        "Parth-Udawant"
       ],
       "doi": null,
       "arxiv_id": null,
@@ -708,7 +708,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_66f2a4684a0dea94",
+      "id": "item_6c5614273f98fd29",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -769,8 +769,8 @@
         "negative_penalty": 0.0,
         "final_score": 6.5,
         "matched_topics": [
-          "Federated Learning",
-          "Edge Intelligence"
+          "Edge Intelligence",
+          "Federated Learning"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Intelligence (Title)",

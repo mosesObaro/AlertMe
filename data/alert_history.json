@@ -466,5 +466,47 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "M2EC 2027 : International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing",
+    "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202998&copyownerid=15660",
+    "source": "Conference Feed",
+    "source_tier": "tier3_conference",
+    "item_type": "conference_cfp",
+    "authors": [],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-09-06",
+    "discovery_date": "2026-09-06",
+    "abstract": "International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing [Tirana, Albania] [Mar 24, 2027 - Mar 26, 2027]",
+    "venue": "Conference CFP",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "item_147937e6cfb558c5",
+    "score": {
+      "topic_score": 3.1,
+      "credibility_score": 1.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.8,
+      "negative_penalty": 0.0,
+      "final_score": 6.9,
+      "matched_topics": [
+        "Mobile Edge Computing",
+        "Edge Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Title)",
+        "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
+        "✓ Freshly published (0d ago) (+1.5)",
+        "✓ Conference CFP / Submission Track (+0.8)"
+      ]
+    },
+    "intelligence": null,
+    "raw_metadata": {},
+    "alert_mode": "weekly"
   }
 ]
