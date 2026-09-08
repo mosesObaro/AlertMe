@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-07",
+    "last_updated": "2026-09-08",
     "total_items": 15,
     "high_relevance_count": 5,
-    "papers_count": 9,
+    "papers_count": 10,
     "conferences_count": 2,
     "opportunities_count": 0
   },
@@ -17,17 +17,17 @@
     },
     {
       "topic": "Federated Learning",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
+      "direction": "↑↑",
+      "status": "Surging",
+      "recent_count": 3,
       "historical_count": 0
     },
     {
       "topic": "Computation Offloading",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
-      "historical_count": 1
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 2
     },
     {
       "topic": "Resource Allocation",
@@ -600,6 +600,81 @@
       "alert_mode": "daily"
     },
     {
+      "title": "A Review of Lightweight Federated Learning Research for Home Edge IoT",
+      "url": "https://doi.org/10.54254/2755-2721/2026.ast36584",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "survey",
+      "authors": [
+        "Yiwei Zeng"
+      ],
+      "doi": "10.54254/2755-2721/2026.ast36584",
+      "arxiv_id": null,
+      "publication_date": "2026-09-08",
+      "discovery_date": "2026-09-08",
+      "abstract": "With the development of 5G and the widespread adoption of home IoT devices and wearable smart devices, home edge IoT devices generate a large amount of data. This data contains sensitive personal privacy and cannot be uploaded to public servers for training. Distributed machine learning technology, specifically federated training, is designed to protect data privacy, ensuring that data does not leave the local environment while multiple parties collaboratively train and share the model. However, home IoT devices differ significantly from industrial-grade IoT devices, exhibiting substantial heterogeneity, primarily in computing power, memory, power consumption, network connectivity, and in user data distribution, which makes it impossible to deploy federated training directly. This paper systematically reviews lightweight federated learning techniques for home edge IoT, analyzing two technical approaches: \"device-aware adaptive lightweight training\" and \"data distribution-aware weighted aggregation.\" This paper proposes a co-optimization research framework, incorporating pruning rate, quantization bit width, and aggregation weights into a unified optimization space. The goal is to strike a balance among global model accuracy, training energy consumption, and convergence speed under device resource constraints, thereby providing a theoretical reference for future research.",
+      "venue": "Applied and Computational Engineering",
+      "topics": [
+        "Computer science",
+        "Upload",
+        "Server",
+        "Edge computing",
+        "Edge device",
+        "Enhanced Data Rates for GSM Evolution",
+        "Internet of Things",
+        "Information privacy",
+        "Pruning",
+        "Wearable computer",
+        "Home automation",
+        "Wearable technology",
+        "Federated learning",
+        "Convergence (economics)",
+        "Quantization (signal processing)",
+        "Resource (disambiguation)",
+        "Distributed computing",
+        "Data modeling",
+        "Doors",
+        "Data aggregator",
+        "Fog computing",
+        "Cloud computing",
+        "Computer security",
+        "Raw data",
+        "Distributed learning",
+        "Entropy (arrow of time)",
+        "Web server"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_e5fe0cb98f36c3e2",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.7,
+        "negative_penalty": 0.0,
+        "final_score": 6.9,
+        "matched_topics": [
+          "5G",
+          "IoT",
+          "Distributed Machine Learning",
+          "Federated Learning"
+        ],
+        "reasons": [
+          "✓ Secondary topic with Edge context: IoT, 5G",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Comprehensive Literature Survey / Review (+0.7)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
+    },
+    {
       "title": "M2EC 2027 : International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202998&copyownerid=15660",
       "source": "Conference Feed",
@@ -690,18 +765,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] albertoflorod13-debug/xai-benchmark-autonomous-driving (★ 0)",
-      "url": "https://github.com/albertoflorod13-debug/xai-benchmark-autonomous-driving",
+      "title": "[Code/Benchmark] Jay1106-Zhu/CSIG-baseline-strategy-benchmark-analysis (★ 0)",
+      "url": "https://github.com/Jay1106-Zhu/CSIG-baseline-strategy-benchmark-analysis",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "albertoflorod13-debug"
+        "Jay1106-Zhu"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-07",
-      "discovery_date": "2026-09-07",
+      "publication_date": "2026-09-06",
+      "discovery_date": "2026-09-08",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -709,7 +784,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_98208554cf546449",
+      "id": "item_87fbce6e5423c545",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -724,52 +799,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
           "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] meta-success/Vector-DB-Benchmark-Studio (★ 0)",
-      "url": "https://github.com/meta-success/Vector-DB-Benchmark-Studio",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "meta-success"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-07",
-      "discovery_date": "2026-09-07",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_d0f8b84751282af2",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Freshly published (2d ago) (+1.5)",
           "✓ Open Benchmark / Research Artifact (+0.5)"
         ]
       },
@@ -788,8 +818,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-07",
-      "discovery_date": "2026-09-07",
+      "publication_date": "2026-09-08",
+      "discovery_date": "2026-09-08",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -832,7 +862,7 @@
       "doi": null,
       "arxiv_id": "2609.00875v1",
       "publication_date": "2026-09-01",
-      "discovery_date": "2026-09-07",
+      "discovery_date": "2026-09-08",
       "abstract": "Satellite mega-constellations are emerging as large-scale sensing, communication, and computation fabrics, yet their learning architectures remain largely inherited from terrestrial federated learning and ground-centric mission operations--- ill-suited to satellites that differ by orders of magnitude in Size, Weight, Power, and Cost (SWAP-C), radiation tolerance, link availability, and propagation delay. We propose a heterogeneous federated learning method based on the FractalNet architecture for orbital edge intelligence. We formalize contact-window-constrained, depth-heterogeneous federated optimization and introduce a distributed path scheduler that assigns model depth as a function of SWAP-C constraints, predicted inter-satellite contacts, and training statistics. To reduce message overhead and energy consumption, each tier pools updates periodically rather than at every contact opportunity, and a three-tier agentic control plane governs in-space scheduling, anomaly escalation, and policy-governed autonomy. As a case study, we apply the framework to wildfire detection, where each orbital shell naturally learns a different semantic level of situational awareness: pixel-scale thermal anomalies at low Earth orbit (LEO), regional fire-front dynamics at medium Earth orbit (MEO), and larger-scale risk propagation at geostationary or high Earth orbit (GEO/HEO). Experiments on simulated mega-constellations validate the approach across convergence, communication efficiency, energy adaptation, scheduled-pooling savings, robustness, and latency.",
       "venue": "arXiv CS",
       "topics": [
@@ -855,13 +885,13 @@
         "negative_penalty": 0.0,
         "final_score": 6.5,
         "matched_topics": [
-          "Federated Learning",
-          "Edge Intelligence"
+          "Edge Intelligence",
+          "Federated Learning"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Intelligence (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (6d ago) (+1.2)"
+          "✓ Published within last week (7d ago) (+1.2)"
         ]
       },
       "intelligence": null,
@@ -879,7 +909,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-07",
+      "discovery_date": "2026-09-08",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -902,7 +932,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (82d ago) (+0.2)",
+          "• Published >30d ago (83d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -921,7 +951,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-07",
+      "discovery_date": "2026-09-08",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -944,7 +974,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (172d ago) (+0.2)",
+          "• Published >30d ago (173d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
