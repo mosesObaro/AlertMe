@@ -51,13 +51,46 @@ Briefing for {{ date_str }} ({{ total_items }} Items)
 
 {% if supervisors %}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-👤 RESEARCHERS TO WATCH
+👤 RESEARCHERS TO WATCH & ACTIVE LABS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{% for sup in supervisors[:4] %}
-• {{ sup.name }} ({{ sup.institution }})
-  {{ sup.publication_count }} relevant publications | Avg Score: {{ sup.average_relevance }}/10
+{% for sup in supervisors[:5] %}
+• {{ sup.name }} ({{ sup.institution }}{% if sup.country %}, {{ sup.country }}{% endif %})
+  Status: {% if sup.recruitment_status == 'actively_recruiting' %}[ACTIVELY RECRUITING]{% elif sup.recruitment_status == 'likely_recruiting' %}[LIKELY RECRUITING]{% else %}[TRACKED]{% endif %}
+  {{ sup.publication_count }} relevant publications | Relevance: {{ sup.composite_score or sup.average_relevance }}/10
+  {% if sup.recruitment_quote %}Quote: "{{ sup.recruitment_quote }}"{% endif %}
+  {% if sup.lab_page %}Lab: {{ sup.lab_page }}{% endif %}
+{% endfor %}
+{% endif %}
+
+{% if opportunities %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎓 TOP PHD & LAB OPPORTUNITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for opp in opportunities %}
+• {{ opp.title }} (Fit: {{ opp.fit_score }}/10)
+  Institution: {{ opp.university }}{% if opp.country %} ({{ opp.country }}){% endif %}
+  Status: {% if opp.recruitment_status == 'actively_recruiting' %}[ACTIVELY RECRUITING]{% elif opp.recruitment_status == 'likely_recruiting' %}[LIKELY RECRUITING]{% else %}[OPEN]{% endif %} | Funding: {{ opp.funding_status|upper }}
+  Family Support: {% if opp.dependant_support == 'financially_supported' %}[FINANCIALLY SUPPORTED]{% elif opp.dependant_support == 'permitted' %}[PERMITTED]{% else %}[UNSPECIFIED]{% endif %}
+  {% if opp.direct_quote %}Quote: "{{ opp.direct_quote }}"{% endif %}
+  {% if opp.deadline %}Deadline: {{ opp.deadline }}{% endif %}
+  Link: {{ opp.link }}
+{% endfor %}
+[NOTE: Family dependants appear eligible under current guidance. Official visa and university rules must be verified.]
+{% endif %}
+
+{% if scholarships %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💰 FAMILY-FRIENDLY INTERNATIONAL SCHOLARSHIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for schol in scholarships %}
+• {{ schol.name }} (Score: {{ schol.fit_score }}/10)
+  Country: {{ schol.country }} | Funding: {{ schol.funding_type }}
+  Dependants: {% if schol.dependant_support == 'financially_supported' %}[ALLOWANCE INCLUDED]{% else %}[PERMITTED]{% endif %}
+  {% if schol.allowance_details %}Allowance: {{ schol.allowance_details }}{% endif %}
+  Link: {{ schol.official_link }}
 {% endfor %}
 {% endif %}
 
 --
 Edge PhD Research Assistant | Free Infrastructure
+

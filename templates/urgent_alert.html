@@ -22,6 +22,26 @@
     <div style="font-size: 14px; line-height: 1.5; color: #334155;">
       {{ item.abstract }}
     </div>
+    {% if opp %}
+    <div style="margin-top: 12px; margin-bottom: 12px;">
+      {% if opp.recruitment_status == 'actively_recruiting' %}
+      <span style="display:inline-block; font-size:12px; font-weight:bold; background:#dcfce7; color:#15803d; border:1px solid #86efac; border-radius:10px; padding:3px 8px; margin-right:4px;">🟢 Actively Recruiting</span>
+      {% endif %}
+      {% if opp.funding_status == 'fully_funded' %}
+      <span style="display:inline-block; font-size:12px; font-weight:bold; background:#dbeafe; color:#1d4ed8; border:1px solid #93c5fd; border-radius:10px; padding:3px 8px; margin-right:4px;">🔵 Fully Funded</span>
+      {% endif %}
+      {% if opp.dependant_support == 'financially_supported' %}
+      <span style="display:inline-block; font-size:12px; font-weight:bold; background:#f3e8ff; color:#6b21a8; border:1px solid #d8b4fe; border-radius:10px; padding:3px 8px;">👨‍👩‍👧 Family Financially Supported</span>
+      {% elif opp.dependant_support == 'permitted' %}
+      <span style="display:inline-block; font-size:12px; font-weight:bold; background:#e0f2fe; color:#0369a1; border:1px solid #7dd3fc; border-radius:10px; padding:3px 8px;">👨‍👩‍👧 Dependants Permitted</span>
+      {% endif %}
+    </div>
+    {% if opp.direct_quote %}
+    <div style="background:#f8fafc; border-left:3px solid #10b981; padding:8px 12px; font-style:italic; font-size:13px; margin-bottom:12px;">
+      &ldquo;{{ opp.direct_quote }}&rdquo;
+    </div>
+    {% endif %}
+    {% endif %}
     {% if item.intelligence %}
     <div style="background: #f8fafc; padding: 12px; border-radius: 6px; margin-top: 14px; font-size: 13px;">
       <strong>Why this is critical:</strong> {{ item.intelligence.why_it_matters }}

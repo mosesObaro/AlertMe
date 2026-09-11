@@ -36,12 +36,35 @@ Why you received this:
 
 {% if opportunities %}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎓 PHD & RESEARCH OPPORTUNITIES
+🎓 TOP PHD & LAB OPPORTUNITIES
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-{% for item in opportunities %}
-• {{ item.title }} ({{ item.score.final_score }}/10)
-  Institution: {{ item.institution or item.source }}
-  Link: {{ item.url }}
+{% for opp in opportunities %}
+• {{ opp.title }} (Fit: {{ opp.fit_score }}/10)
+  Institution: {{ opp.university }}{% if opp.country %} ({{ opp.country }}){% endif %}
+  {% if opp.supervisor %}Supervisor: {{ opp.supervisor }}{% endif %}
+  Status: {% if opp.recruitment_status == 'actively_recruiting' %}[ACTIVELY RECRUITING]{% elif opp.recruitment_status == 'likely_recruiting' %}[LIKELY RECRUITING]{% else %}[OPEN]{% endif %} | Funding: {{ opp.funding_status|upper }}
+  Family/Dependants: {% if opp.dependant_support == 'financially_supported' %}[FAMILY FINANCIALLY SUPPORTED - ALLOWANCE]{% elif opp.dependant_support == 'permitted' %}[DEPENDANTS PERMITTED]{% else %}[UNSPECIFIED]{% endif %}
+  {% if opp.direct_quote %}Quote: "{{ opp.direct_quote }}"{% endif %}
+  {% if opp.deadline %}Deadline: {{ opp.deadline }}{% endif %}
+  Link: {{ opp.link }}
+
+{% endfor %}
+[NOTE: Family dependants appear eligible under current guidance. Official visa and university rules must be verified.]
+
+{% endif %}
+
+{% if scholarships %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💰 FAMILY-FRIENDLY SCHOLARSHIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for schol in scholarships %}
+• {{ schol.name }} (Score: {{ schol.fit_score }}/10)
+  Country: {{ schol.country }} | Funding: {{ schol.funding_type }}
+  Dependant Support: {% if schol.dependant_support == 'financially_supported' %}[FINANCIALLY SUPPORTED]{% else %}[PERMITTED]{% endif %}
+  {% if schol.allowance_details %}Allowance: {{ schol.allowance_details }}{% endif %}
+  {% if schol.legal_notes %}Visa Notes: {{ schol.legal_notes }}{% endif %}
+  Link: {{ schol.official_link }}
+
 {% endfor %}
 {% endif %}
 

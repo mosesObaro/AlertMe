@@ -17,6 +17,9 @@ class RelevanceScorer:
 
     def score_item(self, item: ResearchItem) -> ScoreBreakdown:
         """Calculates relevance score and breakdown for a single item."""
+        if item.opportunity_data and item.score:
+            return item.score
+
         reasons: List[str] = []
         matched_topics: List[str] = []
 

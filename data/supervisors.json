@@ -1,12 +1,16 @@
 {
   "Prof.Anu Jyothy": {
     "name": "Prof.Anu Jyothy",
-    "publication_count": 3,
-    "average_relevance": 8.2,
-    "topics": [
-      "Edge AI",
-      "TinyML"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Edge AI in Wearable Devices",
@@ -15,16 +19,38 @@
         "score": 8.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 8.2,
+    "topics": []
   },
   "Shiva Shrestha": {
     "name": "Shiva Shrestha",
-    "publication_count": 3,
-    "average_relevance": 7.8,
-    "topics": [
-      "cs.LG",
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
@@ -33,16 +59,38 @@
         "score": 7.8
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.8,
+    "topics": []
   },
   "Kazi Shaharair Sharif": {
     "name": "Kazi Shaharair Sharif",
-    "publication_count": 3,
-    "average_relevance": 7.8,
-    "topics": [
-      "cs.LG",
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
@@ -51,16 +99,38 @@
         "score": 7.8
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.8,
+    "topics": []
   },
   "Zongxing Xie": {
     "name": "Zongxing Xie",
-    "publication_count": 3,
-    "average_relevance": 7.8,
-    "topics": [
-      "cs.LG",
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
@@ -69,16 +139,38 @@
         "score": 7.8
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.8,
+    "topics": []
   },
   "Jiajing Huang": {
     "name": "Jiajing Huang",
-    "publication_count": 3,
-    "average_relevance": 7.8,
-    "topics": [
-      "cs.LG",
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
@@ -87,16 +179,38 @@
         "score": 7.8
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.8,
+    "topics": []
   },
   "Anhao Xiang": {
     "name": "Anhao Xiang",
-    "publication_count": 3,
-    "average_relevance": 7.8,
-    "topics": [
-      "cs.LG",
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
@@ -105,16 +219,38 @@
         "score": 7.8
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.8,
+    "topics": []
   },
   "Honghui Xu": {
     "name": "Honghui Xu",
-    "publication_count": 3,
-    "average_relevance": 7.8,
-    "topics": [
-      "cs.LG",
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
@@ -123,16 +259,38 @@
         "score": 7.8
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.8,
+    "topics": []
   },
   "R Bhaskar Nihal Varma": {
     "name": "R Bhaskar Nihal Varma",
-    "publication_count": 3,
-    "average_relevance": 7.8,
-    "topics": [
-      "Edge AI",
-      "MEC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Future VLSI Architectures for Neuromorphic Computing, Edge AI and Sustainable Systems",
@@ -141,21 +299,38 @@
         "score": 7.8
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.8,
+    "topics": []
   },
   "Ehzaz Mustafa": {
     "name": "Ehzaz Mustafa",
-    "publication_count": 2,
-    "average_relevance": 7.7,
-    "topics": [
-      "IoT",
-      "Mobile Edge Computing",
-      "MEC",
-      "Computation Offloading",
-      "Internet of Things",
-      "Edge Computing",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 10.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
@@ -164,21 +339,38 @@
         "score": 7.7
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.2,
+    "average_relevance": 7.7,
+    "topics": []
   },
   "Junaid Shuja": {
     "name": "Junaid Shuja",
-    "publication_count": 2,
-    "average_relevance": 7.7,
-    "topics": [
-      "IoT",
-      "Mobile Edge Computing",
-      "MEC",
-      "Computation Offloading",
-      "Internet of Things",
-      "Edge Computing",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 10.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
@@ -187,21 +379,38 @@
         "score": 7.7
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.2,
+    "average_relevance": 7.7,
+    "topics": []
   },
   "Faisal Rehman": {
     "name": "Faisal Rehman",
-    "publication_count": 2,
-    "average_relevance": 7.7,
-    "topics": [
-      "IoT",
-      "Mobile Edge Computing",
-      "MEC",
-      "Computation Offloading",
-      "Internet of Things",
-      "Edge Computing",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 10.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
@@ -210,21 +419,38 @@
         "score": 7.7
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.2,
+    "average_relevance": 7.7,
+    "topics": []
   },
   "Abdallah Namoun": {
     "name": "Abdallah Namoun",
-    "publication_count": 2,
-    "average_relevance": 7.7,
-    "topics": [
-      "IoT",
-      "Mobile Edge Computing",
-      "MEC",
-      "Computation Offloading",
-      "Internet of Things",
-      "Edge Computing",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 10.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
@@ -233,21 +459,38 @@
         "score": 7.7
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.2,
+    "average_relevance": 7.7,
+    "topics": []
   },
   "Mazhar Ali": {
     "name": "Mazhar Ali",
-    "publication_count": 2,
-    "average_relevance": 7.7,
-    "topics": [
-      "IoT",
-      "Mobile Edge Computing",
-      "MEC",
-      "Computation Offloading",
-      "Internet of Things",
-      "Edge Computing",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 10.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
@@ -256,21 +499,38 @@
         "score": 7.7
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.2,
+    "average_relevance": 7.7,
+    "topics": []
   },
   "Abdullah Alourani": {
     "name": "Abdullah Alourani",
-    "publication_count": 2,
-    "average_relevance": 7.7,
-    "topics": [
-      "IoT",
-      "Mobile Edge Computing",
-      "MEC",
-      "Computation Offloading",
-      "Internet of Things",
-      "Edge Computing",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 10.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
@@ -279,18 +539,38 @@
         "score": 7.7
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.2,
+    "average_relevance": 7.7,
+    "topics": []
   },
   "Zhenli He": {
     "name": "Zhenli He",
-    "publication_count": 3,
-    "average_relevance": 7.3,
-    "topics": [
-      "MEC",
-      "Cloud Computing",
-      "Computation Offloading",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -299,18 +579,38 @@
         "score": 7.3
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.3,
+    "topics": []
   },
   "Ying Guo": {
     "name": "Ying Guo",
-    "publication_count": 3,
-    "average_relevance": 7.3,
-    "topics": [
-      "MEC",
-      "Cloud Computing",
-      "Computation Offloading",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -319,18 +619,38 @@
         "score": 7.3
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.3,
+    "topics": []
   },
   "Xiaolong Zhai": {
     "name": "Xiaolong Zhai",
-    "publication_count": 3,
-    "average_relevance": 7.3,
-    "topics": [
-      "MEC",
-      "Cloud Computing",
-      "Computation Offloading",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -339,18 +659,38 @@
         "score": 7.3
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.3,
+    "topics": []
   },
   "Mingxiong Zhao": {
     "name": "Mingxiong Zhao",
-    "publication_count": 3,
-    "average_relevance": 7.3,
-    "topics": [
-      "MEC",
-      "Cloud Computing",
-      "Computation Offloading",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -359,18 +699,38 @@
         "score": 7.3
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.3,
+    "topics": []
   },
   "Wei Zhou": {
     "name": "Wei Zhou",
-    "publication_count": 3,
-    "average_relevance": 7.3,
-    "topics": [
-      "MEC",
-      "Cloud Computing",
-      "Computation Offloading",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -379,18 +739,38 @@
         "score": 7.3
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.3,
+    "topics": []
   },
   "Keqin Li": {
     "name": "Keqin Li",
-    "publication_count": 3,
-    "average_relevance": 7.3,
-    "topics": [
-      "MEC",
-      "Cloud Computing",
-      "Computation Offloading",
-      "Resource Allocation"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 9.3,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -399,44 +779,38 @@
         "score": 7.3
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 3,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: computation offloading",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+      "✓ Active recent publication record (3 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 7.0,
+    "average_relevance": 7.3,
+    "topics": []
   },
   "Jisna C Jeejo": {
     "name": "Jisna C Jeejo",
-    "publication_count": 4,
-    "average_relevance": 7.2,
-    "topics": [
-      "Neuromorphic engineering",
-      "Computer science",
-      "Von Neumann architecture",
-      "Computer architecture",
-      "Unconventional computing",
-      "Artificial intelligence",
-      "Field (mathematics)",
-      "Artificial neural network",
-      "Robotics",
-      "Computation",
-      "Reservoir computing",
-      "Edge computing",
-      "Applications of artificial intelligence",
-      "Key (lock)",
-      "Software",
-      "Edge device",
-      "Memristor",
-      "Computer engineering",
-      "Adaptability",
-      "Embedded system",
-      "Efficient energy use",
-      "Spiking neural network",
-      "Benchmarking",
-      "Massively parallel",
-      "Architecture",
-      "Enhanced Data Rates for GSM Evolution",
-      "Robot",
-      "Analog computer",
-      "Image processing",
-      "Information processing"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Neuromorphic Computing: Current Progress and the Future of Brain-Inspired Computing",
@@ -445,44 +819,37 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 4,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "✓ Active recent publication record (4 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 5.5,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Habeeba M A": {
     "name": "Habeeba M A",
-    "publication_count": 4,
-    "average_relevance": 7.2,
-    "topics": [
-      "Neuromorphic engineering",
-      "Computer science",
-      "Von Neumann architecture",
-      "Computer architecture",
-      "Unconventional computing",
-      "Artificial intelligence",
-      "Field (mathematics)",
-      "Artificial neural network",
-      "Robotics",
-      "Computation",
-      "Reservoir computing",
-      "Edge computing",
-      "Applications of artificial intelligence",
-      "Key (lock)",
-      "Software",
-      "Edge device",
-      "Memristor",
-      "Computer engineering",
-      "Adaptability",
-      "Embedded system",
-      "Efficient energy use",
-      "Spiking neural network",
-      "Benchmarking",
-      "Massively parallel",
-      "Architecture",
-      "Enhanced Data Rates for GSM Evolution",
-      "Robot",
-      "Analog computer",
-      "Image processing",
-      "Information processing"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Neuromorphic Computing: Current Progress and the Future of Brain-Inspired Computing",
@@ -491,15 +858,37 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 4,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "✓ Active recent publication record (4 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 5.5,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Uwe Gropengießer": {
     "name": "Uwe Gropengießer",
-    "publication_count": 1,
-    "average_relevance": 7.2,
-    "topics": [
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -508,15 +897,36 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Thomas Reuter": {
     "name": "Thomas Reuter",
-    "publication_count": 1,
-    "average_relevance": 7.2,
-    "topics": [
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -525,15 +935,36 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Dominik Schön": {
     "name": "Dominik Schön",
-    "publication_count": 1,
-    "average_relevance": 7.2,
-    "topics": [
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -542,15 +973,36 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Osama Abboud": {
     "name": "Osama Abboud",
-    "publication_count": 1,
-    "average_relevance": 7.2,
-    "topics": [
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -559,15 +1011,36 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Xun Xiao": {
     "name": "Xun Xiao",
-    "publication_count": 1,
-    "average_relevance": 7.2,
-    "topics": [
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -576,15 +1049,36 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Max Mühlhäuser": {
     "name": "Max Mühlhäuser",
-    "publication_count": 1,
-    "average_relevance": 7.2,
-    "topics": [
-      "cs.DC"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "PRISM: Predictive Runtime In-place Scaling and Model Selection for Edge Microservices",
@@ -593,18 +1087,36 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Navaneetha Krishnan Kamalakannan": {
     "name": "Navaneetha Krishnan Kamalakannan",
-    "publication_count": 2,
-    "average_relevance": 7.2,
-    "topics": [
-      "eess.SP",
-      "cs.DC",
-      "cs.IT",
-      "cs.NI"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
@@ -613,18 +1125,37 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
+    ],
+    "composite_score": 5.5,
+    "average_relevance": 7.2,
+    "topics": []
   },
   "Harinisri Velmurugan": {
     "name": "Harinisri Velmurugan",
-    "publication_count": 2,
-    "average_relevance": 7.2,
-    "topics": [
-      "eess.SP",
-      "cs.DC",
-      "cs.IT",
-      "cs.NI"
-    ],
+    "institution": "Academic Institution",
+    "country": "",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
         "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
@@ -633,48 +1164,224 @@
         "score": 7.2
       }
     ],
-    "institution": "Academic Institution"
-  },
-  "Loso Judijanto": {
-    "name": "Loso Judijanto",
-    "publication_count": 1,
-    "average_relevance": 8.0,
-    "topics": [
-      "Cloud computing",
-      "Computer science",
-      "Data science",
-      "Flexibility (engineering)",
-      "The Internet",
-      "Scopus",
-      "Cloud computing security",
-      "Big data",
-      "Benchmarking",
-      "Resource (disambiguation)",
-      "Cloud testing",
-      "Utility computing",
-      "Long tail",
-      "Knowledge management",
-      "Citation",
-      "Bibliometrics",
-      "Access control",
-      "World Wide Web",
-      "Trend analysis",
-      "Task (project management)",
-      "Virtualization",
-      "Emerging technologies",
-      "Management science",
-      "Interoperability",
-      "Distributed computing",
-      "e-Science"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location to be determined"
     ],
+    "composite_score": 5.5,
+    "average_relevance": 7.2,
+    "topics": []
+  },
+  "Prof. Dr. Hans Weber": {
+    "name": "Prof. Dr. Hans Weber",
+    "institution": "Technical University of Munich (TUM)",
+    "country": "Germany",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Edge Computing",
+      "Edge AI",
+      "Distributed Systems"
+    ],
+    "academic_fit_score": 10.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
     "recent_papers": [
       {
-        "title": "Bibliometric Analysis of Hybrid Cloud Computing",
-        "url": "https://doi.org/10.58812/wsist.v4i02.3092",
-        "date": "2026-08-31",
-        "score": 8.0
+        "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+        "url": "https://www.tum.de/phd-edge-ai",
+        "date": "2026-09-11",
+        "venue": "Technical University of Munich (TUM) — Germany",
+        "score": 10.0
       }
     ],
-    "institution": "Academic Institution"
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "✓ Target country priority: Germany"
+    ],
+    "composite_score": 7.7,
+    "average_relevance": 10.0,
+    "topics": [
+      "Edge Computing",
+      "Edge AI",
+      "Distributed Systems"
+    ]
+  },
+  "Prof. David Miller": {
+    "name": "Prof. David Miller",
+    "institution": "University of Toronto",
+    "country": "Canada",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Federated Learning",
+      "Distributed Systems",
+      "Edge Intelligence"
+    ],
+    "academic_fit_score": 9.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+        "url": "https://web.ece.utoronto.ca/grad/phd/",
+        "date": "2026-09-11",
+        "venue": "University of Toronto — Canada",
+        "score": 9.3
+      }
+    ],
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "✓ Target country priority: Canada"
+    ],
+    "composite_score": 7.5,
+    "average_relevance": 9.3,
+    "topics": [
+      "Federated Learning",
+      "Distributed Systems",
+      "Edge Intelligence"
+    ]
+  },
+  "Prof. Raymond Liu": {
+    "name": "Prof. Raymond Liu",
+    "institution": "Hong Kong University of Science and Technology (HKUST)",
+    "country": "Hong Kong",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Mobile Edge Computing",
+      "Hong Kong",
+      "6G",
+      "Distributed Intelligence",
+      "PhD Funding",
+      "International Scholarship",
+      "Dependant Support"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+        "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+        "date": "2026-09-11",
+        "venue": "Hong Kong University of Science and Technology (HKUST) — Hong Kong",
+        "score": 9.0
+      }
+    ],
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "✓ Target country priority: Hong Kong"
+    ],
+    "composite_score": 7.4,
+    "average_relevance": 9.0,
+    "topics": [
+      "Mobile Edge Computing",
+      "Hong Kong",
+      "6G",
+      "Distributed Intelligence",
+      "PhD Funding",
+      "International Scholarship",
+      "Dependant Support"
+    ]
+  },
+  "Prof. Alice Smith": {
+    "name": "Prof. Alice Smith",
+    "institution": "University of Cambridge",
+    "country": "United Kingdom",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Cloudlet Systems",
+      "Edge Computing",
+      "Resource Allocation"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+        "url": "https://www.cst.cam.ac.uk/phd-positions",
+        "date": "2026-09-11",
+        "venue": "University of Cambridge — United Kingdom",
+        "score": 8.8
+      }
+    ],
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-11",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "✓ Target country priority: United Kingdom"
+    ],
+    "composite_score": 7.2,
+    "average_relevance": 8.8,
+    "topics": [
+      "Cloudlet Systems",
+      "Edge Computing",
+      "Resource Allocation"
+    ]
   }
 }

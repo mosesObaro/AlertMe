@@ -34,74 +34,196 @@
         <div class="metric-label">High Relevance (≥7.5)</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value" id="metric-papers">-</div>
-        <div class="metric-label">Research Papers</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-value" id="metric-confs">-</div>
-        <div class="metric-label">Conferences & CFPs</div>
+        <div class="metric-value" id="metric-recruiting">-</div>
+        <div class="metric-label">Actively Recruiting</div>
       </div>
       <div class="metric-card">
         <div class="metric-value" id="metric-opps">-</div>
         <div class="metric-label">PhD Opportunities</div>
       </div>
+      <div class="metric-card">
+        <div class="metric-value" id="metric-scholarships">-</div>
+        <div class="metric-label">Family Scholarships</div>
+      </div>
     </section>
 
-    <!-- Two-column Layout: Sidebar Trends & Main Feed -->
-    <div class="dashboard-layout">
-      <aside class="sidebar">
-        <!-- Emerging Trends Widget -->
-        <div class="panel">
-          <h3>📈 Observed Research Trends</h3>
-          <p class="panel-subtitle">Topic frequency velocity across monitored sources</p>
-          <div id="trends-list" class="trends-list">
-            <div class="loading-spinner">Loading trends...</div>
-          </div>
-        </div>
+    <!-- Main Navigation Tabs -->
+    <nav class="tabs-nav" id="tabs-nav">
+      <button class="tab-btn active" data-tab="feed">📚 Research Feed</button>
+      <button class="tab-btn" data-tab="opportunities">🎓 PhD Positions</button>
+      <button class="tab-btn" data-tab="researchers">👤 Researchers & Labs</button>
+      <button class="tab-btn" data-tab="scholarships">💰 Curated Scholarships</button>
+      <button class="tab-btn" data-tab="countries">🌍 Target Countries & Visas</button>
+    </nav>
 
-        <!-- Researchers to Watch Widget -->
-        <div class="panel">
-          <h3>👤 Researchers to Watch</h3>
-          <p class="panel-subtitle">Prolific authors in your target topics</p>
-          <div id="supervisors-list" class="supervisors-list">
-            <div class="loading-spinner">Loading researchers...</div>
-          </div>
-        </div>
-      </aside>
-
-      <section class="content-feed">
-        <!-- Search and Filter Controls -->
-        <div class="controls-bar">
-          <div class="search-box">
-            <input type="text" id="search-input" placeholder="Search title, author, topic, or abstract...">
-          </div>
-          <div class="filters-row">
-            <div class="filter-pills" id="type-filters">
-              <button class="pill active" data-type="all">All</button>
-              <button class="pill" data-type="paper">Papers</button>
-              <button class="pill" data-type="phd_opportunity">PhD Openings</button>
-              <button class="pill" data-type="conference_cfp">CFPs & Deadlines</button>
-              <button class="pill" data-type="standards_update">Standards</button>
-              <button class="pill" data-type="benchmark_code">Code/Benchmarks</button>
-            </div>
-            <div class="score-select">
-              <label for="min-score-select">Min Score:</label>
-              <select id="min-score-select">
-                <option value="0">All Scores (0+)</option>
-                <option value="6.5">Moderate (6.5+)</option>
-                <option value="7.5" selected>High (7.5+)</option>
-                <option value="8.5">Very High (8.5+)</option>
-                <option value="9.0">Critical (9.0+)</option>
-              </select>
+    <!-- TAB 1: RESEARCH FEED -->
+    <div id="tab-feed" class="tab-pane active">
+      <div class="dashboard-layout">
+        <aside class="sidebar">
+          <!-- Emerging Trends Widget -->
+          <div class="panel">
+            <h3>📈 Observed Research Trends</h3>
+            <p class="panel-subtitle">Topic frequency velocity across monitored sources</p>
+            <div id="trends-list" class="trends-list">
+              <div class="loading-spinner">Loading trends...</div>
             </div>
           </div>
-        </div>
 
-        <!-- Research Items List -->
-        <div id="items-container" class="items-container">
-          <div class="loading-spinner">Loading research items...</div>
+          <!-- Quick Sidebar: Top Potential Supervisors -->
+          <div class="panel">
+            <h3>👤 Featured Supervisors</h3>
+            <p class="panel-subtitle">Top authors with recent high-impact publications</p>
+            <div id="supervisors-list" class="supervisors-list">
+              <div class="loading-spinner">Loading researchers...</div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="content-feed">
+          <div class="controls-bar">
+            <div class="search-box">
+              <input type="text" id="search-input" placeholder="Search title, author, topic, or abstract...">
+            </div>
+            <div class="filters-row">
+              <div class="filter-pills" id="type-filters">
+                <button class="pill active" data-type="all">All</button>
+                <button class="pill" data-type="paper">Papers</button>
+                <button class="pill" data-type="phd_opportunity">PhD Openings</button>
+                <button class="pill" data-type="conference_cfp">CFPs & Deadlines</button>
+                <button class="pill" data-type="standards_update">Standards</button>
+                <button class="pill" data-type="benchmark_code">Code/Benchmarks</button>
+              </div>
+              <div class="score-select">
+                <label for="min-score-select">Min Score:</label>
+                <select id="min-score-select">
+                  <option value="0">All Scores (0+)</option>
+                  <option value="6.5">Moderate (6.5+)</option>
+                  <option value="7.5" selected>High (7.5+)</option>
+                  <option value="8.5">Very High (8.5+)</option>
+                  <option value="9.0">Critical (9.0+)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div id="items-container" class="items-container">
+            <div class="loading-spinner">Loading research items...</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- TAB 2: PHD OPPORTUNITIES -->
+    <div id="tab-opportunities" class="tab-pane">
+      <div class="tab-header-box">
+        <h2>🎓 PhD Openings & Lab Vacancies</h2>
+        <p>Verified and discovered PhD student recruitment across Germany, Hong Kong, Canada, UK, Japan, and the USA.</p>
+      </div>
+      
+      <!-- Opportunities Controls -->
+      <div class="controls-bar">
+        <div class="filters-row-multi">
+          <div class="filter-group">
+            <label for="opp-country-select">Country:</label>
+            <select id="opp-country-select">
+              <option value="all">All Countries</option>
+              <option value="Germany">Germany 🇩🇪</option>
+              <option value="Hong Kong">Hong Kong 🇭🇰</option>
+              <option value="Canada">Canada 🇨🇦</option>
+              <option value="United Kingdom">United Kingdom 🇬🇧</option>
+              <option value="Japan">Japan 🇯🇵</option>
+              <option value="United States">United States 🇺🇸</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="opp-recruitment-select">Recruitment Status:</label>
+            <select id="opp-recruitment-select">
+              <option value="all">All Statuses</option>
+              <option value="actively_recruiting">🟢 Actively Recruiting Only</option>
+              <option value="likely_recruiting">🟡 Likely Recruiting</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="opp-funding-select">Funding:</label>
+            <select id="opp-funding-select">
+              <option value="all">All Funding</option>
+              <option value="fully_funded">🔵 Fully Funded</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="opp-dependant-select">Family Support:</label>
+            <select id="opp-dependant-select">
+              <option value="all">All</option>
+              <option value="financially_supported">👨‍👩‍👧 Financially Supported</option>
+              <option value="permitted">👨‍👩‍👧 Permitted</option>
+            </select>
+          </div>
         </div>
-      </section>
+      </div>
+
+      <div class="disclaimer-banner">
+        <strong>⚖️ Dependant Eligibility Notice:</strong> Under current official guidance, family dependants (spouse and/or children) appear eligible for accompaniment or financial allowance for these destinations. Requirements and visa rules must be verified with official embassy and university guidelines before application.
+      </div>
+
+      <div id="opportunities-container" class="opportunities-grid">
+        <div class="loading-spinner">Loading opportunities...</div>
+      </div>
+    </div>
+
+    <!-- TAB 3: RESEARCHERS & LABS -->
+    <div id="tab-researchers" class="tab-pane">
+      <div class="tab-header-box">
+        <h2>👤 Edge Computing Researchers & Potential Supervisors</h2>
+        <p>Proactive academic discovery through OpenAlex, Semantic Scholar, Crossref, and arXiv, augmented with verified lab recruitment tracking.</p>
+      </div>
+
+      <div class="controls-bar">
+        <div class="search-box">
+          <input type="text" id="researcher-search" placeholder="Filter researchers by name, institution, or research topic...">
+        </div>
+        <div class="filters-row">
+          <div class="filter-pills" id="researcher-filters">
+            <button class="pill active" data-filter="all">All Researchers</button>
+            <button class="pill" data-filter="recruiting">🟢 Actively Recruiting Only</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="researchers-container" class="researchers-grid">
+        <div class="loading-spinner">Loading researchers...</div>
+      </div>
+    </div>
+
+    <!-- TAB 4: SCHOLARSHIPS -->
+    <div id="tab-scholarships" class="tab-pane">
+      <div class="tab-header-box">
+        <h2>💰 Authoritative International Scholarships Supporting Dependants</h2>
+        <p>Curated government, institutional, and philanthropic awards that provide family allowances or legally facilitate family accompaniment.</p>
+      </div>
+
+      <div class="disclaimer-banner">
+        <strong>⚖️ Dependant Eligibility Notice:</strong> Under current official guidance, family dependants (spouse and/or children) appear eligible for accompaniment or financial allowance for these destinations. Requirements and visa rules must be verified with official embassy and university guidelines before application.
+      </div>
+
+      <div id="scholarships-container" class="scholarships-grid">
+        <div class="loading-spinner">Loading scholarships...</div>
+      </div>
+    </div>
+
+    <!-- TAB 5: COUNTRIES & VISAS -->
+    <div id="tab-countries" class="tab-pane">
+      <div class="tab-header-box">
+        <h2>🌍 Target Countries & Dependant Policy Overview</h2>
+        <p>Official legal and financial feasibility assessment for PhD candidates accompanied by spouse and children.</p>
+      </div>
+
+      <div class="disclaimer-banner">
+        <strong>⚖️ Official Immigration Guidance:</strong> Regulations change frequently. Always consult the official government immigration portals linked in each card before making travel or study commitments.
+      </div>
+
+      <div id="countries-container" class="countries-grid">
+        <div class="loading-spinner">Loading country guides...</div>
+      </div>
     </div>
   </main>
 

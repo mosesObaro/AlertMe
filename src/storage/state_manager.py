@@ -16,6 +16,10 @@ ALERT_HISTORY_FILE = DATA_DIR / "alert_history.json"
 SOURCE_HEALTH_FILE = DATA_DIR / "source_health.json"
 TRENDS_FILE = DATA_DIR / "trends.json"
 SUPERVISORS_FILE = DATA_DIR / "supervisors.json"
+PHD_OPPORTUNITIES_FILE = DATA_DIR / "phd_opportunities.json"
+SCHOLARSHIPS_FILE = DATA_DIR / "scholarships.json"
+RESEARCHER_WATCHLIST_FILE = DATA_DIR / "researcher_watchlist.json"
+
 
 
 def _atomic_write_json(filepath: Path, data: Any):
@@ -44,6 +48,9 @@ class StateManager:
         self.source_health_file = self.data_dir / "source_health.json"
         self.trends_file = self.data_dir / "trends.json"
         self.supervisors_file = self.data_dir / "supervisors.json"
+        self.phd_opportunities_file = self.data_dir / "phd_opportunities.json"
+        self.scholarships_file = self.data_dir / "scholarships.json"
+        self.researcher_watchlist_file = self.data_dir / "researcher_watchlist.json"
 
     def load_seen_ids(self) -> Set[str]:
         """Loads set of previously alerted/seen item IDs."""
@@ -141,3 +148,52 @@ class StateManager:
                 return json.load(f)
         except Exception:
             return {}
+
+    def save_opportunities(self, opportunities_data: List[Dict[str, Any]]):
+        """Saves discovered PhD/research opportunities."""
+        _atomic_write_json(self.phd_opportunities_file, opportunities_data)
+
+    def load_opportunities(self) -> List[Dict[str, Any]]:
+        """Loads discovered PhD/research opportunities."""
+        if not self.phd_opportunities_file.exists():
+            return []
+        try:
+            with open(self.phd_opportunities_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return data if isinstance(data, list) else []
+        except Exception as e:
+            logger.warning(f"Error loading {self.phd_opportunities_file}: {e}")
+            return []
+
+    def save_scholarships(self, scholarships_data: List[Dict[str, Any]]):
+        """Saves curated scholarship records."""
+        _atomic_write_json(self.scholarships_file, scholarships_data)
+
+    def load_scholarships(self) -> List[Dict[str, Any]]:
+        """Loads curated scholarship records."""
+        if not self.scholarships_file.exists():
+            return []
+        try:
+            with open(self.scholarships_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return data if isinstance(data, list) else []
+        except Exception as e:
+            logger.warning(f"Error loading {self.scholarships_file}: {e}")
+            return []
+
+    def save_researcher_watchlist(self, watchlist_data: Dict[str, Any]):
+        """Saves enriched researcher watchlist and lab recruitment tracking."""
+        _atomic_write_json(self.researcher_watchlist_file, watchlist_data)
+
+    def load_researcher_watchlist(self) -> Dict[str, Any]:
+        """Loads enriched researcher watchlist."""
+        if not self.researcher_watchlist_file.exists():
+            return {}
+        try:
+            with open(self.researcher_watchlist_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                return data if isinstance(data, dict) else {}
+        except Exception as e:
+            logger.warning(f"Error loading {self.researcher_watchlist_file}: {e}")
+            return {}
+

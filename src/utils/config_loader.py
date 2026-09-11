@@ -63,6 +63,7 @@ class ConfigManager:
         self.conferences = load_yaml_file(self.config_dir / "conferences.yaml")
         self.research_groups = load_yaml_file(self.config_dir / "research_groups.yaml")
         self.profile = load_yaml_file(self.config_dir / "profile.yaml")
+        self.phd_opportunities = load_yaml_file(self.config_dir / "phd_opportunities.yaml")
 
     def reload(self):
         """Reloads all configuration files."""
@@ -71,6 +72,7 @@ class ConfigManager:
         self.conferences = load_yaml_file(self.config_dir / "conferences.yaml")
         self.research_groups = load_yaml_file(self.config_dir / "research_groups.yaml")
         self.profile = load_yaml_file(self.config_dir / "profile.yaml")
+        self.phd_opportunities = load_yaml_file(self.config_dir / "phd_opportunities.yaml")
 
     @property
     def primary_topics(self) -> list:
@@ -123,4 +125,22 @@ class ConfigManager:
         return self.profile.get("phd_target", {
             "field": "Edge Computing",
             "target_application_period": "2027-01-01"
+        })
+
+    @property
+    def phd_opportunities_config(self) -> dict:
+        return self.phd_opportunities.get("phd_opportunities", {})
+
+    @property
+    def phd_opportunities_preferences(self) -> dict:
+        return self.profile.get("phd_opportunities_preferences", {
+            "enabled": True,
+            "target_countries": ["Germany", "Hong Kong", "Canada", "United Kingdom", "Japan", "United States"],
+            "require_funding": True,
+            "require_international_eligibility": True,
+            "dependant_support_priority": True,
+            "minimum_opportunity_score": 6.5,
+            "minimum_researcher_score": 6.5,
+            "minimum_scholarship_score": 6.5,
+            "urgent_alert_min_score": 8.8
         })

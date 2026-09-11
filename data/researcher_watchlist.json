@@ -1,0 +1,446 @@
+{
+  "researchers": {},
+  "top_supervisors": [
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Germany"
+      ],
+      "composite_score": 7.7,
+      "average_relevance": 10.0,
+      "topics": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "academic_fit_score": 9.5,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Canada"
+      ],
+      "composite_score": 7.5,
+      "average_relevance": 9.3,
+      "topics": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ]
+    },
+    {
+      "name": "Prof. Raymond Liu",
+      "institution": "Hong Kong University of Science and Technology (HKUST)",
+      "country": "Hong Kong",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support"
+      ],
+      "academic_fit_score": 9.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+          "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+          "date": "2026-09-11",
+          "venue": "Hong Kong University of Science and Technology (HKUST) — Hong Kong",
+          "score": 9.0
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Hong Kong"
+      ],
+      "composite_score": 7.4,
+      "average_relevance": 9.0,
+      "topics": [
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support"
+      ]
+    },
+    {
+      "name": "Ehzaz Mustafa",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Junaid Shuja",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Faisal Rehman",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Abdallah Namoun",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Mazhar Ali",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Abdullah Alourani",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Prof. Alice Smith",
+      "institution": "University of Cambridge",
+      "country": "United Kingdom",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ],
+      "academic_fit_score": 8.5,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+          "url": "https://www.cst.cam.ac.uk/phd-positions",
+          "date": "2026-09-11",
+          "venue": "University of Cambridge — United Kingdom",
+          "score": 8.8
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: United Kingdom"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 8.8,
+      "topics": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ]
+    }
+  ]
+}

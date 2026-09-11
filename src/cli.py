@@ -174,15 +174,198 @@ def interactive_setup(args):
     print("  python -m src.cli run --mode daily --dry-run\n")
 
 
-def generate_dashboard_cli(args):
-    """Regenerates docs/data.json from current stored state."""
-    pipeline = ResearchPipeline()
-    history = pipeline.state_manager.load_alert_history()
-    trends = pipeline.state_manager.load_trends()
-    supervisors = pipeline.state_manager.load_supervisors()
-    top_sups = pipeline.supervisor_tracker.get_top_supervisors_to_watch(supervisors)
-    pipeline.dashboard_gen.generate_dashboard_data([], trends, top_sups)
-    print("✅ Dashboard static data regenerated in docs/data.json.")
+def list_phd_opportunities(args):
+    """Lists discovered PhD opportunities with optional filters."""
+    from src.storage.state_manager import StateManager
+    from src.collectors.lab_recruitment import LabRecruitmentCollector
+    from src.collectors.opportunities import OpportunityCollector
+
+    state_mgr = StateManager()
+    opps = state_mgr.load_opportunities()
+    if not opps:
+        # Collect dynamically if storage empty
+        collector = LabRecruitmentCollector()
+        items = collector.collect()
+        opps = [i.opportunity_data for i in items if i.opportunity_data]
+
+    # Filters
+    filtered = opps
+    if args.country:
+        filtered = [o for o in filtered if args.country.lower() in (o.get("country") or "").lower()]
+    if args.actively_recruiting:
+        filtered = [o for o in filtered if o.get("recruitment_status") == "actively_recruiting"]
+    if args.fully_funded:
+        filtered = [o for o in filtered if o.get("funding_status") == "fully_funded"]
+    if args.family_supported:
+        filtered = [o for o in filtered if o.get("dependant_support") == "financially_supported"]
+
+    print("\n" + "=" * 75)
+    print(f" 🎓 PhD & LAB OPPORTUNITIES ({len(filtered)} matching)")
+    print("=" * 75)
+    for idx, opp in enumerate(filtered, 1):
+        rec = opp.get("recruitment_status", "unverified").upper()
+        fund = opp.get("funding_status", "unspecified").upper()
+        dep = opp.get("dependant_support", "unspecified").upper()
+        fit = opp.get("fit_score", 7.0)
+
+        print(f"{idx}. {opp.get('title')}")
+        print(f"   Institution: {opp.get('university')} ({opp.get('country')}) | Fit: {fit}/10")
+        if opp.get("supervisor"):
+            print(f"   Supervisor:  {opp.get('supervisor')}")
+        print(f"   Status:      [{rec}] | Funding: [{fund}] | Dependants: [{dep}]")
+        if opp.get("direct_quote"):
+            print(f"   Quote:       \"{opp.get('direct_quote')}\"")
+        if opp.get("deadline"):
+            print(f"   Deadline:    {opp.get('deadline')}")
+        print(f"   Link:        {opp.get('link')}")
+        print("-" * 75)
+    print()
+
+
+def list_researchers(args):
+    """Lists monitored researchers and candidate supervisors."""
+    from src.storage.state_manager import StateManager
+    from src.summarization.supervisors import SupervisorTracker
+
+    state_mgr = StateManager()
+    watchlist = state_mgr.load_researcher_watchlist()
+    registry = watchlist.get("researchers", {}) if isinstance(watchlist, dict) else {}
+    if not registry:
+        registry = state_mgr.load_supervisors()
+
+    researchers = list(registry.values()) if isinstance(registry, dict) else registry
+    if args.recruiting:
+        researchers = [r for r in researchers if r.get("recruitment_status") == "actively_recruiting"]
+    if args.country:
+        researchers = [r for r in researchers if args.country.lower() in (r.get("country") or "").lower()]
+
+    print("\n" + "=" * 75)
+    print(f" 👤 MONITORED RESEARCHERS & SUPERVISORS ({len(researchers)} matching)")
+    print("=" * 75)
+    for idx, r in enumerate(researchers, 1):
+        status = r.get("recruitment_status", "tracked").upper()
+        pubs = r.get("publication_count", 0)
+        score = r.get("composite_score") or r.get("average_relevance", 7.0)
+        print(f"{idx}. {r.get('name')} — {r.get('institution')} ({r.get('country', 'International')})")
+        print(f"   Status: [{status}] | Relevant Papers: {pubs} | Fit Score: {score}/10")
+        if r.get("recruitment_quote"):
+            print(f"   Quote:  \"{r.get('recruitment_quote')}\"")
+        topics = r.get("research_topics") or r.get("topics", [])
+        if topics:
+            print(f"   Topics: {', '.join(topics[:4])}")
+        if r.get("scholar_url"):
+            print(f"   Scholar: {r.get('scholar_url')}")
+        if r.get("lab_page"):
+            print(f"   Lab URL: {r.get('lab_page')}")
+        print("-" * 75)
+    print()
+
+
+def list_scholarships(args):
+    """Lists curated international scholarships supporting dependants."""
+    from src.collectors.scholarships import ScholarshipCollector
+
+    collector = ScholarshipCollector()
+    schols = collector.get_scholarships_list()
+
+    if args.country:
+        schols = [s for s in schols if args.country.lower() in s.country.lower()]
+    if args.financially_supported:
+        schols = [s for s in schols if s.dependant_support_classification in ["financially_supported", "excellent"]]
+
+    print("\n" + "=" * 75)
+    print(f" 💰 FAMILY-FRIENDLY SCHOLARSHIPS ({len(schols)} available)")
+    print("=" * 75)
+    for idx, s in enumerate(schols, 1):
+        dep_status = "ALLOWANCE INCLUDED" if s.dependant_support_classification in ["financially_supported", "excellent"] else "PERMITTED ON VISA"
+        print(f"{idx}. {s.name} ({s.country})")
+        print(f"   Funding: Fully Funded | Family Support: [{dep_status}]")
+        print(f"   Allowance: {s.dependant_support_details}")
+        print(f"   Legal:     {s.notes}")
+        print(f"   Deadline:  {s.deadline}")
+        print(f"   Official:  {s.official_url}")
+        print("-" * 75)
+    print()
+
+
+def test_phd_sources(args):
+    """Tests PhD opportunities, lab recruitment, and scholarship collectors."""
+    from src.collectors.lab_recruitment import LabRecruitmentCollector
+    from src.collectors.scholarships import ScholarshipCollector
+    from src.collectors.opportunities import OpportunityCollector
+
+    print("\nTesting PhD intelligence sources...\n")
+    collectors = [
+        LabRecruitmentCollector(name="University Lab PhD Opportunities"),
+        ScholarshipCollector(name="Curated International Scholarships"),
+        OpportunityCollector(name="Institutional PhD Opportunities")
+    ]
+
+    print(f"{'Source Name':<40} | {'Status':<10} | {'Items'}")
+    print("-" * 65)
+    for col in collectors:
+        items = col.collect()
+        status = col.last_status
+        print(f"{col.name:<40} | {status:<10} | {len(items)}")
+    print("\nPhD source connectivity verification complete.\n")
+
+
+def debug_opportunity_score(args):
+    """Debugs the scoring and classification for a PhD opportunity."""
+    from src.ranking.opportunity_scorer import OpportunityScorer
+    from src.models import PhDOpportunity
+
+    scorer = OpportunityScorer()
+    opp = PhDOpportunity(
+        title=args.title,
+        university=args.university or "Technical University",
+        department=args.department or "Department of Computer Science",
+        country=args.country or "Germany",
+        eligibility=args.description or "",
+        research_areas=["Edge Computing", "Distributed Systems"]
+    )
+
+    full_text = f"{args.title} {args.description or ''} {args.quote or ''}"
+    if args.quote:
+        status, snippet = scorer.classify_recruitment_status(args.quote)
+        opp.recruitment_status = status
+        opp.recruitment_evidence = snippet
+    else:
+        status, snippet = scorer.classify_recruitment_status(full_text)
+        opp.recruitment_status = status
+        opp.recruitment_evidence = snippet
+
+    fund_status, _ = scorer.classify_funding_status(full_text)
+    opp.funding_status = fund_status
+
+    dep_status, dep_info = scorer.classify_dependant_support(opp.country, full_text)
+    opp.dependant_support_classification = dep_status
+    opp.dependant_support_info = dep_info
+
+    opp = scorer.score_opportunity(opp)
+
+    print("\n" + "=" * 65)
+    print(" 🎓 PhD OPPORTUNITY SCORING & CLASSIFICATION DEBUGGER")
+    print("=" * 65)
+    print(f"Title:        {opp.title}")
+    print(f"University:   {opp.university} ({opp.country})")
+    print(f"Recruitment:  {opp.recruitment_status.upper()}")
+    print(f"Funding:      {opp.funding_status.upper()}")
+    print(f"Dependants:   {opp.dependant_support_classification.upper()}")
+    if opp.recruitment_evidence:
+        print(f"Evidence:     \"{opp.recruitment_evidence}\"")
+    print("-" * 65)
+    print(f"Research Fit Score (35%):     {opp.relevance_score:>5.2f} / 10.0")
+    print(f"Recruitment Status (20%):     {opp.supervisor_fit_score:>5.2f} / 10.0")
+    print(f"Funding Security (20%):       {opp.funding_score:>5.2f} / 10.0")
+    print(f"Dependant Feasibility (15%):  {opp.dependant_support_score:>5.2f} / 10.0")
+    print(f"Country Target Score (10%):   {opp.country_score:>5.2f} / 10.0")
+    print("-" * 65)
+    print(f"TOTAL COMPOSITE FIT SCORE:    {opp.composite_score:>5.1f} / 10.0")
+    print("\nTRANSPARENT RATIONALE:")
+    for r in opp.reasons:
+        print(f"  {r}")
+    print("=" * 65 + "\n")
 
 
 def main():
@@ -215,6 +398,35 @@ def main():
     # Command: generate-dashboard
     subparsers.add_parser("generate-dashboard", help="Regenerate GitHub Pages docs/data.json")
 
+    # Command: phd-opportunities
+    opp_parser = subparsers.add_parser("phd-opportunities", help="List discovered PhD opportunities")
+    opp_parser.add_argument("--country", default="", help="Filter by country name")
+    opp_parser.add_argument("--actively-recruiting", action="store_true", help="Filter by actively recruiting only")
+    opp_parser.add_argument("--fully-funded", action="store_true", help="Filter by fully funded only")
+    opp_parser.add_argument("--family-supported", action="store_true", help="Filter by financially supported dependants")
+
+    # Command: researchers
+    res_parser = subparsers.add_parser("researchers", help="List monitored researchers and potential supervisors")
+    res_parser.add_argument("--country", default="", help="Filter by country")
+    res_parser.add_argument("--recruiting", action="store_true", help="Filter by actively recruiting only")
+
+    # Command: scholarships
+    schol_parser = subparsers.add_parser("scholarships", help="List curated family-friendly scholarships")
+    schol_parser.add_argument("--country", default="", help="Filter by country")
+    schol_parser.add_argument("--financially-supported", action="store_true", help="Filter by dedicated allowance only")
+
+    # Command: test-phd-sources
+    subparsers.add_parser("test-phd-sources", help="Test PhD opportunities and scholarship discovery sources")
+
+    # Command: debug-opportunity-score
+    dopp_parser = subparsers.add_parser("debug-opportunity-score", help="Debug opportunity scoring and classification")
+    dopp_parser.add_argument("--title", required=True, help="Title of PhD opportunity")
+    dopp_parser.add_argument("--university", default="", help="University name")
+    dopp_parser.add_argument("--department", default="", help="Department")
+    dopp_parser.add_argument("--country", default="Germany", help="Target country")
+    dopp_parser.add_argument("--description", default="", help="Posting description")
+    dopp_parser.add_argument("--quote", default=None, help="Direct recruitment quote snippet")
+
     args = parser.parse_args()
 
     if args.command == "run":
@@ -227,6 +439,16 @@ def main():
         interactive_setup(args)
     elif args.command == "generate-dashboard":
         generate_dashboard_cli(args)
+    elif args.command == "phd-opportunities":
+        list_phd_opportunities(args)
+    elif args.command == "researchers":
+        list_researchers(args)
+    elif args.command == "scholarships":
+        list_scholarships(args)
+    elif args.command == "test-phd-sources":
+        test_phd_sources(args)
+    elif args.command == "debug-opportunity-score":
+        debug_opportunity_score(args)
     else:
         parser.print_help()
 

@@ -8,6 +8,12 @@ Link: {{ item.url }}
 Abstract / Summary:
 {{ item.abstract }}
 
+{% if opp %}
+Recruitment: {{ opp.recruitment_status|upper }} | Funding: {{ opp.funding_status|upper }}
+Family/Dependants: {{ opp.dependant_support|upper }}
+{% if opp.direct_quote %}Quote: "{{ opp.direct_quote }}"{% endif %}
+{% endif %}
+
 {% if item.intelligence %}
 Why this is critical:
 {{ item.intelligence.why_it_matters }}

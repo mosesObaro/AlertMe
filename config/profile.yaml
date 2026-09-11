@@ -57,3 +57,21 @@ ai_summarization:
   provider: "gemini" # Options: gemini, groq, openai, ollama
   api_key_env: "LLM_API_KEY" # Env var name containing API key
   model: "gemini-1.5-flash"
+
+phd_opportunities_preferences:
+  enabled: true
+  target_countries:
+    - "Germany"
+    - "Hong Kong"
+    - "Canada"
+    - "United Kingdom"
+    - "Japan"
+    - "United States"
+  require_funding: true # Strongly boost fully funded positions
+  require_international_eligibility: true # Boost positions accepting international candidates
+  dependant_support_priority: true # Boost opportunities with spouse/child allowance or visa
+  minimum_opportunity_score: 6.5
+  minimum_researcher_score: 6.5
+  minimum_scholarship_score: 6.5
+  urgent_alert_min_score: 8.8
+
