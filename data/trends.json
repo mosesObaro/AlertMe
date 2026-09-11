@@ -1,10 +1,17 @@
 [
   {
     "topic": "Edge AI",
-    "direction": "→",
-    "status": "Steady",
-    "recent_count": 2,
+    "direction": "↑↑",
+    "status": "Surging",
+    "recent_count": 5,
     "historical_count": 2
+  },
+  {
+    "topic": "Federated Learning",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
+    "historical_count": 0
   },
   {
     "topic": "Resource Allocation",
@@ -14,18 +21,11 @@
     "historical_count": 1
   },
   {
-    "topic": "Federated Learning",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 1,
-    "historical_count": 0
-  },
-  {
     "topic": "Computation Offloading",
-    "direction": "→",
-    "status": "Steady",
+    "direction": "↓",
+    "status": "Declining",
     "recent_count": 1,
-    "historical_count": 1
+    "historical_count": 2
   },
   {
     "topic": "TinyML",

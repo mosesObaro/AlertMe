@@ -26,7 +26,7 @@
           "score": 10.0
         }
       ],
-      "publication_count": 2,
+      "publication_count": 3,
       "citations_indicator": "",
       "h_index": null,
       "orcid": null,
@@ -38,7 +38,7 @@
       "reasons": [
         "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
         "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
-        "✓ Active recent publication record (2 papers)",
+        "✓ Active recent publication record (3 papers)",
         "• Active researcher in target field; current recruitment status pending lab confirmation",
         "✓ Target country priority: Germany"
       ],
@@ -75,7 +75,7 @@
           "score": 9.3
         }
       ],
-      "publication_count": 2,
+      "publication_count": 3,
       "citations_indicator": "",
       "h_index": null,
       "orcid": null,
@@ -86,7 +86,7 @@
       "current_opportunities": [],
       "reasons": [
         "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
-        "✓ Active recent publication record (2 papers)",
+        "✓ Active recent publication record (3 papers)",
         "• Active researcher in target field; current recruitment status pending lab confirmation",
         "✓ Target country priority: Canada"
       ],
@@ -127,7 +127,7 @@
           "score": 9.0
         }
       ],
-      "publication_count": 2,
+      "publication_count": 3,
       "citations_indicator": "",
       "h_index": null,
       "orcid": null,
@@ -138,7 +138,7 @@
       "current_opportunities": [],
       "reasons": [
         "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
-        "✓ Active recent publication record (2 papers)",
+        "✓ Active recent publication record (3 papers)",
         "• Active researcher in target field; current recruitment status pending lab confirmation",
         "✓ Target country priority: Hong Kong"
       ],
@@ -152,6 +152,54 @@
         "PhD Funding",
         "International Scholarship",
         "Dependant Support"
+      ]
+    },
+    {
+      "name": "Prof. Alice Smith",
+      "institution": "University of Cambridge",
+      "country": "United Kingdom",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ],
+      "academic_fit_score": 8.5,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+          "url": "https://www.cst.cam.ac.uk/phd-positions",
+          "date": "2026-09-11",
+          "venue": "University of Cambridge — United Kingdom",
+          "score": 8.8
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: United Kingdom"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 8.8,
+      "topics": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
       ]
     },
     {
@@ -393,54 +441,6 @@
       "composite_score": 7.2,
       "average_relevance": 7.7,
       "topics": []
-    },
-    {
-      "name": "Prof. Alice Smith",
-      "institution": "University of Cambridge",
-      "country": "United Kingdom",
-      "department": "",
-      "profile_url": "",
-      "lab_website": "",
-      "research_areas": [
-        "Cloudlet Systems",
-        "Edge Computing",
-        "Resource Allocation"
-      ],
-      "academic_fit_score": 8.5,
-      "recruitment_status": "not_verified",
-      "recruitment_evidence": "",
-      "recruitment_quote": "",
-      "recent_papers": [
-        {
-          "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
-          "url": "https://www.cst.cam.ac.uk/phd-positions",
-          "date": "2026-09-11",
-          "venue": "University of Cambridge — United Kingdom",
-          "score": 8.8
-        }
-      ],
-      "publication_count": 2,
-      "citations_indicator": "",
-      "h_index": null,
-      "orcid": null,
-      "openalex_id": null,
-      "semantic_scholar_url": null,
-      "google_scholar_url": null,
-      "last_checked": "2026-09-11",
-      "current_opportunities": [],
-      "reasons": [
-        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
-        "✓ Active recent publication record (2 papers)",
-        "• Active researcher in target field; current recruitment status pending lab confirmation",
-        "✓ Target country priority: United Kingdom"
-      ],
-      "composite_score": 7.2,
-      "average_relevance": 8.8,
-      "topics": [
-        "Cloudlet Systems",
-        "Edge Computing",
-        "Resource Allocation"
-      ]
     }
   ]
 }
