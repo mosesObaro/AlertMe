@@ -1560,5 +1560,150 @@
     },
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "[Scholarship] Hong Kong PhD Fellowship Scheme (HKPFS)",
+    "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+    "source": "Research Grants Council (RGC) of Hong Kong",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "fellowship",
+    "authors": [],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-09-11",
+    "discovery_date": "2026-09-11",
+    "abstract": "Scholarship by Research Grants Council (RGC) of Hong Kong (Hong Kong). Stipend: HK$331,200 / year (~HK$27,600 / month) + HK$13,800 annual travel allowance. Tuition: Full tuition waiver / university subsidy. Dependants: Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong. 👨‍👩‍👧 Dependants Permitted.",
+    "venue": "Hong Kong — HKUST, HKU, CUHK, PolyU, CityU, HKBU, Lingnan, EdUHK",
+    "topics": [
+      "PhD Funding",
+      "International Scholarship",
+      "Dependant Support",
+      "Hong Kong"
+    ],
+    "institution": "HKUST, HKU, CUHK, PolyU, CityU, HKBU, Lingnan, EdUHK",
+    "location": "Hong Kong",
+    "deadline": "December 1 annually",
+    "is_urgent": false,
+    "id": "item_fc5277639858a705",
+    "score": {
+      "topic_score": 3.6799999999999997,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 1.0,
+      "negative_penalty": 0.0,
+      "final_score": 9.2,
+      "matched_topics": [
+        "PhD Funding",
+        "Hong Kong"
+      ],
+      "reasons": [
+        "✓ Dependant Friendly: Dependants legally permitted; generous stipend calibrated for international living",
+        "✓ Target country priority: Hong Kong",
+        "✓ Generous international living stipend + tuition waiver"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Not determinable from available metadata.",
+      "key_contribution": "👨‍👩‍👧 Dependants Permitted.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "9.2/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": {
+      "kind": "scholarship",
+      "type": "scholarship",
+      "name": "Hong Kong PhD Fellowship Scheme (HKPFS)",
+      "country": "Hong Kong",
+      "funding_type": "fully_funded",
+      "dependant_support": "permitted",
+      "allowance_details": "Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong.",
+      "legal_notes": "Extremely prestigious, high-stipend international fellowship scheme.",
+      "deadline": "December 1 annually",
+      "official_link": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+      "fit_score": 9.2,
+      "data": {
+        "name": "Hong Kong PhD Fellowship Scheme (HKPFS)",
+        "provider": "Research Grants Council (RGC) of Hong Kong",
+        "country": "Hong Kong",
+        "university": "HKUST, HKU, CUHK, PolyU, CityU, HKBU, Lingnan, EdUHK",
+        "degree_level": "PhD",
+        "tuition_coverage": "Full tuition waiver / university subsidy",
+        "stipend_amount": "HK$331,200 / year (~HK$27,600 / month) + HK$13,800 annual travel allowance",
+        "funding_type": "fully_funded",
+        "duration": "Up to 3 - 4 years",
+        "deadline": "December 1 annually",
+        "start_date": "September annually",
+        "dependant_support_classification": "good",
+        "dependant_support_details": "Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong.",
+        "family_accommodation": "Subsidized on-campus or university-managed family apartments",
+        "international_eligibility": "eligible",
+        "official_url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+        "verification_date": "2026-09-11",
+        "score": 9.2,
+        "reasons": [
+          "✓ Dependant Friendly: Dependants legally permitted; generous stipend calibrated for international living",
+          "✓ Target country priority: Hong Kong",
+          "✓ Generous international living stipend + tuition waiver"
+        ],
+        "notes": "Extremely prestigious, high-stipend international fellowship scheme."
+      }
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+    "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+    "source": "Linux Foundation / LF Edge Blog",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "standards_update",
+    "authors": [
+      "LF Edge"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-09-10",
+    "discovery_date": "2026-09-11",
+    "abstract": "Author: Roy Shadmon, PhD / System Architect, AnyLog Over the past two years, we at AnyLog have worked with UC Santa Cruz to turn student capstone projects into a collaboration...",
+    "venue": "Linux Foundation / LF Edge Blog",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "item_47734c7aab1f8f0b",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.8,
+      "matched_topics": [
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title)",
+        "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Not determinable from available metadata.",
+      "key_contribution": "Author: Roy Shadmon, PhD / System Architect, AnyLog Over the past two years, we at AnyLog have worked with UC Santa Cruz to turn student capstone projects into a collaboration...",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.8/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
