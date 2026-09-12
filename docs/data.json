@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-11",
-    "total_items": 25,
-    "high_relevance_count": 17,
-    "papers_count": 8,
+    "last_updated": "2026-09-12",
+    "total_items": 27,
+    "high_relevance_count": 18,
+    "papers_count": 9,
     "conferences_count": 2,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -1940,7 +1940,8 @@
           "notes": "Extremely prestigious, high-stipend international fellowship scheme."
         }
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
@@ -2710,7 +2711,8 @@
         "is_ai_generated": false
       },
       "opportunity_data": null,
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
@@ -2835,6 +2837,76 @@
         "citation_count": 19
       },
       "alert_mode": "daily"
+    },
+    {
+      "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+      "url": "https://doi.org/10.1007/s42452-026-09533-w",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "survey",
+      "authors": [
+        "Sourabh Natu",
+        "Ankur Goyal"
+      ],
+      "doi": "10.1007/s42452-026-09533-w",
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-12",
+      "abstract": "",
+      "venue": "Discover Applied Sciences",
+      "topics": [
+        "Computer science",
+        "Group method of data handling",
+        "Data processing",
+        "Key (lock)",
+        "Enhanced Data Rates for GSM Evolution",
+        "Internet of Things",
+        "Edge computing",
+        "Data management",
+        "Cloud computing",
+        "Real-time computing",
+        "Systems engineering",
+        "Data mining",
+        "Real-time data",
+        "Edge device"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_bd6f5f19f2c71564",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.7,
+        "negative_penalty": 0.0,
+        "final_score": 7.5,
+        "matched_topics": [
+          "IoT",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Comprehensive Literature Survey / Review (+0.7)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "Addresses key paradigms in Computer science, Group method of data handling.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "Published in Discover Applied Sciences.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review.",
+        "relevance_to_phd": "7.5/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
     },
     {
       "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -3031,47 +3103,72 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] On-sleight382/GokuGoku (★ 0)",
-      "url": "https://github.com/On-sleight382/GokuGoku",
+      "title": "[Code/Benchmark] nazar-karpov/bias-vla-benchmark (★ 0)",
+      "url": "https://github.com/nazar-karpov/bias-vla-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "On-sleight382"
+        "nazar-karpov"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-11",
-      "discovery_date": "2026-09-11",
+      "publication_date": "2026-09-12",
+      "discovery_date": "2026-09-12",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
-      "topics": [
-        "api",
-        "benchmark",
-        "benchmarking",
-        "coreui",
-        "github-config",
-        "goku",
-        "http",
-        "karabiner",
-        "karabiner-configurator",
-        "keyboard",
-        "macos",
-        "mcp",
-        "mcp-server",
-        "middleware",
-        "mybatis",
-        "performance",
-        "performance-testing",
-        "proxy",
-        "rust",
-        "wild"
-      ],
+      "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_46c9f7406dd2cb9c",
+      "id": "item_e228b32b24bb72d5",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] sethivansh6/Benchmarking-time-series-foundation-models-for-prediction-forecasting (★ 0)",
+      "url": "https://github.com/sethivansh6/Benchmarking-time-series-foundation-models-for-prediction-forecasting",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "sethivansh6"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-12",
+      "discovery_date": "2026-09-12",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_2734944ea11a9f04",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -3106,8 +3203,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-11",
-      "discovery_date": "2026-09-11",
+      "publication_date": "2026-09-12",
+      "discovery_date": "2026-09-12",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3150,7 +3247,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-11",
+      "discovery_date": "2026-09-12",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3173,7 +3270,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (86d ago) (+0.2)",
+          "• Published >30d ago (87d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3193,7 +3290,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-11",
+      "discovery_date": "2026-09-12",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3216,7 +3313,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (176d ago) (+0.2)",
+          "• Published >30d ago (177d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

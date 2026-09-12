@@ -1705,5 +1705,76 @@
     "opportunity_data": null,
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+    "url": "https://doi.org/10.1007/s42452-026-09533-w",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "survey",
+    "authors": [
+      "Sourabh Natu",
+      "Ankur Goyal"
+    ],
+    "doi": "10.1007/s42452-026-09533-w",
+    "arxiv_id": null,
+    "publication_date": "2026-09-11",
+    "discovery_date": "2026-09-12",
+    "abstract": "",
+    "venue": "Discover Applied Sciences",
+    "topics": [
+      "Computer science",
+      "Group method of data handling",
+      "Data processing",
+      "Key (lock)",
+      "Enhanced Data Rates for GSM Evolution",
+      "Internet of Things",
+      "Edge computing",
+      "Data management",
+      "Cloud computing",
+      "Real-time computing",
+      "Systems engineering",
+      "Data mining",
+      "Real-time data",
+      "Edge device"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_bd6f5f19f2c71564",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.7,
+      "negative_penalty": 0.0,
+      "final_score": 7.5,
+      "matched_topics": [
+        "IoT",
+        "Edge Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)",
+        "✓ Comprehensive Literature Survey / Review (+0.7)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "Addresses key paradigms in Computer science, Group method of data handling.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Not determinable from available metadata.",
+      "key_contribution": "Published in Discover Applied Sciences.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review.",
+      "relevance_to_phd": "7.5/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
   }
 ]

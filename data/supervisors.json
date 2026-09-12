@@ -1428,5 +1428,143 @@
     "topics": [
       "Edge AI"
     ]
+  },
+  "Sourabh Natu": {
+    "name": "Sourabh Natu",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Cloud computing",
+      "Key (lock)",
+      "Data management",
+      "Enhanced Data Rates for GSM Evolution",
+      "Edge computing",
+      "Real-time computing",
+      "Computer science",
+      "Group method of data handling",
+      "Data mining",
+      "Data processing",
+      "Internet of Things",
+      "Systems engineering",
+      "Real-time data",
+      "Edge device"
+    ],
+    "academic_fit_score": 9.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+        "url": "https://doi.org/10.1007/s42452-026-09533-w",
+        "date": "2026-09-11",
+        "venue": "Discover Applied Sciences",
+        "score": 7.5
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-12",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, internet of things, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.3,
+    "average_relevance": 7.5,
+    "topics": [
+      "Cloud computing",
+      "Key (lock)",
+      "Data management",
+      "Enhanced Data Rates for GSM Evolution",
+      "Edge computing",
+      "Real-time computing",
+      "Computer science",
+      "Group method of data handling",
+      "Data mining",
+      "Data processing",
+      "Internet of Things",
+      "Systems engineering",
+      "Real-time data",
+      "Edge device"
+    ]
+  },
+  "Ankur Goyal": {
+    "name": "Ankur Goyal",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Cloud computing",
+      "Key (lock)",
+      "Data management",
+      "Enhanced Data Rates for GSM Evolution",
+      "Edge computing",
+      "Real-time computing",
+      "Computer science",
+      "Group method of data handling",
+      "Data mining",
+      "Data processing",
+      "Internet of Things",
+      "Systems engineering",
+      "Real-time data",
+      "Edge device"
+    ],
+    "academic_fit_score": 9.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+        "url": "https://doi.org/10.1007/s42452-026-09533-w",
+        "date": "2026-09-11",
+        "venue": "Discover Applied Sciences",
+        "score": 7.5
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-12",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, internet of things, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.3,
+    "average_relevance": 7.5,
+    "topics": [
+      "Cloud computing",
+      "Key (lock)",
+      "Data management",
+      "Enhanced Data Rates for GSM Evolution",
+      "Edge computing",
+      "Real-time computing",
+      "Computer science",
+      "Group method of data handling",
+      "Data mining",
+      "Data processing",
+      "Internet of Things",
+      "Systems engineering",
+      "Real-time data",
+      "Edge device"
+    ]
   }
 }
