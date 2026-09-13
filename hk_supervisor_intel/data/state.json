@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-13T03:23:50.692358",
+  "last_updated": "2026-09-13T02:25:09.471488",
   "familiarity": {
     "polyu_cao_jiannong": {
       "researcher_id": "polyu_cao_jiannong",
@@ -14,7 +14,7 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": "2026-09-13",
-      "exposure_cycle_day": 4
+      "exposure_cycle_day": 5
     },
     "polyu_guo_song": {
       "researcher_id": "polyu_guo_song",
@@ -242,6 +242,37 @@
       "scholarship_connection": "PolyU Presidential PhD Fellowship Scheme (PPPFS) (Annual cash award of HK$40,000 + full tuition waiver + monthly stipend). Supervisor endorsement significantly strengthens departmental ranking.",
       "deadline_info": "2026-12-01 23:59:59 HKT (79 days / 12 weeks remaining)",
       "next_action": "Tomorrow (Day 4): Deep dive into recent publication 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks'."
+    },
+    {
+      "alert_id": "polyu_cao_jiannong_day4_20260913",
+      "date": "2026-09-13",
+      "weeks_remaining": 12,
+      "days_remaining": 79,
+      "university": "The Hong Kong Polytechnic University",
+      "professor": "Prof. Jiannong Cao",
+      "department": "Department of Computing (COMP)",
+      "research_group": "Internet and Mobile Computing Laboratory (IMCL)",
+      "priority_tier": "Tier 1",
+      "research_alignment_pct": 96,
+      "recruitment_status": "CONFIRMED_ACTIVE",
+      "recruitment_evidence": "We are seeking highly motivated PhD students and Postdocs with strong backgrounds in Computer Science, Computer Engineering, or Mathematics to join IMCL for Fall 2027. Full scholarships (HKPFS and PolyU Presidential Fellowship) available. [Source: official_lab_website, Date: 2026-06-15]",
+      "cycle_day": 4,
+      "today_research_focus": "Recent Breakthrough Research (Past 1-2 Years)",
+      "paper_title": "Collaborative Edge AI Inference with Dynamic Early-Exit Networks",
+      "paper_author": "Zhiyuan Yin, Jiannong Cao, Shenglong Yu",
+      "paper_year": 2024,
+      "paper_link": "https://doi.org/10.1109/TMC.2024.3361289",
+      "research_problem": "Running heavy deep neural networks on energy-constrained IoT edge devices causes extreme latency and battery exhaustion.",
+      "approach": "Adaptive early-exit backbone with progressive multi-device feature sharing across edge clusters.",
+      "key_contribution": "Achieved 92% Top-1 accuracy while cutting average inference latency by 52% across heterogeneous edge nodes.",
+      "why_it_matters_for_edge": "Direct alignment with Edge AI, model compression, and split computing research questions.",
+      "research_trajectory": "State-of-the-Art: Current publications address real-time edge constraints using Distributed Protocol Design.",
+      "what_to_read_next": "Follow up with 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks' for current extensions.",
+      "potential_phd_alignment": "Potential PhD Topics: Decentralized Peer-to-Peer Edge Orchestration without Central Coordinator; Adaptive Early-Exit Deep Neural Inference over Heterogeneous Edge Mesh Nodes.",
+      "application_action_today": "Deconstruct the evaluation section of 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks' (metrics, baselines, and testbeds).",
+      "scholarship_connection": "PolyU Presidential PhD Fellowship Scheme (PPPFS) (Annual cash award of HK$40,000 + full tuition waiver + monthly stipend). Supervisor endorsement significantly strengthens departmental ranking.",
+      "deadline_info": "2026-12-01 23:59:59 HKT (79 days / 12 weeks remaining)",
+      "next_action": "Tomorrow (Day 5): Analyze active research grants and current lab projects."
     }
   ],
   "campaign_state": {}
