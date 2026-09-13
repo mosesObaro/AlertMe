@@ -95,7 +95,7 @@ def cmd_update_scholarships(args):
     print(f"{'='*95}\n")
 
 def cmd_generate_alert(args):
-    """Generates today's structured daily research intelligence briefing."""
+    """Generates today's structured daily research intelligence briefing and optionally dispatches via email."""
     storage = StorageManager()
     campaign = CampaignManager()
     alert_gen = AlertGenerator(storage, campaign)
@@ -106,6 +106,7 @@ def cmd_generate_alert(args):
         return
 
     markdown_text = alert.to_markdown()
+    html_text = alert.to_html()
     print("\n" + markdown_text)
 
     # Save to alerts/daily/
@@ -116,6 +117,22 @@ def cmd_generate_alert(args):
         f.write(markdown_text)
 
     print(f"[Saved daily briefing to: {alert_file}]\n")
+
+    # Dispatch email if requested or if EMAIL_RECIPIENT is present
+    should_send = getattr(args, "send_email", False) or bool(os.environ.get("EMAIL_RECIPIENT"))
+    if should_send:
+        subject = f"[HK PhD Alert] Day {alert.cycle_day}/7: {alert.professor} ({alert.university}) — {alert.today_research_focus}"
+        try:
+            from src.email.sender import EmailSender
+            sender = EmailSender()
+            print(f"Dispatching supervisor intelligence email via [{sender.provider}] to [{sender.recipient_email}]...")
+            success = sender.send(subject=subject, html_body=html_text, text_body=markdown_text)
+            if success:
+                print(f"✓ Supervisor intelligence briefing successfully dispatched to [{sender.recipient_email}].")
+            else:
+                print(f"⚠ Email dispatch failed or was deferred by provider [{sender.provider}].")
+        except Exception as e:
+            print(f"Warning: Email delivery encountered an error ({e}). Check email provider configuration.")
 
 def cmd_generate_report(args):
     """Generates a comprehensive Hong Kong PhD application intelligence report."""
@@ -175,7 +192,8 @@ def main():
     subparsers.add_parser("update-hk-scholarships", help="Display scholarships and deadlines")
 
     # generate-hk-supervisor-alert
-    subparsers.add_parser("generate-hk-supervisor-alert", help="Generate today's 7-day progressive daily briefing")
+    p_alert = subparsers.add_parser("generate-hk-supervisor-alert", help="Generate today's 7-day progressive daily briefing")
+    p_alert.add_argument("--send-email", action="store_true", help="Dispatch briefing email to EMAIL_RECIPIENT")
 
     # generate-hk-report
     subparsers.add_parser("generate-hk-report", help="Generate comprehensive 8-university intelligence report")

@@ -5,6 +5,12 @@ on:
     # Runs every day at 00:00 UTC (08:00 HKT)
     - cron: '0 0 * * *'
   workflow_dispatch:
+    inputs:
+      send_email:
+        description: "Dispatch briefing alert via email"
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write
@@ -35,9 +41,23 @@ jobs:
         run: |
           pytest tests/ -v
 
-      - name: Generate Today's 7-Day Progressive Supervisor Briefing
+      - name: Generate Today's 7-Day Progressive Supervisor Briefing & Email Alert
+        env:
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+          EMAIL_PROVIDER: ${{ secrets.EMAIL_PROVIDER || 'resend' }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: |
-          python -m hk_supervisor_intel.cli generate-hk-supervisor-alert
+          if [ "${{ github.event_name == 'workflow_dispatch' && inputs.send_email == false }}" = "true" ]; then
+            python -m hk_supervisor_intel.cli generate-hk-supervisor-alert
+          else
+            python -m hk_supervisor_intel.cli generate-hk-supervisor-alert --send-email
+          fi
 
       - name: Audit Recruitment Status & 12-Month Freshness
         run: |

@@ -45,6 +45,21 @@ class TestCampaignAndAlerts(unittest.TestCase):
         self.assertIn("TODAY'S RESEARCH FOCUS", alert.to_markdown())
         self.assertIn("RESEARCH PROBLEM:", alert.to_markdown())
 
+    def test_daily_alert_html_rendering(self):
+        alert_gen = AlertGenerator(self.storage, self.campaign)
+        alert = alert_gen.generate_daily_alert(reference_date=date(2026, 9, 13))
+        
+        self.assertIsNotNone(alert)
+        html = alert.to_html()
+        self.assertIn("<!DOCTYPE html>", html)
+        self.assertIn("Hong Kong PhD Supervisor Intelligence", html)
+        self.assertIn(alert.professor, html)
+        self.assertIn(alert.university, html)
+        self.assertIn(alert.paper_title, html)
+        self.assertIn(alert.recruitment_evidence, html)
+        self.assertIn(alert.paper_link, html)
+        self.assertIn("Why This Matters for Edge Computing", html)
+
     def test_duplicate_alert_suppression(self):
         alert_gen = AlertGenerator(self.storage, self.campaign)
         alert1 = alert_gen.generate_daily_alert(reference_date=date(2026, 9, 13))
