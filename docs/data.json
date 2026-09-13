@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-09-13",
-    "total_items": 27,
+    "total_items": 29,
     "high_relevance_count": 18,
     "papers_count": 9,
     "conferences_count": 2,
@@ -3070,7 +3070,8 @@
       "raw_metadata": {
         "stars": 1,
         "forks": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "M2EC 2027 : International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing",
@@ -3183,6 +3184,98 @@
       "deadline": null,
       "is_urgent": false,
       "id": "item_c69c6058ae934e87",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] taitran12310/benchmark_pap_ner (★ 0)",
+      "url": "https://github.com/taitran12310/benchmark_pap_ner",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "taitran12310"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-13",
+      "discovery_date": "2026-09-13",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_7c6945c94e5f26b7",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] janishkumar/mro-distribution-pricing-benchmark (★ 0)",
+      "url": "https://github.com/janishkumar/mro-distribution-pricing-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "janishkumar"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-13",
+      "discovery_date": "2026-09-13",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_e169d2f04381c89c",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
