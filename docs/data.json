@@ -1,19 +1,1279 @@
 {
   "meta": {
     "last_updated": "2026-09-13",
-    "total_items": 1,
-    "high_relevance_count": 1,
-    "papers_count": 1,
-    "conferences_count": 0,
-    "opportunities_count": 0,
-    "scholarships_count": 0,
-    "active_recruitment_count": 0
+    "total_items": 27,
+    "high_relevance_count": 18,
+    "papers_count": 9,
+    "conferences_count": 2,
+    "opportunities_count": 4,
+    "scholarships_count": 1,
+    "active_recruitment_count": 3
   },
-  "trends": [],
-  "supervisors": [],
-  "researchers": [],
-  "opportunities": [],
-  "scholarships": [],
+  "trends": [
+    {
+      "topic": "Edge AI",
+      "direction": "↑↑",
+      "status": "Surging",
+      "recent_count": 5,
+      "historical_count": 2
+    },
+    {
+      "topic": "Federated Learning",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 2,
+      "historical_count": 0
+    },
+    {
+      "topic": "Resource Allocation",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 2,
+      "historical_count": 1
+    },
+    {
+      "topic": "TinyML",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 2,
+      "historical_count": 0
+    },
+    {
+      "topic": "Computation Offloading",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 2
+    },
+    {
+      "topic": "6G + Edge",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Edge Security",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Device-Edge-Cloud",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Edge Inference",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Split Learning",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    },
+    {
+      "topic": "Edge Caching",
+      "direction": "→",
+      "status": "Stable",
+      "recent_count": 0,
+      "historical_count": 0
+    }
+  ],
+  "supervisors": [
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Germany"
+      ],
+      "composite_score": 7.7,
+      "average_relevance": 10.0,
+      "topics": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "academic_fit_score": 9.5,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Canada"
+      ],
+      "composite_score": 7.5,
+      "average_relevance": 9.3,
+      "topics": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ]
+    },
+    {
+      "name": "Prof. Raymond Liu",
+      "institution": "Hong Kong University of Science and Technology (HKUST)",
+      "country": "Hong Kong",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support"
+      ],
+      "academic_fit_score": 9.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+          "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+          "date": "2026-09-11",
+          "venue": "Hong Kong University of Science and Technology (HKUST) — Hong Kong",
+          "score": 9.0
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Hong Kong"
+      ],
+      "composite_score": 7.4,
+      "average_relevance": 9.0,
+      "topics": [
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support"
+      ]
+    },
+    {
+      "name": "Prof. Alice Smith",
+      "institution": "University of Cambridge",
+      "country": "United Kingdom",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ],
+      "academic_fit_score": 8.5,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+          "url": "https://www.cst.cam.ac.uk/phd-positions",
+          "date": "2026-09-11",
+          "venue": "University of Cambridge — United Kingdom",
+          "score": 8.8
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: United Kingdom"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 8.8,
+      "topics": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ]
+    },
+    {
+      "name": "Ehzaz Mustafa",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Junaid Shuja",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Faisal Rehman",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Abdallah Namoun",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Mazhar Ali",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Abdullah Alourani",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    }
+  ],
+  "researchers": [
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Germany"
+      ],
+      "composite_score": 7.7,
+      "average_relevance": 10.0,
+      "topics": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ]
+    },
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "academic_fit_score": 9.5,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Canada"
+      ],
+      "composite_score": 7.5,
+      "average_relevance": 9.3,
+      "topics": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ]
+    },
+    {
+      "name": "Prof. Raymond Liu",
+      "institution": "Hong Kong University of Science and Technology (HKUST)",
+      "country": "Hong Kong",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support"
+      ],
+      "academic_fit_score": 9.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+          "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+          "date": "2026-09-11",
+          "venue": "Hong Kong University of Science and Technology (HKUST) — Hong Kong",
+          "score": 9.0
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: Hong Kong"
+      ],
+      "composite_score": 7.4,
+      "average_relevance": 9.0,
+      "topics": [
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support"
+      ]
+    },
+    {
+      "name": "Prof. Alice Smith",
+      "institution": "University of Cambridge",
+      "country": "United Kingdom",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ],
+      "academic_fit_score": 8.5,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+          "url": "https://www.cst.cam.ac.uk/phd-positions",
+          "date": "2026-09-11",
+          "venue": "University of Cambridge — United Kingdom",
+          "score": 8.8
+        }
+      ],
+      "publication_count": 3,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+        "✓ Active recent publication record (3 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "✓ Target country priority: United Kingdom"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 8.8,
+      "topics": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ]
+    },
+    {
+      "name": "Ehzaz Mustafa",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Junaid Shuja",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Faisal Rehman",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Abdallah Namoun",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Mazhar Ali",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    },
+    {
+      "name": "Abdullah Alourani",
+      "institution": "Academic Institution",
+      "country": "",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [],
+      "academic_fit_score": 10.0,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+          "date": "2025",
+          "score": 7.7
+        }
+      ],
+      "publication_count": 2,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
+        "✓ Active recent publication record (2 papers)",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location to be determined"
+      ],
+      "composite_score": 7.2,
+      "average_relevance": 7.7,
+      "topics": []
+    }
+  ],
+  "opportunities": [
+    {
+      "kind": "phd_opportunity",
+      "type": "phd_opportunity",
+      "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+      "university": "Technical University of Munich (TUM)",
+      "department": "Department of Computer Science",
+      "supervisor": "Prof. Dr. Hans Weber",
+      "country": "Germany",
+      "link": "https://www.tum.de/phd-edge-ai",
+      "fit_score": 10.0,
+      "recruitment_status": "actively_recruiting",
+      "funding_status": "fully_funded",
+      "dependant_support": "financially_supported",
+      "direct_quote": "...We are seeking highly motivated PhD students to join our Edge AI group in Fall 2026...",
+      "deadline": "2026-11-30",
+      "data": {
+        "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+        "university": "Technical University of Munich (TUM)",
+        "department": "Department of Computer Science",
+        "professor_name": "Prof. Dr. Hans Weber",
+        "researcher_profile_url": "",
+        "university_url": "",
+        "country": "Germany",
+        "city": "",
+        "research_areas": [
+          "Edge AI",
+          "Distributed Systems",
+          "Edge Computing"
+        ],
+        "opportunity_type": "phd_position",
+        "funding_status": "fully_funded",
+        "funding_amount": "Full TV-L E13 salary with health insurance",
+        "tuition_coverage": "",
+        "duration": "",
+        "deadline": "2026-11-30",
+        "start_date": null,
+        "eligibility": "",
+        "international_eligibility": "eligible",
+        "dependant_support_info": "Kindergeld (~€250/mo per child) and open spousal work authorization",
+        "dependant_support_classification": "financially_supported",
+        "source_url": "https://www.tum.de/phd-edge-ai",
+        "source": "",
+        "discovery_date": "2026-09-11",
+        "last_verified_date": "2026-09-11",
+        "relevance_score": 10.0,
+        "funding_score": 10.0,
+        "supervisor_fit_score": 10.0,
+        "country_score": 10.0,
+        "dependant_support_score": 10.0,
+        "composite_score": 10.0,
+        "recruitment_status": "actively_recruiting",
+        "recruitment_evidence": "...We are seeking highly motivated PhD students to join our Edge AI group in Fall 2026...",
+        "confidence": "high",
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
+          "✓ Direct alignment with active learning stage: Edge AI",
+          "✓ Actively recruiting PhD students (\"...We are seeking highly motivated PhD studen...\")",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (Full TV-L E13 salary with health insurance)",
+          "✓ Target country priority: Germany",
+          "✓ High Dependant Support: Family financial allowance or subsidized housing documented"
+        ],
+        "id": "opp_5f9bd56e4f5a557d",
+        "raw_metadata": {}
+      }
+    },
+    {
+      "kind": "phd_opportunity",
+      "type": "phd_opportunity",
+      "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+      "university": "University of Toronto",
+      "department": "Department of Electrical & Computer Engineering",
+      "supervisor": "Prof. David Miller",
+      "country": "Canada",
+      "link": "https://web.ece.utoronto.ca/grad/phd/",
+      "fit_score": 9.3,
+      "recruitment_status": "likely_recruiting",
+      "funding_status": "fully_funded",
+      "dependant_support": "financially_supported",
+      "direct_quote": "...Openings available for strong applicants with background in distributed algorithms...",
+      "deadline": "2027-01-15",
+      "data": {
+        "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+        "university": "University of Toronto",
+        "department": "Department of Electrical & Computer Engineering",
+        "professor_name": "Prof. David Miller",
+        "researcher_profile_url": "",
+        "university_url": "",
+        "country": "Canada",
+        "city": "",
+        "research_areas": [
+          "Federated Learning",
+          "Edge Intelligence",
+          "Distributed Systems"
+        ],
+        "opportunity_type": "phd_position",
+        "funding_status": "fully_funded",
+        "funding_amount": "CAD $32,000/year guaranteed doctoral funding package",
+        "tuition_coverage": "",
+        "duration": "",
+        "deadline": "2027-01-15",
+        "start_date": null,
+        "eligibility": "",
+        "international_eligibility": "eligible",
+        "dependant_support_info": "Spousal Open Work Permit eligibility and Canada Child Benefit after residency",
+        "dependant_support_classification": "financially_supported",
+        "source_url": "https://web.ece.utoronto.ca/grad/phd/",
+        "source": "",
+        "discovery_date": "2026-09-11",
+        "last_verified_date": "2026-09-11",
+        "relevance_score": 9.5,
+        "funding_score": 10.0,
+        "supervisor_fit_score": 7.5,
+        "country_score": 10.0,
+        "dependant_support_score": 10.0,
+        "composite_score": 9.3,
+        "recruitment_status": "likely_recruiting",
+        "recruitment_evidence": "...Openings available for strong applicants with background in distributed algorithms...",
+        "confidence": "high",
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
+          "✓ Strong recruitment indicators: Recently advertised opening or grant project",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (CAD $32,000/year guaranteed doctoral funding package)",
+          "✓ Target country priority: Canada",
+          "✓ High Dependant Support: Family financial allowance or subsidized housing documented"
+        ],
+        "id": "opp_6397dc8a7273b951",
+        "raw_metadata": {}
+      }
+    },
+    {
+      "kind": "phd_opportunity",
+      "type": "phd_opportunity",
+      "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+      "university": "Hong Kong University of Science and Technology (HKUST)",
+      "department": "Department of Computer Science & Engineering",
+      "supervisor": "Prof. Raymond Liu",
+      "country": "Hong Kong",
+      "link": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+      "fit_score": 9.0,
+      "recruitment_status": "actively_recruiting",
+      "funding_status": "fully_funded",
+      "dependant_support": "permitted",
+      "direct_quote": "...Multiple fully funded PhD openings available via HKPFS for motivated researchers...",
+      "deadline": "2026-12-01",
+      "data": {
+        "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+        "university": "Hong Kong University of Science and Technology (HKUST)",
+        "department": "Department of Computer Science & Engineering",
+        "professor_name": "Prof. Raymond Liu",
+        "researcher_profile_url": "",
+        "university_url": "",
+        "country": "Hong Kong",
+        "city": "",
+        "research_areas": [
+          "Mobile Edge Computing",
+          "6G",
+          "Distributed Intelligence"
+        ],
+        "opportunity_type": "phd_position",
+        "funding_status": "fully_funded",
+        "funding_amount": "HK$331,200 annual stipend + HK$13,800 travel allowance",
+        "tuition_coverage": "",
+        "duration": "",
+        "deadline": "2026-12-01",
+        "start_date": null,
+        "eligibility": "",
+        "international_eligibility": "eligible",
+        "dependant_support_info": "Legal dependant visas permitted for spouse and minor children",
+        "dependant_support_classification": "permitted",
+        "source_url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+        "source": "",
+        "discovery_date": "2026-09-11",
+        "last_verified_date": "2026-09-11",
+        "relevance_score": 9.0,
+        "funding_score": 10.0,
+        "supervisor_fit_score": 10.0,
+        "country_score": 10.0,
+        "dependant_support_score": 5.5,
+        "composite_score": 9.0,
+        "recruitment_status": "actively_recruiting",
+        "recruitment_evidence": "...Multiple fully funded PhD openings available via HKPFS for motivated researchers...",
+        "confidence": "high",
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
+          "✓ Actively recruiting PhD students (\"...Multiple fully funded PhD openings availab...\")",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (HK$331,200 annual stipend + HK$13,800 travel allowance)",
+          "✓ Target country priority: Hong Kong",
+          "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student"
+        ],
+        "id": "opp_2ac785db626b618e",
+        "raw_metadata": {}
+      }
+    },
+    {
+      "kind": "phd_opportunity",
+      "type": "phd_opportunity",
+      "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+      "university": "University of Cambridge",
+      "department": "Department of Computer Science and Technology",
+      "supervisor": "Prof. Alice Smith",
+      "country": "United Kingdom",
+      "link": "https://www.cst.cam.ac.uk/phd-positions",
+      "fit_score": 8.8,
+      "recruitment_status": "actively_recruiting",
+      "funding_status": "fully_funded",
+      "dependant_support": "permitted",
+      "direct_quote": "...We are actively looking for PhD students to join our distributed edge systems lab...",
+      "deadline": "2026-12-15",
+      "data": {
+        "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+        "university": "University of Cambridge",
+        "department": "Department of Computer Science and Technology",
+        "professor_name": "Prof. Alice Smith",
+        "researcher_profile_url": "",
+        "university_url": "",
+        "country": "United Kingdom",
+        "city": "",
+        "research_areas": [
+          "Edge Computing",
+          "Resource Allocation",
+          "Cloudlet Systems"
+        ],
+        "opportunity_type": "phd_position",
+        "funding_status": "fully_funded",
+        "funding_amount": "Full EPSRC tuition waiver and £19,237 annual living stipend",
+        "tuition_coverage": "",
+        "duration": "",
+        "deadline": "2026-12-15",
+        "start_date": null,
+        "eligibility": "",
+        "international_eligibility": "eligible",
+        "dependant_support_info": "UK Student Dependant Visas legally permitted for PhD researchers",
+        "dependant_support_classification": "permitted",
+        "source_url": "https://www.cst.cam.ac.uk/phd-positions",
+        "source": "",
+        "discovery_date": "2026-09-11",
+        "last_verified_date": "2026-09-11",
+        "relevance_score": 8.5,
+        "funding_score": 10.0,
+        "supervisor_fit_score": 10.0,
+        "country_score": 10.0,
+        "dependant_support_score": 5.5,
+        "composite_score": 8.8,
+        "recruitment_status": "actively_recruiting",
+        "recruitment_evidence": "...We are actively looking for PhD students to join our distributed edge systems lab...",
+        "confidence": "high",
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge computing",
+          "✓ Actively recruiting PhD students (\"...We are actively looking for PhD students t...\")",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (Full EPSRC tuition waiver and £19,237 annual living stipend)",
+          "✓ Target country priority: United Kingdom",
+          "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student"
+        ],
+        "id": "opp_ccd57dacb559600d",
+        "raw_metadata": {}
+      }
+    }
+  ],
+  "scholarships": [
+    {
+      "kind": "scholarship",
+      "type": "scholarship",
+      "name": "Hong Kong PhD Fellowship Scheme (HKPFS)",
+      "country": "Hong Kong",
+      "funding_type": "fully_funded",
+      "dependant_support": "permitted",
+      "allowance_details": "Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong.",
+      "legal_notes": "Extremely prestigious, high-stipend international fellowship scheme.",
+      "deadline": "December 1 annually",
+      "official_link": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+      "fit_score": 9.2,
+      "data": {
+        "name": "Hong Kong PhD Fellowship Scheme (HKPFS)",
+        "provider": "Research Grants Council (RGC) of Hong Kong",
+        "country": "Hong Kong",
+        "university": "HKUST, HKU, CUHK, PolyU, CityU, HKBU, Lingnan, EdUHK",
+        "degree_level": "PhD",
+        "tuition_coverage": "Full tuition waiver / university subsidy",
+        "stipend_amount": "HK$331,200 / year (~HK$27,600 / month) + HK$13,800 annual travel allowance",
+        "funding_type": "fully_funded",
+        "duration": "Up to 3 - 4 years",
+        "deadline": "December 1 annually",
+        "start_date": "September annually",
+        "dependant_support_classification": "good",
+        "dependant_support_details": "Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong.",
+        "family_accommodation": "Subsidized on-campus or university-managed family apartments",
+        "international_eligibility": "eligible",
+        "official_url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+        "verification_date": "2026-09-11",
+        "score": 9.2,
+        "reasons": [
+          "✓ Dependant Friendly: Dependants legally permitted; generous stipend calibrated for international living",
+          "✓ Target country priority: Hong Kong",
+          "✓ Generous international living stipend + tuition waiver"
+        ],
+        "notes": "Extremely prestigious, high-stipend international fellowship scheme."
+      }
+    }
+  ],
   "target_countries": [
     {
       "name": "Germany",
@@ -66,34 +1326,2010 @@
   ],
   "items": [
     {
-      "title": "Dashboard Test Paper",
-      "url": "https://example.com/paper",
-      "source": "ACM",
+      "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+      "url": "https://www.tum.de/phd-edge-ai",
+      "source": "Technical University of Munich (TUM)",
+      "source_tier": "tier2_university_lab",
+      "item_type": "phd_opportunity",
+      "authors": [
+        "Prof. Dr. Hans Weber"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Fully Funded PhD at Technical University of Munich (TUM) (Germany).  Dependant status: financially_supported. Kindergeld (~€250/mo per child) and open spousal work authorization",
+      "venue": "Technical University of Munich (TUM) — Germany",
+      "topics": [
+        "Edge AI",
+        "Distributed Systems",
+        "Edge Computing"
+      ],
+      "institution": "Technical University of Munich (TUM)",
+      "location": "Germany",
+      "deadline": "2026-11-30",
+      "is_urgent": true,
+      "id": "opp_5f9bd56e4f5a557d",
+      "score": {
+        "topic_score": 10.0,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 10.0,
+        "matched_topics": [
+          "Edge AI",
+          "Distributed Systems",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
+          "✓ Direct alignment with active learning stage: Edge AI",
+          "✓ Actively recruiting PhD students (\"...We are seeking highly motivated PhD studen...\")",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (Full TV-L E13 salary with health insurance)",
+          "✓ Target country priority: Germany",
+          "✓ High Dependant Support: Family financial allowance or subsidized housing documented"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge AI and Distributed Systems. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "Kindergeld (~€250/mo per child) and open spousal work authorization",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "10.0/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "phd_opportunity",
+        "type": "phd_opportunity",
+        "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+        "university": "Technical University of Munich (TUM)",
+        "department": "Department of Computer Science",
+        "supervisor": "Prof. Dr. Hans Weber",
+        "country": "Germany",
+        "link": "https://www.tum.de/phd-edge-ai",
+        "fit_score": 10.0,
+        "recruitment_status": "actively_recruiting",
+        "funding_status": "fully_funded",
+        "dependant_support": "financially_supported",
+        "direct_quote": "...We are seeking highly motivated PhD students to join our Edge AI group in Fall 2026...",
+        "deadline": "2026-11-30",
+        "data": {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "university": "Technical University of Munich (TUM)",
+          "department": "Department of Computer Science",
+          "professor_name": "Prof. Dr. Hans Weber",
+          "researcher_profile_url": "",
+          "university_url": "",
+          "country": "Germany",
+          "city": "",
+          "research_areas": [
+            "Edge AI",
+            "Distributed Systems",
+            "Edge Computing"
+          ],
+          "opportunity_type": "phd_position",
+          "funding_status": "fully_funded",
+          "funding_amount": "Full TV-L E13 salary with health insurance",
+          "tuition_coverage": "",
+          "duration": "",
+          "deadline": "2026-11-30",
+          "start_date": null,
+          "eligibility": "",
+          "international_eligibility": "eligible",
+          "dependant_support_info": "Kindergeld (~€250/mo per child) and open spousal work authorization",
+          "dependant_support_classification": "financially_supported",
+          "source_url": "https://www.tum.de/phd-edge-ai",
+          "source": "",
+          "discovery_date": "2026-09-11",
+          "last_verified_date": "2026-09-11",
+          "relevance_score": 10.0,
+          "funding_score": 10.0,
+          "supervisor_fit_score": 10.0,
+          "country_score": 10.0,
+          "dependant_support_score": 10.0,
+          "composite_score": 10.0,
+          "recruitment_status": "actively_recruiting",
+          "recruitment_evidence": "...We are seeking highly motivated PhD students to join our Edge AI group in Fall 2026...",
+          "confidence": "high",
+          "reasons": [
+            "✓ Strong Edge Computing research fit: edge computing, edge intelligence, edge ai",
+            "✓ Direct alignment with active learning stage: Edge AI",
+            "✓ Actively recruiting PhD students (\"...We are seeking highly motivated PhD studen...\")",
+            "✓ Fully funded: Tuition waiver and living maintenance stipend included (Full TV-L E13 salary with health insurance)",
+            "✓ Target country priority: Germany",
+            "✓ High Dependant Support: Family financial allowance or subsidized housing documented"
+          ],
+          "id": "opp_5f9bd56e4f5a557d",
+          "raw_metadata": {}
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Scholarship] DAAD Doctoral Research Grants (One-Year / Complete Doctorate)",
+      "url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
+      "source": "German Academic Exchange Service (DAAD)",
       "source_tier": "tier1_academic_standards",
-      "item_type": "paper",
+      "item_type": "fellowship",
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-13",
-      "discovery_date": "2026-09-13",
-      "abstract": "",
-      "venue": "",
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Scholarship by German Academic Exchange Service (DAAD) (Germany). Stipend: €1,300 - €1,350 / month base stipend. Tuition: Full tuition covered (most German universities have zero tuition). Dependants: Monthly family allowance: ~€276/month spouse allowance + ~€204/month per child supplement. Subsidized health, accident, and liability insurance for accompanying family members. 👨‍👩‍👧 Family Financially Supported.",
+      "venue": "Germany — Any accredited German University / Max Planck / Helmholtz",
+      "topics": [
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support",
+        "Germany"
+      ],
+      "institution": "Any accredited German University / Max Planck / Helmholtz",
+      "location": "Germany",
+      "deadline": "Varies by country (Typically October - November annually)",
+      "is_urgent": false,
+      "id": "item_883c6db9972ad2f6",
+      "score": {
+        "topic_score": 4.0,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 10.0,
+        "matched_topics": [
+          "PhD Funding",
+          "Germany"
+        ],
+        "reasons": [
+          "✓ High Dependant Support: Family financial allowance or subsidized housing documented",
+          "✓ Target country priority: Germany",
+          "✓ Generous international living stipend + tuition waiver"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "👨‍👩‍👧 Family Financially Supported.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "10.0/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "scholarship",
+        "type": "scholarship",
+        "name": "DAAD Doctoral Research Grants (One-Year / Complete Doctorate)",
+        "country": "Germany",
+        "funding_type": "fully_funded",
+        "dependant_support": "financially_supported",
+        "allowance_details": "Monthly family allowance: ~€276/month spouse allowance + ~€204/month per child supplement. Subsidized health, accident, and liability insurance for accompanying family members.",
+        "legal_notes": "One of the most generous family-friendly international doctoral scholarship programs in the world.",
+        "deadline": "Varies by country (Typically October - November annually)",
+        "official_link": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
+        "fit_score": 10.0,
+        "data": {
+          "name": "DAAD Doctoral Research Grants (One-Year / Complete Doctorate)",
+          "provider": "German Academic Exchange Service (DAAD)",
+          "country": "Germany",
+          "university": "Any accredited German University / Max Planck / Helmholtz",
+          "degree_level": "PhD / Doctorate",
+          "tuition_coverage": "Full tuition covered (most German universities have zero tuition)",
+          "stipend_amount": "€1,300 - €1,350 / month base stipend",
+          "funding_type": "fully_funded",
+          "duration": "Up to 3 - 4 years",
+          "deadline": "Varies by country (Typically October - November annually)",
+          "start_date": "October annually",
+          "dependant_support_classification": "excellent",
+          "dependant_support_details": "Monthly family allowance: ~€276/month spouse allowance + ~€204/month per child supplement. Subsidized health, accident, and liability insurance for accompanying family members.",
+          "family_accommodation": "University guest houses / Studentenwerk family apartments available",
+          "international_eligibility": "eligible",
+          "official_url": "https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/",
+          "verification_date": "2026-09-11",
+          "score": 10.0,
+          "reasons": [
+            "✓ High Dependant Support: Family financial allowance or subsidized housing documented",
+            "✓ Target country priority: Germany",
+            "✓ Generous international living stipend + tuition waiver"
+          ],
+          "notes": "One of the most generous family-friendly international doctoral scholarship programs in the world."
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Scholarship] Gates Cambridge Scholarship (PhD Track)",
+      "url": "https://www.gatescambridge.org/programme/the-scholarship/",
+      "source": "Bill & Melinda Gates Foundation / University of Cambridge",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "fellowship",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Scholarship by Bill & Melinda Gates Foundation / University of Cambridge (United Kingdom). Stipend: £21,000 / year maintenance allowance (tax-free). Tuition: Full Cambridge University Composition Fee covered. Dependants: Family Allowance: Up to £11,604/year for first child and up to £5,004/year for second child. Student Dependant Visa legally permitted. 👨‍👩‍👧 Family Financially Supported.",
+      "venue": "United Kingdom — University of Cambridge",
+      "topics": [
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support",
+        "United Kingdom"
+      ],
+      "institution": "University of Cambridge",
+      "location": "United Kingdom",
+      "deadline": "Early December (international) / October (US citizens)",
+      "is_urgent": false,
+      "id": "item_d393f0bfa0080d81",
+      "score": {
+        "topic_score": 4.0,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 10.0,
+        "matched_topics": [
+          "PhD Funding",
+          "United Kingdom"
+        ],
+        "reasons": [
+          "✓ High Dependant Support: Family financial allowance or subsidized housing documented",
+          "✓ Target country priority: United Kingdom",
+          "✓ Generous international living stipend + tuition waiver"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "👨‍👩‍👧 Family Financially Supported.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "10.0/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "scholarship",
+        "type": "scholarship",
+        "name": "Gates Cambridge Scholarship (PhD Track)",
+        "country": "United Kingdom",
+        "funding_type": "fully_funded",
+        "dependant_support": "financially_supported",
+        "allowance_details": "Family Allowance: Up to £11,604/year for first child and up to £5,004/year for second child. Student Dependant Visa legally permitted.",
+        "legal_notes": "Provides comprehensive family maintenance allowance for accompanying children.",
+        "deadline": "Early December (international) / October (US citizens)",
+        "official_link": "https://www.gatescambridge.org/programme/the-scholarship/",
+        "fit_score": 10.0,
+        "data": {
+          "name": "Gates Cambridge Scholarship (PhD Track)",
+          "provider": "Bill & Melinda Gates Foundation / University of Cambridge",
+          "country": "United Kingdom",
+          "university": "University of Cambridge",
+          "degree_level": "PhD",
+          "tuition_coverage": "Full Cambridge University Composition Fee covered",
+          "stipend_amount": "£21,000 / year maintenance allowance (tax-free)",
+          "funding_type": "fully_funded",
+          "duration": "Up to 4 years",
+          "deadline": "Early December (international) / October (US citizens)",
+          "start_date": "October annually",
+          "dependant_support_classification": "excellent",
+          "dependant_support_details": "Family Allowance: Up to £11,604/year for first child and up to £5,004/year for second child. Student Dependant Visa legally permitted.",
+          "family_accommodation": "College family flats and university accommodation services available",
+          "international_eligibility": "eligible",
+          "official_url": "https://www.gatescambridge.org/programme/the-scholarship/",
+          "verification_date": "2026-09-11",
+          "score": 10.0,
+          "reasons": [
+            "✓ High Dependant Support: Family financial allowance or subsidized housing documented",
+            "✓ Target country priority: United Kingdom",
+            "✓ Generous international living stipend + tuition waiver"
+          ],
+          "notes": "Provides comprehensive family maintenance allowance for accompanying children."
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+      "url": "https://web.ece.utoronto.ca/grad/phd/",
+      "source": "University of Toronto",
+      "source_tier": "tier2_university_lab",
+      "item_type": "phd_opportunity",
+      "authors": [
+        "Prof. David Miller"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Fully Funded PhD at University of Toronto (Canada).  Dependant status: financially_supported. Spousal Open Work Permit eligibility and Canada Child Benefit after residency",
+      "venue": "University of Toronto — Canada",
+      "topics": [
+        "Federated Learning",
+        "Edge Intelligence",
+        "Distributed Systems"
+      ],
+      "institution": "University of Toronto",
+      "location": "Canada",
+      "deadline": "2027-01-15",
+      "is_urgent": false,
+      "id": "opp_6397dc8a7273b951",
+      "score": {
+        "topic_score": 9.5,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 9.3,
+        "matched_topics": [
+          "Federated Learning",
+          "Edge Intelligence",
+          "Distributed Systems"
+        ],
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
+          "✓ Strong recruitment indicators: Recently advertised opening or grant project",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (CAD $32,000/year guaranteed doctoral funding package)",
+          "✓ Target country priority: Canada",
+          "✓ High Dependant Support: Family financial allowance or subsidized housing documented"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Federated Learning and Edge Intelligence. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "Spousal Open Work Permit eligibility and Canada Child Benefit after residency",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "9.3/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "phd_opportunity",
+        "type": "phd_opportunity",
+        "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+        "university": "University of Toronto",
+        "department": "Department of Electrical & Computer Engineering",
+        "supervisor": "Prof. David Miller",
+        "country": "Canada",
+        "link": "https://web.ece.utoronto.ca/grad/phd/",
+        "fit_score": 9.3,
+        "recruitment_status": "likely_recruiting",
+        "funding_status": "fully_funded",
+        "dependant_support": "financially_supported",
+        "direct_quote": "...Openings available for strong applicants with background in distributed algorithms...",
+        "deadline": "2027-01-15",
+        "data": {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "university": "University of Toronto",
+          "department": "Department of Electrical & Computer Engineering",
+          "professor_name": "Prof. David Miller",
+          "researcher_profile_url": "",
+          "university_url": "",
+          "country": "Canada",
+          "city": "",
+          "research_areas": [
+            "Federated Learning",
+            "Edge Intelligence",
+            "Distributed Systems"
+          ],
+          "opportunity_type": "phd_position",
+          "funding_status": "fully_funded",
+          "funding_amount": "CAD $32,000/year guaranteed doctoral funding package",
+          "tuition_coverage": "",
+          "duration": "",
+          "deadline": "2027-01-15",
+          "start_date": null,
+          "eligibility": "",
+          "international_eligibility": "eligible",
+          "dependant_support_info": "Spousal Open Work Permit eligibility and Canada Child Benefit after residency",
+          "dependant_support_classification": "financially_supported",
+          "source_url": "https://web.ece.utoronto.ca/grad/phd/",
+          "source": "",
+          "discovery_date": "2026-09-11",
+          "last_verified_date": "2026-09-11",
+          "relevance_score": 9.5,
+          "funding_score": 10.0,
+          "supervisor_fit_score": 7.5,
+          "country_score": 10.0,
+          "dependant_support_score": 10.0,
+          "composite_score": 9.3,
+          "recruitment_status": "likely_recruiting",
+          "recruitment_evidence": "...Openings available for strong applicants with background in distributed algorithms...",
+          "confidence": "high",
+          "reasons": [
+            "✓ Strong Edge Computing research fit: edge intelligence, distributed systems, federated learning",
+            "✓ Strong recruitment indicators: Recently advertised opening or grant project",
+            "✓ Fully funded: Tuition waiver and living maintenance stipend included (CAD $32,000/year guaranteed doctoral funding package)",
+            "✓ Target country priority: Canada",
+            "✓ High Dependant Support: Family financial allowance or subsidized housing documented"
+          ],
+          "id": "opp_6397dc8a7273b951",
+          "raw_metadata": {}
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Scholarship] Vanier Canada Graduate Scholarships (Vanier CGS)",
+      "url": "https://vanier.gc.ca/en/home-accueil.html",
+      "source": "Government of Canada (CIHR, NSERC, SSHRC)",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "fellowship",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Scholarship by Government of Canada (CIHR, NSERC, SSHRC) (Canada). Stipend: CAD $50,000 / year. Tuition: Institutional tuition waivers typically awarded alongside fellowship. Dependants: Spouse/partner is eligible for Canadian Spousal Open Work Permit (SOWP); minor children can study at Canadian public schools without study permit. CAD $50,000/yr stipend provides ample living allowance for family. 👨‍👩‍👧 Dependants Permitted.",
+      "venue": "Canada — Any participating Canadian Institution (Toronto, Waterloo, UBC, McGill, etc.)",
+      "topics": [
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support",
+        "Canada"
+      ],
+      "institution": "Any participating Canadian Institution (Toronto, Waterloo, UBC, McGill, etc.)",
+      "location": "Canada",
+      "deadline": "October - November annually (via institutional nomination)",
+      "is_urgent": false,
+      "id": "item_442a8af4f56bc924",
+      "score": {
+        "topic_score": 3.6799999999999997,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 9.2,
+        "matched_topics": [
+          "PhD Funding",
+          "Canada"
+        ],
+        "reasons": [
+          "✓ Dependant Friendly: Dependants legally permitted; generous stipend calibrated for international living",
+          "✓ Target country priority: Canada",
+          "✓ Generous international living stipend + tuition waiver"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "👨‍👩‍👧 Dependants Permitted.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "9.2/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "scholarship",
+        "type": "scholarship",
+        "name": "Vanier Canada Graduate Scholarships (Vanier CGS)",
+        "country": "Canada",
+        "funding_type": "fully_funded",
+        "dependant_support": "permitted",
+        "allowance_details": "Spouse/partner is eligible for Canadian Spousal Open Work Permit (SOWP); minor children can study at Canadian public schools without study permit. CAD $50,000/yr stipend provides ample living allowance for family.",
+        "legal_notes": "Canada's flagship doctoral award open to both domestic and international students.",
+        "deadline": "October - November annually (via institutional nomination)",
+        "official_link": "https://vanier.gc.ca/en/home-accueil.html",
+        "fit_score": 9.2,
+        "data": {
+          "name": "Vanier Canada Graduate Scholarships (Vanier CGS)",
+          "provider": "Government of Canada (CIHR, NSERC, SSHRC)",
+          "country": "Canada",
+          "university": "Any participating Canadian Institution (Toronto, Waterloo, UBC, McGill, etc.)",
+          "degree_level": "PhD",
+          "tuition_coverage": "Institutional tuition waivers typically awarded alongside fellowship",
+          "stipend_amount": "CAD $50,000 / year",
+          "funding_type": "fully_funded",
+          "duration": "3 years",
+          "deadline": "October - November annually (via institutional nomination)",
+          "start_date": "May or September",
+          "dependant_support_classification": "good",
+          "dependant_support_details": "Spouse/partner is eligible for Canadian Spousal Open Work Permit (SOWP); minor children can study at Canadian public schools without study permit. CAD $50,000/yr stipend provides ample living allowance for family.",
+          "family_accommodation": "University family housing communities available",
+          "international_eligibility": "eligible",
+          "official_url": "https://vanier.gc.ca/en/home-accueil.html",
+          "verification_date": "2026-09-11",
+          "score": 9.2,
+          "reasons": [
+            "✓ Dependant Friendly: Dependants legally permitted; generous stipend calibrated for international living",
+            "✓ Target country priority: Canada",
+            "✓ Generous international living stipend + tuition waiver"
+          ],
+          "notes": "Canada's flagship doctoral award open to both domestic and international students."
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Scholarship] Hong Kong PhD Fellowship Scheme (HKPFS)",
+      "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+      "source": "Research Grants Council (RGC) of Hong Kong",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "fellowship",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Scholarship by Research Grants Council (RGC) of Hong Kong (Hong Kong). Stipend: HK$331,200 / year (~HK$27,600 / month) + HK$13,800 annual travel allowance. Tuition: Full tuition waiver / university subsidy. Dependants: Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong. 👨‍👩‍👧 Dependants Permitted.",
+      "venue": "Hong Kong — HKUST, HKU, CUHK, PolyU, CityU, HKBU, Lingnan, EdUHK",
+      "topics": [
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support",
+        "Hong Kong"
+      ],
+      "institution": "HKUST, HKU, CUHK, PolyU, CityU, HKBU, Lingnan, EdUHK",
+      "location": "Hong Kong",
+      "deadline": "December 1 annually",
+      "is_urgent": false,
+      "id": "item_fc5277639858a705",
+      "score": {
+        "topic_score": 3.6799999999999997,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 9.2,
+        "matched_topics": [
+          "PhD Funding",
+          "Hong Kong"
+        ],
+        "reasons": [
+          "✓ Dependant Friendly: Dependants legally permitted; generous stipend calibrated for international living",
+          "✓ Target country priority: Hong Kong",
+          "✓ Generous international living stipend + tuition waiver"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "👨‍👩‍👧 Dependants Permitted.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "9.2/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "scholarship",
+        "type": "scholarship",
+        "name": "Hong Kong PhD Fellowship Scheme (HKPFS)",
+        "country": "Hong Kong",
+        "funding_type": "fully_funded",
+        "dependant_support": "permitted",
+        "allowance_details": "Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong.",
+        "legal_notes": "Extremely prestigious, high-stipend international fellowship scheme.",
+        "deadline": "December 1 annually",
+        "official_link": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+        "fit_score": 9.2,
+        "data": {
+          "name": "Hong Kong PhD Fellowship Scheme (HKPFS)",
+          "provider": "Research Grants Council (RGC) of Hong Kong",
+          "country": "Hong Kong",
+          "university": "HKUST, HKU, CUHK, PolyU, CityU, HKBU, Lingnan, EdUHK",
+          "degree_level": "PhD",
+          "tuition_coverage": "Full tuition waiver / university subsidy",
+          "stipend_amount": "HK$331,200 / year (~HK$27,600 / month) + HK$13,800 annual travel allowance",
+          "funding_type": "fully_funded",
+          "duration": "Up to 3 - 4 years",
+          "deadline": "December 1 annually",
+          "start_date": "September annually",
+          "dependant_support_classification": "good",
+          "dependant_support_details": "Dependants (spouse and children under 18) are legally entitled to Dependant Visas with right to work and study. Substantial stipend is specifically calibrated to comfortably support an accompanying family in Hong Kong.",
+          "family_accommodation": "Subsidized on-campus or university-managed family apartments",
+          "international_eligibility": "eligible",
+          "official_url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+          "verification_date": "2026-09-11",
+          "score": 9.2,
+          "reasons": [
+            "✓ Dependant Friendly: Dependants legally permitted; generous stipend calibrated for international living",
+            "✓ Target country priority: Hong Kong",
+            "✓ Generous international living stipend + tuition waiver"
+          ],
+          "notes": "Extremely prestigious, high-stipend international fellowship scheme."
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+      "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+      "source": "Hong Kong University of Science and Technology (HKUST)",
+      "source_tier": "tier2_university_lab",
+      "item_type": "phd_opportunity",
+      "authors": [
+        "Prof. Raymond Liu"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Fully Funded PhD at Hong Kong University of Science and Technology (HKUST) (Hong Kong).  Dependant status: permitted. Legal dependant visas permitted for spouse and minor children",
+      "venue": "Hong Kong University of Science and Technology (HKUST) — Hong Kong",
+      "topics": [
+        "Dependant Support",
+        "International Scholarship",
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding"
+      ],
+      "institution": "Hong Kong University of Science and Technology (HKUST)",
+      "location": "Hong Kong",
+      "deadline": "2026-12-01",
+      "is_urgent": true,
+      "id": "opp_2ac785db626b618e",
+      "score": {
+        "topic_score": 9.0,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 9.0,
+        "matched_topics": [
+          "Mobile Edge Computing",
+          "6G",
+          "Distributed Intelligence"
+        ],
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
+          "✓ Actively recruiting PhD students (\"...Multiple fully funded PhD openings availab...\")",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (HK$331,200 annual stipend + HK$13,800 travel allowance)",
+          "✓ Target country priority: Hong Kong",
+          "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Dependant Support and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "Legal dependant visas permitted for spouse and minor children",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "9.0/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "phd_opportunity",
+        "type": "phd_opportunity",
+        "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+        "university": "Hong Kong University of Science and Technology (HKUST)",
+        "department": "Department of Computer Science & Engineering",
+        "supervisor": "Prof. Raymond Liu",
+        "country": "Hong Kong",
+        "link": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+        "fit_score": 9.0,
+        "recruitment_status": "actively_recruiting",
+        "funding_status": "fully_funded",
+        "dependant_support": "permitted",
+        "direct_quote": "...Multiple fully funded PhD openings available via HKPFS for motivated researchers...",
+        "deadline": "2026-12-01",
+        "data": {
+          "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+          "university": "Hong Kong University of Science and Technology (HKUST)",
+          "department": "Department of Computer Science & Engineering",
+          "professor_name": "Prof. Raymond Liu",
+          "researcher_profile_url": "",
+          "university_url": "",
+          "country": "Hong Kong",
+          "city": "",
+          "research_areas": [
+            "Mobile Edge Computing",
+            "6G",
+            "Distributed Intelligence"
+          ],
+          "opportunity_type": "phd_position",
+          "funding_status": "fully_funded",
+          "funding_amount": "HK$331,200 annual stipend + HK$13,800 travel allowance",
+          "tuition_coverage": "",
+          "duration": "",
+          "deadline": "2026-12-01",
+          "start_date": null,
+          "eligibility": "",
+          "international_eligibility": "eligible",
+          "dependant_support_info": "Legal dependant visas permitted for spouse and minor children",
+          "dependant_support_classification": "permitted",
+          "source_url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+          "source": "",
+          "discovery_date": "2026-09-11",
+          "last_verified_date": "2026-09-11",
+          "relevance_score": 9.0,
+          "funding_score": 10.0,
+          "supervisor_fit_score": 10.0,
+          "country_score": 10.0,
+          "dependant_support_score": 5.5,
+          "composite_score": 9.0,
+          "recruitment_status": "actively_recruiting",
+          "recruitment_evidence": "...Multiple fully funded PhD openings available via HKPFS for motivated researchers...",
+          "confidence": "high",
+          "reasons": [
+            "✓ Strong Edge Computing research fit: edge computing, mobile edge computing",
+            "✓ Actively recruiting PhD students (\"...Multiple fully funded PhD openings availab...\")",
+            "✓ Fully funded: Tuition waiver and living maintenance stipend included (HK$331,200 annual stipend + HK$13,800 travel allowance)",
+            "✓ Target country priority: Hong Kong",
+            "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student"
+          ],
+          "id": "opp_2ac785db626b618e",
+          "raw_metadata": {}
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+      "url": "https://www.cst.cam.ac.uk/phd-positions",
+      "source": "University of Cambridge",
+      "source_tier": "tier2_university_lab",
+      "item_type": "phd_opportunity",
+      "authors": [
+        "Prof. Alice Smith"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Fully Funded PhD at University of Cambridge (United Kingdom).  Dependant status: permitted. UK Student Dependant Visas legally permitted for PhD researchers",
+      "venue": "University of Cambridge — United Kingdom",
+      "topics": [
+        "Edge Computing",
+        "Resource Allocation",
+        "Cloudlet Systems"
+      ],
+      "institution": "University of Cambridge",
+      "location": "United Kingdom",
+      "deadline": "2026-12-15",
+      "is_urgent": true,
+      "id": "opp_ccd57dacb559600d",
+      "score": {
+        "topic_score": 8.5,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.8,
+        "matched_topics": [
+          "Edge Computing",
+          "Resource Allocation",
+          "Cloudlet Systems"
+        ],
+        "reasons": [
+          "✓ Strong Edge Computing research fit: edge computing",
+          "✓ Actively recruiting PhD students (\"...We are actively looking for PhD students t...\")",
+          "✓ Fully funded: Tuition waiver and living maintenance stipend included (Full EPSRC tuition waiver and £19,237 annual living stipend)",
+          "✓ Target country priority: United Kingdom",
+          "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Computing and Resource Allocation. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "UK Student Dependant Visas legally permitted for PhD researchers",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.8/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "phd_opportunity",
+        "type": "phd_opportunity",
+        "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+        "university": "University of Cambridge",
+        "department": "Department of Computer Science and Technology",
+        "supervisor": "Prof. Alice Smith",
+        "country": "United Kingdom",
+        "link": "https://www.cst.cam.ac.uk/phd-positions",
+        "fit_score": 8.8,
+        "recruitment_status": "actively_recruiting",
+        "funding_status": "fully_funded",
+        "dependant_support": "permitted",
+        "direct_quote": "...We are actively looking for PhD students to join our distributed edge systems lab...",
+        "deadline": "2026-12-15",
+        "data": {
+          "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+          "university": "University of Cambridge",
+          "department": "Department of Computer Science and Technology",
+          "professor_name": "Prof. Alice Smith",
+          "researcher_profile_url": "",
+          "university_url": "",
+          "country": "United Kingdom",
+          "city": "",
+          "research_areas": [
+            "Edge Computing",
+            "Resource Allocation",
+            "Cloudlet Systems"
+          ],
+          "opportunity_type": "phd_position",
+          "funding_status": "fully_funded",
+          "funding_amount": "Full EPSRC tuition waiver and £19,237 annual living stipend",
+          "tuition_coverage": "",
+          "duration": "",
+          "deadline": "2026-12-15",
+          "start_date": null,
+          "eligibility": "",
+          "international_eligibility": "eligible",
+          "dependant_support_info": "UK Student Dependant Visas legally permitted for PhD researchers",
+          "dependant_support_classification": "permitted",
+          "source_url": "https://www.cst.cam.ac.uk/phd-positions",
+          "source": "",
+          "discovery_date": "2026-09-11",
+          "last_verified_date": "2026-09-11",
+          "relevance_score": 8.5,
+          "funding_score": 10.0,
+          "supervisor_fit_score": 10.0,
+          "country_score": 10.0,
+          "dependant_support_score": 5.5,
+          "composite_score": 8.8,
+          "recruitment_status": "actively_recruiting",
+          "recruitment_evidence": "...We are actively looking for PhD students to join our distributed edge systems lab...",
+          "confidence": "high",
+          "reasons": [
+            "✓ Strong Edge Computing research fit: edge computing",
+            "✓ Actively recruiting PhD students (\"...We are actively looking for PhD students t...\")",
+            "✓ Fully funded: Tuition waiver and living maintenance stipend included (Full EPSRC tuition waiver and £19,237 annual living stipend)",
+            "✓ Target country priority: United Kingdom",
+            "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student"
+          ],
+          "id": "opp_ccd57dacb559600d",
+          "raw_metadata": {}
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Edge AI in Wearable Devices",
+      "url": "https://doi.org/10.26634/javr.4.1.1116",
+      "source": "Crossref",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Prof.Anu Jyothy"
+      ],
+      "doi": "10.26634/javr.4.1.1116",
+      "arxiv_id": null,
+      "publication_date": "2028-06-15",
+      "discovery_date": "2026-08-24",
+      "abstract": "Wearable technologies have progressed from basic fitness trackers and digital watches into smart systems that can check vital signs, alert for anomalies, and transmit personalized health data. Existing cloud-native structures used by wearable technology face drawbacks, including delays in communication, reliance on reliable internet connections, privacy concerns, and toomuchenergyusage.EdgeArtificialIntelligence(EdgeAI),the layer of AI processing where the computational and intelligent capabilities are at the data source itself, offers a compelling alternative. If a sensor provides its data to an Edge AI-enabled wearabledevice,thedevicecanuseitsonboardcomputingtohelp integratethedataandascribemeaningaswellasprovideinsights. Thisuseof processingdatawithinthe wearabledevice,allowsfor actionable insights and decision making with little latency, and relieves the concern of sensitive user information traversing the internet.Recentadvancementsinlow-powerhardwaresuchasmicrocontrollersandAIaccelerators,inconjunctionwithoptimized machinelearningframeworkslikeTensorFlowLiteandTinyML, has opened the door to power highly efficient delivery of AI algorithms onsmaller-wearable devices.This allowsforagreater capabilityinmultipleareas,suchashealthcaremonitoring,fitness tracking, stress detection, and activity recognition. Furthermore, Edge AI enhances battery life, conserves bandwidth, and enables constant productivity even when not connected. The Edge AI movement is at the forefront of the next generation of wearables, allowing for a smooth integration of intelligence, mobility, and human design in response to the growing demands for smarter, moreprivate,andmoreefficienttechnology.",
+      "venue": "i-manager's Journal on Augmented &amp; Virtual Reality",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_63b367fd21f3e86a",
+      "id": "doi_19ffaa8d7ab542d7",
       "score": {
-        "topic_score": 0.0,
-        "credibility_score": 0.0,
-        "recency_score": 0.0,
+        "topic_score": 3.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.2,
+        "matched_topics": [
+          "Edge AI",
+          "TinyML"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Key research area match: TinyML (+0.4)",
+          "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+          "✓ Upcoming date: 2028-06-15 (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Existing cloud-native structures used by wearable technology face drawbacks, including delays in communication, reliance on reliable internet connections, privacy concerns, and toomuchenergyusage.EdgeArtificialIntelligence(EdgeAI),the layer of AI processing where the computational and intelligent capabilities are at the data source itself, offers a compelling alternative",
+        "methodology": "Thisuseof processingdatawithinthe wearabledevice,allowsfor actionable insights and decision making with little latency, and relieves the concern of sensitive user information traversing the internet.Recentadvancementsinlow-powerhardwaresuchasmicrocontrollersandAIaccelerators,inconjunctionwithoptimized machinelearningframeworkslikeTensorFlowLiteandTinyML, has opened the door to power highly efficient delivery of AI algorithms onsmaller-wearable devices.This allowsforagreater capabilityinmultipleareas,suchashealthcaremonitoring,fitness tracking, stress detection, and activity recognition",
+        "key_contribution": "The Edge AI movement is at the forefront of the next generation of wearables, allowing for a smooth integration of intelligence, mobility, and human design in response to the growing demands for smarter, moreprivate,andmoreefficienttechnology.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.2/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Scholarship] Japanese Government (MEXT) Doctoral Scholarship",
+      "url": "https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/",
+      "source": "Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "fellowship",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Scholarship by Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan (Japan). Stipend: 145,000 - 148,000 JPY / month + roundtrip airfare. Tuition: Full tuition, admission, and examination fees waived. Dependants: Spouses and children are eligible for Dependent (Kazoku Taizai) status of residence. National health insurance covers 70% of family medical costs with low monthly premiums for students. 👨‍👩‍👧 Dependants Permitted.",
+      "venue": "Japan — Designated National Universities (University of Tokyo, Kyoto, Tokyo Tech, Osaka, etc.)",
+      "topics": [
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support",
+        "Japan"
+      ],
+      "institution": "Designated National Universities (University of Tokyo, Kyoto, Tokyo Tech, Osaka, etc.)",
+      "location": "Japan",
+      "deadline": "Embassy track: April - May / University track: October - January",
+      "is_urgent": false,
+      "id": "item_a4e7b96bf0622900",
+      "score": {
+        "topic_score": 3.28,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.2,
+        "matched_topics": [
+          "PhD Funding",
+          "Japan"
+        ],
+        "reasons": [
+          "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student",
+          "✓ Target country priority: Japan",
+          "✓ Generous international living stipend + tuition waiver"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "👨‍👩‍👧 Dependants Permitted.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.2/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "scholarship",
+        "type": "scholarship",
+        "name": "Japanese Government (MEXT) Doctoral Scholarship",
+        "country": "Japan",
+        "funding_type": "fully_funded",
+        "dependant_support": "permitted",
+        "allowance_details": "Spouses and children are eligible for Dependent (Kazoku Taizai) status of residence. National health insurance covers 70% of family medical costs with low monthly premiums for students.",
+        "legal_notes": "Comprehensive government sponsorship with guaranteed full tuition waiver.",
+        "deadline": "Embassy track: April - May / University track: October - January",
+        "official_link": "https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/",
+        "fit_score": 8.2,
+        "data": {
+          "name": "Japanese Government (MEXT) Doctoral Scholarship",
+          "provider": "Ministry of Education, Culture, Sports, Science and Technology (MEXT), Japan",
+          "country": "Japan",
+          "university": "Designated National Universities (University of Tokyo, Kyoto, Tokyo Tech, Osaka, etc.)",
+          "degree_level": "PhD",
+          "tuition_coverage": "Full tuition, admission, and examination fees waived",
+          "stipend_amount": "145,000 - 148,000 JPY / month + roundtrip airfare",
+          "funding_type": "fully_funded",
+          "duration": "Up to 3 - 4 years (including preparatory course if needed)",
+          "deadline": "Embassy track: April - May / University track: October - January",
+          "start_date": "April or October",
+          "dependant_support_classification": "permitted",
+          "dependant_support_details": "Spouses and children are eligible for Dependent (Kazoku Taizai) status of residence. National health insurance covers 70% of family medical costs with low monthly premiums for students.",
+          "family_accommodation": "International student family dormitories available at most national universities",
+          "international_eligibility": "eligible",
+          "official_url": "https://www.studyinjapan.go.jp/en/planning/scholarships/mext-scholarships/",
+          "verification_date": "2026-09-11",
+          "score": 8.2,
+          "reasons": [
+            "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student",
+            "✓ Target country priority: Japan",
+            "✓ Generous international living stipend + tuition waiver"
+          ],
+          "notes": "Comprehensive government sponsorship with guaranteed full tuition waiver."
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Scholarship] UKRI / EPSRC Doctoral Studentships",
+      "url": "https://www.ukri.org/what-we-do/developing-people-and-skills/find-studentships-and-doctoral-training/",
+      "source": "Engineering and Physical Sciences Research Council (EPSRC) / UKRI",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "fellowship",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Scholarship by Engineering and Physical Sciences Research Council (EPSRC) / UKRI (United Kingdom). Stipend: £19,237+ / year (minimum UKRI rate, higher in London). Tuition: Full tuition fees covered (including international fees for funded quota). Dependants: PhD students on UKRI studentships are on Research Doctoral Student Visas and are legally entitled to bring spouse and children as dependants. 👨‍👩‍👧 Dependants Permitted.",
+      "venue": "United Kingdom — UK Universities (Oxford, Cambridge, Imperial, UCL, Edinburgh, Manchester, etc.)",
+      "topics": [
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support",
+        "United Kingdom"
+      ],
+      "institution": "UK Universities (Oxford, Cambridge, Imperial, UCL, Edinburgh, Manchester, etc.)",
+      "location": "United Kingdom",
+      "deadline": "Varies by project (Continuous / December - March)",
+      "is_urgent": false,
+      "id": "item_8443c9fe31c9628a",
+      "score": {
+        "topic_score": 3.28,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.2,
+        "matched_topics": [
+          "PhD Funding",
+          "United Kingdom"
+        ],
+        "reasons": [
+          "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student",
+          "✓ Target country priority: United Kingdom",
+          "✓ Generous international living stipend + tuition waiver"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "👨‍👩‍👧 Dependants Permitted.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.2/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "scholarship",
+        "type": "scholarship",
+        "name": "UKRI / EPSRC Doctoral Studentships",
+        "country": "United Kingdom",
+        "funding_type": "fully_funded",
+        "dependant_support": "permitted",
+        "allowance_details": "PhD students on UKRI studentships are on Research Doctoral Student Visas and are legally entitled to bring spouse and children as dependants.",
+        "legal_notes": "Standard funded doctoral research vehicle in the UK.",
+        "deadline": "Varies by project (Continuous / December - March)",
+        "official_link": "https://www.ukri.org/what-we-do/developing-people-and-skills/find-studentships-and-doctoral-training/",
+        "fit_score": 8.2,
+        "data": {
+          "name": "UKRI / EPSRC Doctoral Studentships",
+          "provider": "Engineering and Physical Sciences Research Council (EPSRC) / UKRI",
+          "country": "United Kingdom",
+          "university": "UK Universities (Oxford, Cambridge, Imperial, UCL, Edinburgh, Manchester, etc.)",
+          "degree_level": "PhD",
+          "tuition_coverage": "Full tuition fees covered (including international fees for funded quota)",
+          "stipend_amount": "£19,237+ / year (minimum UKRI rate, higher in London)",
+          "funding_type": "fully_funded",
+          "duration": "3.5 - 4 years",
+          "deadline": "Varies by project (Continuous / December - March)",
+          "start_date": "October annually",
+          "dependant_support_classification": "permitted",
+          "dependant_support_details": "PhD students on UKRI studentships are on Research Doctoral Student Visas and are legally entitled to bring spouse and children as dependants.",
+          "family_accommodation": "University graduate family housing services",
+          "international_eligibility": "eligible",
+          "official_url": "https://www.ukri.org/what-we-do/developing-people-and-skills/find-studentships-and-doctoral-training/",
+          "verification_date": "2026-09-11",
+          "score": 8.2,
+          "reasons": [
+            "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student",
+            "✓ Target country priority: United Kingdom",
+            "✓ Generous international living stipend + tuition waiver"
+          ],
+          "notes": "Standard funded doctoral research vehicle in the UK."
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Scholarship] Fulbright Foreign Student Program (Doctoral Track)",
+      "url": "https://foreign.fulbrightonline.org/",
+      "source": "U.S. Department of State",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "fellowship",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-11",
+      "abstract": "Scholarship by U.S. Department of State (United States). Stipend: Monthly maintenance stipend tailored to cost of living in study city. Tuition: Full tuition and mandatory fees covered. Dependants: Spouse and children are eligible for J-2 dependent visas. J-2 dependents may apply for Employment Authorization Document (EAD) to work in the US. 👨‍👩‍👧 Dependants Permitted.",
+      "venue": "United States — Accredited U.S. Universities",
+      "topics": [
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support",
+        "United States"
+      ],
+      "institution": "Accredited U.S. Universities",
+      "location": "United States",
+      "deadline": "Varies by home country (Typically February - May annually)",
+      "is_urgent": false,
+      "id": "item_04595709222d5695",
+      "score": {
+        "topic_score": 3.28,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 1.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.2,
+        "matched_topics": [
+          "PhD Funding",
+          "United States"
+        ],
+        "reasons": [
+          "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student",
+          "✓ Target country priority: United States",
+          "✓ Generous international living stipend + tuition waiver"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates PhD Funding and International Scholarship. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "👨‍👩‍👧 Dependants Permitted.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.2/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": {
+        "kind": "scholarship",
+        "type": "scholarship",
+        "name": "Fulbright Foreign Student Program (Doctoral Track)",
+        "country": "United States",
+        "funding_type": "fully_funded",
+        "dependant_support": "permitted",
+        "allowance_details": "Spouse and children are eligible for J-2 dependent visas. J-2 dependents may apply for Employment Authorization Document (EAD) to work in the US.",
+        "legal_notes": "Premier U.S. exchange program with full tuition and J-2 spouse work eligibility.",
+        "deadline": "Varies by home country (Typically February - May annually)",
+        "official_link": "https://foreign.fulbrightonline.org/",
+        "fit_score": 8.2,
+        "data": {
+          "name": "Fulbright Foreign Student Program (Doctoral Track)",
+          "provider": "U.S. Department of State",
+          "country": "United States",
+          "university": "Accredited U.S. Universities",
+          "degree_level": "PhD",
+          "tuition_coverage": "Full tuition and mandatory fees covered",
+          "stipend_amount": "Monthly maintenance stipend tailored to cost of living in study city",
+          "funding_type": "fully_funded",
+          "duration": "Up to 5 years (subject to academic progress and funding renewal)",
+          "deadline": "Varies by home country (Typically February - May annually)",
+          "start_date": "August - September annually",
+          "dependant_support_classification": "permitted",
+          "dependant_support_details": "Spouse and children are eligible for J-2 dependent visas. J-2 dependents may apply for Employment Authorization Document (EAD) to work in the US.",
+          "family_accommodation": "University on-campus family student housing",
+          "international_eligibility": "eligible",
+          "official_url": "https://foreign.fulbrightonline.org/",
+          "verification_date": "2026-09-11",
+          "score": 8.2,
+          "reasons": [
+            "• Dependants Permitted: Accompanying dependants allowed under student visa rules; funding covers single student",
+            "✓ Target country priority: United States",
+            "✓ Generous international living stipend + tuition waiver"
+          ],
+          "notes": "Premier U.S. exchange program with full tuition and J-2 spouse work eligibility."
+        }
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Bibliometric Analysis of Hybrid Cloud Computing",
+      "url": "https://doi.org/10.58812/wsist.v4i02.3092",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Loso Judijanto"
+      ],
+      "doi": "10.58812/wsist.v4i02.3092",
+      "arxiv_id": null,
+      "publication_date": "2026-08-31",
+      "discovery_date": "2026-08-31",
+      "abstract": "Hybrid cloud computing has emerged as a critical technological paradigm that enables organizations to combine the flexibility of public cloud services with the control and security of private cloud infrastructures. This study aims to examine the intellectual development, research trends, collaboration patterns, and emerging themes in hybrid cloud computing literature using a bibliometric analysis approach. Data were collected from the Scopus database and analyzed using VOSviewer to identify publication trends, influential literature, author and country collaboration networks, and keyword co-occurrence patterns. The findings reveal that hybrid cloud computing research has expanded significantly, with major contributions focusing on computation offloading, cloud-edge integration, Internet of Things (IoT), resource management, task scheduling, and optimization algorithms. Citation analysis highlights those influential studies primarily address improving computational efficiency, reducing latency, and optimizing resource utilization in distributed cloud environments. The collaboration analysis demonstrates that countries such as China, India, and the United States play central roles in advancing hybrid cloud research, although global collaboration remains concentrated within specific research networks. Furthermore, keyword analysis indicates a transition from traditional cloud infrastructure studies toward advanced research areas involving artificial intelligence, edge computing, cybersecurity, energy efficiency, and green computing. This study provides valuable insights into the evolution of hybrid cloud computing research and identifies future opportunities for developing intelligent, secure, and sustainable cloud ecosystems.",
+      "venue": "West Science Information System and Technology",
+      "topics": [
+        "Cloud computing",
+        "Computer science",
+        "Data science",
+        "Flexibility (engineering)",
+        "The Internet",
+        "Scopus",
+        "Cloud computing security",
+        "Big data",
+        "Benchmarking",
+        "Resource (disambiguation)",
+        "Cloud testing",
+        "Utility computing",
+        "Long tail",
+        "Knowledge management",
+        "Citation",
+        "Bibliometrics",
+        "Access control",
+        "World Wide Web",
+        "Trend analysis",
+        "Task (project management)",
+        "Virtualization",
+        "Emerging technologies",
+        "Management science",
+        "Interoperability",
+        "Distributed computing",
+        "e-Science"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_227c9759f5b52bb4",
+      "score": {
+        "topic_score": 3.0,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.0,
+        "matched_topics": [
+          "IoT",
+          "Edge Computing",
+          "Internet of Things",
+          "Cloud Computing",
+          "Energy Efficiency",
+          "Computation Offloading",
+          "Task Scheduling"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract), Computation Offloading (Abstract)",
+          "✓ Key research area match: Computation Offloading, Task Scheduling (+0.8)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Cloud computing and Computer science. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "The findings reveal that hybrid cloud computing research has expanded significantly, with major contributions focusing on computation offloading, cloud-edge integration, Internet of Things (IoT), resource management, task scheduling, and optimization algorithms",
+        "key_contribution": "The collaboration analysis demonstrates that countries such as China, India, and the United States play central roles in advancing hybrid cloud research, although global collaboration remains concentrated within specific research networks",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.0/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {
+        "cited_by_count": 0
+      },
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Future VLSI Architectures for Neuromorphic Computing, Edge AI and Sustainable Systems",
+      "url": "https://doi.org/10.61877/ijmrp.v3i7.293",
+      "source": "Crossref",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "R Bhaskar Nihal Varma"
+      ],
+      "doi": "10.61877/ijmrp.v3i7.293",
+      "arxiv_id": null,
+      "publication_date": "2027-07-25",
+      "discovery_date": "2026-08-24",
+      "abstract": "The future of Very Large Scale Integration (VLSI) architectures is being fundamentally reshaped by the intersecting demands of Neuromorphic computing, edge artificial intelligence (AI), and sustainable electronic systems. As traditional CMOS scaling nears its physical limitations, researchers are exploring bio-inspired Neuromorphic designs that mimic the brain's energy-efficient computing mechanisms using spiking neural networks (SNNs), as demonstrated by platforms like Intel’s Loihi and IBM’s True North (Davies et al., 2018; Merolla et al., 2014). In parallel, edge AI is driving the need for VLSI systems capable of performing high-speed, low-latency inference directly on-device, thus reducing reliance on cloud infrastructure. Hardware accelerators such as Eyeriss and Google’s EdgeTPU offer promising solutions through energy-aware architecture and domain-specific design (Chen et al., 2019; Jouppi et al., 2017). These innovations are increasingly evaluated not just on performance, but also on ecological impact. Emerging sustainable VLSI solutions include non-volatile memory technologies like ReRAM and PCM, in memory computing approaches that reduce data movement, and eco-friendly materials like carbon nanotubes and organic semiconductors (Sebastian et al., 2020; Rajendran et al., 2020). However, despite significant advancements, challenges persist in fabrication scalability, algorithm-hardware co-design, and lifecycle sustainability assessment. This paper explores the synergetic evolution of these domains and highlights the critical need for interdisciplinary collaboration to develop future VLSI architectures that are intelligent, efficient, and environmentally responsible. The convergence of Neuromorphic computing, edge AI, and green hardware marks a paradigm shift, positioning VLSI not only as a medium for computation but as a cornerstone of sustainable technological progress.",
+      "venue": "International Journal for Multidimensional Research Perspectives",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_f2bed25970b1baf8",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "MEC",
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title), MEC (Abstract)",
+          "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+          "✓ Upcoming date: 2027-07-25 (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "As traditional CMOS scaling nears its physical limitations, researchers are exploring bio-inspired Neuromorphic designs that mimic the brain's energy-efficient computing mechanisms using spiking neural networks (SNNs), as demonstrated by platforms like Intel’s Loihi and IBM’s True North (Davies et al., 2018; Merolla et al., 2014)",
+        "methodology": "The future of Very Large Scale Integration (VLSI) architectures is being fundamentally reshaped by the intersecting demands of Neuromorphic computing, edge artificial intelligence (AI), and sustainable electronic systems",
+        "key_contribution": "The convergence of Neuromorphic computing, edge AI, and green hardware marks a paradigm shift, positioning VLSI not only as a medium for computation but as a cornerstone of sustainable technological progress.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+      "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-10",
+      "discovery_date": "2026-09-11",
+      "abstract": "Author: Roy Shadmon, PhD / System Architect, AnyLog Over the past two years, we at AnyLog have worked with UC Santa Cruz to turn student capstone projects into a collaboration...",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_47734c7aab1f8f0b",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "Author: Roy Shadmon, PhD / System Architect, AnyLog Over the past two years, we at AnyLog have worked with UC Santa Cruz to turn student capstone projects into a collaboration...",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+      "url": "http://arxiv.org/abs/2608.21172v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Shiva Shrestha",
+        "Kazi Shaharair Sharif",
+        "Zongxing Xie",
+        "Jiajing Huang",
+        "Anhao Xiang",
+        "Honghui Xu"
+      ],
+      "doi": null,
+      "arxiv_id": "2608.21172v1",
+      "publication_date": "2026-08-21",
+      "discovery_date": "2026-08-24",
+      "abstract": "Federated fine-tuning enables large language models to adapt on edge devices without centralizing private data, but practical deployments must address hardware instability and adversarial update corruption together. Thermally constrained clients may throttle, slow local training, or delay synchronous aggregation, while Byzantine clients and communication-layer adversaries can corrupt the updates used to form the global model. To address these challenges, we present Thermo-FL, a thermal-aware federated LoRA fine-tuning framework that uses device temperature as an active control signal for local adapter training and sparse update transmission. On the client side, Thermo-FL adjusts the active LoRA-layer fraction and transmitted update density as devices heat or cool, reducing workload under thermal stress. On the server side, Thermo-FL introduces TERRA, a robust aggregation pipeline for dynamically sparse LoRA updates that combines norm filtering, mask-aware directional validation, adaptive active-coordinate clipping, and mask-aware aggregation. We evaluate Thermo-FL using both a large-scale emulator and a Jetson-based physical testbed. In the emulator, Thermo-FL improves robustness under adversarial sparse aggregation and achieves the strongest BoolQ accuracy across clean and attack settings while remaining competitive on GSM8K. In the physical prototype, Thermo-FL stabilizes device temperature, reduces compressed upload size through bitmap sparse encoding, and preserves GSM8K utility under sign-flip/scale and MITM perturbations. These results show that secure edge LLM adaptation should jointly consider hardware behavior, workload regulation, sparse communication, and aggregation robustness.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.LG",
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_9561a67df6924e3e",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (3d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates cs.LG and cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "To address these challenges, we present Thermo-FL, a thermal-aware federated LoRA fine-tuning framework that uses device temperature as an active control signal for local adapter training and sparse update transmission",
+        "methodology": "Federated fine-tuning enables large language models to adapt on edge devices without centralizing private data, but practical deployments must address hardware instability and adversarial update corruption together",
+        "key_contribution": "In the emulator, Thermo-FL improves robustness under adversarial sparse aggregation and achieves the strongest BoolQ accuracy across clean and attack settings while remaining competitive on GSM8K",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
+      "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
+      "source": "Semantic Scholar",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Ehzaz Mustafa",
+        "Junaid Shuja",
+        "Faisal Rehman",
+        "Abdallah Namoun",
+        "Mazhar Ali",
+        "Abdullah Alourani"
+      ],
+      "doi": "10.1109/ACCESS.2025.3573929",
+      "arxiv_id": null,
+      "publication_date": "2025",
+      "discovery_date": "2026-08-25",
+      "abstract": "Computation offloading transfers resource-intensive tasks from local Internet of Things (IoT) devices to powerful edge servers, which minimizes latency and reduces the computational load on IoT devices. Deep Reinforcement Learning (DRL) is widely utilized to optimize computation offloading decisions. However, previous studies fall short in two main ways: firstly, they do not collectively optimize the comprehensive state space, and secondly, their reliance on Q-learning and Deep Q Networks (DQN) makes it challenging for agents to discern the optimal action in large action spaces, as many actions may possess similar values. In this paper, we introduce a multi-branch Dueling Deep Q Network (MBDDQN) that tackles the challenges of high-dimensional state-action spaces and long-term cost optimizations in dynamic environments. The Dueling DQN alleviates the complexity of simultaneous offloading and resource allocation decisions, with each branch independently controlling a subset of the decision variables to scale efficiently with an increasing number of IoT devices, thereby avoiding the combinatorial explosion of potential actions. Furthermore, we implement a long short-term memory (LSTM) network with distinct advantage-value layers to enhance both short-term action selection and long-term system cost estimation, as well as improve the temporal learning capacity of the model. Finally, we propose an innovative adaptive cost-weighting mechanism within the reward function to dynamically balance competing objectives, including energy consumption, latency, and bandwidth utilization. Unlike prior works that use fixed reward structures, we leverage weighted state-action advantage values to dynamically adjust the optimization variables. This approach also enables the agent to self-tune, allowing it to prioritize delay minimization in delay-sensitive scenarios and energy conservation in resource-constrained environments. Simulation results demonstrate the superiority of the proposed scheme compared to benchmarks. For instance, MBDDQN reduces delay by 17.88% over DQN and 12.28% over DDPG. Additionally, regarding energy consumption, MBDDQN achieves a 10.1% improvement over DQN and a 7.64% enhancement over DDPG.",
+      "venue": "IEEE Access",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_4ed4c2109cdc1610",
+      "score": {
+        "topic_score": 4.0,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.7,
+        "matched_topics": [
+          "Mobile Edge Computing",
+          "Resource Allocation",
+          "Internet of Things",
+          "Computation Offloading",
+          "IoT",
+          "Edge Computing",
+          "MEC"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Title)",
+          "✓ Key research area match: Computation Offloading, Resource Allocation (+0.8)",
+          "✓ Tier 1 Academic/Standards source: Semantic Scholar (+2.5)",
+          "• Published >30d ago (365d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "However, previous studies fall short in two main ways: firstly, they do not collectively optimize the comprehensive state space, and secondly, their reliance on Q-learning and Deep Q Networks (DQN) makes it challenging for agents to discern the optimal action in large action spaces, as many actions may possess similar values",
+        "methodology": "Deep Reinforcement Learning (DRL) is widely utilized to optimize computation offloading decisions",
+        "key_contribution": "Computation offloading transfers resource-intensive tasks from local Internet of Things (IoT) devices to powerful edge servers, which minimizes latency and reduces the computational load on IoT devices",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.7/10",
+        "is_ai_generated": false
+      },
+      "raw_metadata": {
+        "citation_count": 19
+      },
+      "alert_mode": "daily"
+    },
+    {
+      "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+      "url": "https://doi.org/10.1007/s42452-026-09533-w",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "survey",
+      "authors": [
+        "Sourabh Natu",
+        "Ankur Goyal"
+      ],
+      "doi": "10.1007/s42452-026-09533-w",
+      "arxiv_id": null,
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-12",
+      "abstract": "",
+      "venue": "Discover Applied Sciences",
+      "topics": [
+        "Computer science",
+        "Group method of data handling",
+        "Data processing",
+        "Key (lock)",
+        "Enhanced Data Rates for GSM Evolution",
+        "Internet of Things",
+        "Edge computing",
+        "Data management",
+        "Cloud computing",
+        "Real-time computing",
+        "Systems engineering",
+        "Data mining",
+        "Real-time data",
+        "Edge device"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_bd6f5f19f2c71564",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.7,
+        "negative_penalty": 0.0,
+        "final_score": 7.5,
+        "matched_topics": [
+          "IoT",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Comprehensive Literature Survey / Review (+0.7)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "Addresses key paradigms in Computer science, Group method of data handling.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "Published in Discover Applied Sciences.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review.",
+        "relevance_to_phd": "7.5/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      },
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
+      "url": "https://www.semanticscholar.org/paper/7bbe351149967f43a0f2f75bdb437f77ca028f29",
+      "source": "Semantic Scholar",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Zhenli He",
+        "Ying Guo",
+        "Xiaolong Zhai",
+        "Mingxiong Zhao",
+        "Wei Zhou",
+        "Keqin Li"
+      ],
+      "doi": "10.1109/TCC.2025.3538090",
+      "arxiv_id": null,
+      "publication_date": "2025-01-01",
+      "discovery_date": "2026-08-27",
+      "abstract": "Mobile-Edge Cloud Computing (MECC) plays a crucial role in balancing low-latency services at the edge with the computational capabilities of cloud data centers (DCs). However, many existing studies focus on single-provider settings or limit their analysis to interactions between mobile devices (MDs) and edge servers (ESs), often overlooking the competition that occurs among ESs from different providers. This article introduces an innovative two-layer game framework that captures independent self-interested competition among MDs and ESs, providing a more accurate reflection of multi-vendor environments. Additionally, the framework explores the influence of cloud-edge collaboration on ES competition, offering new insights into these dynamics. The proposed model extends previous research by developing algorithms that optimize task offloading and resource allocation strategies for both MDs and ESs, ensuring the convergence to Nash equilibrium in both layers. Simulation results demonstrate the potential of the framework to improve resource efficiency and system responsiveness in multi-provider MECC environments.",
+      "venue": "IEEE Transactions on Cloud Computing",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_9cb0244267a28a69",
+      "score": {
+        "topic_score": 3.6,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.3,
+        "matched_topics": [
+          "Computation Offloading",
+          "Cloud Computing",
+          "Resource Allocation"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Computation Offloading (Title)",
+          "✓ Key research area match: Computation Offloading, Resource Allocation (+0.8)",
+          "✓ Tier 1 Academic/Standards source: Semantic Scholar (+2.5)",
+          "• Published >30d ago (603d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {
+        "citation_count": 18
+      },
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
+      "url": "http://arxiv.org/abs/2608.26040v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Navaneetha Krishnan Kamalakannan",
+        "Harinisri Velmurugan"
+      ],
+      "doi": null,
+      "arxiv_id": "2608.26040v1",
+      "publication_date": "2026-08-26",
+      "discovery_date": "2026-08-27",
+      "abstract": "Decentralized wireless collectives including vehicular swarms, IoT clusters, and edge AI networks require communication protocols that maintain robustness under dynamic topologies and heterogeneous link quality. While Random Linear Network Coding (RLNC) provides algebraic resilience against packet erasures, its performance degrades significantly when peers exhibit diverse channel conditions. This paper presents Adaptive Peer Clustering with Hierarchical RLNC (APC-RLNC), a system that dynamically groups peers by exponentially weighted moving average (EWMA) reliability metrics and applies multi-tier network coding within and across clusters. We formalize the clustering optimization problem, derive closed-form decoding probability bounds for Markov erasure channels, and prove O(sqrt(T)) regret for online reconfiguration under the Follow-the-Regularized-Leader (FTRL) framework. Our implementation includes both a high-fidelity network simulator and a proof-of-concept testbed deployment on Jetson Nano edge devices. Evaluation across diverse scenarios including high-mobility vehicular networks, burst-error channels, and adversarial interference demonstrates 5.2-9.8 percentage-point packet delivery ratio (PDR) improvements, 10-23% latency reductions, and up to 30% higher node retention compared to state-of-the-art baselines. The system exhibits linear scalability to 500+ nodes and maintains real-time reconfiguration overhead below 3%. APC-RLNC establishes adaptive clustering as a foundational primitive for AI-native 6G wireless systems.",
+      "venue": "arXiv CS",
+      "topics": [
+        "eess.SP",
+        "cs.DC",
+        "cs.IT",
+        "cs.NI"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_84cf3599cac9456a",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "6G",
+          "Edge AI",
+          "IoT"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {},
+      "alert_mode": "daily"
+    },
+    {
+      "title": "[Code/Benchmark] F4bian1012/phlame-tinyml (★ 1)",
+      "url": "https://github.com/F4bian1012/phlame-tinyml",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "F4bian1012"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-13",
+      "discovery_date": "2026-09-13",
+      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [
+        "arduino-portenta",
+        "benchmark",
+        "cortex-m7",
+        "edge-ai",
+        "hardware-in-the-loop",
+        "microcontroller",
+        "model-quantization",
+        "phlame",
+        "tensorflow-lite-micro",
+        "tinyml"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_bd1f95673ece4b91",
+      "score": {
+        "topic_score": 2.6,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 7.1,
+        "matched_topics": [
+          "Edge Computing",
+          "TinyML"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Key research area match: TinyML (+0.4)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 1,
+        "forks": 0
+      }
+    },
+    {
+      "title": "M2EC 2027 : International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing",
+      "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202998&copyownerid=15660",
+      "source": "Conference Feed",
+      "source_tier": "tier3_conference",
+      "item_type": "conference_cfp",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-06",
+      "discovery_date": "2026-09-06",
+      "abstract": "International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing [Tirana, Albania] [Mar 24, 2027 - Mar 26, 2027]",
+      "venue": "Conference CFP",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_147937e6cfb558c5",
+      "score": {
+        "topic_score": 3.1,
+        "credibility_score": 1.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.8,
+        "negative_penalty": 0.0,
+        "final_score": 6.9,
+        "matched_topics": [
+          "Mobile Edge Computing",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Title)",
+          "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Conference CFP / Submission Track (+0.8)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {},
+      "alert_mode": "weekly"
+    },
+    {
+      "title": "Enhancing Real Time Decision Intelligence through Federated Learning Integration in Edge Computing Networks",
+      "url": "https://doi.org/10.1504/ijcis.2028.10073919",
+      "source": "Crossref",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "M.S. Bennet Praba",
+        "M.Vinay Kumar",
+        "K.B. Anusha",
+        "Nitin Tiwari",
+        "Nidal Al Said",
+        "K. Kandan"
+      ],
+      "doi": "10.1504/ijcis.2028.10073919",
+      "arxiv_id": null,
+      "publication_date": "2028",
+      "discovery_date": "2026-08-30",
+      "abstract": "",
+      "venue": "International Journal of Critical Infrastructures",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_0110be4434aab043",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
         "stage_boost": 0.0,
         "phd_boost": 0.0,
         "negative_penalty": 0.0,
-        "final_score": 9.0,
-        "matched_topics": [],
-        "reasons": []
+        "final_score": 6.8,
+        "matched_topics": [
+          "Edge Computing",
+          "Federated Learning"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: Crossref (+2.5)",
+          "✓ Upcoming date: 2028 (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "raw_metadata": {},
+      "alert_mode": "weekly"
+    },
+    {
+      "title": "[Code/Benchmark] NoLife141/github-runner-benchmark (★ 0)",
+      "url": "https://github.com/NoLife141/github-runner-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "NoLife141"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-13",
+      "discovery_date": "2026-09-13",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_c69c6058ae934e87",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "CloudAM 2026 : 15th International Workshop on Cloud and Edge Computing, and Applications Management",
+      "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202965&copyownerid=43185",
+      "source": "Conference Feed",
+      "source_tier": "tier3_conference",
+      "item_type": "conference_cfp",
+      "authors": [],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-13",
+      "discovery_date": "2026-09-13",
+      "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
+      "venue": "Conference CFP",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_be26e6519e41a456",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 1.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.8,
+        "negative_penalty": 0.0,
+        "final_score": 6.6,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Conference CFP / Submission Track (+0.8)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
+      "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-06-17",
+      "discovery_date": "2026-09-13",
+      "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_e5fb999eaf167239",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "• Published >30d ago (88d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "InfiniEdge AI and the Orchestra of Orchestrators: Bringing AI to the Edge, Responsibly",
+      "url": "https://lfedge.org/infiniedge-ai-and-the-orchestra-of-orchestrators-bringing-ai-to-the-edge-responsibly/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-03-19",
+      "discovery_date": "2026-09-13",
+      "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_bbcc09dac6d60110",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 0.2,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "• Published >30d ago (178d ago) (+0.2)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
       },
       "intelligence": null,
       "opportunity_data": null,

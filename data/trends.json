@@ -21,18 +21,18 @@
     "historical_count": 1
   },
   {
+    "topic": "TinyML",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
+    "historical_count": 0
+  },
+  {
     "topic": "Computation Offloading",
     "direction": "↓",
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 2
-  },
-  {
-    "topic": "TinyML",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 1,
-    "historical_count": 0
   },
   {
     "topic": "6G + Edge",

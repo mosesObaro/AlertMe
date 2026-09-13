@@ -1776,5 +1776,65 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "[Code/Benchmark] F4bian1012/phlame-tinyml (★ 1)",
+    "url": "https://github.com/F4bian1012/phlame-tinyml",
+    "source": "GitHub Open Source",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "benchmark_code",
+    "authors": [
+      "F4bian1012"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-09-13",
+    "discovery_date": "2026-09-13",
+    "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
+    "venue": "GitHub",
+    "topics": [
+      "arduino-portenta",
+      "benchmark",
+      "cortex-m7",
+      "edge-ai",
+      "hardware-in-the-loop",
+      "microcontroller",
+      "model-quantization",
+      "phlame",
+      "tensorflow-lite-micro",
+      "tinyml"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "item_bd1f95673ece4b91",
+    "score": {
+      "topic_score": 2.6,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 7.1,
+      "matched_topics": [
+        "Edge Computing",
+        "TinyML"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Abstract)",
+        "✓ Key research area match: TinyML (+0.4)",
+        "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+        "✓ Freshly published (0d ago) (+1.5)",
+        "✓ Open Benchmark / Research Artifact (+0.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {
+      "stars": 1,
+      "forks": 0
+    },
+    "alert_mode": "daily"
   }
 ]
