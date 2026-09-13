@@ -6,6 +6,9 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   daily-briefing:
     runs-on: ubuntu-latest
@@ -13,20 +16,24 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Set up Python 3.12
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install openpyxl
+          pip install -r requirements.txt
+          pip install pytest
 
       - name: Run Unit Tests & Regression Verification
         run: |
-          python -m unittest discover -s tests -p "test_*.py" -v
+          pytest tests/ -v
 
       - name: Generate Today's 7-Day Progressive Supervisor Briefing
         run: |
@@ -46,12 +53,19 @@ jobs:
           name: daily-phd-intelligence-alert
           path: alerts/daily/
           retention-days: 30
+          if-no-files-found: ignore
 
       - name: Commit and Push Updated Campaign State
         if: github.ref == 'refs/heads/main'
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-          git add hk_supervisor_intel/data/state.json alerts/daily/ Edge_Computing_PhD_Curriculum_Tracker.xlsx || true
-          git commit -m "Auto-update Hong Kong PhD supervisor intelligence state and daily alert" || echo "No changes to commit"
-          git push || true
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add hk_supervisor_intel/data/state.json alerts/daily/ Edge_Computing_PhD_Curriculum_Tracker.xlsx
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: auto-update Hong Kong PhD supervisor intelligence state and daily alert [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main || echo "Notice: Push conflict resolved or deferred to next scheduled run."
+          fi
