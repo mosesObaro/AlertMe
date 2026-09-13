@@ -1,0 +1,57 @@
+name: Hong Kong PhD Daily Supervisor Intelligence
+
+on:
+  schedule:
+    # Runs every day at 00:00 UTC (08:00 HKT)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-briefing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl
+
+      - name: Run Unit Tests & Regression Verification
+        run: |
+          python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Generate Today's 7-Day Progressive Supervisor Briefing
+        run: |
+          python -m hk_supervisor_intel.cli generate-hk-supervisor-alert
+
+      - name: Audit Recruitment Status & 12-Month Freshness
+        run: |
+          python -m hk_supervisor_intel.cli verify-hk-recruitment
+
+      - name: Rebuild & Verify Master Excel Curriculum Workbook
+        run: |
+          python scratch/build_edge_curriculum.py
+
+      - name: Upload Daily Intelligence Alert Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-phd-intelligence-alert
+          path: alerts/daily/
+          retention-days: 30
+
+      - name: Commit and Push Updated Campaign State
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add hk_supervisor_intel/data/state.json alerts/daily/ Edge_Computing_PhD_Curriculum_Tracker.xlsx || true
+          git commit -m "Auto-update Hong Kong PhD supervisor intelligence state and daily alert" || echo "No changes to commit"
+          git push || true

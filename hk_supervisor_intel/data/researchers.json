@@ -1,0 +1,615 @@
+[
+  {
+    "researcher_id": "polyu_cao_jiannong",
+    "name": "Prof. Jiannong Cao",
+    "university": "The Hong Kong Polytechnic University",
+    "department": "Department of Computing (COMP)",
+    "position": "Dean of Graduate School, Otto Poon Charitable Foundation Professor in Data Science, Chair Professor of Distributed and Mobile Computing",
+    "research_group": "Internet and Mobile Computing Laboratory (IMCL)",
+    "official_profile_url": "https://www.polyu.edu.hk/comp/people/academic-staff/prof-cao-jiannong/",
+    "personal_website": "https://www.comp.polyu.edu.hk/~csjcao/",
+    "google_scholar": "https://scholar.google.com/citations?user=X5Nl_E8AAAAJ",
+    "orcid": "0000-0002-4663-8824",
+    "dblp": "https://dblp.org/pid/c/JiannongCao.html",
+    "research_interests": ["Edge Computing", "Edge AI", "Distributed Systems", "Cloud-Edge Continuum", "Wireless Sensing", "Big Data Analytics"],
+    "research_summary": "Pioneer in distributed systems and mobile edge computing. Leads major RGC Collaborative Research Funds on collaborative edge computing frameworks, edge intelligence, and distributed scheduling.",
+    "edge_relevance": "Direct pioneer of EdgeMesh, distributed stream processing, and multi-tier edge-cloud orchestration. Highest possible research alignment.",
+    "research_trajectory": "Evolved from classical distributed algorithms and mobile ad-hoc networks (2000s) to wireless sensor networks and cloud computing (2010s), and currently leads research in Edge Intelligence, decentralized collaborative inference, and AIoT.",
+    "current_projects": [
+      "RGC CRF: Collaborative Edge Computing Architecture for Smart Cities",
+      "Edge Intelligence Framework for Real-time Video Stream Analytics",
+      "Decentralized Task Scheduling in Heterogeneous Edge Environments"
+    ],
+    "research_methods": ["Distributed Protocol Design", "Lyapunov Optimization", "Queueing Theory", "Empirical Systems Testbeds"],
+    "datasets": ["PolyU Smart Campus Telemetry", "CRAWDAD Wireless Traces", "City Pulse IoT Dataset"],
+    "simulation_tools": ["EdgeCloudSim", "ns-3", "Mininet", "OMNeT++"],
+    "systems_testbeds": ["50-node Raspberry Pi 4 Edge Cluster", "Jetson Orin Multi-Camera Testbed", "Kubernetes/K3s EdgeMesh Testbed"],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "We are seeking highly motivated PhD students and Postdocs with strong backgrounds in Computer Science, Computer Engineering, or Mathematics to join IMCL for Fall 2027. Full scholarships (HKPFS and PolyU Presidential Fellowship) available.",
+      "source_url": "https://www.comp.polyu.edu.hk/~csjcao/openings.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-06-15",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Decentralized Peer-to-Peer Edge Orchestration without Central Coordinator",
+      "Adaptive Early-Exit Deep Neural Inference over Heterogeneous Edge Mesh Nodes",
+      "Fault-Tolerant State Synchronization for Intermittent Edge Clusters"
+    ],
+    "potential_alignment": "Exceptional fit with candidate's B.Eng. in Computer Engineering and systems interests. PolyU Dean of Graduate School position provides premier access to HKPFS and PPPFS funding schemes.",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [1, 5, 6, 7, 8, 10, 12, 17, 21],
+    "relevant_curriculum_courses": [
+      "Introduction to Edge Computing (LF Edge)",
+      "6.5840 / 6.824: Distributed Systems (MIT CSAIL)",
+      "LFS156x: Intro to Kubernetes on Edge with K3s",
+      "EdgeCloudSim Simulation Framework"
+    ],
+    "publications": ["cao_edge_mesh_2021", "cao_collab_edge_ai_2024"],
+    "alignment_score": 96.0,
+    "familiarity_score": 30.0
+  },
+  {
+    "researcher_id": "polyu_guo_song",
+    "name": "Prof. Song Guo",
+    "university": "The Hong Kong Polytechnic University",
+    "department": "Department of Computing (COMP)",
+    "position": "Chair Professor of Distributed and Mobile Computing, IEEE Fellow, Member of European Academy of Sciences",
+    "research_group": "Pervasive AI & Cloud-Edge Systems Group",
+    "official_profile_url": "https://www.polyu.edu.hk/comp/people/academic-staff/prof-guo-song/",
+    "personal_website": "https://www.comp.polyu.edu.hk/~cssongguo/",
+    "google_scholar": "https://scholar.google.com/citations?user=k7xL1bUAAAAJ",
+    "orcid": "0000-0001-9497-6019",
+    "dblp": "https://dblp.org/pid/g/SongGuo.html",
+    "research_interests": ["Edge Intelligence", "Mobile Edge Computing", "Federated Learning", "Cloud-Edge Collaborative Systems", "Distributed AI"],
+    "research_summary": "Internationally renowned researcher in Edge AI and distributed machine learning systems. Editor-in-Chief of IEEE Open Journal of the Computer Society; pioneering works in split learning and federated edge optimization.",
+    "edge_relevance": "Leading world expert on edge intelligence, model pruning for edge devices, and federated edge computing.",
+    "research_trajectory": "Pioneered energy-harvesting network protocols and cloud datacenter management before shifting to Edge Intelligence, distributed machine learning systems, and green Edge AI.",
+    "current_projects": [
+      "RGC Theme-based Research Scheme: Trustworthy Edge Intelligence",
+      "Communication-Efficient Federated Learning across Non-IID Mobile Clients",
+      "Edge-Native Foundation Model Compression and Acceleration"
+    ],
+    "research_methods": ["Theoretical Optimization", "Convex & Non-convex Analysis", "PyTorch Systems Implementation"],
+    "datasets": ["LEAF Federated Benchmark", "ImageNet-1K Quantized", "Heterogeneous Client Trace Datasets"],
+    "simulation_tools": ["Flower.ai", "FedML", "EdgeCloudSim", "SimPy"],
+    "systems_testbeds": ["32-node GPU/Edge NPU Testbed (Jetson AGX/Xavier)", "Local Kubernetes Cloud-Edge Cluster"],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "Looking for self-driven PhD students with strong coding (Python/C++) and mathematical background to work on Edge AI, Federated Learning, and Distributed Computing for 2027 entry. HKPFS applicants warmly welcomed.",
+      "source_url": "https://www.comp.polyu.edu.hk/~cssongguo/positions.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-07-10",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Dynamic Split Learning and Early-Exit Neural Architecture Search for Constrained Edge Devices",
+      "Asynchronous Communication-Efficient Federated Learning over Lossy Wireless Channels",
+      "Energy-Constrained Foundation Model Serving on Mobile Edge Nodes"
+    ],
+    "potential_alignment": "Directly matches candidate's interest in Edge Intelligence and Federated Learning (Weeks 17-20 of curriculum).",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [8, 12, 16, 17, 18, 19, 20],
+    "relevant_curriculum_courses": [
+      "TinyML Specialization (CS249r / Harvard)",
+      "Federated Learning Frameworks & Systems (Flower.ai)",
+      "EE364a: Convex Optimization I (Stanford)"
+    ],
+    "publications": ["guo_edge_intelligence_2020", "guo_fl_pruning_2023"],
+    "alignment_score": 95.0,
+    "familiarity_score": 25.0
+  },
+  {
+    "researcher_id": "cuhk_chen_minghua",
+    "name": "Prof. Minghua Chen",
+    "university": "The Chinese University of Hong Kong",
+    "department": "Department of Information Engineering (IE)",
+    "position": "Professor, IEEE Fellow, ACM Distinguished Member",
+    "research_group": "Advanced Networking and System Research Laboratory (ANSRLab)",
+    "official_profile_url": "https://www.ie.cuhk.edu.hk/people/minghua.shtml",
+    "personal_website": "https://personal.ie.cuhk.edu.hk/~mhchen/",
+    "google_scholar": "https://scholar.google.com/citations?user=2hP884AAAAAJ",
+    "orcid": "0000-0002-1802-1678",
+    "dblp": "https://dblp.org/pid/c/MinghuaChen.html",
+    "research_interests": ["Online Optimization", "Edge Computing Resource Allocation", "Green & Sustainable Edge", "Distributed Machine Learning", "Smart Energy Systems"],
+    "research_summary": "Top mathematical modeling and algorithmic optimization authority in network and edge systems. Renowned for applying online convex optimization and Lyapunov control to dynamic computing workloads.",
+    "edge_relevance": "The gold standard for mathematical formulation of computation offloading, energy harvesting edge systems, and delay-optimal scheduling.",
+    "research_trajectory": "Began in peer-to-peer streaming and network coding algorithms; established fundamental competitive ratio bounds for energy-efficient datacenters; currently leads online optimization for sustainable edge intelligence and edge-cloud federated networks.",
+    "current_projects": [
+      "RGC GRF: Online Algorithms for Carbon-Aware Edge Intelligence",
+      "Joint Energy Harvesting and Computation Scheduling for Remote IoT Networks",
+      "Decentralized Online Optimization with Deliberate Delay"
+    ],
+    "research_methods": ["Online Convex Optimization", "Lyapunov Drift-Plus-Penalty", "Competitive Analysis", "Game Theory"],
+    "datasets": ["NREL Solar Irradiance Traces", "Azure Functions Traces", "Cluster Workload Traces (Alibaba/Google)"],
+    "simulation_tools": ["CVXPY", "MATLAB", "SimPy"],
+    "systems_testbeds": ["Custom Python Optimization Simulator Suite", "Solar-Powered Raspberry Pi Edge Nodes"],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.90,
+      "evidence_text": "I am constantly looking for excellent PhD students with strong passion and solid mathematical/systems background. Please submit your application through CUHK Graduate School and mention my name.",
+      "source_url": "https://personal.ie.cuhk.edu.hk/~mhchen/prospective.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-05-20",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Online Algorithms for Carbon-Aware Computation Offloading under Renewable Intermittency",
+      "Multi-Objective Pareto Optimization for Real-Time Edge Video Analytics",
+      "Regret Bounds for Non-Stationary Edge Resource Slicing"
+    ],
+    "potential_alignment": "Ideal supervisor for candidates who want to combine systems engineering with rigorous mathematical optimization proofs (Stanford EE364a alignment).",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [13, 14, 15, 16, 21, 22],
+    "relevant_curriculum_courses": [
+      "EE364a: Convex Optimization I (Stanford University)",
+      "CS6250: Software-Defined Networking (Georgia Tech)",
+      "Writing in the Sciences (Stanford Online)"
+    ],
+    "publications": ["chen_distributed_opt_2021", "chen_green_edge_2024"],
+    "alignment_score": 93.0,
+    "familiarity_score": 25.0
+  },
+  {
+    "researcher_id": "cuhk_lui_john",
+    "name": "Prof. John C.S. Lui",
+    "university": "The Chinese University of Hong Kong",
+    "department": "Department of Computer Science and Engineering (CSE)",
+    "position": "Choh-Ming Li Professor of Computer Science and Engineering, ACM Fellow, IEEE Fellow",
+    "research_group": "Advanced Networking and System Research Laboratory",
+    "official_profile_url": "https://www.cse.cuhk.edu.hk/people/faculty/john-c-s-lui/",
+    "personal_website": "https://www.cse.cuhk.edu.hk/~cslui/",
+    "google_scholar": "https://scholar.google.com/citations?user=k3B5GvYAAAAJ",
+    "orcid": "0000-0002-3860-9099",
+    "dblp": "https://dblp.org/pid/l/JohnCSLui.html",
+    "research_interests": ["Network Systems", "Edge Caching", "Reinforcement Learning in Networking", "Stochastic Modeling", "Cybersecurity"],
+    "research_summary": "World-class leader in network performance evaluation, stochastic modeling, and edge caching. Recipient of the IEEE Computer Society Technical Achievement Award and ACM SIGMETRICS Test of Time Award.",
+    "edge_relevance": "Architect of predictive edge caching algorithms, reinforcement learning for edge resource management, and mobile edge telemetry.",
+    "research_trajectory": "Three decades of landmark contributions in queuing networks, P2P networks, network measurement, stochastic modeling, and currently deep reinforcement learning applied to edge networking and cybersecurity.",
+    "current_projects": [
+      "Multi-Agent Reinforcement Learning for Dynamic Edge Spectrum Sharing",
+      "Security and Robustness of Cooperative Edge Caching Systems",
+      "Stochastic Modeling of 5G/6G URLLC Edge Workloads"
+    ],
+    "research_methods": ["Markov Decision Processes", "Multi-Armed Bandits", "Queueing Systems", "Large-Scale Network Measurement"],
+    "datasets": ["CAIDA Internet Traces", "Cellular Mobility Traces", "Content Request Logs"],
+    "simulation_tools": ["ns-3", "Simu5G", "PyTorch"],
+    "systems_testbeds": ["Campus Wide-Area Testbed", "High-Performance Emulation Clusters"],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.90,
+      "evidence_text": "Seeking talented, self-motivated graduate students wishing to pursue PhD degrees in networked systems, edge intelligence, and reinforcement learning. Prospective HKPFS applicants should contact me directly.",
+      "source_url": "https://www.cse.cuhk.edu.hk/~cslui/openings.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-06-01",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Deep Reinforcement Learning for Proactive Edge Caching under Dynamic Mobility",
+      "Multi-Armed Bandit Algorithms for Asynchronous Edge Task Scheduling",
+      "Stochastic Analysis of Tail Latency in Multi-Access Edge Computing"
+    ],
+    "potential_alignment": "Prestige, international standing, and deep rigor make this an exceptionally strong supervisor profile for a research career.",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [2, 3, 13, 14, 15, 16],
+    "relevant_curriculum_courses": [
+      "CS144: Introduction to Computer Networking (Stanford)",
+      "Reinforcement Learning Course (UCL & DeepMind / David Silver)",
+      "5G Network Architecture and Slicing (EURECOM)"
+    ],
+    "publications": ["lui_edge_caching_2020"],
+    "alignment_score": 92.0,
+    "familiarity_score": 20.0
+  },
+  {
+    "researcher_id": "hkust_wang_wei",
+    "name": "Prof. Wei Wang",
+    "university": "The Hong Kong University of Science and Technology",
+    "department": "Department of Computer Science and Engineering (CSE)",
+    "position": "Associate Professor",
+    "research_group": "System Networking Lab (SING)",
+    "official_profile_url": "https://cse.hkust.edu.hk/admin/people/faculty/profile/weiwa",
+    "personal_website": "https://home.cse.ust.hk/~weiwa/",
+    "google_scholar": "https://scholar.google.com/citations?user=51cZ3sQAAAAJ",
+    "orcid": "0000-0001-6677-3323",
+    "dblp": "https://dblp.org/pid/07/5829-1.html",
+    "research_interests": ["Distributed Machine Learning", "Edge Intelligence", "Cloud-Edge Systems", "Federated Learning Systems", "GPU Cluster Scheduling"],
+    "research_summary": "Top rising systems researcher in distributed deep learning and edge AI systems. Regular author in ACM SIGCOMM, USENIX NSDI, OSDI, and IEEE INFOCOM.",
+    "edge_relevance": "Direct focus on the systems bottlenecks of distributed ML, gradient communication overhead, and adaptive edge learning.",
+    "research_trajectory": "Specialized in cloud datacenter resource management and multi-resource packing before focusing on systems for machine learning (SysML), federated learning frameworks, and edge-cloud training acceleration.",
+    "current_projects": [
+      "Efficient Distributed Training on Heterogeneous Cloud-Edge GPU Clusters",
+      "Communication-Efficient Federated Learning Frameworks for IoT",
+      "Inference Acceleration for Large Language Models on Edge Devices"
+    ],
+    "research_methods": ["Systems Design & Implementation", "Kernel-Level Profiling", "Distributed Algorithms"],
+    "datasets": ["Alibaba GPU Cluster Trace", "CV and NLP Standard Benchmarks"],
+    "simulation_tools": ["PyTorch Distributed", "Flower.ai", "Horovod"],
+    "systems_testbeds": ["128-GPU High Performance Cluster", "Heterogeneous Edge Devices (Jetson Nano, Xavier, Orin, Raspberry Pi)"],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "Multiple PhD openings available each year. If you are interested in building real computer systems for distributed AI and edge computing, email me with your CV, transcripts, and a brief research statement. HKPFS candidates are strongly encouraged.",
+      "source_url": "https://home.cse.ust.hk/~weiwa/prospective.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-06-30",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Communication-Efficient Gradient Synchronization across Low-Bandwidth Edge Networks",
+      "Adaptive Microservice Placement for Edge-Cloud Collaborative Deep Learning Inference",
+      "Memory-Efficient Split Computing Frameworks for Edge Large Language Models"
+    ],
+    "potential_alignment": "Flawless alignment with candidate's computer engineering background. Systems-heavy research profile with strong publication track record in OSDI/NSDI/SIGCOMM.",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [5, 9, 10, 11, 17, 18, 19],
+    "relevant_curriculum_courses": [
+      "6.5840 / 6.824: Distributed Systems (MIT CSAIL)",
+      "Federated Learning Frameworks & Systems (Flower.ai)",
+      "LFS156x: Intro to Kubernetes on Edge with K3s"
+    ],
+    "publications": ["wang_fed_edge_2022"],
+    "alignment_score": 96.0,
+    "familiarity_score": 20.0
+  },
+  {
+    "researcher_id": "hkust_wang_lin",
+    "name": "Prof. Lin Wang",
+    "university": "The Hong Kong University of Science and Technology",
+    "department": "Department of Computer Science and Engineering (CSE)",
+    "position": "Associate Professor",
+    "research_group": "Edge Computing Systems Laboratory",
+    "official_profile_url": "https://cse.hkust.edu.hk/admin/people/faculty/profile/linwang",
+    "personal_website": "https://linwang.info/",
+    "google_scholar": "https://scholar.google.com/citations?user=U1k7T24AAAAJ",
+    "orcid": "0000-0002-3904-8094",
+    "dblp": "https://dblp.org/pid/12/3592-1.html",
+    "research_interests": ["Edge Computing Systems", "Serverless Edge Computing", "Cloud-Edge Resource Allocation", "Microservice Systems", "Network Function Virtualization"],
+    "research_summary": "Leading expert in edge serverless computing, function-as-a-service (FaaS) runtime optimization, and cloud-edge systems orchestration. Former researcher at Vrije Universiteit Amsterdam.",
+    "edge_relevance": "Direct pioneer of cold-start mitigations, WebAssembly micro-sandboxing, and edge serverless execution engines.",
+    "research_trajectory": "Began in software-defined networking and NFV; transitioned into edge cloud orchestration, serverless execution at the edge, and WebAssembly-based micro-runtimes.",
+    "current_projects": [
+      "WebAssembly Runtimes for Latency-Critical Edge Serverless",
+      "Predictive Pre-warming of Edge Containers using Temporal Machine Learning",
+      "Decentralized Resource Scheduling for Multi-Tenant Edge Clusters"
+    ],
+    "research_methods": ["Real Systems Prototyping", "Kernel Tracing (eBPF)", "Benchmarking"],
+    "datasets": ["Azure Functions Traces", "Serverless Edge Benchmark Suite (ServerlessBench)"],
+    "simulation_tools": ["SimPy", "CloudSim Plus"],
+    "systems_testbeds": ["K3s / OpenFaaS Edge Testbed", "Firecracker MicroVM Cluster", "WasmEdge Runtimes"],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "I am seeking PhD students interested in Edge Computing, Serverless Systems, and Cloud-Native Technologies for 2027 entry. Successful candidates will be supported by HKPFS or HKUST Postgraduate Studentships.",
+      "source_url": "https://linwang.info/openings/",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-07-01",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Sub-Millisecond WebAssembly Container Instantiation for Bursty Edge IoT Triggers",
+      "Adaptive Function Slicing and Migration across Hierarchical Edge-Cloud Nodes",
+      "Hardware Acceleration Sharing for Serverless Inference on Edge Micro-Clusters"
+    ],
+    "potential_alignment": "Direct intersection with Sheet 7 Research Idea #3 ('Edge Serverless & Cold Starts') and Sheet 3 Week 11 Curriculum.",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [9, 10, 11, 12, 21],
+    "relevant_curriculum_courses": [
+      "LFS156x: Intro to Kubernetes on Edge with K3s",
+      "Serverless Computing & Microservices Guide (AWS Serverless Land)",
+      "Linux Containers from Scratch & Hands-on Guide (Liz Rice)"
+    ],
+    "publications": ["wang_serverless_edge_2024"],
+    "alignment_score": 95.0,
+    "familiarity_score": 25.0
+  },
+  {
+    "researcher_id": "hku_wu_chuan",
+    "name": "Prof. Chuan Wu",
+    "university": "The University of Hong Kong",
+    "department": "Department of Computer Science (CS)",
+    "position": "Professor",
+    "research_group": "Systems Research Group",
+    "official_profile_url": "https://www.cs.hku.hk/people/academic-staff/cwu",
+    "personal_website": "https://i.cs.hku.hk/~cwu/",
+    "google_scholar": "https://scholar.google.com/citations?user=G664B9kAAAAJ",
+    "orcid": "0000-0003-3482-6268",
+    "dblp": "https://dblp.org/pid/w/ChuanWu.html",
+    "research_interests": ["Cloud and Edge Computing", "Distributed Machine Learning Systems", "Resource Scheduling", "GPU Clustering", "Federated Learning"],
+    "research_summary": "World-recognized leader in cloud and edge resource scheduling, distributed deep learning systems, and AI cluster management. Recipient of multiple best paper awards.",
+    "edge_relevance": "Deep authority on distributed systems scheduling, collaborative inference, and federated edge optimization.",
+    "research_trajectory": "Started in cloud resource management and peer-to-peer streaming; pioneered multi-tenant GPU scheduling for deep learning; currently focuses on collaborative edge intelligence and LLM inference across distributed edge clusters.",
+    "current_projects": [
+      "RGC GRF: Efficient Inference Serving of Foundation Models over Edge Networks",
+      "Pipelined Collaborative Learning across Heterogeneous Mobile Edge Devices",
+      "Fair Scheduling of Distributed Machine Learning Jobs in Hybrid Cloud-Edge"
+    ],
+    "research_methods": ["System Architecture Design", "Online Optimization", "Queueing Systems", "Empirical Prototyping"],
+    "datasets": ["Production GPU Workload Traces", "HuggingFace Open Model Weights"],
+    "simulation_tools": ["PyTorch Distributed", "Ray", "Deepspeed"],
+    "systems_testbeds": ["HKU GPU Cluster (Nvidia A100/H100)", "Edge AI Testbed (Jetson AGX Orin)"],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "I am looking for self-motivated PhD students with strong programming and mathematical skills to work on distributed systems, edge computing, and AI systems. High-achieving students will be nominated for HKU Presidential PhD Scholarship and HKPFS.",
+      "source_url": "https://i.cs.hku.hk/~cwu/opening.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-07-15",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Pipelined Tensor Partitioning for Distributed Large Model Inference on Edge Meshes",
+      "Heterogeneity-Aware Workload Packing for Edge GPU/NPU Clusters",
+      "Communication-Optimal Parameter Averaging in Edge Federated Learning"
+    ],
+    "potential_alignment": "Outstanding fit for a candidate with a computer engineering background aiming for world-tier systems research at HKU.",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [5, 6, 7, 11, 17, 18, 19],
+    "relevant_curriculum_courses": [
+      "6.5840 / 6.824: Distributed Systems (MIT CSAIL)",
+      "Cloud Computing Concepts (UIUC / Coursera)",
+      "TinyML Specialization (CS249r / Harvard)"
+    ],
+    "publications": ["wu_edge_dl_scheduler_2021", "wu_federated_pipeline_2024"],
+    "alignment_score": 96.0,
+    "familiarity_score": 20.0
+  },
+  {
+    "researcher_id": "hku_cui_heming",
+    "name": "Prof. Heming Cui",
+    "university": "The University of Hong Kong",
+    "department": "Department of Computer Science (CS)",
+    "position": "Associate Professor",
+    "research_group": "Systems Research Group",
+    "official_profile_url": "https://www.cs.hku.hk/people/academic-staff/heming",
+    "personal_website": "https://i.cs.hku.hk/~heming/",
+    "google_scholar": "https://scholar.google.com/citations?user=c9kE8aUAAAAJ",
+    "orcid": "0000-0002-3904-8094",
+    "dblp": "https://dblp.org/pid/12/3592-1.html",
+    "research_interests": ["Distributed Systems", "Concurrency", "Fault Tolerance", "Operating Systems", "Edge Systems Consistency"],
+    "research_summary": "Top core systems and distributed systems researcher. Regular publisher in SOSP, OSDI, USENIX ATC, and EuroSys. Deep expertise in concurrency bugs, deterministic record-replay, and consensus protocols under network partitions.",
+    "edge_relevance": "Critical authority on fault-tolerant consensus, distributed replication, and edge state synchronization under flaky wireless connections.",
+    "research_trajectory": "Extensive contributions to deterministic multithreading, concurrency bug detection, distributed Paxos/Raft optimizations, and currently building fault-tolerant protocols for decentralized edge computing.",
+    "current_projects": [
+      "Fault-Tolerant Distributed Protocols for Unreliable Edge Networks",
+      "Formal Verification of Distributed Concurrency in Edge OS",
+      "Consensus Protocols for Asymmetric Edge Partitions"
+    ],
+    "research_methods": ["Systems Programming in C/C++/Go", "Static & Dynamic Program Analysis", "Formal Verification"],
+    "datasets": ["Distributed Bug Benchmarks", "Real-World Network Partition Traces"],
+    "simulation_tools": ["Jepsen Distributed Testing Framework", "Mininet"],
+    "systems_testbeds": ["Distributed Linux Kernel Testbed", "Multi-datacenter and edge emulation servers"],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.90,
+      "evidence_text": "I am seeking PhD students passionate about building reliable, high-performance distributed systems. Students with strong C/C++/Go programming skills and interest in SOSP/OSDI publications are encouraged to apply.",
+      "source_url": "https://i.cs.hku.hk/~heming/jobs.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-05-30",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Asymmetric Partition-Tolerant Consensus for Edge Node Meshes",
+      "Deterministic State Synchronization for Disconnected Edge Databases",
+      "Lightweight Edge Hypervisors with Sub-Millisecond Snapshot Isolation"
+    ],
+    "potential_alignment": "Perfect supervisor for the MIT 6.824 / Distributed Systems stream (Weeks 5-8 of curriculum).",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [5, 6, 7, 8, 9, 10],
+    "relevant_curriculum_courses": [
+      "6.5840 / 6.824: Distributed Systems (MIT CSAIL)",
+      "Distributed Systems Theory & Principles (Cambridge University / Martin Kleppmann)",
+      "Linux Containers from Scratch & Hands-on Guide (Liz Rice)"
+    ],
+    "publications": ["cui_distributed_consensus_2022"],
+    "alignment_score": 93.0,
+    "familiarity_score": 20.0
+  },
+  {
+    "researcher_id": "cityu_wang_jianping",
+    "name": "Prof. Jianping Wang",
+    "university": "City University of Hong Kong",
+    "department": "Department of Computer Science (CS)",
+    "position": "Professor, IEEE Fellow",
+    "research_group": "Future Networking Laboratory",
+    "official_profile_url": "https://www.cs.cityu.edu.hk/people/academic-staff/jianwang",
+    "personal_website": "https://www.cs.cityu.edu.hk/~jianwang/",
+    "google_scholar": "https://scholar.google.com/citations?user=Y7qP7XAAAAAJ",
+    "orcid": "0000-0002-3904-8094",
+    "dblp": "https://dblp.org/pid/w/JianpingWang.html",
+    "research_interests": ["Edge Computing in Connected Vehicles", "Autonomous Driving Systems", "Cloud Computing", "V2X Communication", "Network Optimization"],
+    "research_summary": "Prominent researcher in vehicular edge computing, autonomous vehicle systems, and mobile cloud networks. Recipient of multiple IEEE conference best paper awards.",
+    "edge_relevance": "Direct pioneer of vehicular edge computing, proactive offloading for autonomous vehicles, and roadside unit (RSU) edge orchestration.",
+    "research_trajectory": "From optical networks and datacenter traffic management in the 2000s to connected vehicle systems, V2X edge computing, and real-time perception offloading for autonomous cars.",
+    "current_projects": [
+      "RGC Theme-based Research Scheme: Autonomous Driving in Dense Urban Environments",
+      "Proactive Task Migration for High-Speed Connected Vehicles",
+      "Collaborative Edge Perception for Connected Autonomous Vehicles"
+    ],
+    "research_methods": ["Trajectory Prediction", "Graph Neural Networks", "Dynamic Programming", "Traffic Simulation"],
+    "datasets": ["SUMO Traffic Traces", "Waymo Open Dataset", "KITTI Vision Benchmark"],
+    "simulation_tools": ["SUMO", "Simu5G", "OMNeT++", "CARLA"],
+    "systems_testbeds": ["Autonomous Driving Scale-Model Testbed", "RSU Edge Computing Prototype"],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "Recruiting PhD students for 2027 entry in Connected Autonomous Vehicles, Edge Computing, and Cloud Networks. CityU Presidential PhD Scholarship (HK$331,200/yr) and HKPFS available for top applicants.",
+      "source_url": "https://www.cs.cityu.edu.hk/~jianwang/recruit.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-07-05",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Spatial-Temporal Graph Forecasting for Zero-Loss Handover in V2X Edge Computing",
+      "Multi-Vehicle Collaborative 3D Perception Offloading over 5G-V2X Sidelink",
+      "Resource Slicing for Critical Safety Messaging vs In-Cabin Infotainment at Edge"
+    ],
+    "potential_alignment": "Direct match for Sheet 7 Research Idea #2 ('Computation Offloading & Mobility in V2X') and Sheet 3 Week 14 Curriculum.",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [13, 14, 15, 16, 21],
+    "relevant_curriculum_courses": [
+      "5G Network Architecture and Slicing (EURECOM)",
+      "Toward 6G: Evolution, Drivers and Key Technologies (Univ of Oulu)",
+      "EE364a: Convex Optimization I (Stanford)"
+    ],
+    "publications": ["wang_v2x_edge_2023"],
+    "alignment_score": 95.0,
+    "familiarity_score": 25.0
+  },
+  {
+    "researcher_id": "hkbu_chu_xiaowen",
+    "name": "Prof. Xiaowen Chu",
+    "university": "Hong Kong Baptist University",
+    "department": "Department of Computer Science (COMP)",
+    "position": "Professor",
+    "research_group": "High Performance Computing and Systems Laboratory",
+    "official_profile_url": "https://www.comp.hkbu.edu.hk/v1/?page=profile&id=chxw",
+    "personal_website": "https://www.comp.hkbu.edu.hk/~chxw/",
+    "google_scholar": "https://scholar.google.com/citations?user=f1s9sP8AAAAJ",
+    "orcid": "0000-0002-3904-8094",
+    "dblp": "https://dblp.org/pid/c/XiaowenChu.html",
+    "research_interests": ["GPU Computing", "Deep Learning Systems", "Edge AI Inference", "Cloud-Edge Computing", "Distributed Deep Learning"],
+    "research_summary": "Leading authority on GPU benchmarking, deep learning energy profiling, and embedded accelerator optimization.",
+    "edge_relevance": "Direct expertise in benchmarking and optimizing neural network inference on mobile and embedded edge GPUs (Nvidia Jetson, Apple M-series).",
+    "research_trajectory": "Pioneered peer-to-peer systems and GPU acceleration in the 2000s; created the renowned BenchIP deep learning benchmark suite in the 2010s; currently focuses on efficient edge AI inference and distributed deep learning acceleration.",
+    "current_projects": [
+      "Benchmarking and Acceleration of Large Language Models on Mobile Edge GPUs",
+      "Energy-Efficient Neural Network Deployment on Embedded NPUs",
+      "Distributed Model Parallelism across Heterogeneous Edge Devices"
+    ],
+    "research_methods": ["Hardware Performance Profiling", "Roofline Modeling", "CUDA/TensorRT Optimization"],
+    "datasets": ["BenchIP Deep Learning Benchmark", "Edge GPU Energy Trace Dataset"],
+    "simulation_tools": ["Nsight Compute", "TensorRT", "TVM", "PyTorch"],
+    "systems_testbeds": ["GPU Cluster with 64x Nvidia RTX/A100", "Embedded AI Testbed (Nvidia Jetson Nano, Xavier, Orin, Raspberry Pi 5)"],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "Looking for highly motivated PhD students with strong coding skills in C/C++/Python and knowledge of computer architecture to work on GPU computing and Edge AI. Supported by HKBU VC Fellowship and HKPFS.",
+      "source_url": "https://www.comp.hkbu.edu.hk/~chxw/openings.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-06-25",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Kernel Fusion and Memory Bandwidth Optimization for Edge Large Language Models",
+      "Dynamic Energy-Delay Optimization on Mobile Edge Neural Accelerators",
+      "Distributed Heterogeneous GPU Scheduling for Smart City Video Telemetry"
+    ],
+    "potential_alignment": "Excellent supervisor for candidates with a Computer Engineering background who love low-level systems profiling and hardware acceleration (Weeks 17-18 of curriculum).",
+    "priority_tier": "Tier 1",
+    "relevant_curriculum_weeks": [9, 17, 18, 19],
+    "relevant_curriculum_courses": [
+      "TinyML Specialization (CS249r / Harvard)",
+      "Linux Containers from Scratch & Hands-on Guide (Liz Rice)",
+      "Writing in the Sciences (Stanford Online)"
+    ],
+    "publications": ["chu_gpu_edge_ai_2023"],
+    "alignment_score": 92.0,
+    "familiarity_score": 20.0
+  },
+  {
+    "researcher_id": "lingnan_kwong_sam",
+    "name": "Prof. Sam Kwong",
+    "university": "Lingnan University",
+    "department": "School of Data Science",
+    "position": "Associate Vice-President (Strategic Research), Chair Professor of Computational Intelligence, IEEE Fellow",
+    "research_group": "Computational Intelligence and Data Science Laboratory",
+    "official_profile_url": "https://www.ln.edu.hk/sds/people/faculty/prof-kwong-tak-wu-sam",
+    "personal_website": "https://www.ln.edu.hk/sds/people/faculty/prof-kwong-tak-wu-sam",
+    "google_scholar": "https://scholar.google.com/citations?user=Y9bWvQ4AAAAJ",
+    "orcid": "0000-0002-3904-8094",
+    "dblp": "https://dblp.org/pid/k/SamKwong.html",
+    "research_interests": ["Computational Intelligence", "Video Compression for Edge Devices", "Evolutionary Computation", "Data Science", "Machine Learning Optimization"],
+    "research_summary": "Distinguished scholar, President of IEEE Systems, Man, and Cybernetics Society (SMCS). Renowned for video coding optimization, rate-distortion theory, and computational intelligence algorithms on embedded platforms.",
+    "edge_relevance": "Key expertise in low-complexity video processing, lightweight neural feature extraction, and constrained IoT camera nodes.",
+    "research_trajectory": "Longstanding leader in genetic algorithms and video coding standards (H.264, HEVC, VVC); now driving AI and Data Science expansion at Lingnan University.",
+    "current_projects": [
+      "Low-Complexity Intelligent Video Analytics for Smart IoT Sensors",
+      "Evolutionary Neural Architecture Search for Edge Devices",
+      "Lingnan Data Science Strategic Research Initiative"
+    ],
+    "research_methods": ["Evolutionary Optimization", "Rate-Distortion Modeling", "Heuristic Search"],
+    "datasets": ["JVET Video Sequences", "Smart City Surveillance Benchmarks"],
+    "simulation_tools": ["VVC Reference Software (VTM)", "PyTorch", "MATLAB"],
+    "systems_testbeds": ["High-Performance Computing Cluster at Lingnan School of Data Science"],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.90,
+      "evidence_text": "Seeking outstanding PhD candidates in Data Science, Computational Intelligence, and Edge Video Processing. Full financial support through Lingnan Postgraduate Studentship (HK$18,480/mo) and HKPFS (HK$27,600/mo).",
+      "source_url": "https://www.ln.edu.hk/sds/admission/rpg",
+      "source_type": "official_lab_website",
+      "source_date": "2026-06-10",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Low-Power Video Feature Extraction and Compression on IoT Edge Gateways",
+      "Evolutionary Multi-Objective Optimization for Edge Resource Scheduling",
+      "Intelligent Data Pruning for Distributed Sensor Analytics"
+    ],
+    "potential_alignment": "Represents Lingnan University's flagship computing researcher. Strong mentorship and leadership pedigree.",
+    "priority_tier": "Tier 2",
+    "relevant_curriculum_weeks": [4, 16, 17, 18],
+    "relevant_curriculum_courses": [
+      "TinyML Specialization (CS249r / Harvard)",
+      "EE364a: Convex Optimization I (Stanford)",
+      "Introduction to the Internet of Things (Curtin Univ)"
+    ],
+    "publications": ["kwong_edge_video_2022"],
+    "alignment_score": 85.0,
+    "familiarity_score": 15.0
+  },
+  {
+    "researcher_id": "eduhk_yu_philip",
+    "name": "Prof. Philip L.H. Yu",
+    "university": "The Education University of Hong Kong",
+    "department": "Department of Mathematics and Information Technology (MIT)",
+    "position": "Head of Department and Professor",
+    "research_group": "Artificial Intelligence and Digital Competency Education Centre",
+    "official_profile_url": "https://www.eduhk.hk/mit/people/academic-staff/yu-leung-ho-philip",
+    "personal_website": "https://www.eduhk.hk/mit/people/academic-staff/yu-leung-ho-philip",
+    "google_scholar": "https://scholar.google.com/citations?user=M_T20F0AAAAJ",
+    "orcid": "0000-0002-3904-8094",
+    "dblp": "https://dblp.org/pid/y/PhilipLHYu.html",
+    "research_interests": ["Statistical Machine Learning", "Distributed IoT Stream Analytics", "Anomaly Detection", "AI in Educational IoT", "Data Science"],
+    "research_summary": "Eminent statistician and computational scientist focusing on statistical machine learning, anomaly detection in streaming IoT data, and smart campus intelligent sensing.",
+    "edge_relevance": "Applies statistical modeling and edge telemetry to distributed sensor networks and smart environment monitoring.",
+    "research_trajectory": "Distinguished track record in statistical modeling, ranking data analysis, and machine learning methods; currently directs AIoT and intelligent analytics initiatives at EdUHK.",
+    "current_projects": [
+      "Real-Time Anomaly Detection on Distributed Environmental Edge Sensors",
+      "Statistical Quality Control in High-Frequency IoT Sensor Networks",
+      "Smart Campus AIoT Data Analytics"
+    ],
+    "research_methods": ["Statistical Inference", "Kernel Density Estimation", "Time Series Analysis"],
+    "datasets": ["EdUHK Smart Campus IoT Telemetry", "Environmental Air Quality Sensor Datasets"],
+    "simulation_tools": ["R", "Python", "SimPy"],
+    "systems_testbeds": ["Campus-wide IoT Sensing Testbed"],
+    "recruitment": {
+      "status": "POSSIBLE",
+      "confidence": 0.75,
+      "evidence_text": "Welcomes applications from qualified candidates for PhD study in Mathematics, Information Technology, and Applied Machine Learning. Studentships provided through EdUHK Graduate School.",
+      "source_url": "https://www.eduhk.hk/mit/programmes/research-postgraduate",
+      "source_type": "department_directory",
+      "source_date": "2026-05-15",
+      "last_verified": "2026-09-01"
+    },
+    "potential_phd_topics": [
+      "Distributed Statistical Outlier Detection on Constrained Edge Sensor Nodes",
+      "Lightweight Anomaly Detection Algorithms for Smart Campus IoT Networks",
+      "Time-Series Telemetry Forecasting on Low-Memory Edge Gateways"
+    ],
+    "potential_alignment": "Ensures complete coverage of EdUHK for IoT edge sensing applications.",
+    "priority_tier": "Tier 3",
+    "relevant_curriculum_weeks": [4, 15, 21],
+    "relevant_curriculum_courses": [
+      "Introduction to the Internet of Things (Curtin Univ)",
+      "Writing in the Sciences (Stanford Online)",
+      "EdgeCloudSim Simulation Framework"
+    ],
+    "publications": ["yu_edge_aiot_sensing_2023"],
+    "alignment_score": 78.0,
+    "familiarity_score": 10.0
+  }
+]

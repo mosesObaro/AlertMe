@@ -1,0 +1,166 @@
+[
+  {
+    "university_id": "polyu",
+    "canonical_name": "The Hong Kong Polytechnic University",
+    "aliases": ["PolyU", "The Hong Kong Polytechnic University", "Hong Kong Polytechnic University", "HK PolyU", "Polytechnic University"],
+    "official_url": "https://www.polyu.edu.hk/",
+    "graduate_school_url": "https://www.polyu.edu.hk/gs/",
+    "research_url": "https://www.polyu.edu.hk/research/",
+    "phd_application_url": "https://www.polyu.edu.hk/study/pg/research-postgraduate",
+    "scholarship_url": "https://www.polyu.edu.hk/gs/financial-support/scholarships-and-awards/",
+    "relevant_departments": [
+      "Department of Computing (COMP)",
+      "Department of Electronic and Information Engineering (EIE)",
+      "Department of Electrical Engineering (EE)"
+    ],
+    "relevant_research_centres": [
+      "Internet and Mobile Computing Laboratory (IMCL)",
+      "Research Centre for Data Science and Artificial Intelligence",
+      "Photonics Research Institute"
+    ],
+    "last_verified": "2026-09-01"
+  },
+  {
+    "university_id": "cuhk",
+    "canonical_name": "The Chinese University of Hong Kong",
+    "aliases": ["CUHK", "The Chinese University of Hong Kong", "Chinese University of Hong Kong", "Chinese U of Hong Kong"],
+    "official_url": "https://www.cuhk.edu.hk/",
+    "graduate_school_url": "https://www.gs.cuhk.edu.hk/",
+    "research_url": "https://www.orkts.cuhk.edu.hk/",
+    "phd_application_url": "https://www.gs.cuhk.edu.hk/admissions/admissions/requirements",
+    "scholarship_url": "https://www.gs.cuhk.edu.hk/admissions/scholarships-fees/scholarships",
+    "relevant_departments": [
+      "Department of Information Engineering (IE)",
+      "Department of Computer Science and Engineering (CSE)",
+      "Department of Electronic Engineering (EE)"
+    ],
+    "relevant_research_centres": [
+      "Advanced Networking and System Research Laboratory (ANSRLab)",
+      "Institute of Network Coding (INC)",
+      "Mobile Systems Laboratory"
+    ],
+    "last_verified": "2026-09-01"
+  },
+  {
+    "university_id": "hkust",
+    "canonical_name": "The Hong Kong University of Science and Technology",
+    "aliases": ["HKUST", "The Hong Kong University of Science and Technology", "Hong Kong University of Science and Technology", "UST"],
+    "official_url": "https://hkust.edu.hk/",
+    "graduate_school_url": "https://fytgs.hkust.edu.hk/",
+    "research_url": "https://research.hkust.edu.hk/",
+    "phd_application_url": "https://fytgs.hkust.edu.hk/admissions/how-to-apply",
+    "scholarship_url": "https://fytgs.hkust.edu.hk/scholarships",
+    "relevant_departments": [
+      "Department of Computer Science and Engineering (CSE)",
+      "Department of Electronic and Computer Engineering (ECE)",
+      "Division of Emerging Interdisciplinary Areas"
+    ],
+    "relevant_research_centres": [
+      "System Networking Lab (SING)",
+      "Huawei-HKUST Joint Innovation Laboratory",
+      "HKUST Big Data Institute (BDI)"
+    ],
+    "last_verified": "2026-09-01"
+  },
+  {
+    "university_id": "hku",
+    "canonical_name": "The University of Hong Kong",
+    "aliases": ["HKU", "The University of Hong Kong", "University of Hong Kong", "U of Hong Kong"],
+    "official_url": "https://www.hku.hk/",
+    "graduate_school_url": "https://gradsch.hku.hk/",
+    "research_url": "https://www.research.hku.hk/",
+    "phd_application_url": "https://gradsch.hku.hk/prospective-students/how-to-apply",
+    "scholarship_url": "https://gradsch.hku.hk/prospective-students/fees-scholarships-and-financial-aid",
+    "relevant_departments": [
+      "Department of Computer Science (CS)",
+      "Department of Electrical and Electronic Engineering (EEE)",
+      "Department of Industrial and Manufacturing Systems Engineering"
+    ],
+    "relevant_research_centres": [
+      "Systems Research Group",
+      "Centre for Information Technology in Education",
+      "HKU-Zhejiang Institute of Research and Innovation"
+    ],
+    "last_verified": "2026-09-01"
+  },
+  {
+    "university_id": "cityu",
+    "canonical_name": "City University of Hong Kong",
+    "aliases": ["CityU", "City University of Hong Kong", "City University", "CityU HK"],
+    "official_url": "https://www.cityu.edu.hk/",
+    "graduate_school_url": "https://www.cityu.edu.hk/sgs/",
+    "research_url": "https://www.cityu.edu.hk/ro/",
+    "phd_application_url": "https://www.cityu.edu.hk/pg/research-degree-programmes/apply-now",
+    "scholarship_url": "https://www.cityu.edu.hk/pg/research-degree-programmes/scholarships-financial-aid-and-fees",
+    "relevant_departments": [
+      "Department of Computer Science (CS)",
+      "Department of Electrical Engineering (EE)",
+      "Department of Data Science (SDSC)"
+    ],
+    "relevant_research_centres": [
+      "Centre for Smart Energy Conversion and Utilization",
+      "CityU-JD Digits Joint Laboratory in Financial Technology",
+      "Future Networking Laboratory"
+    ],
+    "last_verified": "2026-09-01"
+  },
+  {
+    "university_id": "hkbu",
+    "canonical_name": "Hong Kong Baptist University",
+    "aliases": ["HKBU", "Hong Kong Baptist University", "Baptist University", "Baptist U"],
+    "official_url": "https://www.hkbu.edu.hk/",
+    "graduate_school_url": "https://gs.hkbu.edu.hk/",
+    "research_url": "https://research.hkbu.edu.hk/",
+    "phd_application_url": "https://gs.hkbu.edu.hk/admission/research-postgraduate-programmes",
+    "scholarship_url": "https://gs.hkbu.edu.hk/fees-and-scholarships/scholarships",
+    "relevant_departments": [
+      "Department of Computer Science (COMP)",
+      "Department of Mathematics",
+      "School of Communication"
+    ],
+    "relevant_research_centres": [
+      "High Performance Computing and Systems Laboratory",
+      "Database and Information Systems Laboratory",
+      "Centre for Health Informatics"
+    ],
+    "last_verified": "2026-09-01"
+  },
+  {
+    "university_id": "lingnan",
+    "canonical_name": "Lingnan University",
+    "aliases": ["Lingnan University", "LU", "Lingnan", "Lingnan U"],
+    "official_url": "https://www.ln.edu.hk/",
+    "graduate_school_url": "https://www.ln.edu.hk/sgs/",
+    "research_url": "https://www.ln.edu.hk/oro/",
+    "phd_application_url": "https://www.ln.edu.hk/sgs/admission/rpg",
+    "scholarship_url": "https://www.ln.edu.hk/sgs/financial-support/rpg",
+    "relevant_departments": [
+      "School of Data Science",
+      "Department of Computing and Decision Sciences"
+    ],
+    "relevant_research_centres": [
+      "Artificial Intelligence and Future Governance Centre",
+      "Data Science Research Centre"
+    ],
+    "last_verified": "2026-09-01"
+  },
+  {
+    "university_id": "eduhk",
+    "canonical_name": "The Education University of Hong Kong",
+    "aliases": ["The Education University of Hong Kong", "EdUHK", "Education University of Hong Kong", "IEd"],
+    "official_url": "https://www.eduhk.hk/",
+    "graduate_school_url": "https://www.eduhk.hk/gradsch/",
+    "research_url": "https://www.eduhk.hk/rdo/",
+    "phd_application_url": "https://www.eduhk.hk/gradsch/index.php/prospective-students/how-to-apply.html",
+    "scholarship_url": "https://www.eduhk.hk/gradsch/index.php/prospective-students/fees-and-scholarships.html",
+    "relevant_departments": [
+      "Department of Mathematics and Information Technology (MIT)",
+      "Department of Science and Environmental Studies"
+    ],
+    "relevant_research_centres": [
+      "Artificial Intelligence and Digital Competency Education Centre",
+      "STEM Education Research Centre"
+    ],
+    "last_verified": "2026-09-01"
+  }
+]
