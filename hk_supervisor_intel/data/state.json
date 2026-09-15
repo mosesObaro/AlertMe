@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15T10:50:35.325480",
+  "last_updated": "2026-09-15T10:05:08.422899",
   "familiarity": {
     "polyu_cao_jiannong": {
       "researcher_id": "polyu_cao_jiannong",
@@ -62,15 +62,17 @@
     },
     "hkust_wang_wei": {
       "researcher_id": "hkust_wang_wei",
-      "papers_exposed": [],
+      "papers_exposed": [
+        "FedAdapt: Adaptive Federated Learning over Edge Networks"
+      ],
       "papers_read": [],
       "topics_exposed": [],
       "research_projects_exposed": [],
       "research_trajectory_understood": false,
       "recruitment_verified": false,
-      "familiarity_score": 0.0,
-      "last_exposed": null,
-      "exposure_cycle_day": 1,
+      "familiarity_score": 33.3,
+      "last_exposed": "2026-09-15",
+      "exposure_cycle_day": 2,
       "cycle_completed": false,
       "cycles_completed": 0
     },
@@ -363,6 +365,41 @@
       "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jiannong_Cao_PhD_Supervisor_Profile.docx",
       "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jiannong_Cao_PhD_Supervisor_Profile.pdf",
       "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jiannong_Cao_PhD_Supervisor_Profile.epub"
+    },
+    {
+      "alert_id": "hkust_wang_wei_day1_20260915",
+      "date": "2026-09-15",
+      "weeks_remaining": 11,
+      "days_remaining": 77,
+      "university": "The Hong Kong University of Science and Technology",
+      "professor": "Prof. Wei Wang",
+      "department": "Department of Computer Science and Engineering (CSE)",
+      "research_group": "System Networking Lab (SING)",
+      "priority_tier": "Tier 1",
+      "research_alignment_pct": 96,
+      "recruitment_status": "CONFIRMED_ACTIVE",
+      "recruitment_evidence": "Multiple PhD openings available each year. If you are interested in building real computer systems for distributed AI and edge computing, email me with your CV, transcripts, and a brief research statement. HKPFS candidates are strongly encouraged. [Source: faculty_homepage, Date: 2026-06-30]",
+      "cycle_day": 1,
+      "today_research_focus": "Foundational & Seminal Research Deconstruction",
+      "paper_title": "FedAdapt: Adaptive Federated Learning over Edge Networks",
+      "paper_author": "Wei Wang, Di Wu, Bo Li",
+      "paper_year": 2022,
+      "paper_link": "https://doi.org/10.1109/INFOCOM48880.2022.9796781",
+      "research_problem": "Extreme variance in edge link bandwidth causing dropped gradient updates in decentralized training.",
+      "approach": "Adaptive layer-wise gradient compression and dynamic deadline scaling based on TCP window metrics.",
+      "key_contribution": "Accelerated wall-clock convergence time by 3.2x on real-world testbed of 20 edge nodes.",
+      "why_it_matters_for_edge": "Premier paper addressing communication-efficient distributed edge ML.",
+      "research_trajectory": "Prof. Wei Wang has shaped modern systems research. Trajectory: Specialized in cloud datacenter resource management and multi-resource packing before focusing on systems for machine learning (SysML), federated learning frameworks, and edge-cloud training acceleration.",
+      "what_to_read_next": "Follow up with 'FedAdapt: Adaptive Federated Learning over Edge Networks' for current extensions.",
+      "potential_phd_alignment": "Potential PhD Topics: Communication-Efficient Gradient Synchronization across Low-Bandwidth Edge Networks; Adaptive Microservice Placement for Edge-Cloud Collaborative Deep Learning Inference.",
+      "application_action_today": "Review Prof. Wei Wang's official lab website and extract core systems models from 'FedAdapt: Adaptive Federated Learning over Edge Networks'.",
+      "scholarship_connection": "HKUST RedBird PhD Award & Postgraduate Studentship (PGS) (HK$40,000 recruitment award + full annual PGS of HK$220,680 (approx HK$18,390/mo)). Supervisor endorsement significantly strengthens departmental ranking.",
+      "deadline_info": "2026-12-01 23:59:59 HKT (77 days / 11 weeks remaining)",
+      "next_action": "Tomorrow (Day 2): Deep dive into recent breakthrough publications (past 1-2 years), active grants, and methodology.",
+      "dossier_report_link": null,
+      "dossier_docx_link": null,
+      "dossier_pdf_link": null,
+      "dossier_epub_link": null
     }
   ],
   "campaign_state": {}
