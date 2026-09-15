@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-09-14",
-    "total_items": 28,
+    "last_updated": "2026-09-15",
+    "total_items": 26,
     "high_relevance_count": 18,
     "papers_count": 9,
     "conferences_count": 2,
@@ -3164,98 +3164,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] lavann/maas-legacy-mainframe-benchmark (★ 0)",
-      "url": "https://github.com/lavann/maas-legacy-mainframe-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "lavann"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-14",
-      "discovery_date": "2026-09-14",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_0ce0df034cec8031",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Tanish-Thakkar/Hardware-Accelerated-Benchmark (★ 0)",
-      "url": "https://github.com/Tanish-Thakkar/Hardware-Accelerated-Benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Tanish-Thakkar"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-14",
-      "discovery_date": "2026-09-14",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_ec0341a518b64fb2",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
       "title": "CloudAM 2026 : 15th International Workshop on Cloud and Edge Computing, and Applications Management",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202965&copyownerid=43185",
       "source": "Conference Feed",
@@ -3264,8 +3172,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-14",
-      "discovery_date": "2026-09-14",
+      "publication_date": "2026-09-15",
+      "discovery_date": "2026-09-15",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3308,7 +3216,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-14",
+      "discovery_date": "2026-09-15",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3331,7 +3239,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (89d ago) (+0.2)",
+          "• Published >30d ago (90d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3351,7 +3259,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-14",
+      "discovery_date": "2026-09-15",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3374,7 +3282,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (179d ago) (+0.2)",
+          "• Published >30d ago (180d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
