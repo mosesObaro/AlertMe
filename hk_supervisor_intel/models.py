@@ -174,7 +174,9 @@ class FamiliarityRecord:
     recruitment_verified: bool = False
     familiarity_score: float = 0.0
     last_exposed: Optional[str] = None
-    exposure_cycle_day: int = 1  # 1 through 7
+    exposure_cycle_day: int = 1  # 1 through 3
+    cycle_completed: bool = False
+    cycles_completed: int = 0
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -214,12 +216,27 @@ class DailyAlert:
     scholarship_connection: str
     deadline_info: str
     next_action: str
+    dossier_report_link: Optional[str] = None
+    dossier_docx_link: Optional[str] = None
+    dossier_pdf_link: Optional[str] = None
+    dossier_epub_link: Optional[str] = None
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
 
     def to_markdown(self) -> str:
         """Formats the alert matching the prompt's required daily alert specification."""
+        cycle_label = "Final Synthesis & Dossier Release" if (self.cycle_day == 6 or self.cycle_day > 3) else f"Day {self.cycle_day} of 3-Day Familiarity Cycle"
+        dossier_section = ""
+        if self.dossier_report_link:
+            dossier_section = f"""
+COMPREHENSIVE RESEARCH PROFILE & PHD SUPERVISOR SUITABILITY DOSSIER:
+The complete 30-section evidence-based analysis of {self.professor}'s research trajectory, active grants, research gaps, and PhD proposal alignment has been generated across 4 formats:
+- 📄 Markdown Dossier: {self.dossier_report_link}
+- 📕 PDF Document: {self.dossier_pdf_link or 'Generated'}
+- 📥 Word Document (.docx): {self.dossier_docx_link or 'Generated'}
+- 📱 EPUB eBook (.epub): {self.dossier_epub_link or 'Generated'}
+"""
         return f"""HONG KONG PHD SUPERVISOR INTELLIGENCE
 
 Date: {self.date}
@@ -236,9 +253,9 @@ RESEARCH ALIGNMENT: {self.research_alignment_pct}%
 RECRUITMENT STATUS: {self.recruitment_status}
 RECRUITMENT EVIDENCE: {self.recruitment_evidence}
 
-TODAY'S RESEARCH FOCUS (Day {self.cycle_day} of 7-Day Familiarity Cycle):
+TODAY'S RESEARCH FOCUS ({cycle_label}):
 Focus: {self.today_research_focus}
-
+{dossier_section}
 Paper: {self.paper_title}
 Author: {self.paper_author}
 Year: {self.paper_year}
@@ -281,12 +298,32 @@ NEXT ACTION:
     def to_html(self) -> str:
         """Renders a polished, modern, responsive HTML email for the supervisor intelligence alert."""
         recruitment_badge_color = "#10B981" if "ACTIVE" in self.recruitment_status else "#3B82F6" if "STRONG" in self.recruitment_status else "#6B7280"
+        cycle_badge = "Final Synthesis Briefing" if (self.cycle_day == 6 or self.cycle_day > 3) else f"Day {self.cycle_day} of 3"
+        cycle_title = "FINAL SYNTHESIS & DOSSIER" if (self.cycle_day == 6 or self.cycle_day > 3) else f"TODAY'S RESEARCH FOCUS (DAY {self.cycle_day} OF 3)"
+        
+        dossier_card_html = ""
+        if self.dossier_report_link:
+            dossier_card_html = f"""
+      <!-- Comprehensive Supervisor Dossier Card (4 Formats) -->
+      <div style="background: linear-gradient(135deg, #1E3A8A 0%, #0F172A 100%); border-radius: 8px; padding: 22px; margin-bottom: 24px; color: #FFFFFF;">
+        <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #93C5FD; margin-bottom: 6px;">🎓 30-Section Comprehensive Dossier</div>
+        <h2 style="margin: 0 0 10px 0; font-size: 18px; font-weight: 800; color: #FFFFFF;">Research Profile &amp; PhD Supervisor Suitability Assessment</h2>
+        <p style="margin: 0 0 16px 0; font-size: 13px; color: #E0E7FF; line-height: 1.5;">The complete 30-section evidence-based analysis of {self.professor}'s career evolution, active research grants, research gaps, and PhD proposal alignment has been compiled across 4 formats:</p>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          {f'<a href="{self.dossier_report_link}" style="background-color: #2563EB; color: #FFFFFF; text-decoration: none; font-size: 12px; font-weight: 700; padding: 8px 14px; border-radius: 4px; display: inline-block;">📄 View Markdown &rarr;</a>' if self.dossier_report_link else ''}
+          {f'<a href="{self.dossier_pdf_link}" style="background-color: #DC2626; color: #FFFFFF; text-decoration: none; font-size: 12px; font-weight: 700; padding: 8px 14px; border-radius: 4px; display: inline-block;">📕 Download PDF &rarr;</a>' if self.dossier_pdf_link else ''}
+          {f'<a href="{self.dossier_docx_link}" style="background-color: #059669; color: #FFFFFF; text-decoration: none; font-size: 12px; font-weight: 700; padding: 8px 14px; border-radius: 4px; display: inline-block;">📥 Download Word (.docx) &rarr;</a>' if self.dossier_docx_link else ''}
+          {f'<a href="{self.dossier_epub_link}" style="background-color: #7C3AED; color: #FFFFFF; text-decoration: none; font-size: 12px; font-weight: 700; padding: 8px 14px; border-radius: 4px; display: inline-block;">📱 Download EPUB &rarr;</a>' if self.dossier_epub_link else ''}
+        </div>
+      </div>
+"""
+
         return f"""<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[HK PhD Supervisor Alert] Day {self.cycle_day}/7: {self.professor} ({self.university})</title>
+  <title>[HK PhD Supervisor Alert] {cycle_badge}: {self.professor} ({self.university})</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #F3F4F6; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1F2937;">
   <div style="max-width: 680px; margin: 24px auto; background-color: #FFFFFF; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);">
@@ -306,7 +343,7 @@ NEXT ACTION:
       <span style="margin-right: 16px;"><strong>Priority:</strong> <span style="color: #1B365D; font-weight: 700;">{self.priority_tier}</span></span>
       <span style="margin-right: 16px;"><strong>Alignment:</strong> <span style="color: #059669; font-weight: 700;">{self.research_alignment_pct}% Match</span></span>
       <span style="margin-right: 16px;"><strong>Recruitment:</strong> <span style="color: {recruitment_badge_color}; font-weight: 700;">● {self.recruitment_status}</span></span>
-      <span><strong>Cycle:</strong> <span style="color: #4F46E5; font-weight: 700;">Day {self.cycle_day} of 7</span></span>
+      <span><strong>Cycle:</strong> <span style="color: #4F46E5; font-weight: 700;">{cycle_badge}</span></span>
     </div>
 
     <!-- Main Content Body -->
@@ -318,10 +355,12 @@ NEXT ACTION:
         <div style="font-size: 13px; font-style: italic; color: #047857; line-height: 1.5;">&ldquo;{self.recruitment_evidence}&rdquo;</div>
       </div>
 
+      {dossier_card_html}
+
       <!-- Today's Research Focus Card -->
       <div style="background-color: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 20px; margin-bottom: 24px;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-          <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #2563EB;">TODAY'S RESEARCH FOCUS (DAY {self.cycle_day})</span>
+          <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: #2563EB;">{cycle_title}</span>
           <span style="font-size: 12px; color: #64748B;">{self.date}</span>
         </div>
         <h2 style="margin: 0 0 8px 0; font-size: 17px; font-weight: 700; color: #0F172A;">{self.today_research_focus}</h2>

@@ -141,14 +141,31 @@ class StorageManager:
         alert_dict = alert.to_dict()
         self.alert_history.append(alert_dict)
         
-        # Advance familiarity for the researcher
+        # Advance familiarity and track 3-day cycle completion for the researcher
         r_id = alert.alert_id.split("_")[0] if "_" in alert.alert_id else None
         # Locate researcher by name or ID
         for rid, r in self.researchers.items():
             if r.name == alert.professor or rid == r_id:
                 rec = self.familiarity.get(rid, FamiliarityRecord(researcher_id=rid))
                 rec.last_exposed = alert.date
-                rec.exposure_cycle_day = (rec.exposure_cycle_day % 7) + 1
+                
+                # Check if this alert completes the deep-dive cycle (Day 3 or Final Synthesis)
+                is_completion = (
+                    alert.cycle_day == 3 or
+                    alert.cycle_day == 6 or
+                    "Synthesis" in alert.today_research_focus or
+                    "Outreach" in alert.today_research_focus
+                )
+                
+                if is_completion:
+                    rec.cycle_completed = True
+                    rec.cycles_completed = getattr(rec, "cycles_completed", 0) + 1
+                    rec.familiarity_score = 100.0
+                    rec.exposure_cycle_day = 1
+                else:
+                    rec.exposure_cycle_day = (rec.exposure_cycle_day % 3) + 1
+                    rec.familiarity_score = min(90.0, max(rec.familiarity_score, (rec.exposure_cycle_day - 1) * 33.3))
+
                 if alert.paper_title not in rec.papers_exposed:
                     rec.papers_exposed.append(alert.paper_title)
                 self.familiarity[rid] = rec

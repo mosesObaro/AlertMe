@@ -121,7 +121,11 @@ def cmd_generate_alert(args):
     # Dispatch email if requested or if EMAIL_RECIPIENT is present
     should_send = getattr(args, "send_email", False) or bool(os.environ.get("EMAIL_RECIPIENT"))
     if should_send:
-        subject = f"[HK PhD Alert] Day {alert.cycle_day}/7: {alert.professor} ({alert.university}) — {alert.today_research_focus}"
+        if alert.cycle_day == 6 or alert.cycle_day > 3 or "Synthesis" in alert.today_research_focus:
+            cycle_str = "Final Synthesis"
+        else:
+            cycle_str = f"Day {alert.cycle_day}/3"
+        subject = f"[HK PhD Alert] {cycle_str}: {alert.professor} ({alert.university}) — {alert.today_research_focus}"
         try:
             from src.email.sender import EmailSender
             sender = EmailSender()
@@ -192,7 +196,7 @@ def main():
     subparsers.add_parser("update-hk-scholarships", help="Display scholarships and deadlines")
 
     # generate-hk-supervisor-alert
-    p_alert = subparsers.add_parser("generate-hk-supervisor-alert", help="Generate today's 7-day progressive daily briefing")
+    p_alert = subparsers.add_parser("generate-hk-supervisor-alert", help="Generate today's 3-day progressive daily briefing")
     p_alert.add_argument("--send-email", action="store_true", help="Dispatch briefing email to EMAIL_RECIPIENT")
 
     # generate-hk-report

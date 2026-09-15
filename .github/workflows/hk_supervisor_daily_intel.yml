@@ -41,7 +41,7 @@ jobs:
         run: |
           pytest tests/ -v
 
-      - name: Generate Today's 7-Day Progressive Supervisor Briefing & Email Alert
+      - name: Generate Today's 3-Day Progressive Supervisor Briefing & Email Alert
         env:
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
           EMAIL_PROVIDER: ${{ secrets.EMAIL_PROVIDER || 'resend' }}
@@ -67,11 +67,13 @@ jobs:
         run: |
           python scratch/build_edge_curriculum.py
 
-      - name: Upload Daily Intelligence Alert Artifact
+      - name: Upload Daily Intelligence Alert & Dossier Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: daily-phd-intelligence-alert
-          path: alerts/daily/
+          name: daily-phd-intelligence-alert-and-dossiers
+          path: |
+            alerts/daily/
+            reports/supervisors/
           retention-days: 30
           if-no-files-found: ignore
 
@@ -81,7 +83,7 @@ jobs:
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add hk_supervisor_intel/data/state.json alerts/daily/ Edge_Computing_PhD_Curriculum_Tracker.xlsx
+          git add hk_supervisor_intel/data/state.json alerts/daily/ reports/supervisors/ Edge_Computing_PhD_Curriculum_Tracker.xlsx
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-15T03:04:38.925441",
+  "last_updated": "2026-09-15T10:50:35.325480",
   "familiarity": {
     "polyu_cao_jiannong": {
       "researcher_id": "polyu_cao_jiannong",
@@ -12,9 +12,11 @@
       "research_projects_exposed": [],
       "research_trajectory_understood": false,
       "recruitment_verified": false,
-      "familiarity_score": 0.0,
+      "familiarity_score": 100.0,
       "last_exposed": "2026-09-15",
-      "exposure_cycle_day": 2
+      "exposure_cycle_day": 1,
+      "cycle_completed": true,
+      "cycles_completed": 1
     },
     "polyu_guo_song": {
       "researcher_id": "polyu_guo_song",
@@ -26,7 +28,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "cuhk_chen_minghua": {
       "researcher_id": "cuhk_chen_minghua",
@@ -38,7 +42,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "cuhk_lui_john": {
       "researcher_id": "cuhk_lui_john",
@@ -50,7 +56,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "hkust_wang_wei": {
       "researcher_id": "hkust_wang_wei",
@@ -62,7 +70,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "hkust_wang_lin": {
       "researcher_id": "hkust_wang_lin",
@@ -74,7 +84,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "hku_wu_chuan": {
       "researcher_id": "hku_wu_chuan",
@@ -86,7 +98,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "hku_cui_heming": {
       "researcher_id": "hku_cui_heming",
@@ -98,7 +112,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "cityu_wang_jianping": {
       "researcher_id": "cityu_wang_jianping",
@@ -110,7 +126,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "hkbu_chu_xiaowen": {
       "researcher_id": "hkbu_chu_xiaowen",
@@ -122,7 +140,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "lingnan_kwong_sam": {
       "researcher_id": "lingnan_kwong_sam",
@@ -134,7 +154,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     },
     "eduhk_yu_philip": {
       "researcher_id": "eduhk_yu_philip",
@@ -146,7 +168,9 @@
       "recruitment_verified": false,
       "familiarity_score": 0.0,
       "last_exposed": null,
-      "exposure_cycle_day": 1
+      "exposure_cycle_day": 1,
+      "cycle_completed": false,
+      "cycles_completed": 0
     }
   },
   "alert_history": [
@@ -306,69 +330,7 @@
       "next_action": "Tomorrow (Day 6): Inspect simulation tools, datasets, and systems testbeds used by Prof. Jiannong Cao."
     },
     {
-      "alert_id": "polyu_cao_jiannong_day6_20260914",
-      "date": "2026-09-14",
-      "weeks_remaining": 12,
-      "days_remaining": 78,
-      "university": "The Hong Kong Polytechnic University",
-      "professor": "Prof. Jiannong Cao",
-      "department": "Department of Computing (COMP)",
-      "research_group": "Internet and Mobile Computing Laboratory (IMCL)",
-      "priority_tier": "Tier 1",
-      "research_alignment_pct": 96,
-      "recruitment_status": "CONFIRMED_ACTIVE",
-      "recruitment_evidence": "We are seeking highly motivated PhD students and Postdocs with strong backgrounds in Computer Science, Computer Engineering, or Mathematics to join IMCL for Fall 2027. Full scholarships (HKPFS and PolyU Presidential Fellowship) available. [Source: official_lab_website, Date: 2026-06-15]",
-      "cycle_day": 6,
-      "today_research_focus": "Research Methodology, Simulators & Testbeds",
-      "paper_title": "Collaborative Edge AI Inference with Dynamic Early-Exit Networks",
-      "paper_author": "Zhiyuan Yin, Jiannong Cao, Shenglong Yu",
-      "paper_year": 2024,
-      "paper_link": "https://doi.org/10.1109/TMC.2024.3361289",
-      "research_problem": "Running heavy deep neural networks on energy-constrained IoT edge devices causes extreme latency and battery exhaustion.",
-      "approach": "Adaptive early-exit backbone with progressive multi-device feature sharing across edge clusters.",
-      "key_contribution": "Achieved 92% Top-1 accuracy while cutting average inference latency by 52% across heterogeneous edge nodes.",
-      "why_it_matters_for_edge": "Direct alignment with Edge AI, model compression, and split computing research questions.",
-      "research_trajectory": "Methodological Toolkit: Simulators (EdgeCloudSim, ns-3, Mininet, OMNeT++), Testbeds (50-node Raspberry Pi 4 Edge Cluster, Jetson Orin Multi-Camera Testbed, Kubernetes/K3s EdgeMesh Testbed), and Datasets (PolyU Smart Campus Telemetry, CRAWDAD Wireless Traces, City Pulse IoT Dataset).",
-      "what_to_read_next": "Follow up with 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks' for current extensions.",
-      "potential_phd_alignment": "Potential PhD Topics: Decentralized Peer-to-Peer Edge Orchestration without Central Coordinator; Adaptive Early-Exit Deep Neural Inference over Heterogeneous Edge Mesh Nodes.",
-      "application_action_today": "Check if you have experience with EdgeCloudSim from the Edge Computing curriculum.",
-      "scholarship_connection": "PolyU Presidential PhD Fellowship Scheme (PPPFS) (Annual cash award of HK$40,000 + full tuition waiver + monthly stipend). Supervisor endorsement significantly strengthens departmental ranking.",
-      "deadline_info": "2026-12-01 23:59:59 HKT (78 days / 12 weeks remaining)",
-      "next_action": "Tomorrow (Day 7): Formulate specific PhD Research Questions and prepare supervisor outreach."
-    },
-    {
-      "alert_id": "polyu_cao_jiannong_day7_20260914",
-      "date": "2026-09-14",
-      "weeks_remaining": 12,
-      "days_remaining": 78,
-      "university": "The Hong Kong Polytechnic University",
-      "professor": "Prof. Jiannong Cao",
-      "department": "Department of Computing (COMP)",
-      "research_group": "Internet and Mobile Computing Laboratory (IMCL)",
-      "priority_tier": "Tier 1",
-      "research_alignment_pct": 96,
-      "recruitment_status": "CONFIRMED_ACTIVE",
-      "recruitment_evidence": "We are seeking highly motivated PhD students and Postdocs with strong backgrounds in Computer Science, Computer Engineering, or Mathematics to join IMCL for Fall 2027. Full scholarships (HKPFS and PolyU Presidential Fellowship) available. [Source: official_lab_website, Date: 2026-06-15]",
-      "cycle_day": 7,
-      "today_research_focus": "PhD Research Alignment & Outreach Formulation",
-      "paper_title": "Collaborative Edge AI Inference with Dynamic Early-Exit Networks",
-      "paper_author": "Zhiyuan Yin, Jiannong Cao, Shenglong Yu",
-      "paper_year": 2024,
-      "paper_link": "https://doi.org/10.1109/TMC.2024.3361289",
-      "research_problem": "Running heavy deep neural networks on energy-constrained IoT edge devices causes extreme latency and battery exhaustion.",
-      "approach": "Adaptive early-exit backbone with progressive multi-device feature sharing across edge clusters.",
-      "key_contribution": "Achieved 92% Top-1 accuracy while cutting average inference latency by 52% across heterogeneous edge nodes.",
-      "why_it_matters_for_edge": "Direct alignment with Edge AI, model compression, and split computing research questions.",
-      "research_trajectory": "Synthesis: You now have a complete picture of Prof. Jiannong Cao's trajectory, seminal papers, recent methods, and current projects.",
-      "what_to_read_next": "Follow up with 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks' for current extensions.",
-      "potential_phd_alignment": "Potential PhD Topics: Decentralized Peer-to-Peer Edge Orchestration without Central Coordinator; Adaptive Early-Exit Deep Neural Inference over Heterogeneous Edge Mesh Nodes.",
-      "application_action_today": "Draft a concise, personalized outreach email citing 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks' and proposing a 1-paragraph research question extending their work.",
-      "scholarship_connection": "PolyU Presidential PhD Fellowship Scheme (PPPFS) (Annual cash award of HK$40,000 + full tuition waiver + monthly stipend). Supervisor endorsement significantly strengthens departmental ranking.",
-      "deadline_info": "2026-12-01 23:59:59 HKT (78 days / 12 weeks remaining)",
-      "next_action": "Cycle complete for Prof. Jiannong Cao! Tomorrow: Advance to next high-priority supervisor candidate."
-    },
-    {
-      "alert_id": "polyu_cao_jiannong_day1_20260915",
+      "alert_id": "polyu_cao_jiannong_day6_20260915",
       "date": "2026-09-15",
       "weeks_remaining": 11,
       "days_remaining": 77,
@@ -380,23 +342,27 @@
       "research_alignment_pct": 96,
       "recruitment_status": "CONFIRMED_ACTIVE",
       "recruitment_evidence": "We are seeking highly motivated PhD students and Postdocs with strong backgrounds in Computer Science, Computer Engineering, or Mathematics to join IMCL for Fall 2027. Full scholarships (HKPFS and PolyU Presidential Fellowship) available. [Source: official_lab_website, Date: 2026-06-15]",
-      "cycle_day": 1,
-      "today_research_focus": "Researcher Introduction & Edge Relevance",
-      "paper_title": "EdgeMesh: A Distributed Edge Computing Framework for IoT Applications",
-      "paper_author": "Jiannong Cao, Yuvraj Sahni, Zhiyuan Yin",
-      "paper_year": 2021,
-      "paper_link": "https://doi.org/10.1109/JIOT.2021.3060128",
-      "research_problem": "Centralized edge orchestrators suffer from single points of failure and bandwidth bottlenecks under dense IoT micro-clouds.",
-      "approach": "Decentralized mesh-based coordination where edge devices collaborate peer-to-peer to schedule microservices dynamically.",
-      "key_contribution": "Formulated distributed work-stealing and task offloading protocols reducing end-to-end task delay by 34% without central server.",
-      "why_it_matters_for_edge": "Direct blueprint for decentralized edge-cloud collaboration and peer-to-peer computation offloading.",
-      "research_trajectory": "Prof. Jiannong Cao has shaped modern systems research. Trajectory: Evolved from classical distributed algorithms and mobile ad-hoc networks (2000s) to wireless sensor networks and cloud computing (2010s), and currently leads research in Edge Intelligence, decentralized collaborative inference, and AIoT.",
+      "cycle_day": 6,
+      "today_research_focus": "Final Synthesis: Methodology, Testbeds & PhD Proposal Outreach",
+      "paper_title": "Collaborative Edge AI Inference with Dynamic Early-Exit Networks",
+      "paper_author": "Zhiyuan Yin, Jiannong Cao, Shenglong Yu",
+      "paper_year": 2024,
+      "paper_link": "https://doi.org/10.1109/TMC.2024.3361289",
+      "research_problem": "Running heavy deep neural networks on energy-constrained IoT edge devices causes extreme latency and battery exhaustion.",
+      "approach": "Adaptive early-exit backbone with progressive multi-device feature sharing across edge clusters.",
+      "key_contribution": "Achieved 92% Top-1 accuracy while cutting average inference latency by 52% across heterogeneous edge nodes.",
+      "why_it_matters_for_edge": "Direct alignment with Edge AI, model compression, and split computing research questions.",
+      "research_trajectory": "Comprehensive Synthesis: You have evaluated Prof. Jiannong Cao's distributed computing foundations, EdgeMesh framework, and 2024 early-exit Edge AI inference. Methodological Toolkit: Simulators (EdgeCloudSim, ns-3, Mininet, OMNeT++), Testbeds (50-node Raspberry Pi 4 Edge Cluster, Jetson Orin Multi-Camera Testbed, Kubernetes/K3s EdgeMesh Testbed), and Active Grants (RGC CRF: Collaborative Edge Computing Architecture for Smart Cities; Edge Intelligence Framework for Real-time Video Stream Analytics; Decentralized Task Scheduling in Heterogeneous Edge Environments).",
       "what_to_read_next": "Follow up with 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks' for current extensions.",
       "potential_phd_alignment": "Potential PhD Topics: Decentralized Peer-to-Peer Edge Orchestration without Central Coordinator; Adaptive Early-Exit Deep Neural Inference over Heterogeneous Edge Mesh Nodes.",
-      "application_action_today": "Review Prof. Jiannong Cao's official lab website and note current group members and active projects.",
+      "application_action_today": "Download the complete 30-section Dossier (Markdown, PDF, DOCX, EPUB). Draft your personalized 1-paragraph outreach email citing the 2024 early-exit paper and proposing a split-inference thesis extension.",
       "scholarship_connection": "PolyU Presidential PhD Fellowship Scheme (PPPFS) (Annual cash award of HK$40,000 + full tuition waiver + monthly stipend). Supervisor endorsement significantly strengthens departmental ranking.",
       "deadline_info": "2026-12-01 23:59:59 HKT (77 days / 11 weeks remaining)",
-      "next_action": "Tomorrow (Day 2): Deconstruct foundational publication 'EdgeMesh: A Distributed Edge Computing Framework for IoT Applications'."
+      "next_action": "Deep Dive complete for Prof. Jiannong Cao! Starting tomorrow: Advance to next high-priority supervisor (Prof. Song Guo / Prof. Wei Wang).",
+      "dossier_report_link": "https://github.com/mosesObaro/AlertMe/blob/main/reports/supervisors/Prof_Jiannong_Cao_PhD_Supervisor_Profile.md",
+      "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jiannong_Cao_PhD_Supervisor_Profile.docx",
+      "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jiannong_Cao_PhD_Supervisor_Profile.pdf",
+      "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jiannong_Cao_PhD_Supervisor_Profile.epub"
     }
   ],
   "campaign_state": {}

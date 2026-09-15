@@ -68,5 +68,52 @@ class TestCampaignAndAlerts(unittest.TestCase):
         self.assertEqual(len(self.storage.alert_history), 1)
         self.assertTrue(self.storage.has_recent_alert_for_paper(alert1.paper_title, days_window=14))
 
+    def test_three_day_cycle_and_dossier_generation(self):
+        alert_gen = AlertGenerator(self.storage, self.campaign)
+        
+        # Pick candidate and simulate Day 1, 2, 3
+        candidate = alert_gen.select_daily_supervisor()
+        self.assertIsNotNone(candidate)
+        
+        # Set cycle_day to 3
+        fam = self.storage.familiarity[candidate.researcher_id]
+        fam.exposure_cycle_day = 3
+        self.storage.familiarity[candidate.researcher_id] = fam
+        
+        # Day 3 alert generation
+        alert3 = alert_gen.generate_daily_alert(reference_date=date(2026, 9, 15))
+        self.assertIsNotNone(alert3)
+        self.assertIsNotNone(alert3.dossier_report_link)
+        self.assertIsNotNone(alert3.dossier_docx_link)
+        self.assertIsNotNone(alert3.dossier_pdf_link)
+        self.assertIsNotNone(alert3.dossier_epub_link)
+        
+        # Verify markdown and HTML contain links
+        self.assertIn("COMPREHENSIVE RESEARCH PROFILE", alert3.to_markdown())
+        self.assertIn(".pdf", alert3.to_html())
+        self.assertIn(".docx", alert3.to_html())
+        self.assertIn(".epub", alert3.to_html())
+        
+        # Verify candidate is now completed
+        updated_fam = self.storage.familiarity[candidate.researcher_id]
+        self.assertTrue(updated_fam.cycle_completed)
+        self.assertEqual(updated_fam.familiarity_score, 100.0)
+
+    def test_rotation_to_next_candidate_after_completion(self):
+        alert_gen = AlertGenerator(self.storage, self.campaign)
+        candidate1 = alert_gen.select_daily_supervisor()
+        
+        # Mark candidate1 completed
+        fam1 = self.storage.familiarity[candidate1.researcher_id]
+        fam1.cycle_completed = True
+        fam1.familiarity_score = 100.0
+        self.storage.familiarity[candidate1.researcher_id] = fam1
+        
+        # Select next supervisor
+        candidate2 = alert_gen.select_daily_supervisor()
+        self.assertIsNotNone(candidate2)
+        self.assertNotEqual(candidate1.researcher_id, candidate2.researcher_id)
+        self.assertEqual(candidate2.priority_tier, "Tier 1")
+
 if __name__ == "__main__":
     unittest.main()
