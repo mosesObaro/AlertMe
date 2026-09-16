@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-15",
-    "total_items": 26,
+    "last_updated": "2026-09-16",
+    "total_items": 28,
     "high_relevance_count": 18,
-    "papers_count": 9,
+    "papers_count": 10,
     "conferences_count": 2,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -3164,6 +3164,52 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "[Code/Benchmark] Altrouge7/LLM-in-Electricity-Market-Papers-Datasets-and-Benchmarks (★ 1)",
+      "url": "https://github.com/Altrouge7/LLM-in-Electricity-Market-Papers-Datasets-and-Benchmarks",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "Altrouge7"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-16",
+      "discovery_date": "2026-09-16",
+      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_128f4c8d4475bc02",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 1,
+        "forks": 0
+      }
+    },
+    {
       "title": "CloudAM 2026 : 15th International Workshop on Cloud and Edge Computing, and Applications Management",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202965&copyownerid=43185",
       "source": "Conference Feed",
@@ -3172,8 +3218,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-15",
-      "discovery_date": "2026-09-15",
+      "publication_date": "2026-09-16",
+      "discovery_date": "2026-09-16",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3205,6 +3251,52 @@
       "raw_metadata": {}
     },
     {
+      "title": "A Dynamic Vertical Scaling Strategy for Distributed Stream Processing Applications in Edge Computing",
+      "url": "http://arxiv.org/abs/2609.12975v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Guilherme Hiago Costa dos Santos",
+        "Carlos Henrique Kayser",
+        "Tiago Coelho Ferreto"
+      ],
+      "doi": null,
+      "arxiv_id": "2609.12975v1",
+      "publication_date": "2026-09-11",
+      "discovery_date": "2026-09-16",
+      "abstract": "Distributed Stream Processing applications at the edge must reconcile low latency and high throughput with limited and heterogeneous resources. This paper presents a dynamic vertical scaling strategy based on Proximal Policy Optimization, formulated as a Partially Observable Markov Decision Process. The policy jointly adjusts task allocations and prioritizes compliance with a p95 end-to-end latency Service Level Objective. In EdgeStreamPy simulation experiments with two application profiles, two workloads, and ten paired placements per combination, the selected policies preserved throughput, obtained mean violation rates from 0.03% to 0.30%, below VRebalance in every scenario, and used less CPU in three of four combinations. The comparison covers complete controller configurations with different decision frequencies.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_0027fc91357a203d",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.2,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Published within last week (5d ago) (+1.2)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
       "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
       "source": "Linux Foundation / LF Edge Blog",
@@ -3216,7 +3308,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-15",
+      "discovery_date": "2026-09-16",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3239,7 +3331,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (90d ago) (+0.2)",
+          "• Published >30d ago (91d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3259,7 +3351,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-15",
+      "discovery_date": "2026-09-16",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3282,7 +3374,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (180d ago) (+0.2)",
+          "• Published >30d ago (181d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
