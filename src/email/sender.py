@@ -18,10 +18,32 @@ class EmailSender:
 
     def __init__(self, config: Optional[Dict[str, Any]] = None):
         self.config = config or {}
-        self.provider = (
-            os.environ.get("EMAIL_PROVIDER") or
-            self.config.get("provider", "console")
-        ).lower()
+        env_prov = (os.environ.get("EMAIL_PROVIDER") or "").strip().lower()
+        cfg_prov = (self.config.get("provider") or "").strip().lower()
+        raw_provider = env_prov or cfg_prov
+
+        # Auto-detect or fall back based on available credentials
+        if raw_provider and raw_provider not in ["", "none", "auto"]:
+            self.provider = raw_provider
+        elif os.environ.get("RESEND_API_KEY"):
+            self.provider = "resend"
+        elif os.environ.get("BREVO_API_KEY"):
+            self.provider = "brevo"
+        elif os.environ.get("SENDGRID_API_KEY"):
+            self.provider = "sendgrid"
+        elif os.environ.get("SMTP_HOST"):
+            self.provider = "smtp"
+        else:
+            self.provider = "console"
+
+        # If resend selected but RESEND_API_KEY missing, check other available providers
+        if self.provider == "resend" and not os.environ.get("RESEND_API_KEY"):
+            if os.environ.get("BREVO_API_KEY"):
+                self.provider = "brevo"
+            elif os.environ.get("SENDGRID_API_KEY"):
+                self.provider = "sendgrid"
+            elif os.environ.get("SMTP_HOST"):
+                self.provider = "smtp"
         self.sender_email = (
             os.environ.get("SENDER_EMAIL") or
             self.config.get("sender_email", "onboarding@resend.dev")

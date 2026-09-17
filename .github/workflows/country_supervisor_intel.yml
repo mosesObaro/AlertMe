@@ -54,7 +54,7 @@ jobs:
       - name: Execute Country Intelligence Campaign
         env:
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-          EMAIL_PROVIDER: ${{ secrets.EMAIL_PROVIDER || 'resend' }}
+          EMAIL_PROVIDER: ${{ secrets.EMAIL_PROVIDER }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
@@ -63,12 +63,14 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         run: |
-          TARGET_COUNTRY="${{ github.event.inputs.country || 'all' }}"
-          SEND_EMAIL_FLAG=""
-          if [ "${{ github.event.inputs.send_email != 'false' }}" = "true" ]; then
+          TARGET_COUNTRY="${{ (github.event_name == 'workflow_dispatch' && inputs.country) || 'all' }}"
+          MIN_PROFS="${{ (github.event_name == 'workflow_dispatch' && inputs.min_professors) || '8' }}"
+
+          if [ "${{ github.event_name == 'workflow_dispatch' && inputs.send_email == false }}" = "true" ]; then
+            SEND_EMAIL_FLAG=""
+          else
             SEND_EMAIL_FLAG="--send-email"
           fi
-          MIN_PROFS="${{ github.event.inputs.min_professors || '8' }}"
 
           if [ "$TARGET_COUNTRY" = "all" ]; then
             python cli.py supervisors --all-countries --min-professors "$MIN_PROFS" $SEND_EMAIL_FLAG

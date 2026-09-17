@@ -198,3 +198,22 @@ class TestCountrySupervisors:
         # Dry run send email
         send_res = alert_gen.send_country_alert(result, dry_run=True)
         assert send_res["status"] == "dry_run"
+
+    def test_global_alert_renderer_and_email(self):
+        """Verify global email briefing HTML rendering and dispatch for all countries."""
+        all_results = self.manager.run_all_campaigns(dry_run=True, generate_docs=False)
+        alert_gen = CountryAlertGenerator()
+        payload = alert_gen.render_global_email(all_results)
+
+        assert "Global PhD Funding & Supervisor Briefing" in payload["subject"]
+        assert "Country Campaign Portfolio" in payload["html"]
+        assert "United Kingdom" in payload["html"]
+        assert "Japan" in payload["html"]
+        assert "Germany" in payload["html"]
+        assert "United States" in payload["html"]
+        assert "Canada" in payload["html"]
+        assert "Sweden" in payload["html"]
+        assert "Hong Kong" in payload["html"]
+
+        send_res = alert_gen.send_global_alert(all_results, dry_run=True)
+        assert send_res["status"] == "dry_run"

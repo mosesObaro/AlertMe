@@ -397,6 +397,15 @@ def run_supervisors_cli(args):
         
         if getattr(args, "update_excel", True) and not args.dry_run:
             add_country_supervisor_sheets()
+
+        should_send = getattr(args, "send_email", False) or bool(os.environ.get("EMAIL_RECIPIENT"))
+        if should_send:
+            alert_gen = CountryAlertGenerator()
+            email_res = alert_gen.send_global_alert(results, dry_run=args.dry_run)
+            status = email_res.get("status")
+            print(f"Global Email Dispatch: {'SUCCESS' if status in ['sent', 'dry_run'] else 'SKIPPED/FAILED'}")
+            if status != "sent":
+                print(f"  Status: {status} ({email_res.get('error', email_res.get('subject', ''))})")
             
     else:
         country_input = args.country or "uk"
@@ -424,10 +433,14 @@ def run_supervisors_cli(args):
         if getattr(args, "update_excel", True) and not args.dry_run:
             add_country_supervisor_sheets()
             
-        if getattr(args, "send_email", False) and not args.dry_run:
+        should_send = getattr(args, "send_email", False) or bool(os.environ.get("EMAIL_RECIPIENT"))
+        if should_send:
             alert_gen = CountryAlertGenerator()
-            email_res = alert_gen.send_country_alert(result)
-            print(f"Email Dispatch: {'SUCCESS' if email_res.get('status') == 'sent' else 'SKIPPED/FAILED'}")
+            email_res = alert_gen.send_country_alert(result, dry_run=args.dry_run)
+            status = email_res.get("status")
+            print(f"Email Dispatch: {'SUCCESS' if status in ['sent', 'dry_run'] else 'SKIPPED/FAILED'}")
+            if status != "sent":
+                print(f"  Status: {status} ({email_res.get('error', email_res.get('subject', ''))})")
 
 
 def main():
