@@ -104,17 +104,16 @@ class AlertGenerator:
         dossier_pdf_link = None
         dossier_epub_link = None
 
-        if is_synthesis_day:
-            try:
-                from .profiler import SupervisorProfiler
-                profiler = SupervisorProfiler()
-                dossier_files = profiler.generate_all_dossiers(supervisor, matched_scholarship, ref_date)
-                dossier_report_link = dossier_files.get("markdown_url")
-                dossier_docx_link = dossier_files.get("docx_url")
-                dossier_pdf_link = dossier_files.get("pdf_url")
-                dossier_epub_link = dossier_files.get("epub_url")
-            except Exception as e:
-                print(f"Warning: Dossier generation encountered an error ({e}).")
+        try:
+            from .profiler import SupervisorProfiler
+            profiler = SupervisorProfiler()
+            dossier_files = profiler.generate_all_dossiers(supervisor, matched_scholarship, ref_date)
+            dossier_report_link = dossier_files.get("markdown_url")
+            dossier_docx_link = dossier_files.get("docx_url")
+            dossier_pdf_link = dossier_files.get("pdf_url")
+            dossier_epub_link = dossier_files.get("epub_url")
+        except Exception as e:
+            print(f"Warning: Dossier generation encountered an error ({e}).")
 
         if is_cao_final:
             focus_title = "Final Synthesis: Methodology, Testbeds & PhD Proposal Outreach"

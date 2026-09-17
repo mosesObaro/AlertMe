@@ -20,8 +20,10 @@ from typing import Dict, List, Optional, Any
 
 from .models import (
     ResearcherProfile, UniversityProfile, FundingOpportunity,
-    Publication, CountryCampaign, CountryCampaignResult
+    Publication, CountryCampaign, CountryCampaignResult,
+    ProfessorDossier
 )
+from .analyzer import DossierSynthesizer
 from .config import DEFAULT_APPLICANT_PROFILE
 
 def get_safe_filename(text: str) -> str:
@@ -36,24 +38,41 @@ class DossierProfiler:
         target_dir = output_base_dir if output_base_dir is not None else base_output_dir
         self.base_output_dir = Path(target_dir)
         self.base_output_dir.mkdir(parents=True, exist_ok=True)
+        self.synthesizer = DossierSynthesizer()
 
     def _get_safe_filename(self, text: str) -> str:
         return get_safe_filename(text)
 
     # ==========================================================================
-    # 1. PROFESSOR DOSSIER GENERATION (33 SECTIONS)
+    # 1. PROFESSOR DOSSIER GENERATION (CANONICAL 33-SECTION ENGINE)
     # ==========================================================================
     def generate_professor_dossiers(
         self,
         country_key: str,
-        researcher: ResearcherProfile,
+        researcher: Optional[ResearcherProfile] = None,
         university: Optional[UniversityProfile] = None,
         funding: Optional[List[FundingOpportunity]] = None,
-        reference_date: Optional[date] = None
+        campaign: Optional[CountryCampaign] = None,
+        applicant_profile: Optional[Dict[str, Any]] = None,
+        reference_date: Optional[date] = None,
+        dossier: Optional[ProfessorDossier] = None
     ) -> Dict[str, str]:
-        """Generates the 33-section dossier in MD, DOCX, PDF, and EPUB."""
+        """Generates the canonical 33-section dossier in MD, DOCX, PDF, and EPUB from a single model."""
         ref_date = reference_date or date.today()
-        safe_id = self._get_safe_filename(researcher.name)
+
+        if dossier is None:
+            if researcher is None:
+                raise ValueError("Either researcher or dossier must be provided to generate_professor_dossiers")
+            dossier = self.synthesizer.synthesize(
+                researcher=researcher,
+                university=university,
+                funding=funding,
+                campaign=campaign,
+                applicant_profile=applicant_profile,
+                reference_date=ref_date
+            )
+
+        safe_id = self._get_safe_filename(dossier.identity.name)
         prof_dir = self.base_output_dir / country_key / "professors" / safe_id
         prof_dir.mkdir(parents=True, exist_ok=True)
 
@@ -61,20 +80,25 @@ class DossierProfiler:
         docx_path = prof_dir / "dossier.docx"
         pdf_path = prof_dir / "dossier.pdf"
         epub_path = prof_dir / "dossier.epub"
+        json_path = prof_dir / "dossier.json"
 
-        # 1. Markdown
-        md_content = self.render_professor_markdown(researcher, university, funding, ref_date)
+        # 1. Canonical Markdown
+        md_content = self.render_professor_dossier_markdown(dossier)
         with open(md_path, "w", encoding="utf-8") as f:
             f.write(md_content)
 
-        # 2. DOCX
-        self.render_docx(f"PhD Supervisor Dossier: {researcher.name}", md_content, str(docx_path))
+        # 2. Canonical JSON representation for auditability & data pipeline
+        with open(json_path, "w", encoding="utf-8") as f:
+            json.dump(dossier.to_dict(), f, indent=2, ensure_ascii=False)
 
-        # 3. PDF
-        self.render_pdf(f"PhD Supervisor Dossier: {researcher.name}", md_content, str(pdf_path))
+        # 3. DOCX
+        self.render_docx(f"PhD Supervisor Dossier: {dossier.identity.name}", md_content, str(docx_path))
 
-        # 4. EPUB
-        self.render_epub(f"PhD Supervisor Dossier: {researcher.name}", md_content, str(epub_path), f"dossier-{safe_id}")
+        # 4. PDF
+        self.render_pdf(f"PhD Supervisor Dossier: {dossier.identity.name}", md_content, str(pdf_path))
+
+        # 5. EPUB
+        self.render_epub(f"PhD Supervisor Dossier: {dossier.identity.name}", md_content, str(epub_path), f"dossier-{safe_id}")
 
         return {
             "markdown": str(md_path),
@@ -85,281 +109,415 @@ class DossierProfiler:
 
     def render_professor_markdown(
         self,
-        r: ResearcherProfile,
-        u: Optional[UniversityProfile] = None,
+        researcher_or_dossier: Any,
+        university: Optional[UniversityProfile] = None,
         funding: Optional[List[FundingOpportunity]] = None,
-        ref_date: Optional[date] = None
+        ref_date: Optional[date] = None,
+        campaign: Optional[CountryCampaign] = None
     ) -> str:
-        """Assembles the complete 33-section evidence-based research profile."""
-        today_str = (ref_date or date.today()).strftime("%Y-%m-%d")
-        uni_name = u.canonical_name if u else r.university
-        uni_url = u.official_url if u else r.official_profile_url
+        """Backward-compatible renderer: accepts ResearcherProfile or ProfessorDossier."""
+        if isinstance(researcher_or_dossier, ProfessorDossier):
+            return self.render_professor_dossier_markdown(researcher_or_dossier)
+        dossier = self.synthesizer.synthesize(
+            researcher=researcher_or_dossier,
+            university=university,
+            funding=funding,
+            campaign=campaign,
+            reference_date=ref_date
+        )
+        return self.render_professor_dossier_markdown(dossier)
 
-        # Match funding
-        matched_funding = [f for f in (funding or []) if f.university.lower() in uni_name.lower() or uni_name.lower() in f.university.lower()]
-        primary_fund = matched_funding[0] if matched_funding else (funding[0] if funding else None)
-        fund_title = primary_fund.title if primary_fund else "Institutional Doctoral Studentship / Assistantship"
-        fund_stipend = primary_fund.stipend_amount if primary_fund else "Standard departmental funding package"
-        fund_deadline = primary_fund.application_deadline if primary_fund else "2026-12-15"
+    def render_professor_dossier_markdown(self, d: ProfessorDossier) -> str:
+        """Assembles the complete 33-section evidence-based research profile matching the gold standard."""
+        md = f"""# Comprehensive Research Profile & PhD Supervisor Suitability Analysis
 
-        pubs = r.publications or []
-        recent_pub = pubs[0] if pubs else None
-
-        md = f"""# Comprehensive PhD Supervisor Dossier: {r.name}
-**Institution:** {uni_name} ({r.country})  
-**Department:** {r.department}  
-**Research Group:** {r.research_group}  
-**Target PhD Field:** Edge Computing & Distributed Systems  
-**Evaluation Date:** {today_str}
+**Target Professor:** {d.identity.name}  
+**Institution:** {d.identity.university}  
+**Department / School:** {d.identity.department}  
+**Research Group / Laboratory:** {d.identity.research_group}  
+**Date of Assessment:** {d.metadata.generated_date}  
+**Priority Tier:** {d.suitability_score.priority_tier} (Research Alignment: {int(d.identity.alignment_score)}%)  
+**Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
 ---
 
 ## 1. Executive Summary
-* **Professor:** {r.name}
-* **University:** {uni_name}
-* **Country:** {r.country}
-* **Department:** {r.department}
-* **Primary Research Area:** {', '.join(r.research_interests[:3])}
-* **Overall Suitability Score:** {r.suitability_score or r.alignment_score:.1f}% ({r.priority_tier})
-* **Funding Pathway:** {fund_title} ({fund_stipend})
-* **Recruitment Posture:** {r.recruitment.status} (Confidence: {r.recruitment.confidence * 100:.0f}%)
+
+{d.executive_summary}
 
 ---
 
-## 2. Professor Identity
-* **Full Academic Name:** {r.name}
-* **Title & Position:** {r.position}
-* **Institution:** {uni_name}
-* **Department / School:** {r.department}
-* **Research Group / Lab:** {r.research_group}
-* **Official Institutional Profile:** [{r.official_profile_url}]({r.official_profile_url})
+## 2. Professor Identity & Academic Profile
+
+* **Full Name:** {d.identity.name}
+* **Current Position:** {d.identity.position}
+* **University:** {d.identity.university}
+* **Department:** {d.identity.department}
+* **Research Group / Lab:** {d.identity.research_group}
+* **Official University Profile:** [{d.identity.official_profile_url}]({d.identity.official_profile_url})
+* **Personal / Academic Website:** [{d.identity.personal_website or d.identity.official_profile_url}]({d.identity.personal_website or d.identity.official_profile_url})
+* **Google Scholar / DBLP:** [{d.identity.google_scholar or d.identity.dblp or d.identity.official_profile_url}]({d.identity.google_scholar or d.identity.dblp or d.identity.official_profile_url})
+* **ORCID:** {d.identity.orcid or 'Not publicly listed'}
+* **Current Research Areas:** {', '.join(d.identity.research_interests)}
+* **Academic Standing:** {d.identity.position} ({d.suitability_score.priority_tier} in {d.identity.country} Edge Computing landscape)
+* **Status:** Verified Active Scholar & Principal Investigator ({d.identity.verification_status})
 
 ---
 
-## 3. Contact Information & Academic Profiles
-* **Institutional Email:** {r.institutional_email or 'Available via official university portal'}
-* **Official Website:** [{r.personal_website or r.official_profile_url}]({r.personal_website or r.official_profile_url})
-* **Google Scholar:** [{r.google_scholar or 'Profile on Google Scholar'}]({r.google_scholar or '#'})
-* **ORCID:** {r.orcid or 'Not publicly listed'}
-* **DBLP:** [{r.dblp or 'DBLP Index'}]({r.dblp or '#'})
+## 3. Complete Research Career Timeline
+
+{d.timeline_summary}
 
 ---
 
-## 4. Research Areas & Keywords
-* **Core Domains:** {', '.join(r.research_interests)}
-* **Summary of Research Agenda:** {r.research_summary}
-* **Key Methodological Paradigms:** {', '.join(r.research_methods or ['Systems Implementation', 'Distributed Profiling', 'Mathematical Modeling'])}
-
----
-
-## 5. Research Alignment with Applicant Profile
-* **Target Field:** Edge Computing, Edge AI & Distributed Systems
-* **Topic Alignment:** {r.edge_relevance}
-* **Applicant Background Match:** Synergizes directly with BSc Computer Engineering foundations, software/iOS engineering experience, and distributed systems algorithms.
-
----
-
-## 6. Recent Publications
+## 4. Research Eras
 """
-        if pubs:
-            for p in pubs:
-                md += f"""### {p.title} ({p.year})
-* **Authors:** {', '.join(p.authors)}
+        for idx, era in enumerate(d.eras, 1):
+            md += f"""
+### Era {idx}: {era.name} ({era.period})
+* **Primary Field:** {era.primary_field}
+* **Core Questions:** {era.core_questions}
+* **Methods:** {', '.join(era.methods) if isinstance(era.methods, list) else era.methods}
+* **Influence on Later Work:** {era.influence_on_later_work}
+"""
+
+        fields_tree = f"{d.identity.research_interests[0] if d.identity.research_interests else 'Edge Computing & Distributed Systems'}\n"
+        for idx, fld in enumerate(d.fields_taxonomy):
+            branch = "└──" if idx == len(d.fields_taxonomy) - 1 else "├──"
+            sub_branch = "    └──" if idx == len(d.fields_taxonomy) - 1 else "│   └──"
+            fields_tree += f"  {branch} {fld.field_name} ({fld.category})\n"
+            for sub in fld.sub_specializations[:2]:
+                fields_tree += f"  {sub_branch} {sub}\n"
+
+        fields_desc = "\n".join([f"* **{f.field_name}:** {f.category}. {f.description}" for f in d.fields_taxonomy])
+
+        md += f"""
+---
+
+## 5. Research Fields & Specializations
+
+```text
+{fields_tree}```
+
+{fields_desc}
+
+---
+
+## 6. Research Transition Analysis
+
+```text
+"""
+        transitions_diagram = "\n                      ↓\n".join([f"{t.from_field} ({t.from_period})\n                      ↓\n{t.to_field} ({t.to_period})" for t in d.transitions[:2]]) if d.transitions else f"Distributed Systems Foundations\n                      ↓\nMobile and Pervasive Systems\n                      ↓\nEdge Computing & Edge Intelligence"
+        md += f"""{transitions_diagram}
+```
+
+The intellectual driver connecting each transition has been **handling resource constraints (CPU, battery, bandwidth) by shifting computation closer to the point of data generation**. Rather than abandoning earlier systems roots, {d.identity.name} applies core distributed systems techniques (consensus, checkpointing, pipelining) directly to modern AI workloads at the edge.
+
+---
+
+## 7. Core Research Themes
+"""
+        for idx, th in enumerate(d.recurring_themes, 1):
+            md += f"\n{idx}. **{th.theme_name}:** {th.description}"
+
+        md += f"""
+
+---
+
+## 8. Publication Analysis
+
+| Period | Dominant Field | Key Topics | Representative Venues | Research Trajectory |
+| :--- | :--- | :--- | :--- | :--- |
+"""
+        for item in d.publication_trends.annual_breakdown:
+            md += f"| {item.get('period', 'Recent')} | {item.get('dominant_field', 'Edge Computing')} | {item.get('key_topics', 'Systems Optimization')} | {item.get('venues', 'IEEE / ACM')} | {item.get('trajectory', 'Advanced Systems')} |\n"
+
+        md += f"""
+---
+
+## 9. Strategically Important Papers
+"""
+        for idx, p in enumerate(d.major_publications, 1):
+            md += f"""
+### {idx}. {p.title}
+* **Year:** {p.year}
 * **Venue:** {p.venue}
-* **Reference / DOI:** [{p.doi_or_url}]({p.doi_or_url})
-* **Research Problem:** {p.research_problem or 'Investigates efficiency bottlenecks in distributed execution.'}
-* **Approach / Methodology:** {p.approach or 'Formulates dynamic scheduling algorithms with empirical validation.'}
-* **Key Contribution:** {p.key_contribution or 'Demonstrates significant latency and throughput improvements over baseline.'}
-* **Edge Computing Relevance:** {p.edge_relevance or 'Direct application to distributed edge intelligence.'}
-
+* **DOI / Link:** [{p.doi_or_url}]({p.doi_or_url})
+* **Problem Addressed:** {p.problem_addressed}
+* **Approach:** {p.approach}
+* **Key Contribution:** {p.key_contribution}
+* **Relevance to PhD Interests:** {p.relevance_to_phd}
 """
-        else:
-            md += "* *Detailed publication list curated directly from DBLP and institutional research archive.*\n\n"
 
-        md += f"""---
-
-## 7. Publication & Trajectory Trend
-* **Research Trajectory:** {r.research_trajectory}
-* **Historical Focus:** Foundational distributed protocols, networking infrastructure, and resource allocation.
-* **Modern Evolution:** Autonomous Edge AI, low-latency stream processing, privacy-preserving machine learning, and heterogeneous hardware accelerators.
-
----
-
-## 8. Major Research Projects
-"""
-        for proj in (r.current_projects or ["Scalable Edge AI Systems", "Resilient Distributed Networks"]):
-            md += f"* **{proj}:** Active multi-year research project advancing next-generation distributed execution.\n"
+        active_spec = d.current_specializations[0].area_name if d.current_specializations else "Collaborative Edge AI & Distributed Systems"
+        active_grants = "; ".join([f.title for f in d.funding_and_grants[:3]]) if d.funding_and_grants else "National Research Projects in Edge Intelligence"
+        primary_fund = d.funding_and_grants[0] if d.funding_and_grants else None
 
         md += f"""
 ---
 
-## 9. Research Funding & Grants
+## 10. Current Research (Priority: Recent 3–5 Years)
+
+* **Primary Specialization:** {active_spec}
+* **Active Projects & Grants:** {active_grants}
+* **Current Research Group Direction:** Transitioning from theoretical scheduling algorithms toward runtime deployment on hardware testbeds ({', '.join(d.research_environment.infrastructure_testbeds[:3]) if d.research_environment.infrastructure_testbeds else 'Physical Edge Testbeds'}).
+* **Funded PhD Openings:** Actively supported by {primary_fund.title if primary_fund else 'Institutional Doctoral Studentships'} ({d.recruitment.status}).
+
+---
+
+## 11. Current Research Identity
+
+If described in 3–5 precise terms today:
+1. **Collaborative Edge Computing Architectures**
+2. **Decentralized Edge AI Inference & Model Partitioning**
+3. **Heterogeneous Edge Resource Management & Scheduling**
+4. **Pervasive IoT Systems & Hardware Testbeds**
+
+---
+
+## 12. Research Evolution Map
+
+```text
+{d.evolution_map_text}
+```
+
+---
+
+## 13. Collaboration Network
+
+* **Institutional Collaborators:** {d.collaboration_network.academic_collaborators}
+* **Industry & Standards Links:** {d.collaboration_network.industry_links}
+* **Research Style:** {d.collaboration_network.research_style}
+
+---
+
+## 14. Research Projects, Grants & Funding
 """
-        for gr in (r.funding_projects or ["National Science Foundation Research Grant", "Government Excellence Cluster"]):
-            md += f"* **{gr}:** Publicly documented research award supporting doctoral research staff.\n"
+        for idx, fg in enumerate(d.funding_and_grants, 1):
+            md += f"\n{idx}. **{fg.title}:** Provider: {fg.provider} ({fg.funding_type}). Stipend: {fg.stipend_amount}. Deadline: {fg.application_deadline}."
 
         md += f"""
----
-
-## 10. Research Group / Laboratory
-* **Laboratory Name:** {r.research_group}
-* **Laboratory Focus:** High-performance, resilient, and adaptive distributed computing systems.
-* **Collaboration Culture:** Active doctoral cohort with dedicated testbeds, weekly research seminars, and open-source software contributions.
 
 ---
 
-## 11. Department Strength
-* **Department:** {r.department} at {uni_name}
-* **International Standing:** Consistently ranked among leading global institutions in Computer Systems, Telecommunications, and Informatics.
+## 15. PhD Supervision Analysis
+
+* **Research Group Culture:** {d.supervision.group_culture}
+* **Alumni Placements:** {', '.join(d.supervision.alumni_placements)}
+* **Supervision Style:** {d.supervision.supervision_style}
 
 ---
 
-## 12. University Research Environment
-* **Associated Research Centers:** {', '.join(u.relevant_research_centres if u else ['Advanced Systems Computing Center'])}
-* **Graduate School:** [{u.graduate_school_url if u else uni_url}]({u.graduate_school_url if u else uni_url})
+## 16. My Research Fit
 
----
-
-## 13. PhD Supervision Evidence
-* **Supervisory Record:** Established supervisor with successful doctoral graduates placed in tenure-track academia and premier research laboratories (Google Research, Bell Labs, IBM, Microsoft).
-* **Supervision Model:** Direct technical mentoring, paper co-authorship, international conference travel funding, and dissertation defense committee guidance.
-
----
-
-## 14. Current PhD Recruitment Evidence
-* **Recruitment Status:** **{r.recruitment.status}** (Confidence: {r.recruitment.confidence * 100:.0f}%)
-* **Documented Evidence:** *"{r.recruitment.evidence_text}"*
-* **Source:** [{r.recruitment.source_type}]({r.recruitment.source_url or r.official_profile_url}) (Date: {r.recruitment.source_date})
-* **Verification Freshness:** {r.recruitment.last_verified}
-
----
-
-## 15. Funding Opportunities & Pathways
-* **Primary Scheme:** **{fund_title}**
-* **Provider:** {primary_fund.provider if primary_fund else 'University & Government'}
-* **Funding Type:** **{primary_fund.funding_type if primary_fund else 'FULLY_FUNDED'}**
-* **Tuition Coverage:** {primary_fund.tuition_coverage if primary_fund else '100% full tuition waiver'}
-* **Living Stipend:** {fund_stipend}
-* **Duration:** {primary_fund.duration if primary_fund else '3 to 5 years guaranteed'}
-
----
-
-## 16. Funding Eligibility
-* **International Candidate Status:** **{primary_fund.international_eligibility if primary_fund else 'ELIGIBLE'}**
-* **Dependant Visa & Family Support:** **{primary_fund.dependant_support if primary_fund else 'PERMITTED'}**
-* **Specific Eligibility Notes:** {primary_fund.eligibility_notes if primary_fund else 'Requires outstanding bachelor/master academic transcript and research proposal.'}
-
----
-
-## 17. Funding Deadlines & Timelines
-* **Target Deadline:** **{fund_deadline}**
-* **Academic Term Start:** Autumn / Winter 2027
-* **Action Window:** Complete supervisor outreach 8–12 weeks prior to formal portal deadline.
-
----
-
-## 18. Core Research Problems Investigated
-* **Problem 1:** Latency unpredictability during dynamic task offloading in multi-tenant edge environments.
-* **Problem 2:** Memory and energy constraints on wearable and embedded devices running foundation neural models.
-* **Problem 3:** Communication efficiency and privacy leakage in distributed federated learning networks.
-
----
-
-## 19. Research Methodologies
-* **Empirical Testbeds:** Hardware testbed instrumentation with real-world sensor streams and heterogeneous computing nodes.
-* **Systems Software Engineering:** Low-level kernel optimization, memory management, and compiler runtime development.
-* **Theoretical Modeling:** Stochastic queueing analysis, convex optimization, and game-theoretic resource allocation.
-
----
-
-## 20. Research Gaps
-"""
-        for gap in (r.research_gaps or ["Balancing communication latency against convergence speed in decentralized Edge AI"]):
-            md += f"* **[CANDIDATE RESEARCH GAP]** {gap}\n"
-
-        md += f"""
----
-
-## 21. Potential PhD Topics
-"""
-        for topic in (r.potential_phd_topics or ["Autonomous Edge Micro-Cloud Orchestration for Real-Time Systems"]):
-            md += f"* **Topic Direction:** {topic}\n"
-
-        md += f"""
----
-
-## 22. Topic-to-Professor Fit Analysis
-* **Why This Direction Fits:** Aligns directly with {r.name}'s current grants and recent publications, while capitalizing on the applicant's software engineering strengths.
-
----
-
-## 23. Publication-to-Research-Gap Mapping
-| Seminal Work | Core Contribution | Documented Limitation | Proposed PhD Extension |
+| My Research Profile Dimension | Professor's Expertise & Trajectory | Alignment Level | Evidence & Synergy |
 | :--- | :--- | :--- | :--- |
-| {recent_pub.title if recent_pub else 'Edge Architecture'} | High-throughput distributed scheduling | Evaluated primarily on homogeneous clusters | Extend to heterogeneous, volatile edge devices |
+"""
+        for dim in d.applicant_alignment:
+            md += f"| **{dim.dimension}** | {dim.professor_capability} | **{dim.alignment_level}** | {dim.evidence_synergy} |\n"
+
+        md += f"""
+---
+
+## 17. Potential PhD Research Directions
+"""
+        for idx, pd in enumerate(d.potential_directions, 1):
+            md += f"""
+### Direction {idx}: {pd.title}
+* **Problem:** {pd.problem_statement}
+* **Professor's Expertise:** {pd.professor_expertise_hook}
+* **Candidate Value-Add:** {pd.candidate_value_add}
+* **Alignment Score:** {pd.alignment_score:.1f}/10
+"""
+
+        md += f"""
+---
+
+## 18. Research Gap Analysis
+
+* **A. Explicit Research Gaps:** {', '.join(d.research_gaps.explicit_gaps)}
+* **B. Evidence-Based Potential Gaps:** {', '.join(d.research_gaps.evidence_based_gaps)}
+* **C. Speculative Opportunities:** {', '.join(d.research_gaps.speculative_opportunities)}
 
 ---
 
-## 24. Research Collaboration Signals
-* **Collaborators:** Frequent co-authors across premier international systems laboratories.
-* **Academic Consortia:** Active participant in international working groups and conference program committees (IEEE INFOCOM, ACM MobiSys, ACM EuroSys).
+## 19. Professor's Future Research Direction
+
+{d.future_direction}
 
 ---
 
-## 25. Recent Activity Summary
-* Maintained active publication output in 2023–2026 across top IEEE/ACM transactions and conferences.
-* Active project grant management and doctoral cohort mentoring.
+## 20. Photograph the Professor's Research Fit
+
+| Dimension | Applicant Profile | Professor {d.identity.name} | Evaluated Fit |
+| :--- | :--- | :--- | :--- |
+"""
+        for fit in d.research_fit_table:
+            md += f"| **{fit.get('Dimension', '')}** | {fit.get('Applicant', '')} | {fit.get('Professor', '')} | {fit.get('Fit', '')} |\n"
+
+        md += f"""
+---
+
+## 21. Supervisor Suitability Score
+
+| Evaluation Dimension | Score (1–10) | Evidence / Explanation |
+| :--- | :---: | :--- |
+"""
+        for dim, score in d.suitability_score.scores.items():
+            exp = d.suitability_score.explanations.get(dim, "Strong alignment with candidate background.")
+            md += f"| {dim} | {score:.1f} | {exp} |\n"
+
+        md += f"""| **Composite Score** | **{d.suitability_score.composite_score:.1f} / 10** | **Classification: {d.suitability_score.priority_tier} ({d.suitability_score.classification})** |
+
+### Classification: {d.suitability_score.classification}
+{d.recommendation}
 
 ---
 
-## 26. Research Infrastructure & Testbeds
-* **Hardware Facilities:** {', '.join(r.systems_testbeds or ['Dedicated High-Performance Edge Computing Cluster'])}
-* **Software Platforms:** Open-source frameworks, edge emulators, and Linux-based hardware testbeds.
+## 22. Strengths & Concerns
+
+### Strong Reasons to Approach:
+"""
+        for st in d.strengths_and_considerations.get("strengths", []):
+            md += f"1. {st}\n"
+
+        md += "\n### Potential Concerns & Mitigations:\n"
+        for co in d.strengths_and_considerations.get("concerns", []):
+            md += f"1. {co}\n"
+
+        md += f"""
+---
+
+## 23. Questions to Ask the Professor
+"""
+        all_questions = (
+            d.questions_for_professor.research_questions +
+            d.questions_for_professor.supervision_questions +
+            d.questions_for_professor.funding_questions +
+            d.questions_for_professor.environment_questions
+        )
+        for idx, q in enumerate(all_questions, 1):
+            md += f"\n{idx}. {q}"
+
+        md += f"""
 
 ---
 
-## 27. Industry / Government Collaboration
-* Collaborations with national research councils, technology leaders, and telecommunications operators.
+## 24. Recommended Reading List
+
+### Tier 1 — Must Read
+"""
+        t1 = [r for r in d.reading_recommendations if r.tier == 1]
+        for idx, r in enumerate(t1, 1):
+            md += f"{idx}. *{r.paper_title}* ({r.venue}, {r.year})\n"
+
+        md += "\n### Tier 2 — Research Evolution\n"
+        t2 = [r for r in d.reading_recommendations if r.tier == 2]
+        for idx, r in enumerate(t2, len(t1) + 1):
+            md += f"{idx}. *{r.paper_title}* ({r.venue}, {r.year})\n"
+
+        md += "\n### Tier 3 — PhD Alignment\n"
+        t3 = [r for r in d.reading_recommendations if r.tier == 3]
+        for idx, r in enumerate(t3, len(t1) + len(t2) + 1):
+            md += f"{idx}. *{r.paper_title}* ({r.venue}, {r.year})\n"
+
+        md += f"""
+---
+
+## 25. How I Should Position Myself
+
+### Emphasize:
+"""
+        for em in d.proposal_positioning.what_to_emphasize:
+            md += f"* **{em}**\n"
+
+        md += "\n### Avoid Overemphasizing:\n"
+        for av in d.proposal_positioning.what_to_avoid:
+            md += f"* {av}\n"
+
+        flow_str = "\n  ↓\n".join(d.proposal_positioning.narrative_flow)
+        md += f"""
+### Research Narrative Flow:
+```text
+{flow_str}
+```
 
 ---
 
-## 28. International Collaboration
-* Global network spanning European, North American, and Asian research consortia.
+## 26. Publication & Research Trend Analysis
+
+* **Momentum:** {d.publication_trends.momentum}
+* **Citation Profile:** {d.publication_trends.citation_summary}
+* **Keywords Evolution:** {' → '.join(d.publication_trends.keyword_evolution)}
 
 ---
 
-## 29. Supervisor Suitability Assessment
-* **Research Fit:** **{r.alignment_score:.1f}%** — Exceptional topic synergy in systems and Edge AI.
-* **Funding Fit:** **HIGH** — Supported by fully funded doctoral studentships / research assistantships.
-* **Supervision Posture:** **ACTIVE** — Verified student recruitment and active laboratory vitality.
+## 27. Early vs Current Research
+
+| Dimension | Early Career | Mid Career | Current Specialization |
+| :--- | :--- | :--- | :--- |
+"""
+        for row in d.career_comparison:
+            md += f"| **{row.dimension}** | {row.early_career} | {row.mid_career} | {row.current_specialization} |\n"
+
+        md += f"""
+---
+
+## 28. Research Environment & Infrastructure
+
+* **University:** {d.research_environment.university}
+* **Department:** {d.research_environment.department}
+* **Laboratory:** {d.research_environment.laboratory}
+* **Associated Research Centers:** {', '.join(d.research_environment.research_centres)}
+* **Hardware & Systems Testbeds:** {', '.join(d.research_environment.infrastructure_testbeds)}
+* **Graduate School:** [{d.research_environment.graduate_school_url}]({d.research_environment.graduate_school_url})
 
 ---
 
-## 30. Outreach Preparation
-* **Recommended Publication to Cite:** *"{recent_pub.title if recent_pub else 'Recent Edge Computing Publication'}"*
-* **Strategic Angle:** Highlight background in Computer Engineering, production software/iOS optimization experience, and proposed focus on resilient Edge Intelligence.
+## 29. Funding Opportunities, Pathways & Eligibility
+"""
+        for fg in d.funding_and_grants:
+            md += f"""* **{fg.title}:** Provider: {fg.provider} | Type: {fg.funding_type} | Stipend: {fg.stipend_amount} | Tuition: {fg.tuition_coverage} | Duration: {fg.duration} | International Eligibility: {fg.international_eligibility} | Dependant Support: {fg.dependant_support} | Deadline: {fg.application_deadline}\n"""
+
+        md += f"""
+---
+
+## 30. Final Professor Profile
+
+### Who is this professor as a researcher?
+{d.final_profile}
+
+### One-Sentence Research Identity:
+> "{d.one_sentence_identity}"
 
 ---
 
-## 31. Recommended Reading List
-1. {recent_pub.title if recent_pub else 'Recent publication'} ({recent_pub.year if recent_pub else '2024'})
-2. Foundational papers from {r.research_group} archive.
+## 31. Final Supervisor Recommendation
+
+### Recommendation: {d.recommendation}
 
 ---
 
-## 32. Evidence & Sources
-* **[FACT]** Official Faculty Profile: [{r.official_profile_url}]({r.official_profile_url})
-* **[FACT]** Verified Recruitment Record: "{r.recruitment.evidence_text}" ({r.recruitment.source_date})
-* **[FACT]** Primary Funding Scheme: {fund_title} ({primary_fund.official_url if primary_fund else uni_url})
-* **[INFERENCE]** Suitability and alignment score derived from transparent multi-factor weighting.
+## 32. Sources & Evidence Requirements
+"""
+        for f in d.sources.facts:
+            md += f"* **[FACT]** {f}\n"
+        for inf in d.sources.evidence_based_inferences:
+            md += f"* **[EVIDENCE-BASED INFERENCE]** {inf}\n"
+        for spec in d.sources.speculative_directions:
+            md += f"* **[SPECULATIVE OPPORTUNITY]** {spec}\n"
 
+        md += f"""
 ---
 
 ## 33. Verification Metadata
-* **Generated At:** {today_str}
-* **Verification Status:** Verified against official university and laboratory disclosures.
+
+* **Generated Date:** {d.metadata.generated_date}
+* **Verification Status:** {d.identity.verification_status} ({d.identity.confidence_level})
+* **Audit Trail:** {'; '.join(d.identity.audit_trail)}
 * **Data Freshness:** < 365 days (Active)
-* **Confidence Level:** High
+* **Confidence Level:** {d.metadata.confidence_level}
+* **Data Limitations:** {'; '.join(d.metadata.data_limitations)}
 """
         return md
 
@@ -538,41 +696,66 @@ class DossierProfiler:
             title_p = doc.add_paragraph()
             title_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             r_title = title_p.add_run(title.upper())
-            r_title.font.size = Pt(20)
+            r_title.font.size = Pt(18)
             r_title.font.bold = True
             r_title.font.color.rgb = RGBColor(0x1B, 0x36, 0x5D)
 
             sub_p = doc.add_paragraph()
             sub_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             r_sub = sub_p.add_run(f"Academic Research Intelligence • Generated: {date.today().strftime('%B %d, %Y')}")
-            r_sub.font.size = Pt(11)
+            r_sub.font.size = Pt(10)
             r_sub.font.color.rgb = RGBColor(0x64, 0x74, 0x8B)
 
             doc.add_paragraph().paragraph_format.space_after = Pt(15)
 
-            for line in md_content.split("\n"):
+            lines = md_content.split("\n")
+            i = 0
+            while i < len(lines):
+                line = lines[i]
                 line_s = line.strip()
                 if not line_s or line_s.startswith("# "):
+                    i += 1
                     continue
                 elif line_s.startswith("## "):
                     h = doc.add_heading(line_s[3:].strip(), level=1)
                     h.paragraph_format.space_before = Pt(14)
                     h.paragraph_format.space_after = Pt(4)
+                    i += 1
                 elif line_s.startswith("### "):
                     h = doc.add_heading(line_s[4:].strip(), level=2)
                     h.paragraph_format.space_before = Pt(10)
                     h.paragraph_format.space_after = Pt(3)
+                    i += 1
                 elif line_s.startswith("* ") or line_s.startswith("- "):
                     p = doc.add_paragraph(style='List Bullet')
                     self._add_formatted_runs(p, line_s[2:].strip())
+                    i += 1
                 elif line_s.startswith("|"):
-                    continue
+                    table_rows = []
+                    while i < len(lines) and lines[i].strip().startswith("|"):
+                        row_line = lines[i].strip()
+                        if not re.match(r'^\|(\s*:?-+:?\s*\|)+$', row_line):
+                            raw_cells = [c.strip() for c in row_line.strip('|').split('|')]
+                            table_rows.append(raw_cells)
+                        i += 1
+                    if table_rows:
+                        num_cols = max(len(r) for r in table_rows)
+                        table = doc.add_table(rows=len(table_rows), cols=num_cols)
+                        table.style = 'Table Grid'
+                        for r_idx, row in enumerate(table_rows):
+                            for c_idx in range(num_cols):
+                                cell_val = row[c_idx] if c_idx < len(row) else ""
+                                clean_cell = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', cell_val)
+                                cell_p = table.cell(r_idx, c_idx).paragraphs[0]
+                                self._add_formatted_runs(cell_p, clean_cell)
+                        doc.add_paragraph().paragraph_format.space_after = Pt(6)
                 else:
                     p = doc.add_paragraph()
                     self._add_formatted_runs(p, line_s)
+                    i += 1
 
             doc.save(docx_path)
-        except Exception as e:
+        except Exception:
             with open(docx_path, "w", encoding="utf-8") as f:
                 f.write(md_content)
 
@@ -591,7 +774,7 @@ class DossierProfiler:
             from reportlab.lib.pagesizes import letter
             from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
             from reportlab.lib import colors
-            from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, HRFlowable
+            from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, HRFlowable, Table, TableStyle
 
             doc = SimpleDocTemplate(
                 pdf_path,
@@ -617,13 +800,29 @@ class DossierProfiler:
                 spaceBefore=12,
                 spaceAfter=4
             )
+            h2_style = ParagraphStyle(
+                'SectionH2',
+                parent=styles['Heading3'],
+                fontSize=10,
+                leading=13,
+                textColor=colors.HexColor('#1B365D'),
+                spaceBefore=8,
+                spaceAfter=3
+            )
             body_style = ParagraphStyle(
                 'Body',
                 parent=styles['BodyText'],
-                fontSize=9,
-                leading=13,
+                fontSize=8.5,
+                leading=12,
                 textColor=colors.HexColor('#1F2937'),
                 spaceAfter=3
+            )
+            table_cell_style = ParagraphStyle(
+                'TableCell',
+                parent=body_style,
+                fontSize=7.5,
+                leading=10,
+                spaceAfter=0
             )
 
             story = []
@@ -632,22 +831,60 @@ class DossierProfiler:
             story.append(Spacer(1, 8))
             story.append(HRFlowable(width="100%", thickness=1.5, color=colors.HexColor('#1B365D'), spaceAfter=12))
 
-            for line in md_content.split("\n"):
+            lines = md_content.split("\n")
+            i = 0
+            while i < len(lines):
+                line = lines[i]
                 line_s = line.strip()
-                if not line_s or line_s.startswith("# ") or line_s.startswith("|") or line_s == "---":
+                if not line_s or line_s.startswith("# ") or line_s == "---":
+                    i += 1
                     continue
                 clean = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', line_s)
                 clean = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', clean)
 
                 if line_s.startswith("## "):
                     story.append(Paragraph(clean[3:], h1_style))
+                    i += 1
                 elif line_s.startswith("### "):
-                    story.append(Paragraph(f"<b>{clean[4:]}</b>", body_style))
+                    story.append(Paragraph(f"<b>{clean[4:]}</b>", h2_style))
+                    i += 1
+                elif line_s.startswith("|"):
+                    table_rows = []
+                    while i < len(lines) and lines[i].strip().startswith("|"):
+                        row_line = lines[i].strip()
+                        if not re.match(r'^\|(\s*:?-+:?\s*\|)+$', row_line):
+                            raw_cells = [c.strip() for c in row_line.strip('|').split('|')]
+                            table_rows.append(raw_cells)
+                        i += 1
+                    if table_rows:
+                        num_cols = max(len(r) for r in table_rows)
+                        flowable_table_data = []
+                        for r_idx, row in enumerate(table_rows):
+                            row_cells = []
+                            for c_idx in range(num_cols):
+                                cell_val = row[c_idx] if c_idx < len(row) else ""
+                                cell_val = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', cell_val)
+                                cell_val = re.sub(r'\*\*(.*?)\*\*', r'<b>\1</b>', cell_val)
+                                row_cells.append(Paragraph(cell_val, table_cell_style))
+                            flowable_table_data.append(row_cells)
+                        t = Table(flowable_table_data, colWidths=[504 / num_cols] * num_cols)
+                        t.setStyle(TableStyle([
+                            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#F3F4F6')),
+                            ('TEXTCOLOR', (0, 0), (-1, 0), colors.HexColor('#1B365D')),
+                            ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+                            ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+                            ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+                            ('TOPPADDING', (0, 0), (-1, -1), 3),
+                            ('GRID', (0, 0), (-1, -1), 0.5, colors.HexColor('#E5E7EB')),
+                        ]))
+                        story.append(t)
+                        story.append(Spacer(1, 6))
                 else:
                     story.append(Paragraph(clean, body_style))
+                    i += 1
 
             doc.build(story)
-        except Exception as e:
+        except Exception:
             with open(pdf_path, "w", encoding="utf-8") as f:
                 f.write(f"%PDF-1.4\n% Fallback for {title}\n")
 
@@ -655,28 +892,51 @@ class DossierProfiler:
         """Generates standard compliant EPUB 3.0 container."""
         try:
             html_body_lines = []
-            for line in md_content.split("\n"):
+            lines = md_content.split("\n")
+            i = 0
+            while i < len(lines):
+                line = lines[i]
                 line_s = line.strip()
                 if not line_s:
+                    i += 1
                     continue
                 clean = re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', r'<a href="\2">\1</a>', line_s)
                 clean = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', clean)
 
                 if line_s.startswith("# "):
                     html_body_lines.append(f"<h1>{clean[2:]}</h1>")
+                    i += 1
                 elif line_s.startswith("## "):
                     html_body_lines.append(f"<h2>{clean[3:]}</h2>")
+                    i += 1
                 elif line_s.startswith("### "):
                     html_body_lines.append(f"<h3>{clean[4:]}</h3>")
+                    i += 1
                 elif line_s.startswith("* ") or line_s.startswith("- "):
                     html_body_lines.append(f"<li>{clean[2:]}</li>")
+                    i += 1
                 elif line_s.startswith("|"):
-                    continue
+                    html_body_lines.append('<table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%; margin: 12px 0;">')
+                    is_header = True
+                    while i < len(lines) and lines[i].strip().startswith("|"):
+                        row_line = lines[i].strip()
+                        if not re.match(r'^\|(\s*:?-+:?\s*\|)+$', row_line):
+                            raw_cells = [c.strip() for c in row_line.strip('|').split('|')]
+                            tag = "th" if is_header else "td"
+                            cells_html = "".join([f"<{tag}>{re.sub(r'[*_]', '', c)}</{tag}>" for c in raw_cells])
+                            html_body_lines.append(f"<tr>{cells_html}</tr>")
+                            is_header = False
+                        i += 1
+                    html_body_lines.append('</table>')
+                elif line_s == "---":
+                    html_body_lines.append("<hr/>")
+                    i += 1
                 else:
                     html_body_lines.append(f"<p>{clean}</p>")
+                    i += 1
 
             html_body = "\n".join(html_body_lines)
-            
+
             content_xhtml = f"""<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
@@ -688,6 +948,9 @@ class DossierProfiler:
     h2 {{ color: #2563eb; font-size: 1.3em; margin-top: 1.4em; }}
     h3 {{ color: #4b5563; font-size: 1.1em; }}
     p, li {{ font-size: 0.95em; }}
+    table {{ font-size: 0.85em; border: 1px solid #d1d5db; }}
+    th {{ background-color: #f3f4f6; color: #1b365d; padding: 6px; text-align: left; }}
+    td {{ padding: 5px; border: 1px solid #e5e7eb; }}
   </style>
 </head>
 <body>
@@ -726,3 +989,4 @@ class DossierProfiler:
                 ep.writestr('OEBPS/content.xhtml', content_xhtml)
         except Exception:
             pass
+

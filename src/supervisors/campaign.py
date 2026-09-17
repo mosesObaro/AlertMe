@@ -98,6 +98,7 @@ class CountryCampaignManager:
                     researcher=p,
                     university=matched_uni,
                     funding=funding,
+                    campaign=campaign,
                     reference_date=ref_date
                 )
                 generated_dossiers[p.researcher_id] = docs
