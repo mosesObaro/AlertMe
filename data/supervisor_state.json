@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T12:38:41.188430",
+  "last_updated": "2026-09-17T12:54:34.754084",
   "campaign_history": {
     "hong_kong": [
       {
@@ -254,6 +254,23 @@
       }
     ],
     "uk": [
+      {
+        "execution_date": "2026-09-17",
+        "universities_count": 8,
+        "professors_count": 9,
+        "funding_opportunities_count": 4,
+        "professors": [
+          "Prof. Jon Crowcroft",
+          "Prof. Julie A. McCann",
+          "Prof. Peter Pietzuch",
+          "Prof. Hamed Haddadi",
+          "Prof. Mahesh Marina",
+          "Prof. Nishanth Sastry",
+          "Prof. Dimitrios Pezaros",
+          "Dr. Eiko Yoneki",
+          "Prof. Cecilia Mascolo"
+        ]
+      },
       {
         "execution_date": "2026-09-17",
         "universities_count": 8,
