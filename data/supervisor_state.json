@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T12:54:34.754084",
+  "last_updated": "2026-09-17T16:40:13.767506",
   "campaign_history": {
     "hong_kong": [
       {
@@ -474,6 +474,22 @@
       }
     ],
     "canada": [
+      {
+        "execution_date": "2026-09-17",
+        "universities_count": 8,
+        "professors_count": 8,
+        "funding_opportunities_count": 2,
+        "professors": [
+          "Prof. Jiangchuan Liu",
+          "Prof. Raouf Boutaba",
+          "Prof. Karthik Pattabiraman",
+          "Prof. Di Niu",
+          "Prof. Sathish Gopalakrishnan",
+          "Prof. Yashar Ganjali",
+          "Prof. Cristiana Amza",
+          "Prof. Muthucumaru Maheswaran"
+        ]
+      },
       {
         "execution_date": "2026-09-17",
         "universities_count": 8,
