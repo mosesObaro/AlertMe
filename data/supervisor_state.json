@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T16:40:13.767506",
+  "last_updated": "2026-09-17T16:52:01.782894",
   "campaign_history": {
     "hong_kong": [
       {
@@ -424,6 +424,22 @@
       }
     ],
     "us": [
+      {
+        "execution_date": "2026-09-17",
+        "universities_count": 8,
+        "professors_count": 8,
+        "funding_opportunities_count": 3,
+        "professors": [
+          "Prof. Indranil Gupta",
+          "Prof. Sanjay Shakkottai",
+          "Prof. Tarek Abdelzaher",
+          "Prof. Joseph E. Gonzalez",
+          "Prof. Klara Nahrstedt",
+          "Prof. Mahadev Satyanarayanan (Satya)",
+          "Prof. Mung Chiang",
+          "Prof. Ion Stoica"
+        ]
+      },
       {
         "execution_date": "2026-09-17",
         "universities_count": 8,
