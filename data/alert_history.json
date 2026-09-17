@@ -1836,5 +1836,66 @@
       "forks": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "From Pixels to Semantics: Edge AI for UAV-Based Critical Infrastructure Inspection",
+    "url": "http://arxiv.org/abs/2609.18448v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Reza Farahani",
+      "Naser Hossein Motlagh",
+      "Zoha Azimi",
+      "Christian Timmerer",
+      "Lorenzo Carnevale",
+      "Sasu Tarkoma",
+      "Schahram Dustdar"
+    ],
+    "doi": null,
+    "arxiv_id": "2609.18448v1",
+    "publication_date": "2026-09-16",
+    "discovery_date": "2026-09-17",
+    "abstract": "Critical infrastructure assets such as bridges, tunnels, dams, and power line networks require timely and scalable inspection. While conventional manual inspection remains costly and hazardous, unmanned aerial vehicle (UAV)-based inspection has emerged as an efficient alternative for monitoring difficult-to-access structures. Existing UAV inspection pipelines have evolved from cloud-centric offline processing toward edge-based perception using lightweight object detectors such as YOLO for real- time defect localization. This article explores the transition toward fully edge-native semantic inspection powered by lightweight vision language models (VLMs), where UAVs move beyond object detection toward contextual structural understanding. It categorizes existing UAV inspection architectures, identifies their key system challenges and architectural requirements, and experimentally assesses the feasibility of semantic edge intelligence on NVIDIA Jetson UAV-class hardware using the COCO-Bridge dataset. The evaluation integrates a fine-tuned YOLO-26M for object localization and a lightweight SmolVLM-256 for semantic reasoning. Finally, it outlines future directions toward agentic, autonomous, trustworthy, and collaborative semantic UAV inspection across the edge-cloud continuum.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_f29abf90e7720fe5",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.8,
+      "matched_topics": [
+        "Edge Intelligence",
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Intelligence (Abstract), Edge AI (Title)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "It categorizes existing UAV inspection architectures, identifies their key system challenges and architectural requirements, and experimentally assesses the feasibility of semantic edge intelligence on NVIDIA Jetson UAV-class hardware using the COCO-Bridge dataset",
+      "methodology": "This article explores the transition toward fully edge-native semantic inspection powered by lightweight vision language models (VLMs), where UAVs move beyond object detection toward contextual structural understanding",
+      "key_contribution": "The evaluation integrates a fine-tuned YOLO-26M for object localization and a lightweight SmolVLM-256 for semantic reasoning",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.8/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
