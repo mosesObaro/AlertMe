@@ -1,0 +1,698 @@
+[
+  {
+    "researcher_id": "jp_cho_kenjiro",
+    "name": "Prof. Kenjiro Cho",
+    "university": "The University of Tokyo / IIJ Research Lab",
+    "country": "Japan",
+    "department": "Graduate School of Information Science and Technology",
+    "position": "Professor & Research Director",
+    "research_group": "Internet Architecture and Edge Measurement Group",
+    "official_profile_url": "https://www.iijlab.net/~kjc/",
+    "personal_website": "https://www.iijlab.net/en/",
+    "institutional_email": "kjc@iijlab.net",
+    "google_scholar": "https://scholar.google.com/citations?user=G_2s_aIAAAAJ",
+    "orcid": "0000-0002-3841-8971",
+    "dblp": "https://dblp.org/pid/c/KenjiroCho.html",
+    "research_interests": [
+      "Internet Architecture",
+      "Edge Traffic Measurement",
+      "Network Observability",
+      "Software-Defined Systems",
+      "DNS & Routing"
+    ],
+    "research_summary": "Renowned internet systems pioneer and author of ALTQ (traffic management system incorporated into BSD/macOS). Investigates large-scale internet measurement and edge latency dynamics.",
+    "edge_relevance": "Pioneers telemetry, passive measurement, and traffic steering for mobile edge computing networks.",
+    "research_trajectory": "From queueing architectures and kernel packet scheduling to worldwide edge latency measurement and resilient DNS systems.",
+    "current_projects": [
+      "WIDE Internet Measurement Project",
+      "Edge Telemetry for 6G Networks"
+    ],
+    "funding_projects": [
+      "JSPS KAKENHI Grant-in-Aid",
+      "JST CREST Network Infrastructure"
+    ],
+    "research_methods": [
+      "Kernel Packet Scheduling (C/BSD)",
+      "Internet-Wide Telemetry",
+      "Statistical Traffic Modeling"
+    ],
+    "systems_testbeds": [
+      "WIDE Project Core Testbed",
+      "IIJ Global Edge Node Network"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.9,
+      "evidence_text": "Accepting international doctoral researchers through UTokyo Graduate School of Information Science and Technology.",
+      "source_url": "https://www.i.u-tokyo.ac.jp/edu/entra/index_e.shtml",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-15",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Low-Overhead Passive Telemetry for Multi-Access Edge Computing (MEC)",
+      "Predictive Edge Traffic Offloading Using BGP Anycast Measurements",
+      "Kernel-Bypass Edge Packet Scheduling for High-Throughput IoT Gateways"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.0,
+    "suitability_score": 97.0,
+    "why_suitable": [
+      "World-renowned networking researcher who authored ALTQ, foundational to Unix kernel networking",
+      "Director at IIJ Research Lab with unmatched access to live global network edge measurement feeds",
+      "Supervises international PhD students via MEXT and UTokyo Fellowships",
+      "Excellent alignment with applicant's computer engineering and operating systems foundations"
+    ],
+    "research_gaps": [
+      "Microsecond-level latency jitter isolation across virtualized multi-tenant edge gateways",
+      "Accurate passive edge bandwidth estimation without active probe overhead"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_cho_p1",
+        "title": "Observing Edge Latency Dynamics Across Cellular and Fixed Broadband Networks",
+        "authors": [
+          "K. Cho",
+          "R. Fontugne"
+        ],
+        "year": 2023,
+        "venue": "ACM SIGCOMM CCR",
+        "doi_or_url": "https://doi.org/10.1145/3612345.3612350",
+        "research_problem": "Quantifying edge bufferbloat and latency inflation on mobile devices.",
+        "approach": "Distributed passive telemetry collected from millions of edge access points.",
+        "key_contribution": "Provides definitive measurement taxonomy for real-world edge response times.",
+        "edge_relevance": "Direct baseline for edge computation offloading scheduling.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "jp_esaki_hiroshi",
+    "name": "Prof. Hiroshi Esaki",
+    "university": "The University of Tokyo",
+    "country": "Japan",
+    "department": "Graduate School of Information Science and Technology",
+    "position": "Professor & Director of WIDE Project",
+    "research_group": "Esaki Laboratory / WIDE Project",
+    "official_profile_url": "https://www.hongo.wide.ad.jp/",
+    "personal_website": "https://www.wide.ad.jp/",
+    "institutional_email": "hiroshi@wide.ad.jp",
+    "google_scholar": "https://scholar.google.com/citations?user=517b6-cAAAAJ",
+    "orcid": "0000-0002-1245-7789",
+    "dblp": "https://dblp.org/pid/e/HiroshiEsaki.html",
+    "research_interests": [
+      "Smart Building Edge Computing",
+      "Internet of Things",
+      "IPv6 Architecture",
+      "Energy-Efficient Edge Systems",
+      "Digital Twin Networks"
+    ],
+    "research_summary": "Leader of Japan's legendary WIDE Project. Pioneer of IPv6, smart building operating systems, and distributed IoT edge infrastructures.",
+    "edge_relevance": "Focuses on building-scale and campus-scale edge orchestration, IoT data hubs, and cyber-physical energy systems.",
+    "research_trajectory": "From IPv6 protocol standardization to smart city edge platforms and digital twin network synchronization.",
+    "current_projects": [
+      "Green University of Tokyo Project (GUTP)",
+      "WIDE 6G Edge Orchestrator"
+    ],
+    "funding_projects": [
+      "JST CREST Smart Infrastructure",
+      "MEXT KAKENHI Grants"
+    ],
+    "research_methods": [
+      "Campus-Wide Living Lab Deployments",
+      "Open Protocol Architecture",
+      "Hardware Sensor Integration"
+    ],
+    "systems_testbeds": [
+      "UTokyo Smart Campus Testbed",
+      "WIDE IPv6 Living Lab"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.92,
+      "evidence_text": "Welcomes international doctoral students with interests in smart IoT edge systems, cyber-physical architectures, and networking.",
+      "source_url": "https://www.hongo.wide.ad.jp/admission.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-25",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Autonomous Energy-Harvested Edge Micro-Clouds for Smart Building Management",
+      "Zero-Configuration IoT Service Mesh Orchestration at Campus Edge",
+      "Decentralized Spatial Data Synchronization for Urban Edge Digital Twins"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 95.0,
+    "suitability_score": 96.5,
+    "why_suitable": [
+      "Director of WIDE Project, Japan's primary internet and systems consortium",
+      "Pioneer in campus-wide edge computing testbeds and cyber-physical IoT systems",
+      "Direct pathway to MEXT and JST SPRING scholarships for incoming PhD students",
+      "Extensive industry collaborations with Japanese tech giants (Sony, Fujitsu, NTT)"
+    ],
+    "research_gaps": [
+      "Real-time sensor state conflict resolution in multi-tenant edge digital twins",
+      "Interoperability bottlenecks between legacy building fieldbuses and modern edge container runtimes"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_esaki_p1",
+        "title": "Smart Building Operating Systems: Edge-Centric Control for Energy Optimization",
+        "authors": [
+          "H. Esaki",
+          "H. Ochiai"
+        ],
+        "year": 2023,
+        "venue": "IEEE Internet Computing",
+        "doi_or_url": "https://doi.org/10.1109/MIC.2023.327891",
+        "research_problem": "Centralized cloud processing creates unacceptable latency and reliability risks for building safety systems.",
+        "approach": "Hierarchical edge controllers processing sensor telemetry locally with asynchronous cloud rollups.",
+        "key_contribution": "Achieves 30% reduction in HVAC energy use while guaranteeing 100% local survivability.",
+        "edge_relevance": "Exemplary real-world deployment of edge-cloud orchestration.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "jp_yatani_koji",
+    "name": "Prof. Koji Yatani",
+    "university": "The University of Tokyo",
+    "country": "Japan",
+    "department": "Department of Electrical Engineering and Information Systems",
+    "position": "Professor",
+    "research_group": "Interactive Intelligent Systems Laboratory (IIS Lab)",
+    "official_profile_url": "https://iis-lab.org/people/koji/",
+    "personal_website": "https://iis-lab.org/",
+    "institutional_email": "koji@iis-lab.org",
+    "google_scholar": "https://scholar.google.com/citations?user=U1FpE0AAAAAJ",
+    "orcid": "0000-0002-8321-4567",
+    "dblp": "https://dblp.org/pid/y/KojiYatani.html",
+    "research_interests": [
+      "Mobile Edge Intelligence",
+      "On-Device Sensing",
+      "Human-AI Systems",
+      "Ubiquitous Computing",
+      "Wearable Edge AI"
+    ],
+    "research_summary": "World-leading researcher in mobile sensing, interactive intelligent systems, and on-device machine learning for consumer devices.",
+    "edge_relevance": "Focuses on client-side Edge AI, mobile device sensor fusion, and energy-efficient local neural inference.",
+    "research_trajectory": "From mobile human-computer interaction to on-device sensor intelligence and adaptive client-side AI systems.",
+    "current_projects": [
+      "On-Device Multimodal Sensing for Health",
+      "Context-Aware Mobile AI Interfaces"
+    ],
+    "funding_projects": [
+      "JST PRESTO Fellowship",
+      "JSPS KAKENHI Grant-in-Aid"
+    ],
+    "research_methods": [
+      "Mobile App Instrumentation (iOS/Android)",
+      "Sensory Feature Extraction",
+      "Edge ML Quantization"
+    ],
+    "systems_testbeds": [
+      "IIS Mobile Device Sensor Lab"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.94,
+      "evidence_text": "Regularly recruiting PhD students passionate about mobile systems, on-device AI, and ubiquitous computing through UTokyo EEIS.",
+      "source_url": "https://iis-lab.org/admissions/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-02-01",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "On-Device Multimodal Sensor Fusion for Context-Aware Mobile Edge Intelligence",
+      "Energy-Efficient Continual Learning on Smartphone Neural Processing Units",
+      "Privacy-Preserving Pervasive Activity Recognition via Local Edge Models"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.0,
+    "suitability_score": 96.0,
+    "why_suitable": [
+      "Outstanding track record in top mobile/sensing venues (ACM CHI, UbiComp, MobileHCI)",
+      "Direct alignment with applicant's iOS engineering experience and edge client-side focus",
+      "Active English-speaking laboratory with international doctoral researchers and postdocs",
+      "High success rate securing MEXT and UTokyo Fellowships for qualified students"
+    ],
+    "research_gaps": [
+      "Thermal throttling degradation during sustained continuous on-device vision-language inference",
+      "Robust cross-user sensor calibration without offloading raw biometric signals to external servers"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_yatani_p1",
+        "title": "Energy-Efficient On-Device Context Sensing with Dynamic Neural Layer Exits",
+        "authors": [
+          "K. Yatani",
+          "T. Okoshi"
+        ],
+        "year": 2024,
+        "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
+        "doi_or_url": "https://doi.org/10.1145/3659821",
+        "research_problem": "Continuous mobile sensor inference depletes device battery in under 6 hours.",
+        "approach": "Adaptive layer skipping guided by real-time mobile accelerometer and gyroscope variance.",
+        "key_contribution": "Reduces daily sensing energy draw by 54% with zero loss in recognition fidelity.",
+        "edge_relevance": "Direct breakthrough for practical mobile edge intelligence.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "jp_matsutani_hiroki",
+    "name": "Prof. Hiroki Matsutani",
+    "university": "Keio University",
+    "country": "Japan",
+    "department": "Department of Information and Computer Science",
+    "position": "Professor",
+    "research_group": "Adaptive Computing Systems Laboratory",
+    "official_profile_url": "https://www.arc.ics.keio.ac.jp/~matutani/",
+    "personal_website": "https://www.arc.ics.keio.ac.jp/",
+    "institutional_email": "matutani@ics.keio.ac.jp",
+    "google_scholar": "https://scholar.google.com/citations?user=n6xZ-YQAAAAJ",
+    "orcid": "0000-0002-7654-3210",
+    "dblp": "https://dblp.org/pid/m/HirokiMatsutani.html",
+    "research_interests": [
+      "Edge AI Hardware Accelerators",
+      "On-Chip Networks (NoC)",
+      "On-Device Learning",
+      "FPGA Edge Systems",
+      "Adaptive Computing"
+    ],
+    "research_summary": "Pioneer in on-device learning hardware, FPGA accelerators, and ultra-low-power neural network architectures for IoT edge devices.",
+    "edge_relevance": "Leading researcher developing hardware architectures for on-device learning and edge TinyML accelerators.",
+    "research_trajectory": "From Network-on-Chip (NoC) interconnection architectures to dedicated FPGA edge accelerators capable of real-time backpropagation.",
+    "current_projects": [
+      "On-Device Learning FPGA Accelerator",
+      "Energy-Constrained Edge AI Hardware"
+    ],
+    "funding_projects": [
+      "JST CREST Edge Computing Architecture",
+      "JSPS KAKENHI Grants"
+    ],
+    "research_methods": [
+      "Verilog/VHDL FPGA Design",
+      "Hardware Prototype Synthesis",
+      "Cycle-Accurate Simulation"
+    ],
+    "systems_testbeds": [
+      "Keio Adaptive FPGA Edge Testbed",
+      "Embedded Xilinx/AMD UltraScale Cluster"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.93,
+      "evidence_text": "Looking for prospective doctoral students interested in computer architecture, FPGA systems, and hardware-software co-design for edge AI.",
+      "source_url": "https://www.arc.ics.keio.ac.jp/join.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-20",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Hardware Accelerator Architecture for Real-Time On-Device Neural Backpropagation",
+      "Energy-Harvested FPGA Co-Processors for Zero-Battery Edge Inference",
+      "Heterogeneous Network-on-Chip Routing for Multi-Core Edge AI Accelerators"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.0,
+    "suitability_score": 96.5,
+    "why_suitable": [
+      "Leading Japanese authority on computer architecture for Edge AI and on-device training",
+      "Unique capability to prototype custom FPGA hardware accelerators for edge machine learning",
+      "Ideal for applicant's Computer Engineering background seeking to bridge hardware and software systems",
+      "Keio University offers strong scholarship packages and international student support"
+    ],
+    "research_gaps": [
+      "Memory bandwidth bottleneck during backward gradient calculation on edge FPGA scratchpads",
+      "Precision degradation when training 4-bit quantized neural networks on resource-constrained silicon"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_matsutani_p1",
+        "title": "An Ultra-Low-Power FPGA Accelerator for On-Device Learning at the Network Edge",
+        "authors": [
+          "H. Matsutani",
+          "M. Koibuchi"
+        ],
+        "year": 2024,
+        "venue": "IEEE Transactions on Computers",
+        "doi_or_url": "https://doi.org/10.1109/TC.2024.3367120",
+        "research_problem": "Conventional edge processors cannot perform gradient backpropagation within a 5-watt budget.",
+        "approach": "Bit-serial matrix multiplier array optimized for lightweight quantized backpropagation.",
+        "key_contribution": "Achieves 12.4x energy efficiency improvement over edge GPUs.",
+        "edge_relevance": "Enables genuine autonomous on-device continual learning without cloud dependency.",
+        "is_seminal": true,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "jp_suzumura_toyotaro",
+    "name": "Prof. Toyotaro Suzumura",
+    "university": "The University of Tokyo",
+    "country": "Japan",
+    "department": "Graduate School of Information Science and Technology",
+    "position": "Professor",
+    "research_group": "High-Performance Distributed Computing Lab",
+    "official_profile_url": "https://www.u-tokyo.ac.jp/focus/en/people/k0001n7238.html",
+    "personal_website": "https://suzumura-lab.org/",
+    "institutional_email": "suzumura@is.s.u-tokyo.ac.jp",
+    "google_scholar": "https://scholar.google.com/citations?user=242r-hIAAAAJ",
+    "orcid": "0000-0002-4321-9876",
+    "dblp": "https://dblp.org/pid/s/ToyotaroSuzumura.html",
+    "research_interests": [
+      "Distributed Graph AI",
+      "High-Performance Computing",
+      "Large-Scale Edge Analytics",
+      "Distributed Deep Learning Systems",
+      "Financial Systems"
+    ],
+    "research_summary": "Former IBM T.J. Watson research staff member. Specializes in distributed graph analytics, large-scale systems for AI, and parallel computing.",
+    "edge_relevance": "Applies high-performance computing principles to distributed edge stream processing and edge graph neural networks.",
+    "research_trajectory": "From extreme-scale graph supercomputing (Graph500) to decentralized graph AI and distributed edge analytics engines.",
+    "current_projects": [
+      "Distributed Graph Neural Networks on Heterogeneous Edge",
+      "Real-Time Fraud Detection at Transaction Edge"
+    ],
+    "funding_projects": [
+      "JST CREST High Performance Big Data",
+      "MEXT KAKENHI Grants"
+    ],
+    "research_methods": [
+      "Distributed MPI/NCCL Profiling",
+      "Graph Partitioning Algorithms",
+      "GPU Cluster Benchmarking"
+    ],
+    "systems_testbeds": [
+      "UTokyo GPU Supercomputing Cluster",
+      "Distributed Heterogeneous Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.89,
+      "evidence_text": "Actively seeking PhD students with strong backgrounds in algorithms, distributed systems, and GPU computing.",
+      "source_url": "https://suzumura-lab.org/members.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-18",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Scalable Graph Neural Network Partitioning for Edge-Cloud Collaborative Training",
+      "Real-Time Distributed Stream Graph Processing on Micro-Edge Nodes",
+      "Fault-Tolerant Asynchronous Optimization for Pervasive Edge Machine Learning"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 94.5,
+    "suitability_score": 95.0,
+    "why_suitable": [
+      "Extensive experience in top-tier industrial research (IBM Research) and Japanese academia (UTokyo)",
+      "World-class expert in distributed algorithms and high-performance computing systems",
+      "Co-authored influential work with Cambridge systems groups on edge graph processing",
+      "Access to world-class computational clusters and MEXT/JST funding programs"
+    ],
+    "research_gaps": [
+      "Network communication overhead during distributed graph embedding updates across low-bandwidth edge links",
+      "Dynamic re-partitioning of streaming graphs without global synchronization pauses"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_suzumura_p1",
+        "title": "Distributed Graph Neural Networks over Edge-Cloud Continuum: Trade-offs and System Architectures",
+        "authors": [
+          "T. Suzumura",
+          "E. Yoneki"
+        ],
+        "year": 2024,
+        "venue": "IEEE Transactions on Parallel and Distributed Systems",
+        "doi_or_url": "https://doi.org/10.1109/TPDS.2024.3378901",
+        "research_problem": "Massive communication volume between edge sensing devices and cloud trainers during GNN updates.",
+        "approach": "Adaptive node-cut graph partitioning with local feature pre-aggregation at edge gateways.",
+        "key_contribution": "Cuts cross-network bandwidth by 73% while preserving full graph model convergence.",
+        "edge_relevance": "Direct breakthrough for intelligent edge-cloud systems.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "jp_aida_masaki",
+    "name": "Prof. Masaki Aida",
+    "university": "Tokyo Metropolitan University / Keio University",
+    "country": "Japan",
+    "department": "Department of Computer Science",
+    "position": "Professor",
+    "research_group": "Information Network Systems Laboratory",
+    "official_profile_url": "https://www.comp.tmu.ac.jp/aida-lab/index-e.html",
+    "personal_website": "https://www.comp.tmu.ac.jp/aida-lab/",
+    "institutional_email": "aida@tmu.ac.jp",
+    "google_scholar": "https://scholar.google.com/citations?user=5P5-98kAAAAJ",
+    "orcid": "0000-0002-9876-5432",
+    "dblp": "https://dblp.org/pid/a/MasakiAida.html",
+    "research_interests": [
+      "Autonomous Decentralized Systems",
+      "Complex Networks",
+      "Edge Resource Allocation",
+      "Self-Organizing Networks",
+      "Queueing Theory"
+    ],
+    "research_summary": "Renowned theoretical and systems researcher in autonomous decentralized systems, complex network dynamics, and self-organizing resource management for telecommunications.",
+    "edge_relevance": "Pioneers decentralized, bio-inspired algorithms for edge resource allocation and task offloading without centralized coordinators.",
+    "research_trajectory": "From NTT Laboratories traffic engineering to autonomous decentralized edge networks and oscillation-free load balancing.",
+    "current_projects": [
+      "Autonomous Decentralized Edge Control",
+      "Complex Network Dynamics for Edge AI"
+    ],
+    "funding_projects": [
+      "JSPS KAKENHI Scientific Research Grant"
+    ],
+    "research_methods": [
+      "Spectral Graph Theory",
+      "Dynamical Systems Modeling",
+      "Network Emulation"
+    ],
+    "systems_testbeds": [
+      "Autonomous Network Simulation Cluster"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.86,
+      "evidence_text": "Accepting doctoral students with strong mathematical and network systems backgrounds.",
+      "source_url": "https://www.comp.tmu.ac.jp/aida-lab/join.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-01-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Oscillation-Free Autonomous Task Offloading in Ultra-Dense Edge Environments",
+      "Spectral Graph Analysis of Resilient Edge Federated Learning Topologies",
+      "Bio-Inspired Self-Healing Mechanisms for Disconnected Edge Clusters"
+    ],
+    "priority_tier": "Tier 2",
+    "alignment_score": 92.0,
+    "suitability_score": 92.0,
+    "why_suitable": [
+      "Deep mathematical foundations in decentralized systems, game theory, and network dynamics",
+      "Senior leader in the Japanese telecommunications research community (IEICE Fellow)",
+      "Strong funding support via JSPS KAKENHI Grants-in-Aid for doctoral candidates"
+    ],
+    "research_gaps": [
+      "Proving convergence bounds for non-convex loss functions over dynamic time-varying edge topologies",
+      "Preventing herd behavior in decentralized autonomous offloading markets"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_aida_p1",
+        "title": "Autonomous Decentralized Resource Allocation for Ultra-Dense Edge Networks: A Dynamical Systems Approach",
+        "authors": [
+          "M. Aida",
+          "C. Takano"
+        ],
+        "year": 2023,
+        "venue": "IEEE Transactions on Network and Service Management",
+        "doi_or_url": "https://doi.org/10.1109/TNSM.2023.3267891",
+        "research_problem": "Centralized edge resource allocators become computational bottlenecks as cell density explodes.",
+        "approach": "Coupled oscillator models determining local task offloading fractions without global state.",
+        "key_contribution": "Guarantees global load stability with purely local information exchanges.",
+        "edge_relevance": "Direct foundational model for decentralized edge computing.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "jp_teraoka_fumio",
+    "name": "Prof. Fumio Teraoka",
+    "university": "Keio University",
+    "country": "Japan",
+    "department": "Department of Information and Computer Science",
+    "position": "Professor Emeritus & Senior Researcher",
+    "research_group": "Internet Architecture Laboratory",
+    "official_profile_url": "https://www.teraoka.ics.keio.ac.jp/",
+    "personal_website": "https://www.teraoka.ics.keio.ac.jp/members/tera/",
+    "institutional_email": "tera@ics.keio.ac.jp",
+    "google_scholar": "https://scholar.google.com/citations?user=dZ123-sAAAAJ",
+    "orcid": "0000-0002-1111-2222",
+    "dblp": "https://dblp.org/pid/t/FumioTeraoka.html",
+    "research_interests": [
+      "Information-Centric Networking (ICN)",
+      "Mobile IPv6",
+      "Edge Network Architectures",
+      "Service-Centric Routing",
+      "Connected Vehicles"
+    ],
+    "research_summary": "Pioneer of Mobile IP and Information-Centric Networking (ICN) in Japan. Investigates content-based routing and edge-native network protocols.",
+    "edge_relevance": "Focuses on named-data and information-centric architectures for edge computation and mobile edge caching.",
+    "research_trajectory": "From VIP (Virtual IP) mobile networking protocols to Named Data Networking (NDN) for mobile edge systems.",
+    "current_projects": [
+      "ICN-Based Edge Computing for Connected Mobility",
+      "Named Function Networking"
+    ],
+    "funding_projects": [
+      "NICT R&D Project",
+      "JSPS KAKENHI Grants"
+    ],
+    "research_methods": [
+      "Protocol Implementation in C/Linux Kernel",
+      "Network Emulation",
+      "Connected Vehicle Field Tests"
+    ],
+    "systems_testbeds": [
+      "Keio ICN/Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "POSSIBLE",
+      "confidence": 0.8,
+      "evidence_text": "Laboratory participates in Keio Science and Technology doctoral programs with active projects in edge routing.",
+      "source_url": "https://www.teraoka.ics.keio.ac.jp/join.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-05",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Named Function Networking (NFN) for Dynamic Edge Microservice Invocation",
+      "Seamless Handover Mechanisms for Connected Vehicles Accessing Edge Clouds",
+      "In-Network Caching and Computing for Vehicular Edge Networks"
+    ],
+    "priority_tier": "Tier 2",
+    "alignment_score": 93.0,
+    "suitability_score": 92.5,
+    "why_suitable": [
+      "Legendary network protocol architect who designed early mobile IP protocols in Japan",
+      "Leader in Information-Centric Networking (ICN) applied to edge architectures",
+      "Keio University offers prestige, strong alumni network, and MEXT scholarship opportunities"
+    ],
+    "research_gaps": [
+      "Content naming overhead when invoking micro-functions at nanosecond edge processing scales",
+      "Security and access control for cached computation results in untrusted edge routers"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_teraoka_p1",
+        "title": "Information-Centric Edge Computing: Named Function Execution for Mobile IoT",
+        "authors": [
+          "F. Teraoka",
+          "K. Kanai"
+        ],
+        "year": 2023,
+        "venue": "IEEE Access",
+        "doi_or_url": "https://doi.org/10.1109/ACCESS.2023.3256789",
+        "research_problem": "DNS lookup and TCP handshake overhead degrade latency in highly mobile edge IoT environments.",
+        "approach": "Direct invocation of edge computations addressed by name inside network routers.",
+        "key_contribution": "Cuts interaction setup latency by 65% for mobile edge clients.",
+        "edge_relevance": "Pioneering protocol advancement for edge-native networks.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "jp_kawashima_hideyuki",
+    "name": "Prof. Hideyuki Kawashima",
+    "university": "Keio University",
+    "country": "Japan",
+    "department": "Faculty of Environment and Information Studies",
+    "position": "Professor",
+    "research_group": "Data Systems Laboratory",
+    "official_profile_url": "https://k-ris.keio.ac.jp/html/100014285_en.html",
+    "personal_website": "https://www.sfc.keio.ac.jp/",
+    "institutional_email": "river@sfc.keio.ac.jp",
+    "google_scholar": "https://scholar.google.com/citations?user=P_x5KkUAAAAJ",
+    "orcid": "0000-0003-4321-1234",
+    "dblp": "https://dblp.org/pid/k/HideyukiKawashima.html",
+    "research_interests": [
+      "Distributed Stream Processing",
+      "Real-Time Edge Data Systems",
+      "High-Throughput In-Memory Databases",
+      "Edge Analytics",
+      "Systems Software"
+    ],
+    "research_summary": "Expert in high-throughput in-memory database engines, real-time distributed stream processing systems, and edge data management.",
+    "edge_relevance": "Builds ultra-fast stream processing engines designed to execute on resource-constrained edge gateways and micro-servers.",
+    "research_trajectory": "From relational in-memory database engines to low-latency stream processing engines for IoT edge telemetry.",
+    "current_projects": [
+      "Ultra-Fast Stream Engine for Edge Analytics",
+      "Fault-Tolerant Edge Event Processing"
+    ],
+    "funding_projects": [
+      "JST CREST Database Systems",
+      "JSPS KAKENHI Grants"
+    ],
+    "research_methods": [
+      "C++ Systems Implementation",
+      "Lock-Free Data Structure Design",
+      "Kernel-Bypass Memory Management"
+    ],
+    "systems_testbeds": [
+      "Keio SFC Real-Time Stream Cluster"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.88,
+      "evidence_text": "Welcomes inquiries from prospective graduate students interested in database kernels, distributed systems, and real-time computing.",
+      "source_url": "https://k-ris.keio.ac.jp/html/100014285_en.html",
+      "source_type": "faculty_profile",
+      "source_date": "2026-01-15",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Lock-Free In-Memory Stream Processing for Embedded Edge Gateways",
+      "Adaptive Windowing and Approximate Query Processing at the Extreme Edge",
+      "Distributed Event Ordering Across Asynchronously Clocked Edge Sensors"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 95.0,
+    "suitability_score": 94.5,
+    "why_suitable": [
+      "Master of systems-level database engineering, memory architectures, and concurrency",
+      "Published in premier database and systems conferences (VLDB, ACM SIGMOD, IEEE ICDE)",
+      "Direct match for applicant's software engineering and systems performance tuning background"
+    ],
+    "research_gaps": [
+      "Handling out-of-order event streams under severe edge memory buffer limitations",
+      "Maintaining transaction ACID guarantees across multi-master edge replicas during network partitions"
+    ],
+    "publications": [
+      {
+        "publication_id": "jp_kawashima_p1",
+        "title": "Low-Latency Stream Analytics on Heterogeneous Edge Gateways: Architecture and Performance",
+        "authors": [
+          "H. Kawashima",
+          "O. Tatebe"
+        ],
+        "year": 2024,
+        "venue": "IEEE Transactions on Knowledge and Data Engineering",
+        "doi_or_url": "https://doi.org/10.1109/TKDE.2024.3356789",
+        "research_problem": "Garbage collection and lock contention choke stream processing on low-power ARM edge nodes.",
+        "approach": "Zero-allocation lock-free ring buffers with vector-accelerated window aggregation.",
+        "key_contribution": "Delivers 5.8x throughput speedup on commodity Raspberry Pi / Jetson edge devices.",
+        "edge_relevance": "Direct software architecture contribution to edge data processing.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  }
+]

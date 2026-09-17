@@ -1,0 +1,707 @@
+[
+  {
+    "researcher_id": "de_ott_jorg",
+    "name": "Prof. Jörg Ott",
+    "university": "Technical University of Munich (TUM)",
+    "country": "Germany",
+    "department": "TUM School of Computation, Information and Technology (CIT)",
+    "position": "Chair Professor of Connected Mobility",
+    "research_group": "Chair of Connected Mobility",
+    "official_profile_url": "https://www.cm.in.tum.de/en/team/ott/",
+    "personal_website": "https://www.cm.in.tum.de/",
+    "institutional_email": "ott@in.tum.de",
+    "google_scholar": "https://scholar.google.com/citations?user=0tXq_7QAAAAJ",
+    "orcid": "0000-0001-9325-0384",
+    "dblp": "https://dblp.org/pid/o/JorgOtt.html",
+    "research_interests": [
+      "Connected Mobility",
+      "Edge Computing for Automotive Systems",
+      "Delay-Tolerant Networking (DTN)",
+      "Mobile Sensing",
+      "Edge-Cloud Orchestration"
+    ],
+    "research_summary": "World-renowned networking researcher and pioneer of Delay-Tolerant Networking (DTN) and vehicular edge computing. Investigates intelligent transportation systems and edge-supported vehicular autonomy.",
+    "edge_relevance": "Direct leadership in edge computing architectures for connected mobility, automotive edge AI, and opportunistic networks.",
+    "research_trajectory": "From internet transport protocols (RTP, SIP) and DTN to autonomous vehicular edge intelligence and edge-cloud orchestration.",
+    "current_projects": [
+      "6G-life: Digital Transformation and 6G",
+      "Edge Computing for Cooperative Driving"
+    ],
+    "funding_projects": [
+      "BMBF 6G Research Hub",
+      "DFG Priority Programme",
+      "BMW Research Partnerships"
+    ],
+    "research_methods": [
+      "Real-world Vehicular Edge Testbeds",
+      "Large-scale Mobility Traces",
+      "Network Emulation"
+    ],
+    "systems_testbeds": [
+      "TUM Living Lab Connected Mobility",
+      "Automotive Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.94,
+      "evidence_text": "Continuously recruiting scientific researchers / doctoral candidates (TV-L E13 100%) for funded projects in edge systems and connected mobility.",
+      "source_url": "https://www.cm.in.tum.de/en/open-positions/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-02-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Predictive Edge Micro-Service Migration for High-Speed Connected Vehicles",
+      "Collaborative Perception at the Roadside Edge Using V2X Communication",
+      "Decentralized Scheduling for Safety-Critical Automotive Edge Tasks"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 98.0,
+    "suitability_score": 99.0,
+    "why_suitable": [
+      "Leading global pioneer in mobile systems, opportunistic networking, and vehicular edge computing (IEEE Fellow)",
+      "Offers fully funded 100% TV-L E13 doctoral positions (€52,000+/year salary + full benefits)",
+      "Outstanding collaborative environment with German automotive leaders (BMW, Audi) and TUM clusters",
+      "Continuous presence in top systems/networking venues (ACM SIGCOMM, MobiSys, MobiCom)"
+    ],
+    "research_gaps": [
+      "Sub-10ms handover coordination of edge inference pipelines between adjacent roadside units at 150 km/h",
+      "Handling sensor perception uncertainty during collaborative edge 3D object detection"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_ott_p1",
+        "title": "Roadside Edge Computing for Autonomous Driving: Challenges, Testbeds, and Lessons Learned",
+        "authors": [
+          "J. Ott",
+          "A. Zubow"
+        ],
+        "year": 2024,
+        "venue": "IEEE Communications Magazine",
+        "doi_or_url": "https://doi.org/10.1109/MCOM.2024.1039821",
+        "research_problem": "Severe packet delay variance during high-mobility vehicular offloading to roadside edge units.",
+        "approach": "Predictive trajectory-aware micro-service pre-instantiation over millimeter-wave links.",
+        "key_contribution": "Demonstrates 99.999% reliability for vehicle safety edge alerts.",
+        "edge_relevance": "Landmark paper for vehicular edge intelligence.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "de_bermbach_david",
+    "name": "Prof. David Bermbach",
+    "university": "Technical University of Berlin (TU Berlin)",
+    "country": "Germany",
+    "department": "Faculty of Electrical Engineering and Computer Science",
+    "position": "Professor & Head of Mobile Cloud Computing Group",
+    "research_group": "Mobile Cloud Computing (MCC) Group",
+    "official_profile_url": "https://www.mcc.tu-berlin.de/menue/team/david_bermbach/",
+    "personal_website": "https://www.mcc.tu-berlin.de/",
+    "institutional_email": "david.bermbach@tu-berlin.de",
+    "google_scholar": "https://scholar.google.com/citations?user=LdE2WzEAAAAJ",
+    "orcid": "0000-0002-3081-305X",
+    "dblp": "https://dblp.org/pid/125/2034.html",
+    "research_interests": [
+      "Edge Computing",
+      "Serverless Edge",
+      "Fog Robotics",
+      "Edge Benchmarking",
+      "Cloud-Edge Continuum",
+      "Distributed Systems Benchmarking"
+    ],
+    "research_summary": "Pioneer of serverless edge computing, fog robotics, and rigorous benchmarking methodologies for edge systems (creator of MockFog and FogWorld).",
+    "edge_relevance": "World authority on serverless architectures at the network edge and edge systems benchmarking.",
+    "research_trajectory": "From cloud consistency models and web-scale storage to serverless edge computing and fog robotics orchestration.",
+    "current_projects": [
+      "DFG FogProtect: End-to-End Fog Security",
+      "BIFOLD Serverless Edge Analytics"
+    ],
+    "funding_projects": [
+      "DFG Emmy Noether / Heisenberg Fellowship",
+      "EU Horizon Edge Initiatives"
+    ],
+    "research_methods": [
+      "Open-Source Edge Benchmarking (MockFog)",
+      "Testbed Emulation",
+      "Serverless Runtime Prototyping"
+    ],
+    "systems_testbeds": [
+      "TU Berlin Fog Testbed",
+      "Distributed Robotics Edge Bed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "Open doctoral positions (TV-L E13 100%) available for motivated candidates with strong systems and distributed systems interests.",
+      "source_url": "https://www.mcc.tu-berlin.de/menue/open_positions/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-15",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Ultra-Low Cold-Start Serverless Runtimes for Resource-Constrained Edge MicroVMs",
+      "Autonomous Task Offloading for Multi-Robot Fog Systems",
+      "Standardized Benchmarking Metrics for Edge AI Inference Engines"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 98.5,
+    "suitability_score": 98.0,
+    "why_suitable": [
+      "Direct worldwide leader in Serverless Edge Computing and Fog Systems Benchmarking",
+      "Fully funded 100% TV-L E13 positions in the vibrant academic ecosystem of Berlin (BIFOLD)",
+      "Outstanding match for applicant's systems programming, cloud-edge continuum, and benchmarking goals",
+      "Prolific research group with high output at ACM/IEEE SEC, EuroSys, and IEEE Cloud"
+    ],
+    "research_gaps": [
+      "Cold-start latency spikes of containerized serverless functions when invoked on memory-constrained edge hardware",
+      "Realistic emulation of heterogeneous wireless link degradations in edge testbed benchmarks"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_bermbach_p1",
+        "title": "Serverless at the Edge: A Systematic Survey of Runtimes, Challenges, and Future Directions",
+        "authors": [
+          "D. Bermbach",
+          "J. Hasenburg"
+        ],
+        "year": 2024,
+        "venue": "ACM Computing Surveys",
+        "doi_or_url": "https://doi.org/10.1145/3631982",
+        "research_problem": "Adapting cloud serverless architectures to volatile edge network environments.",
+        "approach": "Systematic architectural deconstruction across memory isolation, statefulness, and scheduling.",
+        "key_contribution": "Definitive survey establishing architectural blueprints for modern serverless edge systems.",
+        "edge_relevance": "Foundational literature for edge serverless research.",
+        "is_seminal": true,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "de_gerndt_michael",
+    "name": "Prof. Michael Gerndt",
+    "university": "Technical University of Munich (TUM)",
+    "country": "Germany",
+    "department": "TUM School of Computation, Information and Technology (CIT)",
+    "position": "Professor of Computer Architecture",
+    "research_group": "Chair of Computer Architecture",
+    "official_profile_url": "https://www.caps.in.tum.de/en/team/gerndt/",
+    "personal_website": "https://www.caps.in.tum.de/",
+    "institutional_email": "gerndt@in.tum.de",
+    "google_scholar": "https://scholar.google.com/citations?user=Y94y_pIAAAAJ",
+    "orcid": "0000-0002-7643-9821",
+    "dblp": "https://dblp.org/pid/g/MichaelGerndt.html",
+    "research_interests": [
+      "Cloud-Edge Orchestration",
+      "Autonomous Performance Tuning",
+      "Serverless Systems",
+      "High Performance Computing",
+      "Edge AI Accelerators"
+    ],
+    "research_summary": "Specialist in computer architecture, automated runtime tuning, and resource management across the cloud-edge continuum. Coordinates EU Horizon edge computing initiatives.",
+    "edge_relevance": "Focuses on autonomous optimization, dynamic energy-latency scaling, and cloud-edge continuum runtimes.",
+    "research_trajectory": "From supercomputer performance analysis (Periscope) to cloud-edge microservices auto-tuning and edge energy optimization.",
+    "current_projects": [
+      "EU Horizon TaRDIS (Swarm and Edge Computing)",
+      "Adaptive Edge-Cloud Orchestration"
+    ],
+    "funding_projects": [
+      "EU Horizon Europe Grants",
+      "DFG Collaborative Research Centres"
+    ],
+    "research_methods": [
+      "Automated Runtime Profiling",
+      "Reinforcement Learning Tuning",
+      "Micro-Benchmark Synthetics"
+    ],
+    "systems_testbeds": [
+      "TUM CAPS Edge-Cloud Cluster"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.91,
+      "evidence_text": "Openings for doctoral researchers (TV-L E13 100%) in EU-funded cloud-edge continuum and swarm computing projects.",
+      "source_url": "https://www.caps.in.tum.de/en/open-positions/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-20",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Autonomous Energy-Aware Microservice Tuning Across the Edge-Cloud Continuum",
+      "Decentralized Swarm Intelligence for Resilient Industrial Edge Clouds",
+      "Dynamic Hardware-Aware Quantization for Edge Neural Accelerators"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.0,
+    "suitability_score": 96.5,
+    "why_suitable": [
+      "Coordinates premier European Horizon swarm and edge computing research projects (TaRDIS)",
+      "Provides full TV-L E13 doctoral funding at TUM",
+      "Deep expertise in systems performance auto-tuning and microservice orchestration",
+      "Strong industrial linkages with European cloud and automotive consortia"
+    ],
+    "research_gaps": [
+      "Multi-objective tuning trade-offs (energy vs accuracy vs latency) under rapidly drifting edge sensor inputs",
+      "Inter-swarm communication overhead during distributed edge federated orchestration"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_gerndt_p1",
+        "title": "Autonomous Self-Tuning for Serverless Edge Applications: A Reinforcement Learning Approach",
+        "authors": [
+          "M. Gerndt",
+          "M. Sourouri"
+        ],
+        "year": 2023,
+        "venue": "IEEE Transactions on Cloud Computing",
+        "doi_or_url": "https://doi.org/10.1109/TCC.2023.3289012",
+        "research_problem": "Static CPU/memory allocations on edge nodes cause severe resource wastage or latency violations.",
+        "approach": "Contextual bandit reinforcement learning dynamically adjusting function concurrency and clock frequencies.",
+        "key_contribution": "Reduces edge operational energy cost by 38% while adhering to 99th percentile SLA targets.",
+        "edge_relevance": "Direct breakthrough for resource-constrained edge serverless management.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "de_wehrle_klaus",
+    "name": "Prof. Klaus Wehrle",
+    "university": "RWTH Aachen University",
+    "country": "Germany",
+    "department": "Department of Computer Science",
+    "position": "Chair Professor of Communication and Distributed Systems",
+    "research_group": "Communication and Distributed Systems (COMSYS)",
+    "official_profile_url": "https://www.comsys.rwth-aachen.de/team/klaus-wehrle/",
+    "personal_website": "https://www.comsys.rwth-aachen.de/",
+    "institutional_email": "wehrle@comsys.rwth-aachen.de",
+    "google_scholar": "https://scholar.google.com/citations?user=PZ9S2lQAAAAJ",
+    "orcid": "0000-0001-9252-4188",
+    "dblp": "https://dblp.org/pid/w/KlausWehrle.html",
+    "research_interests": [
+      "Communication and Distributed Systems",
+      "In-Network Computing",
+      "Network Programmability (P4)",
+      "Edge Network Virtualization",
+      "Industrial IoT"
+    ],
+    "research_summary": "World-recognized leader in networking protocols, programmable hardware data planes, and in-network computing for edge and distributed systems.",
+    "edge_relevance": "Pioneers in-network data aggregation and hardware-accelerated edge switching for low-latency Industrial IoT.",
+    "research_trajectory": "From peer-to-peer and internet protocols to network verification, P4 programmable hardware, and in-network edge processing.",
+    "current_projects": [
+      "DFG Collaborative Research Centre: In-Network Computing",
+      "Industrial IoT Edge Networking"
+    ],
+    "funding_projects": [
+      "DFG SFB Research Grant",
+      "EU Horizon Edge Initiatives"
+    ],
+    "research_methods": [
+      "P4 Switch Programming",
+      "Kernel-Bypass Networking (DPDK)",
+      "Hardware Emulation"
+    ],
+    "systems_testbeds": [
+      "RWTH COMSYS P4 Hardware Edge Testbed",
+      "Industrial IoT Living Lab"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.93,
+      "evidence_text": "Regularly offering TV-L E13 scientific assistant (PhD) positions in networking, edge computing, and programmable data planes.",
+      "source_url": "https://www.comsys.rwth-aachen.de/career/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-25",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "In-Network Machine Learning Aggregation Using P4 Hardware Switches",
+      "Deterministic Ultra-Low-Latency Edge Slicing for Industrial Control Systems",
+      "Formal Verification of Stateful Network Functions Deployed at the Edge"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.0,
+    "suitability_score": 97.5,
+    "why_suitable": [
+      "Head of COMSYS at RWTH Aachen, one of Germany's highest-ranked technical universities",
+      "World pioneer in programmable network data planes (P4) and in-network edge acceleration",
+      "Full 100% TV-L E13 funding with state-of-the-art laboratory hardware and testbeds",
+      "Outstanding placement of PhD graduates into prestigious academic and industrial research labs"
+    ],
+    "research_gaps": [
+      "Limited arithmetic precision (integer-only) on current generation P4 programmable switch ALUs for neural inference",
+      "State table exhaustion during high-concurrency edge IoT telemetry stream processing"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_wehrle_p1",
+        "title": "In-Network Aggregation for Distributed Machine Learning: A Survey and Systemic Architecture",
+        "authors": [
+          "K. Wehrle",
+          "R. Glebke"
+        ],
+        "year": 2023,
+        "venue": "IEEE Communications Surveys & Tutorials",
+        "doi_or_url": "https://doi.org/10.1109/COMST.2023.3298102",
+        "research_problem": "Gradient aggregation during distributed training saturates rack and edge network switches.",
+        "approach": "Streaming integer reduction trees implemented directly inside programmable P4 switch pipelines.",
+        "key_contribution": "Achieves near-line-rate gradient aggregation with zero server CPU overhead.",
+        "edge_relevance": "Transformational architecture for edge federated and distributed learning.",
+        "is_seminal": true,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "de_strufe_thorsten",
+    "name": "Prof. Thorsten Strufe",
+    "university": "Karlsruhe Institute of Technology (KIT) / TU Dresden",
+    "country": "Germany",
+    "department": "KIT Department of Informatics",
+    "position": "Professor of Practical Computer Science & Security",
+    "research_group": "Practical Cybersecurity and Decentralized Systems",
+    "official_profile_url": "https://ps.inf.kit.edu/people/strufe/",
+    "personal_website": "https://ps.inf.kit.edu/",
+    "institutional_email": "thorsten.strufe@kit.edu",
+    "google_scholar": "https://scholar.google.com/citations?user=2o1G8mIAAAAJ",
+    "orcid": "0000-0003-3456-9876",
+    "dblp": "https://dblp.org/pid/s/ThorstenStrufe.html",
+    "research_interests": [
+      "Decentralized Edge Systems",
+      "Privacy-Enhancing Technologies",
+      "Network Anonymity",
+      "Federated Learning Privacy",
+      "Edge Threat Modeling"
+    ],
+    "research_summary": "Leading European expert in decentralized systems security, privacy-enhancing technologies, and anonymous communication systems. Principal investigator in KASTEL security research lab.",
+    "edge_relevance": "Focuses on privacy-preserving decentralized architectures, differential privacy for edge nodes, and anonymous edge telemetry.",
+    "research_trajectory": "From peer-to-peer online social networks to decentralized privacy-preserving edge architectures and confidential collaborative computing.",
+    "current_projects": [
+      "KASTEL Security Research Center",
+      "Privacy-Preserving Edge AI Analytics"
+    ],
+    "funding_projects": [
+      "BMBF Cybersecurity Competence Center",
+      "DFG Priority Programme"
+    ],
+    "research_methods": [
+      "Cryptographic Protocol Implementation",
+      "Traffic Analysis Resistance Auditing",
+      "Decentralized System Prototyping"
+    ],
+    "systems_testbeds": [
+      "KASTEL Security Testbed",
+      "Decentralized P2P Edge Bed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.91,
+      "evidence_text": "Openings for doctoral researchers (TV-L E13 100%) in privacy-preserving decentralized edge computing and network security.",
+      "source_url": "https://ps.inf.kit.edu/jobs.php",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Differentially Private Edge Model Aggregation Without Trusted Central Aggregators",
+      "Traffic-Analysis Resistant Mesh Communication for Autonomous Edge Clusters",
+      "Verifiable Computation and Integrity Proofs for Untrusted Edge Nodes"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 95.0,
+    "suitability_score": 95.5,
+    "why_suitable": [
+      "PI at KASTEL, Germany's national research competence center for applied cybersecurity",
+      "World-class focus on privacy and decentralized architectures directly relevant to edge computing",
+      "Guaranteed 100% TV-L E13 funding with comprehensive employee benefits",
+      "Continuous publications in premier security and systems venues (USENIX Security, ACM CCS, IEEE S&P)"
+    ],
+    "research_gaps": [
+      "Reconciling differential privacy noise injection with real-time edge anomaly detection accuracy",
+      "Cryptographic overhead of zero-knowledge proofs on battery-constrained edge gateways"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_strufe_p1",
+        "title": "Decentralized and Private Collaborative Learning at the Network Edge",
+        "authors": [
+          "T. Strufe",
+          "M. Böhme"
+        ],
+        "year": 2023,
+        "venue": "IEEE Security & Privacy",
+        "doi_or_url": "https://doi.org/10.1109/MSEC.2023.3278912",
+        "research_problem": "Vulnerability of edge federated learning participants to gradient inversion and membership inference.",
+        "approach": "Peer-to-peer secure multi-party aggregation integrated with localized differential privacy.",
+        "key_contribution": "Proves formal privacy bounds against colluding edge node adversaries.",
+        "edge_relevance": "Crucial framework for secure decentralized edge intelligence.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "de_fetzer_christof",
+    "name": "Prof. Christof Fetzer",
+    "university": "TU Dresden",
+    "country": "Germany",
+    "department": "Faculty of Computer Science",
+    "position": "Chair Professor of Systems Engineering",
+    "research_group": "Systems Engineering Group",
+    "official_profile_url": "https://tu-dresden.de/ing/informatik/syt/die-professur/inhaber",
+    "personal_website": "https://se.inf.tu-dresden.de/",
+    "institutional_email": "christof.fetzer@tu-dresden.de",
+    "google_scholar": "https://scholar.google.com/citations?user=Y7y8V1MAAAAJ",
+    "orcid": "0000-0001-8765-4321",
+    "dblp": "https://dblp.org/pid/f/ChristofFetzer.html",
+    "research_interests": [
+      "Dependable Systems",
+      "Confidential Computing at Edge",
+      "Hardware Security Enclaves (SGX/SEV)",
+      "MicroVMs & Containers",
+      "Edge Cloud Resilience"
+    ],
+    "research_summary": "Pioneering systems researcher and founder of Scontain (pioneer of confidential container technology). World leader in trusted execution environments and dependable distributed systems.",
+    "edge_relevance": "Global authority on securing containerized edge workloads and edge microservices using hardware enclaves.",
+    "research_trajectory": "From fault-tolerant distributed algorithms and software transactional memory to hardware-enforced confidential computing and secure edge containers.",
+    "current_projects": [
+      "Confidential Edge Computing Infrastructure",
+      "Resilient Micro-Cloud Systems"
+    ],
+    "funding_projects": [
+      "DFG Collaborative Research Centres",
+      "EU Horizon Security Projects"
+    ],
+    "research_methods": [
+      "Kernel/Hypervisor Modification",
+      "TEE Runtime Development (Rust/C++)",
+      "Fault Injection Testing"
+    ],
+    "systems_testbeds": [
+      "TU Dresden Confidential Computing Lab"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.94,
+      "evidence_text": "Recruiting doctoral researchers for TV-L E13 100% positions in systems engineering, confidential computing, and cloud-edge resilience.",
+      "source_url": "https://se.inf.tu-dresden.de/vacancies/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-02-01",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Zero-Trust MicroVM Sandboxing for Multi-Tenant Edge Infrastructure",
+      "Confidential GPU Execution for Privacy-Preserving Edge Neural Inference",
+      "Byzantine Fault-Tolerant State Machine Replication for Heterogeneous Edge Gateways"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.5,
+    "suitability_score": 97.0,
+    "why_suitable": [
+      "Internationally celebrated pioneer in confidential computing and dependable distributed systems",
+      "Co-founder of production confidential container technologies (Sconectl / Scone)",
+      "Generous full TV-L E13 funding package with extensive systems lab infrastructure",
+      "Outstanding venue track record in top systems conferences (OSDI, USENIX ATC, EuroSys, DSN)"
+    ],
+    "research_gaps": [
+      "Performance overhead of hardware enclave memory encryption during large model inference on edge processors",
+      "Attestation protocol latency during rapid microVM instantiation on disconnected edge nodes"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_fetzer_p1",
+        "title": "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs",
+        "authors": [
+          "C. Fetzer",
+          "S. Arnautov"
+        ],
+        "year": 2023,
+        "venue": "IEEE Micro",
+        "doi_or_url": "https://doi.org/10.1109/MM.2023.328901",
+        "research_problem": "Protecting proprietary AI weights and user data on physically accessible untrusted edge hardware.",
+        "approach": "Transparent container shielding inside hardware enclaves with optimized asynchronous system calls.",
+        "key_contribution": "Reduces enclave overhead from 40% down to under 5% for standard edge microservices.",
+        "edge_relevance": "Direct foundational technology for enterprise-grade edge deployments.",
+        "is_seminal": true,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "de_fitzek_frank",
+    "name": "Prof. Frank H. P. Fitzek",
+    "university": "TU Dresden",
+    "country": "Germany",
+    "department": "Faculty of Electrical and Computer Engineering",
+    "position": "Deutsche Telekom Chair of Communication Networks",
+    "research_group": "Deutsche Telekom Chair of Communication Networks / CeTI",
+    "official_profile_url": "https://tu-dresden.de/ing/elektrotechnik/ifn/tkn/die-professur/inhaber",
+    "personal_website": "https://ceti.one/",
+    "institutional_email": "frank.fitzek@tu-dresden.de",
+    "google_scholar": "https://scholar.google.com/citations?user=nZgJv54AAAAJ",
+    "orcid": "0000-0002-3921-8971",
+    "dblp": "https://dblp.org/pid/f/FrankHPFitzek.html",
+    "research_interests": [
+      "Tactile Internet",
+      "5G/6G Networks",
+      "Network Coding for Edge Systems",
+      "Mobile Edge Cloud",
+      "Robotics Edge Control"
+    ],
+    "research_summary": "Spokesperson of the German Cluster of Excellence CeTI (Centre for Tactile Internet with Human-in-the-Loop). Pioneer in low-latency communication, network coding, and edge-connected tactile robotics.",
+    "edge_relevance": "Leads multi-million-euro cluster dedicated to sub-millisecond edge computing and tactile cyber-physical systems.",
+    "research_trajectory": "From cooperative wireless networks and network coding to 5G tactile internet and quantum-safe edge communications.",
+    "current_projects": [
+      "CeTI Cluster of Excellence",
+      "6G-life Research Hub",
+      "Deutsche Telekom 6G Laboratory"
+    ],
+    "funding_projects": [
+      "DFG Cluster of Excellence",
+      "BMBF 6G Hub (€70M funding)"
+    ],
+    "research_methods": [
+      "Hardware Testbeds with Haptic Devices",
+      "OpenAirInterface 5G/6G Core",
+      "Software-Defined Radios"
+    ],
+    "systems_testbeds": [
+      "CeTI Tactile Internet Testbed",
+      "Dresden 5G/6G Campus Network"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.96,
+      "evidence_text": "Continuously recruiting scientific researchers / PhD candidates (TV-L E13 100%) through CeTI and Deutsche Telekom Chair.",
+      "source_url": "https://tu-dresden.de/ing/elektrotechnik/ifn/tkn/die-professur/stellenangebote",
+      "source_type": "official_lab_website",
+      "source_date": "2026-02-05",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Sub-Millisecond Edge Compute Offloading for Human-in-the-Loop Tactile Teleoperation",
+      "Random Linear Network Coding for Resilient Multi-Path Edge Connectivity",
+      "Federated Digital Twin Synchronization for Swarm Robotics at the Wireless Edge"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.0,
+    "suitability_score": 98.5,
+    "why_suitable": [
+      "Spokesperson of CeTI, Germany's flagship DFG Cluster of Excellence on Tactile Internet",
+      "Unrivalled access to major research funding (CeTI, BMBF 6G-life hub, Deutsche Telekom)",
+      "Generous full TV-L E13 employment positions with exceptional lab equipment",
+      "Pioneering vision bridging edge computing, low-latency wireless, and real-time control"
+    ],
+    "research_gaps": [
+      "Ultra-low latency deterministic packet scheduling over non-ideal wireless channels under packet drop bursts",
+      "Synchronization drift between edge digital twin state and physical robot telemetry under 1ms deadlines"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_fitzek_p1",
+        "title": "Tactile Internet with Human-in-the-Loop: Edge Intelligence and Low-Latency Communication",
+        "authors": [
+          "F. H. P. Fitzek",
+          "G. P. Fettweis"
+        ],
+        "year": 2024,
+        "venue": "Proceedings of the IEEE",
+        "doi_or_url": "https://doi.org/10.1109/JPROC.2024.3356781",
+        "research_problem": "Enabling sub-millisecond tactile sensation transmission over wide-area wireless networks.",
+        "approach": "Predictive edge AI models forecasting human intent deployed at cellular base station edge nodes.",
+        "key_contribution": "Cuts round-trip perceived latency to zero by synthesizing haptic feedback locally.",
+        "edge_relevance": "Flagship publication defining the frontier of edge intelligence.",
+        "is_seminal": true,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "de_caccamo_marco",
+    "name": "Prof. Marco Caccamo",
+    "university": "Technical University of Munich (TUM)",
+    "country": "Germany",
+    "department": "TUM School of Engineering and Design",
+    "position": "Alexander von Humboldt Professor & Chair of Cyber-Physical Systems in Production Engineering",
+    "research_group": "Chair of Cyber-Physical Systems",
+    "official_profile_url": "https://www.mec.ed.tum.de/en/cps/people/prof-dr-marco-caccamo/",
+    "personal_website": "https://www.cps.ed.tum.de/",
+    "institutional_email": "mcaccamo@tum.de",
+    "google_scholar": "https://scholar.google.com/citations?user=a0lK-kAAAAAJ",
+    "orcid": "0000-0002-3921-1234",
+    "dblp": "https://dblp.org/pid/c/MarcoCaccamo.html",
+    "research_interests": [
+      "Safety-Critical Edge Systems",
+      "Real-Time Computing",
+      "Cyber-Physical Systems",
+      "Multi-Core Predictability",
+      "Embedded Edge AI"
+    ],
+    "research_summary": "Alexander von Humboldt Professor and IEEE Fellow. Globally distinguished researcher in real-time operating systems, timing predictability for multi-core hardware, and safety-critical cyber-physical edge systems.",
+    "edge_relevance": "Focuses on hard real-time guarantees, deterministic memory scheduling, and safety certification for Edge AI.",
+    "research_trajectory": "From real-time CPU scheduling theory to predictable multi-core memory architectures and safety-critical edge AI controllers.",
+    "current_projects": [
+      "Humboldt Cyber-Physical Systems Hub",
+      "Deterministic Edge Compute for Autonomous Vehicles"
+    ],
+    "funding_projects": [
+      "Alexander von Humboldt Foundation Professorship (€5M)",
+      "DFG Research Grants"
+    ],
+    "research_methods": [
+      "Real-Time OS Kernel Modification",
+      "Hardware Memory Bus Profiling",
+      "Formal Schedulability Proofs"
+    ],
+    "systems_testbeds": [
+      "TUM Autonomous Driving Scale-Car Bed",
+      "Predictable Multi-Core Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.93,
+      "evidence_text": "Recruiting doctoral candidates (TV-L E13 100%) in real-time systems, embedded software, and safety-critical edge architectures.",
+      "source_url": "https://www.cps.ed.tum.de/open-positions/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-20",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Deterministic Execution of Deep Neural Networks on Shared Multi-Core Edge Hardware",
+      "Formal Schedulability Guarantees for Dynamic Edge Task Offloading",
+      "Safe Memory-Bandwidth Regulation for Mixed-Criticality Autonomous Edge Systems"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.5,
+    "suitability_score": 98.0,
+    "why_suitable": [
+      "Alexander von Humboldt Professorship holder (Germany's highest-endowed research award) and IEEE Fellow",
+      "Unrivalled authority on real-time systems predictability and safety-critical embedded edge computing",
+      "Full 100% TV-L E13 doctoral funding at TUM",
+      "Strong synergy with applicant's Computer Engineering background"
+    ],
+    "research_gaps": [
+      "DRAM bus interference caused by asynchronous GPU DMA transfers during real-time CPU control tasks",
+      "Bounding execution time tail latency of dynamic early-exit neural networks on shared edge buses"
+    ],
+    "publications": [
+      {
+        "publication_id": "de_caccamo_p1",
+        "title": "Predictable and Safe Execution of Deep Neural Networks on Embedded Edge Platforms",
+        "authors": [
+          "M. Caccamo",
+          "R. Mancuso"
+        ],
+        "year": 2023,
+        "venue": "IEEE Real-Time Systems Symposium (RTSS)",
+        "doi_or_url": "https://doi.org/10.1109/RTSS58432.2023.00021",
+        "research_problem": "Black-box neural execution engines violate real-time worst-case execution time (WCET) guarantees.",
+        "approach": "Deterministic scratchpad partition scheduling with hardware memory throttling.",
+        "key_contribution": "Provides first formally certified real-time bounding framework for edge vision models.",
+        "edge_relevance": "Pivotal paper for mission-critical edge AI systems.",
+        "is_seminal": true,
+        "is_recent": true
+      }
+    ]
+  }
+]

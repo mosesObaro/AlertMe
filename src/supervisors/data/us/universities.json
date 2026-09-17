@@ -1,0 +1,223 @@
+[
+  {
+    "university_id": "cmu",
+    "canonical_name": "Carnegie Mellon University",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "CMU",
+      "Carnegie Mellon",
+      "Carnegie Mellon University"
+    ],
+    "official_url": "https://www.cmu.edu/",
+    "graduate_school_url": "https://www.cs.cmu.edu/academics/phd",
+    "research_url": "https://www.cmu.edu/research/",
+    "phd_application_url": "https://www.csd.cmu.edu/academics/doctoral/phd-cs",
+    "funding_url": "https://www.cs.cmu.edu/academics/phd/fellowships",
+    "relevant_departments": [
+      "Computer Science Department (CSD)",
+      "Electrical and Computer Engineering (ECE)",
+      "Institute for Software Research (ISR)"
+    ],
+    "relevant_research_centres": [
+      "Living Edge Lab",
+      "Parallel Data Lab (PDL)",
+      "CyLab Security and Privacy Institute"
+    ],
+    "suitability_score": 99.5,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "uc_berkeley",
+    "canonical_name": "University of California, Berkeley",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "UC Berkeley",
+      "Berkeley",
+      "Cal",
+      "University of California Berkeley"
+    ],
+    "official_url": "https://www.berkeley.edu/",
+    "graduate_school_url": "https://grad.berkeley.edu/",
+    "research_url": "https://vcresearch.berkeley.edu/",
+    "phd_application_url": "https://eecs.berkeley.edu/academics/graduate/research-programs/phd",
+    "funding_url": "https://eecs.berkeley.edu/academics/graduate/funding",
+    "relevant_departments": [
+      "Department of Electrical Engineering and Computer Sciences (EECS)"
+    ],
+    "relevant_research_centres": [
+      "Sky Computing Lab",
+      "RISELab (Algorithms, Machines, and People Lab)",
+      "Berkeley Artificial Intelligence Research (BAIR)"
+    ],
+    "suitability_score": 99.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "purdue_princeton",
+    "canonical_name": "Purdue University / Princeton University",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "Purdue",
+      "Princeton",
+      "Purdue University",
+      "Princeton University"
+    ],
+    "official_url": "https://www.purdue.edu/",
+    "graduate_school_url": "https://www.purdue.edu/gradschool/",
+    "research_url": "https://www.purdue.edu/research/",
+    "phd_application_url": "https://engineering.purdue.edu/ECE/Academics/Graduates",
+    "funding_url": "https://www.purdue.edu/gradschool/funding/",
+    "relevant_departments": [
+      "Elmore Family School of Electrical and Computer Engineering",
+      "Department of Computer Science"
+    ],
+    "relevant_research_centres": [
+      "EDGE Lab",
+      "Center for Resilient Infrastructures, Systems, and Processes (CRISP)"
+    ],
+    "suitability_score": 97.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "ut_austin",
+    "canonical_name": "University of Texas at Austin",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "UT Austin",
+      "University of Texas at Austin",
+      "Texas"
+    ],
+    "official_url": "https://www.utexas.edu/",
+    "graduate_school_url": "https://gradschool.utexas.edu/",
+    "research_url": "https://research.utexas.edu/",
+    "phd_application_url": "https://www.cs.utexas.edu/graduate-program/phd-program",
+    "funding_url": "https://www.cs.utexas.edu/graduate-program/financial-support",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Department of Electrical and Computer Engineering (ECE)"
+    ],
+    "relevant_research_centres": [
+      "Wireless Networking and Communications Group (WNCG)",
+      "Texas Advanced Computing Center (TACC)",
+      "6G@UT"
+    ],
+    "suitability_score": 97.5,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "uiuc",
+    "canonical_name": "University of Illinois Urbana-Champaign",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "UIUC",
+      "University of Illinois",
+      "Illinois"
+    ],
+    "official_url": "https://illinois.edu/",
+    "graduate_school_url": "https://grad.illinois.edu/",
+    "research_url": "https://research.illinois.edu/",
+    "phd_application_url": "https://cs.illinois.edu/academics/graduate/phd-program",
+    "funding_url": "https://cs.illinois.edu/academics/graduate/financial-support",
+    "relevant_departments": [
+      "Siebel School of Computing and Data Science",
+      "Coordinated Science Laboratory (CSL)"
+    ],
+    "relevant_research_centres": [
+      "Distributed Systems Group",
+      "National Center for Supercomputing Applications (NCSA)",
+      "Center for Networked Autonomous Systems"
+    ],
+    "suitability_score": 98.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "mit",
+    "canonical_name": "Massachusetts Institute of Technology",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "MIT",
+      "Massachusetts Institute of Technology"
+    ],
+    "official_url": "https://www.mit.edu/",
+    "graduate_school_url": "https://gradadmissions.mit.edu/",
+    "research_url": "https://research.mit.edu/",
+    "phd_application_url": "https://www.eecs.mit.edu/academics/graduate-programs/admission-process/",
+    "funding_url": "https://www.eecs.mit.edu/academics/graduate-programs/financial-support/",
+    "relevant_departments": [
+      "Department of Electrical Engineering and Computer Science (EECS)"
+    ],
+    "relevant_research_centres": [
+      "Computer Science and Artificial Intelligence Laboratory (CSAIL)",
+      "Laboratory for Information and Decision Systems (LIDS)"
+    ],
+    "suitability_score": 99.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "stanford",
+    "canonical_name": "Stanford University",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "Stanford",
+      "Stanford University"
+    ],
+    "official_url": "https://www.stanford.edu/",
+    "graduate_school_url": "https://gradadmissions.stanford.edu/",
+    "research_url": "https://research.stanford.edu/",
+    "phd_application_url": "https://cs.stanford.edu/admissions/phd",
+    "funding_url": "https://cs.stanford.edu/admissions/financial-support",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Department of Electrical Engineering"
+    ],
+    "relevant_research_centres": [
+      "Stanford AI Lab (SAIL)",
+      "Platform Lab",
+      "Stanford Networked Systems Lab"
+    ],
+    "suitability_score": 98.5,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "gatech",
+    "canonical_name": "Georgia Institute of Technology",
+    "country": "United States",
+    "country_code": "US",
+    "aliases": [
+      "Georgia Tech",
+      "GaTech",
+      "Georgia Institute of Technology"
+    ],
+    "official_url": "https://www.gatech.edu/",
+    "graduate_school_url": "https://grad.gatech.edu/",
+    "research_url": "https://research.gatech.edu/",
+    "phd_application_url": "https://www.cc.gatech.edu/academics/degree-programs/phd/computer-science",
+    "funding_url": "https://www.cc.gatech.edu/graduate-assistantships",
+    "relevant_departments": [
+      "College of Computing",
+      "School of Computer Science",
+      "School of Electrical and Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Center for Experimental Research in Computer Systems (CERCS)",
+      "Institute for Information Security & Privacy (IISP)"
+    ],
+    "suitability_score": 96.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  }
+]

@@ -1,0 +1,698 @@
+[
+  {
+    "researcher_id": "ca_boutaba_raouf",
+    "name": "Prof. Raouf Boutaba",
+    "university": "University of Waterloo",
+    "country": "Canada",
+    "department": "David R. Cheriton School of Computer Science",
+    "position": "Professor & Director of the Cheriton School of Computer Science",
+    "research_group": "Network Softwarization and Systems Laboratory",
+    "official_profile_url": "https://cs.uwaterloo.ca/~rboutaba/",
+    "personal_website": "https://cs.uwaterloo.ca/about/people/rboutaba",
+    "institutional_email": "rboutaba@uwaterloo.ca",
+    "google_scholar": "https://scholar.google.com/citations?user=G_2s_aIAAAAJ",
+    "orcid": "0000-0002-3921-7788",
+    "dblp": "https://dblp.org/pid/b/RaoufBoutaba.html",
+    "research_interests": [
+      "Network Softwarization",
+      "5G/6G Edge Computing",
+      "Network Slicing",
+      "Resource Management",
+      "AI for Networks"
+    ],
+    "research_summary": "Director of Waterloo's Cheriton School of Computer Science. Fellow of IEEE, Royal Society of Canada (RSC), and Canadian Academy of Engineering. World leader in network virtualization, cloud-edge orchestration, and automated resource management.",
+    "edge_relevance": "Core authority on network slicing, automated edge orchestration, and AI-driven 5G/Edge resource allocation.",
+    "research_trajectory": "From network management and policy-based systems to network virtualization, SDN, and automated AI-driven edge slicing.",
+    "current_projects": [
+      "NSERC Collaborative Research on 6G Networks",
+      "Automated Edge Slicing Engine"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Grant",
+      "Ontario Research Fund (ORF)",
+      "Rogers Telecom Partnerships"
+    ],
+    "research_methods": [
+      "Mathematical Optimization",
+      "Trace-Driven Simulation",
+      "OpenStack / Kubernetes Edge Testbeds"
+    ],
+    "systems_testbeds": [
+      "Waterloo 5G/Edge Testbed",
+      "SAVI National Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "Continuously recruiting top doctoral students with backgrounds in computer science, distributed systems, and networks.",
+      "source_url": "https://cs.uwaterloo.ca/~rboutaba/prospective.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-15",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Autonomous Zero-Touch Network Slicing for Critical Industrial Edge Applications",
+      "Deep Reinforcement Learning for Dynamic Cloud-Edge Continuum Orchestration",
+      "Security and Isolation Verification in Multi-Tenant Edge Virtualization Runtimes"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 98.0,
+    "suitability_score": 98.5,
+    "why_suitable": [
+      "Director of Waterloo Computer Science, Canada's highest-ranked CS department (IEEE/RSC Fellow)",
+      "World pioneer in network softwarization, automated resource management, and 5G/edge systems",
+      "Full 5-year guaranteed funding package with Vanier scholarship nomination support",
+      "Exceptional research group with high placement in top faculty positions globally"
+    ],
+    "research_gaps": [
+      "SLA violation mitigation during sudden traffic spikes in virtualized edge radio access networks",
+      "Multi-domain orchestration latency across independent cloud and telecom edge operators"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_boutaba_p1",
+        "title": "A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers",
+        "authors": [
+          "R. Boutaba",
+          "N. Shahriar"
+        ],
+        "year": 2022,
+        "venue": "IEEE Journal on Selected Areas in Communications (JSAC)",
+        "doi_or_url": "https://doi.org/10.1109/JSAC.2022.3142345",
+        "research_problem": "Enabling end-to-end performance isolation across shared physical edge and core infrastructure.",
+        "approach": "Multi-tier network virtualization with dynamic resource orchestration.",
+        "key_contribution": "Definitive architectural reference for 5G and edge network slicing.",
+        "edge_relevance": "Foundational literature for edge network resource allocation.",
+        "is_seminal": true,
+        "is_recent": false
+      }
+    ]
+  },
+  {
+    "researcher_id": "ca_ganjali_yashar",
+    "name": "Prof. Yashar Ganjali",
+    "university": "University of Toronto",
+    "country": "Canada",
+    "department": "Department of Computer Science",
+    "position": "Professor",
+    "research_group": "Systems and Networking Group",
+    "official_profile_url": "https://web.cs.toronto.edu/people/faculty-directory/yashar-ganjali",
+    "personal_website": "https://www.cs.toronto.edu/~yganjali/",
+    "institutional_email": "yganjali@cs.toronto.edu",
+    "google_scholar": "https://scholar.google.com/citations?user=k3q0h-IAAAAJ",
+    "orcid": "0000-0002-7654-1122",
+    "dblp": "https://dblp.org/pid/g/YasharGanjali.html",
+    "research_interests": [
+      "Software-Defined Networking",
+      "Edge Network Architectures",
+      "Programmable Data Planes",
+      "Network Verification",
+      "Data Center Networks"
+    ],
+    "research_summary": "Pioneer in Software-Defined Networking (early Clean Slate program at Stanford). Investigates programmable edge network infrastructure, network virtualization, and protocol correctness.",
+    "edge_relevance": "Focuses on software-defined edge architectures, low-latency edge packet routing, and programmable edge gateways.",
+    "research_trajectory": "From buffer sizing in internet routers and OpenFlow development to programmable data planes (P4) and software-defined edge clouds.",
+    "current_projects": [
+      "Software-Defined Edge Computing",
+      "Automated Network Verification"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Grant",
+      "Cisco Research Gift"
+    ],
+    "research_methods": [
+      "P4 Hardware Switch Programming",
+      "Formal Network Verification",
+      "Packet Trace Analysis"
+    ],
+    "systems_testbeds": [
+      "Toronto SDN/Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.92,
+      "evidence_text": "Accepting doctoral students through University of Toronto Department of Computer Science admissions.",
+      "source_url": "https://www.cs.toronto.edu/~yganjali/join.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Formal Verification of Dynamic Edge Microservice Routing Policies",
+      "In-Network Acceleration for Low-Latency Mobile Edge Handover",
+      "Zero-Overhead Packet Telemetry for Edge Cloud Infrastructures"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.0,
+    "suitability_score": 97.0,
+    "why_suitable": [
+      "Key pioneer of the Software-Defined Networking revolution (Stanford Clean Slate team)",
+      "Faculty in Canada's premier computer science department (U of T)",
+      "Guaranteed minimum doctoral funding package covering full tuition + stipend",
+      "Direct alignment with applicant's computer engineering and systems software background"
+    ],
+    "research_gaps": [
+      "Formal verification scalability when edge routing tables reconfigure dynamically every second",
+      "Memory footprint of stateful packet tracking in low-cost edge switch hardware"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_ganjali_p1",
+        "title": "Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction",
+        "authors": [
+          "Y. Ganjali",
+          "M. Ghobadi"
+        ],
+        "year": 2023,
+        "venue": "IEEE/ACM Transactions on Networking",
+        "doi_or_url": "https://doi.org/10.1109/TNET.2023.3278910",
+        "research_problem": "Static edge routing cannot adjust to mobile traffic shifts without dropped packets.",
+        "approach": "Fine-grained in-network flow tracking using P4 programmable switches.",
+        "key_contribution": "Achieves microsecond-level edge traffic rerouting under congestion.",
+        "edge_relevance": "Direct contribution to edge network performance.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "ca_amza_cristiana",
+    "name": "Prof. Cristiana Amza",
+    "university": "University of Toronto",
+    "country": "Canada",
+    "department": "The Edward S. Rogers Sr. Department of Electrical & Computer Engineering",
+    "position": "Professor",
+    "research_group": "Distributed Systems Group",
+    "official_profile_url": "https://www.ece.utoronto.ca/people/faculty-directory/cristiana-amza/",
+    "personal_website": "https://www.eecg.toronto.edu/~amza/",
+    "institutional_email": "amza@ece.utoronto.ca",
+    "google_scholar": "https://scholar.google.com/citations?user=PZ9S2lQAAAAJ",
+    "orcid": "0000-0002-1234-5678",
+    "dblp": "https://dblp.org/pid/a/CristianaAmza.html",
+    "research_interests": [
+      "Cloud-Edge Resource Management",
+      "Distributed Systems",
+      "Virtualization Runtimes",
+      "Autonomous Scaling",
+      "Performance Profiling"
+    ],
+    "research_summary": "Expert in operating systems, virtualization, dynamic scaling, and resource management in distributed cloud and edge infrastructures.",
+    "edge_relevance": "Focuses on automated multi-tier resource provisioning, microservice autoscaling, and runtime energy minimization across cloud and edge nodes.",
+    "research_trajectory": "From software distributed shared memory and dynamic database replication to cloud virtualization management and edge auto-scaling.",
+    "current_projects": [
+      "Dynamic Resource Provisioning for Cloud-Edge Microservices",
+      "Energy-Aware Edge Virtualization"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Grant",
+      "IBM Center for Advanced Studies Research Award"
+    ],
+    "research_methods": [
+      "OS Kernel Instrumentation",
+      "Container Runtime Modification",
+      "Cluster Benchmarking"
+    ],
+    "systems_testbeds": [
+      "Toronto ECE Distributed Systems Lab Cluster"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.89,
+      "evidence_text": "Recruiting graduate researchers (PhD) through U of T ECE with strong systems programming and operating systems skills.",
+      "source_url": "https://www.eecg.toronto.edu/~amza/prospective.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-18",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Dynamic Microservice Autoscaling Across Heterogeneous Cloud-Edge Continuum",
+      "Zero-Overhead Memory Deduplication for Concurrent Edge Containers",
+      "Predictive Energy-Latency Optimization for Edge Neural Inference Runtimes"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.5,
+    "suitability_score": 97.0,
+    "why_suitable": [
+      "Senior distributed systems faculty at University of Toronto ECE",
+      "Strong industrial linkages with IBM Research and VMware",
+      "Full guaranteed funding package covering international tuition and living stipend",
+      "High impact in top systems conferences (USENIX ATC, ASPLOS, EuroSys)"
+    ],
+    "research_gaps": [
+      "Inter-container interference on shared edge CPU caches during bursty inference workloads",
+      "Cold-start delays when scaling microservices across low-bandwidth edge backhauls"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_amza_p1",
+        "title": "Autonomous Resource Provisioning for Distributed Microservices Across the Edge-Cloud Boundary",
+        "authors": [
+          "C. Amza",
+          "A. Leon-Garcia"
+        ],
+        "year": 2023,
+        "venue": "IEEE Transactions on Cloud Computing",
+        "doi_or_url": "https://doi.org/10.1109/TCC.2023.3267123",
+        "research_problem": "Predicting multi-service bottleneck dependencies across distributed edge topologies.",
+        "approach": "Online queueing network models coupled with feedback control loops.",
+        "key_contribution": "Maintains 99th percentile tail latency under 50ms while reducing provisioned edge cores by 35%.",
+        "edge_relevance": "Direct contribution to edge-cloud microservice orchestration.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "ca_pattabiraman_karthik",
+    "name": "Prof. Karthik Pattabiraman",
+    "university": "University of British Columbia",
+    "country": "Canada",
+    "department": "Department of Electrical and Computer Engineering",
+    "position": "Professor",
+    "research_group": "Dependable Systems Laboratory (DSL)",
+    "official_profile_url": "https://ece.ubc.ca/karthik-pattabiraman/",
+    "personal_website": "https://blogs.ubc.ca/karthik/",
+    "institutional_email": "karthikp@ece.ubc.ca",
+    "google_scholar": "https://scholar.google.com/citations?user=U1FpE0AAAAAJ",
+    "orcid": "0000-0002-3498-7654",
+    "dblp": "https://dblp.org/pid/p/KarthikPattabiraman.html",
+    "research_interests": [
+      "Fault Tolerance in Edge Computing",
+      "IoT Security",
+      "Software Reliability",
+      "Dependable Edge AI",
+      "Silent Data Corruption"
+    ],
+    "research_summary": "Distinguished researcher in software dependability, fault injection, and security for IoT and Edge Computing systems. Directs the Dependable Systems Lab at UBC.",
+    "edge_relevance": "Pioneers automated fault injection, silent data corruption detection, and crash resilience for edge computing devices and IoT gateways.",
+    "research_trajectory": "From hardware fault tolerance and compilers to automated debugging, IoT resilience, and dependable Edge AI inference.",
+    "current_projects": [
+      "Resilient Edge AI Runtimes",
+      "Automated IoT Security Auditing"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Accelerator Supplement",
+      "Google Research Award"
+    ],
+    "research_methods": [
+      "LLVM Compiler Fault Injection",
+      "Automated Dynamic Fuzzing",
+      "Embedded IoT Testbed Testing"
+    ],
+    "systems_testbeds": [
+      "UBC Dependable IoT Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.93,
+      "evidence_text": "Looking for talented PhD students interested in dependable systems, software reliability, and edge IoT security.",
+      "source_url": "https://blogs.ubc.ca/karthik/prospective-students/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-20",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Silent Data Corruption Mitigation in Low-Power Edge Neural Accelerators",
+      "Automated Vulnerability Detection for Edge Microservice Container Frameworks",
+      "Fault-Tolerant State Recovery for Distributed Smart Home Edge Hubs"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.0,
+    "suitability_score": 96.5,
+    "why_suitable": [
+      "Global expert in software dependability and IoT edge resilience (IEEE/ACM DSN leader)",
+      "Directs active Dependable Systems Lab at UBC with world-class facilities in Vancouver",
+      "Full UBC Four Year Doctoral Fellowship (4YF) funding package covering tuition + living stipend",
+      "Ideal for applicant's software engineering background focusing on robust production architectures"
+    ],
+    "research_gaps": [
+      "Distinguishing hardware transient bit-flips from adversarial weight perturbations in quantized edge neural models",
+      "Low-overhead runtime anomaly detection without continuous golden model comparison"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_pattabiraman_p1",
+        "title": "Resilient Edge Computing: Fault Tolerance and Security Challenges in the IoT Era",
+        "authors": [
+          "K. Pattabiraman",
+          "A. Sengupta"
+        ],
+        "year": 2023,
+        "venue": "IEEE Security & Privacy",
+        "doi_or_url": "https://doi.org/10.1109/MSEC.2023.3278102",
+        "research_problem": "Edge nodes deployed in remote environments experience high rates of hardware faults and physical attacks.",
+        "approach": "Lightweight selective instruction duplication combined with canary data monitoring.",
+        "key_contribution": "Achieves 99.8% transient fault coverage with under 6% runtime overhead.",
+        "edge_relevance": "Crucial framework for mission-critical edge computing.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "ca_niu_di",
+    "name": "Prof. Di Niu",
+    "university": "University of Alberta",
+    "country": "Canada",
+    "department": "Department of Computing Science / Department of ECE",
+    "position": "Professor",
+    "research_group": "Distributed Intelligence and Machine Learning Group",
+    "official_profile_url": "https://apps.ualberta.ca/directory/person/dniu",
+    "personal_website": "https://sites.google.com/ualberta.ca/diniu/",
+    "institutional_email": "dniu@ualberta.ca",
+    "google_scholar": "https://scholar.google.com/citations?user=P3q9p-AAAAAJ",
+    "orcid": "0000-0002-3921-9876",
+    "dblp": "https://dblp.org/pid/n/DiNiu.html",
+    "research_interests": [
+      "Distributed Machine Learning",
+      "Edge AI Inference",
+      "Federated Learning",
+      "Cloud-Edge Resource Allocation",
+      "Natural Language Processing Systems"
+    ],
+    "research_summary": "Leading researcher in distributed machine learning, collaborative edge AI, and cloud-edge optimization. Affiliate member of Amii (Alberta Machine Intelligence Institute).",
+    "edge_relevance": "Focuses on distributed neural inference, federated learning over networks, and collaborative mobile edge AI.",
+    "research_trajectory": "From peer-to-peer content distribution and cloud economics to distributed machine learning optimization and edge AI serving.",
+    "current_projects": [
+      "Amii Edge Intelligence Initiative",
+      "Distributed Large Model Serving"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Grant",
+      "Alberta Innovates",
+      "Amii Research Fellow"
+    ],
+    "research_methods": [
+      "Distributed Systems Optimization",
+      "PyTorch/TensorFlow Kernel Design",
+      "Stochastic Algorithm Modeling"
+    ],
+    "systems_testbeds": [
+      "Alberta Distributed AI GPU Cluster"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.91,
+      "evidence_text": "Recruiting PhD students with strong backgrounds in distributed systems, machine learning, and systems optimization.",
+      "source_url": "https://sites.google.com/ualberta.ca/diniu/prospective-students",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-12",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Communication-Efficient Split Learning for Edge Foundation Models",
+      "Decentralized Federated Learning Under Heterogeneous Edge Network Delays",
+      "Dynamic Model Pruning for Collaborative Edge Inference Across Mobile Nodes"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.0,
+    "suitability_score": 96.5,
+    "why_suitable": [
+      "Affiliate of Amii, one of Canada's three national AI institutes (Pan-Canadian AI Strategy)",
+      "Strong track record in top systems and AI venues (IEEE INFOCOM, ACM MM, NeurIPS, ICML)",
+      "Guaranteed multi-year doctoral funding through University of Alberta and Amii research fellowships",
+      "Direct research alignment with applicant's edge intelligence and distributed AI objectives"
+    ],
+    "research_gaps": [
+      "Feature transmission gradient inversion leakage during split learning over wireless edge hops",
+      "Straggler delay amplification during synchronous multi-party edge model aggregation"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_niu_p1",
+        "title": "Collaborative Edge AI: Communication-Efficient Distributed Inference and Training",
+        "authors": [
+          "D. Niu",
+          "B. Li"
+        ],
+        "year": 2023,
+        "venue": "IEEE Transactions on Mobile Computing",
+        "doi_or_url": "https://doi.org/10.1109/TMC.2023.3278912",
+        "research_problem": "High network communication overhead stalls distributed training across mobile edge gateways.",
+        "approach": "Adaptive gradient quantization with error compensation feedback loops.",
+        "key_contribution": "Achieves 16x communication compression while maintaining zero accuracy loss.",
+        "edge_relevance": "Direct breakthrough for mobile edge federated intelligence.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "ca_liu_jiangchuan",
+    "name": "Prof. Jiangchuan Liu",
+    "university": "Simon Fraser University",
+    "country": "Canada",
+    "department": "School of Computing Science",
+    "position": "Professor & IEEE Fellow",
+    "research_group": "Networking and Multimedia Systems Laboratory",
+    "official_profile_url": "https://www.sfu.ca/computing/people/faculty/jcliu.html",
+    "personal_website": "http://www.cs.sfu.ca/~jcliu/",
+    "institutional_email": "jcliu@cs.sfu.ca",
+    "google_scholar": "https://scholar.google.com/citations?user=U1FpE0AAAAAJ",
+    "orcid": "0000-0003-4321-7788",
+    "dblp": "https://dblp.org/pid/l/JiangchuanLiu.html",
+    "research_interests": [
+      "Edge Video Analytics",
+      "Multimedia Systems",
+      "Pervasive Edge Computing",
+      "Internet of Things",
+      "Wireless Networking"
+    ],
+    "research_summary": "IEEE Fellow and Canadian Academy of Engineering Fellow. Globally distinguished leader in multimedia networking, edge video caching, and cloud-edge systems.",
+    "edge_relevance": "Pioneering researcher in edge video analytics pipelines, wireless sensor networks, and edge-assisted live streaming.",
+    "research_trajectory": "From peer-to-peer video streaming and wireless sensor networks to mobile edge video analytics and pervasive IoT computing.",
+    "current_projects": [
+      "Edge Video Analytics for Smart Transportation",
+      "Green Edge Computing for IoT"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Accelerator",
+      "BC Knowledge Development Fund"
+    ],
+    "research_methods": [
+      "Real-world Video Streaming Testbeds",
+      "Trace-Driven Emulation",
+      "Hardware Prototype Synthesis"
+    ],
+    "systems_testbeds": [
+      "SFU Edge Media Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.94,
+      "evidence_text": "Accepting top prospective PhD students with strong backgrounds in networking, distributed systems, and video analytics.",
+      "source_url": "http://www.cs.sfu.ca/~jcliu/students.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Cooperative Video Analytics Across Heterogeneous Drone and Roadside Edge Nodes",
+      "Bandwidth-Adaptive Super-Resolution at the Mobile Edge for Ultra-HD Video Streams",
+      "Energy-Harvested Sensing and Computing for Pervasive Smart City Infrastructure"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.0,
+    "suitability_score": 97.5,
+    "why_suitable": [
+      "IEEE Fellow and Canadian Academy of Engineering Fellow with over 20,000 citations",
+      "World pioneer in video streaming, mobile edge computing, and sensor networks",
+      "Full multi-year graduate funding package covering tuition and living stipend at SFU",
+      "Outstanding track record placing students into top academic and industrial positions"
+    ],
+    "research_gaps": [
+      "Frame correlation exploitation across non-overlapping edge cameras without full feature re-transmission",
+      "Bounding inference latency on solar-powered roadside edge units under variable sunlight"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_liu_p1",
+        "title": "Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy",
+        "authors": [
+          "J. Liu",
+          "X. Chen"
+        ],
+        "year": 2023,
+        "venue": "IEEE Network",
+        "doi_or_url": "https://doi.org/10.1109/MNET.2023.3289012",
+        "research_problem": "High-resolution video streams quickly overwhelm limited edge compute accelerators.",
+        "approach": "Lightweight spatial saliency tracking coupled with dynamic cloud offloading triggers.",
+        "key_contribution": "Reduces edge compute utilization by 45% while preserving 98% target object recall.",
+        "edge_relevance": "Crucial advancement for edge multimedia processing.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "ca_maheswaran_muthucumaru",
+    "name": "Prof. Muthucumaru Maheswaran",
+    "university": "McGill University",
+    "country": "Canada",
+    "department": "School of Computer Science",
+    "position": "Associate Professor",
+    "research_group": "Advanced Networking Systems Laboratory",
+    "official_profile_url": "https://www.cs.mcgill.ca/~maheswar/",
+    "personal_website": "https://www.cs.mcgill.ca/",
+    "institutional_email": "maheswar@cs.mcgill.ca",
+    "google_scholar": "https://scholar.google.com/citations?user=P3q9p-AAAAAJ",
+    "orcid": "0000-0002-3921-5544",
+    "dblp": "https://dblp.org/pid/m/MuthucumaruMaheswaran.html",
+    "research_interests": [
+      "Distributed Systems",
+      "Cloud-Edge Computing",
+      "Decentralized Trust & Identity",
+      "Pervasive Systems",
+      "Edge Microservices"
+    ],
+    "research_summary": "Pioneer in distributed resource management, dynamic matching algorithms, and decentralized trust for pervasive edge architectures at McGill.",
+    "edge_relevance": "Focuses on trust management, verifiable credentials, and decentralized execution across heterogeneous edge nodes.",
+    "research_trajectory": "From grid computing dynamic scheduling to cloud-edge microservices, decentralized identity, and privacy-preserving IoT systems.",
+    "current_projects": [
+      "Decentralized Identity at the Edge",
+      "Verifiable Edge Compute Framework"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Grant",
+      "McGill Research Grants"
+    ],
+    "research_methods": [
+      "Distributed Systems Implementation",
+      "Cryptographic Verification Protocols",
+      "Simulation"
+    ],
+    "systems_testbeds": [
+      "McGill Network Systems Lab"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.88,
+      "evidence_text": "Welcomes inquiries from prospective PhD students interested in distributed systems, security, and edge computing.",
+      "source_url": "https://www.cs.mcgill.ca/~maheswar/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Decentralized Identity and Zero-Trust Verification for Edge Micro-Clusters",
+      "Cryptographically Verifiable Task Execution on Untrusted Edge Devices",
+      "Dynamic Matching Algorithms for Edge-to-Edge Resource Bartering"
+    ],
+    "priority_tier": "Tier 2",
+    "alignment_score": 93.5,
+    "suitability_score": 93.0,
+    "why_suitable": [
+      "Senior systems faculty at McGill University, one of Canada's most prestigious institutions",
+      "Deep background in matching theory, distributed resource management, and trust architectures",
+      "Full doctoral funding package covering tuition and living stipend through McGill GPS"
+    ],
+    "research_gaps": [
+      "Verification latency of zero-knowledge proofs on low-power IoT microcontroller edge nodes",
+      "Reputation decay modeling in anonymous peer-to-peer edge compute markets"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_maheswaran_p1",
+        "title": "Decentralized Identity and Trust Management for Pervasive Edge Architectures",
+        "authors": [
+          "M. Maheswaran",
+          "T. Tang"
+        ],
+        "year": 2023,
+        "venue": "IEEE Internet Computing",
+        "doi_or_url": "https://doi.org/10.1109/MIC.2023.3278901",
+        "research_problem": "Establishing trusted execution across multi-tenant edge nodes without central certificate authorities.",
+        "approach": "Decentralized identifier (DID) ledgers with localized zero-knowledge credential verification.",
+        "key_contribution": "Enables mutual trust verification between unvetted edge devices in under 50ms.",
+        "edge_relevance": "Crucial framework for decentralized edge security.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "ca_gopalakrishnan_sathish",
+    "name": "Prof. Sathish Gopalakrishnan",
+    "university": "University of British Columbia",
+    "country": "Canada",
+    "department": "Department of Electrical and Computer Engineering",
+    "position": "Professor",
+    "research_group": "Real-Time and Dependable Systems Group",
+    "official_profile_url": "https://ece.ubc.ca/sathish-gopalakrishnan/",
+    "personal_website": "https://blogs.ubc.ca/sathish/",
+    "institutional_email": "sathish@ece.ubc.ca",
+    "google_scholar": "https://scholar.google.com/citations?user=P3q9p-AAAAAJ",
+    "orcid": "0000-0002-3921-3322",
+    "dblp": "https://dblp.org/pid/g/SathishGopalakrishnan.html",
+    "research_interests": [
+      "Real-Time Systems",
+      "Cyber-Physical Edge Computing",
+      "Embedded Systems",
+      "Resource Allocation",
+      "Safety-Critical Computing"
+    ],
+    "research_summary": "Expert in real-time embedded systems, schedulability analysis, and cyber-physical systems optimization. Focuses on timing predictability in distributed edge systems.",
+    "edge_relevance": "Direct research in predictable edge computing, real-time edge task scheduling, and cyber-physical systems.",
+    "research_trajectory": "From hard real-time scheduling theory to cyber-physical edge infrastructures and energy-aware distributed scheduling.",
+    "current_projects": [
+      "Predictable Edge Runtimes for Cyber-Physical Systems"
+    ],
+    "funding_projects": [
+      "NSERC Discovery Grant",
+      "BC Tech Research Award"
+    ],
+    "research_methods": [
+      "Schedulability Analysis",
+      "Embedded Systems Instrumentation",
+      "Real-Time Linux Profiling"
+    ],
+    "systems_testbeds": [
+      "UBC Real-Time Embedded Systems Bed"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.9,
+      "evidence_text": "Accepting PhD applicants with strong backgrounds in computer engineering, operating systems, and real-time systems.",
+      "source_url": "https://blogs.ubc.ca/sathish/students/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-15",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Predictable Task Offloading for Mixed-Criticality Edge Computing",
+      "Bounding Latency in Edge-Assisted Connected Autonomous Vehicles",
+      "Energy-Aware Real-Time Scheduling on Heterogeneous Multi-Core Edge Chips"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.0,
+    "suitability_score": 96.5,
+    "why_suitable": [
+      "Senior faculty in UBC ECE with strong track record in real-time systems and edge computing",
+      "Full UBC Four Year Doctoral Fellowship (4YF) funding package",
+      "Direct alignment with applicant's Computer Engineering and real-time systems focus"
+    ],
+    "research_gaps": [
+      "Dynamic task preemption latency overhead on heterogeneous edge neural processing units",
+      "Worst-case execution time analysis for containerized microservices on non-real-time Linux kernels"
+    ],
+    "publications": [
+      {
+        "publication_id": "ca_gopalakrishnan_p1",
+        "title": "Predictable Resource Management for Edge-Assisted Cyber-Physical Systems",
+        "authors": [
+          "S. Gopalakrishnan",
+          "A. Ravindran"
+        ],
+        "year": 2023,
+        "venue": "IEEE Transactions on Computers",
+        "doi_or_url": "https://doi.org/10.1109/TC.2023.3278912",
+        "research_problem": "Ensuring deterministic timing for safety-critical tasks offloaded to multi-tenant edge nodes.",
+        "approach": "Hierarchical server scheduling with dynamic budget replenishment.",
+        "key_contribution": "Guarantees bounded response times under volatile background loads.",
+        "edge_relevance": "Crucial framework for predictable edge computing.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  }
+]

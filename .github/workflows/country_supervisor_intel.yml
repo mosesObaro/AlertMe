@@ -1,0 +1,103 @@
+name: Country-Based PhD Funding and Supervisor Intelligence
+
+on:
+  schedule:
+    # Runs daily at 05:00 UTC (runs all countries or rotates)
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+    inputs:
+      country:
+        description: "Target country campaign (uk, japan, germany, us, canada, sweden, hong_kong, or all)"
+        required: false
+        default: "all"
+        type: string
+      send_email:
+        description: "Dispatch country briefing via email"
+        required: false
+        default: true
+        type: boolean
+      min_professors:
+        description: "Minimum vetted professors required"
+        required: false
+        default: "8"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  country-campaign:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run Regression & Country Intelligence Tests
+        run: |
+          pytest tests/ -v
+
+      - name: Execute Country Intelligence Campaign
+        env:
+          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
+          EMAIL_PROVIDER: ${{ secrets.EMAIL_PROVIDER || 'resend' }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        run: |
+          TARGET_COUNTRY="${{ github.event.inputs.country || 'all' }}"
+          SEND_EMAIL_FLAG=""
+          if [ "${{ github.event.inputs.send_email != 'false' }}" = "true" ]; then
+            SEND_EMAIL_FLAG="--send-email"
+          fi
+          MIN_PROFS="${{ github.event.inputs.min_professors || '8' }}"
+
+          if [ "$TARGET_COUNTRY" = "all" ]; then
+            python cli.py supervisors --all-countries --min-professors "$MIN_PROFS" $SEND_EMAIL_FLAG
+          else
+            python cli.py supervisors --country "$TARGET_COUNTRY" --min-professors "$MIN_PROFS" $SEND_EMAIL_FLAG
+          fi
+
+      - name: Upload Country Dossiers & Reports Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: country-phd-supervisors-dossiers-and-reports
+          path: |
+            alerts/daily/
+            reports/supervisors/
+            Edge_Computing_PhD_Curriculum_Tracker.xlsx
+          retention-days: 60
+          if-no-files-found: ignore
+
+      - name: Commit and Push State & Reports
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/supervisor_state.json reports/supervisors/ alerts/daily/ Edge_Computing_PhD_Curriculum_Tracker.xlsx
+          if git diff --staged --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "chore: auto-update country PhD funding and supervisor intelligence [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main || echo "Notice: Push conflict resolved or deferred to next scheduled run."
+          fi

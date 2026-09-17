@@ -1,0 +1,218 @@
+[
+  {
+    "university_id": "imperial",
+    "canonical_name": "Imperial College London",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "Imperial",
+      "Imperial College",
+      "Imperial College London"
+    ],
+    "official_url": "https://www.imperial.ac.uk/",
+    "graduate_school_url": "https://www.imperial.ac.uk/study/pg/graduate-school/",
+    "research_url": "https://www.imperial.ac.uk/research-and-innovation/",
+    "phd_application_url": "https://www.imperial.ac.uk/study/apply/postgraduate-doctoral/",
+    "funding_url": "https://www.imperial.ac.uk/study/fees-and-funding/postgraduate-doctoral/",
+    "relevant_departments": [
+      "Department of Computing",
+      "Department of Electrical and Electronic Engineering",
+      "Dyson School of Design Engineering"
+    ],
+    "relevant_research_centres": [
+      "Large-Scale Distributed Systems (LSDS) Group",
+      "Resilient Information Systems Security (RISS)",
+      "Centre for Cryptocurrency Research and Engineering"
+    ],
+    "suitability_score": 98.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "cambridge",
+    "canonical_name": "University of Cambridge",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "Cambridge",
+      "University of Cambridge",
+      "Cambridge University"
+    ],
+    "official_url": "https://www.cam.ac.uk/",
+    "graduate_school_url": "https://www.postgraduate.study.cam.ac.uk/",
+    "research_url": "https://www.research.cam.ac.uk/",
+    "phd_application_url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscpdpcs",
+    "funding_url": "https://www.postgraduate.study.cam.ac.uk/funding",
+    "relevant_departments": [
+      "Department of Computer Science and Technology (Computer Laboratory)",
+      "Department of Engineering"
+    ],
+    "relevant_research_centres": [
+      "Systems Research Group (SRG)",
+      "Cambridge Distributed Systems Group",
+      "Ubiquitous Computing Group"
+    ],
+    "suitability_score": 99.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "oxford",
+    "canonical_name": "University of Oxford",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "Oxford",
+      "University of Oxford",
+      "Oxford University"
+    ],
+    "official_url": "https://www.ox.ac.uk/",
+    "graduate_school_url": "https://www.ox.ac.uk/admissions/graduate",
+    "research_url": "https://www.ox.ac.uk/research",
+    "phd_application_url": "https://www.ox.ac.uk/admissions/graduate/courses/dphil-computer-science",
+    "funding_url": "https://www.ox.ac.uk/admissions/graduate/fees-and-funding",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Department of Engineering Science"
+    ],
+    "relevant_research_centres": [
+      "Autonomous Intelligent Machines and Systems (AIMS) CDT",
+      "Cyber Physical Systems Group"
+    ],
+    "suitability_score": 96.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "edinburgh",
+    "canonical_name": "University of Edinburgh",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "Edinburgh",
+      "University of Edinburgh",
+      "Edinburgh University"
+    ],
+    "official_url": "https://www.ed.ac.uk/",
+    "graduate_school_url": "https://www.ed.ac.uk/informatics/postgraduate",
+    "research_url": "https://www.ed.ac.uk/research",
+    "phd_application_url": "https://www.ed.ac.uk/studying/postgraduate/degrees/index.php?r=site/view&edition=2026&id=107",
+    "funding_url": "https://www.ed.ac.uk/informatics/postgraduate/fees-funding/research-funding",
+    "relevant_departments": [
+      "School of Informatics",
+      "Institute for Computing Systems Architecture (ICSA)"
+    ],
+    "relevant_research_centres": [
+      "Laboratory for Foundations of Computer Science (LFCS)",
+      "Institute for Adaptive and Neural Computation"
+    ],
+    "suitability_score": 95.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "ucl",
+    "canonical_name": "University College London",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "UCL",
+      "University College London"
+    ],
+    "official_url": "https://www.ucl.ac.uk/",
+    "graduate_school_url": "https://www.ucl.ac.uk/prospective-students/graduate/",
+    "research_url": "https://www.ucl.ac.uk/research",
+    "phd_application_url": "https://www.ucl.ac.uk/prospective-students/graduate/research-degrees/computer-science-mphil-phd",
+    "funding_url": "https://www.ucl.ac.uk/scholarships/funding-students-postgraduate-research-degrees",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Department of Electronic and Electrical Engineering"
+    ],
+    "relevant_research_centres": [
+      "Networks and Distributed Systems Group",
+      "UCL Centre for Blockchain Technologies"
+    ],
+    "suitability_score": 94.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "bristol",
+    "canonical_name": "University of Bristol",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "Bristol",
+      "University of Bristol"
+    ],
+    "official_url": "https://www.bristol.ac.uk/",
+    "graduate_school_url": "https://www.bristol.ac.uk/doctoral-college/",
+    "research_url": "https://www.bristol.ac.uk/research/",
+    "phd_application_url": "https://www.bristol.ac.uk/study/postgraduate/research/computer-science/",
+    "funding_url": "https://www.bristol.ac.uk/study/postgraduate/financial-support/funding-options/",
+    "relevant_departments": [
+      "School of Computer Science",
+      "Department of Electrical & Electronic Engineering"
+    ],
+    "relevant_research_centres": [
+      "Smart Internet Lab",
+      "Visual Information Laboratory",
+      "High Performance Computing Group"
+    ],
+    "suitability_score": 92.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "kcl",
+    "canonical_name": "King's College London",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "KCL",
+      "King's College London",
+      "Kings College London"
+    ],
+    "official_url": "https://www.kcl.ac.uk/",
+    "graduate_school_url": "https://www.kcl.ac.uk/doctoral-studies",
+    "research_url": "https://www.kcl.ac.uk/research",
+    "phd_application_url": "https://www.kcl.ac.uk/study/postgraduate-research/areas/computer-science-research-mphil-phd",
+    "funding_url": "https://www.kcl.ac.uk/study/postgraduate-research/funding",
+    "relevant_departments": [
+      "Department of Informatics",
+      "Department of Engineering"
+    ],
+    "relevant_research_centres": [
+      "Centre for Telecommunications Research (CTR)",
+      "Distributed Artificial Intelligence Group"
+    ],
+    "suitability_score": 91.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "glasgow",
+    "canonical_name": "University of Glasgow",
+    "country": "United Kingdom",
+    "country_code": "UK",
+    "aliases": [
+      "Glasgow",
+      "University of Glasgow"
+    ],
+    "official_url": "https://www.gla.ac.uk/",
+    "graduate_school_url": "https://www.gla.ac.uk/postgraduate/research/",
+    "research_url": "https://www.gla.ac.uk/research/",
+    "phd_application_url": "https://www.gla.ac.uk/postgraduate/research/computing-science/",
+    "funding_url": "https://www.gla.ac.uk/scholarships/pgr/",
+    "relevant_departments": [
+      "School of Computing Science",
+      "James Watt School of Engineering"
+    ],
+    "relevant_research_centres": [
+      "Systems, Communications, and Networking Research Section (SCoNe)"
+    ],
+    "suitability_score": 90.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  }
+]

@@ -1,0 +1,221 @@
+[
+  {
+    "university_id": "kth",
+    "canonical_name": "KTH Royal Institute of Technology",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "KTH",
+      "KTH Royal Institute of Technology",
+      "Kungliga Tekniska högskolan"
+    ],
+    "official_url": "https://www.kth.se/en",
+    "graduate_school_url": "https://www.kth.se/en/studies/phd",
+    "research_url": "https://www.kth.se/en/forskning",
+    "phd_application_url": "https://www.kth.se/en/om/work-at-kth/doktorander-1.572201",
+    "funding_url": "https://www.kth.se/en/studies/phd/funding-1.55465",
+    "relevant_departments": [
+      "School of Electrical Engineering and Computer Science (EECS)",
+      "Division of Communication Systems",
+      "Division of Software and Computer Systems"
+    ],
+    "relevant_research_centres": [
+      "Center for Cyber Defense and Information Security (CDIS)",
+      "WASP AI and Autonomous Systems Center",
+      "KTH Digital Futures"
+    ],
+    "suitability_score": 98.5,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "chalmers",
+    "canonical_name": "Chalmers University of Technology",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "Chalmers",
+      "Chalmers University of Technology",
+      "Chalmers tekniska högskola"
+    ],
+    "official_url": "https://www.chalmers.se/en/",
+    "graduate_school_url": "https://www.chalmers.se/en/education/doctoral-programmes/",
+    "research_url": "https://www.chalmers.se/en/research/",
+    "phd_application_url": "https://www.chalmers.se/en/about-chalmers/work-with-us/vacancies/?rmpage=vacancies",
+    "funding_url": "https://www.chalmers.se/en/education/doctoral-programmes/financing-your-doctoral-studies/",
+    "relevant_departments": [
+      "Department of Computer Science and Engineering",
+      "Distributed Systems Group",
+      "Computer Architecture Division"
+    ],
+    "relevant_research_centres": [
+      "Chalmers AI Research Centre (CHAIR)",
+      "WASP Autonomous Systems Center"
+    ],
+    "suitability_score": 97.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "lund_u",
+    "canonical_name": "Lund University",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "Lund",
+      "Lund University",
+      "Lunds universitet"
+    ],
+    "official_url": "https://www.lunduniversity.lu.se/",
+    "graduate_school_url": "https://www.lunduniversity.lu.se/admissions/phd-studies",
+    "research_url": "https://www.lunduniversity.lu.se/research",
+    "phd_application_url": "https://www.lth.se/english/education/postgraduate-studies/",
+    "funding_url": "https://www.lunduniversity.lu.se/admissions/phd-studies/funding-your-phd",
+    "relevant_departments": [
+      "Faculty of Engineering (LTH)",
+      "Department of Computer Science",
+      "Department of Automatic Control"
+    ],
+    "relevant_research_centres": [
+      "ELLIIT Strategic Research Area in IT and Mobile Communications",
+      "WASP Research Center"
+    ],
+    "suitability_score": 96.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "uppsala_u",
+    "canonical_name": "Uppsala University",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "Uppsala",
+      "Uppsala University",
+      "Uppsala universitet"
+    ],
+    "official_url": "https://www.uu.se/en",
+    "graduate_school_url": "https://www.uu.se/en/admissions/doctoral-studies",
+    "research_url": "https://www.uu.se/en/research",
+    "phd_application_url": "https://www.it.uu.se/education/phd",
+    "funding_url": "https://www.uu.se/en/admissions/doctoral-studies/terms-of-employment",
+    "relevant_departments": [
+      "Department of Information Technology",
+      "Computer Systems Division",
+      "Communication Research Group"
+    ],
+    "relevant_research_centres": [
+      "Uppsala Computing Systems Center (UPMARC)",
+      "Centre for Interdisciplinary Mathematics"
+    ],
+    "suitability_score": 94.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "umea_u",
+    "canonical_name": "Umeå University",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "Umeå",
+      "Umeå University",
+      "Umeå universitet"
+    ],
+    "official_url": "https://www.umu.se/en/",
+    "graduate_school_url": "https://www.umu.se/en/education/doctoral-studies/",
+    "research_url": "https://www.umu.se/en/research/",
+    "phd_application_url": "https://www.umu.se/en/department-of-computing-science/education/doctoral-studies/",
+    "funding_url": "https://www.umu.se/en/work-with-us/open-positions/",
+    "relevant_departments": [
+      "Department of Computing Science",
+      "Autonomous Distributed Systems Lab"
+    ],
+    "relevant_research_centres": [
+      "High Performance Computing Center North (HPC2N)",
+      "WASP AI and Cloud Center"
+    ],
+    "suitability_score": 95.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "linkoping_u",
+    "canonical_name": "Linköping University",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "LiU",
+      "Linköping University",
+      "Linköpings universitet"
+    ],
+    "official_url": "https://liu.se/en",
+    "graduate_school_url": "https://liu.se/en/education/doctoral-studies",
+    "research_url": "https://liu.se/en/research",
+    "phd_application_url": "https://liu.se/en/organisation/liu/ida/postgraduate-studies",
+    "funding_url": "https://liu.se/en/work-at-liu/vacancies",
+    "relevant_departments": [
+      "Department of Computer and Information Science (IDA)",
+      "Department of Electrical Engineering (ISY)"
+    ],
+    "relevant_research_centres": [
+      "National Supercomputer Centre (NSC)",
+      "Security and Networks Research Lab"
+    ],
+    "suitability_score": 93.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "bth",
+    "canonical_name": "Blekinge Institute of Technology",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "BTH",
+      "Blekinge Institute of Technology",
+      "Blekinge Tekniska Högskola"
+    ],
+    "official_url": "https://www.bth.se/eng/",
+    "graduate_school_url": "https://www.bth.se/eng/education/phd-studies/",
+    "research_url": "https://www.bth.se/eng/research/",
+    "phd_application_url": "https://www.bth.se/eng/about-bth/vacancies-at-bth/",
+    "funding_url": "https://www.bth.se/eng/education/phd-studies/",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Department of Software Engineering"
+    ],
+    "relevant_research_centres": [
+      "Software Engineering Research Lab (SERL Sweden)"
+    ],
+    "suitability_score": 90.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "orebro_u",
+    "canonical_name": "Örebro University",
+    "country": "Sweden",
+    "country_code": "SE",
+    "aliases": [
+      "Örebro",
+      "Örebro University",
+      "Örebro universitet"
+    ],
+    "official_url": "https://www.oru.se/english/",
+    "graduate_school_url": "https://www.oru.se/english/study/doctoral-studies/",
+    "research_url": "https://www.oru.se/english/research/",
+    "phd_application_url": "https://www.oru.se/english/working-at-orebro-university/jobs/",
+    "funding_url": "https://www.oru.se/english/study/doctoral-studies/",
+    "relevant_departments": [
+      "School of Science and Technology",
+      "Center for Applied Autonomous Sensor Systems (AASS)"
+    ],
+    "relevant_research_centres": [
+      "Center for Applied Autonomous Sensor Systems (AASS)"
+    ],
+    "suitability_score": 91.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  }
+]

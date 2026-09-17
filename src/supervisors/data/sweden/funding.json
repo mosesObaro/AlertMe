@@ -1,0 +1,38 @@
+[
+  {
+    "opportunity_id": "se_salaried_doctoral_position",
+    "country": "Sweden",
+    "university": "All Swedish Public Universities (KTH, Chalmers, Lund, Uppsala, Umeå, Linköping)",
+    "title": "Swedish Salaried Doctoral Position (Doktorandanställning)",
+    "provider": "Swedish State University System & Swedish Higher Education Ordinance (Högskoleförordningen)",
+    "funding_type": "FULLY_FUNDED",
+    "tuition_coverage": "Full 100% free tuition for all doctoral students (tuition fees are legally waived by Swedish law for PhD researchers)",
+    "stipend_amount": "31,000 - 35,500 SEK/month gross employment salary (regulated by collective bargaining agreements) + full statutory pension, paid vacation (28 days/yr), healthcare, and parental leave benefits",
+    "duration": "4 to 5 years (100% research or 80% research + 20% departmental duties)",
+    "dependant_support": "EXCELLENT",
+    "international_eligibility": "ELIGIBLE",
+    "application_deadline": "2026-12-01",
+    "official_url": "https://www.migrationsverket.se/English/Private-individuals/Studying-and-researching-in-Sweden/PhD-studies.html",
+    "associated_lab_or_professor": "Faculty research group across Swedish universities",
+    "eligibility_notes": "PhD researchers in Sweden are legally recognized as university employees with full labor rights, social benefits, and residence permits for doctoral study leading to permanent residence.",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "opportunity_id": "se_wasp_doctoral_fellowship",
+    "country": "Sweden",
+    "university": "WASP Partner Universities (KTH, Chalmers, Lund, Umeå, Linköping)",
+    "title": "Wallenberg AI, Autonomous Systems and Software Program (WASP) PhD Fellowship",
+    "provider": "Knut and Alice Wallenberg Foundation (KAW)",
+    "funding_type": "FULLY_FUNDED",
+    "tuition_coverage": "Zero tuition + SEK 500,000/year individual research & compute travel budget",
+    "stipend_amount": "Full Swedish salaried doctoral contract (~33,000 SEK/month) + fully funded international research visits at top global labs (MIT, Stanford, Berkeley)",
+    "duration": "4 to 5 years",
+    "dependant_support": "EXCELLENT",
+    "international_eligibility": "ELIGIBLE",
+    "application_deadline": "2026-11-15",
+    "official_url": "https://wasp-sweden.org/graduate-school/",
+    "associated_lab_or_professor": "WASP-affiliated research chairs across Sweden",
+    "eligibility_notes": "Sweden's largest individual research initiative (SEK 6.2 billion funding), providing prestigious world-class doctoral training.",
+    "last_verified": "2026-09-15"
+  }
+]

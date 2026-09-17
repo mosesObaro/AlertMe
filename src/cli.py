@@ -368,6 +368,68 @@ def debug_opportunity_score(args):
     print("=" * 65 + "\n")
 
 
+def run_supervisors_cli(args):
+    """Executes the Country-Based PhD Funding and Supervisor Intelligence Campaign."""
+    from src.supervisors import CountryCampaignManager, CountryAlertGenerator, add_country_supervisor_sheets
+    
+    manager = CountryCampaignManager()
+    min_p = args.min_professors or 8
+    generate_docs = not getattr(args, "no_docs", False)
+    
+    if args.all_countries:
+        print("\n=======================================================")
+        print("  GLOBAL PhD FUNDING & SUPERVISOR INTELLIGENCE ENGINE  ")
+        print("  Executing campaigns for ALL 7 supported countries   ")
+        print("=======================================================\n")
+        results = manager.run_all_campaigns(min_professors=min_p, generate_docs=generate_docs, dry_run=args.dry_run)
+        
+        total_profs = sum(r.professors_count for r in results.values())
+        total_unis = sum(r.universities_count for r in results.values())
+        total_fund = sum(r.funding_opportunities_count for r in results.values())
+        
+        print("\n" + "=" * 60)
+        print(" ALL CAMPAIGNS SUMMARY")
+        print("=" * 60)
+        for c, r in results.items():
+            print(f"  {r.country:<20}: {r.professors_count} professors | {r.universities_count} universities | {r.funding_opportunities_count} funding schemes")
+        print(f"  TOTAL: {total_profs} professors across {total_unis} universities ({total_fund} funding schemes)")
+        print("=" * 60 + "\n")
+        
+        if getattr(args, "update_excel", True) and not args.dry_run:
+            add_country_supervisor_sheets()
+            
+    else:
+        country_input = args.country or "uk"
+        print(f"\nExecuting PhD Supervisor Intelligence Campaign for: {country_input.upper()}...\n")
+        result = manager.run_country_campaign(
+            country_input=country_input,
+            min_professors=min_p,
+            generate_docs=generate_docs,
+            dry_run=args.dry_run
+        )
+        print("\n" + "=" * 60)
+        print(f" COUNTRY CAMPAIGN RESULT: {result.country.upper()}")
+        print("=" * 60)
+        print(f"  Country:               {result.country} ({result.country_code})")
+        print(f"  Execution Date:        {result.execution_date}")
+        print(f"  Universities Profiled: {result.universities_count}")
+        print(f"  Professors Profiled:   {result.professors_count}")
+        print(f"  Funding Opportunities: {result.funding_opportunities_count}")
+        if result.country_report_files:
+            print("  Country Reports Generated:")
+            for fmt, path in result.country_report_files.items():
+                print(f"    - {fmt.upper()}: {path}")
+        print("=" * 60 + "\n")
+        
+        if getattr(args, "update_excel", True) and not args.dry_run:
+            add_country_supervisor_sheets()
+            
+        if getattr(args, "send_email", False) and not args.dry_run:
+            alert_gen = CountryAlertGenerator()
+            email_res = alert_gen.send_country_alert(result)
+            print(f"Email Dispatch: {'SUCCESS' if email_res.get('status') == 'sent' else 'SKIPPED/FAILED'}")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Edge Computing PhD Research Intelligence Assistant CLI",
@@ -427,6 +489,16 @@ def main():
     dopp_parser.add_argument("--description", default="", help="Posting description")
     dopp_parser.add_argument("--quote", default=None, help="Direct recruitment quote snippet")
 
+    # Command: supervisors
+    sup_parser = subparsers.add_parser("supervisors", help="Run Country-Based PhD Funding and Supervisor Intelligence Engine")
+    sup_parser.add_argument("--country", default=None, help="Target country (uk, japan, germany, us, canada, sweden, hong_kong)")
+    sup_parser.add_argument("--all-countries", action="store_true", help="Execute campaigns across all supported countries")
+    sup_parser.add_argument("--min-professors", type=int, default=8, help="Minimum professors required per country (default 8)")
+    sup_parser.add_argument("--dry-run", action="store_true", help="Run without generating files or sending alerts")
+    sup_parser.add_argument("--no-docs", action="store_true", help="Skip document generation")
+    sup_parser.add_argument("--send-email", action="store_true", help="Dispatch email alert with download links")
+    sup_parser.add_argument("--skip-excel", dest="update_excel", action="store_false", help="Skip updating Excel workbook")
+
     args = parser.parse_args()
 
     if args.command == "run":
@@ -449,6 +521,8 @@ def main():
         test_phd_sources(args)
     elif args.command == "debug-opportunity-score":
         debug_opportunity_score(args)
+    elif args.command == "supervisors":
+        run_supervisors_cli(args)
     else:
         parser.print_help()
 

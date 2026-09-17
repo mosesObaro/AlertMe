@@ -1,0 +1,38 @@
+[
+  {
+    "opportunity_id": "ca_vanier_cgs",
+    "country": "Canada",
+    "university": "All Participating Canadian Institutions (Toronto, Waterloo, UBC, McGill, Alberta, etc.)",
+    "title": "Vanier Canada Graduate Scholarships (Vanier CGS)",
+    "provider": "Government of Canada (CIHR, NSERC, SSHRC)",
+    "funding_type": "FULLY_FUNDED",
+    "tuition_coverage": "Full tuition waivers typically awarded alongside fellowship by host institution",
+    "stipend_amount": "CAD $50,000/year tax-free stipend + Spousal Open Work Permit (SOWP) eligibility",
+    "duration": "3 years",
+    "dependant_support": "GOOD",
+    "international_eligibility": "ELIGIBLE",
+    "application_deadline": "2026-11-01",
+    "official_url": "https://vanier.gc.ca/en/home-accueil.html",
+    "associated_lab_or_professor": "Host faculty supervisor across Canadian institutions",
+    "eligibility_notes": "Canada's flagship doctoral award open to both domestic and international applicants.",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "opportunity_id": "ca_departmental_guaranteed_phd_package",
+    "country": "Canada",
+    "university": "Canadian Research Universities (Toronto, Waterloo, UBC, McGill)",
+    "title": "Guaranteed Minimum Doctoral Funding Package (Research & Teaching Assistantships)",
+    "provider": "University Graduate Studies & Faculty Research Grants (NSERC Discovery Grants)",
+    "funding_type": "FULLY_FUNDED",
+    "tuition_coverage": "Full international tuition differential fee waiver or reimbursement",
+    "stipend_amount": "CAD $25,000 - $35,000/year base living funding (after tuition is covered)",
+    "duration": "4 to 5 years guaranteed",
+    "dependant_support": "GOOD",
+    "international_eligibility": "ELIGIBLE",
+    "application_deadline": "2026-12-15",
+    "official_url": "https://web.cs.toronto.edu/graduate/funding",
+    "associated_lab_or_professor": "Admitting computer science department",
+    "eligibility_notes": "All admitted doctoral students receive guaranteed funding covering full tuition plus living allowance.",
+    "last_verified": "2026-09-15"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "university_id": "tum",
+    "canonical_name": "Technical University of Munich (TUM)",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "TUM",
+      "Technical University of Munich",
+      "Technische Universität München"
+    ],
+    "official_url": "https://www.tum.de/en/",
+    "graduate_school_url": "https://www.gs.tum.de/en/gs/home/",
+    "research_url": "https://www.tum.de/en/research",
+    "phd_application_url": "https://www.cit.tum.de/en/cit/studies/doctorate/",
+    "funding_url": "https://www.gs.tum.de/en/gs/application/funding/",
+    "relevant_departments": [
+      "TUM School of Computation, Information and Technology (CIT)",
+      "Chair of Connected Mobility",
+      "Chair of Computer Architecture"
+    ],
+    "relevant_research_centres": [
+      "Munich Data Science Institute (MDSI)",
+      "Munich Center for Machine Learning (MCML)",
+      "Munich Institute of Robotics and Machine Intelligence (MIRMI)"
+    ],
+    "suitability_score": 99.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "rwth_aachen",
+    "canonical_name": "RWTH Aachen University",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "RWTH",
+      "RWTH Aachen",
+      "RWTH Aachen University"
+    ],
+    "official_url": "https://www.rwth-aachen.de/go/id/a/?lidx=1",
+    "graduate_school_url": "https://www.rwth-aachen.de/go/id/egb/?lidx=1",
+    "research_url": "https://www.rwth-aachen.de/go/id/cg/?lidx=1",
+    "phd_application_url": "https://www.fb10.rwth-aachen.de/cms/informatik/studium/promotion/~dgt/promotionsinteressierte/?lidx=1",
+    "funding_url": "https://www.rwth-aachen.de/go/id/ebk/?lidx=1",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Chair of Communication and Distributed Systems (COMSYS)"
+    ],
+    "relevant_research_centres": [
+      "IT Center RWTH",
+      "Center for Artificial Intelligence (RWTH AI Center)"
+    ],
+    "suitability_score": 97.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "tu_berlin",
+    "canonical_name": "Technical University of Berlin (TU Berlin)",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "TU Berlin",
+      "Technical University of Berlin",
+      "Technische Universität Berlin"
+    ],
+    "official_url": "https://www.tu.berlin/en/",
+    "graduate_school_url": "https://www.tu.berlin/en/go1625/",
+    "research_url": "https://www.tu.berlin/en/research",
+    "phd_application_url": "https://www.eecs.tu-berlin.de/menue/studies/doctorate/",
+    "funding_url": "https://www.tu.berlin/en/go1628/",
+    "relevant_departments": [
+      "Faculty of Electrical Engineering and Computer Science",
+      "Mobile Cloud Computing Group"
+    ],
+    "relevant_research_centres": [
+      "Berlin Institute for the Foundations of Learning and Data (BIFOLD)",
+      "Einstein Center Digital Future"
+    ],
+    "suitability_score": 96.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "kit",
+    "canonical_name": "Karlsruhe Institute of Technology (KIT)",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "KIT",
+      "Karlsruhe Institute of Technology",
+      "Karlsruher Institut für Technologie"
+    ],
+    "official_url": "https://www.kit.edu/english/",
+    "graduate_school_url": "https://www.khys.kit.edu/english/",
+    "research_url": "https://www.kit.edu/english/research.php",
+    "phd_application_url": "https://www.informatik.kit.edu/english/930.php",
+    "funding_url": "https://www.khys.kit.edu/english/funding.php",
+    "relevant_departments": [
+      "KIT Department of Informatics",
+      "Institute of Telematics"
+    ],
+    "relevant_research_centres": [
+      "KASTEL Security Research Labs",
+      "Steinbuch Centre for Computing (SCC)"
+    ],
+    "suitability_score": 95.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "tu_dresden",
+    "canonical_name": "TU Dresden",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "TU Dresden",
+      "Technische Universität Dresden",
+      "Dresden University of Technology"
+    ],
+    "official_url": "https://tu-dresden.de/?set_language=en",
+    "graduate_school_url": "https://tu-dresden.de/graduiertenakademie?set_language=en",
+    "research_url": "https://tu-dresden.de/forschung?set_language=en",
+    "phd_application_url": "https://tu-dresden.de/ing/informatik/studium/nach-dem-studium/promotion?set_language=en",
+    "funding_url": "https://tu-dresden.de/graduiertenakademie/foerderung?set_language=en",
+    "relevant_departments": [
+      "Faculty of Computer Science",
+      "Institute of Systems Architecture",
+      "Deutsche Telekom Chair of Communication Networks"
+    ],
+    "relevant_research_centres": [
+      "Centre for Tactile Internet with Human-in-the-Loop (CeTI)",
+      "Barkhausen Institut",
+      "ScaDS.AI"
+    ],
+    "suitability_score": 96.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "stuttgart",
+    "canonical_name": "University of Stuttgart",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "University of Stuttgart",
+      "Universität Stuttgart"
+    ],
+    "official_url": "https://www.uni-stuttgart.de/en/",
+    "graduate_school_url": "https://www.graduiertenakademie.uni-stuttgart.de/en/",
+    "research_url": "https://www.uni-stuttgart.de/en/research/",
+    "phd_application_url": "https://www.f05.uni-stuttgart.de/en/studies/doctorate/",
+    "funding_url": "https://www.graduiertenakademie.uni-stuttgart.de/en/funding/",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Institute of Parallel and Distributed Systems (IPVS)"
+    ],
+    "relevant_research_centres": [
+      "SimTech Cluster of Excellence",
+      "High-Performance Computing Center Stuttgart (HLRS)"
+    ],
+    "suitability_score": 93.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "heidelberg",
+    "canonical_name": "Heidelberg University",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "Heidelberg",
+      "Heidelberg University",
+      "Universität Heidelberg"
+    ],
+    "official_url": "https://www.uni-heidelberg.de/en",
+    "graduate_school_url": "https://www.graduateacademy.uni-heidelberg.de/index_en.html",
+    "research_url": "https://www.uni-heidelberg.de/en/research",
+    "phd_application_url": "https://www.mathinf.uni-heidelberg.de/en/doctorate",
+    "funding_url": "https://www.graduateacademy.uni-heidelberg.de/stipendien/index_en.html",
+    "relevant_departments": [
+      "Faculty of Mathematics and Computer Science",
+      "Institute of Computer Science"
+    ],
+    "relevant_research_centres": [
+      "Interdisciplinary Center for Scientific Computing (IWR)"
+    ],
+    "suitability_score": 91.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "lmu_munich",
+    "canonical_name": "LMU Munich (Ludwig Maximilian University of Munich)",
+    "country": "Germany",
+    "country_code": "DE",
+    "aliases": [
+      "LMU",
+      "LMU Munich",
+      "Ludwig Maximilian University",
+      "Universität München"
+    ],
+    "official_url": "https://www.lmu.de/en/",
+    "graduate_school_url": "https://www.lmu.de/en/study/all-degrees-and-programs/doctoral-studies/index.html",
+    "research_url": "https://www.lmu.de/en/research/index.html",
+    "phd_application_url": "https://www.ifi.lmu.de/en/studies/doctorate/",
+    "funding_url": "https://www.lmu.de/en/study/all-degrees-and-programs/doctoral-studies/financing-your-doctorate/index.html",
+    "relevant_departments": [
+      "Faculty of Mathematics, Computer Science and Statistics",
+      "Institute of Informatics"
+    ],
+    "relevant_research_centres": [
+      "Munich Center for Machine Learning (MCML)"
+    ],
+    "suitability_score": 92.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "university_id": "u_waterloo",
+    "canonical_name": "University of Waterloo",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "Waterloo",
+      "University of Waterloo",
+      "UW"
+    ],
+    "official_url": "https://uwaterloo.ca/",
+    "graduate_school_url": "https://uwaterloo.ca/graduate-studies-postdoctoral-affairs/",
+    "research_url": "https://uwaterloo.ca/research/",
+    "phd_application_url": "https://cs.uwaterloo.ca/future-graduate-students/programs/phd-computer-science",
+    "funding_url": "https://uwaterloo.ca/graduate-studies-postdoctoral-affairs/awards-funding",
+    "relevant_departments": [
+      "David R. Cheriton School of Computer Science",
+      "Department of Electrical and Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Network Softwarization Lab",
+      "Waterloo Artificial Intelligence Institute",
+      "Systems and Networking Group"
+    ],
+    "suitability_score": 98.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "u_toronto",
+    "canonical_name": "University of Toronto",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "U of T",
+      "University of Toronto",
+      "Toronto"
+    ],
+    "official_url": "https://www.utoronto.ca/",
+    "graduate_school_url": "https://www.sgs.utoronto.ca/",
+    "research_url": "https://research.utoronto.ca/",
+    "phd_application_url": "https://web.cs.toronto.edu/graduate/phd",
+    "funding_url": "https://web.cs.toronto.edu/graduate/funding",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "The Edward S. Rogers Sr. Department of Electrical & Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Systems and Networking Group",
+      "Vector Institute for Artificial Intelligence"
+    ],
+    "suitability_score": 99.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "ubc",
+    "canonical_name": "University of British Columbia",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "UBC",
+      "University of British Columbia"
+    ],
+    "official_url": "https://www.ubc.ca/",
+    "graduate_school_url": "https://www.grad.ubc.ca/",
+    "research_url": "https://research.ubc.ca/",
+    "phd_application_url": "https://www.cs.ubc.ca/students/grad/programs/phd",
+    "funding_url": "https://www.cs.ubc.ca/students/grad/tuition-financial-support",
+    "relevant_departments": [
+      "Department of Computer Science",
+      "Department of Electrical and Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Dependable Systems Lab",
+      "Institute for Computing, Information and Cognitive Systems (ICICS)"
+    ],
+    "suitability_score": 97.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "mcgill",
+    "canonical_name": "McGill University",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "McGill",
+      "McGill University"
+    ],
+    "official_url": "https://www.mcgill.ca/",
+    "graduate_school_url": "https://www.mcgill.ca/gps/",
+    "research_url": "https://www.mcgill.ca/research/",
+    "phd_application_url": "https://www.cs.mcgill.ca/academic/graduate/phd/",
+    "funding_url": "https://www.cs.mcgill.ca/academic/graduate/funding/",
+    "relevant_departments": [
+      "School of Computer Science",
+      "Department of Electrical and Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Mila - Quebec AI Institute",
+      "Network and Systems Laboratory"
+    ],
+    "suitability_score": 96.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "u_alberta",
+    "canonical_name": "University of Alberta",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "UAlberta",
+      "University of Alberta",
+      "Alberta"
+    ],
+    "official_url": "https://www.ualberta.ca/index.html",
+    "graduate_school_url": "https://www.ualberta.ca/graduate-studies/index.html",
+    "research_url": "https://www.ualberta.ca/research/index.html",
+    "phd_application_url": "https://www.ualberta.ca/computing-science/graduate-studies/programs-and-admissions/phd.html",
+    "funding_url": "https://www.ualberta.ca/computing-science/graduate-studies/financial-support.html",
+    "relevant_departments": [
+      "Department of Computing Science",
+      "Department of Electrical and Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Alberta Machine Intelligence Institute (Amii)",
+      "Mobile Systems Laboratory"
+    ],
+    "suitability_score": 95.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "sfu",
+    "canonical_name": "Simon Fraser University",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "SFU",
+      "Simon Fraser University"
+    ],
+    "official_url": "https://www.sfu.ca/",
+    "graduate_school_url": "https://www.sfu.ca/gradstudies.html",
+    "research_url": "https://www.sfu.ca/research.html",
+    "phd_application_url": "https://www.sfu.ca/computing/prospective-students/graduate-students/programs/phd.html",
+    "funding_url": "https://www.sfu.ca/computing/prospective-students/graduate-students/financial-support.html",
+    "relevant_departments": [
+      "School of Computing Science",
+      "School of Engineering Science"
+    ],
+    "relevant_research_centres": [
+      "Network and Multimedia Systems Laboratory",
+      "Big Data Hub"
+    ],
+    "suitability_score": 94.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "queens_u",
+    "canonical_name": "Queen's University",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "Queen's",
+      "Queen's University"
+    ],
+    "official_url": "https://www.queensu.ca/",
+    "graduate_school_url": "https://www.queensu.ca/sgs/",
+    "research_url": "https://www.queensu.ca/research/",
+    "phd_application_url": "https://www.cs.queensu.ca/graduate/degrees/phd.php",
+    "funding_url": "https://www.cs.queensu.ca/graduate/financial-assistance/",
+    "relevant_departments": [
+      "School of Computing",
+      "Department of Electrical and Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Telecommunications Research Lab",
+      "Ingenuity Labs Research Institute"
+    ],
+    "suitability_score": 92.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "mcmaster",
+    "canonical_name": "McMaster University",
+    "country": "Canada",
+    "country_code": "CA",
+    "aliases": [
+      "McMaster",
+      "McMaster University"
+    ],
+    "official_url": "https://www.mcmaster.ca/",
+    "graduate_school_url": "https://gs.mcmaster.ca/",
+    "research_url": "https://research.mcmaster.ca/",
+    "phd_application_url": "https://www.eng.mcmaster.ca/cas/programs/graduate/phd-computer-science/",
+    "funding_url": "https://gs.mcmaster.ca/awards-and-funding/",
+    "relevant_departments": [
+      "Department of Computing and Software",
+      "Department of Electrical & Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "MacData Institute",
+      "McMaster Automotive Resource Centre (MARC)"
+    ],
+    "suitability_score": 91.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  }
+]

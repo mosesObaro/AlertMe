@@ -1,0 +1,219 @@
+[
+  {
+    "university_id": "u_tokyo",
+    "canonical_name": "The University of Tokyo",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "UTokyo",
+      "University of Tokyo",
+      "Tokyo University",
+      "Todai"
+    ],
+    "official_url": "https://www.u-tokyo.ac.jp/en/",
+    "graduate_school_url": "https://www.i.u-tokyo.ac.jp/index_e.shtml",
+    "research_url": "https://www.u-tokyo.ac.jp/en/research/",
+    "phd_application_url": "https://www.i.u-tokyo.ac.jp/edu/entra/index_e.shtml",
+    "funding_url": "https://www.u-tokyo.ac.jp/en/prospective-students/fellowship.html",
+    "relevant_departments": [
+      "Graduate School of Information Science and Technology",
+      "Department of Electrical Engineering and Information Systems (EEIS)"
+    ],
+    "relevant_research_centres": [
+      "WIDE Project Laboratory",
+      "Information Technology Center",
+      "Research Center for Advanced Science and Technology (RCAST)"
+    ],
+    "suitability_score": 98.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "kyoto_u",
+    "canonical_name": "Kyoto University",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "Kyoto University",
+      "Kyodai",
+      "Kyoto U"
+    ],
+    "official_url": "https://www.kyoto-u.ac.jp/en",
+    "graduate_school_url": "https://www.i.kyoto-u.ac.jp/en/",
+    "research_url": "https://www.kyoto-u.ac.jp/en/research",
+    "phd_application_url": "https://www.i.kyoto-u.ac.jp/en/admission/",
+    "funding_url": "https://www.kyoto-u.ac.jp/en/education-campus/tuition-scholarships",
+    "relevant_departments": [
+      "Graduate School of Informatics",
+      "Department of Communications and Computer Engineering"
+    ],
+    "relevant_research_centres": [
+      "Academic Center for Computing and Media Studies",
+      "Cyber-Physical Systems Laboratory"
+    ],
+    "suitability_score": 97.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "tokyo_tech",
+    "canonical_name": "Tokyo Institute of Technology (Institute of Science Tokyo)",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "Tokyo Tech",
+      "Institute of Science Tokyo",
+      "Tokyo Institute of Technology",
+      "Tokodai"
+    ],
+    "official_url": "https://www.titech.ac.jp/english",
+    "graduate_school_url": "https://www.titech.ac.jp/english/0/prospective-students/graduate-school",
+    "research_url": "https://www.titech.ac.jp/english/research",
+    "phd_application_url": "https://www.titech.ac.jp/english/admissions/prospective-students/graduate-programs/guide-international-students",
+    "funding_url": "https://www.titech.ac.jp/english/student-support/students/tuition-scholarships",
+    "relevant_departments": [
+      "School of Computing",
+      "Department of Computer Science"
+    ],
+    "relevant_research_centres": [
+      "Global Scientific Information and Computing Center (GSIC)",
+      "Autonomous Decentralized Systems Lab"
+    ],
+    "suitability_score": 96.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "osaka_u",
+    "canonical_name": "Osaka University",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "Osaka University",
+      "Handai",
+      "Osaka U"
+    ],
+    "official_url": "https://www.osaka-u.ac.jp/en",
+    "graduate_school_url": "https://www.ist.osaka-u.ac.jp/english/",
+    "research_url": "https://www.osaka-u.ac.jp/en/research",
+    "phd_application_url": "https://www.ist.osaka-u.ac.jp/english/admission/",
+    "funding_url": "https://www.osaka-u.ac.jp/en/campus/tuition/scholarships",
+    "relevant_departments": [
+      "Graduate School of Information Science and Technology",
+      "Department of Computer Science"
+    ],
+    "relevant_research_centres": [
+      "Cybermedia Center",
+      "Distributed Systems Laboratory"
+    ],
+    "suitability_score": 94.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "keio_u",
+    "canonical_name": "Keio University",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "Keio",
+      "Keio University"
+    ],
+    "official_url": "https://www.keio.ac.jp/en/",
+    "graduate_school_url": "https://www.st.keio.ac.jp/en/",
+    "research_url": "https://www.keio.ac.jp/en/research/",
+    "phd_application_url": "https://www.st.keio.ac.jp/en/admissions/",
+    "funding_url": "https://www.st.keio.ac.jp/en/students/scholarships.html",
+    "relevant_departments": [
+      "Graduate School of Science and Technology",
+      "Department of Information and Computer Science"
+    ],
+    "relevant_research_centres": [
+      "Keio Leading-edge Laboratory of Science and Technology (KLL)",
+      "Matsutani Laboratory"
+    ],
+    "suitability_score": 95.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "tohoku_u",
+    "canonical_name": "Tohoku University",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "Tohoku",
+      "Tohoku University",
+      "Tohokudai"
+    ],
+    "official_url": "https://www.tohoku.ac.jp/en/",
+    "graduate_school_url": "https://www.is.tohoku.ac.jp/en/",
+    "research_url": "https://www.tohoku.ac.jp/en/research/",
+    "phd_application_url": "https://www.is.tohoku.ac.jp/en/admission/",
+    "funding_url": "https://www.tohoku.ac.jp/en/admissions/financial_aid.html",
+    "relevant_departments": [
+      "Graduate School of Information Sciences",
+      "Research Institute of Electrical Communication (RIEC)"
+    ],
+    "relevant_research_centres": [
+      "RIEC Information Networking Laboratory",
+      "Cyberscience Center"
+    ],
+    "suitability_score": 93.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "waseda_u",
+    "canonical_name": "Waseda University",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "Waseda",
+      "Waseda University"
+    ],
+    "official_url": "https://www.waseda.jp/top/en/",
+    "graduate_school_url": "https://www.waseda.jp/fsci/en/",
+    "research_url": "https://www.waseda.jp/top/en/research",
+    "phd_application_url": "https://www.waseda.jp/fsci/en/admissions_gs/",
+    "funding_url": "https://www.waseda.jp/inst/cie/en/life/scholarships",
+    "relevant_departments": [
+      "Faculty of Science and Engineering",
+      "Department of Computer Science and Communications Engineering"
+    ],
+    "relevant_research_centres": [
+      "Green Computing Systems Research Organization",
+      "Network Computing Laboratory"
+    ],
+    "suitability_score": 92.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  },
+  {
+    "university_id": "nagoya_u",
+    "canonical_name": "Nagoya University",
+    "country": "Japan",
+    "country_code": "JP",
+    "aliases": [
+      "Nagoya",
+      "Nagoya University",
+      "Meidai"
+    ],
+    "official_url": "https://en.nagoya-u.ac.jp/",
+    "graduate_school_url": "https://www.i.nagoya-u.ac.jp/en/",
+    "research_url": "https://en.nagoya-u.ac.jp/research/",
+    "phd_application_url": "https://www.i.nagoya-u.ac.jp/en/admissions/",
+    "funding_url": "https://en.nagoya-u.ac.jp/admissions/scholarships/",
+    "relevant_departments": [
+      "Graduate School of Informatics",
+      "Department of Computing and Software Systems"
+    ],
+    "relevant_research_centres": [
+      "Information Technology Center",
+      "Embedded Systems Laboratory (NCES)"
+    ],
+    "suitability_score": 91.0,
+    "funding_availability_rating": "High",
+    "last_verified": "2026-09-15"
+  }
+]

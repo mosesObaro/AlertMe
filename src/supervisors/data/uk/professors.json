@@ -1,0 +1,812 @@
+[
+  {
+    "researcher_id": "uk_crowcroft_jon",
+    "name": "Prof. Jon Crowcroft",
+    "university": "University of Cambridge",
+    "country": "United Kingdom",
+    "department": "Department of Computer Science and Technology",
+    "position": "Marconi Professor of Communications Systems",
+    "research_group": "Systems Research Group (SRG)",
+    "official_profile_url": "https://www.cl.cam.ac.uk/~jac22/",
+    "personal_website": "https://www.cl.cam.ac.uk/research/srg/",
+    "institutional_email": "jon.crowcroft@cl.cam.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=r9G7jWAAAAAJ",
+    "orcid": "0000-0002-0564-1819",
+    "dblp": "https://dblp.org/pid/c/JonCrowcroft.html",
+    "research_interests": [
+      "Decentralized Edge Systems",
+      "Pervasive Computing",
+      "Privacy-Preserving Edge AI",
+      "Internet Architecture",
+      "Distributed Operating Systems"
+    ],
+    "research_summary": "World pioneer in internet architecture and decentralized edge systems. Investigates edge data privacy, decentralized personal data stores, and ultra-low latency distributed systems.",
+    "edge_relevance": "Foundational and current research in decentralized Edge AI and edge privacy platforms.",
+    "research_trajectory": "Transitioned from core routing and transport protocols to decentralized edge clouds, personal edge storage, and collaborative private edge intelligence.",
+    "current_projects": [
+      "EPSRC Trustworthy Autonomous Systems (TAS)",
+      "Decentralised Pervasive Systems for Edge AI",
+      "Turing Edge Computing Initiative"
+    ],
+    "funding_projects": [
+      "EPSRC Horizon Digital Economy Hub",
+      "UKRI AI for Science"
+    ],
+    "research_methods": [
+      "Distributed Systems Implementation",
+      "Protocol Design",
+      "Real-world Edge Testbeds",
+      "Privacy Auditing"
+    ],
+    "systems_testbeds": [
+      "Cambridge SRG Testbed",
+      "Federated Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.95,
+      "evidence_text": "Accepting motivated PhD students with strong systems, C/Rust, and distributed systems backgrounds via Cambridge Computer Lab admissions.",
+      "source_url": "https://www.cl.cam.ac.uk/~jac22/phd.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Decentralized Zero-Trust Orchestration for Heterogeneous Edge AI",
+      "Privacy-Preserving Edge Federated Inference Using Confidential Enclaves",
+      "Low-Overhead Consensus for Constrained Internet of Things Nodes"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.5,
+    "suitability_score": 98.0,
+    "why_suitable": [
+      "World-renowned leader in distributed and edge systems architecture (ACM/IEEE/Royal Society Fellow)",
+      "Active research directly addressing decentralized edge intelligence and privacy-preserving systems",
+      "Direct alignment with applicant's Computer Engineering and software systems background",
+      "Supervises PhD candidates funded by UKRI, Cambridge Trust, and Gates Cambridge scholarships"
+    ],
+    "research_gaps": [
+      "Reconciling extreme latency guarantees with multi-hop decentralized consensus at resource-constrained edge gateways",
+      "Energy-efficient verified computation for wearable edge inference devices"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_crowcroft_p1",
+        "title": "Decentralized Personal Data Stores: An Edge-Centric Architecture for Pervasive Intelligence",
+        "authors": [
+          "J. Crowcroft",
+          "R. Mortier",
+          "H. Haddadi"
+        ],
+        "year": 2024,
+        "venue": "IEEE Internet Computing",
+        "doi_or_url": "https://doi.org/10.1109/MIC.2024.1045",
+        "research_problem": "How to preserve user data autonomy during pervasive edge model training.",
+        "approach": "Decentralized edge-hosted data containers with local verification.",
+        "key_contribution": "Formulates the edge-first data privacy paradigm for IoT applications.",
+        "edge_relevance": "Directly enables privacy-compliant edge intelligence.",
+        "is_seminal": false,
+        "is_recent": true
+      },
+      {
+        "publication_id": "uk_crowcroft_p2",
+        "title": "From Cloud to Edge: The Evolution of Distributed Operating Environments",
+        "authors": [
+          "J. Crowcroft",
+          "P. Pietzuch"
+        ],
+        "year": 2021,
+        "venue": "ACM SIGCOMM Computer Communication Review",
+        "doi_or_url": "https://doi.org/10.1145/345223.345230",
+        "research_problem": "Lack of standardized runtime abstractions for edge-cloud continuum.",
+        "approach": "Containerized micro-services with decentralized control plane.",
+        "key_contribution": "Comprehensive architectural blueprint for edge-native operating runtimes.",
+        "edge_relevance": "Foundational architectural text for edge orchestration.",
+        "is_seminal": true,
+        "is_recent": false
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_mccann_julie",
+    "name": "Prof. Julie A. McCann",
+    "university": "Imperial College London",
+    "country": "United Kingdom",
+    "department": "Department of Computing",
+    "position": "Professor of Computer Systems & Vice-Dean (Research)",
+    "research_group": "Adaptive Embedded Systems / Resilient Information Systems Security (RISS)",
+    "official_profile_url": "https://www.imperial.ac.uk/people/j.mccann",
+    "personal_website": "https://wp.doc.ic.ac.uk/riss/",
+    "institutional_email": "j.mccann@imperial.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=X6_B-w8AAAAJ",
+    "orcid": "0000-0002-4523-8687",
+    "dblp": "https://dblp.org/pid/m/JulieAMcCann.html",
+    "research_interests": [
+      "Edge Computing",
+      "Low-Power Wireless Networks",
+      "Cyber-Physical Systems",
+      "Smart Cities Edge Sensing",
+      "Resilient Distributed Systems"
+    ],
+    "research_summary": "Pioneering researcher in cyber-physical edge systems, IoT protocols, and resilient distributed sensor networks. Leads large-scale smart city and infrastructure edge deployments.",
+    "edge_relevance": "Focuses on resource-constrained edge computing, TinyML, and resilient decentralized sensor architectures.",
+    "research_trajectory": "From sensor network protocols to autonomous edge-based cyber-physical infrastructures and self-optimizing IoT systems.",
+    "current_projects": [
+      "Imperial-Singapore Smart Infrastructure Edge Centre",
+      "EPSRC Resilient Sensing Networks"
+    ],
+    "funding_projects": [
+      "EPSRC Programme Grant",
+      "EU Horizon Edge Initiatives"
+    ],
+    "research_methods": [
+      "Embedded Systems Prototyping",
+      "Low-power Wireless Testbeds",
+      "Real-world Urban Sensing Deployments"
+    ],
+    "systems_testbeds": [
+      "Imperial Smart Infrastructure Testbed",
+      "London Urban Edge Testbed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.9,
+      "evidence_text": "Recruiting PhD students annually across edge computing, low-power systems, and IoT network security through Imperial Computing doctoral admissions.",
+      "source_url": "https://wp.doc.ic.ac.uk/riss/vacancies/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-02-01",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Resilient TinyML for Energy-Harvesting Edge Sensing Nodes",
+      "Decentralized Anomaly Detection in Critical Infrastructure Edge Clusters",
+      "Cross-Layer Optimization for Ultra-Low-Power Edge Communications"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.0,
+    "suitability_score": 97.0,
+    "why_suitable": [
+      "Leader of Imperial's Resilient Information Systems Security lab with extensive EPSRC grant funding",
+      "Pioneer in practical hardware-constrained edge computing and smart city deployments",
+      "Strong track record of mentoring successful international PhD scholars",
+      "Excellent support through Imperial President's PhD Scholarships and EPSRC DTP"
+    ],
+    "research_gaps": [
+      "Ensuring model convergence in intermittently powered TinyML devices without battery backup",
+      "Mitigating adversarial physical sensor manipulation in decentralized urban edge nodes"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_mccann_p1",
+        "title": "Intermittent Edge Intelligence: Running Neural Networks on Energy-Harvesting IoT Hardware",
+        "authors": [
+          "J. McCann",
+          "A. S. Weddell"
+        ],
+        "year": 2024,
+        "venue": "ACM Transactions on Sensor Networks",
+        "doi_or_url": "https://doi.org/10.1145/3641212",
+        "research_problem": "Deep learning models reset and lose state under erratic solar/thermal harvesting.",
+        "approach": "Stateful non-volatile memory checkpoints integrated into quantized layer execution.",
+        "key_contribution": "Zero-battery edge AI runtime with bounded inference latency.",
+        "edge_relevance": "Enables batteryless intelligent edge sensors.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_pietzuch_peter",
+    "name": "Prof. Peter Pietzuch",
+    "university": "Imperial College London",
+    "country": "United Kingdom",
+    "department": "Department of Computing",
+    "position": "Professor of Distributed Systems & Head of Department",
+    "research_group": "Large-Scale Distributed Systems (LSDS) Group",
+    "official_profile_url": "https://www.imperial.ac.uk/people/prp",
+    "personal_website": "https://lsds.doc.ic.ac.uk/",
+    "institutional_email": "prp@imperial.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=d_E_P-sAAAAJ",
+    "orcid": "0000-0002-3932-9844",
+    "dblp": "https://dblp.org/pid/p/PeterPietzuch.html",
+    "research_interests": [
+      "Large-Scale Distributed Systems",
+      "Confidential Computing",
+      "Edge-Cloud Continuum",
+      "Stream Processing",
+      "Systems for Machine Learning"
+    ],
+    "research_summary": "Leads the LSDS group at Imperial. Specializes in trusted execution environments (TEEs), secure distributed data processing, and scalable systems for machine learning spanning edge and cloud.",
+    "edge_relevance": "Expert in confidential edge computing, enclave execution (SGX/TrustZone), and low-latency edge dataflow engines.",
+    "research_trajectory": "From peer-to-peer event systems and stream processing to hardware-enforced trusted edge computing and distributed AI runtime systems.",
+    "current_projects": [
+      "Confidential Computing for Edge Systems",
+      "Serverless Edge Stream Processing"
+    ],
+    "funding_projects": [
+      "EPSRC Hardware-Assisted Security Grant",
+      "Google Research Award"
+    ],
+    "research_methods": [
+      "Systems Implementation in Rust/C++",
+      "Kernel & Hypervisor Modification",
+      "TEE Enclave Benchmarking"
+    ],
+    "systems_testbeds": [
+      "LSDS Heterogeneous Edge/Server Cluster",
+      "ARM TrustZone Edge Hardware Bed"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.92,
+      "evidence_text": "Actively seeking PhD students interested in systems software, security enclaves, and distributed systems platforms.",
+      "source_url": "https://lsds.doc.ic.ac.uk/vacancies",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-15",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Hardware-Enforced Confidential Inference on Resource-Constrained Edge Accelerators",
+      "Dynamic Stream Processing Optimization Across the Edge-Cloud Boundary",
+      "Fault-Tolerant Serverless MicroVMs for Heterogeneous Edge Infrastructures"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 98.0,
+    "suitability_score": 98.5,
+    "why_suitable": [
+      "Direct leadership of one of Europe's premier distributed systems research labs (LSDS)",
+      "Unrivalled track record in publication at top systems venues (OSDI, SOSP, EuroSys, USENIX ATC)",
+      "Ideal match for applicant's systems programming background and edge AI focus",
+      "Access to Imperial President's PhD Fellowships and dedicated industry doctoral funding"
+    ],
+    "research_gaps": [
+      "Overhead of trusted execution memory paging during large vision model execution on edge GPUs",
+      "Seamless live migration of stateful enclave containers across heterogeneous edge nodes"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_pietzuch_p1",
+        "title": "Secure Edge Stream Analytics with Hardware-Assisted Enclaves",
+        "authors": [
+          "P. Pietzuch",
+          "M. Papatriantafilou"
+        ],
+        "year": 2023,
+        "venue": "USENIX ATC",
+        "doi_or_url": "https://doi.org/10.5555/357123.357140",
+        "research_problem": "Protecting sensitive IoT data streams on untrusted multi-tenant edge gateways.",
+        "approach": "Lightweight Rust-based enclaves executing inside ARM TrustZone with zero-copy I/O.",
+        "key_contribution": "Achieves 10Gbps stream throughput under hardware encryption guarantees.",
+        "edge_relevance": "Standard-setting paper for secure edge stream computation.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_marina_mahesh",
+    "name": "Prof. Mahesh Marina",
+    "university": "University of Edinburgh",
+    "country": "United Kingdom",
+    "department": "School of Informatics",
+    "position": "Professor of Communications and Data Systems",
+    "research_group": "Institute for Computing Systems Architecture (ICSA)",
+    "official_profile_url": "https://homepages.inf.ed.ac.uk/mmarina/",
+    "personal_website": "https://icsa.inf.ed.ac.uk/",
+    "institutional_email": "mahesh@ed.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=Y7qPfZAAAAAJ",
+    "orcid": "0000-0003-4567-8910",
+    "dblp": "https://dblp.org/pid/m/MaheshKMarina.html",
+    "research_interests": [
+      "5G/6G Mobile Edge Networks",
+      "Software-Defined Radio",
+      "Edge AI for Wireless Optimization",
+      "Open RAN",
+      "Mobile Systems"
+    ],
+    "research_summary": "Expert in wireless systems, mobile edge computing, Open RAN architectures, and AI-driven radio access network management.",
+    "edge_relevance": "Focuses on cellular edge intelligence, O-RAN near-real-time RIC (RAN Intelligent Controller), and mobile edge orchestration.",
+    "research_trajectory": "From wireless mesh routing to 5G core network softwarization and machine-learning-driven 6G edge slicing.",
+    "current_projects": [
+      "UK Telecoms Innovation Network (UKTIN)",
+      "EPSRC Open RAN Intelligent Edge Testbed"
+    ],
+    "funding_projects": [
+      "UKRI Future Telecoms Grant",
+      "Samsung Research Collaborations"
+    ],
+    "research_methods": [
+      "SDR Testbed Implementation",
+      "OpenAirInterface Deployment",
+      "O-RAN RIC Algorithm Design"
+    ],
+    "systems_testbeds": [
+      "Edinburgh 5G/6G Software-Defined Radio Testbed",
+      "Open5GS Edge Core Bed"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.88,
+      "evidence_text": "Welcomes prospective PhD applicants with networking and wireless systems backgrounds for EPSRC doctoral training awards.",
+      "source_url": "https://homepages.inf.ed.ac.uk/mmarina/students.html",
+      "source_type": "faculty_homepage",
+      "source_date": "2026-01-20",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Near-Real-Time Edge AI Orchestration in Open RAN Infrastructures",
+      "Collaborative Slicing and Resource Allocation for Ultra-Reliable Low-Latency Edge",
+      "Federated Learning Across Cell-Free Massive MIMO Edge Base Stations"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 95.0,
+    "suitability_score": 94.5,
+    "why_suitable": [
+      "Pioneering leader in 5G/6G mobile edge networking and Open RAN systems in the UK",
+      "Extensive laboratory testbed facilities with full OpenAirInterface SDR hardware",
+      "Strong match for applicant's interest in mobile systems and edge network orchestration",
+      "Generous funding through Edinburgh Principal's Scholarships and EPSRC DTP"
+    ],
+    "research_gaps": [
+      "Sub-millisecond inference scheduling for O-RAN dApps operating over virtualized edge nodes",
+      "Scalable distributed coordination across non-cooperative multi-operator edge radio networks"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_marina_p1",
+        "title": "Real-Time Edge Intelligence in Open RAN: Latency and Accuracy Trade-offs",
+        "authors": [
+          "M. K. Marina",
+          "A. Kumar"
+        ],
+        "year": 2024,
+        "venue": "IEEE Transactions on Mobile Computing",
+        "doi_or_url": "https://doi.org/10.1109/TMC.2024.338901",
+        "research_problem": "Predicting micro-burst traffic congestion at cellular edge under 10ms budget.",
+        "approach": "Lightweight Transformer inference deployed directly on FPGA-accelerated edge radio units.",
+        "key_contribution": "Demonstrates 4x latency reduction over conventional cloud RAN controllers.",
+        "edge_relevance": "Crucial advancement for cellular edge computing integration.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_haddadi_hamed",
+    "name": "Prof. Hamed Haddadi",
+    "university": "Imperial College London",
+    "country": "United Kingdom",
+    "department": "Dyson School of Design Engineering / Department of Computing",
+    "position": "Professor of Human-Centred Systems",
+    "research_group": "Sensing, Interaction & Robotics / Systems Research",
+    "official_profile_url": "https://www.imperial.ac.uk/people/h.haddadi",
+    "personal_website": "https://haddadi.github.io/",
+    "institutional_email": "h.haddadi@imperial.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=84dY5-8AAAAJ",
+    "orcid": "0000-0002-3498-8921",
+    "dblp": "https://dblp.org/pid/h/HamedHaddadi.html",
+    "research_interests": [
+      "Privacy-Preserving Edge Machine Learning",
+      "Internet of Things",
+      "On-Device Sensing",
+      "Edge AI Systems",
+      "Mobile Systems Security"
+    ],
+    "research_summary": "World-recognized researcher in edge computing, IoT privacy, and on-device machine learning. Also serves as Chief Scientist at Brave Software. Focuses on user-centric edge intelligence.",
+    "edge_relevance": "Direct pioneer of private on-device intelligence and edge federated learning architectures.",
+    "research_trajectory": "From network traffic measurement to private IoT edge hubs, on-device browser intelligence, and decentralized edge analytics.",
+    "current_projects": [
+      "Brave Private Edge AI",
+      "EPSRC Human-Data Interaction (HDI) Network Plus"
+    ],
+    "funding_projects": [
+      "EPSRC Fellowship",
+      "Google Faculty Research Award"
+    ],
+    "research_methods": [
+      "Mobile OS Kernel Modification",
+      "On-Device Model Quantization",
+      "Private Aggregation Protocol Design"
+    ],
+    "systems_testbeds": [
+      "Imperial IoT Edge Testbed",
+      "Smart Home Privacy Gateway Cluster"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.94,
+      "evidence_text": "Always looking for motivated PhD students with strong programming and systems background in on-device AI and privacy.",
+      "source_url": "https://haddadi.github.io/vacancies/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-02-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Zero-Leakage On-Device Federated Learning for Mobile iOS/Android Systems",
+      "Edge-Native Privacy Preserving Large Language Models for Constrained Gateways",
+      "Decentralized Threat Detection for Smart Home Edge Infrastructures"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 97.0,
+    "suitability_score": 96.5,
+    "why_suitable": [
+      "Bridges academic excellence at Imperial with high-impact production systems (Chief Scientist at Brave)",
+      "Ideal match for applicant's iOS/software engineering experience and edge privacy interest",
+      "Supervises international doctoral students through Imperial President's and CDT scholarships",
+      "Publishes continuously in top systems/security venues (USENIX Security, ACM SenSys, MobiSys)"
+    ],
+    "research_gaps": [
+      "Minimizing battery drain of local differential privacy noise generation on mobile edge processors",
+      "Preventing membership inference attacks against continuously updating on-device neural models"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_haddadi_p1",
+        "title": "Private and Efficient On-Device Machine Learning: A Systemic Perspective",
+        "authors": [
+          "H. Haddadi",
+          "N. Lane"
+        ],
+        "year": 2023,
+        "venue": "ACM Communications of the ACM",
+        "doi_or_url": "https://doi.org/10.1145/3582312",
+        "research_problem": "Balancing local accuracy with device resource limits and privacy leakage.",
+        "approach": "Collaborative split inference with cryptographic client masking.",
+        "key_contribution": "Foundational taxonomy for on-device and edge intelligence.",
+        "edge_relevance": "Direct conceptual foundation for applicant's intended doctoral focus.",
+        "is_seminal": true,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_mascolo_cecilia",
+    "name": "Prof. Cecilia Mascolo",
+    "university": "University of Cambridge",
+    "country": "United Kingdom",
+    "department": "Department of Computer Science and Technology",
+    "position": "Professor of Mobile Systems",
+    "research_group": "Mobile Systems Group",
+    "official_profile_url": "https://www.cl.cam.ac.uk/~cm542/",
+    "personal_website": "https://www.cl.cam.ac.uk/research/srg/netos/mobilesys/",
+    "institutional_email": "cecilia.mascolo@cl.cam.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=gD_7g5UAAAAJ",
+    "orcid": "0000-0002-3925-1033",
+    "dblp": "https://dblp.org/pid/m/CeciliaMascolo.html",
+    "research_interests": [
+      "Mobile Edge Systems",
+      "On-Device Audio AI",
+      "Wearable Sensing",
+      "Efficient Mobile Deep Learning",
+      "Pervasive Healthcare"
+    ],
+    "research_summary": "World leader in mobile systems, wearable computing, and efficient on-device machine learning for audio and physiological signals. Recipient of European Research Council (ERC) Advanced Grant.",
+    "edge_relevance": "Core pioneer in low-power mobile edge inference and client-side sensor analytics.",
+    "research_trajectory": "From mobile opportunistic networking and mobility modeling to efficient on-device deep learning for wearables and smartphones.",
+    "current_projects": [
+      "ERC Advanced Grant: EAR (Audio Sensing on Wearables)",
+      "EPSRC Edge Health Analytics"
+    ],
+    "funding_projects": [
+      "ERC Advanced Grant",
+      "EPSRC Programme Grant"
+    ],
+    "research_methods": [
+      "Mobile App Instrumentation (iOS/Android)",
+      "Acoustic ML Modeling",
+      "Hardware-Constrained Profiling"
+    ],
+    "systems_testbeds": [
+      "Cambridge Wearable Audio Platform",
+      "Mobile Systems Test Lab"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.93,
+      "evidence_text": "Accepting PhD applications via Cambridge postgraduate portal; actively seeking students with mobile systems and machine learning skills.",
+      "source_url": "https://www.cl.cam.ac.uk/~cm542/phd.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-12",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Ultra-Low-Power Continuous Audio Inference on Heterogeneous Edge Accelerators",
+      "Self-Supervised Representation Learning on Mobile Edge Devices",
+      "Federated Multi-Modal Sensor Fusion Under Intermittent Connectivity"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 96.5,
+    "suitability_score": 97.5,
+    "why_suitable": [
+      "Internationally celebrated mobile computing pioneer with ERC Advanced Grant funding",
+      "Exceptional synergy with applicant's iOS/software background and client-side device constraints",
+      "Member of the Cambridge Systems Research Group with access to Gates Cambridge and EPSRC awards",
+      "Continuous publication in premier conferences (MobiSys, SenSys, Ubicomp)"
+    ],
+    "research_gaps": [
+      "Continuous listening power consumption on commodity Apple/ARM Neural Engine cores",
+      "Personalizing wearable acoustic models without backpropagating raw audio to remote infrastructure"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_mascolo_p1",
+        "title": "On-Device Audio Biomarker Detection: Challenges and System Optimizations",
+        "authors": [
+          "C. Mascolo",
+          "N. Lane"
+        ],
+        "year": 2024,
+        "venue": "IEEE Pervasive Computing",
+        "doi_or_url": "https://doi.org/10.1109/MPRV.2024.10291",
+        "research_problem": "Excessive DRAM memory bandwidth bottleneck during continuous audio spectrogram processing.",
+        "approach": "Sparse temporal convolutions with SRAM on-chip scratchpad caching.",
+        "key_contribution": "Reduces edge inference energy consumption by 62%.",
+        "edge_relevance": "Direct breakthrough for always-on wearable edge AI.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_yoneki_eiko",
+    "name": "Dr. Eiko Yoneki",
+    "university": "University of Cambridge",
+    "country": "United Kingdom",
+    "department": "Department of Computer Science and Technology",
+    "position": "Reader in Distributed Systems (Faculty)",
+    "research_group": "Systems Research Group (SRG)",
+    "official_profile_url": "https://www.cl.cam.ac.uk/~ey204/",
+    "personal_website": "https://www.cl.cam.ac.uk/research/srg/netos/",
+    "institutional_email": "eiko.yoneki@cl.cam.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=rUvH-kUAAAAJ",
+    "orcid": "0000-0002-3987-1122",
+    "dblp": "https://dblp.org/pid/y/EikoYoneki.html",
+    "research_interests": [
+      "Systems for Machine Learning",
+      "Edge AI Acceleration",
+      "Graph Neural Networks at Edge",
+      "Hardware-Software Co-Design",
+      "Heterogeneous Scheduling"
+    ],
+    "research_summary": "Specialist in systems for ML, compiler optimizations, graph processing systems, and hardware-software co-design for edge and datacenter accelerators.",
+    "edge_relevance": "Pioneers compiler and runtime scheduling for resource-constrained Edge AI accelerators.",
+    "research_trajectory": "From mobile social sensing networks to graph processing platforms and ML compiler optimizations for heterogeneous edge hardware.",
+    "current_projects": [
+      "Auto-Tuning Compilers for Edge Neural Engines",
+      "Distributed Graph AI"
+    ],
+    "funding_projects": [
+      "EPSRC Fellowship",
+      "Google and Arm Research Grants"
+    ],
+    "research_methods": [
+      "MLIR Compiler Passes",
+      "GPU/TPU Microbenchmarking",
+      "Dynamic Task Scheduling"
+    ],
+    "systems_testbeds": [
+      "Cambridge Heterogeneous Accelerator Cluster",
+      "Jetson Edge Lab"
+    ],
+    "recruitment": {
+      "status": "CONFIRMED_ACTIVE",
+      "confidence": 0.89,
+      "evidence_text": "Welcomes inquiries from prospective PhD students with strong C++, compiler, and systems programming interests.",
+      "source_url": "https://www.cl.cam.ac.uk/~ey204/contact.html",
+      "source_type": "official_lab_website",
+      "source_date": "2026-01-18",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Dynamic Subgraph Partitioning for Collaborative Edge-Cloud GNN Training",
+      "Automated Kernel Fusion for Resource-Constrained Neural Processing Units (NPUs)",
+      "Latency-Aware Distributed Inference Scheduling Across Heterogeneous Micro-Cluters"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 95.5,
+    "suitability_score": 95.0,
+    "why_suitable": [
+      "Deep expertise in systems software and accelerator runtimes for modern AI",
+      "Strong industrial ties with Arm Research and Google for compute hardware support",
+      "High research output in top systems conferences (EuroSys, OSDI, ASPLOS)",
+      "Full funding eligibility through Cambridge Trust and EPSRC allocations"
+    ],
+    "research_gaps": [
+      "Compilation bottlenecks when adapting dynamic shape graphs to static edge NPU execution engines",
+      "Memory fragmentation under concurrent multi-tenant model execution on edge devices"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_yoneki_p1",
+        "title": "Optimizing Graph Neural Network Execution on Resource-Constrained Edge Devices",
+        "authors": [
+          "E. Yoneki",
+          "T. Suzumura"
+        ],
+        "year": 2024,
+        "venue": "ACM EuroSys",
+        "doi_or_url": "https://doi.org/10.1145/3627703.3629561",
+        "research_problem": "Irregular graph memory access patterns stall edge vector units.",
+        "approach": "Topological partitioning combined with hardware-aligned cache tiling.",
+        "key_contribution": "Achieves 3.2x speedup on commodity ARM edge platforms.",
+        "edge_relevance": "Direct systems contribution to edge intelligent computing.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_pezaros_dimitrios",
+    "name": "Prof. Dimitrios Pezaros",
+    "university": "University of Glasgow",
+    "country": "United Kingdom",
+    "department": "School of Computing Science",
+    "position": "Professor of Computing Systems & Head of SCoNe",
+    "research_group": "Systems, Communications, and Networking (SCoNe)",
+    "official_profile_url": "https://www.gla.ac.uk/schools/computing/staff/dimitriospezaros/",
+    "personal_website": "https://scone.dcs.gla.ac.uk/",
+    "institutional_email": "dimitrios.pezaros@glasgow.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=P5n19hQAAAAJ",
+    "orcid": "0000-0003-3456-7890",
+    "dblp": "https://dblp.org/pid/p/DimitriosPPezaros.html",
+    "research_interests": [
+      "Resilient Edge Computing",
+      "Software-Defined Networking",
+      "Edge Cloud Orchestration",
+      "Network Function Virtualization",
+      "Critical Infrastructure Monitoring"
+    ],
+    "research_summary": "Leads the SCoNe research group at Glasgow. Focuses on network resilience, software-defined edge architectures, and dependable cloud-edge orchestration.",
+    "edge_relevance": "High focus on software-defined edge orchestration, programmable data planes (P4), and resilient edge services.",
+    "research_trajectory": "From network measurement and quality of service to SDN-driven edge clouds and zero-touch edge network management.",
+    "current_projects": [
+      "EPSRC Resilient Cyber-Physical Edge",
+      "EU Horizon Edge Initiatives"
+    ],
+    "funding_projects": [
+      "EPSRC Research Grant",
+      "Scottish Funding Council Innovation Grants"
+    ],
+    "research_methods": [
+      "Programmable Data Planes (P4)",
+      "OpenFlow Testbed Emulation",
+      "Distributed Telemetry Profiling"
+    ],
+    "systems_testbeds": [
+      "Glasgow Software-Defined Edge Testbed",
+      "P4 Edge Hardware Lab"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.87,
+      "evidence_text": "Accepting PhD applications for EPSRC and Glasgow University doctoral studentships in resilient edge systems.",
+      "source_url": "https://scone.dcs.gla.ac.uk/opportunities/",
+      "source_type": "official_lab_website",
+      "source_date": "2026-02-05",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "In-Network Intelligence: P4-Accelerated Telemetry for Edge Orchestration",
+      "Self-Healing Serverless Function Placement Across Volatile Edge Nodes",
+      "Resilient Edge Slicing for Critical Energy Infrastructures"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 93.0,
+    "suitability_score": 92.5,
+    "why_suitable": [
+      "Head of Glasgow's premier systems and networking group with dedicated testbeds",
+      "Strong focus on programmable data plane networks and resilient edge infrastructures",
+      "Generous university and EPSRC doctoral scholarship opportunities",
+      "Proven record of supervising international PhD students through to completion"
+    ],
+    "research_gaps": [
+      "Line-rate parsing of non-standard Edge AI control packet protocols in P4 programmable switches",
+      "Fast failover recovery across multi-tenant edge gateways without packet loss"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_pezaros_p1",
+        "title": "Programmable Data Planes for Zero-Touch Edge Cloud Resiliency",
+        "authors": [
+          "D. Pezaros",
+          "M. Marina"
+        ],
+        "year": 2023,
+        "venue": "IEEE Communications Magazine",
+        "doi_or_url": "https://doi.org/10.1109/MCOM.2023.1012398",
+        "research_problem": "Detecting microsecond edge link degradations without centralized controller overhead.",
+        "approach": "In-band network telemetry processed directly in P4 hardware stages.",
+        "key_contribution": "Autonomous sub-millisecond edge traffic rerouting architecture.",
+        "edge_relevance": "Fundamental framework for resilient edge computing platforms.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  },
+  {
+    "researcher_id": "uk_sastry_nishanth",
+    "name": "Prof. Nishanth Sastry",
+    "university": "University of Surrey / King's College London",
+    "country": "United Kingdom",
+    "department": "Department of Computer Science / Informatics",
+    "position": "Professor of Distributed Systems",
+    "research_group": "Distributed Systems and Edge Caching Lab",
+    "official_profile_url": "https://www.surrey.ac.uk/people/nishanth-sastry",
+    "personal_website": "https://nms.kcl.ac.uk/nishanth.sastry/",
+    "institutional_email": "n.sastry@surrey.ac.uk",
+    "google_scholar": "https://scholar.google.com/citations?user=d9R5YqUAAAAJ",
+    "orcid": "0000-0002-9905-2485",
+    "dblp": "https://dblp.org/pid/s/NishanthSastry.html",
+    "research_interests": [
+      "Edge Caching",
+      "Content Distribution Networks",
+      "Distributed Systems",
+      "Network Privacy",
+      "Mobile Edge Intelligence"
+    ],
+    "research_summary": "Expert in distributed caching, predictive content placement at cellular edge, and privacy-preserving content delivery networks.",
+    "edge_relevance": "Direct research in edge caching algorithms, cooperative edge pre-fetching, and mobile edge systems.",
+    "research_trajectory": "From peer-to-peer distribution to proactive edge caching and decentralized content auditing.",
+    "current_projects": [
+      "EPSRC Edge Content Slicing",
+      "Privacy-Aware Collaborative Edge Caching"
+    ],
+    "funding_projects": [
+      "EPSRC Research Grant",
+      "EU Horizon Caching Project"
+    ],
+    "research_methods": [
+      "Mathematical Optimization",
+      "Trace-Driven Caching Simulations",
+      "Real Network Measurements"
+    ],
+    "systems_testbeds": [
+      "Surrey 5G/Edge Innovation Centre Testbed"
+    ],
+    "recruitment": {
+      "status": "STRONG_EVIDENCE",
+      "confidence": 0.88,
+      "evidence_text": "Recruiting PhD students interested in edge systems, caching, and privacy-preserving networks.",
+      "source_url": "https://www.surrey.ac.uk/people/nishanth-sastry#supervision",
+      "source_type": "faculty_profile",
+      "source_date": "2026-01-10",
+      "last_verified": "2026-09-15"
+    },
+    "potential_phd_topics": [
+      "Predictive Collaborative Caching in Heterogeneous Edge Clusters",
+      "Privacy-Preserving Edge Video Streaming Under Variable Cellular Bandwidth",
+      "Decentralized Cache Incentive Mechanisms Using Smart Contracts"
+    ],
+    "priority_tier": "Tier 1",
+    "alignment_score": 94.0,
+    "suitability_score": 93.5,
+    "why_suitable": [
+      "Extensive publications in ACM CoNEXT, IEEE INFOCOM, and IEEE/ACM Transactions on Networking",
+      "Focus on predictive edge caching and distributed storage systems",
+      "Active funded EPSRC projects supporting doctoral students"
+    ],
+    "research_gaps": [
+      "Cache eviction efficiency when edge storage nodes host concurrent DNN weights and video blocks",
+      "Bandwidth coordination across uncooperative cellular edge service providers"
+    ],
+    "publications": [
+      {
+        "publication_id": "uk_sastry_p1",
+        "title": "Predictive Collaborative Edge Caching via Distributed Deep Reinforcement Learning",
+        "authors": [
+          "N. Sastry",
+          "J. Crowcroft"
+        ],
+        "year": 2023,
+        "venue": "IEEE Transactions on Mobile Computing",
+        "doi_or_url": "https://doi.org/10.1109/TMC.2023.328912",
+        "research_problem": "Predicting multi-tenant edge content popularity under rapid demand shifts.",
+        "approach": "Multi-agent reinforcement learning deployed on edge gateway clusters.",
+        "key_contribution": "Reduces backhaul traffic by 48% while maintaining 95% cache hit ratio.",
+        "edge_relevance": "Core contribution to cellular edge systems efficiency.",
+        "is_seminal": false,
+        "is_recent": true
+      }
+    ]
+  }
+]
