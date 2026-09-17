@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-16T03:01:13.470851",
+  "last_updated": "2026-09-17T03:04:27.048131",
   "familiarity": {
     "polyu_cao_jiannong": {
       "researcher_id": "polyu_cao_jiannong",
@@ -70,11 +70,11 @@
       "research_projects_exposed": [],
       "research_trajectory_understood": false,
       "recruitment_verified": false,
-      "familiarity_score": 66.6,
-      "last_exposed": "2026-09-16",
-      "exposure_cycle_day": 3,
-      "cycle_completed": false,
-      "cycles_completed": 0
+      "familiarity_score": 100.0,
+      "last_exposed": "2026-09-17",
+      "exposure_cycle_day": 1,
+      "cycle_completed": true,
+      "cycles_completed": 1
     },
     "hkust_wang_lin": {
       "researcher_id": "hkust_wang_lin",
@@ -435,6 +435,41 @@
       "dossier_docx_link": null,
       "dossier_pdf_link": null,
       "dossier_epub_link": null
+    },
+    {
+      "alert_id": "hkust_wang_wei_day3_20260917",
+      "date": "2026-09-17",
+      "weeks_remaining": 11,
+      "days_remaining": 75,
+      "university": "The Hong Kong University of Science and Technology",
+      "professor": "Prof. Wei Wang",
+      "department": "Department of Computer Science and Engineering (CSE)",
+      "research_group": "System Networking Lab (SING)",
+      "priority_tier": "Tier 1",
+      "research_alignment_pct": 96,
+      "recruitment_status": "CONFIRMED_ACTIVE",
+      "recruitment_evidence": "Multiple PhD openings available each year. If you are interested in building real computer systems for distributed AI and edge computing, email me with your CV, transcripts, and a brief research statement. HKPFS candidates are strongly encouraged. [Source: faculty_homepage, Date: 2026-06-30]",
+      "cycle_day": 3,
+      "today_research_focus": "PhD Proposal Alignment, Target Scholarships & Outreach Formulation",
+      "paper_title": "FedAdapt: Adaptive Federated Learning over Edge Networks",
+      "paper_author": "Wei Wang, Di Wu, Bo Li",
+      "paper_year": 2022,
+      "paper_link": "https://doi.org/10.1109/INFOCOM48880.2022.9796781",
+      "research_problem": "Extreme variance in edge link bandwidth causing dropped gradient updates in decentralized training.",
+      "approach": "Adaptive layer-wise gradient compression and dynamic deadline scaling based on TCP window metrics.",
+      "key_contribution": "Accelerated wall-clock convergence time by 3.2x on real-world testbed of 20 edge nodes.",
+      "why_it_matters_for_edge": "Premier paper addressing communication-efficient distributed edge ML.",
+      "research_trajectory": "Synthesis: You now have a complete picture of Prof. Wei Wang's trajectory, seminal papers, recent methods, and funded projects.",
+      "what_to_read_next": "Follow up with 'FedAdapt: Adaptive Federated Learning over Edge Networks' for current extensions.",
+      "potential_phd_alignment": "Potential PhD Topics: Communication-Efficient Gradient Synchronization across Low-Bandwidth Edge Networks; Adaptive Microservice Placement for Edge-Cloud Collaborative Deep Learning Inference.",
+      "application_action_today": "Download the 30-section Suitability Dossier (PDF/DOCX/EPUB). Finalize a personalized 1-paragraph outreach email citing 'FedAdapt: Adaptive Federated Learning over Edge Networks' targeting their active grants.",
+      "scholarship_connection": "HKUST RedBird PhD Award & Postgraduate Studentship (PGS) (HK$40,000 recruitment award + full annual PGS of HK$220,680 (approx HK$18,390/mo)). Supervisor endorsement significantly strengthens departmental ranking.",
+      "deadline_info": "2026-12-01 23:59:59 HKT (75 days / 11 weeks remaining)",
+      "next_action": "3-Day Deep Dive complete for Prof. Wei Wang! Tomorrow: Advance to next high-priority supervisor candidate.",
+      "dossier_report_link": "https://github.com/mosesObaro/AlertMe/blob/main/reports/supervisors/Prof_Wei_Wang_PhD_Supervisor_Profile.md",
+      "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Wei_Wang_PhD_Supervisor_Profile.docx",
+      "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Wei_Wang_PhD_Supervisor_Profile.pdf",
+      "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Wei_Wang_PhD_Supervisor_Profile.epub"
     }
   ],
   "campaign_state": {}
