@@ -183,7 +183,7 @@ class TestCountrySupervisors:
         assert "Global PhD Funding" in new_sheets
 
     def test_country_alert_renderer_and_email(self):
-        """Verify email briefing HTML rendering contains download links for all 4 formats."""
+        """Verify email briefing HTML rendering contains download links for all 4 formats and valid canonical paths."""
         result = self.manager.run_country_campaign("uk", dry_run=True, generate_docs=False)
         alert_gen = CountryAlertGenerator()
         html = alert_gen.render_country_briefing_html(result)
@@ -194,13 +194,22 @@ class TestCountrySupervisors:
         assert "PDF" in html
         assert "Word" in html
         assert "EPUB" in html
+        assert "reports/supervisors/uk/country_profile.pdf" in html
+        assert "reports/supervisors/uk/professors/" in html
+
+        # Verify Japan uses 'japan' directory, NOT 'jp'
+        result_jp = self.manager.run_country_campaign("japan", dry_run=True, generate_docs=False)
+        html_jp = alert_gen.render_country_briefing_html(result_jp)
+        assert "reports/supervisors/japan/country_profile.pdf" in html_jp
+        assert "reports/supervisors/japan/professors/" in html_jp
+        assert "reports/supervisors/jp/" not in html_jp
 
         # Dry run send email
         send_res = alert_gen.send_country_alert(result, dry_run=True)
         assert send_res["status"] == "dry_run"
 
     def test_global_alert_renderer_and_email(self):
-        """Verify global email briefing HTML rendering and dispatch for all countries."""
+        """Verify global email briefing HTML rendering and dispatch for all countries with canonical URLs."""
         all_results = self.manager.run_all_campaigns(dry_run=True, generate_docs=False)
         alert_gen = CountryAlertGenerator()
         payload = alert_gen.render_global_email(all_results)
@@ -214,6 +223,22 @@ class TestCountrySupervisors:
         assert "Canada" in payload["html"]
         assert "Sweden" in payload["html"]
         assert "Hong Kong" in payload["html"]
+
+        # Ensure all 7 canonical country folder paths exist in links
+        assert "reports/supervisors/japan/country_profile.pdf" in payload["html"]
+        assert "reports/supervisors/germany/country_profile.pdf" in payload["html"]
+        assert "reports/supervisors/sweden/country_profile.pdf" in payload["html"]
+        assert "reports/supervisors/canada/country_profile.pdf" in payload["html"]
+        assert "reports/supervisors/hong_kong/country_profile.pdf" in payload["html"]
+        assert "reports/supervisors/uk/country_profile.pdf" in payload["html"]
+        assert "reports/supervisors/us/country_profile.pdf" in payload["html"]
+
+        # Ensure short 2-letter codes were not incorrectly used for paths
+        assert "reports/supervisors/jp/" not in payload["html"]
+        assert "reports/supervisors/de/" not in payload["html"]
+        assert "reports/supervisors/se/" not in payload["html"]
+        assert "reports/supervisors/ca/" not in payload["html"]
+        assert "reports/supervisors/hk/" not in payload["html"]
 
         send_res = alert_gen.send_global_alert(all_results, dry_run=True)
         assert send_res["status"] == "dry_run"

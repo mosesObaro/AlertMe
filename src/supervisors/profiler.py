@@ -24,6 +24,11 @@ from .models import (
 )
 from .config import DEFAULT_APPLICANT_PROFILE
 
+def get_safe_filename(text: str) -> str:
+    """Sanitizes strings for safe, consistent directory and file naming."""
+    safe = re.sub(r'[^a-zA-Z0-9_-]', '_', text)
+    return re.sub(r'_+', '_', safe).strip('_').lower()
+
 class DossierProfiler:
     """Generates quad-format documents for country campaigns and supervisor dossiers."""
 
@@ -33,8 +38,7 @@ class DossierProfiler:
         self.base_output_dir.mkdir(parents=True, exist_ok=True)
 
     def _get_safe_filename(self, text: str) -> str:
-        safe = re.sub(r'[^a-zA-Z0-9_-]', '_', text)
-        return re.sub(r'_+', '_', safe).strip('_').lower()
+        return get_safe_filename(text)
 
     # ==========================================================================
     # 1. PROFESSOR DOSSIER GENERATION (33 SECTIONS)

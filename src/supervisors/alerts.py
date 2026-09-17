@@ -4,9 +4,12 @@ Renders responsive HTML and Markdown briefings with direct download call-to-acti
 for Country Reports and Professor Research Dossiers across 4 formats.
 """
 
+import re
 from typing import Dict, Any, Optional
 from datetime import date
 from .models import CountryCampaignResult, CountryCampaign
+from .config import normalize_country_key
+from .profiler import get_safe_filename
 
 class CountryAlertGenerator:
     """Generates email briefings for country campaign runs."""
@@ -21,6 +24,7 @@ class CountryAlertGenerator:
         Generates both HTML and text/markdown email bodies for a country campaign run.
         Returns {'subject': ..., 'html': ..., 'text': ...}.
         """
+        country_key = normalize_country_key(campaign.country or result.country)
         subject = f"[PhD Intelligence Alert] {campaign.country}: {result.professors_count} Funded Edge Computing Supervisors"
 
         # Markdown body
@@ -39,10 +43,10 @@ class CountryAlertGenerator:
 
         for p in result.professors[:10]:
             rec = p.recruitment.status if p.recruitment else "UNKNOWN"
-            safe_id = p.name.lower().replace(" ", "_").replace(".", "")
+            safe_id = get_safe_filename(p.name)
             text_lines.append(f"* **{p.name}** ({p.university}) — Fit: {p.alignment_score:.1f}% | Recruitment: {rec}")
             text_lines.append(f"  Research Focus: {', '.join(p.research_interests[:3])}")
-            text_lines.append(f"  Dossier: reports/supervisors/{result.country_code.lower()}/professors/{safe_id}/dossier.md")
+            text_lines.append(f"  Dossier: reports/supervisors/{country_key}/professors/{safe_id}/dossier.md")
 
         text_lines.append("")
         text_lines.append("## Major Doctoral Funding Schemes")
@@ -50,7 +54,7 @@ class CountryAlertGenerator:
             text_lines.append(f"* **{fo.title}** ({fo.university}): {fo.stipend_amount} | Deadline: {fo.application_deadline}")
 
         text_lines.append("")
-        text_lines.append(f"Country Profile Dossiers (MD, PDF, DOCX, EPUB) generated in: reports/supervisors/{result.country_code.lower()}/")
+        text_lines.append(f"Country Profile Dossiers (MD, PDF, DOCX, EPUB) generated in: reports/supervisors/{country_key}/")
         text_body = "\n".join(text_lines)
 
         # HTML body
@@ -59,7 +63,7 @@ class CountryAlertGenerator:
             rec_status = p.recruitment.status if p.recruitment else "UNKNOWN"
             badge_color = "#15803d" if rec_status in ["CONFIRMED_ACTIVE", "STRONG_EVIDENCE"] else "#854d0e"
             badge_bg = "#dcfce7" if rec_status in ["CONFIRMED_ACTIVE", "STRONG_EVIDENCE"] else "#fef9c3"
-            safe_name = p.name.lower().replace(" ", "_").replace(".", "")
+            safe_name = get_safe_filename(p.name)
 
             prof_cards_html += f"""
             <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:16px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,0.05);">
@@ -74,13 +78,13 @@ class CountryAlertGenerator:
                     <strong>Research Fit: {p.alignment_score:.1f}%</strong> — {p.research_summary[:160]}...
                 </p>
                 <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #e2e8f0;font-size:12px;">
-                    <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/professors/{safe_name}/dossier.md" style="color:#2563eb;text-decoration:none;font-weight:bold;margin-right:12px;">📄 Markdown Dossier</a>
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.md" style="color:#2563eb;text-decoration:none;font-weight:bold;margin-right:12px;">📄 Markdown Dossier</a>
                     <span style="color:#94a3b8;">•</span>
-                    <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/professors/{safe_name}/dossier.pdf" style="color:#dc2626;text-decoration:none;font-weight:bold;margin:0 12px;">📕 PDF</a>
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.pdf" style="color:#dc2626;text-decoration:none;font-weight:bold;margin:0 12px;">📕 PDF</a>
                     <span style="color:#94a3b8;">•</span>
-                    <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/professors/{safe_name}/dossier.docx" style="color:#2563eb;text-decoration:none;font-weight:bold;margin:0 12px;">📥 Word</a>
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.docx" style="color:#2563eb;text-decoration:none;font-weight:bold;margin:0 12px;">📥 Word</a>
                     <span style="color:#94a3b8;">•</span>
-                    <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/professors/{safe_name}/dossier.epub" style="color:#059669;text-decoration:none;font-weight:bold;margin-left:12px;">📱 EPUB</a>
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.epub" style="color:#059669;text-decoration:none;font-weight:bold;margin-left:12px;">📱 EPUB</a>
                 </div>
             </div>
             """
@@ -115,10 +119,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv
 
         <div style="margin-bottom:24px;">
             <h3 style="font-size:16px;color:#1B365D;margin-bottom:12px;">Complete Country Dossier (All 4 Formats)</h3>
-            <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/country_profile.md" class="btn" style="background:#1B365D;">📄 Country Report (MD)</a>
-            <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/country_profile.pdf" class="btn" style="background:#dc2626;">📕 PDF</a>
-            <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/country_profile.docx" class="btn" style="background:#2563eb;">📥 Word</a>
-            <a href="{repo_prefix}/reports/supervisors/{result.country_code.lower()}/country_profile.epub" class="btn" style="background:#059669;">📱 EPUB</a>
+            <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.md" class="btn" style="background:#1B365D;">📄 Country Report (MD)</a>
+            <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.pdf" class="btn" style="background:#dc2626;">📕 PDF</a>
+            <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.docx" class="btn" style="background:#2563eb;">📥 Word</a>
+            <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.epub" class="btn" style="background:#059669;">📱 EPUB</a>
         </div>
 
         <h3 style="font-size:16px;color:#1B365D;border-bottom:2px solid #e2e8f0;padding-bottom:6px;margin-bottom:14px;">Top Vetted Supervisors ({result.professors_count})</h3>
@@ -214,21 +218,21 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv
         ]
         
         for c_key, res in results.items():
+            country_key = normalize_country_key(c_key or res.country)
             primary_funding = res.funding_opportunities[0].title if res.funding_opportunities else "National Doctoral Schemes"
-            code = res.country_code.lower()
-            text_lines.append(f"| **{res.country}** ({res.country_code}) | {res.professors_count} professors | {res.universities_count} | {primary_funding} | [View Dossiers]({repo_prefix}/reports/supervisors/{code}/country_profile.md) |")
+            text_lines.append(f"| **{res.country}** ({res.country_code}) | {res.professors_count} professors | {res.universities_count} | {primary_funding} | [View Dossiers]({repo_prefix}/reports/supervisors/{country_key}/country_profile.md) |")
             
         text_lines.append("")
         text_lines.append("## 2. Featured Top Supervisors by Country")
         for c_key, res in results.items():
-            code = res.country_code.lower()
+            country_key = normalize_country_key(c_key or res.country)
             text_lines.append(f"### {res.country} ({res.country_code})")
             for p in res.professors[:3]:
-                safe_id = p.name.lower().replace(" ", "_").replace(".", "")
+                safe_id = get_safe_filename(p.name)
                 rec = p.recruitment.status if p.recruitment else "UNKNOWN"
                 text_lines.append(f"* **{p.name}** ({p.university}) — Alignment: {p.alignment_score:.1f}% | Recruitment: {rec}")
                 text_lines.append(f"  Focus: {', '.join(p.research_interests[:3])}")
-                text_lines.append(f"  Dossier: {repo_prefix}/reports/supervisors/{code}/professors/{safe_id}/dossier.md")
+                text_lines.append(f"  Dossier: {repo_prefix}/reports/supervisors/{country_key}/professors/{safe_id}/dossier.md")
             text_lines.append("")
             
         text_body = "\n".join(text_lines)
@@ -236,7 +240,7 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv
         # HTML body
         country_rows_html = ""
         for c_key, res in results.items():
-            code = res.country_code.lower()
+            country_key = normalize_country_key(c_key or res.country)
             funding_name = res.funding_opportunities[0].title if res.funding_opportunities else "National Doctoral Schemes"
             country_rows_html += f"""
             <tr style="border-bottom:1px solid #e2e8f0;">
@@ -245,20 +249,20 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv
                 <td style="padding:10px 8px;text-align:center;color:#475569;">{res.universities_count}</td>
                 <td style="padding:10px 8px;font-size:12px;color:#334155;">{funding_name[:36]}</td>
                 <td style="padding:10px 8px;font-size:12px;white-space:nowrap;">
-                    <a href="{repo_prefix}/reports/supervisors/{code}/country_profile.md" style="color:#2563eb;text-decoration:none;font-weight:bold;">MD</a> •
-                    <a href="{repo_prefix}/reports/supervisors/{code}/country_profile.pdf" style="color:#dc2626;text-decoration:none;font-weight:bold;">PDF</a> •
-                    <a href="{repo_prefix}/reports/supervisors/{code}/country_profile.docx" style="color:#2563eb;text-decoration:none;font-weight:bold;">Word</a> •
-                    <a href="{repo_prefix}/reports/supervisors/{code}/country_profile.epub" style="color:#059669;text-decoration:none;font-weight:bold;">EPUB</a>
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.md" style="color:#2563eb;text-decoration:none;font-weight:bold;">MD</a> •
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.pdf" style="color:#dc2626;text-decoration:none;font-weight:bold;">PDF</a> •
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.docx" style="color:#2563eb;text-decoration:none;font-weight:bold;">Word</a> •
+                    <a href="{repo_prefix}/reports/supervisors/{country_key}/country_profile.epub" style="color:#059669;text-decoration:none;font-weight:bold;">EPUB</a>
                 </td>
             </tr>
             """
 
         country_sections_html = ""
         for c_key, res in results.items():
-            code = res.country_code.lower()
+            country_key = normalize_country_key(c_key or res.country)
             prof_cards = ""
             for p in res.professors[:3]:
-                safe_name = p.name.lower().replace(" ", "_").replace(".", "")
+                safe_name = get_safe_filename(p.name)
                 rec_status = p.recruitment.status if p.recruitment else "UNKNOWN"
                 badge_color = "#15803d" if rec_status in ["CONFIRMED_ACTIVE", "STRONG_EVIDENCE"] else "#854d0e"
                 badge_bg = "#dcfce7" if rec_status in ["CONFIRMED_ACTIVE", "STRONG_EVIDENCE"] else "#fef9c3"
@@ -276,10 +280,10 @@ body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helv
                         <strong>Research Fit: {p.alignment_score:.1f}%</strong> — {', '.join(p.research_interests[:3])}
                     </div>
                     <div style="font-size:11px;padding-top:6px;border-top:1px dashed #cbd5e1;">
-                        <a href="{repo_prefix}/reports/supervisors/{code}/professors/{safe_name}/dossier.md" style="color:#2563eb;text-decoration:none;font-weight:bold;margin-right:8px;">📄 MD</a>
-                        <a href="{repo_prefix}/reports/supervisors/{code}/professors/{safe_name}/dossier.pdf" style="color:#dc2626;text-decoration:none;font-weight:bold;margin-right:8px;">📕 PDF</a>
-                        <a href="{repo_prefix}/reports/supervisors/{code}/professors/{safe_name}/dossier.docx" style="color:#2563eb;text-decoration:none;font-weight:bold;margin-right:8px;">📥 Word</a>
-                        <a href="{repo_prefix}/reports/supervisors/{code}/professors/{safe_name}/dossier.epub" style="color:#059669;text-decoration:none;font-weight:bold;">📱 EPUB</a>
+                        <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.md" style="color:#2563eb;text-decoration:none;font-weight:bold;margin-right:8px;">📄 MD</a>
+                        <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.pdf" style="color:#dc2626;text-decoration:none;font-weight:bold;margin-right:8px;">📕 PDF</a>
+                        <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.docx" style="color:#2563eb;text-decoration:none;font-weight:bold;margin-right:8px;">📥 Word</a>
+                        <a href="{repo_prefix}/reports/supervisors/{country_key}/professors/{safe_name}/dossier.epub" style="color:#059669;text-decoration:none;font-weight:bold;">📱 EPUB</a>
                     </div>
                 </div>
                 """
