@@ -3,14 +3,14 @@
     "topic": "Edge AI",
     "direction": "↑↑",
     "status": "Surging",
-    "recent_count": 6,
-    "historical_count": 2
+    "recent_count": 5,
+    "historical_count": 3
   },
   {
     "topic": "Federated Learning",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
+    "direction": "↑↑",
+    "status": "Surging",
+    "recent_count": 3,
     "historical_count": 0
   },
   {
@@ -35,6 +35,13 @@
     "historical_count": 2
   },
   {
+    "topic": "Edge Inference",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 1,
+    "historical_count": 0
+  },
+  {
     "topic": "6G + Edge",
     "direction": "→",
     "status": "Stable",
@@ -50,13 +57,6 @@
   },
   {
     "topic": "Device-Edge-Cloud",
-    "direction": "→",
-    "status": "Stable",
-    "recent_count": 0,
-    "historical_count": 0
-  },
-  {
-    "topic": "Edge Inference",
     "direction": "→",
     "status": "Stable",
     "recent_count": 0,
