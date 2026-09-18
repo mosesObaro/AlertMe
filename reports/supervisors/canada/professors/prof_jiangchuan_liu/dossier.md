@@ -4,7 +4,7 @@
 **Institution:** Simon Fraser University  
 **Department / School:** School of Computing Science  
 **Research Group / Laboratory:** Networking and Multimedia Systems Laboratory  
-**Date of Assessment:** 2026-09-17  
+**Date of Assessment:** 2026-09-18  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Jiangchuan Liu is an active academic authority at Simon Fraser University,
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-17
+* **Generated Date:** 2026-09-18
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.sfu.ca/computing/people/faculty/jcliu.html; Institutional domain cross-check verified (sfu.ca); Institutional email domain recorded: @cs.sfu.ca; Email domain matches institutional namespace (cs.sfu.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=U1FpE0AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/l/JiangchuanLiu.html; ORCID researcher registry identifier verified: 0000-0003-4321-7788; Departmental affiliation: School of Computing Science at Simon Fraser University; Directorship / Laboratory: Networking and Multimedia Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

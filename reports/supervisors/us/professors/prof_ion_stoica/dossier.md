@@ -4,7 +4,7 @@
 **Institution:** University of California, Berkeley  
 **Department / School:** Department of Electrical Engineering and Computer Sciences (EECS)  
 **Research Group / Laboratory:** Sky Computing Lab / RISELab  
-**Date of Assessment:** 2026-09-17  
+**Date of Assessment:** 2026-09-18  
 **Priority Tier:** Tier 1 (Research Alignment: 87%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Ion Stoica is an active academic authority at University of California, Be
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-17
+* **Generated Date:** 2026-09-18
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://people.eecs.berkeley.edu/~istoica/; Institutional domain cross-check verified (berkeley.edu); Institutional email domain recorded: @berkeley.edu; Email domain matches institutional namespace (berkeley.edu); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=9I58m5sAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/IonStoica.html; ORCID researcher registry identifier verified: 0000-0002-3498-1234; Departmental affiliation: Department of Electrical Engineering and Computer Sciences (EECS) at University of California, Berkeley; Directorship / Laboratory: Sky Computing Lab / RISELab
 * **Data Freshness:** < 365 days (Active)

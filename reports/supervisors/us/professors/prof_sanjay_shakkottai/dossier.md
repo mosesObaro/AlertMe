@@ -4,7 +4,7 @@
 **Institution:** University of Texas at Austin  
 **Department / School:** Department of Electrical and Computer Engineering (ECE)  
 **Research Group / Laboratory:** Wireless Networking and Communications Group (WNCG)  
-**Date of Assessment:** 2026-09-17  
+**Date of Assessment:** 2026-09-18  
 **Priority Tier:** Tier 1 (Research Alignment: 98%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -397,7 +397,7 @@ Prof. Sanjay Shakkottai is an active academic authority at University of Texas a
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-17
+* **Generated Date:** 2026-09-18
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.ece.utexas.edu/people/faculty/sanjay-shakkottai; Institutional domain cross-check verified (utexas.edu); Institutional email domain recorded: @utexas.edu; Email domain matches institutional namespace (utexas.edu); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P3q9p-AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/SanjayShakkottai.html; ORCID researcher registry identifier verified: 0000-0002-3921-8765; Departmental affiliation: Department of Electrical and Computer Engineering (ECE) at University of Texas at Austin; Directorship / Laboratory: Wireless Networking and Communications Group (WNCG)
 * **Data Freshness:** < 365 days (Active)
