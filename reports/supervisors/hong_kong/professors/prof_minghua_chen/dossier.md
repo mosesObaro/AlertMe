@@ -4,7 +4,7 @@
 **Institution:** The Chinese University of Hong Kong  
 **Department / School:** Department of Information Engineering (IE)  
 **Research Group / Laboratory:** Advanced Networking and System Research Laboratory (ANSRLab)  
-**Date of Assessment:** 2026-09-18  
+**Date of Assessment:** 2026-09-19  
 **Priority Tier:** Tier 1 (Research Alignment: 96%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -403,7 +403,7 @@ Prof. Minghua Chen is an active academic authority at The Chinese University of 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-18
+* **Generated Date:** 2026-09-19
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.ie.cuhk.edu.hk/people/minghua.shtml; Institutional domain cross-check verified (cuhk.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=2hP884AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/c/MinghuaChen.html; ORCID researcher registry identifier verified: 0000-0002-1802-1678; Departmental affiliation: Department of Information Engineering (IE) at The Chinese University of Hong Kong; Directorship / Laboratory: Advanced Networking and System Research Laboratory (ANSRLab)
 * **Data Freshness:** < 365 days (Active)

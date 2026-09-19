@@ -4,7 +4,7 @@
 **Institution:** University of Cambridge  
 **Department / School:** Department of Computer Science and Technology  
 **Research Group / Laboratory:** Mobile Systems Group  
-**Date of Assessment:** 2026-09-18  
+**Date of Assessment:** 2026-09-19  
 **Priority Tier:** Tier 1 (Research Alignment: 73%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Cecilia Mascolo is an active academic authority at University of Cambridge
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-18
+* **Generated Date:** 2026-09-19
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cl.cam.ac.uk/~cm542/; Institutional domain cross-check verified (cam.ac.uk); Institutional email domain recorded: @cl.cam.ac.uk; Email domain matches institutional namespace (cl.cam.ac.uk); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=gD_7g5UAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/m/CeciliaMascolo.html; ORCID researcher registry identifier verified: 0000-0002-3925-1033; Departmental affiliation: Department of Computer Science and Technology at University of Cambridge; Directorship / Laboratory: Mobile Systems Group
 * **Data Freshness:** < 365 days (Active)

@@ -4,7 +4,7 @@
 **Institution:** The Hong Kong University of Science and Technology  
 **Department / School:** Department of Computer Science and Engineering (CSE)  
 **Research Group / Laboratory:** System Networking Lab (SING)  
-**Date of Assessment:** 2026-09-18  
+**Date of Assessment:** 2026-09-19  
 **Priority Tier:** Tier 1 (Research Alignment: 97%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Wei Wang is an active academic authority at The Hong Kong University of Sc
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-18
+* **Generated Date:** 2026-09-19
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://cse.hkust.edu.hk/admin/people/faculty/profile/weiwa; Institutional domain cross-check verified (hkust.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=51cZ3sQAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/07/5829-1.html; ORCID researcher registry identifier verified: 0000-0001-6677-3323; Departmental affiliation: Department of Computer Science and Engineering (CSE) at The Hong Kong University of Science and Technology; Directorship / Laboratory: System Networking Lab (SING)
 * **Data Freshness:** < 365 days (Active)

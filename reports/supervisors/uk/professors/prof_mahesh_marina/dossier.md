@@ -4,7 +4,7 @@
 **Institution:** University of Edinburgh  
 **Department / School:** School of Informatics  
 **Research Group / Laboratory:** Institute for Computing Systems Architecture (ICSA)  
-**Date of Assessment:** 2026-09-18  
+**Date of Assessment:** 2026-09-19  
 **Priority Tier:** Tier 1 (Research Alignment: 96%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Mahesh Marina is an active academic authority at University of Edinburgh, 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-18
+* **Generated Date:** 2026-09-19
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://homepages.inf.ed.ac.uk/mmarina/; Institutional domain cross-check verified (ed.ac.uk); Institutional email domain recorded: @ed.ac.uk; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=Y7qPfZAAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/m/MaheshKMarina.html; ORCID researcher registry identifier verified: 0000-0003-4567-8910; Departmental affiliation: School of Informatics at University of Edinburgh; Directorship / Laboratory: Institute for Computing Systems Architecture (ICSA)
 * **Data Freshness:** < 365 days (Active)

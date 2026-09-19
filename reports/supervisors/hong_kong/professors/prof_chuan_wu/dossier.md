@@ -4,7 +4,7 @@
 **Institution:** The University of Hong Kong  
 **Department / School:** Department of Computer Science (CS)  
 **Research Group / Laboratory:** Systems Research Group  
-**Date of Assessment:** 2026-09-18  
+**Date of Assessment:** 2026-09-19  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -403,7 +403,7 @@ Prof. Chuan Wu is an active academic authority at The University of Hong Kong, l
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-18
+* **Generated Date:** 2026-09-19
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cs.hku.hk/people/academic-staff/cwu; Institutional domain cross-check verified (hku.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=G664B9kAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/w/ChuanWu.html; ORCID researcher registry identifier verified: 0000-0003-3482-6268; Departmental affiliation: Department of Computer Science (CS) at The University of Hong Kong; Directorship / Laboratory: Systems Research Group
 * **Data Freshness:** < 365 days (Active)
