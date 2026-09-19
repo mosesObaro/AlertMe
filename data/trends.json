@@ -7,25 +7,18 @@
     "historical_count": 3
   },
   {
-    "topic": "Federated Learning",
-    "direction": "↑↑",
-    "status": "Surging",
-    "recent_count": 3,
-    "historical_count": 0
-  },
-  {
-    "topic": "Resource Allocation",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
-    "historical_count": 1
-  },
-  {
     "topic": "TinyML",
     "direction": "↑",
     "status": "Rising",
     "recent_count": 2,
     "historical_count": 0
+  },
+  {
+    "topic": "Federated Learning",
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 1,
+    "historical_count": 1
   },
   {
     "topic": "Computation Offloading",
@@ -40,6 +33,13 @@
     "status": "Rising",
     "recent_count": 1,
     "historical_count": 0
+  },
+  {
+    "topic": "Resource Allocation",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 1,
+    "historical_count": 2
   },
   {
     "topic": "6G + Edge",

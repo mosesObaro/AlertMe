@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-18",
-    "total_items": 31,
+    "last_updated": "2026-09-19",
+    "total_items": 29,
     "high_relevance_count": 19,
-    "papers_count": 13,
+    "papers_count": 11,
     "conferences_count": 2,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -18,25 +18,18 @@
       "historical_count": 3
     },
     {
-      "topic": "Federated Learning",
-      "direction": "↑↑",
-      "status": "Surging",
-      "recent_count": 3,
-      "historical_count": 0
-    },
-    {
-      "topic": "Resource Allocation",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
-      "historical_count": 1
-    },
-    {
       "topic": "TinyML",
       "direction": "↑",
       "status": "Rising",
       "recent_count": 2,
       "historical_count": 0
+    },
+    {
+      "topic": "Federated Learning",
+      "direction": "→",
+      "status": "Steady",
+      "recent_count": 1,
+      "historical_count": 1
     },
     {
       "topic": "Computation Offloading",
@@ -51,6 +44,13 @@
       "status": "Rising",
       "recent_count": 1,
       "historical_count": 0
+    },
+    {
+      "topic": "Resource Allocation",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 2
     },
     {
       "topic": "6G + Edge",
@@ -3135,63 +3135,6 @@
       "alert_mode": "daily"
     },
     {
-      "title": "Training Machine Learning Models at the Edge: A Survey",
-      "url": "https://doi.org/10.1145/3848509",
-      "source": "OpenAlex",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "survey",
-      "authors": [
-        "Aymen Rayane Khouas",
-        "Mohamed Reda Bouadjenek",
-        "Hakim Hacid",
-        "Sunil Aryal"
-      ],
-      "doi": "10.1145/3848509",
-      "arxiv_id": null,
-      "publication_date": "2026-09-17",
-      "discovery_date": "2026-09-18",
-      "abstract": "Edge computing has gained significant traction in recent years, promising enhanced efficiency by integrating artificial intelligence capabilities at the edge. While the focus has primarily been on the deployment and inference of Machine Learning (ML) models at the edge, the training aspect remains less explored. This survey explores the concept of edge learning, specifically the optimization of ML model training at the edge. The objective is to comprehensively explore diverse approaches and methodologies in edge learning, synthesize existing knowledge, identify challenges, and highlight future trends. Utilizing Scopus and Web of Science advanced search, relevant literature on edge learning was identified, revealing a concentration of research efforts in distributed learning methods, particularly federated learning. This survey further provides a guideline for comparing techniques used to optimize ML for edge learning, along with an exploration of the different frameworks, libraries, and simulation tools available. In doing so, the paper contributes to a holistic understanding of the current landscape and future directions in the intersection of edge computing and machine learning, paving the way for informed comparisons between optimization methods and techniques designed for training at the edge.",
-      "venue": "ACM Transactions on Intelligent Systems and Technology",
-      "topics": [
-        "Enhanced Data Rates for GSM Evolution",
-        "Training (meteorology)",
-        "Computer science",
-        "Artificial intelligence",
-        "Machine learning",
-        "Geography",
-        "Meteorology"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_a3a269bd834ebdd5",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.7,
-        "negative_penalty": 0.0,
-        "final_score": 6.9,
-        "matched_topics": [
-          "Federated Learning",
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)",
-          "✓ Comprehensive Literature Survey / Review (+0.7)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "cited_by_count": 8
-      }
-    },
-    {
       "title": "M2EC 2027 : International Workshop on Recent Advances for Multi-Clouds and Mobile Edge Computing",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202998&copyownerid=15660",
       "source": "Conference Feed",
@@ -3296,7 +3239,7 @@
       "doi": "10.1145/3603166.3632561",
       "arxiv_id": "2609.20009v1",
       "publication_date": "2026-09-17",
-      "discovery_date": "2026-09-18",
+      "discovery_date": "2026-09-19",
       "abstract": "Computing is evolving rapidly to cater to the increasing demand for sophisticated services, and Cloud computing lays a solid foundation for flexible on-demand provisioning. However, as the size of applications grows, the centralised client-server approach used by Cloud computing increasingly limits the applications' scalability. To achieve ultra-scalability, cloud/edge/fog computing converges into the compute continuum, completely decentralising the infrastructure to encompass universal, pervasive resources. The compute continuum makes devising applications benefitting from this complex environment a challenging research problem. We put the opportunities the compute continuum offers to the test through a real-world multi-view detection model (MvDet) implemented with the FastFL C/C++ high-performance edge inference framework. Computational performance is discussed considering many experimental scenarios, encompassing different edge computational capabilities and network bandwidths. We obtain up to 1.92x speedup in inference time over a centralised solution using the same devices.",
       "venue": "arXiv CS",
       "topics": [
@@ -3317,13 +3260,13 @@
         "final_score": 6.8,
         "matched_topics": [
           "Edge Inference",
-          "Cloud Computing",
-          "Fog Computing"
+          "Fog Computing",
+          "Cloud Computing"
         ],
         "reasons": [
           "✓ Primary topic match: Fog Computing (Abstract), Edge Inference (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)"
+          "✓ Freshly published (2d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -3331,18 +3274,18 @@
       "raw_metadata": {}
     },
     {
-      "title": "[Code/Benchmark] ZoeLAFFITTE/benchmark (★ 0)",
-      "url": "https://github.com/ZoeLAFFITTE/benchmark",
+      "title": "[Code/Benchmark] mousavi-hn/Benchmarking-Models-for-Lung-Cancer-Detection-Using-CT-Scan-Images (★ 0)",
+      "url": "https://github.com/mousavi-hn/Benchmarking-Models-for-Lung-Cancer-Detection-Using-CT-Scan-Images",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "ZoeLAFFITTE"
+        "mousavi-hn"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-18",
-      "discovery_date": "2026-09-18",
+      "publication_date": "2026-09-19",
+      "discovery_date": "2026-09-19",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -3350,7 +3293,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_35443d4759c48c37",
+      "id": "item_297c52caa825c349",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -3385,8 +3328,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-18",
-      "discovery_date": "2026-09-18",
+      "publication_date": "2026-09-19",
+      "discovery_date": "2026-09-19",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3418,52 +3361,6 @@
       "raw_metadata": {}
     },
     {
-      "title": "A Dynamic Vertical Scaling Strategy for Distributed Stream Processing Applications in Edge Computing",
-      "url": "http://arxiv.org/abs/2609.12975v1",
-      "source": "arXiv",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "preprint",
-      "authors": [
-        "Guilherme Hiago Costa dos Santos",
-        "Carlos Henrique Kayser",
-        "Tiago Coelho Ferreto"
-      ],
-      "doi": null,
-      "arxiv_id": "2609.12975v1",
-      "publication_date": "2026-09-11",
-      "discovery_date": "2026-09-18",
-      "abstract": "Distributed Stream Processing applications at the edge must reconcile low latency and high throughput with limited and heterogeneous resources. This paper presents a dynamic vertical scaling strategy based on Proximal Policy Optimization, formulated as a Partially Observable Markov Decision Process. The policy jointly adjusts task allocations and prioritizes compliance with a p95 end-to-end latency Service Level Objective. In EdgeStreamPy simulation experiments with two application profiles, two workloads, and ten paired placements per combination, the selected policies preserved throughput, obtained mean violation rates from 0.03% to 0.30%, below VRebalance in every scenario, and used less CPU in three of four combinations. The comparison covers complete controller configurations with different decision frequencies.",
-      "venue": "arXiv CS",
-      "topics": [
-        "cs.DC"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "arxiv_0027fc91357a203d",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 2.5,
-        "recency_score": 1.2,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.5,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Title)",
-          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (7d ago) (+1.2)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
-    },
-    {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
       "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
       "source": "Linux Foundation / LF Edge Blog",
@@ -3475,7 +3372,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-18",
+      "discovery_date": "2026-09-19",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3498,7 +3395,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (93d ago) (+0.2)",
+          "• Published >30d ago (94d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3518,7 +3415,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-18",
+      "discovery_date": "2026-09-19",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3541,7 +3438,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (183d ago) (+0.2)",
+          "• Published >30d ago (184d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
