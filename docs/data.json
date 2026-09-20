@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-09-19",
-    "total_items": 29,
+    "last_updated": "2026-09-20",
+    "total_items": 31,
     "high_relevance_count": 19,
     "papers_count": 11,
     "conferences_count": 2,
@@ -3239,7 +3239,7 @@
       "doi": "10.1145/3603166.3632561",
       "arxiv_id": "2609.20009v1",
       "publication_date": "2026-09-17",
-      "discovery_date": "2026-09-19",
+      "discovery_date": "2026-09-20",
       "abstract": "Computing is evolving rapidly to cater to the increasing demand for sophisticated services, and Cloud computing lays a solid foundation for flexible on-demand provisioning. However, as the size of applications grows, the centralised client-server approach used by Cloud computing increasingly limits the applications' scalability. To achieve ultra-scalability, cloud/edge/fog computing converges into the compute continuum, completely decentralising the infrastructure to encompass universal, pervasive resources. The compute continuum makes devising applications benefitting from this complex environment a challenging research problem. We put the opportunities the compute continuum offers to the test through a real-world multi-view detection model (MvDet) implemented with the FastFL C/C++ high-performance edge inference framework. Computational performance is discussed considering many experimental scenarios, encompassing different edge computational capabilities and network bandwidths. We obtain up to 1.92x speedup in inference time over a centralised solution using the same devices.",
       "venue": "arXiv CS",
       "topics": [
@@ -3259,14 +3259,14 @@
         "negative_penalty": 0.0,
         "final_score": 6.8,
         "matched_topics": [
-          "Edge Inference",
           "Fog Computing",
+          "Edge Inference",
           "Cloud Computing"
         ],
         "reasons": [
           "✓ Primary topic match: Fog Computing (Abstract), Edge Inference (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)"
+          "✓ Freshly published (3d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -3274,18 +3274,18 @@
       "raw_metadata": {}
     },
     {
-      "title": "[Code/Benchmark] mousavi-hn/Benchmarking-Models-for-Lung-Cancer-Detection-Using-CT-Scan-Images (★ 0)",
-      "url": "https://github.com/mousavi-hn/Benchmarking-Models-for-Lung-Cancer-Detection-Using-CT-Scan-Images",
+      "title": "[Code/Benchmark] dzaragoza/LLM-benchmark (★ 0)",
+      "url": "https://github.com/dzaragoza/LLM-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "mousavi-hn"
+        "dzaragoza"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-19",
-      "discovery_date": "2026-09-19",
+      "publication_date": "2026-09-20",
+      "discovery_date": "2026-09-20",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -3293,7 +3293,99 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_297c52caa825c349",
+      "id": "item_d412601bbbd30b53",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] karthi2k06-alt/ML-Based-Pre-Screening-and-Verification-Referral-for-Lithography-Hotspots-on-ICCAD-12-Benchmarks (★ 0)",
+      "url": "https://github.com/karthi2k06-alt/ML-Based-Pre-Screening-and-Verification-Referral-for-Lithography-Hotspots-on-ICCAD-12-Benchmarks",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "karthi2k06-alt"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-20",
+      "discovery_date": "2026-09-20",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_d87778fff8b67d43",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] Dinozar1/azure-postgres-iaas-paas-benchmark (★ 0)",
+      "url": "https://github.com/Dinozar1/azure-postgres-iaas-paas-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "Dinozar1"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-20",
+      "discovery_date": "2026-09-20",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_b9862e33fea18e79",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -3328,8 +3420,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-19",
-      "discovery_date": "2026-09-19",
+      "publication_date": "2026-09-20",
+      "discovery_date": "2026-09-20",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3372,7 +3464,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-19",
+      "discovery_date": "2026-09-20",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3395,7 +3487,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (94d ago) (+0.2)",
+          "• Published >30d ago (95d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3415,7 +3507,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-19",
+      "discovery_date": "2026-09-20",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3438,7 +3530,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (184d ago) (+0.2)",
+          "• Published >30d ago (185d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
