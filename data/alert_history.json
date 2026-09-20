@@ -1897,5 +1897,55 @@
     "opportunity_data": null,
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "Distributed Edge Inference: an Experimental Study on Multiview Detection",
+    "url": "http://arxiv.org/abs/2609.20009v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Gianluca Mittone",
+      "Giulio Malenza",
+      "Marco Aldinucci",
+      "Robert Birke"
+    ],
+    "doi": "10.1145/3603166.3632561",
+    "arxiv_id": "2609.20009v1",
+    "publication_date": "2026-09-17",
+    "discovery_date": "2026-09-20",
+    "abstract": "Computing is evolving rapidly to cater to the increasing demand for sophisticated services, and Cloud computing lays a solid foundation for flexible on-demand provisioning. However, as the size of applications grows, the centralised client-server approach used by Cloud computing increasingly limits the applications' scalability. To achieve ultra-scalability, cloud/edge/fog computing converges into the compute continuum, completely decentralising the infrastructure to encompass universal, pervasive resources. The compute continuum makes devising applications benefitting from this complex environment a challenging research problem. We put the opportunities the compute continuum offers to the test through a real-world multi-view detection model (MvDet) implemented with the FastFL C/C++ high-performance edge inference framework. Computational performance is discussed considering many experimental scenarios, encompassing different edge computational capabilities and network bandwidths. We obtain up to 1.92x speedup in inference time over a centralised solution using the same devices.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_4878102655f664af",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 6.8,
+      "matched_topics": [
+        "Fog Computing",
+        "Edge Inference",
+        "Cloud Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Fog Computing (Abstract), Edge Inference (Title)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (3d ago) (+1.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "weekly"
   }
 ]
