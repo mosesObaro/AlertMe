@@ -4,7 +4,7 @@
 **Institution:** Technical University of Munich (TUM)  
 **Department / School:** TUM School of Computation, Information and Technology (CIT)  
 **Research Group / Laboratory:** Chair of Computer Architecture  
-**Date of Assessment:** 2026-09-19  
+**Date of Assessment:** 2026-09-20  
 **Priority Tier:** Tier 1 (Research Alignment: 96%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Michael Gerndt is an active academic authority at Technical University of 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-19
+* **Generated Date:** 2026-09-20
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.caps.in.tum.de/en/team/gerndt/; Institutional domain cross-check verified (tum.de); Institutional email domain recorded: @in.tum.de; Email domain matches institutional namespace (in.tum.de); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=Y94y_pIAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/g/MichaelGerndt.html; ORCID researcher registry identifier verified: 0000-0002-7643-9821; Departmental affiliation: TUM School of Computation, Information and Technology (CIT) at Technical University of Munich (TUM); Directorship / Laboratory: Chair of Computer Architecture
 * **Data Freshness:** < 365 days (Active)

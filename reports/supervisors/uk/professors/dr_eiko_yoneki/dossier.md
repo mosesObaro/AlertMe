@@ -4,7 +4,7 @@
 **Institution:** University of Cambridge  
 **Department / School:** Department of Computer Science and Technology  
 **Research Group / Laboratory:** Systems Research Group (SRG)  
-**Date of Assessment:** 2026-09-19  
+**Date of Assessment:** 2026-09-20  
 **Priority Tier:** Tier 1 (Research Alignment: 80%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Dr. Eiko Yoneki is an active academic authority at University of Cambridge, lead
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-19
+* **Generated Date:** 2026-09-20
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cl.cam.ac.uk/~ey204/; Institutional domain cross-check verified (cam.ac.uk); Institutional email domain recorded: @cl.cam.ac.uk; Email domain matches institutional namespace (cl.cam.ac.uk); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=rUvH-kUAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/y/EikoYoneki.html; ORCID researcher registry identifier verified: 0000-0002-3987-1122; Departmental affiliation: Department of Computer Science and Technology at University of Cambridge; Directorship / Laboratory: Systems Research Group (SRG)
 * **Data Freshness:** < 365 days (Active)

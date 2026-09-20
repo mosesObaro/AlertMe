@@ -4,7 +4,7 @@
 **Institution:** Carnegie Mellon University  
 **Department / School:** Computer Science Department (CSD)  
 **Research Group / Laboratory:** Living Edge Lab  
-**Date of Assessment:** 2026-09-19  
+**Date of Assessment:** 2026-09-20  
 **Priority Tier:** Tier 1 (Research Alignment: 93%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -405,7 +405,7 @@ Prof. Mahadev Satyanarayanan (Satya) is an active academic authority at Carnegie
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-19
+* **Generated Date:** 2026-09-20
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cs.cmu.edu/~satya/; Institutional domain cross-check verified (cmu.edu); Institutional email domain recorded: @cs.cmu.edu; Email domain matches institutional namespace (cs.cmu.edu); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=n6F_YV4AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/MahadevSatyanarayanan.html; ORCID researcher registry identifier verified: 0000-0002-3921-9988; Departmental affiliation: Computer Science Department (CSD) at Carnegie Mellon University; Directorship / Laboratory: Living Edge Lab
 * **Data Freshness:** < 365 days (Active)
