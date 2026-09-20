@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-19T02:50:41.674988",
+  "last_updated": "2026-09-20T03:02:52.368633",
   "familiarity": {
     "polyu_cao_jiannong": {
       "researcher_id": "polyu_cao_jiannong",
@@ -20,15 +20,17 @@
     },
     "polyu_guo_song": {
       "researcher_id": "polyu_guo_song",
-      "papers_exposed": [],
+      "papers_exposed": [
+        "Cloud-Edge Collaborative Intelligence: Architectures, Challenges, and Open Directions"
+      ],
       "papers_read": [],
       "topics_exposed": [],
       "research_projects_exposed": [],
       "research_trajectory_understood": false,
       "recruitment_verified": false,
-      "familiarity_score": 0.0,
-      "last_exposed": null,
-      "exposure_cycle_day": 1,
+      "familiarity_score": 33.3,
+      "last_exposed": "2026-09-20",
+      "exposure_cycle_day": 2,
       "cycle_completed": false,
       "cycles_completed": 0
     },
@@ -578,6 +580,41 @@
       "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Chuan_Wu_PhD_Supervisor_Profile.docx",
       "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Chuan_Wu_PhD_Supervisor_Profile.pdf",
       "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Chuan_Wu_PhD_Supervisor_Profile.epub"
+    },
+    {
+      "alert_id": "polyu_guo_song_day1_20260920",
+      "date": "2026-09-20",
+      "weeks_remaining": 11,
+      "days_remaining": 72,
+      "university": "The Hong Kong Polytechnic University",
+      "professor": "Prof. Song Guo",
+      "department": "Department of Computing (COMP)",
+      "research_group": "Pervasive AI & Cloud-Edge Systems Group",
+      "priority_tier": "Tier 1",
+      "research_alignment_pct": 95,
+      "recruitment_status": "CONFIRMED_ACTIVE",
+      "recruitment_evidence": "Looking for self-driven PhD students with strong coding (Python/C++) and mathematical background to work on Edge AI, Federated Learning, and Distributed Computing for 2027 entry. HKPFS applicants warmly welcomed. [Source: official_lab_website, Date: 2026-07-10]",
+      "cycle_day": 1,
+      "today_research_focus": "Foundational & Seminal Research Deconstruction",
+      "paper_title": "Cloud-Edge Collaborative Intelligence: Architectures, Challenges, and Open Directions",
+      "paper_author": "Song Guo, Zhipeng Cheng, Haozhao Wang",
+      "paper_year": 2020,
+      "paper_link": "https://doi.org/10.1109/MNET.011.2000155",
+      "research_problem": "Bridging the compute divide between massive hyperscale cloud models and resource-limited edge nodes.",
+      "approach": "Hierarchical collaboration scheme separating continuous model adaptation at edge from parameter training at cloud.",
+      "key_contribution": "Taxonomy of split inference, model slicing, and continuous edge learning.",
+      "why_it_matters_for_edge": "Foundational architecture paper for edge intelligence and cloud-edge synergy.",
+      "research_trajectory": "Prof. Song Guo has shaped modern systems research. Trajectory: Pioneered energy-harvesting network protocols and cloud datacenter management before shifting to Edge Intelligence, distributed machine learning systems, and green Edge AI.",
+      "what_to_read_next": "Follow up with 'Structured Model Pruning for Heterogeneous Edge Federated Learning' for current extensions.",
+      "potential_phd_alignment": "Potential PhD Topics: Dynamic Split Learning and Early-Exit Neural Architecture Search for Constrained Edge Devices; Asynchronous Communication-Efficient Federated Learning over Lossy Wireless Channels.",
+      "application_action_today": "Review Prof. Song Guo's official lab website and extract core systems models from 'Cloud-Edge Collaborative Intelligence: Architectures, Challenges, and Open Directions'.",
+      "scholarship_connection": "PolyU Presidential PhD Fellowship Scheme (PPPFS) (Annual cash award of HK$40,000 + full tuition waiver + monthly stipend). Supervisor endorsement significantly strengthens departmental ranking.",
+      "deadline_info": "2026-12-01 23:59:59 HKT (72 days / 11 weeks remaining)",
+      "next_action": "Tomorrow (Day 2): Deep dive into recent breakthrough publications (past 1-2 years), active grants, and methodology.",
+      "dossier_report_link": "https://github.com/mosesObaro/AlertMe/blob/main/reports/supervisors/Prof_Song_Guo_PhD_Supervisor_Profile.md",
+      "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Song_Guo_PhD_Supervisor_Profile.docx",
+      "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Song_Guo_PhD_Supervisor_Profile.pdf",
+      "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Song_Guo_PhD_Supervisor_Profile.epub"
     }
   ],
   "campaign_state": {}
