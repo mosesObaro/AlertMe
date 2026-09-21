@@ -7,13 +7,6 @@
     "historical_count": 3
   },
   {
-    "topic": "TinyML",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
-    "historical_count": 0
-  },
-  {
     "topic": "Federated Learning",
     "direction": "→",
     "status": "Steady",
@@ -40,6 +33,13 @@
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 2
+  },
+  {
+    "topic": "TinyML",
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 1,
+    "historical_count": 1
   },
   {
     "topic": "6G + Edge",
