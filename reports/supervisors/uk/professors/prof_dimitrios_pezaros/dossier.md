@@ -4,7 +4,7 @@
 **Institution:** University of Glasgow  
 **Department / School:** School of Computing Science  
 **Research Group / Laboratory:** Systems, Communications, and Networking (SCoNe)  
-**Date of Assessment:** 2026-09-20  
+**Date of Assessment:** 2026-09-21  
 **Priority Tier:** Tier 1 (Research Alignment: 83%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Dimitrios Pezaros is an active academic authority at University of Glasgow
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-20
+* **Generated Date:** 2026-09-21
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.gla.ac.uk/schools/computing/staff/dimitriospezaros/; Institutional domain cross-check verified (gla.ac.uk); Institutional email domain recorded: @glasgow.ac.uk; Email domain matches institutional namespace (glasgow.ac.uk); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P5n19hQAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/p/DimitriosPPezaros.html; ORCID researcher registry identifier verified: 0000-0003-3456-7890; Departmental affiliation: School of Computing Science at University of Glasgow; Directorship / Laboratory: Systems, Communications, and Networking (SCoNe)
 * **Data Freshness:** < 365 days (Active)

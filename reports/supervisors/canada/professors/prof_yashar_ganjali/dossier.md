@@ -4,7 +4,7 @@
 **Institution:** University of Toronto  
 **Department / School:** Department of Computer Science  
 **Research Group / Laboratory:** Systems and Networking Group  
-**Date of Assessment:** 2026-09-20  
+**Date of Assessment:** 2026-09-21  
 **Priority Tier:** Tier 1 (Research Alignment: 71%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Yashar Ganjali is an active academic authority at University of Toronto, l
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-20
+* **Generated Date:** 2026-09-21
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://web.cs.toronto.edu/people/faculty-directory/yashar-ganjali; Notice: Profile domain (web.cs.toronto.edu) differs from root university domain (utoronto.ca); Institutional email domain recorded: @cs.toronto.edu; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=k3q0h-IAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/g/YasharGanjali.html; ORCID researcher registry identifier verified: 0000-0002-7654-1122; Departmental affiliation: Department of Computer Science at University of Toronto; Directorship / Laboratory: Systems and Networking Group
 * **Data Freshness:** < 365 days (Active)

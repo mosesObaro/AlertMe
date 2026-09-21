@@ -4,7 +4,7 @@
 **Institution:** The University of Tokyo  
 **Department / School:** Department of Electrical Engineering and Information Systems  
 **Research Group / Laboratory:** Interactive Intelligent Systems Laboratory (IIS Lab)  
-**Date of Assessment:** 2026-09-20  
+**Date of Assessment:** 2026-09-21  
 **Priority Tier:** Tier 1 (Research Alignment: 88%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Koji Yatani is an active academic authority at The University of Tokyo, le
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-20
+* **Generated Date:** 2026-09-21
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://iis-lab.org/people/koji/; Notice: Profile domain (iis-lab.org) differs from root university domain (u-tokyo.ac.jp); Institutional email domain recorded: @iis-lab.org; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=U1FpE0AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/y/KojiYatani.html; ORCID researcher registry identifier verified: 0000-0002-8321-4567; Departmental affiliation: Department of Electrical Engineering and Information Systems at The University of Tokyo; Directorship / Laboratory: Interactive Intelligent Systems Laboratory (IIS Lab)
 * **Data Freshness:** < 365 days (Active)

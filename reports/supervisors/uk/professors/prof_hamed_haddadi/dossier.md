@@ -4,7 +4,7 @@
 **Institution:** Imperial College London  
 **Department / School:** Dyson School of Design Engineering / Department of Computing  
 **Research Group / Laboratory:** Sensing, Interaction & Robotics / Systems Research  
-**Date of Assessment:** 2026-09-20  
+**Date of Assessment:** 2026-09-21  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Hamed Haddadi is an active academic authority at Imperial College London, 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-20
+* **Generated Date:** 2026-09-21
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.imperial.ac.uk/people/h.haddadi; Institutional domain cross-check verified (imperial.ac.uk); Institutional email domain recorded: @imperial.ac.uk; Email domain matches institutional namespace (imperial.ac.uk); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=84dY5-8AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/h/HamedHaddadi.html; ORCID researcher registry identifier verified: 0000-0002-3498-8921; Departmental affiliation: Dyson School of Design Engineering / Department of Computing at Imperial College London; Directorship / Laboratory: Sensing, Interaction & Robotics / Systems Research
 * **Data Freshness:** < 365 days (Active)

@@ -4,7 +4,7 @@
 **Institution:** University of British Columbia  
 **Department / School:** Department of Electrical and Computer Engineering  
 **Research Group / Laboratory:** Dependable Systems Laboratory (DSL)  
-**Date of Assessment:** 2026-09-20  
+**Date of Assessment:** 2026-09-21  
 **Priority Tier:** Tier 1 (Research Alignment: 95%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Karthik Pattabiraman is an active academic authority at University of Brit
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-20
+* **Generated Date:** 2026-09-21
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://ece.ubc.ca/karthik-pattabiraman/; Institutional domain cross-check verified (ubc.ca); Institutional email domain recorded: @ece.ubc.ca; Email domain matches institutional namespace (ece.ubc.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=U1FpE0AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/p/KarthikPattabiraman.html; ORCID researcher registry identifier verified: 0000-0002-3498-7654; Departmental affiliation: Department of Electrical and Computer Engineering at University of British Columbia; Directorship / Laboratory: Dependable Systems Laboratory (DSL)
 * **Data Freshness:** < 365 days (Active)

@@ -4,7 +4,7 @@
 **Institution:** RWTH Aachen University  
 **Department / School:** Department of Computer Science  
 **Research Group / Laboratory:** Communication and Distributed Systems (COMSYS)  
-**Date of Assessment:** 2026-09-20  
+**Date of Assessment:** 2026-09-21  
 **Priority Tier:** Tier 1 (Research Alignment: 85%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Klaus Wehrle is an active academic authority at RWTH Aachen University, le
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-20
+* **Generated Date:** 2026-09-21
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.comsys.rwth-aachen.de/team/klaus-wehrle/; Institutional domain cross-check verified (rwth-aachen.de); Institutional email domain recorded: @comsys.rwth-aachen.de; Email domain matches institutional namespace (comsys.rwth-aachen.de); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=PZ9S2lQAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/w/KlausWehrle.html; ORCID researcher registry identifier verified: 0000-0001-9252-4188; Departmental affiliation: Department of Computer Science at RWTH Aachen University; Directorship / Laboratory: Communication and Distributed Systems (COMSYS)
 * **Data Freshness:** < 365 days (Active)
