@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: United States
 **Country Code:** US  
 **Primary Currency:** USD  
-**Execution Date:** 2026-09-21  
+**Execution Date:** 2026-09-22  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -91,4 +91,4 @@ United States offers an internationally renowned doctoral research ecosystem cha
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-15**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-21.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-22.*

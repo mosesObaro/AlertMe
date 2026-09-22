@@ -4,7 +4,7 @@
 **Institution:** Lingnan University  
 **Department / School:** School of Data Science  
 **Research Group / Laboratory:** Computational Intelligence and Data Science Laboratory  
-**Date of Assessment:** 2026-09-21  
+**Date of Assessment:** 2026-09-22  
 **Priority Tier:** Tier 2 (Research Alignment: 62%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Sam Kwong is an active academic authority at Lingnan University, leading r
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-21
+* **Generated Date:** 2026-09-22
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.ln.edu.hk/sds/people/faculty/prof-kwong-tak-wu-sam; Institutional domain cross-check verified (ln.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=Y9bWvQ4AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/k/SamKwong.html; ORCID researcher registry identifier verified: 0000-0002-8610-671X; Departmental affiliation: School of Data Science at Lingnan University; Directorship / Laboratory: Computational Intelligence and Data Science Laboratory
 * **Data Freshness:** < 365 days (Active)

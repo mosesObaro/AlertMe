@@ -4,7 +4,7 @@
 **Institution:** Purdue University / Princeton University  
 **Department / School:** Elmore Family School of Electrical and Computer Engineering  
 **Research Group / Laboratory:** EDGE Lab  
-**Date of Assessment:** 2026-09-21  
+**Date of Assessment:** 2026-09-22  
 **Priority Tier:** Tier 1 (Research Alignment: 92%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Mung Chiang is an active academic authority at Purdue University / Princet
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-21
+* **Generated Date:** 2026-09-22
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.purdue.edu/president/about/biography.php; Institutional domain cross-check verified (purdue.edu); Institutional email domain recorded: @purdue.edu; Email domain matches institutional namespace (purdue.edu); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=o5XG-oEAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/c/MungChiang.html; ORCID researcher registry identifier verified: 0000-0002-8765-4321; Departmental affiliation: Elmore Family School of Electrical and Computer Engineering at Purdue University / Princeton University; Directorship / Laboratory: EDGE Lab
 * **Data Freshness:** < 365 days (Active)
