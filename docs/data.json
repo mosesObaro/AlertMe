@@ -1,8 +1,8 @@
 {
   "meta": {
-    "last_updated": "2026-09-22",
-    "total_items": 31,
-    "high_relevance_count": 19,
+    "last_updated": "2026-09-23",
+    "total_items": 30,
+    "high_relevance_count": 20,
     "papers_count": 11,
     "conferences_count": 2,
     "opportunities_count": 4,
@@ -14,7 +14,7 @@
       "topic": "Edge AI",
       "direction": "↑↑",
       "status": "Surging",
-      "recent_count": 5,
+      "recent_count": 6,
       "historical_count": 3
     },
     {
@@ -2663,6 +2663,57 @@
       "alert_mode": "daily"
     },
     {
+      "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+      "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-22",
+      "discovery_date": "2026-09-23",
+      "abstract": "Author: Simon Zhou, Principal Engineer at Edgenesis Inc. I’m excited to share that InfiniEdge AI Release 4.0 is now available as of September 17, 2026. This release brings practical advances...",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_7cb582b67a49aef9",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "This release brings practical advances...",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "From Pixels to Semantics: Edge AI for UAV-Based Critical Infrastructure Inspection",
       "url": "http://arxiv.org/abs/2609.18448v1",
       "source": "arXiv",
@@ -3275,64 +3326,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] php/benchmarking-data (★ 17)",
-      "url": "https://github.com/php/benchmarking-data",
+      "title": "[Code/Benchmark] Kuda-ux/Benchmark-Technology (★ 0)",
+      "url": "https://github.com/Kuda-ux/Benchmark-Technology",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "php"
+        "Kuda-ux"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-22",
-      "discovery_date": "2026-09-22",
-      "abstract": "Open source edge computing repository. (Stars: 17, Forks: 4)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_73bafdcfdd1035fa",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 17,
-        "forks": 4
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Chshine1/topology_benchmark (★ 0)",
-      "url": "https://github.com/Chshine1/topology_benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Chshine1"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-22",
-      "discovery_date": "2026-09-22",
+      "publication_date": "2026-09-23",
+      "discovery_date": "2026-09-23",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -3340,53 +3345,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_ead971c5ea09a6d5",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] alperkaplant/Underactuated-Benchmarking-Suite (★ 0)",
-      "url": "https://github.com/alperkaplant/Underactuated-Benchmarking-Suite",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "alperkaplant"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-22",
-      "discovery_date": "2026-09-22",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_f3eea6287852bd51",
+      "id": "item_347fad049e3eb4a1",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -3421,8 +3380,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-22",
-      "discovery_date": "2026-09-22",
+      "publication_date": "2026-09-23",
+      "discovery_date": "2026-09-23",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3465,7 +3424,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-22",
+      "discovery_date": "2026-09-23",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3488,7 +3447,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (97d ago) (+0.2)",
+          "• Published >30d ago (98d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3508,7 +3467,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-22",
+      "discovery_date": "2026-09-23",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3531,7 +3490,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (187d ago) (+0.2)",
+          "• Published >30d ago (188d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

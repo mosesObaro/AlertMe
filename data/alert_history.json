@@ -1947,5 +1947,57 @@
     "opportunity_data": null,
     "raw_metadata": {},
     "alert_mode": "weekly"
+  },
+  {
+    "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+    "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+    "source": "Linux Foundation / LF Edge Blog",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "standards_update",
+    "authors": [
+      "LF Edge"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-09-22",
+    "discovery_date": "2026-09-23",
+    "abstract": "Author: Simon Zhou, Principal Engineer at Edgenesis Inc. I’m excited to share that InfiniEdge AI Release 4.0 is now available as of September 17, 2026. This release brings practical advances...",
+    "venue": "Linux Foundation / LF Edge Blog",
+    "topics": [],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "item_7cb582b67a49aef9",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.8,
+      "matched_topics": [
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title)",
+        "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Not determinable from available metadata.",
+      "key_contribution": "This release brings practical advances...",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.8/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
