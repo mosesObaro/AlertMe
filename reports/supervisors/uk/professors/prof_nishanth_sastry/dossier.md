@@ -4,7 +4,7 @@
 **Institution:** University of Surrey / King's College London  
 **Department / School:** Department of Computer Science / Informatics  
 **Research Group / Laboratory:** Distributed Systems and Edge Caching Lab  
-**Date of Assessment:** 2026-09-22  
+**Date of Assessment:** 2026-09-23  
 **Priority Tier:** Tier 1 (Research Alignment: 92%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Nishanth Sastry is an active academic authority at University of Surrey / 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-22
+* **Generated Date:** 2026-09-23
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.surrey.ac.uk/people/nishanth-sastry; Institutional email domain recorded: @surrey.ac.uk; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=d9R5YqUAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/NishanthSastry.html; ORCID researcher registry identifier verified: 0000-0002-9905-2485; Departmental affiliation: Department of Computer Science / Informatics at University of Surrey / King's College London; Directorship / Laboratory: Distributed Systems and Edge Caching Lab
 * **Data Freshness:** < 365 days (Active)

@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: Hong Kong
 **Country Code:** HK  
 **Primary Currency:** HKD  
-**Execution Date:** 2026-09-22  
+**Execution Date:** 2026-09-23  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -155,4 +155,4 @@ Hong Kong offers an internationally renowned doctoral research ecosystem charact
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-01**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-22.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-23.*

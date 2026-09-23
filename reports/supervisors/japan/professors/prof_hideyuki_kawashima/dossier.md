@@ -4,7 +4,7 @@
 **Institution:** Keio University  
 **Department / School:** Faculty of Environment and Information Studies  
 **Research Group / Laboratory:** Data Systems Laboratory  
-**Date of Assessment:** 2026-09-22  
+**Date of Assessment:** 2026-09-23  
 **Priority Tier:** Tier 1 (Research Alignment: 68%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Hideyuki Kawashima is an active academic authority at Keio University, lea
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-22
+* **Generated Date:** 2026-09-23
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://k-ris.keio.ac.jp/html/100014285_en.html; Institutional domain cross-check verified (keio.ac.jp); Institutional email domain recorded: @sfc.keio.ac.jp; Email domain matches institutional namespace (sfc.keio.ac.jp); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P_x5KkUAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/k/HideyukiKawashima.html; ORCID researcher registry identifier verified: 0000-0003-4321-1234; Departmental affiliation: Faculty of Environment and Information Studies at Keio University; Directorship / Laboratory: Data Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

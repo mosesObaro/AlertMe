@@ -4,7 +4,7 @@
 **Institution:** Technical University of Berlin (TU Berlin)  
 **Department / School:** Faculty of Electrical Engineering and Computer Science  
 **Research Group / Laboratory:** Mobile Cloud Computing (MCC) Group  
-**Date of Assessment:** 2026-09-22  
+**Date of Assessment:** 2026-09-23  
 **Priority Tier:** Tier 1 (Research Alignment: 96%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. David Bermbach is an active academic authority at Technical University of 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-22
+* **Generated Date:** 2026-09-23
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.mcc.tu-berlin.de/menue/team/david_bermbach/; Notice: Profile domain (www.mcc.tu-berlin.de) differs from root university domain (tu.berlin); Institutional email domain recorded: @tu-berlin.de; Email domain matches institutional namespace (tu-berlin.de); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=LdE2WzEAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/125/2034.html; ORCID researcher registry identifier verified: 0000-0002-3081-305X; Departmental affiliation: Faculty of Electrical Engineering and Computer Science at Technical University of Berlin (TU Berlin); Directorship / Laboratory: Mobile Cloud Computing (MCC) Group
 * **Data Freshness:** < 365 days (Active)

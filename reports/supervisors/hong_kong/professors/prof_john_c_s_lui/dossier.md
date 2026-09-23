@@ -4,7 +4,7 @@
 **Institution:** The Chinese University of Hong Kong  
 **Department / School:** Department of Computer Science and Engineering (CSE)  
 **Research Group / Laboratory:** Advanced Networking and System Research Laboratory  
-**Date of Assessment:** 2026-09-22  
+**Date of Assessment:** 2026-09-23  
 **Priority Tier:** Tier 1 (Research Alignment: 71%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. John C.S. Lui is an active academic authority at The Chinese University of
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-22
+* **Generated Date:** 2026-09-23
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cse.cuhk.edu.hk/people/faculty/john-c-s-lui/; Institutional domain cross-check verified (cuhk.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=k3B5GvYAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/l/JohnCSLui.html; ORCID researcher registry identifier verified: 0000-0002-3860-9099; Departmental affiliation: Department of Computer Science and Engineering (CSE) at The Chinese University of Hong Kong; Directorship / Laboratory: Advanced Networking and System Research Laboratory
 * **Data Freshness:** < 365 days (Active)

@@ -4,7 +4,7 @@
 **Institution:** Imperial College London  
 **Department / School:** Department of Computing  
 **Research Group / Laboratory:** Large-Scale Distributed Systems (LSDS) Group  
-**Date of Assessment:** 2026-09-22  
+**Date of Assessment:** 2026-09-23  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Peter Pietzuch is an active academic authority at Imperial College London,
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-22
+* **Generated Date:** 2026-09-23
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.imperial.ac.uk/people/prp; Institutional domain cross-check verified (imperial.ac.uk); Institutional email domain recorded: @imperial.ac.uk; Email domain matches institutional namespace (imperial.ac.uk); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=d_E_P-sAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/p/PeterPietzuch.html; ORCID researcher registry identifier verified: 0000-0002-3932-9844; Departmental affiliation: Department of Computing at Imperial College London; Directorship / Laboratory: Large-Scale Distributed Systems (LSDS) Group
 * **Data Freshness:** < 365 days (Active)

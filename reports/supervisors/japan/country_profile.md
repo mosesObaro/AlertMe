@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: Japan
 **Country Code:** JP  
 **Primary Currency:** JPY  
-**Execution Date:** 2026-09-22  
+**Execution Date:** 2026-09-23  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -101,4 +101,4 @@ Japan offers an internationally renowned doctoral research ecosystem characteriz
 4. **Target Deadline:** Submit institutional application ahead of **2026-11-30**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-22.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-23.*

@@ -4,7 +4,7 @@
 **Institution:** Lund University / Ericsson Research  
 **Department / School:** Department of Automatic Control / Department of Computer Science  
 **Research Group / Laboratory:** Real-Time Computing and Edge Automation Group  
-**Date of Assessment:** 2026-09-22  
+**Date of Assessment:** 2026-09-23  
 **Priority Tier:** Tier 1 (Research Alignment: 73%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Johan Eker is an active academic authority at Lund University / Ericsson R
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-22
+* **Generated Date:** 2026-09-23
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.control.lth.se/staff/johan-eker/; Institutional email domain recorded: @control.lth.se; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=U1FpE0AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/e/JohanEker.html; ORCID researcher registry identifier verified: 0000-0002-1234-9876; Departmental affiliation: Department of Automatic Control / Department of Computer Science at Lund University / Ericsson Research; Directorship / Laboratory: Real-Time Computing and Edge Automation Group
 * **Data Freshness:** < 365 days (Active)
