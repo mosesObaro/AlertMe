@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22T02:59:43.532089",
+  "last_updated": "2026-09-23T02:59:48.888134",
   "familiarity": {
     "polyu_cao_jiannong": {
       "researcher_id": "polyu_cao_jiannong",
@@ -81,15 +81,17 @@
     },
     "hkust_wang_lin": {
       "researcher_id": "hkust_wang_lin",
-      "papers_exposed": [],
+      "papers_exposed": [
+        "Cold-Start Mitigation for Edge FaaS using Predictive Micro-Sandboxing"
+      ],
       "papers_read": [],
       "topics_exposed": [],
       "research_projects_exposed": [],
       "research_trajectory_understood": false,
       "recruitment_verified": false,
-      "familiarity_score": 0.0,
-      "last_exposed": null,
-      "exposure_cycle_day": 1,
+      "familiarity_score": 33.3,
+      "last_exposed": "2026-09-23",
+      "exposure_cycle_day": 2,
       "cycle_completed": false,
       "cycles_completed": 0
     },
@@ -686,6 +688,41 @@
       "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Song_Guo_PhD_Supervisor_Profile.docx",
       "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Song_Guo_PhD_Supervisor_Profile.pdf",
       "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Song_Guo_PhD_Supervisor_Profile.epub"
+    },
+    {
+      "alert_id": "hkust_wang_lin_day1_20260923",
+      "date": "2026-09-23",
+      "weeks_remaining": 10,
+      "days_remaining": 69,
+      "university": "The Hong Kong University of Science and Technology",
+      "professor": "Prof. Lin Wang",
+      "department": "Department of Computer Science and Engineering (CSE)",
+      "research_group": "Edge Computing Systems Laboratory",
+      "priority_tier": "Tier 1",
+      "research_alignment_pct": 95,
+      "recruitment_status": "CONFIRMED_ACTIVE",
+      "recruitment_evidence": "I am seeking PhD students interested in Edge Computing, Serverless Systems, and Cloud-Native Technologies for 2027 entry. Successful candidates will be supported by HKPFS or HKUST Postgraduate Studentships. [Source: faculty_homepage, Date: 2026-07-01]",
+      "cycle_day": 1,
+      "today_research_focus": "Foundational & Seminal Research Deconstruction",
+      "paper_title": "Cold-Start Mitigation for Edge FaaS using Predictive Micro-Sandboxing",
+      "paper_author": "Lin Wang, Hao Wang, Jianxun Ding",
+      "paper_year": 2024,
+      "paper_link": "https://doi.org/10.1109/TNET.2024.3371904",
+      "research_problem": "Container startup delays (100ms - 2s) severely degrade sporadic event-driven edge functions.",
+      "approach": "WebAssembly micro-runtimes with LSTM invocation prediction for pre-warming execution contexts.",
+      "key_contribution": "Cut 99th percentile tail latency by 78% with only 12MB memory overhead per worker node.",
+      "why_it_matters_for_edge": "Direct solution to edge serverless cold-start bottlenecks.",
+      "research_trajectory": "Prof. Lin Wang has shaped modern systems research. Trajectory: Began in software-defined networking and NFV; transitioned into edge cloud orchestration, serverless execution at the edge, and WebAssembly-based micro-runtimes.",
+      "what_to_read_next": "Follow up with 'Cold-Start Mitigation for Edge FaaS using Predictive Micro-Sandboxing' for current extensions.",
+      "potential_phd_alignment": "Potential PhD Topics: Sub-Millisecond WebAssembly Container Instantiation for Bursty Edge IoT Triggers; Adaptive Function Slicing and Migration across Hierarchical Edge-Cloud Nodes.",
+      "application_action_today": "Review Prof. Lin Wang's official lab website and extract core systems models from 'Cold-Start Mitigation for Edge FaaS using Predictive Micro-Sandboxing'.",
+      "scholarship_connection": "HKUST RedBird PhD Award & Postgraduate Studentship (PGS) (HK$40,000 recruitment award + full annual PGS of HK$220,680 (approx HK$18,390/mo)). Supervisor endorsement significantly strengthens departmental ranking.",
+      "deadline_info": "2026-12-01 23:59:59 HKT (69 days / 10 weeks remaining)",
+      "next_action": "Tomorrow (Day 2): Deep dive into recent breakthrough publications (past 1-2 years), active grants, and methodology.",
+      "dossier_report_link": "https://github.com/mosesObaro/AlertMe/blob/main/reports/supervisors/Prof_Lin_Wang_PhD_Supervisor_Profile.md",
+      "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Lin_Wang_PhD_Supervisor_Profile.docx",
+      "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Lin_Wang_PhD_Supervisor_Profile.pdf",
+      "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Lin_Wang_PhD_Supervisor_Profile.epub"
     }
   ],
   "campaign_state": {}
