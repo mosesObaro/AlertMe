@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-23",
-    "total_items": 30,
+    "last_updated": "2026-09-24",
+    "total_items": 34,
     "high_relevance_count": 20,
-    "papers_count": 11,
+    "papers_count": 12,
     "conferences_count": 2,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -12,10 +12,17 @@
   "trends": [
     {
       "topic": "Edge AI",
-      "direction": "↑↑",
-      "status": "Surging",
+      "direction": "↑",
+      "status": "Rising",
       "recent_count": 6,
-      "historical_count": 3
+      "historical_count": 4
+    },
+    {
+      "topic": "Edge Inference",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 2,
+      "historical_count": 0
     },
     {
       "topic": "Federated Learning",
@@ -30,13 +37,6 @@
       "status": "Declining",
       "recent_count": 1,
       "historical_count": 2
-    },
-    {
-      "topic": "Edge Inference",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 1,
-      "historical_count": 0
     },
     {
       "topic": "Resource Allocation",
@@ -2711,7 +2711,8 @@
         "is_ai_generated": false
       },
       "opportunity_data": null,
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "From Pixels to Semantics: Edge AI for UAV-Based Critical Infrastructure Inspection",
@@ -3075,6 +3076,56 @@
       "alert_mode": "daily"
     },
     {
+      "title": "From PyTorch to the NPU: LLM-Agent-Driven Model Conversion Across Heterogeneous Inference Runtimes",
+      "url": "http://arxiv.org/abs/2609.27249v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Jianhao Su",
+        "Zhanwei Wu",
+        "Chia-Heng Tu",
+        "ShengTing Huang"
+      ],
+      "doi": null,
+      "arxiv_id": "2609.27249v1",
+      "publication_date": "2026-09-23",
+      "discovery_date": "2026-09-24",
+      "abstract": "Edge AI model deployment is a multi-stage engineering process involving model conversion, operator compatibility handling, runtime integration, and precision verification. While prior work has demonstrated agent-based automation for Qualcomm AI Runtime, the broader edge inference runtime ecosystem, including Intel OpenVINO, Rockchip RKNN, NVIDIA TensorRT, and ONNX Runtime, presents distinct toolchains and optimization strategies. This paper extends AIPC (AI Porting Conversion, an LLM agent-driven methodology for AI model deployment automation previously demonstrated on Qualcomm AI Runtime) to multi-runtime scenarios, proposing an LLM agent-driven approach for automated single-model-to-single-runtime deployment across heterogeneous inference backends, such as Intel OpenVINO, Rockchip RKNN, NVIDIA TensorRT, and ONNX Runtime. We decompose the edge AI deployment into standardized, verifiable stages, and inject runtime-specific domain knowledge into the agent execution flow through agent skills, auxiliary scripts, and staged verification loops. Using representative vision models, we demonstrate that agent-based deployment can complete the conversion from a PyTorch model to its executable inference, targeting OpenVINO for x86/NPU, RKNN for RK3588, TensorRT for NVIDIA GPU, and ONNX Runtime for Qualcomm NPU with a focus on FP16 precision deployment feasibility verification. The contributions of this paper primarily lie in providing multi-runtime deployment engineering practice experience, toolchain mapping analysis, a layout-adaptation and inference-replacement layer that removes manual transpose insertion from the agent's repair burden, and an empirical characterization of agent deviation behavior under structured knowledge injection, rather than large-scale systematic benchmarking or cross-runtime operator repair strategy comparison.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.SE",
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_b9929de38e3985c8",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "Edge AI",
+          "Edge Inference"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Abstract), Edge Inference (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
       "url": "http://arxiv.org/abs/2608.26040v1",
       "source": "arXiv",
@@ -3326,18 +3377,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] Kuda-ux/Benchmark-Technology (★ 0)",
-      "url": "https://github.com/Kuda-ux/Benchmark-Technology",
+      "title": "[Code/Benchmark] Kay-pereira/model-benchmark-kaggle (★ 0)",
+      "url": "https://github.com/Kay-pereira/model-benchmark-kaggle",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "Kuda-ux"
+        "Kay-pereira"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-23",
-      "discovery_date": "2026-09-23",
+      "publication_date": "2026-09-24",
+      "discovery_date": "2026-09-24",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -3345,7 +3396,145 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_347fad049e3eb4a1",
+      "id": "item_4c2fe565c700501d",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] djouallah/lakehouse_benchmark (★ 3)",
+      "url": "https://github.com/djouallah/lakehouse_benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "djouallah"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-24",
+      "discovery_date": "2026-09-24",
+      "abstract": "Open source edge computing repository. (Stars: 3, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_381fd6a8dd6cd29f",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 3,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] likith-17052004/to-alpha-wind-power-benchmarks (★ 0)",
+      "url": "https://github.com/likith-17052004/to-alpha-wind-power-benchmarks",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "likith-17052004"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-24",
+      "discovery_date": "2026-09-24",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_534213f8104bee2d",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] paulzierep/metagenomic-binning-benchmark (★ 0)",
+      "url": "https://github.com/paulzierep/metagenomic-binning-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "paulzierep"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-09-24",
+      "discovery_date": "2026-09-24",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_1da78b59889de3df",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -3380,8 +3569,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-23",
-      "discovery_date": "2026-09-23",
+      "publication_date": "2026-09-24",
+      "discovery_date": "2026-09-24",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3424,7 +3613,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-23",
+      "discovery_date": "2026-09-24",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3447,7 +3636,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (98d ago) (+0.2)",
+          "• Published >30d ago (99d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3467,7 +3656,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-23",
+      "discovery_date": "2026-09-24",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3490,7 +3679,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (188d ago) (+0.2)",
+          "• Published >30d ago (189d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

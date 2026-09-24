@@ -1,10 +1,17 @@
 [
   {
     "topic": "Edge AI",
-    "direction": "↑↑",
-    "status": "Surging",
+    "direction": "↑",
+    "status": "Rising",
     "recent_count": 6,
-    "historical_count": 3
+    "historical_count": 4
+  },
+  {
+    "topic": "Edge Inference",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
+    "historical_count": 0
   },
   {
     "topic": "Federated Learning",
@@ -19,13 +26,6 @@
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 2
-  },
-  {
-    "topic": "Edge Inference",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 1,
-    "historical_count": 0
   },
   {
     "topic": "Resource Allocation",
