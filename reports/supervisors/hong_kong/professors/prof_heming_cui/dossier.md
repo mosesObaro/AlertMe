@@ -4,7 +4,7 @@
 **Institution:** The University of Hong Kong  
 **Department / School:** Department of Computer Science (CS)  
 **Research Group / Laboratory:** Systems Research Group  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 93%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Heming Cui is an active academic authority at The University of Hong Kong,
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cs.hku.hk/people/academic-staff/heming; Institutional domain cross-check verified (hku.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=c9kE8aUAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/12/3592-1.html; Departmental affiliation: Department of Computer Science (CS) at The University of Hong Kong; Directorship / Laboratory: Systems Research Group
 * **Data Freshness:** < 365 days (Active)

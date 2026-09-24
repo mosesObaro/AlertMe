@@ -4,7 +4,7 @@
 **Institution:** University of Alberta  
 **Department / School:** Department of Computing Science / Department of ECE  
 **Research Group / Laboratory:** Distributed Intelligence and Machine Learning Group  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 94%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Di Niu is an active academic authority at University of Alberta, leading r
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://apps.ualberta.ca/directory/person/dniu; Institutional domain cross-check verified (ualberta.ca); Institutional email domain recorded: @ualberta.ca; Email domain matches institutional namespace (ualberta.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P3q9p-AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/n/DiNiu.html; ORCID researcher registry identifier verified: 0000-0002-3921-9876; Departmental affiliation: Department of Computing Science / Department of ECE at University of Alberta; Directorship / Laboratory: Distributed Intelligence and Machine Learning Group
 * **Data Freshness:** < 365 days (Active)

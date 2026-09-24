@@ -4,7 +4,7 @@
 **Institution:** Karlsruhe Institute of Technology (KIT) / TU Dresden  
 **Department / School:** KIT Department of Informatics  
 **Research Group / Laboratory:** Practical Cybersecurity and Decentralized Systems  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 80%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Thorsten Strufe is an active academic authority at Karlsruhe Institute of 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://ps.inf.kit.edu/people/strufe/; Institutional email domain recorded: @kit.edu; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=2o1G8mIAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/ThorstenStrufe.html; ORCID researcher registry identifier verified: 0000-0003-3456-9876; Departmental affiliation: KIT Department of Informatics at Karlsruhe Institute of Technology (KIT) / TU Dresden; Directorship / Laboratory: Practical Cybersecurity and Decentralized Systems
 * **Data Freshness:** < 365 days (Active)

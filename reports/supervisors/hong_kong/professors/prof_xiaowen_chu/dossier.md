@@ -4,7 +4,7 @@
 **Institution:** Hong Kong Baptist University  
 **Department / School:** Department of Computer Science (COMP)  
 **Research Group / Laboratory:** High Performance Computing and Systems Laboratory  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 82%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Xiaowen Chu is an active academic authority at Hong Kong Baptist Universit
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.comp.hkbu.edu.hk/v1/?page=profile&id=chxw; Institutional domain cross-check verified (hkbu.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=f1s9sP8AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/c/XiaowenChu.html; Departmental affiliation: Department of Computer Science (COMP) at Hong Kong Baptist University; Directorship / Laboratory: High Performance Computing and Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

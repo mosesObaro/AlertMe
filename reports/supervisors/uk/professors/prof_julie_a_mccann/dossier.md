@@ -4,7 +4,7 @@
 **Institution:** Imperial College London  
 **Department / School:** Department of Computing  
 **Research Group / Laboratory:** Adaptive Embedded Systems / Resilient Information Systems Security (RISS)  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Julie A. McCann is an active academic authority at Imperial College London
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.imperial.ac.uk/people/j.mccann; Institutional domain cross-check verified (imperial.ac.uk); Institutional email domain recorded: @imperial.ac.uk; Email domain matches institutional namespace (imperial.ac.uk); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=X6_B-w8AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/m/JulieAMcCann.html; ORCID researcher registry identifier verified: 0000-0002-4523-8687; Departmental affiliation: Department of Computing at Imperial College London; Directorship / Laboratory: Adaptive Embedded Systems / Resilient Information Systems Security (RISS)
 * **Data Freshness:** < 365 days (Active)

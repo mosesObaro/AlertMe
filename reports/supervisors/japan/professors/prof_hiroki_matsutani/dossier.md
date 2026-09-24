@@ -4,7 +4,7 @@
 **Institution:** Keio University  
 **Department / School:** Department of Information and Computer Science  
 **Research Group / Laboratory:** Adaptive Computing Systems Laboratory  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 95%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Hiroki Matsutani is an active academic authority at Keio University, leadi
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.arc.ics.keio.ac.jp/~matutani/; Institutional domain cross-check verified (keio.ac.jp); Institutional email domain recorded: @ics.keio.ac.jp; Email domain matches institutional namespace (ics.keio.ac.jp); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=n6xZ-YQAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/m/HirokiMatsutani.html; ORCID researcher registry identifier verified: 0000-0002-7654-3210; Departmental affiliation: Department of Information and Computer Science at Keio University; Directorship / Laboratory: Adaptive Computing Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

@@ -4,7 +4,7 @@
 **Institution:** The Hong Kong Polytechnic University  
 **Department / School:** Department of Computing (COMP)  
 **Research Group / Laboratory:** Pervasive AI & Cloud-Edge Systems Group  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -403,7 +403,7 @@ Prof. Song Guo is an active academic authority at The Hong Kong Polytechnic Univ
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.polyu.edu.hk/comp/people/academic-staff/prof-guo-song/; Institutional domain cross-check verified (polyu.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=k7xL1bUAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/g/SongGuo.html; ORCID researcher registry identifier verified: 0000-0001-9497-6019; Departmental affiliation: Department of Computing (COMP) at The Hong Kong Polytechnic University; Directorship / Laboratory: Pervasive AI & Cloud-Edge Systems Group
 * **Data Freshness:** < 365 days (Active)

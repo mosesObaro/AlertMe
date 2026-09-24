@@ -4,7 +4,7 @@
 **Institution:** McGill University  
 **Department / School:** School of Computer Science  
 **Research Group / Laboratory:** Advanced Networking Systems Laboratory  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 2 (Research Alignment: 75%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Muthucumaru Maheswaran is an active academic authority at McGill Universit
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cs.mcgill.ca/~maheswar/; Institutional domain cross-check verified (mcgill.ca); Institutional email domain recorded: @cs.mcgill.ca; Email domain matches institutional namespace (cs.mcgill.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P3q9p-AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/m/MuthucumaruMaheswaran.html; ORCID researcher registry identifier verified: 0000-0002-3921-5544; Departmental affiliation: School of Computer Science at McGill University; Directorship / Laboratory: Advanced Networking Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

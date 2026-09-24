@@ -4,7 +4,7 @@
 **Institution:** TU Dresden  
 **Department / School:** Faculty of Electrical and Computer Engineering  
 **Research Group / Laboratory:** Deutsche Telekom Chair of Communication Networks / CeTI  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Frank H. P. Fitzek is an active academic authority at TU Dresden, leading 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://tu-dresden.de/ing/elektrotechnik/ifn/tkn/die-professur/inhaber; Institutional domain cross-check verified (tu-dresden.de); Institutional email domain recorded: @tu-dresden.de; Email domain matches institutional namespace (tu-dresden.de); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=nZgJv54AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/f/FrankHPFitzek.html; ORCID researcher registry identifier verified: 0000-0002-3921-8971; Departmental affiliation: Faculty of Electrical and Computer Engineering at TU Dresden; Directorship / Laboratory: Deutsche Telekom Chair of Communication Networks / CeTI
 * **Data Freshness:** < 365 days (Active)

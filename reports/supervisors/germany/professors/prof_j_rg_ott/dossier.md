@@ -4,7 +4,7 @@
 **Institution:** Technical University of Munich (TUM)  
 **Department / School:** TUM School of Computation, Information and Technology (CIT)  
 **Research Group / Laboratory:** Chair of Connected Mobility  
-**Date of Assessment:** 2026-09-23  
+**Date of Assessment:** 2026-09-24  
 **Priority Tier:** Tier 1 (Research Alignment: 82%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -397,7 +397,7 @@ Prof. Jörg Ott is an active academic authority at Technical University of Munic
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-23
+* **Generated Date:** 2026-09-24
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cm.in.tum.de/en/team/ott/; Institutional domain cross-check verified (tum.de); Institutional email domain recorded: @in.tum.de; Email domain matches institutional namespace (in.tum.de); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=0tXq_7QAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/o/JorgOtt.html; ORCID researcher registry identifier verified: 0000-0001-9325-0384; Departmental affiliation: TUM School of Computation, Information and Technology (CIT) at Technical University of Munich (TUM); Directorship / Laboratory: Chair of Connected Mobility
 * **Data Freshness:** < 365 days (Active)
