@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-09-24",
-    "total_items": 34,
+    "last_updated": "2026-09-25",
+    "total_items": 31,
     "high_relevance_count": 20,
     "papers_count": 12,
     "conferences_count": 2,
@@ -18,13 +18,6 @@
       "historical_count": 4
     },
     {
-      "topic": "Edge Inference",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
-      "historical_count": 0
-    },
-    {
       "topic": "Federated Learning",
       "direction": "→",
       "status": "Steady",
@@ -37,6 +30,13 @@
       "status": "Declining",
       "recent_count": 1,
       "historical_count": 2
+    },
+    {
+      "topic": "Edge Inference",
+      "direction": "→",
+      "status": "Steady",
+      "recent_count": 1,
+      "historical_count": 1
     },
     {
       "topic": "Resource Allocation",
@@ -3123,7 +3123,8 @@
       },
       "intelligence": null,
       "opportunity_data": null,
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Adaptive Peer Clustering with Hierarchical Random Linear Network Coding for Resilient Decentralized Wireless Networks",
@@ -3377,144 +3378,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] Kay-pereira/model-benchmark-kaggle (★ 0)",
-      "url": "https://github.com/Kay-pereira/model-benchmark-kaggle",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Kay-pereira"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-24",
-      "discovery_date": "2026-09-24",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_4c2fe565c700501d",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] djouallah/lakehouse_benchmark (★ 3)",
-      "url": "https://github.com/djouallah/lakehouse_benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "djouallah"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-24",
-      "discovery_date": "2026-09-24",
-      "abstract": "Open source edge computing repository. (Stars: 3, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_381fd6a8dd6cd29f",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 3,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] likith-17052004/to-alpha-wind-power-benchmarks (★ 0)",
-      "url": "https://github.com/likith-17052004/to-alpha-wind-power-benchmarks",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "likith-17052004"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-24",
-      "discovery_date": "2026-09-24",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_534213f8104bee2d",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
       "title": "[Code/Benchmark] paulzierep/metagenomic-binning-benchmark (★ 0)",
       "url": "https://github.com/paulzierep/metagenomic-binning-benchmark",
       "source": "GitHub Open Source",
@@ -3525,8 +3388,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-24",
-      "discovery_date": "2026-09-24",
+      "publication_date": "2026-09-25",
+      "discovery_date": "2026-09-25",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -3569,8 +3432,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-24",
-      "discovery_date": "2026-09-24",
+      "publication_date": "2026-09-25",
+      "discovery_date": "2026-09-25",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -3613,7 +3476,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-24",
+      "discovery_date": "2026-09-25",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3636,7 +3499,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (99d ago) (+0.2)",
+          "• Published >30d ago (100d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
@@ -3656,7 +3519,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-03-19",
-      "discovery_date": "2026-09-24",
+      "discovery_date": "2026-09-25",
       "abstract": "Summary We’re at an inflection point for AI infrastructure. Centralized data centers face limits on power, cooling, land use, and time to value. The answer is distributed AI: run models...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -3679,7 +3542,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (189d ago) (+0.2)",
+          "• Published >30d ago (190d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

@@ -7,13 +7,6 @@
     "historical_count": 4
   },
   {
-    "topic": "Edge Inference",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
-    "historical_count": 0
-  },
-  {
     "topic": "Federated Learning",
     "direction": "→",
     "status": "Steady",
@@ -26,6 +19,13 @@
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 2
+  },
+  {
+    "topic": "Edge Inference",
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 1,
+    "historical_count": 1
   },
   {
     "topic": "Resource Allocation",
