@@ -71,18 +71,22 @@
     "publications": [
       {
         "publication_id": "ca_boutaba_p1",
-        "title": "A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers",
+        "title": "Network Function Virtualization: State-of-the-Art and Research Challenges",
         "authors": [
-          "R. Boutaba",
-          "N. Shahriar"
+          "Rashid Mijumbi",
+          "Joan Serrat",
+          "Juan‐Luis Gorricho",
+          "Niels Bouten",
+          "Filip De Turck",
+          "Raouf Boutaba"
         ],
-        "year": 2022,
-        "venue": "IEEE Journal on Selected Areas in Communications (JSAC)",
-        "doi_or_url": "https://doi.org/10.1109/JSAC.2022.3142345",
-        "research_problem": "Enabling end-to-end performance isolation across shared physical edge and core infrastructure.",
-        "approach": "Multi-tier network virtualization with dynamic resource orchestration.",
-        "key_contribution": "Definitive architectural reference for 5G and edge network slicing.",
-        "edge_relevance": "Foundational literature for edge network resource allocation.",
+        "year": 2015,
+        "venue": "IEEE Communications Surveys & Tutorials",
+        "doi_or_url": "https://doi.org/10.1109/comst.2015.2477041",
+        "research_problem": "Network functions tied to dedicated hardware make telecom services costly and slow to deploy, and NFV research directions had not been mapped.",
+        "approach": "Survey relating NFV to SDN and cloud computing, reviewing architectures, projects, standardisation and commercial efforts.",
+        "key_contribution": "A reference overview of the NFV state of the art with a catalogue of open research challenges.",
+        "edge_relevance": "Software-Defined Networks and 5G (Computer Networks and Communications)",
         "is_seminal": true,
         "is_recent": false
       }
@@ -158,18 +162,31 @@
     "publications": [
       {
         "publication_id": "ca_ganjali_p1",
-        "title": "Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction",
+        "title": "Loss-Tolerant RDMA Network Over Commodity Devices",
         "authors": [
-          "Y. Ganjali",
-          "M. Ghobadi"
+          "Lei Wang",
+          "Zhe Wang",
+          "Yimu Yuan",
+          "Siyu Yan",
+          "Shuhan Tian",
+          "Ning Liu",
+          "Hui Yuan",
+          "Linghe Kong",
+          "Qiao Xiang",
+          "Shizhen Zhao",
+          "Di Qu",
+          "Hexiang Song",
+          "Xiaolong Zheng",
+          "Yashar Ganjali",
+          "Guihai Chen"
         ],
-        "year": 2023,
-        "venue": "IEEE/ACM Transactions on Networking",
-        "doi_or_url": "https://doi.org/10.1109/TNET.2023.3278910",
-        "research_problem": "Static edge routing cannot adjust to mobile traffic shifts without dropped packets.",
-        "approach": "Fine-grained in-network flow tracking using P4 programmable switches.",
-        "key_contribution": "Achieves microsecond-level edge traffic rerouting under congestion.",
-        "edge_relevance": "Direct contribution to edge network performance.",
+        "year": 2026,
+        "venue": "IEEE Transactions on Networking",
+        "doi_or_url": "https://doi.org/10.1109/ton.2026.3694152",
+        "research_problem": "On lossy data-centre fabrics, RDMA suffers packet losses and repeated retransmission timeouts that degrade or interrupt service.",
+        "approach": "NüWa identifies the packets whose loss would trigger timeouts and protects them, with a switch mode for ordinary NICs and a NIC mode for programmable NICs.",
+        "key_contribution": "A loss-tolerant RDMA design for commodity hardware that avoids timeout-inducing packet losses.",
+        "edge_relevance": "Opportunistic and Delay-Tolerant Networks (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -245,20 +262,22 @@
     "publications": [
       {
         "publication_id": "ca_amza_p1",
-        "title": "Autonomous Resource Provisioning for Distributed Microservices Across the Edge-Cloud Boundary",
+        "title": "Elastic Load Balancing for Dynamic Virtual Machine Reconfiguration Based on Vertical and Horizontal Scaling",
         "authors": [
-          "C. Amza",
-          "A. Leon-Garcia"
+          "Stelios Sotiriadis",
+          "Nik Bessis",
+          "Cristiana Amza",
+          "Rajkumar Buyya"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Cloud Computing",
-        "doi_or_url": "https://doi.org/10.1109/TCC.2023.3267123",
-        "research_problem": "Predicting multi-service bottleneck dependencies across distributed edge topologies.",
-        "approach": "Online queueing network models coupled with feedback control loops.",
-        "key_contribution": "Maintains 99th percentile tail latency under 50ms while reducing provisioned edge cores by 35%.",
-        "edge_relevance": "Direct contribution to edge-cloud microservice orchestration.",
-        "is_seminal": false,
-        "is_recent": true
+        "year": 2016,
+        "venue": "IEEE Transactions on Services Computing",
+        "doi_or_url": "https://doi.org/10.1109/tsc.2016.2634024",
+        "research_problem": "Cloud applications composed from services across providers must scale with fluctuating load without downtime.",
+        "approach": "An inter-cloud load balancer (ICLB) that distributes HTTP traffic across instances and reconfigures virtual machines vertically and horizontally in real time.",
+        "key_contribution": "Automated inter-cloud elasticity, evaluated with real-world workloads across several topologies.",
+        "edge_relevance": "Cloud Computing and Resource Management (Information Systems)",
+        "is_seminal": true,
+        "is_recent": false
       }
     ]
   },
@@ -332,18 +351,20 @@
     "publications": [
       {
         "publication_id": "ca_pattabiraman_p1",
-        "title": "Resilient Edge Computing: Fault Tolerance and Security Challenges in the IoT Era",
+        "title": "OneOS: Distributed Operating System for the Edge-to-Cloud Continuum",
         "authors": [
-          "K. Pattabiraman",
-          "A. Sengupta"
+          "Kumseok Jung",
+          "Julien Gascon‐Samson",
+          "Sathish Gopalakrishnan",
+          "Karthik Pattabiraman"
         ],
-        "year": 2023,
-        "venue": "IEEE Security & Privacy",
-        "doi_or_url": "https://doi.org/10.1109/MSEC.2023.3278102",
-        "research_problem": "Edge nodes deployed in remote environments experience high rates of hardware faults and physical attacks.",
-        "approach": "Lightweight selective instruction duplication combined with canary data monitoring.",
-        "key_contribution": "Achieves 99.8% transient fault coverage with under 6% runtime overhead.",
-        "edge_relevance": "Crucial framework for mission-critical edge computing.",
+        "year": 2025,
+        "venue": "IEEE Transactions on Parallel and Distributed Systems",
+        "doi_or_url": "https://doi.org/10.1109/tpds.2025.3557747",
+        "research_problem": "Edge-to-cloud developers write glue code to bridge framework-specific APIs, which hurts interoperability and fragments the technology stack.",
+        "approach": "A middleware-based distributed operating system that presents a single system image of the edge-to-cloud platform and makes components interoperate transparently.",
+        "key_contribution": "OneOS, a design for building edge-to-cloud applications without framework-specific glue code.",
+        "edge_relevance": "Distributed and Parallel Computing Systems (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -420,20 +441,25 @@
     "publications": [
       {
         "publication_id": "ca_niu_p1",
-        "title": "Collaborative Edge AI: Communication-Efficient Distributed Inference and Training",
+        "title": "Gearing resource-poor mobile devices with powerful clouds: architectures, challenges, and applications",
         "authors": [
-          "D. Niu",
-          "B. Li"
+          "Fangming Liu",
+          "Peng Shu",
+          "Hai Jin",
+          "Linjie Ding",
+          "Jie Yu",
+          "Di Tao Niu",
+          "Bo Li"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Mobile Computing",
-        "doi_or_url": "https://doi.org/10.1109/TMC.2023.3278912",
-        "research_problem": "High network communication overhead stalls distributed training across mobile edge gateways.",
-        "approach": "Adaptive gradient quantization with error compensation feedback loops.",
-        "key_contribution": "Achieves 16x communication compression while maintaining zero accuracy loss.",
-        "edge_relevance": "Direct breakthrough for mobile edge federated intelligence.",
-        "is_seminal": false,
-        "is_recent": true
+        "year": 2013,
+        "venue": "IEEE Wireless Communications",
+        "doi_or_url": "https://doi.org/10.1109/mwc.2013.6549279",
+        "research_problem": "Mobile cloud computing lacked a clear definition and scope despite growing interest in using clouds to extend resource-constrained devices.",
+        "approach": "Survey organised by usage: three common mobile-cloud architectures, with prior work split into computation offloading and capability extending.",
+        "key_contribution": "An early framing of mobile cloud computing and its open challenges, including energy-efficient interaction, VM migration overhead and privacy.",
+        "edge_relevance": "IoT and Edge/Fog Computing (Computer Networks and Communications)",
+        "is_seminal": true,
+        "is_recent": false
       }
     ]
   },
@@ -507,18 +533,30 @@
     "publications": [
       {
         "publication_id": "ca_liu_p1",
-        "title": "Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy",
+        "title": "Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities",
         "authors": [
-          "J. Liu",
-          "X. Chen"
+          "Hao Zhou",
+          "Chengming Hu",
+          "Ye Yuan",
+          "Yufei Cui",
+          "Yili Jin",
+          "Can Chen",
+          "Haolun Wu",
+          "Dun Yuan",
+          "Li Jiang",
+          "Di Wu",
+          "Xue Liu",
+          "Jianzhong Zhang",
+          "Xianbin Wang",
+          "Jiangchuan Liu"
         ],
-        "year": 2023,
-        "venue": "IEEE Network",
-        "doi_or_url": "https://doi.org/10.1109/MNET.2023.3289012",
-        "research_problem": "High-resolution video streams quickly overwhelm limited edge compute accelerators.",
-        "approach": "Lightweight spatial saliency tracking coupled with dynamic cloud offloading triggers.",
-        "key_contribution": "Reduces edge compute utilization by 45% while preserving 98% target object recall.",
-        "edge_relevance": "Crucial advancement for edge multimedia processing.",
+        "year": 2024,
+        "venue": "IEEE Communications Surveys & Tutorials",
+        "doi_or_url": "https://doi.org/10.1109/comst.2024.3465447",
+        "research_problem": "Large language models could automate many telecom tasks, but their principles and uses in networking had not been systematically reviewed.",
+        "approach": "Survey of LLM fundamentals and deployment, followed by LLM-enabled generation, classification, optimisation and prediction applications in telecom.",
+        "key_contribution": "A comprehensive map of LLM techniques for telecom networks and the open challenges toward LLM-enabled 6G.",
+        "edge_relevance": "Topic Modeling (Artificial Intelligence)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -593,18 +631,33 @@
     "publications": [
       {
         "publication_id": "ca_maheswaran_p1",
-        "title": "Decentralized Identity and Trust Management for Pervasive Edge Architectures",
+        "title": "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities",
         "authors": [
-          "M. Maheswaran",
-          "T. Tang"
+          "Harshana Weligampola",
+          "Lakshitha Ramanayake",
+          "Yasiru Ranasinghe",
+          "Gayanthi Ilangarathna",
+          "Neranjan Senarath",
+          "Bhagya Samarakoon",
+          "Roshan Indika Godaliyadda",
+          "Vijitha Rohana Herath",
+          "Parakrama Ekanayake",
+          "Janaka Bandara Ekanayake",
+          "Muthucumaru Maheswaran",
+          "Sandya Theminimulle",
+          "Anuruddhika Rathnayake",
+          "Samath Dhamminda Dharmaratne",
+          "Mallika Pinnawala",
+          "Sakunthala Yatigammana",
+          "Ganga Tilakaratne"
         ],
         "year": 2023,
-        "venue": "IEEE Internet Computing",
-        "doi_or_url": "https://doi.org/10.1109/MIC.2023.3278901",
-        "research_problem": "Establishing trusted execution across multi-tenant edge nodes without central certificate authorities.",
-        "approach": "Decentralized identifier (DID) ledgers with localized zero-knowledge credential verification.",
-        "key_contribution": "Enables mutual trust verification between unvetted edge devices in under 50ms.",
-        "edge_relevance": "Crucial framework for decentralized edge security.",
+        "venue": "Sustainability",
+        "doi_or_url": "https://doi.org/10.3390/su151411120",
+        "research_problem": "Policymakers need fine-grained tools to evaluate containment strategies quickly once a disease outbreak is detected.",
+        "approach": "PDSIM, an agent-based simulator with realistic human-mobility modelling that tracks infection paths, contacts, vaccination and testing.",
+        "key_contribution": "A simulator, validated on COVID-19 case studies, for comparing containment and testing policies.",
+        "edge_relevance": "COVID-19 epidemiological studies (Modeling and Simulation)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -678,18 +731,19 @@
     "publications": [
       {
         "publication_id": "ca_gopalakrishnan_p1",
-        "title": "Predictable Resource Management for Edge-Assisted Cyber-Physical Systems",
+        "title": "Co-Approximator: Enabling Performance Prediction in Colocated Applications",
         "authors": [
-          "S. Gopalakrishnan",
-          "A. Ravindran"
+          "Rafiuzzaman Mohammad",
+          "Sathish Gopalakrishnan",
+          "Karthik Pattabiraman"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Computers",
-        "doi_or_url": "https://doi.org/10.1109/TC.2023.3278912",
-        "research_problem": "Ensuring deterministic timing for safety-critical tasks offloaded to multi-tenant edge nodes.",
-        "approach": "Hierarchical server scheduling with dynamic budget replenishment.",
-        "key_contribution": "Guarantees bounded response times under volatile background loads.",
-        "edge_relevance": "Crucial framework for predictable edge computing.",
+        "year": 2024,
+        "venue": "ACM Transactions on Embedded Computing Systems",
+        "doi_or_url": "https://doi.org/10.1145/3677180",
+        "research_problem": "Applications colocated on resource-limited IoT platforms interfere with each other unpredictably, and the space of possible colocations is huge.",
+        "approach": "Co-Approximator systematically samples the exponentially large colocation space to build a performance predictor.",
+        "key_contribution": "A technique for predicting the performance of colocated IoT applications, supporting decisions about which applications to place together.",
+        "edge_relevance": "Software System Performance and Reliability (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }

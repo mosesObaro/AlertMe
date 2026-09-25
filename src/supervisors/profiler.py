@@ -237,12 +237,15 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 """
+        if not d.major_publications:
+            md += "\n_No verified publications on record._\n"
         for idx, p in enumerate(d.major_publications, 1):
+            doi_link = f"[{p.doi_or_url}]({p.doi_or_url})" if p.doi_or_url else "Not available"
             md += f"""
 ### {idx}. {p.title}
 * **Year:** {p.year}
 * **Venue:** {p.venue}
-* **DOI / Link:** [{p.doi_or_url}]({p.doi_or_url})
+* **DOI / Link:** {doi_link}
 * **Problem Addressed:** {p.problem_addressed}
 * **Approach:** {p.approach}
 * **Key Contribution:** {p.key_contribution}

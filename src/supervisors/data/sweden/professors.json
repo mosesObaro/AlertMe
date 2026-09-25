@@ -69,18 +69,22 @@
     "publications": [
       {
         "publication_id": "se_maguire_p1",
-        "title": "Low-Power Wide-Area Networks for Edge IoT Computing: Architectures, Protocols, and Real-World Performance",
+        "title": "FAJITA: Stateful Packet Processing at 100 Million pps",
         "authors": [
-          "G. Q. Maguire Jr.",
-          "F. Ramirez"
+          "Hamid Ghasemirahni",
+          "Alireza Farshin",
+          "Mariano Scazzariello",
+          "Gerald Q. Maguire",
+          "Dejan Kostić",
+          "Marco Chiesa"
         ],
-        "year": 2023,
-        "venue": "IEEE Internet of Things Journal",
-        "doi_or_url": "https://doi.org/10.1109/JIOT.2023.3278901",
-        "research_problem": "Enabling edge computation offloading over bandwidth-constrained sub-GHz LoRa and cellular IoT links.",
-        "approach": "Adaptive hierarchical feature aggregation at field gateways before WAN transmission.",
-        "key_contribution": "Extends sensor node operational battery life from months to over 8 years.",
-        "edge_relevance": "Direct breakthrough for resource-constrained edge computing.",
+        "year": 2024,
+        "venue": "Proceedings of the ACM on Networking",
+        "doi_or_url": "https://doi.org/10.1145/3676861",
+        "research_problem": "Multi-hundred-gigabit NICs and payload-offloading systems push stateful network functions on commodity servers beyond what existing frameworks can handle.",
+        "approach": "FAJITA, an optimised pipeline for stateful network functions that minimises memory accesses and shared-data-structure overheads while batching efficiently at every stage.",
+        "key_contribution": "Stateful packet processing at up to 100 million packets per second on commodity hardware.",
+        "edge_relevance": "Network Packet Processing and Optimization (Hardware and Architecture)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -157,20 +161,24 @@
     "publications": [
       {
         "publication_id": "se_haridi_p1",
-        "title": "Decentralized Machine Learning over Edge Networks: Architectures and Consensus Protocols",
+        "title": "Securing Real-Time Video Surveillance Data in Vehicular Cloud Computing: A Survey",
         "authors": [
-          "S. Haridi",
-          "S. Girdzijauskas"
+          "Majed S. Alsayfi",
+          "Mohamed Yehia Dahab",
+          "Fathy Elbouraey Eassa",
+          "Reda Mohamed Salama",
+          "Seif Haridi",
+          "Abdullah Saad Al-Malaise ALGhamdi"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Parallel and Distributed Systems",
-        "doi_or_url": "https://doi.org/10.1109/TPDS.2023.3278912",
-        "research_problem": "Centralized parameter servers create single points of failure and bandwidth bottlenecks in edge environments.",
-        "approach": "Gossip-based decentralized gradient exchange with randomized peer matching.",
-        "key_contribution": "Achieves linear scalability across thousands of peer edge nodes.",
-        "edge_relevance": "Direct foundational architecture for decentralized edge AI.",
+        "year": 2022,
+        "venue": "IEEE Access",
+        "doi_or_url": "https://doi.org/10.1109/access.2022.3174554",
+        "research_problem": "Vehicular cloud computing carries sensitive real-time video surveillance data whose manipulation or interception could lead to unsafe driving decisions.",
+        "approach": "Survey of vehicular ad hoc networks integrated with cloud computing, focusing on security threats to real-time video surveillance data and the countermeasures proposed for them.",
+        "key_contribution": "A review of security techniques for protecting video surveillance data in vehicular cloud computing, with open issues.",
+        "edge_relevance": "Vehicular Ad Hoc Networks (VANETs) (Electrical and Electronic Engineering)",
         "is_seminal": true,
-        "is_recent": true
+        "is_recent": false
       }
     ]
   },
@@ -246,19 +254,36 @@
     "publications": [
       {
         "publication_id": "se_gross_p1",
-        "title": "Ultra-Reliable and Low-Latency Edge Computing for Industrial Cyber-Physical Systems",
+        "title": "Revisiting Edge AI: Opportunities and Challenges",
         "authors": [
-          "J. Gross",
-          "P. Popovski"
+          "Tobias Meuser",
+          "Lauri Lovén",
+          "Monowar H. Bhuyan",
+          "Shishir G. Patil",
+          "Schahram Dustdar",
+          "Atakan Aral",
+          "Suzan Bayhan",
+          "Christian Becker",
+          "Eyal de Lara",
+          "Aaron Yi Ding",
+          "Janick Edinger",
+          "James Gross",
+          "Nitinder Mohan",
+          "Andy D. Pimentel",
+          "Étienne Rivière",
+          "Henning G. Schulzrinne",
+          "Pieter Simoens",
+          "Gürkan Solmaz",
+          "Michael Welzl"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Wireless Communications",
-        "doi_or_url": "https://doi.org/10.1109/TWC.2023.3278912",
-        "research_problem": "Guaranteeing 1ms control loops for mobile robots offloading compute over volatile wireless channels.",
-        "approach": "Finite blocklength coding integrated with predictive multi-server edge queuing.",
-        "key_contribution": "Proves achievable rate bounds under five-nines (99.999%) latency reliability constraints.",
-        "edge_relevance": "Foundational literature for critical edge computing applications.",
-        "is_seminal": true,
+        "year": 2024,
+        "venue": "IEEE Internet Computing",
+        "doi_or_url": "https://doi.org/10.1109/mic.2024.3383758",
+        "research_problem": "Moving model training and inference to the network edge is constrained by model-size limits, secure model distribution and execution, and heavy network load.",
+        "approach": "Retrospective linking key developments in edge AI to its current challenges.",
+        "key_contribution": "A research agenda that brings the AI and edge-computing communities together around edge AI.",
+        "edge_relevance": "IoT and Edge/Fog Computing (Computer Networks and Communications)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -333,18 +358,19 @@
     "publications": [
       {
         "publication_id": "se_girdzijauskas_p1",
-        "title": "Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck",
+        "title": "Classifying falls using out-of-distribution detection in human activity recognition",
         "authors": [
-          "S. Girdzijauskas",
-          "H. Le"
+          "Debaditya Roy",
+          "Vangjush Komini",
+          "Šarūnas Girdzijauskas"
         ],
-        "year": 2024,
-        "venue": "IEEE Transactions on Network Science and Engineering",
-        "doi_or_url": "https://doi.org/10.1109/TNSE.2024.3356789",
-        "research_problem": "Non-IID client data distributions cause catastrophic model drift during decentralized gossip aggregation.",
-        "approach": "Topology-aware gradient clustering with dynamic inter-cluster bridge connections.",
-        "key_contribution": "Recovers 94% of centralized model accuracy in purely peer-to-peer edge deployments.",
-        "edge_relevance": "Direct breakthrough for decentralized edge learning.",
+        "year": 2023,
+        "venue": "AI Communications",
+        "doi_or_url": "https://doi.org/10.3233/aic-220205",
+        "research_problem": "Out-of-distribution detection is well studied in computer vision but largely unexplored for time-series human activity recognition.",
+        "approach": "Defines realistic out-of-distribution types for activity recognition and applies an ensemble-based temporal learning framework to detect them.",
+        "key_contribution": "Out-of-distribution detection for time-series activity recognition, applied to classifying falls.",
+        "edge_relevance": "Context-Aware Activity Recognition Systems (Computer Vision and Pattern Recognition)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -422,18 +448,21 @@
     "publications": [
       {
         "publication_id": "se_eker_p1",
-        "title": "Control-Theoretic Resource Provisioning for Cloud-Edge Continuum Systems",
+        "title": "Real-Time Adaptive Anomaly Detection in Industrial IoT Environments",
         "authors": [
-          "J. Eker",
-          "K. E. Årzén"
+          "Mahsa Raeiszadeh",
+          "Amin Ebrahimzadeh",
+          "Roch Glitho",
+          "Johan Eker",
+          "Raquel A. F. Mini"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Control Systems Technology",
-        "doi_or_url": "https://doi.org/10.1109/TCST.2023.3267123",
-        "research_problem": "Sudden workload surges trigger severe cascading queue delays in edge computing microservices.",
-        "approach": "Adaptive feedback feedforward controller adjusting edge CPU quotas dynamically.",
-        "key_contribution": "Eliminates queue oscillations and guarantees bounded response times under 10x workload swings.",
-        "edge_relevance": "Standard-setting paper for dependable edge orchestration.",
+        "year": 2024,
+        "venue": "IEEE Transactions on Network and Service Management",
+        "doi_or_url": "https://doi.org/10.1109/tnsm.2024.3447532",
+        "research_problem": "Existing anomaly detectors struggle with complex, changing multi-dimensional data streams in Industrial IoT, where real-time detection is critical.",
+        "approach": "An adaptive detector that combines a multi-source prediction model with a new concept-drift adaptation method.",
+        "key_contribution": "Accurate, efficient and more scalable real-time anomaly detection for IIoT streams, shown in trace-driven evaluation.",
+        "edge_relevance": "Anomaly Detection Techniques and Applications (Artificial Intelligence)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -511,19 +540,20 @@
     "publications": [
       {
         "publication_id": "se_elmroth_p1",
-        "title": "Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions",
+        "title": "Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN",
         "authors": [
-          "E. Elmroth",
-          "P. Larsson"
+          "Tobias Sundqvist",
+          "Monowar H. Bhuyan",
+          "Erik Elmroth"
         ],
         "year": 2023,
-        "venue": "IEEE Cloud Computing",
-        "doi_or_url": "https://doi.org/10.1109/MCC.2023.3278910",
-        "research_problem": "Scale and volatility of edge nodes make manual or centralized management impossible.",
-        "approach": "Hierarchical autonomic control loops operating with decentralized regional coordinators.",
-        "key_contribution": "Definitive architectural framework for autonomous self-managing cloud-edge systems.",
-        "edge_relevance": "Cornerstone literature for edge-cloud orchestration.",
-        "is_seminal": true,
+        "venue": "IEEE Transactions on Network and Service Management",
+        "doi_or_url": "https://doi.org/10.1109/tnsm.2023.3321401",
+        "research_problem": "Large distributed systems such as the 5G RAN have unstructured logs without the context needed to learn system behaviour for anomaly detection.",
+        "approach": "A trace guideline that splits system logs by component and procedure, so models can learn behaviour from smaller, contextualised pieces.",
+        "key_contribution": "A fast dictionary-based detector that finds all anomalies with near-zero false positives where prior methods struggled, improving RAN observability.",
+        "edge_relevance": "Software System Performance and Reliability (Computer Networks and Communications)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -599,19 +629,20 @@
     "publications": [
       {
         "publication_id": "se_stenstrom_p1",
-        "title": "Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge",
+        "title": "Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints",
         "authors": [
-          "P. Stenström",
-          "M. Papatriantafilou"
+          "Muhammad Waqar Azhar",
+          "Madhavan Manivannan",
+          "Per Stenström"
         ],
         "year": 2023,
-        "venue": "IEEE Micro",
-        "doi_or_url": "https://doi.org/10.1109/MM.2023.3278912",
-        "research_problem": "DRAM memory bus data movement accounts for over 70% of energy consumption during edge AI inference.",
-        "approach": "Processing-in-Memory (PIM) logic integrating lightweight matrix operations inside 3D stacked memory dies.",
-        "key_contribution": "Achieves 4.5x energy efficiency speedup compared to standard edge GPU architectures.",
-        "edge_relevance": "Direct hardware breakthrough for low-power edge AI systems.",
-        "is_seminal": true,
+        "venue": "ACM Transactions on Architecture and Code Optimization",
+        "doi_or_url": "https://doi.org/10.1145/3605214",
+        "research_problem": "Approximate iterative applications on heterogeneous multicore platforms must save energy while meeting performance and accuracy targets.",
+        "approach": "Approx-RM predicts at runtime how many iterations are needed for a relaxed accuracy target and uses the time saved to lower DVFS, core type and core count.",
+        "key_contribution": "Energy savings while guaranteeing user-specified timing and accuracy targets.",
+        "edge_relevance": "Parallel Computing and Optimization Techniques (Hardware and Architecture)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -687,18 +718,18 @@
     "publications": [
       {
         "publication_id": "se_papatriantafilou_p1",
-        "title": "Fault-Tolerant Stream Analytics at the Edge of Critical Cyber-Physical Infrastructures",
+        "title": "Cuckoo Heavy Keeper and the Balancing Act of Maintaining Heavy Hitters in Stream Processing",
         "authors": [
-          "M. Papatriantafilou",
-          "P. Tsigas"
+          "Vinh Quang Ngo",
+          "Marina Papatriantafilou"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Dependable and Secure Computing",
-        "doi_or_url": "https://doi.org/10.1109/TDSC.2023.3278912",
-        "research_problem": "Critical power grid edge controllers crash when network partitions isolate monitoring nodes.",
-        "approach": "Speculative lock-free local state replication with deterministic consensus replay.",
-        "key_contribution": "Guarantees zero data loss and sub-5ms failover during severe edge network partition events.",
-        "edge_relevance": "Crucial framework for dependable edge computing in critical infrastructure.",
+        "year": 2025,
+        "venue": "Proceedings of the VLDB Endowment",
+        "doi_or_url": "https://doi.org/10.14778/3746405.3746434",
+        "research_problem": "Heavy-hitter detection in data streams trades throughput, memory and accuracy, and modern workloads also need parallel scaling with concurrent queries and updates.",
+        "approach": "Cuckoo Heavy Keeper, a streaming algorithm that inverts how frequent and infrequent items are distinguished, plus a framework that balances the competing metrics under parallelism.",
+        "key_contribution": "A heavy-hitter algorithm and parallel framework offering configurable trade-offs for scalable stream processing.",
+        "edge_relevance": "Oil and Gas Production Techniques (Ocean Engineering)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -773,18 +804,19 @@
     "publications": [
       {
         "publication_id": "se_rohner_p1",
-        "title": "Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks",
+        "title": "Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information",
         "authors": [
-          "C. Rohner",
-          "P. Gunningberg"
+          "Tobias Mages",
+          "Elli Anastasiadi",
+          "Christian Rohner"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Mobile Computing",
-        "doi_or_url": "https://doi.org/10.1109/TMC.2023.3278912",
-        "research_problem": "Achieving sub-10ms communication deadlines over unreliable low-power 2.4GHz wireless links.",
-        "approach": "Constructive interference physical-layer flooding synchronized to microsecond boundaries.",
-        "key_contribution": "Delivers 99.99% packet delivery reliability within a deterministic 8ms window.",
-        "edge_relevance": "Direct breakthrough for industrial edge IoT systems.",
+        "year": 2024,
+        "venue": "Entropy",
+        "doi_or_url": "https://doi.org/10.3390/e26050424",
+        "research_problem": "Partial information decomposition still lacks a suitable non-negative measure for an arbitrary number of discrete variables.",
+        "approach": "A pointwise decomposition built on the equivalence of the Blackwell and zonogon orders, applicable to any f-information measure.",
+        "key_contribution": "A non-negative decomposition that satisfies the inclusion-exclusion relation and the desired axioms, with proofs.",
+        "edge_relevance": "Error Correcting Code Techniques (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }

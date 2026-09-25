@@ -87,18 +87,21 @@
       },
       {
         "publication_id": "us_satya_p2",
-        "title": "Wearable Cognitive Assistance: An Early Edge Computing Application",
+        "title": "Offload Shaping for Wearable Cognitive Assistance",
         "authors": [
-          "M. Satyanarayanan",
-          "Z. Chen"
+          "Roger Iyengar",
+          "Qifei Dong",
+          "Chanh Nguyen",
+          "Padmanabhan S. Pillai",
+          "Mahadev Satyanarayanan"
         ],
         "year": 2024,
-        "venue": "IEEE Pervasive Computing",
-        "doi_or_url": "https://doi.org/10.1109/MPRV.2024.1045981",
-        "research_problem": "Preserving tight sub-50ms round-trip perception-action loops during real-time cognitive guidance.",
-        "approach": "Edge cloudlet pipelined vision models with adaptive resolution throttling.",
-        "key_contribution": "Demonstrates practical real-world cognitive assistance over 5G edge networks.",
-        "edge_relevance": "Flagship edge AI application paradigm.",
+        "venue": "Electronics",
+        "doi_or_url": "https://doi.org/10.3390/electronics13204083",
+        "research_problem": "Cloudlets are far less elastic than cloud data centres, which limits how well low-latency edge-offload applications scale.",
+        "approach": "Offload shaping on wearable devices (mapping processes to tiers, gating and decluttering), evaluated with four wearable cognitive assistance applications on three devices.",
+        "key_contribution": "Large reductions in network use and cloudlet load compared with sending full camera frames, without losing accuracy or performance.",
+        "edge_relevance": "Context-Aware Activity Recognition Systems (Computer Vision and Pattern Recognition)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -176,20 +179,20 @@
     "publications": [
       {
         "publication_id": "us_stoica_p1",
-        "title": "Sky Computing: Accelerating the Evolution to Multi-Cloud and Edge Interoperability",
+        "title": "From cloud computing to sky computing",
         "authors": [
-          "I. Stoica",
-          "S. Shenker"
+          "Ion Gabriel Stoica",
+          "Scott J. Shenker"
         ],
-        "year": 2023,
-        "venue": "IEEE Internet Computing",
-        "doi_or_url": "https://doi.org/10.1109/MIC.2023.3267812",
-        "research_problem": "Vendor lock-in and fragmented APIs prevent seamless workload migration between cloud providers and edge infrastructure.",
-        "approach": "Intercloud broker abstraction layer decoupling service semantics from underlying infrastructure providers.",
-        "key_contribution": "Establishes the Sky Computing architectural paradigm for edge-to-cloud continuum.",
-        "edge_relevance": "Direct architectural relevance to modern edge computing research.",
+        "year": 2021,
+        "venue": "Proceedings of the Workshop on Hot Topics in Operating Systems",
+        "doi_or_url": "https://doi.org/10.1145/3458336.3465301",
+        "research_problem": "Cloud computing is fragmented across providers instead of acting as a coherent utility.",
+        "approach": "Position paper envisioning 'sky computing' and arguing the barriers are more economic than technical.",
+        "key_contribution": "Proposes reciprocal peering between clouds as the key enabling step toward sky computing.",
+        "edge_relevance": "Cloud Computing and Resource Management (Information Systems)",
         "is_seminal": true,
-        "is_recent": true
+        "is_recent": false
       }
     ]
   },
@@ -447,18 +450,20 @@
     "publications": [
       {
         "publication_id": "us_shakkottai_p1",
-        "title": "Federated Learning over Wireless Networks: Convergence Analysis and Resource Allocation",
+        "title": "A Lyapunov Theory for Finite-Sample Guarantees of Markovian Stochastic Approximation",
         "authors": [
-          "S. Shakkottai",
-          "R. Tandon"
+          "Zaiwei Chen",
+          "Siva Theja Maguluri",
+          "Sanjay Shakkottai",
+          "Karthikeyan Shanmugam"
         ],
         "year": 2023,
-        "venue": "IEEE/ACM Transactions on Networking",
-        "doi_or_url": "https://doi.org/10.1109/TNET.2023.3278912",
-        "research_problem": "Wireless packet loss and transmit power constraints degrade federated learning model convergence.",
-        "approach": "Joint client power control and local SGD step size adaptation framework.",
-        "key_contribution": "Proves sharp convergence bounds under realistic time-varying wireless channel fading.",
-        "edge_relevance": "Foundational literature for wireless edge AI.",
+        "venue": "Operations Research",
+        "doi_or_url": "https://doi.org/10.1287/opre.2022.0249",
+        "research_problem": "Stochastic approximation underpins large-scale optimisation and reinforcement learning, but its finite-sample behaviour under Markovian noise lacked a unified analysis.",
+        "approach": "A Lyapunov framework built on a smooth generalised Moreau envelope for contractive operators under arbitrary norms.",
+        "key_contribution": "Finite-sample guarantees applied to TD-learning variants and Q-learning, with insight into bootstrapping and eligibility traces.",
+        "edge_relevance": "Stochastic Gradient Optimization Techniques (Artificial Intelligence)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -535,19 +540,21 @@
     "publications": [
       {
         "publication_id": "us_nahrstedt_p1",
-        "title": "Edge-Assisted Real-Time Video Analytics: Architectures, Challenges, and Systems",
+        "title": "TWIN-ADAPT: Continuous Learning for Digital Twin-Enabled Online Anomaly Classification in IoT-Driven Smart Labs",
         "authors": [
-          "K. Nahrstedt",
-          "B. Han"
+          "Ragini Gupta",
+          "Beitong Tian",
+          "Yaohui Wang",
+          "Klara Nahrstedt"
         ],
-        "year": 2023,
-        "venue": "ACM Computing Surveys",
-        "doi_or_url": "https://doi.org/10.1145/3579812",
-        "research_problem": "Balancing inference accuracy, edge compute saturation, and wireless transmission bandwidth in camera networks.",
-        "approach": "Hierarchical frame filtering and neural feature extraction executed at the edge camera gateway.",
-        "key_contribution": "Definitive survey establishing architectural taxonomy for edge video analytics systems.",
-        "edge_relevance": "Essential reading for edge multimedia intelligence.",
-        "is_seminal": true,
+        "year": 2024,
+        "venue": "Future Internet",
+        "doi_or_url": "https://doi.org/10.3390/fi16070239",
+        "research_problem": "Concept drift in IoT-instrumented semiconductor cleanrooms degrades static digital-twin anomaly models, causing false alarms and missed anomalies.",
+        "approach": "TWIN-ADAPT, a continuous-learning model within a digital-twin framework that updates its anomaly classifier as data distributions change.",
+        "key_contribution": "Drift-resilient online anomaly classification for cyber-physical cleanroom environments.",
+        "edge_relevance": "Data Stream Mining Techniques (Artificial Intelligence)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -622,19 +629,21 @@
     "publications": [
       {
         "publication_id": "us_abdelzaher_p1",
-        "title": "Real-Time Edge AI for Cyber-Physical Systems: Deadlines, Accuracy, and Resource Trade-offs",
+        "title": "RA-MOSAIC: Resource Adaptive Edge AI Optimization over Spatially Multiplexed Video Streams",
         "authors": [
-          "T. Abdelzaher",
-          "H. Le"
+          "Ila Gokarn",
+          "Yigong Hu",
+          "Tarek Abdelzaher",
+          "Archan Misra"
         ],
-        "year": 2024,
-        "venue": "IEEE Real-Time Systems Symposium (RTSS)",
-        "doi_or_url": "https://doi.org/10.1109/RTSS59821.2024.00012",
-        "research_problem": "Dynamic deep neural networks fail to guarantee deterministic execution completion before hard physical deadlines.",
-        "approach": "Anytime neural models with formally certified intermediate exit latency guarantees.",
-        "key_contribution": "Zero deadline misses while optimizing decision accuracy on autonomous edge platforms.",
-        "edge_relevance": "Direct breakthrough for safety-critical edge computing.",
-        "is_seminal": true,
+        "year": 2025,
+        "venue": "ACM Transactions on Multimedia Computing Communications and Applications",
+        "doi_or_url": "https://doi.org/10.1145/3715133",
+        "research_problem": "Real-time, high-fidelity vision on edge devices is strained by deep DNNs, high-resolution cameras and multiple video streams sharing one GPU.",
+        "approach": "RA-MOSAIC packs regions of interest from concurrent streams into a canvas and tunes stream inputs and resources on demand.",
+        "key_contribution": "Resource-adaptive edge AI that balances computational load, task fidelity and throughput under dynamic conditions.",
+        "edge_relevance": "Image and Video Quality Assessment (Computer Vision and Pattern Recognition)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -710,18 +719,22 @@
     "publications": [
       {
         "publication_id": "us_gupta_p1",
-        "title": "Scalable Membership and Failure Detection for Dynamic Edge Clusters",
+        "title": "A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines",
         "authors": [
-          "I. Gupta",
-          "M. K. Marina"
+          "Ali Zaidi",
+          "Rui Jun Yang",
+          "Vinay Koshy",
+          "Camille Cobb",
+          "Indranil Sen Gupta",
+          "Karrie G. Karahalios"
         ],
         "year": 2023,
-        "venue": "IEEE Transactions on Parallel and Distributed Systems",
-        "doi_or_url": "https://doi.org/10.1109/TPDS.2023.3289012",
-        "research_problem": "Heartbeating protocols generate unsustainable network storm overhead in dense edge environments.",
-        "approach": "Infection-style gossip dissemination adapted for asymmetric edge network topologies.",
-        "key_contribution": "Cuts protocol communication bandwidth by 82% while guaranteeing deterministic failure detection.",
-        "edge_relevance": "Direct architectural building block for resilient edge systems.",
+        "venue": "Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies",
+        "doi_or_url": "https://doi.org/10.1145/3581997",
+        "research_problem": "Smart-home routines that access the same devices at the same time conflict, and it is unclear which resolution strategies users prefer.",
+        "approach": "Literature survey of conflict-handling strategies plus a scenario-based user study with 197 participants.",
+        "key_contribution": "Shows that no context-independent strategy always satisfies users, informing the design of conflict resolution.",
+        "edge_relevance": "Mobile Crowdsensing and Crowdsourcing (Computer Science Applications)",
         "is_seminal": false,
         "is_recent": true
       }

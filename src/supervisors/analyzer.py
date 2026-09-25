@@ -544,7 +544,7 @@ class DossierSynthesizer:
                 title=p.title,
                 year=p.year or 2024,
                 venue=p.venue or "IEEE / ACM Conference or Journal",
-                doi_or_url=p.doi_or_url or r.official_profile_url,
+                doi_or_url=p.doi_or_url,
                 research_area=p.edge_relevance or ", ".join(r.research_interests[:2]),
                 problem_addressed=p.research_problem or "Addressing latency, energy, and communication bottlenecks in distributed edge execution.",
                 approach_methodology=p.approach or "Formulated dynamic scheduling protocols combined with empirical testbed validation.",
@@ -554,22 +554,6 @@ class DossierSynthesizer:
                 influence_on_later_work="Serves as the benchmark and conceptual foundation for ongoing doctoral student investigations in the laboratory.",
                 is_seminal=is_sem,
                 is_recent=is_rec
-            ))
-
-        if not major_pubs:
-            # Fallback if researcher record had no explicit publication array
-            major_pubs.append(MajorPublicationDetail(
-                title=f"Decentralized Collaborative Edge Computing Architectures ({r.name})",
-                year=2024,
-                venue="IEEE Transactions on Mobile Computing",
-                doi_or_url=r.official_profile_url,
-                research_area="Edge Computing & Edge AI",
-                problem_addressed="Mitigating high inference delay and network congestion during multi-device edge processing.",
-                approach_methodology="Decentralized task distribution and adaptive model partitioning.",
-                key_contribution="Reduced end-to-end task completion time by >40% across heterogeneous testbed devices.",
-                why_it_matters="Demonstrates peer-to-peer edge coordination without central coordinator bottlenecks.",
-                relevance_to_applicant="Direct blueprint for proposed PhD thesis research in edge runtime systems.",
-                is_recent=True
             ))
 
         return major_pubs

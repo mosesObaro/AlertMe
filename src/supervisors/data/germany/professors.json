@@ -71,18 +71,19 @@
     "publications": [
       {
         "publication_id": "de_ott_p1",
-        "title": "Roadside Edge Computing for Autonomous Driving: Challenges, Testbeds, and Lessons Learned",
+        "title": "Cellular Sidelink Enabled Decentralized Pedestrian Sensing",
         "authors": [
-          "J. Ott",
-          "A. Zubow"
+          "Stefan Schuhbäck",
+          "Lars Wischhof",
+          "Jörg Ott"
         ],
-        "year": 2024,
-        "venue": "IEEE Communications Magazine",
-        "doi_or_url": "https://doi.org/10.1109/MCOM.2024.1039821",
-        "research_problem": "Severe packet delay variance during high-mobility vehicular offloading to roadside edge units.",
-        "approach": "Predictive trajectory-aware micro-service pre-instantiation over millimeter-wave links.",
-        "key_contribution": "Demonstrates 99.999% reliability for vehicle safety edge alerts.",
-        "edge_relevance": "Landmark paper for vehicular edge intelligence.",
+        "year": 2023,
+        "venue": "IEEE Access",
+        "doi_or_url": "https://doi.org/10.1109/access.2023.3242946",
+        "research_problem": "Cooperative-perception V2X technology focuses on road safety, leaving pedestrian-centric urban sensing unaddressed.",
+        "approach": "Opportunistic decentralised crowd sensing in which mobile devices collect, aggregate and disseminate measurements in pedestrian measurement maps over cellular sidelink.",
+        "key_contribution": "A crowd-sensing approach that needs no central infrastructure, aimed at uses such as pedestrian density maps.",
+        "edge_relevance": "Mobile Crowdsensing and Crowdsourcing (Computer Science Applications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -160,19 +161,21 @@
     "publications": [
       {
         "publication_id": "de_bermbach_p1",
-        "title": "Serverless at the Edge: A Systematic Survey of Runtimes, Challenges, and Future Directions",
+        "title": "FUSIONIZE++: Improving Serverless Application Performance Using Dynamic Task Inlining and Infrastructure Optimization",
         "authors": [
-          "D. Bermbach",
-          "J. Hasenburg"
+          "Trever Schirmer",
+          "Joel Scheuner",
+          "Tobias Pfandzelter",
+          "David Bermbach"
         ],
         "year": 2024,
-        "venue": "ACM Computing Surveys",
-        "doi_or_url": "https://doi.org/10.1145/3631982",
-        "research_problem": "Adapting cloud serverless architectures to volatile edge network environments.",
-        "approach": "Systematic architectural deconstruction across memory isolation, statefulness, and scheduling.",
-        "key_contribution": "Definitive survey establishing architectural blueprints for modern serverless edge systems.",
-        "edge_relevance": "Foundational literature for edge serverless research.",
-        "is_seminal": true,
+        "venue": "IEEE Transactions on Cloud Computing",
+        "doi_or_url": "https://doi.org/10.1109/tcc.2024.3451108",
+        "research_problem": "Splitting applications into FaaS functions trades flexibility against invocation overhead, extra cold starts and double billing.",
+        "approach": "Fusionize automatically fuses fine-grained function code into an optimised multi-function composition, adapting task inlining and infrastructure configuration at runtime.",
+        "key_contribution": "Automated serverless deployment optimisation, so developers can write fine-grained code without hand-tuning the fusion trade-off.",
+        "edge_relevance": "Cloud Computing and Resource Management (Information Systems)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -247,18 +250,20 @@
     "publications": [
       {
         "publication_id": "de_gerndt_p1",
-        "title": "Autonomous Self-Tuning for Serverless Edge Applications: A Reinforcement Learning Approach",
+        "title": "Energy-Aware Duty Cycle Management for Solar-Powered IoT Devices",
         "authors": [
-          "M. Gerndt",
-          "M. Sourouri"
+          "Michael Gerndt",
+          "Mustafa Ispir",
+          "Isaac David Núñez Araya",
+          "Shajulin Benedict"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Cloud Computing",
-        "doi_or_url": "https://doi.org/10.1109/TCC.2023.3289012",
-        "research_problem": "Static CPU/memory allocations on edge nodes cause severe resource wastage or latency violations.",
-        "approach": "Contextual bandit reinforcement learning dynamically adjusting function concurrency and clock frequencies.",
-        "key_contribution": "Reduces edge operational energy cost by 38% while adhering to 99th percentile SLA targets.",
-        "edge_relevance": "Direct breakthrough for resource-constrained edge serverless management.",
+        "year": 2025,
+        "venue": "Sensors",
+        "doi_or_url": "https://doi.org/10.3390/s25144500",
+        "research_problem": "Off-grid IoT devices running on batteries with solar harvesting must keep operating through periods of little sunshine.",
+        "approach": "Adapts device duty cycles to predicted solar energy using a low-cost solar control board integrated with the Serverless IoT Framework (SIF).",
+        "key_contribution": "A case study showing proactive sleep-time adaptation that keeps an IoT application running through forecast cloudy days.",
+        "edge_relevance": "Green IT and Sustainability (Electrical and Electronic Engineering)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -335,19 +340,24 @@
     "publications": [
       {
         "publication_id": "de_wehrle_p1",
-        "title": "In-Network Aggregation for Distributed Machine Learning: A Survey and Systemic Architecture",
+        "title": "The unresolved need for dependable guarantees on security, sovereignty, and trust in data ecosystems",
         "authors": [
-          "K. Wehrle",
-          "R. Glebke"
+          "Johannes Lohmöller",
+          "Jan Pennekamp",
+          "Roman Matzutt",
+          "Carolin Victoria Schneider",
+          "Eduard Vlad",
+          "Christian Trautwein",
+          "Klaus Wehrle"
         ],
-        "year": 2023,
-        "venue": "IEEE Communications Surveys & Tutorials",
-        "doi_or_url": "https://doi.org/10.1109/COMST.2023.3298102",
-        "research_problem": "Gradient aggregation during distributed training saturates rack and edge network switches.",
-        "approach": "Streaming integer reduction trees implemented directly inside programmable P4 switch pipelines.",
-        "key_contribution": "Achieves near-line-rate gradient aggregation with zero server CPU overhead.",
-        "edge_relevance": "Transformational architecture for edge federated and distributed learning.",
-        "is_seminal": true,
+        "year": 2024,
+        "venue": "Data & Knowledge Engineering",
+        "doi_or_url": "https://doi.org/10.1016/j.datak.2024.102301",
+        "research_problem": "Data ecosystems exchange sensitive data between stakeholders, yet current designs rely on organisational trust measures that participants may be incentivised to bypass.",
+        "approach": "Analysis of security, sovereignty and trust requirements in federated data-ecosystem proposals.",
+        "key_contribution": "Argues that dependable technical guarantees, not organisational measures alone, are needed and remain an open problem.",
+        "edge_relevance": "Privacy-Preserving Technologies in Data (Artificial Intelligence)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -423,18 +433,31 @@
     "publications": [
       {
         "publication_id": "de_strufe_p1",
-        "title": "Decentralized and Private Collaborative Learning at the Network Edge",
+        "title": "Resilience-by-Design in 6G Networks: Literature Review and Novel Enabling Concepts",
         "authors": [
-          "T. Strufe",
-          "M. Böhme"
+          "Ladan Khaloopour",
+          "Yanpeng Su",
+          "Florian Raskob",
+          "Tobias Meuser",
+          "Roland Bless",
+          "Leon Janzen",
+          "Kamyar Abedi",
+          "Marko S. Andjelkovic",
+          "Hekma Chaari",
+          "Pousali Chakraborty",
+          "Michael Kreutzer",
+          "Matthias Hollick",
+          "Thorsten Strufe",
+          "Norman Franchi",
+          "Vahid Jamali"
         ],
-        "year": 2023,
-        "venue": "IEEE Security & Privacy",
-        "doi_or_url": "https://doi.org/10.1109/MSEC.2023.3278912",
-        "research_problem": "Vulnerability of edge federated learning participants to gradient inversion and membership inference.",
-        "approach": "Peer-to-peer secure multi-party aggregation integrated with localized differential privacy.",
-        "key_contribution": "Proves formal privacy bounds against colluding edge node adversaries.",
-        "edge_relevance": "Crucial framework for secure decentralized edge intelligence.",
+        "year": 2024,
+        "venue": "IEEE Access",
+        "doi_or_url": "https://doi.org/10.1109/access.2024.3480275",
+        "research_problem": "As society comes to rely on 6G, disruptions from failures, disasters or attacks would severely affect essential services.",
+        "approach": "Literature review of resilient-system definitions and approaches, plus a three-level resilience-by-design concept for 6G networks.",
+        "key_contribution": "A resilience-by-design framework for 6G that summarises the authors' initial studies.",
+        "edge_relevance": "Supply Chain Resilience and Risk Management (Strategy and Management)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -510,19 +533,22 @@
     "publications": [
       {
         "publication_id": "de_fetzer_p1",
-        "title": "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs",
+        "title": "Cost-based Virtual Machine Scheduling for Data-as-a-Service",
         "authors": [
-          "C. Fetzer",
-          "S. Arnautov"
+          "Ana Cristina Oliveira",
+          "Marco Aurélio Spohn",
+          "Christof W. Fetzer",
+          "Do Le Quoc",
+          "André Martin"
         ],
         "year": 2023,
-        "venue": "IEEE Micro",
-        "doi_or_url": "https://doi.org/10.1109/MM.2023.328901",
-        "research_problem": "Protecting proprietary AI weights and user data on physically accessible untrusted edge hardware.",
-        "approach": "Transparent container shielding inside hardware enclaves with optimized asynchronous system calls.",
-        "key_contribution": "Reduces enclave overhead from 40% down to under 5% for standard edge microservices.",
-        "edge_relevance": "Direct foundational technology for enterprise-grade edge deployments.",
-        "is_seminal": true,
+        "venue": "JUCS - Journal of Universal Computer Science",
+        "doi_or_url": "https://doi.org/10.3897/jucs.99223",
+        "research_problem": "Very large Data-as-a-Service platforms need cost-aware resource decisions that limit service-agreement breaches.",
+        "approach": "A cost model for querying distributed data sources over VMs in multi-site data centres, with a cost-based VM scheduler validated on a characterised real DaaS workload.",
+        "key_contribution": "Cost-based VM scheduling that performs at least twice as well as round-robin assignment on average.",
+        "edge_relevance": "Cloud Computing and Resource Management (Information Systems)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -599,19 +625,22 @@
     "publications": [
       {
         "publication_id": "de_fitzek_p1",
-        "title": "Tactile Internet with Human-in-the-Loop: Edge Intelligence and Low-Latency Communication",
+        "title": "6G Perspective of Mobile Network Operators, Manufacturers, and Verticals",
         "authors": [
-          "F. H. P. Fitzek",
-          "G. P. Fettweis"
+          "Paul Schwenteck",
+          "Giang T.K. Nguyen",
+          "Holger Boche",
+          "Wolfgang Kellerer",
+          "Frank H. P. Fitzek"
         ],
-        "year": 2024,
-        "venue": "Proceedings of the IEEE",
-        "doi_or_url": "https://doi.org/10.1109/JPROC.2024.3356781",
-        "research_problem": "Enabling sub-millisecond tactile sensation transmission over wide-area wireless networks.",
-        "approach": "Predictive edge AI models forecasting human intent deployed at cellular base station edge nodes.",
-        "key_contribution": "Cuts round-trip perceived latency to zero by synthesizing haptic feedback locally.",
-        "edge_relevance": "Flagship publication defining the frontier of edge intelligence.",
-        "is_seminal": true,
+        "year": 2023,
+        "venue": "IEEE Networking Letters",
+        "doi_or_url": "https://doi.org/10.1109/lnet.2023.3266863",
+        "research_problem": "With 5G rolling out, stakeholders need a case for when and why 6G should be introduced.",
+        "approach": "Perspective from network operators, manufacturers and vertical industries identifying 5G shortcomings and the remaining 6G solution space.",
+        "key_contribution": "Positions the Metaverse as a driver for 6G, including its implications for network energy consumption.",
+        "edge_relevance": "Advanced Wireless Communication Technologies (Electrical and Electronic Engineering)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -687,19 +716,24 @@
     "publications": [
       {
         "publication_id": "de_caccamo_p1",
-        "title": "Predictable and Safe Execution of Deep Neural Networks on Embedded Edge Platforms",
+        "title": "Edge Generation Scheduling for DAG Tasks Using Deep Reinforcement Learning",
         "authors": [
-          "M. Caccamo",
-          "R. Mancuso"
+          "Binqi Sun",
+          "Mirco Theile",
+          "Ziyuan Qin",
+          "Daniele Bernardini",
+          "Debayan Roy",
+          "Andrea Bastoni",
+          "Marco Caccamo"
         ],
-        "year": 2023,
-        "venue": "IEEE Real-Time Systems Symposium (RTSS)",
-        "doi_or_url": "https://doi.org/10.1109/RTSS58432.2023.00021",
-        "research_problem": "Black-box neural execution engines violate real-time worst-case execution time (WCET) guarantees.",
-        "approach": "Deterministic scratchpad partition scheduling with hardware memory throttling.",
-        "key_contribution": "Provides first formally certified real-time bounding framework for edge vision models.",
-        "edge_relevance": "Pivotal paper for mission-critical edge AI systems.",
-        "is_seminal": true,
+        "year": 2024,
+        "venue": "IEEE Transactions on Computers",
+        "doi_or_url": "https://doi.org/10.1109/tc.2024.3350243",
+        "research_problem": "Scheduling real-time DAG tasks from automotive, avionics and industrial systems under deadlines is hard for existing heuristics.",
+        "approach": "A schedulability test based on trivial schedulability, and an edge-generation scheduling framework whose policy is learned with deep reinforcement learning and a graph neural network.",
+        "key_contribution": "Edge Generation Scheduling (EGS), which reduces DAG width while meeting deadlines, compared against state-of-the-art heuristics and an optimal MILP baseline.",
+        "edge_relevance": "Real-Time Systems Scheduling (Hardware and Architecture)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
