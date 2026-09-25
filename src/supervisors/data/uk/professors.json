@@ -72,36 +72,45 @@
     "publications": [
       {
         "publication_id": "uk_crowcroft_p1",
-        "title": "Decentralized Personal Data Stores: An Edge-Centric Architecture for Pervasive Intelligence",
+        "title": "Towards Smart Education through Internet of Things: A Survey",
         "authors": [
-          "J. Crowcroft",
-          "R. Mortier",
-          "H. Haddadi"
+          "Afzal Badshah",
+          "Anwar Ghani",
+          "Ali Yusny Daud",
+          "Ateeqa Jalal",
+          "Muhammad Bilal",
+          "Jon Crowcroft"
         ],
-        "year": 2024,
-        "venue": "IEEE Internet Computing",
-        "doi_or_url": "https://doi.org/10.1109/MIC.2024.1045",
-        "research_problem": "How to preserve user data autonomy during pervasive edge model training.",
-        "approach": "Decentralized edge-hosted data containers with local verification.",
-        "key_contribution": "Formulates the edge-first data privacy paradigm for IoT applications.",
-        "edge_relevance": "Directly enables privacy-compliant edge intelligence.",
+        "year": 2023,
+        "venue": "ACM Computing Surveys",
+        "doi_or_url": "https://doi.org/10.1145/3610401",
+        "research_problem": "IoT, AI and 5G solutions are poorly integrated into education, a gap highlighted by the shift to online learning during COVID-19.",
+        "approach": "Survey of problems in traditional education, IoT-based solutions, and the transition toward smart education.",
+        "key_contribution": "A review of IoT-enabled smart education and the research challenges in adopting it.",
+        "edge_relevance": "IoT and Edge/Fog Computing (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       },
       {
         "publication_id": "uk_crowcroft_p2",
-        "title": "From Cloud to Edge: The Evolution of Distributed Operating Environments",
+        "title": "Edge Intelligence: Empowering Intelligence to the Edge of Network",
         "authors": [
-          "J. Crowcroft",
-          "P. Pietzuch"
+          "Dianlei Xu",
+          "Tong Li",
+          "Yong Li",
+          "Xiang Su",
+          "Sasu Tarkoma",
+          "Tao Jiang",
+          "Jon Crowcroft",
+          "Pan Hui"
         ],
         "year": 2021,
-        "venue": "ACM SIGCOMM Computer Communication Review",
-        "doi_or_url": "https://doi.org/10.1145/345223.345230",
-        "research_problem": "Lack of standardized runtime abstractions for edge-cloud continuum.",
-        "approach": "Containerized micro-services with decentralized control plane.",
-        "key_contribution": "Comprehensive architectural blueprint for edge-native operating runtimes.",
-        "edge_relevance": "Foundational architectural text for edge orchestration.",
+        "venue": "Proceedings of the IEEE",
+        "doi_or_url": "https://doi.org/10.1109/jproc.2021.3119950",
+        "research_problem": "Edge intelligence grew rapidly after 2011 without a unified view of its building blocks and solutions.",
+        "approach": "Comprehensive survey organised around four components: edge caching, edge training, edge inference and edge offloading.",
+        "key_contribution": "A taxonomy of edge-intelligence problems, techniques and evaluation for each component, with open directions.",
+        "edge_relevance": "Privacy-Preserving Technologies in Data (Artificial Intelligence)",
         "is_seminal": true,
         "is_recent": false
       }
@@ -178,18 +187,24 @@
     "publications": [
       {
         "publication_id": "uk_mccann_p1",
-        "title": "Intermittent Edge Intelligence: Running Neural Networks on Energy-Harvesting IoT Hardware",
+        "title": "A hybrid encryption framework leveraging quantum and classical cryptography for secure transmission of medical images in IoT-based telemedicine networks",
         "authors": [
-          "J. McCann",
-          "A. S. Weddell"
+          "Arslan Shafique",
+          "Syed Ali Atif Naqvi",
+          "Ali Raza",
+          "Masoud Ghalaii",
+          "Panagiotis A. Papanastasiou",
+          "Julie A. McCann",
+          "Qammer H. Abbasi",
+          "Muhammad Ali Imran"
         ],
         "year": 2024,
-        "venue": "ACM Transactions on Sensor Networks",
-        "doi_or_url": "https://doi.org/10.1145/3641212",
-        "research_problem": "Deep learning models reset and lose state under erratic solar/thermal harvesting.",
-        "approach": "Stateful non-volatile memory checkpoints integrated into quantized layer execution.",
-        "key_contribution": "Zero-battery edge AI runtime with bounded inference latency.",
-        "edge_relevance": "Enables batteryless intelligent edge sensors.",
+        "venue": "Scientific Reports",
+        "doi_or_url": "https://doi.org/10.1038/s41598-024-82256-3",
+        "research_problem": "Medical images exchanged over IoT-based telemedicine networks need protection against cyberattacks, including protection of the encryption keys.",
+        "approach": "Hybrid framework that uses quantum key distribution to protect symmetric keys and encrypts image bit-planes with chaotic-map-based scrambling.",
+        "key_contribution": "A quantum-classical encryption scheme for secure transmission of medical images.",
+        "edge_relevance": "Chaos-based Image/Signal Encryption (Computer Vision and Pattern Recognition)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -266,18 +281,20 @@
     "publications": [
       {
         "publication_id": "uk_pietzuch_p1",
-        "title": "Secure Edge Stream Analytics with Hardware-Assisted Enclaves",
+        "title": "Trustworthy AI using Confidential Federated Learning",
         "authors": [
-          "P. Pietzuch",
-          "M. Papatriantafilou"
+          "Jinnan Guo",
+          "Peter R. Pietzuch",
+          "Andrew Paverd",
+          "Kapil Vaswani"
         ],
-        "year": 2023,
-        "venue": "USENIX ATC",
-        "doi_or_url": "https://doi.org/10.5555/357123.357140",
-        "research_problem": "Protecting sensitive IoT data streams on untrusted multi-tenant edge gateways.",
-        "approach": "Lightweight Rust-based enclaves executing inside ARM TrustZone with zero-copy I/O.",
-        "key_contribution": "Achieves 10Gbps stream throughput under hardware encryption guarantees.",
-        "edge_relevance": "Standard-setting paper for secure edge stream computation.",
+        "year": 2024,
+        "venue": "Queue",
+        "doi_or_url": "https://doi.org/10.1145/3665220",
+        "research_problem": "Classic federated learning emphasises security and privacy at the expense of the transparency and accountability that AI regulations require.",
+        "approach": "Confidential federated learning, which combines federated learning with trusted execution environments and cryptographic commitments.",
+        "key_contribution": "Argues confidential FL adds access control and model confidentiality at low overhead on confidential containers and GPUs, and is likely to become the default.",
+        "edge_relevance": "Cryptography and Data Security (Artificial Intelligence)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -354,18 +371,23 @@
     "publications": [
       {
         "publication_id": "uk_marina_p1",
-        "title": "Real-Time Edge Intelligence in Open RAN: Latency and Accuracy Trade-offs",
+        "title": "Traffic Prediction-Assisted Federated Deep Reinforcement Learning for Service Migration in Digital Twins-Enabled MEC Networks",
         "authors": [
-          "M. K. Marina",
-          "A. Kumar"
+          "Xiangyi Chen",
+          "Guangjie Han",
+          "Yuanguo Bi",
+          "Zimeng Yuan",
+          "Mahesh K. Marina",
+          "Yufei Liu",
+          "Hai  Yan Zhao"
         ],
-        "year": 2024,
-        "venue": "IEEE Transactions on Mobile Computing",
-        "doi_or_url": "https://doi.org/10.1109/TMC.2024.338901",
-        "research_problem": "Predicting micro-burst traffic congestion at cellular edge under 10ms budget.",
-        "approach": "Lightweight Transformer inference deployed directly on FPGA-accelerated edge radio units.",
-        "key_contribution": "Demonstrates 4x latency reduction over conventional cloud RAN controllers.",
-        "edge_relevance": "Crucial advancement for cellular edge computing integration.",
+        "year": 2023,
+        "venue": "IEEE Journal on Selected Areas in Communications",
+        "doi_or_url": "https://doi.org/10.1109/jsac.2023.3310047",
+        "research_problem": "Service migration in mobile edge networks is hampered by uncertain future traffic, distributed architecture, operating cost and dynamic resources.",
+        "approach": "Distributed spatio-temporal traffic prediction feeding a federated deep reinforcement learning scheme for migrating services in digital-twin-enabled edge networks.",
+        "key_contribution": "More cost-efficient service migration that preserves continuity and reduces user-perceived delay.",
+        "edge_relevance": "Software-Defined Networks and 5G (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -442,19 +464,32 @@
     "publications": [
       {
         "publication_id": "uk_haddadi_p1",
-        "title": "Private and Efficient On-Device Machine Learning: A Systemic Perspective",
+        "title": "Federated and distributed learning applications for electronic health records and structured medical data: a scoping review",
         "authors": [
-          "H. Haddadi",
-          "N. Lane"
+          "Siqi Li",
+          "Pinyan Liu",
+          "Gustavo G. Nascimento",
+          "Xinru Wang",
+          "Fábio Renato Manzolli Leite",
+          "Bibhas Chakraborty",
+          "Chuan Hong",
+          "Yilin Ning",
+          "Feng Xie",
+          "Zhen Ling Teo",
+          "Daniel Shu Wei Ting",
+          "Hamed Haddadi",
+          "Marcus Eng Hock Ong",
+          "Marco Aurélio Peres",
+          "Nan Liu"
         ],
         "year": 2023,
-        "venue": "ACM Communications of the ACM",
-        "doi_or_url": "https://doi.org/10.1145/3582312",
-        "research_problem": "Balancing local accuracy with device resource limits and privacy leakage.",
-        "approach": "Collaborative split inference with cryptographic client masking.",
-        "key_contribution": "Foundational taxonomy for on-device and edge intelligence.",
-        "edge_relevance": "Direct conceptual foundation for applicant's intended doctoral focus.",
-        "is_seminal": true,
+        "venue": "Journal of the American Medical Informatics Association",
+        "doi_or_url": "https://doi.org/10.1093/jamia/ocad170",
+        "research_problem": "Federated learning is increasingly used on structured clinical data such as electronic health records, but its applications and limitations had not been reviewed.",
+        "approach": "PRISMA systematic review across five databases, assessing data quality, modelling strategies and FL frameworks.",
+        "key_contribution": "Of 1,193 papers screened, 34 met the criteria; the review identifies current limitations and potential innovations.",
+        "edge_relevance": "Privacy-Preserving Technologies in Data (Artificial Intelligence)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -530,18 +565,20 @@
     "publications": [
       {
         "publication_id": "uk_mascolo_p1",
-        "title": "On-Device Audio Biomarker Detection: Challenges and System Optimizations",
+        "title": "Human-centred artificial intelligence for mobile health sensing: challenges and opportunities",
         "authors": [
-          "C. Mascolo",
-          "N. Lane"
+          "Ting Dang",
+          "Dimitris Spathis",
+          "Abhirup Ghosh",
+          "Cecilia Mascolo"
         ],
-        "year": 2024,
-        "venue": "IEEE Pervasive Computing",
-        "doi_or_url": "https://doi.org/10.1109/MPRV.2024.10291",
-        "research_problem": "Excessive DRAM memory bandwidth bottleneck during continuous audio spectrogram processing.",
-        "approach": "Sparse temporal convolutions with SRAM on-chip scratchpad caching.",
-        "key_contribution": "Reduces edge inference energy consumption by 62%.",
-        "edge_relevance": "Direct breakthrough for always-on wearable edge AI.",
+        "year": 2023,
+        "venue": "Royal Society Open Science",
+        "doi_or_url": "https://doi.org/10.1098/rsos.230806",
+        "research_problem": "Machine learning for mobile health sensing faces noisy, sparse, heterogeneous and privacy-sensitive data on resource-constrained devices, with scarce labels.",
+        "approach": "Perspective on human-centred AI for wearable and mobile health sensing.",
+        "key_contribution": "Sets out the key challenges and research opportunities for AI on mobile health data.",
+        "edge_relevance": "Context-Aware Activity Recognition Systems (Computer Vision and Pattern Recognition)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -618,18 +655,21 @@
     "publications": [
       {
         "publication_id": "uk_yoneki_p1",
-        "title": "Optimizing Graph Neural Network Execution on Resource-Constrained Edge Devices",
+        "title": "A New Paradigm in Tuning Learned Indexes: A Reinforcement Learning Enhanced Approach",
         "authors": [
-          "E. Yoneki",
-          "T. Suzumura"
+          "Taiyi Wang",
+          "Liang Liang",
+          "Guang Y. Yang",
+          "Thomas Heinis",
+          "Eiko Yoneki"
         ],
-        "year": 2024,
-        "venue": "ACM EuroSys",
-        "doi_or_url": "https://doi.org/10.1145/3627703.3629561",
-        "research_problem": "Irregular graph memory access patterns stall edge vector units.",
-        "approach": "Topological partitioning combined with hardware-aligned cache tiling.",
-        "key_contribution": "Achieves 3.2x speedup on commodity ARM edge platforms.",
-        "edge_relevance": "Direct systems contribution to edge intelligent computing.",
+        "year": 2025,
+        "venue": "Proceedings of the ACM on Management of Data",
+        "doi_or_url": "https://doi.org/10.1145/3725257",
+        "research_problem": "Learned index structures require difficult trade-off tuning, relying either on manual parameter tuning or on fixed heuristic configurations.",
+        "approach": "LITune, an end-to-end tuner that uses a tailored deep reinforcement learning pipeline, plus an on-the-fly updating mechanism (O2) for long-running online tuning.",
+        "key_contribution": "Automatic, stable tuning of learned indexes that adapts to changing workloads.",
+        "edge_relevance": "Data Stream Mining Techniques (Artificial Intelligence)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -706,18 +746,19 @@
     "publications": [
       {
         "publication_id": "uk_pezaros_p1",
-        "title": "Programmable Data Planes for Zero-Touch Edge Cloud Resiliency",
+        "title": "A Survey of Energy Optimization Approaches for Computational Task Offloading and Resource Allocation in MEC Networks",
         "authors": [
-          "D. Pezaros",
-          "M. Marina"
+          "J.‐M. Yang",
+          "Awais Aziz Shah",
+          "Dimitrios P. Pezaros"
         ],
         "year": 2023,
-        "venue": "IEEE Communications Magazine",
-        "doi_or_url": "https://doi.org/10.1109/MCOM.2023.1012398",
-        "research_problem": "Detecting microsecond edge link degradations without centralized controller overhead.",
-        "approach": "In-band network telemetry processed directly in P4 hardware stages.",
-        "key_contribution": "Autonomous sub-millisecond edge traffic rerouting architecture.",
-        "edge_relevance": "Fundamental framework for resilient edge computing platforms.",
+        "venue": "Electronics",
+        "doi_or_url": "https://doi.org/10.3390/electronics12173548",
+        "research_problem": "As mobile edge computing networks grow in scale and complexity, energy-efficient task offloading and resource allocation become critical.",
+        "approach": "Survey of energy-optimisation approaches for computational task offloading and resource allocation in MEC.",
+        "key_contribution": "A classification of energy-efficient MEC offloading and allocation methods, with open challenges.",
+        "edge_relevance": "IoT and Edge/Fog Computing (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -792,18 +833,19 @@
     "publications": [
       {
         "publication_id": "uk_sastry_p1",
-        "title": "Predictive Collaborative Edge Caching via Distributed Deep Reinforcement Learning",
+        "title": "The Role of the Internet of Things (IoT) in Achieving the United Nations (UN) Sustainable Development Goals (SDGs) - A Systematic Review",
         "authors": [
-          "N. Sastry",
-          "J. Crowcroft"
+          "Abdullahi Kutiriko Abubakar",
+          "Lee Gillam",
+          "Nishanth Sastry"
         ],
-        "year": 2023,
-        "venue": "IEEE Transactions on Mobile Computing",
-        "doi_or_url": "https://doi.org/10.1109/TMC.2023.328912",
-        "research_problem": "Predicting multi-tenant edge content popularity under rapid demand shifts.",
-        "approach": "Multi-agent reinforcement learning deployed on edge gateway clusters.",
-        "key_contribution": "Reduces backhaul traffic by 48% while maintaining 95% cache hit ratio.",
-        "edge_relevance": "Core contribution to cellular edge systems efficiency.",
+        "year": 2025,
+        "venue": "ACM Computing Surveys",
+        "doi_or_url": "https://doi.org/10.1145/3765516",
+        "research_problem": "IoT is a key enabler of the UN Sustainable Development Goals, but its contribution across sectors had not been systematically mapped.",
+        "approach": "Systematic review of IoT-SDG research from 2015 to 2024 across seven macro-sectors.",
+        "key_contribution": "Identifies trends toward real deployments, reliance on cloud, edge and ML, and using IoT data to measure SDG impact, along with the remaining barriers.",
+        "edge_relevance": "IoT and Edge/Fog Computing (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }

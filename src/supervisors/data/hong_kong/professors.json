@@ -83,8 +83,8 @@
       "EdgeCloudSim Simulation Framework"
     ],
     "publications": [
-      "cao_edge_mesh_2021",
-      "cao_collab_edge_ai_2024"
+      "cao_edge_mesh_new_2017",
+      "cao_edgeshard_efficient_llm_2024"
     ],
     "alignment_score": 96.0,
     "familiarity_score": 30.0,
@@ -178,8 +178,8 @@
       "EE364a: Convex Optimization I (Stanford)"
     ],
     "publications": [
-      "guo_edge_intelligence_2020",
-      "guo_fl_pruning_2023"
+      "guo_learning_based_incentive_2020",
+      "guo_wireless_powered_mobile_2023"
     ],
     "alignment_score": 95.0,
     "familiarity_score": 25.0,
@@ -272,8 +272,8 @@
       "Writing in the Sciences (Stanford Online)"
     ],
     "publications": [
-      "chen_distributed_opt_2021",
-      "chen_green_edge_2024"
+      "chen_markov_approximation_combinatorial_2013",
+      "chen_unsupervised_learning_solving_2024"
     ],
     "alignment_score": 93.0,
     "familiarity_score": 25.0,
@@ -366,7 +366,7 @@
       "5G Network Architecture and Slicing (EURECOM)"
     ],
     "publications": [
-      "lui_edge_caching_2020"
+      "lui_task_co_offloading_2022"
     ],
     "alignment_score": 92.0,
     "familiarity_score": 20.0,
@@ -458,7 +458,7 @@
       "LFS156x: Intro to Kubernetes on Edge with K3s"
     ],
     "publications": [
-      "wang_fed_edge_2022"
+      "wang_enabling_cost_effective_2020"
     ],
     "alignment_score": 96.0,
     "familiarity_score": 20.0,
@@ -547,9 +547,7 @@
       "Serverless Computing & Microservices Guide (AWS Serverless Land)",
       "Linux Containers from Scratch & Hands-on Guide (Liz Rice)"
     ],
-    "publications": [
-      "wang_serverless_edge_2024"
-    ],
+    "publications": [],
     "alignment_score": 95.0,
     "familiarity_score": 25.0,
     "country": "Hong Kong",
@@ -641,8 +639,8 @@
       "TinyML Specialization (CS249r / Harvard)"
     ],
     "publications": [
-      "wu_edge_dl_scheduler_2021",
-      "wu_federated_pipeline_2024"
+      "wu_dl2_deep_learning_2021",
+      "wu_task_placement_resource_2023"
     ],
     "alignment_score": 96.0,
     "familiarity_score": 20.0,
@@ -732,7 +730,7 @@
       "Linux Containers from Scratch & Hands-on Guide (Liz Rice)"
     ],
     "publications": [
-      "cui_distributed_consensus_2022"
+      "cui_vpipe_virtualized_acceleration_2021"
     ],
     "alignment_score": 93.0,
     "familiarity_score": 20.0,
@@ -825,7 +823,7 @@
       "EE364a: Convex Optimization I (Stanford)"
     ],
     "publications": [
-      "wang_v2x_edge_2023"
+      "wang_aoi_aware_user_2023"
     ],
     "alignment_score": 95.0,
     "familiarity_score": 25.0,
@@ -915,7 +913,7 @@
       "Writing in the Sciences (Stanford Online)"
     ],
     "publications": [
-      "chu_gpu_edge_ai_2023"
+      "chu_resource_efficient_collaborative_2025"
     ],
     "alignment_score": 92.0,
     "familiarity_score": 20.0,
@@ -1003,7 +1001,7 @@
       "Introduction to the Internet of Things (Curtin Univ)"
     ],
     "publications": [
-      "kwong_edge_video_2022"
+      "kwong_matrix_based_evolutionary_2021"
     ],
     "alignment_score": 85.0,
     "familiarity_score": 15.0,
@@ -1090,7 +1088,7 @@
       "EdgeCloudSim Simulation Framework"
     ],
     "publications": [
-      "yu_edge_aiot_sensing_2023"
+      "yu_exploring_application_chatgpt_2024"
     ],
     "alignment_score": 78.0,
     "familiarity_score": 10.0,

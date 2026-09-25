@@ -70,18 +70,19 @@
     "publications": [
       {
         "publication_id": "jp_cho_p1",
-        "title": "Observing Edge Latency Dynamics Across Cellular and Fixed Broadband Networks",
+        "title": "Benchmarking methodology for stateful NAT64 gateways",
         "authors": [
-          "K. Cho",
-          "R. Fontugne"
+          "Gábor Lencse",
+          "Keiichi Shima",
+          "Kenjiro Cho"
         ],
         "year": 2023,
-        "venue": "ACM SIGCOMM CCR",
-        "doi_or_url": "https://doi.org/10.1145/3612345.3612350",
-        "research_problem": "Quantifying edge bufferbloat and latency inflation on mobile devices.",
-        "approach": "Distributed passive telemetry collected from millions of edge access points.",
-        "key_contribution": "Provides definitive measurement taxonomy for real-world edge response times.",
-        "edge_relevance": "Direct baseline for edge computation offloading scheduling.",
+        "venue": "Computer Communications",
+        "doi_or_url": "https://doi.org/10.1016/j.comcom.2023.08.009",
+        "research_problem": "Standard network benchmarking methodologies have conflicting requirements when applied to stateful NAT64 gateways.",
+        "approach": "A benchmarking methodology for any stateful NATxy gateway that reconciles those requirements and defines new stateful metrics.",
+        "key_contribution": "New metrics (connection establishment rate, tear-down rate, connection-tracking capacity) that make scalability testing of stateful gateways possible.",
+        "edge_relevance": "Software-Defined Networks and 5G (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -158,18 +159,21 @@
     "publications": [
       {
         "publication_id": "jp_esaki_p1",
-        "title": "Smart Building Operating Systems: Edge-Centric Control for Energy Optimization",
+        "title": "A multipath redundancy communication framework for enhancing 5G mobile communication quality",
         "authors": [
-          "H. Esaki",
-          "H. Ochiai"
+          "Koki Ito",
+          "Jin Nakazato",
+          "Romain Fontugne",
+          "Manabu Tsukada",
+          "Hiroshi Esaki"
         ],
-        "year": 2023,
-        "venue": "IEEE Internet Computing",
-        "doi_or_url": "https://doi.org/10.1109/MIC.2023.327891",
-        "research_problem": "Centralized cloud processing creates unacceptable latency and reliability risks for building safety systems.",
-        "approach": "Hierarchical edge controllers processing sensor telemetry locally with asynchronous cloud rollups.",
-        "key_contribution": "Achieves 30% reduction in HVAC energy use while guaranteeing 100% local survivability.",
-        "edge_relevance": "Exemplary real-world deployment of edge-cloud orchestration.",
+        "year": 2025,
+        "venue": "Computer Communications",
+        "doi_or_url": "https://doi.org/10.1016/j.comcom.2025.108157",
+        "research_problem": "5G quality varies by place and time, and most reliability work targets TCP rather than real-time UDP streaming.",
+        "approach": "A multipath redundant communication framework that sends real-time media over two mobile networks, tested from a moving vehicle in a city.",
+        "key_contribution": "Better real-time WebRTC streaming quality over commercial 5G through multipath redundancy.",
+        "edge_relevance": "Advanced Wireless Network Optimization (Electrical and Electronic Engineering)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -245,18 +249,22 @@
     "publications": [
       {
         "publication_id": "jp_yatani_p1",
-        "title": "Energy-Efficient On-Device Context Sensing with Dynamic Neural Layer Exits",
+        "title": "DIPA2: An Image Dataset with Cross-cultural Privacy Perception Annotations",
         "authors": [
-          "K. Yatani",
-          "T. Okoshi"
+          "Anran Xu",
+          "Zhongyi Zhou",
+          "Kakeru Miyazaki",
+          "Ryo Yoshikawa",
+          "Simo Johannes Hosio",
+          "Koji Yatani"
         ],
-        "year": 2024,
-        "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
-        "doi_or_url": "https://doi.org/10.1145/3659821",
-        "research_problem": "Continuous mobile sensor inference depletes device battery in under 6 hours.",
-        "approach": "Adaptive layer skipping guided by real-time mobile accelerometer and gyroscope variance.",
-        "key_contribution": "Reduces daily sensing energy draw by 54% with zero loss in recognition fidelity.",
-        "edge_relevance": "Direct breakthrough for practical mobile edge intelligence.",
+        "year": 2023,
+        "venue": "Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies",
+        "doi_or_url": "https://doi.org/10.1145/3631439",
+        "research_problem": "There is little data on which image content people perceive as privacy-threatening, or how this differs across cultures.",
+        "approach": "An open image dataset with object-level annotations of information type, perceived severity and intended sharing scope from annotators of different cultures.",
+        "key_contribution": "DIPA2: 5,897 privacy annotations covering 3,347 objects in 1,304 images.",
+        "edge_relevance": "Privacy, Security, and Data Protection (Sociology and Political Science)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -333,19 +341,20 @@
     "publications": [
       {
         "publication_id": "jp_matsutani_p1",
-        "title": "An Ultra-Low-Power FPGA Accelerator for On-Device Learning at the Network Edge",
+        "title": "Addressing the Gap Between Training Data and Deployed Environment by On-Device Learning",
         "authors": [
-          "H. Matsutani",
-          "M. Koibuchi"
+          "Kazuki Sunaga",
+          "Masaaki Kondo",
+          "Hiroki Matsutani"
         ],
-        "year": 2024,
-        "venue": "IEEE Transactions on Computers",
-        "doi_or_url": "https://doi.org/10.1109/TC.2024.3367120",
-        "research_problem": "Conventional edge processors cannot perform gradient backpropagation within a 5-watt budget.",
-        "approach": "Bit-serial matrix multiplier array optimized for lightweight quantized backpropagation.",
-        "key_contribution": "Achieves 12.4x energy efficiency improvement over edge GPUs.",
-        "edge_relevance": "Enables genuine autonomous on-device continual learning without cloud dependency.",
-        "is_seminal": true,
+        "year": 2023,
+        "venue": "IEEE Micro",
+        "doi_or_url": "https://doi.org/10.1109/mm.2023.3314711",
+        "research_problem": "TinyML accuracy degrades after deployment because of noise, sensor placement and drift that were absent from the training data.",
+        "approach": "Neural-network on-device learning that retrains in the field through semi-supervised sequential training, implemented on Raspberry Pi Pico wireless sensor nodes.",
+        "key_contribution": "Higher anomaly-detection accuracy in noisy environments, with lower communication and energy cost for battery-powered IoT devices.",
+        "edge_relevance": "Air Quality Monitoring and Forecasting (Environmental Engineering)",
+        "is_seminal": false,
         "is_recent": true
       }
     ]
@@ -421,18 +430,20 @@
     "publications": [
       {
         "publication_id": "jp_suzumura_p1",
-        "title": "Distributed Graph Neural Networks over Edge-Cloud Continuum: Trade-offs and System Architectures",
+        "title": "BOTAN: BOnd TArgeting Network for prediction of slow glassy dynamics by machine learning relative motion",
         "authors": [
-          "T. Suzumura",
-          "E. Yoneki"
+          "Hayato Shiba",
+          "M. Hanai",
+          "Toyotaro Suzumura",
+          "Takashi Shimokawabe"
         ],
-        "year": 2024,
-        "venue": "IEEE Transactions on Parallel and Distributed Systems",
-        "doi_or_url": "https://doi.org/10.1109/TPDS.2024.3378901",
-        "research_problem": "Massive communication volume between edge sensing devices and cloud trainers during GNN updates.",
-        "approach": "Adaptive node-cut graph partitioning with local feature pre-aggregation at edge gateways.",
-        "key_contribution": "Cuts cross-network bandwidth by 73% while preserving full graph model convergence.",
-        "edge_relevance": "Direct breakthrough for intelligent edge-cloud systems.",
+        "year": 2023,
+        "venue": "The Journal of Chemical Physics",
+        "doi_or_url": "https://doi.org/10.1063/5.0129791",
+        "research_problem": "Machine-learning models of glassy dynamics usually learn a single dynamic quantity, limiting insight into slow structural relaxation.",
+        "approach": "BOTAN, a graph neural network that learns the relative motion of neighbouring particle pairs as well as each particle's own motion.",
+        "key_contribution": "High-precision prediction of how slow structural relaxation develops in space and time.",
+        "edge_relevance": "Material Dynamics and Properties (Materials Chemistry)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -506,18 +517,19 @@
     "publications": [
       {
         "publication_id": "jp_aida_p1",
-        "title": "Autonomous Decentralized Resource Allocation for Ultra-Dense Edge Networks: A Dynamical Systems Approach",
+        "title": "Autonomous Decentralized Spectral Clustering for Hierarchical Routing of Multi-Hop Wireless Networks",
         "authors": [
-          "M. Aida",
-          "C. Takano"
+          "Naoki Matsuhashi",
+          "Chisa Takano",
+          "Masaki Aida"
         ],
         "year": 2023,
-        "venue": "IEEE Transactions on Network and Service Management",
-        "doi_or_url": "https://doi.org/10.1109/TNSM.2023.3267891",
-        "research_problem": "Centralized edge resource allocators become computational bottlenecks as cell density explodes.",
-        "approach": "Coupled oscillator models determining local task offloading fractions without global state.",
-        "key_contribution": "Guarantees global load stability with purely local information exchanges.",
-        "edge_relevance": "Direct foundational model for decentralized edge computing.",
+        "venue": "IEEE Access",
+        "doi_or_url": "https://doi.org/10.1109/access.2023.3288075",
+        "research_problem": "Spectral clustering for hierarchical routing in multi-hop wireless networks needs global network information, which makes decentralised implementation hard.",
+        "approach": "An autonomous, decentralised spectral clustering algorithm that works for arbitrary network topologies.",
+        "key_contribution": "Topology-independent decentralised clustering for scalable hierarchical routing, beyond the simple grid networks handled previously.",
+        "edge_relevance": "Mobile Ad Hoc Networks (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -592,18 +604,19 @@
     "publications": [
       {
         "publication_id": "jp_teraoka_p1",
-        "title": "Information-Centric Edge Computing: Named Function Execution for Mobile IoT",
+        "title": "GAMPALv2: An Anomaly Detection Mechanism for Internet Traffic by Predicting Flow Size Range from Time Features",
         "authors": [
-          "F. Teraoka",
-          "K. Kanai"
+          "Taku Wakui",
+          "Fumio Teraoka",
+          "Takao Kondo"
         ],
-        "year": 2023,
-        "venue": "IEEE Access",
-        "doi_or_url": "https://doi.org/10.1109/ACCESS.2023.3256789",
-        "research_problem": "DNS lookup and TCP handshake overhead degrade latency in highly mobile edge IoT environments.",
-        "approach": "Direct invocation of edge computations addressed by name inside network routers.",
-        "key_contribution": "Cuts interaction setup latency by 65% for mobile edge clients.",
-        "edge_relevance": "Pioneering protocol advancement for edge-native networks.",
+        "year": 2025,
+        "venue": "IEICE Transactions on Information and Systems",
+        "doi_or_url": "https://doi.org/10.1587/transinf.2024ntp0002",
+        "research_problem": "The earlier GAMPAL backbone anomaly detector was computationally heavy, had hard-to-set thresholds and could not pinpoint when and where anomalies occurred.",
+        "approach": "GAMPALv2 reduces input dimensionality with time features and replaces the LSTM with a random-forest regressor that predicts flow-size ranges per prefix aggregate.",
+        "key_contribution": "A practical, label-free backbone traffic anomaly detector that resolves GAMPAL's three limitations.",
+        "edge_relevance": "Network Security and Intrusion Detection (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
@@ -678,18 +691,18 @@
     "publications": [
       {
         "publication_id": "jp_kawashima_p1",
-        "title": "Low-Latency Stream Analytics on Heterogeneous Edge Gateways: Architecture and Performance",
+        "title": "Qsync: Making Simplified SMR Protocol Tolerant to Partial Network Partitioning",
         "authors": [
-          "H. Kawashima",
-          "O. Tatebe"
+          "Aoi Kida",
+          "Hideyuki Kawashima"
         ],
-        "year": 2024,
-        "venue": "IEEE Transactions on Knowledge and Data Engineering",
-        "doi_or_url": "https://doi.org/10.1109/TKDE.2024.3356789",
-        "research_problem": "Garbage collection and lock contention choke stream processing on low-power ARM edge nodes.",
-        "approach": "Zero-allocation lock-free ring buffers with vector-accelerated window aggregation.",
-        "key_contribution": "Delivers 5.8x throughput speedup on commodity Raspberry Pi / Jetson edge devices.",
-        "edge_relevance": "Direct software architecture contribution to edge data processing.",
+        "year": 2025,
+        "venue": "IEICE Transactions on Information and Systems",
+        "doi_or_url": "https://doi.org/10.1587/transinf.2025pap0004",
+        "research_problem": "The Rabia state-machine-replication protocol can livelock under partial network partitions because replica queue states diverge.",
+        "approach": "Qsync adds queue-state synchronisation to Rabia while keeping its simple design.",
+        "key_contribution": "Stable throughput under partial partitions in which the original Rabia's throughput drops to zero.",
+        "edge_relevance": "Mobile Agent-Based Network Management (Computer Networks and Communications)",
         "is_seminal": false,
         "is_recent": true
       }
