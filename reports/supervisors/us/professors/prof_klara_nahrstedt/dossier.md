@@ -4,7 +4,7 @@
 **Institution:** University of Illinois Urbana-Champaign  
 **Department / School:** Siebel School of Computing and Data Science  
 **Research Group / Laboratory:** Multimedia Operating Systems and Systems Group (MONET)  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 93%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Klara Nahrstedt is an active academic authority at University of Illinois 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://cs.illinois.edu/about/people/department-faculty/klara; Institutional domain cross-check verified (illinois.edu); Institutional email domain recorded: @illinois.edu; Email domain matches institutional namespace (illinois.edu); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=j52qWk0AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/n/KlaraNahrstedt.html; ORCID researcher registry identifier verified: 0000-0002-3498-5678; Departmental affiliation: Siebel School of Computing and Data Science at University of Illinois Urbana-Champaign; Directorship / Laboratory: Multimedia Operating Systems and Systems Group (MONET)
 * **Data Freshness:** < 365 days (Active)

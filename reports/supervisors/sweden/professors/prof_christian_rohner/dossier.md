@@ -4,7 +4,7 @@
 **Institution:** Uppsala University  
 **Department / School:** Department of Information Technology  
 **Research Group / Laboratory:** Computer Systems and Communication Research Group  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 96%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Christian Rohner is an active academic authority at Uppsala University, le
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.katalog.uu.se/profile/?id=N96-1845; Institutional domain cross-check verified (uu.se); Institutional email domain recorded: @it.uu.se; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P3q9p-AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/r/ChristianRohner.html; ORCID researcher registry identifier verified: 0000-0002-3921-9911; Departmental affiliation: Department of Information Technology at Uppsala University; Directorship / Laboratory: Computer Systems and Communication Research Group
 * **Data Freshness:** < 365 days (Active)

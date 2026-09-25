@@ -4,7 +4,7 @@
 **Institution:** The University of Tokyo  
 **Department / School:** Graduate School of Information Science and Technology  
 **Research Group / Laboratory:** Esaki Laboratory / WIDE Project  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Hiroshi Esaki is an active academic authority at The University of Tokyo, 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.hongo.wide.ad.jp/; Notice: Profile domain (www.hongo.wide.ad.jp) differs from root university domain (u-tokyo.ac.jp); Institutional email domain recorded: @wide.ad.jp; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=517b6-cAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/e/HiroshiEsaki.html; ORCID researcher registry identifier verified: 0000-0002-1245-7789; Departmental affiliation: Graduate School of Information Science and Technology at The University of Tokyo; Directorship / Laboratory: Esaki Laboratory / WIDE Project
 * **Data Freshness:** < 365 days (Active)

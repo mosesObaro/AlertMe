@@ -4,7 +4,7 @@
 **Institution:** Tokyo Metropolitan University / Keio University  
 **Department / School:** Department of Computer Science  
 **Research Group / Laboratory:** Information Network Systems Laboratory  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 2 (Research Alignment: 73%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Masaki Aida is an active academic authority at Tokyo Metropolitan Universi
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.comp.tmu.ac.jp/aida-lab/index-e.html; Institutional email domain recorded: @tmu.ac.jp; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=5P5-98kAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/a/MasakiAida.html; ORCID researcher registry identifier verified: 0000-0002-9876-5432; Departmental affiliation: Department of Computer Science at Tokyo Metropolitan University / Keio University; Directorship / Laboratory: Information Network Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

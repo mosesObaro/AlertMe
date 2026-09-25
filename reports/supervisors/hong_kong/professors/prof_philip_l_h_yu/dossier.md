@@ -4,7 +4,7 @@
 **Institution:** The Education University of Hong Kong  
 **Department / School:** Department of Mathematics and Information Technology (MIT)  
 **Research Group / Laboratory:** Artificial Intelligence and Digital Competency Education Centre  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 3 (Research Alignment: 57%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Philip L.H. Yu is an active academic authority at The Education University
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.eduhk.hk/mit/people/academic-staff/yu-leung-ho-philip; Institutional domain cross-check verified (eduhk.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=M_T20F0AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/y/PhilipLHYu.html; Departmental affiliation: Department of Mathematics and Information Technology (MIT) at The Education University of Hong Kong; Directorship / Laboratory: Artificial Intelligence and Digital Competency Education Centre
 * **Data Freshness:** < 365 days (Active)

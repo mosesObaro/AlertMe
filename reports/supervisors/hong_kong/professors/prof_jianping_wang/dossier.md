@@ -4,7 +4,7 @@
 **Institution:** City University of Hong Kong  
 **Department / School:** Department of Computer Science (CS)  
 **Research Group / Laboratory:** Future Networking Laboratory  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Jianping Wang is an active academic authority at City University of Hong K
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cs.cityu.edu.hk/people/academic-staff/jianwang; Institutional domain cross-check verified (cityu.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=Y7qP7XAAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/w/JianpingWang.html; Departmental affiliation: Department of Computer Science (CS) at City University of Hong Kong; Directorship / Laboratory: Future Networking Laboratory
 * **Data Freshness:** < 365 days (Active)

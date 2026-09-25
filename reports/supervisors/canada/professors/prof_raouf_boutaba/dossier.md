@@ -4,7 +4,7 @@
 **Institution:** University of Waterloo  
 **Department / School:** David R. Cheriton School of Computer Science  
 **Research Group / Laboratory:** Network Softwarization and Systems Laboratory  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 97%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Raouf Boutaba is an active academic authority at University of Waterloo, l
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://cs.uwaterloo.ca/~rboutaba/; Institutional domain cross-check verified (uwaterloo.ca); Institutional email domain recorded: @uwaterloo.ca; Email domain matches institutional namespace (uwaterloo.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=G_2s_aIAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/b/RaoufBoutaba.html; ORCID researcher registry identifier verified: 0000-0002-3921-7788; Departmental affiliation: David R. Cheriton School of Computer Science at University of Waterloo; Directorship / Laboratory: Network Softwarization and Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

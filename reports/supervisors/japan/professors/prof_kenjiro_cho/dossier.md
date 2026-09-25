@@ -4,7 +4,7 @@
 **Institution:** The University of Tokyo / IIJ Research Lab  
 **Department / School:** Graduate School of Information Science and Technology  
 **Research Group / Laboratory:** Internet Architecture and Edge Measurement Group  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 82%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -391,7 +391,7 @@ Prof. Kenjiro Cho is an active academic authority at The University of Tokyo / I
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.iijlab.net/~kjc/; Institutional email domain recorded: @iijlab.net; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=G_2s_aIAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/c/KenjiroCho.html; ORCID researcher registry identifier verified: 0000-0002-3841-8971; Departmental affiliation: Graduate School of Information Science and Technology at The University of Tokyo / IIJ Research Lab; Directorship / Laboratory: Internet Architecture and Edge Measurement Group
 * **Data Freshness:** < 365 days (Active)

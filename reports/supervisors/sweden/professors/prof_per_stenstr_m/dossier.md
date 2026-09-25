@@ -4,7 +4,7 @@
 **Institution:** Chalmers University of Technology  
 **Department / School:** Department of Computer Science and Engineering  
 **Research Group / Laboratory:** Computer Architecture Division  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 73%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -395,7 +395,7 @@ Prof. Per Stenström is an active academic authority at Chalmers University of T
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.chalmers.se/en/staff/pers/; Institutional domain cross-check verified (chalmers.se); Institutional email domain recorded: @chalmers.se; Email domain matches institutional namespace (chalmers.se); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=PZ9S2lQAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/PerStenstrom.html; ORCID researcher registry identifier verified: 0000-0002-3921-1122; Departmental affiliation: Department of Computer Science and Engineering at Chalmers University of Technology; Directorship / Laboratory: Computer Architecture Division
 * **Data Freshness:** < 365 days (Active)

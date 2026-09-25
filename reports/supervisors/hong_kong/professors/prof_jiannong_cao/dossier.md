@@ -4,7 +4,7 @@
 **Institution:** The Hong Kong Polytechnic University  
 **Department / School:** Department of Computing (COMP)  
 **Research Group / Laboratory:** Internet and Mobile Computing Laboratory (IMCL)  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -403,7 +403,7 @@ Prof. Jiannong Cao is an active academic authority at The Hong Kong Polytechnic 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.polyu.edu.hk/comp/people/academic-staff/prof-cao-jiannong/; Institutional domain cross-check verified (polyu.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=X5Nl_E8AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/c/JiannongCao.html; ORCID researcher registry identifier verified: 0000-0002-4663-8824; Departmental affiliation: Department of Computing (COMP) at The Hong Kong Polytechnic University; Directorship / Laboratory: Internet and Mobile Computing Laboratory (IMCL)
 * **Data Freshness:** < 365 days (Active)
