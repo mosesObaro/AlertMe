@@ -4,7 +4,7 @@
 **Institution:** The Hong Kong University of Science and Technology  
 **Department / School:** Department of Computer Science and Engineering (CSE)  
 **Research Group / Laboratory:** Edge Computing Systems Laboratory  
-**Date of Assessment:** 2026-09-24  
+**Date of Assessment:** 2026-09-25  
 **Priority Tier:** Tier 1 (Research Alignment: 95%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -393,7 +393,7 @@ Prof. Lin Wang is an active academic authority at The Hong Kong University of Sc
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-24
+* **Generated Date:** 2026-09-25
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://cse.hkust.edu.hk/admin/people/faculty/profile/linwang; Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=U1k7T24AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/12/3592-1.html; ORCID researcher registry identifier verified: 0000-0002-3904-8094; Departmental affiliation: Department of Computer Science and Engineering (CSE) at The Hong Kong University of Science and Technology; Directorship / Laboratory: Edge Computing Systems Laboratory
 * **Data Freshness:** < 365 days (Active)
