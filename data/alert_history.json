@@ -2050,5 +2050,71 @@
     "opportunity_data": null,
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "AI For Sustainable Development Opportunities & Innovation",
+    "url": "https://doi.org/10.5281/zenodo.22933761",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Saloni Ananda Patil"
+    ],
+    "doi": "10.5281/zenodo.22933761",
+    "arxiv_id": null,
+    "publication_date": "2026-09-30",
+    "discovery_date": "2026-09-26",
+    "abstract": "Abstract Artificial Intelligence is increasingly being explored as a tool for accelerating progress toward sustainable development. AI can analyse large datasets, identify patterns, forecast events, optimise systems and support decision-making across agriculture, energy, water, healthcare, education, cities, industry and environmental management. Recent research shows that AI-for-SDG research is expanding rapidly, while also revealing gaps in social inclusion, governance and assessment of AI’s own environmental footprint. This project examines the major opportunities for AI-enabled sustainable development, including smart agriculture, renewable-energy optimisation, climate and disaster forecasting, intelligent waste management, sustainable cities, healthcare and education. It also discusses innovation pathways such as machine learning, computer vision, remote sensing, generative AI, digital twins and edge AI. The study emphasises that technological capability alone is insufficient: responsible AI requires reliable data, transparency, privacy, human oversight, equitable access, energy-efficient computing and lifecycle environmental assessment.",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "topics": [
+      "Industry 4.0",
+      "Climate change",
+      "Environmental impact assessment",
+      "Sustainable development",
+      "Corporate governance",
+      "Climate governance",
+      "Emerging technologies",
+      "Computer science",
+      "Sustainability",
+      "Environmental governance",
+      "Engineering",
+      "Applications of artificial intelligence",
+      "Knowledge management",
+      "Environmental resource management",
+      "Engineering management",
+      "Environmental planning",
+      "Business",
+      "Big data",
+      "Process management"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_17991b415c008e54",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Abstract)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Upcoming date: 2026-09-30 (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
   }
 ]

@@ -2457,5 +2457,84 @@
       "cs.SE",
       "cs.DC"
     ]
+  },
+  "Saloni Ananda Patil": {
+    "name": "Saloni Ananda Patil",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Industry 4.0",
+      "Climate change",
+      "Environmental impact assessment",
+      "Sustainable development",
+      "Corporate governance",
+      "Climate governance",
+      "Emerging technologies",
+      "Computer science",
+      "Sustainability",
+      "Environmental governance",
+      "Engineering",
+      "Applications of artificial intelligence",
+      "Knowledge management",
+      "Environmental resource management",
+      "Engineering management",
+      "Environmental planning",
+      "Business",
+      "Big data",
+      "Process management"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "AI For Sustainable Development Opportunities & Innovation",
+        "url": "https://doi.org/10.5281/zenodo.22933761",
+        "date": "2026-09-30",
+        "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-26",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": [
+      "Industry 4.0",
+      "Climate change",
+      "Environmental impact assessment",
+      "Sustainable development",
+      "Corporate governance",
+      "Climate governance",
+      "Emerging technologies",
+      "Computer science",
+      "Sustainability",
+      "Environmental governance",
+      "Engineering",
+      "Applications of artificial intelligence",
+      "Knowledge management",
+      "Environmental resource management",
+      "Engineering management",
+      "Environmental planning",
+      "Business",
+      "Big data",
+      "Process management"
+    ]
   }
 }
