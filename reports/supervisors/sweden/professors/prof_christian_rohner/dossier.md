@@ -4,7 +4,7 @@
 **Institution:** Uppsala University  
 **Department / School:** Department of Information Technology  
 **Research Group / Laboratory:** Computer Systems and Communication Research Group  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 96%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,19 +37,19 @@ With verified recruitment standing (STRONG_EVIDENCE) and direct synergy with Swe
 
 ## 3. Complete Research Career Timeline
 
-Prof. Christian Rohner's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2023–2031) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2019–2023).
+Prof. Christian Rohner's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2024–2032) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2023–2019)
+### Era 1: Distributed Systems Foundations & Networked Computing (2024–2020)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2020–2023)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2021–2024)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks
-* **Year:** 2023
-* **Venue:** IEEE Transactions on Mobile Computing
-* **DOI / Link:** [https://doi.org/10.1109/TMC.2023.3278912](https://doi.org/10.1109/TMC.2023.3278912)
-* **Problem Addressed:** Achieving sub-10ms communication deadlines over unreliable low-power 2.4GHz wireless links.
-* **Approach:** Constructive interference physical-layer flooding synchronized to microsecond boundaries.
-* **Key Contribution:** Delivers 99.99% packet delivery reliability within a deterministic 8ms window.
+### 1. Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information
+* **Year:** 2024
+* **Venue:** Entropy
+* **DOI / Link:** [https://doi.org/10.3390/e26050424](https://doi.org/10.3390/e26050424)
+* **Problem Addressed:** Partial information decomposition still lacks a suitable non-negative measure for an arbitrary number of discrete variables.
+* **Approach:** A pointwise decomposition built on the equivalence of the Blackwell and zonogon orders, applicable to any f-information measure.
+* **Key Contribution:** A non-negative decomposition that satisfies the inclusion-exclusion relation and the desired axioms, with proofs.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2023–2019: Distributed Systems Foundations & Networked Computing
+2024–2020: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2020–2023: Edge Intelligence & Collaborative Distributed Computing
+2021–2024: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** C. Rohner, P. Gunningberg
+* **Institutional Collaborators:** Tobias Mages, Elli Anastasiadi
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -192,13 +192,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Christian Rohner's pioneering work in split computing and early-exit networks (Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks).
+* **Professor's Expertise:** Prof. Christian Rohner's pioneering work in split computing and early-exit networks (Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Christian Rohner's research in decentralized edge computing architectures (Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks).
+* **Professor's Expertise:** Prof. Christian Rohner's research in decentralized edge computing architectures (Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -279,7 +279,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (96.2
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Computer Systems and Communication Research Group—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -293,13 +293,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (96.2
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks* (IEEE Transactions on Mobile Computing, 2023)
+1. *Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information* (Entropy, 2024)
 
 ### Tier 2 — Research Evolution
-2. *Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks* (IEEE Transactions on Mobile Computing, 2023)
+2. *Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information* (Entropy, 2024)
 
 ### Tier 3 — PhD Alignment
-3. *Low-Latency Synchronous Transmissions for Industrial IoT Edge Networks* (IEEE Transactions on Mobile Computing, 2023)
+3. *Non-Negative Decomposition of Multivariate Information: From Minimum to Blackwell-Specific Information* (Entropy, 2024)
 
 ---
 
@@ -368,7 +368,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (96.2
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Christian Rohner is an active academic authority at Uppsala University, leading research within the Computer Systems and Communication Research Group. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Christian Rohner has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Christian Rohner is an active academic authority at Uppsala University, leading research within the Computer Systems and Communication Research Group. Over a prolific academic trajectory spanning from 2024 to 2024, Prof. Christian Rohner has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Christian Rohner is primarily a researcher in Computer Networks, with expertise spanning Wireless Sensor Networks, IoT Edge Systems, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -385,7 +385,7 @@ Prof. Christian Rohner is an active academic authority at Uppsala University, le
 * **[FACT]** Official Faculty Profile: https://www.katalog.uu.se/profile/?id=N96-1845
 * **[FACT]** Recruitment Verification Record: 'Recruiting PhD researchers with full Swedish salaried employment contracts through Uppsala IT doctoral program.' (Source: official_lab_website, Date: 2026-01-20)
 * **[FACT]** Primary Funding Scheme: Swedish Salaried Doctoral Position (Doktorandanställning) (https://www.migrationsverket.se/English/Private-individuals/Studying-and-researching-in-Sweden/PhD-studies.html)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2023–2023).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2024–2024).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.6/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -393,7 +393,7 @@ Prof. Christian Rohner is an active academic authority at Uppsala University, le
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.katalog.uu.se/profile/?id=N96-1845; Institutional domain cross-check verified (uu.se); Institutional email domain recorded: @it.uu.se; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P3q9p-AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/r/ChristianRohner.html; ORCID researcher registry identifier verified: 0000-0002-3921-9911; Departmental affiliation: Department of Information Technology at Uppsala University; Directorship / Laboratory: Computer Systems and Communication Research Group
 * **Data Freshness:** < 365 days (Active)

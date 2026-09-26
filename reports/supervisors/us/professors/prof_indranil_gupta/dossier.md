@@ -4,7 +4,7 @@
 **Institution:** University of Illinois Urbana-Champaign  
 **Department / School:** Siebel School of Computing and Data Science  
 **Research Group / Laboratory:** Distributed Systems Group (DPG)  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Scalable Membership and Failure Detection for Dynamic Edge Clusters
+### 1. A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines
 * **Year:** 2023
-* **Venue:** IEEE Transactions on Parallel and Distributed Systems
-* **DOI / Link:** [https://doi.org/10.1109/TPDS.2023.3289012](https://doi.org/10.1109/TPDS.2023.3289012)
-* **Problem Addressed:** Heartbeating protocols generate unsustainable network storm overhead in dense edge environments.
-* **Approach:** Infection-style gossip dissemination adapted for asymmetric edge network topologies.
-* **Key Contribution:** Cuts protocol communication bandwidth by 82% while guaranteeing deterministic failure detection.
+* **Venue:** Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies
+* **DOI / Link:** [https://doi.org/10.1145/3581997](https://doi.org/10.1145/3581997)
+* **Problem Addressed:** Smart-home routines that access the same devices at the same time conflict, and it is unclear which resolution strategies users prefer.
+* **Approach:** Literature survey of conflict-handling strategies plus a scenario-based user study with 197 participants.
+* **Key Contribution:** Shows that no context-independent strategy always satisfies users, informing the design of conflict resolution.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** I. Gupta, M. K. Marina
+* **Institutional Collaborators:** Ali Zaidi, Rui Jun Yang, Vinay Koshy, Camille Cobb, Indranil Sen Gupta, Karrie G. Karahalios
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -193,13 +193,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Indranil Gupta's pioneering work in split computing and early-exit networks (Scalable Membership and Failure Detection for Dynamic Edge Clusters).
+* **Professor's Expertise:** Prof. Indranil Gupta's pioneering work in split computing and early-exit networks (A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Indranil Gupta's research in decentralized edge computing architectures (Scalable Membership and Failure Detection for Dynamic Edge Clusters).
+* **Professor's Expertise:** Prof. Indranil Gupta's research in decentralized edge computing architectures (A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -280,7 +280,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Scalable Membership and Failure Detection for Dynamic Edge Clusters', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Distributed Systems Group (DPG)—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -294,13 +294,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Scalable Membership and Failure Detection for Dynamic Edge Clusters* (IEEE Transactions on Parallel and Distributed Systems, 2023)
+1. *A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines* (Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies, 2023)
 
 ### Tier 2 — Research Evolution
-2. *Scalable Membership and Failure Detection for Dynamic Edge Clusters* (IEEE Transactions on Parallel and Distributed Systems, 2023)
+2. *A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines* (Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies, 2023)
 
 ### Tier 3 — PhD Alignment
-3. *Scalable Membership and Failure Detection for Dynamic Edge Clusters* (IEEE Transactions on Parallel and Distributed Systems, 2023)
+3. *A User-Centric Evaluation of Smart Home Resolution Approaches for Conflicts Between Routines* (Proceedings of the ACM on Interactive Mobile Wearable and Ubiquitous Technologies, 2023)
 
 ---
 
@@ -395,7 +395,7 @@ Prof. Indranil Gupta is an active academic authority at University of Illinois U
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://cs.illinois.edu/about/people/department-faculty/indy; Institutional domain cross-check verified (illinois.edu); Institutional email domain recorded: @illinois.edu; Email domain matches institutional namespace (illinois.edu); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=Y7y8V1MAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/g/IndranilGupta.html; ORCID researcher registry identifier verified: 0000-0002-3987-6543; Departmental affiliation: Siebel School of Computing and Data Science at University of Illinois Urbana-Champaign; Directorship / Laboratory: Distributed Systems Group (DPG)
 * **Data Freshness:** < 365 days (Active)

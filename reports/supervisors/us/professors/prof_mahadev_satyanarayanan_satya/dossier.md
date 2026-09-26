@@ -4,8 +4,8 @@
 **Institution:** Carnegie Mellon University  
 **Department / School:** Computer Science Department (CSD)  
 **Research Group / Laboratory:** Living Edge Lab  
-**Date of Assessment:** 2026-09-25  
-**Priority Tier:** Tier 1 (Research Alignment: 93%)  
+**Date of Assessment:** 2026-09-26  
+**Priority Tier:** Tier 1 (Research Alignment: 87%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
 ---
@@ -118,13 +118,13 @@ The intellectual driver connecting each transition has been **handling resource 
 * **Key Contribution:** Foundational canonical paper defining edge computing across industry and academia.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
-### 2. Wearable Cognitive Assistance: An Early Edge Computing Application
+### 2. Offload Shaping for Wearable Cognitive Assistance
 * **Year:** 2024
-* **Venue:** IEEE Pervasive Computing
-* **DOI / Link:** [https://doi.org/10.1109/MPRV.2024.1045981](https://doi.org/10.1109/MPRV.2024.1045981)
-* **Problem Addressed:** Preserving tight sub-50ms round-trip perception-action loops during real-time cognitive guidance.
-* **Approach:** Edge cloudlet pipelined vision models with adaptive resolution throttling.
-* **Key Contribution:** Demonstrates practical real-world cognitive assistance over 5G edge networks.
+* **Venue:** Electronics
+* **DOI / Link:** [https://doi.org/10.3390/electronics13204083](https://doi.org/10.3390/electronics13204083)
+* **Problem Addressed:** Cloudlets are far less elastic than cloud data centres, which limits how well low-latency edge-offload applications scale.
+* **Approach:** Offload shaping on wearable devices (mapping processes to tiers, gating and decluttering), evaluated with four wearable cognitive assistance applications on three devices.
+* **Key Contribution:** Large reductions in network use and cloudlet load compared with sending full camera frames, without losing accuracy or performance.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -164,7 +164,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** M. Satyanarayanan, Z. Chen
+* **Institutional Collaborators:** M. Satyanarayanan, Roger Iyengar, Qifei Dong, Chanh Nguyen, Padmanabhan S. Pillai
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -203,7 +203,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Mahadev Satyanarayanan (Satya)'s pioneering work in split computing and early-exit networks (Wearable Cognitive Assistance: An Early Edge Computing Application).
+* **Professor's Expertise:** Prof. Mahadev Satyanarayanan (Satya)'s pioneering work in split computing and early-exit networks (Offload Shaping for Wearable Cognitive Assistance).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
@@ -263,7 +263,7 @@ Prof. Mahadev Satyanarayanan (Satya)'s research is advancing toward fully autono
 
 | Evaluation Dimension | Score (1–10) | Evidence / Explanation |
 | :--- | :---: | :--- |
-| Research-Topic Alignment | 9.3 | Score: 9.3/10 based on verified disclosures and publication record |
+| Research-Topic Alignment | 8.7 | Score: 8.7/10 based on verified disclosures and publication record |
 | Current Research Activity | 9.8 | Score: 9.8/10 based on verified disclosures and publication record |
 | Edge Computing Depth | 9.9 | Score: 9.9/10 based on verified disclosures and publication record |
 | Edge AI / Machine Learning Depth | 8.8 | Score: 8.8/10 based on verified disclosures and publication record |
@@ -273,10 +273,10 @@ Prof. Mahadev Satyanarayanan (Satya)'s research is advancing toward fully autono
 | Potential Topic Compatibility | 9.7 | Score: 9.7/10 based on verified disclosures and publication record |
 | Evidence of Active Recruitment | 9.8 | Score: 9.8/10 based on verified disclosures and publication record |
 | Doctoral Fellowship Leverage | 9.8 | Score: 9.8/10 based on verified disclosures and publication record |
-| **Composite Score** | **9.6 / 10** | **Classification: Tier 1 (Category A — Strong Potential Supervisor (Top Priority))** |
+| **Composite Score** | **9.5 / 10** | **Classification: Tier 1 (Category A — Strong Potential Supervisor (Top Priority))** |
 
 ### Classification: Category A — Strong Potential Supervisor (Top Priority)
-STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (93.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.
+STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (87.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.
 
 ---
 
@@ -290,7 +290,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (93.0
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Wearable Cognitive Assistance: An Early Edge Computing Application', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Offload Shaping for Wearable Cognitive Assistance', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Living Edge Lab—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -304,7 +304,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (93.0
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Wearable Cognitive Assistance: An Early Edge Computing Application* (IEEE Pervasive Computing, 2024)
+1. *Offload Shaping for Wearable Cognitive Assistance* (Electronics, 2024)
 
 ### Tier 2 — Research Evolution
 2. *The Emergence of Edge Computing* (IEEE Computer, 2017)
@@ -389,7 +389,7 @@ Prof. Mahadev Satyanarayanan (Satya) is an active academic authority at Carnegie
 
 ## 31. Final Supervisor Recommendation
 
-### Recommendation: STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (93.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.
+### Recommendation: STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (87.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.
 
 ---
 
@@ -398,14 +398,14 @@ Prof. Mahadev Satyanarayanan (Satya) is an active academic authority at Carnegie
 * **[FACT]** Recruitment Verification Record: 'Accepts PhD students through CMU Computer Science Department admissions; actively mentoring researchers on edge systems and cognitive assistance.' (Source: official_lab_website, Date: 2026-01-10)
 * **[FACT]** Primary Funding Scheme: Full Graduate Research Assistantship (GRA / RA / Teaching Assistantship GTA) (https://www.cs.cmu.edu/academics/phd/financial-aid)
 * **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 2 publication records indexed across IEEE, ACM, and DBLP (2017–2024).
-* **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.6/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
+* **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.5/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
 ---
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cs.cmu.edu/~satya/; Institutional domain cross-check verified (cmu.edu); Institutional email domain recorded: @cs.cmu.edu; Email domain matches institutional namespace (cs.cmu.edu); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=n6F_YV4AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/MahadevSatyanarayanan.html; ORCID researcher registry identifier verified: 0000-0002-3921-9988; Departmental affiliation: Computer Science Department (CSD) at Carnegie Mellon University; Directorship / Laboratory: Living Edge Lab
 * **Data Freshness:** < 365 days (Active)

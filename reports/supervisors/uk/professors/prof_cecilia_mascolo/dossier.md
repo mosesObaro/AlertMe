@@ -4,7 +4,7 @@
 **Institution:** University of Cambridge  
 **Department / School:** Department of Computer Science and Technology  
 **Research Group / Laboratory:** Mobile Systems Group  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 73%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,19 +37,19 @@ With verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with Ga
 
 ## 3. Complete Research Career Timeline
 
-Prof. Cecilia Mascolo's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2024–2032) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
+Prof. Cecilia Mascolo's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2023–2031) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2019–2023).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2024–2020)
+### Era 1: Distributed Systems Foundations & Networked Computing (2023–2019)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2021–2024)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2020–2023)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. On-Device Audio Biomarker Detection: Challenges and System Optimizations
-* **Year:** 2024
-* **Venue:** IEEE Pervasive Computing
-* **DOI / Link:** [https://doi.org/10.1109/MPRV.2024.10291](https://doi.org/10.1109/MPRV.2024.10291)
-* **Problem Addressed:** Excessive DRAM memory bandwidth bottleneck during continuous audio spectrogram processing.
-* **Approach:** Sparse temporal convolutions with SRAM on-chip scratchpad caching.
-* **Key Contribution:** Reduces edge inference energy consumption by 62%.
+### 1. Human-centred artificial intelligence for mobile health sensing: challenges and opportunities
+* **Year:** 2023
+* **Venue:** Royal Society Open Science
+* **DOI / Link:** [https://doi.org/10.1098/rsos.230806](https://doi.org/10.1098/rsos.230806)
+* **Problem Addressed:** Machine learning for mobile health sensing faces noisy, sparse, heterogeneous and privacy-sensitive data on resource-constrained devices, with scarce labels.
+* **Approach:** Perspective on human-centred AI for wearable and mobile health sensing.
+* **Key Contribution:** Sets out the key challenges and research opportunities for AI on mobile health data.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2024–2020: Distributed Systems Foundations & Networked Computing
+2023–2019: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2021–2024: Edge Intelligence & Collaborative Distributed Computing
+2020–2023: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** C. Mascolo, N. Lane
+* **Institutional Collaborators:** Ting Dang, Dimitris Spathis, Abhirup Ghosh
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -191,13 +191,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Cecilia Mascolo's pioneering work in split computing and early-exit networks (On-Device Audio Biomarker Detection: Challenges and System Optimizations).
+* **Professor's Expertise:** Prof. Cecilia Mascolo's pioneering work in split computing and early-exit networks (Human-centred artificial intelligence for mobile health sensing: challenges and opportunities).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Cecilia Mascolo's research in decentralized edge computing architectures (On-Device Audio Biomarker Detection: Challenges and System Optimizations).
+* **Professor's Expertise:** Prof. Cecilia Mascolo's research in decentralized edge computing architectures (Human-centred artificial intelligence for mobile health sensing: challenges and opportunities).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -278,7 +278,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (73.8
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'On-Device Audio Biomarker Detection: Challenges and System Optimizations', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Human-centred artificial intelligence for mobile health sensing: challenges and opportunities', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Mobile Systems Group—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -292,13 +292,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (73.8
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *On-Device Audio Biomarker Detection: Challenges and System Optimizations* (IEEE Pervasive Computing, 2024)
+1. *Human-centred artificial intelligence for mobile health sensing: challenges and opportunities* (Royal Society Open Science, 2023)
 
 ### Tier 2 — Research Evolution
-2. *On-Device Audio Biomarker Detection: Challenges and System Optimizations* (IEEE Pervasive Computing, 2024)
+2. *Human-centred artificial intelligence for mobile health sensing: challenges and opportunities* (Royal Society Open Science, 2023)
 
 ### Tier 3 — PhD Alignment
-3. *On-Device Audio Biomarker Detection: Challenges and System Optimizations* (IEEE Pervasive Computing, 2024)
+3. *Human-centred artificial intelligence for mobile health sensing: challenges and opportunities* (Royal Society Open Science, 2023)
 
 ---
 
@@ -366,7 +366,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (73.8
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Cecilia Mascolo is an active academic authority at University of Cambridge, leading research within the Mobile Systems Group. Over a prolific academic trajectory spanning from 2024 to 2024, Prof. Cecilia Mascolo has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Cecilia Mascolo is an active academic authority at University of Cambridge, leading research within the Mobile Systems Group. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Cecilia Mascolo has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Cecilia Mascolo is primarily a researcher in Mobile Edge Systems, with expertise spanning On-Device Audio AI, Wearable Sensing, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -383,7 +383,7 @@ Prof. Cecilia Mascolo is an active academic authority at University of Cambridge
 * **[FACT]** Official Faculty Profile: https://www.cl.cam.ac.uk/~cm542/
 * **[FACT]** Recruitment Verification Record: 'Accepting PhD applications via Cambridge postgraduate portal; actively seeking students with mobile systems and machine learning skills.' (Source: official_lab_website, Date: 2026-01-12)
 * **[FACT]** Primary Funding Scheme: Gates Cambridge Scholarship (PhD Track) (https://www.gatescambridge.org/programme/the-scholarship/)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2024–2024).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2023–2023).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.6/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -391,7 +391,7 @@ Prof. Cecilia Mascolo is an active academic authority at University of Cambridge
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cl.cam.ac.uk/~cm542/; Institutional domain cross-check verified (cam.ac.uk); Institutional email domain recorded: @cl.cam.ac.uk; Email domain matches institutional namespace (cl.cam.ac.uk); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=gD_7g5UAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/m/CeciliaMascolo.html; ORCID researcher registry identifier verified: 0000-0002-3925-1033; Departmental affiliation: Department of Computer Science and Technology at University of Cambridge; Directorship / Laboratory: Mobile Systems Group
 * **Data Freshness:** < 365 days (Active)

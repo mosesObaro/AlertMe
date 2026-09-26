@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: United Kingdom
 **Country Code:** UK  
 **Primary Currency:** GBP  
-**Execution Date:** 2026-09-25  
+**Execution Date:** 2026-09-26  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -45,9 +45,9 @@ United Kingdom offers an internationally renowned doctoral research ecosystem ch
 | **Prof. Peter Pietzuch** | Imperial College London | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_peter_pietzuch/dossier.md) |
 | **Prof. Hamed Haddadi** | Imperial College London | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_hamed_haddadi/dossier.md) |
 | **Prof. Mahesh Marina** | University of Edinburgh | Tier 1 | 96.2% | STRONG_EVIDENCE | [Dossier](professors/prof_mahesh_marina/dossier.md) |
-| **Prof. Nishanth Sastry** | University of Surrey / King's College London | Tier 1 | 92.8% | STRONG_EVIDENCE | [Dossier](professors/prof_nishanth_sastry/dossier.md) |
-| **Prof. Dimitrios Pezaros** | University of Glasgow | Tier 1 | 83.0% | STRONG_EVIDENCE | [Dossier](professors/prof_dimitrios_pezaros/dossier.md) |
-| **Dr. Eiko Yoneki** | University of Cambridge | Tier 1 | 80.8% | CONFIRMED_ACTIVE | [Dossier](professors/dr_eiko_yoneki/dossier.md) |
+| **Prof. Dimitrios Pezaros** | University of Glasgow | Tier 1 | 96.2% | STRONG_EVIDENCE | [Dossier](professors/prof_dimitrios_pezaros/dossier.md) |
+| **Prof. Nishanth Sastry** | University of Surrey / King's College London | Tier 1 | 96.2% | STRONG_EVIDENCE | [Dossier](professors/prof_nishanth_sastry/dossier.md) |
+| **Dr. Eiko Yoneki** | University of Cambridge | Tier 1 | 87.8% | CONFIRMED_ACTIVE | [Dossier](professors/dr_eiko_yoneki/dossier.md) |
 | **Prof. Cecilia Mascolo** | University of Cambridge | Tier 1 | 73.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_cecilia_mascolo/dossier.md) |
 
 ---
@@ -102,4 +102,4 @@ United Kingdom offers an internationally renowned doctoral research ecosystem ch
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-15**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-25.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-26.*

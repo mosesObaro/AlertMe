@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: United States
 **Country Code:** US  
 **Primary Currency:** USD  
-**Execution Date:** 2026-09-25  
+**Execution Date:** 2026-09-26  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -45,9 +45,9 @@ United States offers an internationally renowned doctoral research ecosystem cha
 | **Prof. Tarek Abdelzaher** | University of Illinois Urbana-Champaign | Tier 1 | 95.1% | CONFIRMED_ACTIVE | [Dossier](professors/prof_tarek_abdelzaher/dossier.md) |
 | **Prof. Joseph E. Gonzalez** | University of California, Berkeley | Tier 1 | 93.3% | CONFIRMED_ACTIVE | [Dossier](professors/prof_joseph_e_gonzalez/dossier.md) |
 | **Prof. Klara Nahrstedt** | University of Illinois Urbana-Champaign | Tier 1 | 93.3% | CONFIRMED_ACTIVE | [Dossier](professors/prof_klara_nahrstedt/dossier.md) |
-| **Prof. Mahadev Satyanarayanan (Satya)** | Carnegie Mellon University | Tier 1 | 93.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_mahadev_satyanarayanan_satya/dossier.md) |
 | **Prof. Mung Chiang** | Purdue University / Princeton University | Tier 1 | 92.2% | STRONG_EVIDENCE | [Dossier](professors/prof_mung_chiang/dossier.md) |
-| **Prof. Ion Stoica** | University of California, Berkeley | Tier 1 | 87.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_ion_stoica/dossier.md) |
+| **Prof. Ion Stoica** | University of California, Berkeley | Tier 1 | 91.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_ion_stoica/dossier.md) |
+| **Prof. Mahadev Satyanarayanan (Satya)** | Carnegie Mellon University | Tier 1 | 87.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_mahadev_satyanarayanan_satya/dossier.md) |
 
 ---
 
@@ -91,4 +91,4 @@ United States offers an internationally renowned doctoral research ecosystem cha
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-15**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-25.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-26.*

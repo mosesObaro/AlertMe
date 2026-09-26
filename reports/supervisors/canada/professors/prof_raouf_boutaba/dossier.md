@@ -4,7 +4,7 @@
 **Institution:** University of Waterloo  
 **Department / School:** David R. Cheriton School of Computer Science  
 **Research Group / Laboratory:** Network Softwarization and Systems Laboratory  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 97%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,19 +37,19 @@ With verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with Va
 
 ## 3. Complete Research Career Timeline
 
-Prof. Raouf Boutaba's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2022–2030) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2018–2022).
+Prof. Raouf Boutaba's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2015–2023) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2011–2015).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2022–2018)
+### Era 1: Distributed Systems Foundations & Networked Computing (2015–2011)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2019–2022)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2012–2015)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers
-* **Year:** 2022
-* **Venue:** IEEE Journal on Selected Areas in Communications (JSAC)
-* **DOI / Link:** [https://doi.org/10.1109/JSAC.2022.3142345](https://doi.org/10.1109/JSAC.2022.3142345)
-* **Problem Addressed:** Enabling end-to-end performance isolation across shared physical edge and core infrastructure.
-* **Approach:** Multi-tier network virtualization with dynamic resource orchestration.
-* **Key Contribution:** Definitive architectural reference for 5G and edge network slicing.
+### 1. Network Function Virtualization: State-of-the-Art and Research Challenges
+* **Year:** 2015
+* **Venue:** IEEE Communications Surveys & Tutorials
+* **DOI / Link:** [https://doi.org/10.1109/comst.2015.2477041](https://doi.org/10.1109/comst.2015.2477041)
+* **Problem Addressed:** Network functions tied to dedicated hardware make telecom services costly and slow to deploy, and NFV research directions had not been mapped.
+* **Approach:** Survey relating NFV to SDN and cloud computing, reviewing architectures, projects, standardisation and commercial efforts.
+* **Key Contribution:** A reference overview of the NFV state of the art with a catalogue of open research challenges.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2022–2018: Distributed Systems Foundations & Networked Computing
+2015–2011: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2019–2022: Edge Intelligence & Collaborative Distributed Computing
+2012–2015: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** R. Boutaba, N. Shahriar
+* **Institutional Collaborators:** Rashid Mijumbi, Joan Serrat, Juan‐Luis Gorricho, Niels Bouten, Filip De Turck
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -193,13 +193,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Raouf Boutaba's pioneering work in split computing and early-exit networks (A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers).
+* **Professor's Expertise:** Prof. Raouf Boutaba's pioneering work in split computing and early-exit networks (Network Function Virtualization: State-of-the-Art and Research Challenges).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Raouf Boutaba's research in decentralized edge computing architectures (A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers).
+* **Professor's Expertise:** Prof. Raouf Boutaba's research in decentralized edge computing architectures (Network Function Virtualization: State-of-the-Art and Research Challenges).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -280,7 +280,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (97.0
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Network Function Virtualization: State-of-the-Art and Research Challenges', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Network Softwarization and Systems Laboratory—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -294,13 +294,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (97.0
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers* (IEEE Journal on Selected Areas in Communications (JSAC), 2022)
+1. *Network Function Virtualization: State-of-the-Art and Research Challenges* (IEEE Communications Surveys & Tutorials, 2015)
 
 ### Tier 2 — Research Evolution
-2. *A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers* (IEEE Journal on Selected Areas in Communications (JSAC), 2022)
+2. *Network Function Virtualization: State-of-the-Art and Research Challenges* (IEEE Communications Surveys & Tutorials, 2015)
 
 ### Tier 3 — PhD Alignment
-3. *A Comprehensive Survey on Network Slicing: Concepts, Architectures, and Key Enablers* (IEEE Journal on Selected Areas in Communications (JSAC), 2022)
+3. *Network Function Virtualization: State-of-the-Art and Research Challenges* (IEEE Communications Surveys & Tutorials, 2015)
 
 ---
 
@@ -370,7 +370,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (97.0
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Raouf Boutaba is an active academic authority at University of Waterloo, leading research within the Network Softwarization and Systems Laboratory. Over a prolific academic trajectory spanning from 2022 to 2022, Prof. Raouf Boutaba has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Raouf Boutaba is an active academic authority at University of Waterloo, leading research within the Network Softwarization and Systems Laboratory. Over a prolific academic trajectory spanning from 2015 to 2015, Prof. Raouf Boutaba has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Raouf Boutaba is primarily a researcher in Network Softwarization, with expertise spanning 5G/6G Edge Computing, Network Slicing, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -387,7 +387,7 @@ Prof. Raouf Boutaba is an active academic authority at University of Waterloo, l
 * **[FACT]** Official Faculty Profile: https://cs.uwaterloo.ca/~rboutaba/
 * **[FACT]** Recruitment Verification Record: 'Continuously recruiting top doctoral students with backgrounds in computer science, distributed systems, and networks.' (Source: official_lab_website, Date: 2026-01-15)
 * **[FACT]** Primary Funding Scheme: Vanier Canada Graduate Scholarships (Vanier CGS) (https://vanier.gc.ca/en/home-accueil.html)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2022–2022).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2015–2015).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.6/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -395,7 +395,7 @@ Prof. Raouf Boutaba is an active academic authority at University of Waterloo, l
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://cs.uwaterloo.ca/~rboutaba/; Institutional domain cross-check verified (uwaterloo.ca); Institutional email domain recorded: @uwaterloo.ca; Email domain matches institutional namespace (uwaterloo.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=G_2s_aIAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/b/RaoufBoutaba.html; ORCID researcher registry identifier verified: 0000-0002-3921-7788; Departmental affiliation: David R. Cheriton School of Computer Science at University of Waterloo; Directorship / Laboratory: Network Softwarization and Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

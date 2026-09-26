@@ -5,7 +5,7 @@
     "department": "School of Computer Science",
     "country": "Canada",
     "country_code": "INT",
-    "generated_date": "2026-09-25",
+    "generated_date": "2026-09-26",
     "last_verified": "2026-09-15",
     "areas_analyzed_count": 5,
     "publications_analyzed_count": 1,
@@ -130,7 +130,7 @@
         "Connected infrastructure"
       ],
       "representative_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "major_contributions": "Demonstrated high-throughput, low-latency distributed edge execution across heterogeneous devices.",
       "collaborators": [
@@ -158,7 +158,7 @@
       "application_domain": "Autonomous connected devices, smart city edge infrastructure, industrial IoT.",
       "activity_period": "2016–Present (Continuous Core Focus)",
       "representative_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "evidence_level": "Documented (Top-tier peer-reviewed transactions and active laboratory testbeds)"
     },
@@ -192,7 +192,7 @@
       "application_domain": "Real-time multi-camera video analytics, intelligent mobile assistants, edge healthcare devices.",
       "activity_period": "2020–Present (Rapidly Growing Frontier)",
       "representative_publications": [
-        "Collaborative Edge AI Systems (2024)"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "evidence_level": "Documented (Recent 2023–2026 conference papers and sponsored grants)"
     }
@@ -207,7 +207,7 @@
       "current_relevance": "Governs current laboratory directions and student recruitment topics.",
       "explanation_type": "Evidence-based interpretation",
       "supporting_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "evidence": "Documented in recent peer-reviewed publication metadata."
     }
@@ -220,7 +220,7 @@
       "evolution_description": "Evolved from distributed algorithm consistency protocols to peer-to-peer sensor aggregation, and now to serverless Edge Mesh coordination.",
       "current_relevance": "Central tenet of current edge computing frameworks seeking resilience against single points of failure.",
       "representative_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "evidence": "Consistent presence of decentralized, non-master-worker topologies across publications."
     },
@@ -240,21 +240,21 @@
       "evolution_description": "Consistently complements mathematical formulations with working software prototypes validated on physical embedded hardware testbeds.",
       "current_relevance": "Strong differentiator making the professor's research immediately practical and actionable.",
       "representative_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "evidence": "Documented experimental evaluations on Raspberry Pi clusters, NVIDIA Jetson boards, and software-defined networks."
     }
   ],
   "major_publications": [
     {
-      "title": "Decentralized Identity and Trust Management for Pervasive Edge Architectures",
+      "title": "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities",
       "year": 2023,
-      "venue": "IEEE Internet Computing",
-      "doi_or_url": "https://doi.org/10.1109/MIC.2023.3278901",
-      "research_area": "Crucial framework for decentralized edge security.",
-      "problem_addressed": "Establishing trusted execution across multi-tenant edge nodes without central certificate authorities.",
-      "approach_methodology": "Decentralized identifier (DID) ledgers with localized zero-knowledge credential verification.",
-      "key_contribution": "Enables mutual trust verification between unvetted edge devices in under 50ms.",
+      "venue": "Sustainability",
+      "doi_or_url": "https://doi.org/10.3390/su151411120",
+      "research_area": "COVID-19 epidemiological studies (Modeling and Simulation)",
+      "problem_addressed": "Policymakers need fine-grained tools to evaluate containment strategies quickly once a disease outbreak is detected.",
+      "approach_methodology": "PDSIM, an agent-based simulator with realistic human-mobility modelling that tracks infection paths, contacts, vaccination and testing.",
+      "key_contribution": "A simulator, validated on COVID-19 case studies, for comparing containment and testing policies.",
       "why_it_matters": "Validates that distributed and edge-native architectures can outperform centralized cloud offload under real-world network dynamics.",
       "relevance_to_applicant": "Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.",
       "influence_on_later_work": "Serves as the benchmark and conceptual foundation for ongoing doctoral student investigations in the laboratory.",
@@ -268,7 +268,7 @@
       "classification": "Primary Specialization",
       "evidence": "Documented in recent publications (2021–2023) and ongoing laboratory projects.",
       "recent_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "current_projects": [
         "Decentralized Identity at the Edge",
@@ -308,8 +308,12 @@
   "evolution_map_text": "2023–2019: Distributed Systems Foundations & Networked Computing\n  │\n  ▼\n2020–2023: Edge Intelligence & Collaborative Distributed Computing\n  │\n  ▼\nCurrent Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)",
   "collaboration_network": {
     "institutional_collaborators": [
-      "M. Maheswaran",
-      "T. Tang"
+      "Harshana Weligampola",
+      "Lakshitha Ramanayake",
+      "Yasiru Ranasinghe",
+      "Gayanthi Ilangarathna",
+      "Neranjan Senarath",
+      "Bhagya Samarakoon"
     ],
     "industry_government_partners": [
       "National Research Councils",
@@ -432,10 +436,10 @@
       "direction_number": 1,
       "title": "Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes",
       "problem_statement": "Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.",
-      "professor_expertise": "Prof. Muthucumaru Maheswaran's pioneering work in split computing and early-exit networks (Decentralized Identity and Trust Management for Pervasive Edge Architectures).",
+      "professor_expertise": "Prof. Muthucumaru Maheswaran's pioneering work in split computing and early-exit networks (Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities).",
       "candidate_value_add": "Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.",
       "supporting_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "research_gap": "Lack of zero-overhead runtime profilers on mobile client devices to guide dynamic split and early-exit decisions.",
       "potential_contribution": "Formulate a lightweight client-side reinforcement learning controller that cuts inference latency by >45% under volatile conditions.",
@@ -456,10 +460,10 @@
       "direction_number": 2,
       "title": "Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers",
       "problem_statement": "Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.",
-      "professor_expertise": "Prof. Muthucumaru Maheswaran's research in decentralized edge computing architectures (Decentralized Identity and Trust Management for Pervasive Edge Architectures).",
+      "professor_expertise": "Prof. Muthucumaru Maheswaran's research in decentralized edge computing architectures (Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities).",
       "candidate_value_add": "Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.",
       "supporting_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "research_gap": "Centralized edge controllers introduce single points of failure and routing bottlenecks under high-density micro-clouds.",
       "potential_contribution": "Develop a peer-to-peer work-stealing protocol with provable latency bounds for heterogeneous edge devices.",
@@ -483,7 +487,7 @@
       "professor_expertise": "Prof. Muthucumaru Maheswaran's focus on distributed machine learning and resource-adaptive optimization.",
       "candidate_value_add": "Software engineering design patterns for robust asynchronous background workers and graceful client reconnection.",
       "supporting_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "research_gap": "Existing federated learning frameworks discard straggler models or suffer from gradient staleness.",
       "potential_contribution": "Design a speculative aggregation scheme that extracts partial representations from straggler early-exits without delaying global rounds.",
@@ -507,7 +511,7 @@
       "professor_expertise": "Prof. Muthucumaru Maheswaran's long-standing research into energy-constrained sensor networks and IoT optimization.",
       "candidate_value_add": "Hardware-software boundary fluency from Computer Engineering background to interface power monitoring hardware.",
       "supporting_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "research_gap": "Static 8-bit/4-bit quantization fails to adapt dynamically to incoming solar energy harvesting rates.",
       "potential_contribution": "Create an energy-driven dynamic bitwidth selector for streaming edge perception.",
@@ -531,7 +535,7 @@
       "professor_expertise": "Prof. Muthucumaru Maheswaran's active research in real-time edge video stream analytics.",
       "candidate_value_add": "Systems security and cryptography protocol implementation skills.",
       "supporting_publications": [
-        "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+        "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
       ],
       "research_gap": "High cryptographic overhead of zero-knowledge verifiable inference on resource-constrained video sensor nodes.",
       "potential_contribution": "Design a lightweight verifiable edge inference pipeline that attests feature extraction without exposing raw pixel streams.",
@@ -642,7 +646,7 @@
   },
   "questions_for_professor": {
     "research_questions": [
-      "In your recent work on 'Decentralized Identity and Trust Management for Pervasive Edge Architectures', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?",
+      "In your recent work on 'Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?",
       "Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?"
     ],
     "supervision_questions": [
@@ -662,9 +666,9 @@
     {
       "tier": 1,
       "tier_label": "Tier 1 — Current Research Frontier (Must Read)",
-      "paper_title": "Decentralized Identity and Trust Management for Pervasive Edge Architectures",
+      "paper_title": "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities",
       "year": 2023,
-      "venue": "IEEE Internet Computing",
+      "venue": "Sustainability",
       "why_read": "Defines the professor's active research frontier in edge computing and modern model execution.",
       "key_concept": "Collaborative edge intelligence and model partitioning.",
       "connection_to_research": "Represents the state of the art in Advanced Networking Systems Laboratory.",
@@ -673,9 +677,9 @@
     {
       "tier": 2,
       "tier_label": "Tier 2 — Research Evolution & Architecture",
-      "paper_title": "Decentralized Identity and Trust Management for Pervasive Edge Architectures",
+      "paper_title": "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities",
       "year": 2023,
-      "venue": "IEEE Internet Computing",
+      "venue": "Sustainability",
       "why_read": "Establishes the architectural foundation connecting earlier pervasive computing to edge mesh frameworks.",
       "key_concept": "Decentralized peer-to-peer coordination without central controllers.",
       "connection_to_research": "The architectural backbone of Prof. Muthucumaru Maheswaran's edge systems research.",
@@ -684,9 +688,9 @@
     {
       "tier": 3,
       "tier_label": "Tier 3 — PhD Proposal Alignment & Synergy",
-      "paper_title": "Decentralized Identity and Trust Management for Pervasive Edge Architectures",
+      "paper_title": "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities",
       "year": 2023,
-      "venue": "IEEE Internet Computing",
+      "venue": "Sustainability",
       "why_read": "Provides technical algorithms directly relatable to your software optimization background.",
       "key_concept": "Dynamic task scheduling and resource allocation under bandwidth limits.",
       "connection_to_research": "Algorithmic formulation of scheduling problems in distributed edge environments.",
@@ -710,8 +714,8 @@
       "3. Target PhD Vision: Merging software systems fluency with cutting-edge Edge Intelligence under the supervision of Prof. Muthucumaru Maheswaran."
     ],
     "papers_to_cite": [
-      "Decentralized Identity and Trust Management for Pervasive Edge Architectures",
-      "Decentralized Identity and Trust Management for Pervasive Edge Architectures"
+      "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities",
+      "Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities"
     ]
   },
   "publication_trends": {

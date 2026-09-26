@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: Sweden
 **Country Code:** SE  
 **Primary Currency:** SEK  
-**Execution Date:** 2026-09-25  
+**Execution Date:** 2026-09-26  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -41,13 +41,13 @@ Sweden offers an internationally renowned doctoral research ecosystem characteri
 | Professor | University | Priority Tier | Research Fit | Recruitment Status | Profile Link |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Prof. Gerald Q. Maguire Jr.** | KTH Royal Institute of Technology | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_gerald_q_maguire_jr/dossier.md) |
-| **Prof. Seif Haridi** | KTH Royal Institute of Technology | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_seif_haridi/dossier.md) |
 | **Prof. James Gross** | KTH Royal Institute of Technology | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_james_gross/dossier.md) |
 | **Prof. Sarunas Girdzijauskas** | KTH Royal Institute of Technology | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_sarunas_girdzijauskas/dossier.md) |
 | **Prof. Erik Elmroth** | Umeå University | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_erik_elmroth/dossier.md) |
+| **Prof. Seif Haridi** | KTH Royal Institute of Technology | Tier 1 | 97.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_seif_haridi/dossier.md) |
 | **Prof. Christian Rohner** | Uppsala University | Tier 1 | 96.2% | STRONG_EVIDENCE | [Dossier](professors/prof_christian_rohner/dossier.md) |
 | **Prof. Marina Papatriantafilou** | Chalmers University of Technology | Tier 1 | 94.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_marina_papatriantafilou/dossier.md) |
-| **Prof. Johan Eker** | Lund University / Ericsson Research | Tier 1 | 73.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_johan_eker/dossier.md) |
+| **Prof. Johan Eker** | Lund University / Ericsson Research | Tier 1 | 80.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_johan_eker/dossier.md) |
 | **Prof. Per Stenström** | Chalmers University of Technology | Tier 1 | 73.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_per_stenstr_m/dossier.md) |
 
 ---
@@ -82,4 +82,4 @@ Sweden offers an internationally renowned doctoral research ecosystem characteri
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-01**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-25.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-26.*

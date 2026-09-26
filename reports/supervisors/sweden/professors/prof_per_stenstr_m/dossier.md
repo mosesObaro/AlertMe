@@ -4,7 +4,7 @@
 **Institution:** Chalmers University of Technology  
 **Department / School:** Department of Computer Science and Engineering  
 **Research Group / Laboratory:** Computer Architecture Division  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 73%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge
+### 1. Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints
 * **Year:** 2023
-* **Venue:** IEEE Micro
-* **DOI / Link:** [https://doi.org/10.1109/MM.2023.3278912](https://doi.org/10.1109/MM.2023.3278912)
-* **Problem Addressed:** DRAM memory bus data movement accounts for over 70% of energy consumption during edge AI inference.
-* **Approach:** Processing-in-Memory (PIM) logic integrating lightweight matrix operations inside 3D stacked memory dies.
-* **Key Contribution:** Achieves 4.5x energy efficiency speedup compared to standard edge GPU architectures.
+* **Venue:** ACM Transactions on Architecture and Code Optimization
+* **DOI / Link:** [https://doi.org/10.1145/3605214](https://doi.org/10.1145/3605214)
+* **Problem Addressed:** Approximate iterative applications on heterogeneous multicore platforms must save energy while meeting performance and accuracy targets.
+* **Approach:** Approx-RM predicts at runtime how many iterations are needed for a relaxed accuracy target and uses the time saved to lower DVFS, core type and core count.
+* **Key Contribution:** Energy savings while guaranteeing user-specified timing and accuracy targets.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** P. Stenström, M. Papatriantafilou
+* **Institutional Collaborators:** Muhammad Waqar Azhar, Madhavan Manivannan
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -193,13 +193,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Per Stenström's pioneering work in split computing and early-exit networks (Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge).
+* **Professor's Expertise:** Prof. Per Stenström's pioneering work in split computing and early-exit networks (Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Per Stenström's research in decentralized edge computing architectures (Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge).
+* **Professor's Expertise:** Prof. Per Stenström's research in decentralized edge computing architectures (Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -280,7 +280,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (73.8
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Computer Architecture Division—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -294,13 +294,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (73.8
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge* (IEEE Micro, 2023)
+1. *Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints* (ACM Transactions on Architecture and Code Optimization, 2023)
 
 ### Tier 2 — Research Evolution
-2. *Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge* (IEEE Micro, 2023)
+2. *Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints* (ACM Transactions on Architecture and Code Optimization, 2023)
 
 ### Tier 3 — PhD Alignment
-3. *Near-Memory Processing Architectures for Deep Neural Network Inference at the Edge* (IEEE Micro, 2023)
+3. *Approx-RM: Reducing Energy on Heterogeneous Multicore Processors under Accuracy and Timing Constraints* (ACM Transactions on Architecture and Code Optimization, 2023)
 
 ---
 
@@ -395,7 +395,7 @@ Prof. Per Stenström is an active academic authority at Chalmers University of T
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.chalmers.se/en/staff/pers/; Institutional domain cross-check verified (chalmers.se); Institutional email domain recorded: @chalmers.se; Email domain matches institutional namespace (chalmers.se); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=PZ9S2lQAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/s/PerStenstrom.html; ORCID researcher registry identifier verified: 0000-0002-3921-1122; Departmental affiliation: Department of Computer Science and Engineering at Chalmers University of Technology; Directorship / Laboratory: Computer Architecture Division
 * **Data Freshness:** < 365 days (Active)

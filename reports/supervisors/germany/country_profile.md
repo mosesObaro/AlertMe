@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: Germany
 **Country Code:** DE  
 **Primary Currency:** EUR  
-**Execution Date:** 2026-09-25  
+**Execution Date:** 2026-09-26  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -40,14 +40,14 @@ Germany offers an internationally renowned doctoral research ecosystem character
 ## 4. Top Vetted PhD Supervisors & Relevance
 | Professor | University | Priority Tier | Research Fit | Recruitment Status | Profile Link |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Prof. Frank H. P. Fitzek** | TU Dresden | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_frank_h_p_fitzek/dossier.md) |
-| **Prof. David Bermbach** | Technical University of Berlin (TU Berlin) | Tier 1 | 96.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_david_bermbach/dossier.md) |
-| **Prof. Michael Gerndt** | Technical University of Munich (TUM) | Tier 1 | 96.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_michael_gerndt/dossier.md) |
-| **Prof. Marco Caccamo** | Technical University of Munich (TUM) | Tier 1 | 89.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_marco_caccamo/dossier.md) |
-| **Prof. Klaus Wehrle** | RWTH Aachen University | Tier 1 | 85.3% | CONFIRMED_ACTIVE | [Dossier](professors/prof_klaus_wehrle/dossier.md) |
-| **Prof. Jörg Ott** | Technical University of Munich (TUM) | Tier 1 | 82.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_j_rg_ott/dossier.md) |
-| **Prof. Thorsten Strufe** | Karlsruhe Institute of Technology (KIT) / TU Dresden | Tier 1 | 80.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_thorsten_strufe/dossier.md) |
-| **Prof. Christof Fetzer** | TU Dresden | Tier 1 | 72.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_christof_fetzer/dossier.md) |
+| **Prof. David Bermbach** | Technical University of Berlin (TU Berlin) | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_david_bermbach/dossier.md) |
+| **Prof. Marco Caccamo** | Technical University of Munich (TUM) | Tier 1 | 96.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_marco_caccamo/dossier.md) |
+| **Prof. Michael Gerndt** | Technical University of Munich (TUM) | Tier 1 | 95.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_michael_gerndt/dossier.md) |
+| **Prof. Frank H. P. Fitzek** | TU Dresden | Tier 1 | 94.4% | CONFIRMED_ACTIVE | [Dossier](professors/prof_frank_h_p_fitzek/dossier.md) |
+| **Prof. Jörg Ott** | Technical University of Munich (TUM) | Tier 1 | 88.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_j_rg_ott/dossier.md) |
+| **Prof. Thorsten Strufe** | Karlsruhe Institute of Technology (KIT) / TU Dresden | Tier 1 | 86.7% | CONFIRMED_ACTIVE | [Dossier](professors/prof_thorsten_strufe/dossier.md) |
+| **Prof. Christof Fetzer** | TU Dresden | Tier 1 | 79.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_christof_fetzer/dossier.md) |
+| **Prof. Klaus Wehrle** | RWTH Aachen University | Tier 1 | 78.3% | CONFIRMED_ACTIVE | [Dossier](professors/prof_klaus_wehrle/dossier.md) |
 
 ---
 
@@ -91,4 +91,4 @@ Germany offers an internationally renowned doctoral research ecosystem character
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-01**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-25.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-26.*

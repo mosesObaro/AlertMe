@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: Canada
 **Country Code:** CA  
 **Primary Currency:** CAD  
-**Execution Date:** 2026-09-25  
+**Execution Date:** 2026-09-26  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -42,11 +42,11 @@ Canada offers an internationally renowned doctoral research ecosystem characteri
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Prof. Jiangchuan Liu** | Simon Fraser University | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_jiangchuan_liu/dossier.md) |
 | **Prof. Raouf Boutaba** | University of Waterloo | Tier 1 | 97.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_raouf_boutaba/dossier.md) |
+| **Prof. Di Niu** | University of Alberta | Tier 1 | 97.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_di_niu/dossier.md) |
+| **Prof. Sathish Gopalakrishnan** | University of British Columbia | Tier 1 | 96.2% | STRONG_EVIDENCE | [Dossier](professors/prof_sathish_gopalakrishnan/dossier.md) |
 | **Prof. Karthik Pattabiraman** | University of British Columbia | Tier 1 | 95.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_karthik_pattabiraman/dossier.md) |
-| **Prof. Di Niu** | University of Alberta | Tier 1 | 94.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_di_niu/dossier.md) |
-| **Prof. Sathish Gopalakrishnan** | University of British Columbia | Tier 1 | 92.8% | STRONG_EVIDENCE | [Dossier](professors/prof_sathish_gopalakrishnan/dossier.md) |
 | **Prof. Yashar Ganjali** | University of Toronto | Tier 1 | 71.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_yashar_ganjali/dossier.md) |
-| **Prof. Cristiana Amza** | University of Toronto | Tier 1 | 68.2% | STRONG_EVIDENCE | [Dossier](professors/prof_cristiana_amza/dossier.md) |
+| **Prof. Cristiana Amza** | University of Toronto | Tier 1 | 65.2% | STRONG_EVIDENCE | [Dossier](professors/prof_cristiana_amza/dossier.md) |
 | **Prof. Muthucumaru Maheswaran** | McGill University | Tier 2 | 75.0% | STRONG_EVIDENCE | [Dossier](professors/prof_muthucumaru_maheswaran/dossier.md) |
 
 ---
@@ -81,4 +81,4 @@ Canada offers an internationally renowned doctoral research ecosystem characteri
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-15**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-25.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-26.*

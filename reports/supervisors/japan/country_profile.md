@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: Japan
 **Country Code:** JP  
 **Primary Currency:** JPY  
-**Execution Date:** 2026-09-25  
+**Execution Date:** 2026-09-26  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -44,10 +44,10 @@ Japan offers an internationally renowned doctoral research ecosystem characteriz
 | **Prof. Hiroki Matsutani** | Keio University | Tier 1 | 95.1% | CONFIRMED_ACTIVE | [Dossier](professors/prof_hiroki_matsutani/dossier.md) |
 | **Prof. Koji Yatani** | The University of Tokyo | Tier 1 | 88.8% | CONFIRMED_ACTIVE | [Dossier](professors/prof_koji_yatani/dossier.md) |
 | **Prof. Kenjiro Cho** | The University of Tokyo / IIJ Research Lab | Tier 1 | 82.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_kenjiro_cho/dossier.md) |
-| **Prof. Toyotaro Suzumura** | The University of Tokyo | Tier 1 | 77.0% | STRONG_EVIDENCE | [Dossier](professors/prof_toyotaro_suzumura/dossier.md) |
+| **Prof. Toyotaro Suzumura** | The University of Tokyo | Tier 1 | 68.2% | STRONG_EVIDENCE | [Dossier](professors/prof_toyotaro_suzumura/dossier.md) |
 | **Prof. Hideyuki Kawashima** | Keio University | Tier 1 | 68.2% | STRONG_EVIDENCE | [Dossier](professors/prof_hideyuki_kawashima/dossier.md) |
-| **Prof. Masaki Aida** | Tokyo Metropolitan University / Keio University | Tier 2 | 73.2% | STRONG_EVIDENCE | [Dossier](professors/prof_masaki_aida/dossier.md) |
-| **Prof. Fumio Teraoka** | Keio University | Tier 2 | 68.0% | POSSIBLE | [Dossier](professors/prof_fumio_teraoka/dossier.md) |
+| **Prof. Masaki Aida** | Tokyo Metropolitan University / Keio University | Tier 2 | 79.2% | STRONG_EVIDENCE | [Dossier](professors/prof_masaki_aida/dossier.md) |
+| **Prof. Fumio Teraoka** | Keio University | Tier 2 | 53.0% | POSSIBLE | [Dossier](professors/prof_fumio_teraoka/dossier.md) |
 
 ---
 
@@ -101,4 +101,4 @@ Japan offers an internationally renowned doctoral research ecosystem characteriz
 4. **Target Deadline:** Submit institutional application ahead of **2026-11-30**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-25.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-26.*

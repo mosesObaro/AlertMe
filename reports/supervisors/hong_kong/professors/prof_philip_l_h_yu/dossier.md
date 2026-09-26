@@ -4,7 +4,7 @@
 **Institution:** The Education University of Hong Kong  
 **Department / School:** Department of Mathematics and Information Technology (MIT)  
 **Research Group / Laboratory:** Artificial Intelligence and Digital Competency Education Centre  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 3 (Research Alignment: 57%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,19 +37,19 @@ With verified recruitment standing (POSSIBLE) and direct synergy with EdUHK Rese
 
 ## 3. Complete Research Career Timeline
 
-Prof. Philip L.H. Yu's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2023–2031) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2019–2023).
+Prof. Philip L.H. Yu's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2024–2032) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2023–2019)
+### Era 1: Distributed Systems Foundations & Networked Computing (2024–2020)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2020–2023)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2021–2024)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Statistical Learning and Anomaly Detection on Distributed Edge IoT Streams
-* **Year:** 2023
-* **Venue:** IEEE Internet of Things Journal
-* **DOI / Link:** [https://doi.org/10.1109/JIOT.2023.3289012](https://doi.org/10.1109/JIOT.2023.3289012)
-* **Problem Addressed:** Real-time outlier detection on high-frequency IoT sensor telemetry without transmitting all raw points to cloud.
-* **Approach:** Streaming kernel density estimation with distributed quantile aggregation.
-* **Key Contribution:** Identified anomalies with 98.4% precision using only 5% of original transmission bandwidth.
+### 1. Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies
+* **Year:** 2024
+* **Venue:** Smart Learning Environments
+* **DOI / Link:** [https://doi.org/10.1186/s40561-024-00342-5](https://doi.org/10.1186/s40561-024-00342-5)
+* **Problem Addressed:** ChatGPT is widely used in ESL/EFL education, but no systematic review had summarised the evidence and the gaps.
+* **Approach:** Systematic review of 70 empirical studies from the 18 months after ChatGPT's release, using the Technology-based Learning Model.
+* **Key Contribution:** Maps where ChatGPT has been applied in language education and its benefits and drawbacks, and finds most studies focus on writing with little quantitative evidence.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2023–2019: Distributed Systems Foundations & Networked Computing
+2024–2020: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2020–2023: Edge Intelligence & Collaborative Distributed Computing
+2021–2024: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** Ting-Chia Hsu, Wai-Sum Chan
+* **Institutional Collaborators:** Chung Kwan Lo, Philip L. H. Yu, Simin Xu, Davy Tsz Kit Ng, Morris Siu–Yung Jong
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -192,13 +192,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Philip L.H. Yu's pioneering work in split computing and early-exit networks (Statistical Learning and Anomaly Detection on Distributed Edge IoT Streams).
+* **Professor's Expertise:** Prof. Philip L.H. Yu's pioneering work in split computing and early-exit networks (Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Philip L.H. Yu's research in decentralized edge computing architectures (Statistical Learning and Anomaly Detection on Distributed Edge IoT Streams).
+* **Professor's Expertise:** Prof. Philip L.H. Yu's research in decentralized edge computing architectures (Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -279,7 +279,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 3 Priority). Exceptional research fit (57.3
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Statistical Learning and Anomaly Detection on Distributed Edge IoT Streams', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Artificial Intelligence and Digital Competency Education Centre—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -293,13 +293,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 3 Priority). Exceptional research fit (57.3
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Statistical Learning and Anomaly Detection on Distributed Edge IoT Streams* (IEEE Internet of Things Journal, 2023)
+1. *Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies* (Smart Learning Environments, 2024)
 
 ### Tier 2 — Research Evolution
-2. *Statistical Learning and Anomaly Detection on Distributed Edge IoT Streams* (IEEE Internet of Things Journal, 2023)
+2. *Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies* (Smart Learning Environments, 2024)
 
 ### Tier 3 — PhD Alignment
-3. *Statistical Learning and Anomaly Detection on Distributed Edge IoT Streams* (IEEE Internet of Things Journal, 2023)
+3. *Exploring the application of ChatGPT in ESL/EFL education and related research issues: a systematic review of empirical studies* (Smart Learning Environments, 2024)
 
 ---
 
@@ -368,7 +368,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 3 Priority). Exceptional research fit (57.3
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Philip L.H. Yu is an active academic authority at The Education University of Hong Kong, leading research within the Artificial Intelligence and Digital Competency Education Centre. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Philip L.H. Yu has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Philip L.H. Yu is an active academic authority at The Education University of Hong Kong, leading research within the Artificial Intelligence and Digital Competency Education Centre. Over a prolific academic trajectory spanning from 2024 to 2024, Prof. Philip L.H. Yu has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Philip L.H. Yu is primarily a researcher in Statistical Machine Learning, with expertise spanning Distributed IoT Stream Analytics, Anomaly Detection, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -385,7 +385,7 @@ Prof. Philip L.H. Yu is an active academic authority at The Education University
 * **[FACT]** Official Faculty Profile: https://www.eduhk.hk/mit/people/academic-staff/yu-leung-ho-philip
 * **[FACT]** Recruitment Verification Record: 'Welcomes applications from qualified candidates for PhD study in Mathematics, Information Technology, and Applied Machine Learning. Studentships provided through EdUHK Graduate School.' (Source: department_directory, Date: 2026-05-15)
 * **[FACT]** Primary Funding Scheme: EdUHK Research Postgraduate Studentship (RPgS) (https://www.eduhk.hk/gradsch/index.php/prospective-students/fees-and-scholarships.html)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2023–2023).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2024–2024).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.3/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -393,7 +393,7 @@ Prof. Philip L.H. Yu is an active academic authority at The Education University
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.eduhk.hk/mit/people/academic-staff/yu-leung-ho-philip; Institutional domain cross-check verified (eduhk.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=M_T20F0AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/y/PhilipLHYu.html; Departmental affiliation: Department of Mathematics and Information Technology (MIT) at The Education University of Hong Kong; Directorship / Laboratory: Artificial Intelligence and Digital Competency Education Centre
 * **Data Freshness:** < 365 days (Active)

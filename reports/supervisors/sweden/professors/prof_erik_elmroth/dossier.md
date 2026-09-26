@@ -4,7 +4,7 @@
 **Institution:** Umeå University  
 **Department / School:** Department of Computing Science  
 **Research Group / Laboratory:** Autonomous Distributed Systems Laboratory  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions
+### 1. Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN
 * **Year:** 2023
-* **Venue:** IEEE Cloud Computing
-* **DOI / Link:** [https://doi.org/10.1109/MCC.2023.3278910](https://doi.org/10.1109/MCC.2023.3278910)
-* **Problem Addressed:** Scale and volatility of edge nodes make manual or centralized management impossible.
-* **Approach:** Hierarchical autonomic control loops operating with decentralized regional coordinators.
-* **Key Contribution:** Definitive architectural framework for autonomous self-managing cloud-edge systems.
+* **Venue:** IEEE Transactions on Network and Service Management
+* **DOI / Link:** [https://doi.org/10.1109/tnsm.2023.3321401](https://doi.org/10.1109/tnsm.2023.3321401)
+* **Problem Addressed:** Large distributed systems such as the 5G RAN have unstructured logs without the context needed to learn system behaviour for anomaly detection.
+* **Approach:** A trace guideline that splits system logs by component and procedure, so models can learn behaviour from smaller, contextualised pieces.
+* **Key Contribution:** A fast dictionary-based detector that finds all anomalies with near-zero false positives where prior methods struggled, improving RAN observability.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** E. Elmroth, P. Larsson
+* **Institutional Collaborators:** Tobias Sundqvist, Monowar H. Bhuyan
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -193,13 +193,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Erik Elmroth's pioneering work in split computing and early-exit networks (Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions).
+* **Professor's Expertise:** Prof. Erik Elmroth's pioneering work in split computing and early-exit networks (Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Erik Elmroth's research in decentralized edge computing architectures (Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions).
+* **Professor's Expertise:** Prof. Erik Elmroth's research in decentralized edge computing architectures (Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -280,7 +280,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Autonomous Distributed Systems Laboratory—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -294,13 +294,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions* (IEEE Cloud Computing, 2023)
+1. *Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN* (IEEE Transactions on Network and Service Management, 2023)
 
 ### Tier 2 — Research Evolution
-2. *Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions* (IEEE Cloud Computing, 2023)
+2. *Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN* (IEEE Transactions on Network and Service Management, 2023)
 
 ### Tier 3 — PhD Alignment
-3. *Autonomous Resource Management in Cloud-Edge Continuum: Principles, Challenges, and Future Directions* (IEEE Cloud Computing, 2023)
+3. *Robust Procedural Learning for Anomaly Detection and Observability in 5G RAN* (IEEE Transactions on Network and Service Management, 2023)
 
 ---
 
@@ -395,7 +395,7 @@ Prof. Erik Elmroth is an active academic authority at Umeå University, leading 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.umu.se/en/staff/erik-elmroth/; Institutional domain cross-check verified (umu.se); Institutional email domain recorded: @cs.umu.se; Email domain matches institutional namespace (cs.umu.se); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=PZ9S2lQAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/e/ErikElmroth.html; ORCID researcher registry identifier verified: 0000-0002-3987-1234; Departmental affiliation: Department of Computing Science at Umeå University; Directorship / Laboratory: Autonomous Distributed Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

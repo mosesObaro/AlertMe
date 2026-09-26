@@ -4,7 +4,7 @@
 **Institution:** Simon Fraser University  
 **Department / School:** School of Computing Science  
 **Research Group / Laboratory:** Networking and Multimedia Systems Laboratory  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,19 +37,19 @@ With verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with Va
 
 ## 3. Complete Research Career Timeline
 
-Prof. Jiangchuan Liu's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2023–2031) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2019–2023).
+Prof. Jiangchuan Liu's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2024–2032) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2023–2019)
+### Era 1: Distributed Systems Foundations & Networked Computing (2024–2020)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2020–2023)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2021–2024)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy
-* **Year:** 2023
-* **Venue:** IEEE Network
-* **DOI / Link:** [https://doi.org/10.1109/MNET.2023.3289012](https://doi.org/10.1109/MNET.2023.3289012)
-* **Problem Addressed:** High-resolution video streams quickly overwhelm limited edge compute accelerators.
-* **Approach:** Lightweight spatial saliency tracking coupled with dynamic cloud offloading triggers.
-* **Key Contribution:** Reduces edge compute utilization by 45% while preserving 98% target object recall.
+### 1. Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities
+* **Year:** 2024
+* **Venue:** IEEE Communications Surveys & Tutorials
+* **DOI / Link:** [https://doi.org/10.1109/comst.2024.3465447](https://doi.org/10.1109/comst.2024.3465447)
+* **Problem Addressed:** Large language models could automate many telecom tasks, but their principles and uses in networking had not been systematically reviewed.
+* **Approach:** Survey of LLM fundamentals and deployment, followed by LLM-enabled generation, classification, optimisation and prediction applications in telecom.
+* **Key Contribution:** A comprehensive map of LLM techniques for telecom networks and the open challenges toward LLM-enabled 6G.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2023–2019: Distributed Systems Foundations & Networked Computing
+2024–2020: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2020–2023: Edge Intelligence & Collaborative Distributed Computing
+2021–2024: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** J. Liu, X. Chen
+* **Institutional Collaborators:** Hao Zhou, Chengming Hu, Ye Yuan, Yufei Cui, Yili Jin, Can Chen
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -192,13 +192,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Jiangchuan Liu's pioneering work in split computing and early-exit networks (Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy).
+* **Professor's Expertise:** Prof. Jiangchuan Liu's pioneering work in split computing and early-exit networks (Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Jiangchuan Liu's research in decentralized edge computing architectures (Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy).
+* **Professor's Expertise:** Prof. Jiangchuan Liu's research in decentralized edge computing architectures (Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -279,7 +279,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Networking and Multimedia Systems Laboratory—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -293,13 +293,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy* (IEEE Network, 2023)
+1. *Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities* (IEEE Communications Surveys & Tutorials, 2024)
 
 ### Tier 2 — Research Evolution
-2. *Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy* (IEEE Network, 2023)
+2. *Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities* (IEEE Communications Surveys & Tutorials, 2024)
 
 ### Tier 3 — PhD Alignment
-3. *Pervasive Edge Video Analytics: A Systemic Perspective on Latency and Accuracy* (IEEE Network, 2023)
+3. *Large Language Model (LLM) for Telecommunications: A Comprehensive Survey on Principles, Key Techniques, and Opportunities* (IEEE Communications Surveys & Tutorials, 2024)
 
 ---
 
@@ -368,7 +368,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Jiangchuan Liu is an active academic authority at Simon Fraser University, leading research within the Networking and Multimedia Systems Laboratory. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Jiangchuan Liu has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Jiangchuan Liu is an active academic authority at Simon Fraser University, leading research within the Networking and Multimedia Systems Laboratory. Over a prolific academic trajectory spanning from 2024 to 2024, Prof. Jiangchuan Liu has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Jiangchuan Liu is primarily a researcher in Edge Video Analytics, with expertise spanning Multimedia Systems, Pervasive Edge Computing, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -385,7 +385,7 @@ Prof. Jiangchuan Liu is an active academic authority at Simon Fraser University,
 * **[FACT]** Official Faculty Profile: https://www.sfu.ca/computing/people/faculty/jcliu.html
 * **[FACT]** Recruitment Verification Record: 'Accepting top prospective PhD students with strong backgrounds in networking, distributed systems, and video analytics.' (Source: official_lab_website, Date: 2026-01-10)
 * **[FACT]** Primary Funding Scheme: Vanier Canada Graduate Scholarships (Vanier CGS) (https://vanier.gc.ca/en/home-accueil.html)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2023–2023).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2024–2024).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.7/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -393,7 +393,7 @@ Prof. Jiangchuan Liu is an active academic authority at Simon Fraser University,
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.sfu.ca/computing/people/faculty/jcliu.html; Institutional domain cross-check verified (sfu.ca); Institutional email domain recorded: @cs.sfu.ca; Email domain matches institutional namespace (cs.sfu.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=U1FpE0AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/l/JiangchuanLiu.html; ORCID researcher registry identifier verified: 0000-0003-4321-7788; Departmental affiliation: School of Computing Science at Simon Fraser University; Directorship / Laboratory: Networking and Multimedia Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

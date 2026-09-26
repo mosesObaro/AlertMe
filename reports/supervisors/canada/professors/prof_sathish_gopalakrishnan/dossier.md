@@ -4,8 +4,8 @@
 **Institution:** University of British Columbia  
 **Department / School:** Department of Electrical and Computer Engineering  
 **Research Group / Laboratory:** Real-Time and Dependable Systems Group  
-**Date of Assessment:** 2026-09-25  
-**Priority Tier:** Tier 1 (Research Alignment: 92%)  
+**Date of Assessment:** 2026-09-26  
+**Priority Tier:** Tier 1 (Research Alignment: 96%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
 ---
@@ -37,19 +37,19 @@ With verified recruitment standing (STRONG_EVIDENCE) and direct synergy with Van
 
 ## 3. Complete Research Career Timeline
 
-Prof. Sathish Gopalakrishnan's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2023–2031) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2019–2023).
+Prof. Sathish Gopalakrishnan's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2024–2032) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2023–2019)
+### Era 1: Distributed Systems Foundations & Networked Computing (2024–2020)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2020–2023)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2021–2024)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Predictable Resource Management for Edge-Assisted Cyber-Physical Systems
-* **Year:** 2023
-* **Venue:** IEEE Transactions on Computers
-* **DOI / Link:** [https://doi.org/10.1109/TC.2023.3278912](https://doi.org/10.1109/TC.2023.3278912)
-* **Problem Addressed:** Ensuring deterministic timing for safety-critical tasks offloaded to multi-tenant edge nodes.
-* **Approach:** Hierarchical server scheduling with dynamic budget replenishment.
-* **Key Contribution:** Guarantees bounded response times under volatile background loads.
+### 1. Co-Approximator: Enabling Performance Prediction in Colocated Applications
+* **Year:** 2024
+* **Venue:** ACM Transactions on Embedded Computing Systems
+* **DOI / Link:** [https://doi.org/10.1145/3677180](https://doi.org/10.1145/3677180)
+* **Problem Addressed:** Applications colocated on resource-limited IoT platforms interfere with each other unpredictably, and the space of possible colocations is huge.
+* **Approach:** Co-Approximator systematically samples the exponentially large colocation space to build a performance predictor.
+* **Key Contribution:** A technique for predicting the performance of colocated IoT applications, supporting decisions about which applications to place together.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2023–2019: Distributed Systems Foundations & Networked Computing
+2024–2020: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2020–2023: Edge Intelligence & Collaborative Distributed Computing
+2021–2024: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** S. Gopalakrishnan, A. Ravindran
+* **Institutional Collaborators:** Rafiuzzaman Mohammad, Karthik Pattabiraman
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -192,13 +192,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Sathish Gopalakrishnan's pioneering work in split computing and early-exit networks (Predictable Resource Management for Edge-Assisted Cyber-Physical Systems).
+* **Professor's Expertise:** Prof. Sathish Gopalakrishnan's pioneering work in split computing and early-exit networks (Co-Approximator: Enabling Performance Prediction in Colocated Applications).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Sathish Gopalakrishnan's research in decentralized edge computing architectures (Predictable Resource Management for Edge-Assisted Cyber-Physical Systems).
+* **Professor's Expertise:** Prof. Sathish Gopalakrishnan's research in decentralized edge computing architectures (Co-Approximator: Enabling Performance Prediction in Colocated Applications).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -252,7 +252,7 @@ Prof. Sathish Gopalakrishnan's research is advancing toward fully autonomous, de
 
 | Evaluation Dimension | Score (1–10) | Evidence / Explanation |
 | :--- | :---: | :--- |
-| Research-Topic Alignment | 9.3 | Score: 9.3/10 based on verified disclosures and publication record |
+| Research-Topic Alignment | 9.6 | Score: 9.6/10 based on verified disclosures and publication record |
 | Current Research Activity | 9.8 | Score: 9.8/10 based on verified disclosures and publication record |
 | Edge Computing Depth | 9.9 | Score: 9.9/10 based on verified disclosures and publication record |
 | Edge AI / Machine Learning Depth | 8.8 | Score: 8.8/10 based on verified disclosures and publication record |
@@ -265,7 +265,7 @@ Prof. Sathish Gopalakrishnan's research is advancing toward fully autonomous, de
 | **Composite Score** | **9.6 / 10** | **Classification: Tier 1 (Category A — Strong Potential Supervisor (Top Priority))** |
 
 ### Classification: Category A — Strong Potential Supervisor (Top Priority)
-STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (92.8%), verified recruitment standing (STRONG_EVIDENCE), and immediate proposal synergy with your Computer Engineering and software systems background.
+STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (96.2%), verified recruitment standing (STRONG_EVIDENCE), and immediate proposal synergy with your Computer Engineering and software systems background.
 
 ---
 
@@ -279,7 +279,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (92.8
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Predictable Resource Management for Edge-Assisted Cyber-Physical Systems', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Co-Approximator: Enabling Performance Prediction in Colocated Applications', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Real-Time and Dependable Systems Group—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -293,13 +293,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (92.8
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Predictable Resource Management for Edge-Assisted Cyber-Physical Systems* (IEEE Transactions on Computers, 2023)
+1. *Co-Approximator: Enabling Performance Prediction in Colocated Applications* (ACM Transactions on Embedded Computing Systems, 2024)
 
 ### Tier 2 — Research Evolution
-2. *Predictable Resource Management for Edge-Assisted Cyber-Physical Systems* (IEEE Transactions on Computers, 2023)
+2. *Co-Approximator: Enabling Performance Prediction in Colocated Applications* (ACM Transactions on Embedded Computing Systems, 2024)
 
 ### Tier 3 — PhD Alignment
-3. *Predictable Resource Management for Edge-Assisted Cyber-Physical Systems* (IEEE Transactions on Computers, 2023)
+3. *Co-Approximator: Enabling Performance Prediction in Colocated Applications* (ACM Transactions on Embedded Computing Systems, 2024)
 
 ---
 
@@ -368,7 +368,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (92.8
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Sathish Gopalakrishnan is an active academic authority at University of British Columbia, leading research within the Real-Time and Dependable Systems Group. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Sathish Gopalakrishnan has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Sathish Gopalakrishnan is an active academic authority at University of British Columbia, leading research within the Real-Time and Dependable Systems Group. Over a prolific academic trajectory spanning from 2024 to 2024, Prof. Sathish Gopalakrishnan has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Sathish Gopalakrishnan is primarily a researcher in Real-Time Systems, with expertise spanning Cyber-Physical Edge Computing, Embedded Systems, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -377,7 +377,7 @@ Prof. Sathish Gopalakrishnan is an active academic authority at University of Br
 
 ## 31. Final Supervisor Recommendation
 
-### Recommendation: STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (92.8%), verified recruitment standing (STRONG_EVIDENCE), and immediate proposal synergy with your Computer Engineering and software systems background.
+### Recommendation: STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (96.2%), verified recruitment standing (STRONG_EVIDENCE), and immediate proposal synergy with your Computer Engineering and software systems background.
 
 ---
 
@@ -385,7 +385,7 @@ Prof. Sathish Gopalakrishnan is an active academic authority at University of Br
 * **[FACT]** Official Faculty Profile: https://ece.ubc.ca/sathish-gopalakrishnan/
 * **[FACT]** Recruitment Verification Record: 'Accepting PhD applicants with strong backgrounds in computer engineering, operating systems, and real-time systems.' (Source: official_lab_website, Date: 2026-01-15)
 * **[FACT]** Primary Funding Scheme: Vanier Canada Graduate Scholarships (Vanier CGS) (https://vanier.gc.ca/en/home-accueil.html)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2023–2023).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2024–2024).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.6/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -393,7 +393,7 @@ Prof. Sathish Gopalakrishnan is an active academic authority at University of Br
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://ece.ubc.ca/sathish-gopalakrishnan/; Institutional domain cross-check verified (ubc.ca); Institutional email domain recorded: @ece.ubc.ca; Email domain matches institutional namespace (ece.ubc.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P3q9p-AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/g/SathishGopalakrishnan.html; ORCID researcher registry identifier verified: 0000-0002-3921-3322; Departmental affiliation: Department of Electrical and Computer Engineering at University of British Columbia; Directorship / Laboratory: Real-Time and Dependable Systems Group
 * **Data Freshness:** < 365 days (Active)

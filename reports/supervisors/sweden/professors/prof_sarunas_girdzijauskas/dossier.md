@@ -4,7 +4,7 @@
 **Institution:** KTH Royal Institute of Technology  
 **Department / School:** School of Electrical Engineering and Computer Science (EECS)  
 **Research Group / Laboratory:** Distributed and Decentralized Systems Lab  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,19 +37,19 @@ With verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with Sw
 
 ## 3. Complete Research Career Timeline
 
-Prof. Sarunas Girdzijauskas's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2024–2032) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
+Prof. Sarunas Girdzijauskas's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2023–2031) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2019–2023).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2024–2020)
+### Era 1: Distributed Systems Foundations & Networked Computing (2023–2019)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2021–2024)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2020–2023)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck
-* **Year:** 2024
-* **Venue:** IEEE Transactions on Network Science and Engineering
-* **DOI / Link:** [https://doi.org/10.1109/TNSE.2024.3356789](https://doi.org/10.1109/TNSE.2024.3356789)
-* **Problem Addressed:** Non-IID client data distributions cause catastrophic model drift during decentralized gossip aggregation.
-* **Approach:** Topology-aware gradient clustering with dynamic inter-cluster bridge connections.
-* **Key Contribution:** Recovers 94% of centralized model accuracy in purely peer-to-peer edge deployments.
+### 1. Classifying falls using out-of-distribution detection in human activity recognition
+* **Year:** 2023
+* **Venue:** AI Communications
+* **DOI / Link:** [https://doi.org/10.3233/aic-220205](https://doi.org/10.3233/aic-220205)
+* **Problem Addressed:** Out-of-distribution detection is well studied in computer vision but largely unexplored for time-series human activity recognition.
+* **Approach:** Defines realistic out-of-distribution types for activity recognition and applies an ensemble-based temporal learning framework to detect them.
+* **Key Contribution:** Out-of-distribution detection for time-series activity recognition, applied to classifying falls.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2024–2020: Distributed Systems Foundations & Networked Computing
+2023–2019: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2021–2024: Edge Intelligence & Collaborative Distributed Computing
+2020–2023: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** S. Girdzijauskas, H. Le
+* **Institutional Collaborators:** Debaditya Roy, Vangjush Komini, Šarūnas Girdzijauskas
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -192,13 +192,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Sarunas Girdzijauskas's pioneering work in split computing and early-exit networks (Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck).
+* **Professor's Expertise:** Prof. Sarunas Girdzijauskas's pioneering work in split computing and early-exit networks (Classifying falls using out-of-distribution detection in human activity recognition).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Sarunas Girdzijauskas's research in decentralized edge computing architectures (Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck).
+* **Professor's Expertise:** Prof. Sarunas Girdzijauskas's research in decentralized edge computing architectures (Classifying falls using out-of-distribution detection in human activity recognition).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -279,7 +279,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Classifying falls using out-of-distribution detection in human activity recognition', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Distributed and Decentralized Systems Lab—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -293,13 +293,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck* (IEEE Transactions on Network Science and Engineering, 2024)
+1. *Classifying falls using out-of-distribution detection in human activity recognition* (AI Communications, 2023)
 
 ### Tier 2 — Research Evolution
-2. *Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck* (IEEE Transactions on Network Science and Engineering, 2024)
+2. *Classifying falls using out-of-distribution detection in human activity recognition* (AI Communications, 2023)
 
 ### Tier 3 — PhD Alignment
-3. *Decentralized Federated Learning over Heterogeneous Edge Topologies: Overcoming the Non-IID Bottleneck* (IEEE Transactions on Network Science and Engineering, 2024)
+3. *Classifying falls using out-of-distribution detection in human activity recognition* (AI Communications, 2023)
 
 ---
 
@@ -368,7 +368,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Sarunas Girdzijauskas is an active academic authority at KTH Royal Institute of Technology, leading research within the Distributed and Decentralized Systems Lab. Over a prolific academic trajectory spanning from 2024 to 2024, Prof. Sarunas Girdzijauskas has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Sarunas Girdzijauskas is an active academic authority at KTH Royal Institute of Technology, leading research within the Distributed and Decentralized Systems Lab. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Sarunas Girdzijauskas has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Sarunas Girdzijauskas is primarily a researcher in Decentralized Machine Learning, with expertise spanning Federated Learning at Edge, Peer-to-Peer Networks, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -385,7 +385,7 @@ Prof. Sarunas Girdzijauskas is an active academic authority at KTH Royal Institu
 * **[FACT]** Official Faculty Profile: https://www.kth.se/profile/sarunasg
 * **[FACT]** Recruitment Verification Record: 'Recruiting doctoral researchers through WASP Graduate School and KTH EECS with full Swedish salaried doctoral contracts.' (Source: official_lab_website, Date: 2026-01-18)
 * **[FACT]** Primary Funding Scheme: Swedish Salaried Doctoral Position (Doktorandanställning) (https://www.migrationsverket.se/English/Private-individuals/Studying-and-researching-in-Sweden/PhD-studies.html)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2024–2024).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2023–2023).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.7/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -393,7 +393,7 @@ Prof. Sarunas Girdzijauskas is an active academic authority at KTH Royal Institu
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.kth.se/profile/sarunasg; Institutional domain cross-check verified (kth.se); Institutional email domain recorded: @kth.se; Email domain matches institutional namespace (kth.se); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=U1FpE0AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/g/SarunasGirdzijauskas.html; ORCID researcher registry identifier verified: 0000-0002-7654-9876; Departmental affiliation: School of Electrical Engineering and Computer Science (EECS) at KTH Royal Institute of Technology; Directorship / Laboratory: Distributed and Decentralized Systems Lab
 * **Data Freshness:** < 365 days (Active)

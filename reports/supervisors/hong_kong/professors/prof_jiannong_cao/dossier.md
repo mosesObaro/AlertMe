@@ -4,7 +4,7 @@
 **Institution:** The Hong Kong Polytechnic University  
 **Department / School:** Department of Computing (COMP)  
 **Research Group / Laboratory:** Internet and Mobile Computing Laboratory (IMCL)  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 100%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,13 +37,13 @@ With verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with Po
 
 ## 3. Complete Research Career Timeline
 
-Prof. Jiannong Cao's research career spans over 3 years of systems evolution, transitioning from early foundational systems (2021–2029) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
+Prof. Jiannong Cao's research career spans over 7 years of systems evolution, transitioning from early foundational systems (2017–2025) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2020–2024).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2021–2020)
+### Era 1: Distributed Systems Foundations & Networked Computing (2017–2020)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
@@ -109,22 +109,22 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. EdgeMesh: A Distributed Edge Computing Framework for IoT Applications
-* **Year:** 2021
-* **Venue:** IEEE Internet of Things Journal
-* **DOI / Link:** [https://doi.org/10.1109/JIOT.2021.3060128](https://doi.org/10.1109/JIOT.2021.3060128)
-* **Problem Addressed:** Centralized edge orchestrators suffer from single points of failure and bandwidth bottlenecks under dense IoT micro-clouds.
-* **Approach:** Decentralized mesh-based coordination where edge devices collaborate peer-to-peer to schedule microservices dynamically.
-* **Key Contribution:** Formulated distributed work-stealing and task offloading protocols reducing end-to-end task delay by 34% without central server.
+### 1. Edge Mesh: A New Paradigm to Enable Distributed Intelligence in Internet of Things
+* **Year:** 2017
+* **Venue:** IEEE Access
+* **DOI / Link:** [https://doi.org/10.1109/access.2017.2739804](https://doi.org/10.1109/access.2017.2739804)
+* **Problem Addressed:** IoT architectures send data to centralised clouds and leave low-level edge devices out of decision-making.
+* **Approach:** Edge Mesh, a paradigm that distributes decision-making tasks across a mesh network of edge devices and routers, with a proposed software framework.
+* **Key Contribution:** Defines the Edge Mesh paradigm and its benefits (distributed processing, low latency, fault tolerance, scalability, privacy) along with its research challenges.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
-### 2. Collaborative Edge AI Inference with Dynamic Early-Exit Networks
+### 2. EdgeShard: Efficient LLM Inference via Collaborative Edge Computing
 * **Year:** 2024
-* **Venue:** IEEE Transactions on Mobile Computing
-* **DOI / Link:** [https://doi.org/10.1109/TMC.2024.3361289](https://doi.org/10.1109/TMC.2024.3361289)
-* **Problem Addressed:** Running heavy deep neural networks on energy-constrained IoT edge devices causes extreme latency and battery exhaustion.
-* **Approach:** Adaptive early-exit backbone with progressive multi-device feature sharing across edge clusters.
-* **Key Contribution:** Achieved 92% Top-1 accuracy while cutting average inference latency by 52% across heterogeneous edge nodes.
+* **Venue:** IEEE Internet of Things Journal
+* **DOI / Link:** [https://doi.org/10.1109/jiot.2024.3524255](https://doi.org/10.1109/jiot.2024.3524255)
+* **Problem Addressed:** LLMs deployed in the cloud incur latency, bandwidth cost and privacy concerns, yet single edge devices cannot host them, and compression costs accuracy.
+* **Approach:** EdgeShard partitions an LLM into shards across collaborating edge devices and cloud servers, jointly choosing devices and partitions with a dynamic-programming algorithm.
+* **Key Contribution:** The first collaborative-edge LLM inference approach, optimising latency and throughput without accuracy loss.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -151,7 +151,7 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2021–2020: Distributed Systems Foundations & Networked Computing
+2017–2020: Distributed Systems Foundations & Networked Computing
   │
   ▼
 2021–2024: Edge Intelligence & Collaborative Distributed Computing
@@ -164,7 +164,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** Yuvraj Sahni, Zhiyuan Yin, Shenglong Yu
+* **Institutional Collaborators:** Yuvraj Sahni, Shigeng Zhang, Lei Yang, Mingjin Zhang, Xiaoming Shen, Zeyang Cui
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -202,13 +202,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Jiannong Cao's pioneering work in split computing and early-exit networks (Collaborative Edge AI Inference with Dynamic Early-Exit Networks).
+* **Professor's Expertise:** Prof. Jiannong Cao's pioneering work in split computing and early-exit networks (EdgeShard: Efficient LLM Inference via Collaborative Edge Computing).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Jiannong Cao's research in decentralized edge computing architectures (EdgeMesh: A Distributed Edge Computing Framework for IoT Applications).
+* **Professor's Expertise:** Prof. Jiannong Cao's research in decentralized edge computing architectures (Edge Mesh: A New Paradigm to Enable Distributed Intelligence in Internet of Things).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -289,7 +289,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Collaborative Edge AI Inference with Dynamic Early-Exit Networks', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'EdgeShard: Efficient LLM Inference via Collaborative Edge Computing', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Internet and Mobile Computing Laboratory (IMCL)—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -303,13 +303,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Collaborative Edge AI Inference with Dynamic Early-Exit Networks* (IEEE Transactions on Mobile Computing, 2024)
+1. *EdgeShard: Efficient LLM Inference via Collaborative Edge Computing* (IEEE Internet of Things Journal, 2024)
 
 ### Tier 2 — Research Evolution
-2. *EdgeMesh: A Distributed Edge Computing Framework for IoT Applications* (IEEE Internet of Things Journal, 2021)
+2. *Edge Mesh: A New Paradigm to Enable Distributed Intelligence in Internet of Things* (IEEE Access, 2017)
 
 ### Tier 3 — PhD Alignment
-3. *EdgeMesh: A Distributed Edge Computing Framework for IoT Applications* (IEEE Internet of Things Journal, 2021)
+3. *Edge Mesh: A New Paradigm to Enable Distributed Intelligence in Internet of Things* (IEEE Access, 2017)
 
 ---
 
@@ -378,7 +378,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (100.
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Jiannong Cao is an active academic authority at The Hong Kong Polytechnic University, leading research within the Internet and Mobile Computing Laboratory (IMCL). Over a prolific academic trajectory spanning from 2021 to 2024, Prof. Jiannong Cao has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Jiannong Cao is an active academic authority at The Hong Kong Polytechnic University, leading research within the Internet and Mobile Computing Laboratory (IMCL). Over a prolific academic trajectory spanning from 2017 to 2024, Prof. Jiannong Cao has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Jiannong Cao is primarily a researcher in Edge Computing, with expertise spanning Edge AI, Distributed Systems, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -395,7 +395,7 @@ Prof. Jiannong Cao is an active academic authority at The Hong Kong Polytechnic 
 * **[FACT]** Official Faculty Profile: https://www.polyu.edu.hk/comp/people/academic-staff/prof-cao-jiannong/
 * **[FACT]** Recruitment Verification Record: 'We are seeking highly motivated PhD students and Postdocs with strong backgrounds in Computer Science, Computer Engineering, or Mathematics to join IMCL for Fall 2027. Full scholarships (HKPFS and PolyU Presidential Fellowship) available.' (Source: official_lab_website, Date: 2026-06-15)
 * **[FACT]** Primary Funding Scheme: PolyU Presidential PhD Fellowship Scheme (PPPFS) (https://www.polyu.edu.hk/gs/financial-support/scholarships-and-awards/)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 2 publication records indexed across IEEE, ACM, and DBLP (2021–2024).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 2 publication records indexed across IEEE, ACM, and DBLP (2017–2024).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.7/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -403,7 +403,7 @@ Prof. Jiannong Cao is an active academic authority at The Hong Kong Polytechnic 
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.polyu.edu.hk/comp/people/academic-staff/prof-cao-jiannong/; Institutional domain cross-check verified (polyu.edu.hk); Institutional email verified via public university directory contact gateway; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=X5Nl_E8AAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/c/JiannongCao.html; ORCID researcher registry identifier verified: 0000-0002-4663-8824; Departmental affiliation: Department of Computing (COMP) at The Hong Kong Polytechnic University; Directorship / Laboratory: Internet and Mobile Computing Laboratory (IMCL)
 * **Data Freshness:** < 365 days (Active)

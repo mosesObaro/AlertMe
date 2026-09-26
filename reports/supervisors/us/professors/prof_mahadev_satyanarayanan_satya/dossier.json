@@ -5,7 +5,7 @@
     "department": "Computer Science Department (CSD)",
     "country": "United States",
     "country_code": "INT",
-    "generated_date": "2026-09-25",
+    "generated_date": "2026-09-26",
     "last_verified": "2026-09-15",
     "areas_analyzed_count": 5,
     "publications_analyzed_count": 2,
@@ -59,7 +59,7 @@
       "Mobile Computing",
       "Pervasive Distributed Systems"
     ],
-    "alignment_score": 93.0,
+    "alignment_score": 87.0,
     "priority_tier": "Tier 1"
   },
   "executive_summary": "Prof. Mahadev Satyanarayanan (Satya) is a prominent researcher in Edge Computing at Carnegie Mellon University (United States), directing research within the Living Edge Lab. This assessment evaluates Prof. Mahadev Satyanarayanan (Satya)'s academic trajectory from foundational computing and systems architectures to state-of-the-art collaborative edge intelligence and distributed execution frameworks.\n\nWith verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with Full Graduate Research Assistantship (GRA / RA / Teaching Assistantship GTA) ($32,000 - $48,000/year living stipend paid semi-monthly + university-subsidized comprehensive health, dental, and vision insurance; Deadline: 2026-12-15), Prof. Mahadev Satyanarayanan (Satya) presents an outstanding doctoral supervisor opportunity bridging systems engineering, runtime profiling, and Edge AI.",
@@ -130,7 +130,7 @@
         "Connected infrastructure"
       ],
       "representative_publications": [
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "major_contributions": "Demonstrated high-throughput, low-latency distributed edge execution across heterogeneous devices.",
       "collaborators": [
@@ -159,7 +159,7 @@
       "activity_period": "2016–Present (Continuous Core Focus)",
       "representative_publications": [
         "The Emergence of Edge Computing",
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "evidence_level": "Documented (Top-tier peer-reviewed transactions and active laboratory testbeds)"
     },
@@ -176,7 +176,7 @@
       "application_domain": "Cloud-edge continuum, mission-critical systems, distributed ledger and mesh networks.",
       "activity_period": "2010–Present",
       "representative_publications": [
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "evidence_level": "Documented (Extensive journal citation profile and open-source implementations)"
     },
@@ -209,7 +209,7 @@
       "explanation_type": "Evidence-based interpretation",
       "supporting_publications": [
         "The Emergence of Edge Computing",
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "evidence": "Documented in recent peer-reviewed publication metadata."
     }
@@ -233,7 +233,7 @@
       "evolution_description": "Transitioned from optimizing radio duty-cycling to multi-dimensional joint optimization of latency, accuracy, and energy in Edge AI.",
       "current_relevance": "Direct foundation for dynamic neural model pruning and early-exit classification.",
       "representative_publications": [
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "evidence": "Formulations balancing resource budgets against execution Quality of Service (QoS)."
     },
@@ -266,14 +266,14 @@
       "is_recent": false
     },
     {
-      "title": "Wearable Cognitive Assistance: An Early Edge Computing Application",
+      "title": "Offload Shaping for Wearable Cognitive Assistance",
       "year": 2024,
-      "venue": "IEEE Pervasive Computing",
-      "doi_or_url": "https://doi.org/10.1109/MPRV.2024.1045981",
-      "research_area": "Flagship edge AI application paradigm.",
-      "problem_addressed": "Preserving tight sub-50ms round-trip perception-action loops during real-time cognitive guidance.",
-      "approach_methodology": "Edge cloudlet pipelined vision models with adaptive resolution throttling.",
-      "key_contribution": "Demonstrates practical real-world cognitive assistance over 5G edge networks.",
+      "venue": "Electronics",
+      "doi_or_url": "https://doi.org/10.3390/electronics13204083",
+      "research_area": "Context-Aware Activity Recognition Systems (Computer Vision and Pattern Recognition)",
+      "problem_addressed": "Cloudlets are far less elastic than cloud data centres, which limits how well low-latency edge-offload applications scale.",
+      "approach_methodology": "Offload shaping on wearable devices (mapping processes to tiers, gating and decluttering), evaluated with four wearable cognitive assistance applications on three devices.",
+      "key_contribution": "Large reductions in network use and cloudlet load compared with sending full camera frames, without losing accuracy or performance.",
       "why_it_matters": "Validates that distributed and edge-native architectures can outperform centralized cloud offload under real-world network dynamics.",
       "relevance_to_applicant": "Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.",
       "influence_on_later_work": "Serves as the benchmark and conceptual foundation for ongoing doctoral student investigations in the laboratory.",
@@ -287,7 +287,7 @@
       "classification": "Primary Specialization",
       "evidence": "Documented in recent publications (2022–2024) and ongoing laboratory projects.",
       "recent_publications": [
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "current_projects": [
         "Living Edge Lab Consortium",
@@ -328,7 +328,10 @@
   "collaboration_network": {
     "institutional_collaborators": [
       "M. Satyanarayanan",
-      "Z. Chen"
+      "Roger Iyengar",
+      "Qifei Dong",
+      "Chanh Nguyen",
+      "Padmanabhan S. Pillai"
     ],
     "industry_government_partners": [
       "National Research Councils",
@@ -466,10 +469,10 @@
       "direction_number": 1,
       "title": "Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes",
       "problem_statement": "Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.",
-      "professor_expertise": "Prof. Mahadev Satyanarayanan (Satya)'s pioneering work in split computing and early-exit networks (Wearable Cognitive Assistance: An Early Edge Computing Application).",
+      "professor_expertise": "Prof. Mahadev Satyanarayanan (Satya)'s pioneering work in split computing and early-exit networks (Offload Shaping for Wearable Cognitive Assistance).",
       "candidate_value_add": "Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.",
       "supporting_publications": [
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "research_gap": "Lack of zero-overhead runtime profilers on mobile client devices to guide dynamic split and early-exit decisions.",
       "potential_contribution": "Formulate a lightweight client-side reinforcement learning controller that cuts inference latency by >45% under volatile conditions.",
@@ -518,7 +521,7 @@
       "candidate_value_add": "Software engineering design patterns for robust asynchronous background workers and graceful client reconnection.",
       "supporting_publications": [
         "The Emergence of Edge Computing",
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "research_gap": "Existing federated learning frameworks discard straggler models or suffer from gradient staleness.",
       "potential_contribution": "Design a speculative aggregation scheme that extracts partial representations from straggler early-exits without delaying global rounds.",
@@ -542,7 +545,7 @@
       "professor_expertise": "Prof. Mahadev Satyanarayanan (Satya)'s long-standing research into energy-constrained sensor networks and IoT optimization.",
       "candidate_value_add": "Hardware-software boundary fluency from Computer Engineering background to interface power monitoring hardware.",
       "supporting_publications": [
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "research_gap": "Static 8-bit/4-bit quantization fails to adapt dynamically to incoming solar energy harvesting rates.",
       "potential_contribution": "Create an energy-driven dynamic bitwidth selector for streaming edge perception.",
@@ -566,7 +569,7 @@
       "professor_expertise": "Prof. Mahadev Satyanarayanan (Satya)'s active research in real-time edge video stream analytics.",
       "candidate_value_add": "Systems security and cryptography protocol implementation skills.",
       "supporting_publications": [
-        "Wearable Cognitive Assistance: An Early Edge Computing Application"
+        "Offload Shaping for Wearable Cognitive Assistance"
       ],
       "research_gap": "High cryptographic overhead of zero-knowledge verifiable inference on resource-constrained video sensor nodes.",
       "potential_contribution": "Design a lightweight verifiable edge inference pipeline that attests feature extraction without exposing raw pixel streams.",
@@ -635,7 +638,7 @@
   ],
   "suitability_score": {
     "scores": {
-      "Research-Topic Alignment": 9.3,
+      "Research-Topic Alignment": 8.7,
       "Current Research Activity": 9.8,
       "Edge Computing Depth": 9.9,
       "Edge AI / Machine Learning Depth": 8.8,
@@ -647,7 +650,7 @@
       "Doctoral Fellowship Leverage": 9.8
     },
     "explanations": {
-      "Research-Topic Alignment": "Score: 9.3/10 based on verified disclosures and publication record",
+      "Research-Topic Alignment": "Score: 8.7/10 based on verified disclosures and publication record",
       "Current Research Activity": "Score: 9.8/10 based on verified disclosures and publication record",
       "Edge Computing Depth": "Score: 9.9/10 based on verified disclosures and publication record",
       "Edge AI / Machine Learning Depth": "Score: 8.8/10 based on verified disclosures and publication record",
@@ -658,7 +661,7 @@
       "Evidence of Active Recruitment": "Score: 9.8/10 based on verified disclosures and publication record",
       "Doctoral Fellowship Leverage": "Score: 9.8/10 based on verified disclosures and publication record"
     },
-    "composite_score": 9.6,
+    "composite_score": 9.5,
     "priority_tier": "Tier 1",
     "classification": "Category A — Strong Potential Supervisor (Top Priority)"
   },
@@ -677,7 +680,7 @@
   },
   "questions_for_professor": {
     "research_questions": [
-      "In your recent work on 'Wearable Cognitive Assistance: An Early Edge Computing Application', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?",
+      "In your recent work on 'Offload Shaping for Wearable Cognitive Assistance', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?",
       "Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?"
     ],
     "supervision_questions": [
@@ -697,9 +700,9 @@
     {
       "tier": 1,
       "tier_label": "Tier 1 — Current Research Frontier (Must Read)",
-      "paper_title": "Wearable Cognitive Assistance: An Early Edge Computing Application",
+      "paper_title": "Offload Shaping for Wearable Cognitive Assistance",
       "year": 2024,
-      "venue": "IEEE Pervasive Computing",
+      "venue": "Electronics",
       "why_read": "Defines the professor's active research frontier in edge computing and modern model execution.",
       "key_concept": "Collaborative edge intelligence and model partitioning.",
       "connection_to_research": "Represents the state of the art in Living Edge Lab.",
@@ -745,7 +748,7 @@
       "3. Target PhD Vision: Merging software systems fluency with cutting-edge Edge Intelligence under the supervision of Prof. Mahadev Satyanarayanan (Satya)."
     ],
     "papers_to_cite": [
-      "Wearable Cognitive Assistance: An Early Edge Computing Application",
+      "Offload Shaping for Wearable Cognitive Assistance",
       "The Emergence of Edge Computing"
     ]
   },
@@ -820,7 +823,7 @@
   },
   "final_profile": "Prof. Mahadev Satyanarayanan (Satya) is an active academic authority at Carnegie Mellon University, leading research within the Living Edge Lab. Over a prolific academic trajectory spanning from 2017 to 2024, Prof. Mahadev Satyanarayanan (Satya) has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.",
   "one_sentence_identity": "Prof. Mahadev Satyanarayanan (Satya) is primarily a researcher in Edge Computing, with expertise spanning Cloudlets, Wearable Cognitive Assistance, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs).",
-  "recommendation": "STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (93.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.",
+  "recommendation": "STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (87.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.",
   "sources": {
     "facts": [
       "Official Faculty Profile: https://www.cs.cmu.edu/~satya/",
@@ -829,7 +832,7 @@
     ],
     "evidence_based_inferences": [
       "Research evolution and eras reconstructed from 2 publication records indexed across IEEE, ACM, and DBLP (2017–2024).",
-      "PhD suitability score (9.6/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability."
+      "PhD suitability score (9.5/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability."
     ],
     "speculative_directions": [
       "Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels."

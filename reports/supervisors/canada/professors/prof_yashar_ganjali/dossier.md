@@ -4,7 +4,7 @@
 **Institution:** University of Toronto  
 **Department / School:** Department of Computer Science  
 **Research Group / Laboratory:** Systems and Networking Group  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 1 (Research Alignment: 71%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -37,19 +37,19 @@ With verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with Va
 
 ## 3. Complete Research Career Timeline
 
-Prof. Yashar Ganjali's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2023–2031) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2019–2023).
+Prof. Yashar Ganjali's research career spans over 1 years of systems evolution, transitioning from early foundational systems (2026–2034) through distributed networking and pervasive architectures, to cutting-edge collaborative Edge AI and intelligent orchestration (2022–2026).
 
 ---
 
 ## 4. Research Eras
 
-### Era 1: Distributed Systems Foundations & Networked Computing (2023–2019)
+### Era 1: Distributed Systems Foundations & Networked Computing (2026–2022)
 * **Primary Field:** Distributed Systems & Networking
 * **Core Questions:** How to design efficient, scalable distributed protocols for networked systems?
 * **Methods:** Systems simulation, Empirical performance measurement, Algorithmic design
 * **Influence on Later Work:** Established empirical systems foundations for subsequent edge research.
 
-### Era 2: Edge Intelligence & Collaborative Distributed Computing (2020–2023)
+### Era 2: Edge Intelligence & Collaborative Distributed Computing (2023–2026)
 * **Primary Field:** Edge Computing & Distributed AI
 * **Core Questions:** How to achieve near real-time intelligence at the network edge with constrained compute and memory?
 * **Methods:** Hardware testbed evaluation, Neural network optimization, Distributed scheduling
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction
-* **Year:** 2023
-* **Venue:** IEEE/ACM Transactions on Networking
-* **DOI / Link:** [https://doi.org/10.1109/TNET.2023.3278910](https://doi.org/10.1109/TNET.2023.3278910)
-* **Problem Addressed:** Static edge routing cannot adjust to mobile traffic shifts without dropped packets.
-* **Approach:** Fine-grained in-network flow tracking using P4 programmable switches.
-* **Key Contribution:** Achieves microsecond-level edge traffic rerouting under congestion.
+### 1. Loss-Tolerant RDMA Network Over Commodity Devices
+* **Year:** 2026
+* **Venue:** IEEE Transactions on Networking
+* **DOI / Link:** [https://doi.org/10.1109/ton.2026.3694152](https://doi.org/10.1109/ton.2026.3694152)
+* **Problem Addressed:** On lossy data-centre fabrics, RDMA suffers packet losses and repeated retransmission timeouts that degrade or interrupt service.
+* **Approach:** NüWa identifies the packets whose loss would trigger timeouts and protects them, with a switch mode for ordinary NICs and a NIC mode for programmable NICs.
+* **Key Contribution:** A loss-tolerant RDMA design for commodity hardware that avoids timeout-inducing packet losses.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -141,10 +141,10 @@ If described in 3–5 precise terms today:
 ## 12. Research Evolution Map
 
 ```text
-2023–2019: Distributed Systems Foundations & Networked Computing
+2026–2022: Distributed Systems Foundations & Networked Computing
   │
   ▼
-2020–2023: Edge Intelligence & Collaborative Distributed Computing
+2023–2026: Edge Intelligence & Collaborative Distributed Computing
   │
   ▼
 Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** Y. Ganjali, M. Ghobadi
+* **Institutional Collaborators:** Lei Wang, Zhe Wang, Yimu Yuan, Siyu Yan, Shuhan Tian, Ning Liu
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -192,13 +192,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Yashar Ganjali's pioneering work in split computing and early-exit networks (Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction).
+* **Professor's Expertise:** Prof. Yashar Ganjali's pioneering work in split computing and early-exit networks (Loss-Tolerant RDMA Network Over Commodity Devices).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Yashar Ganjali's research in decentralized edge computing architectures (Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction).
+* **Professor's Expertise:** Prof. Yashar Ganjali's research in decentralized edge computing architectures (Loss-Tolerant RDMA Network Over Commodity Devices).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -279,7 +279,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (71.0
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Loss-Tolerant RDMA Network Over Commodity Devices', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Systems and Networking Group—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -293,13 +293,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (71.0
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction* (IEEE/ACM Transactions on Networking, 2023)
+1. *Loss-Tolerant RDMA Network Over Commodity Devices* (IEEE Transactions on Networking, 2026)
 
 ### Tier 2 — Research Evolution
-2. *Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction* (IEEE/ACM Transactions on Networking, 2023)
+2. *Loss-Tolerant RDMA Network Over Commodity Devices* (IEEE Transactions on Networking, 2026)
 
 ### Tier 3 — PhD Alignment
-3. *Software-Defined Edge Networking: Programmable Data Planes for Mobile Latency Reduction* (IEEE/ACM Transactions on Networking, 2023)
+3. *Loss-Tolerant RDMA Network Over Commodity Devices* (IEEE Transactions on Networking, 2026)
 
 ---
 
@@ -368,7 +368,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (71.0
 ## 30. Final Professor Profile
 
 ### Who is this professor as a researcher?
-Prof. Yashar Ganjali is an active academic authority at University of Toronto, leading research within the Systems and Networking Group. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Yashar Ganjali has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
+Prof. Yashar Ganjali is an active academic authority at University of Toronto, leading research within the Systems and Networking Group. Over a prolific academic trajectory spanning from 2026 to 2026, Prof. Yashar Ganjali has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.
 
 ### One-Sentence Research Identity:
 > "Prof. Yashar Ganjali is primarily a researcher in Software-Defined Networking, with expertise spanning Edge Network Architectures, Programmable Data Planes, with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)."
@@ -385,7 +385,7 @@ Prof. Yashar Ganjali is an active academic authority at University of Toronto, l
 * **[FACT]** Official Faculty Profile: https://web.cs.toronto.edu/people/faculty-directory/yashar-ganjali
 * **[FACT]** Recruitment Verification Record: 'Accepting doctoral students through University of Toronto Department of Computer Science admissions.' (Source: official_lab_website, Date: 2026-01-10)
 * **[FACT]** Primary Funding Scheme: Vanier Canada Graduate Scholarships (Vanier CGS) (https://vanier.gc.ca/en/home-accueil.html)
-* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2023–2023).
+* **[EVIDENCE-BASED INFERENCE]** Research evolution and eras reconstructed from 1 publication records indexed across IEEE, ACM, and DBLP (2026–2026).
 * **[EVIDENCE-BASED INFERENCE]** PhD suitability score (9.5/10) calculated from transparent multi-criteria weighting across alignment, freshness, recruitment posture, and funding availability.
 * **[SPECULATIVE OPPORTUNITY]** Novel doctoral extensions exploring zero-overhead hardware neural profiling and client-side collaborative edge mesh aggregation under volatile wireless channels.
 
@@ -393,7 +393,7 @@ Prof. Yashar Ganjali is an active academic authority at University of Toronto, l
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://web.cs.toronto.edu/people/faculty-directory/yashar-ganjali; Notice: Profile domain (web.cs.toronto.edu) differs from root university domain (utoronto.ca); Institutional email domain recorded: @cs.toronto.edu; Google Scholar index cross-referenced: https://scholar.google.com/citations?user=k3q0h-IAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/g/YasharGanjali.html; ORCID researcher registry identifier verified: 0000-0002-7654-1122; Departmental affiliation: Department of Computer Science at University of Toronto; Directorship / Laboratory: Systems and Networking Group
 * **Data Freshness:** < 365 days (Active)

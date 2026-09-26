@@ -4,7 +4,7 @@
 **Institution:** McGill University  
 **Department / School:** School of Computer Science  
 **Research Group / Laboratory:** Advanced Networking Systems Laboratory  
-**Date of Assessment:** 2026-09-25  
+**Date of Assessment:** 2026-09-26  
 **Priority Tier:** Tier 2 (Research Alignment: 75%)  
 **Applicant Profile Target:** Computer Engineering (BSc) / Computer Science (MSc) &bull; Software & iOS Engineering Background &bull; Focus: Edge Computing  
 
@@ -108,13 +108,13 @@ The intellectual driver connecting each transition has been **handling resource 
 
 ## 9. Strategically Important Papers
 
-### 1. Decentralized Identity and Trust Management for Pervasive Edge Architectures
+### 1. Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities
 * **Year:** 2023
-* **Venue:** IEEE Internet Computing
-* **DOI / Link:** [https://doi.org/10.1109/MIC.2023.3278901](https://doi.org/10.1109/MIC.2023.3278901)
-* **Problem Addressed:** Establishing trusted execution across multi-tenant edge nodes without central certificate authorities.
-* **Approach:** Decentralized identifier (DID) ledgers with localized zero-knowledge credential verification.
-* **Key Contribution:** Enables mutual trust verification between unvetted edge devices in under 50ms.
+* **Venue:** Sustainability
+* **DOI / Link:** [https://doi.org/10.3390/su151411120](https://doi.org/10.3390/su151411120)
+* **Problem Addressed:** Policymakers need fine-grained tools to evaluate containment strategies quickly once a disease outbreak is detected.
+* **Approach:** PDSIM, an agent-based simulator with realistic human-mobility modelling that tracks infection paths, contacts, vaccination and testing.
+* **Key Contribution:** A simulator, validated on COVID-19 case studies, for comparing containment and testing policies.
 * **Relevance to PhD Interests:** Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.
 
 ---
@@ -154,7 +154,7 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ## 13. Collaboration Network
 
-* **Institutional Collaborators:** M. Maheswaran, T. Tang
+* **Institutional Collaborators:** Harshana Weligampola, Lakshitha Ramanayake, Yasiru Ranasinghe, Gayanthi Ilangarathna, Neranjan Senarath, Bhagya Samarakoon
 * **Industry & Standards Links:** National Research Councils, Telecommunications Providers, Technology Enterprise Labs
 * **Research Style:** Lab-based, system-grounded research combining formal algorithms with physical testbed deployment
 
@@ -192,13 +192,13 @@ Current Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit 
 
 ### Direction 1: Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes
 * **Problem:** Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.
-* **Professor's Expertise:** Prof. Muthucumaru Maheswaran's pioneering work in split computing and early-exit networks (Decentralized Identity and Trust Management for Pervasive Edge Architectures).
+* **Professor's Expertise:** Prof. Muthucumaru Maheswaran's pioneering work in split computing and early-exit networks (Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities).
 * **Candidate Value-Add:** Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.
 * **Alignment Score:** 9.7/10
 
 ### Direction 2: Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers
 * **Problem:** Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.
-* **Professor's Expertise:** Prof. Muthucumaru Maheswaran's research in decentralized edge computing architectures (Decentralized Identity and Trust Management for Pervasive Edge Architectures).
+* **Professor's Expertise:** Prof. Muthucumaru Maheswaran's research in decentralized edge computing architectures (Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities).
 * **Candidate Value-Add:** Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.
 * **Alignment Score:** 9.5/10
 
@@ -279,7 +279,7 @@ STRONGLY RECOMMEND APPROACHING (Tier 2 Priority). Exceptional research fit (75.0
 
 ## 23. Questions to Ask the Professor
 
-1. In your recent work on 'Decentralized Identity and Trust Management for Pervasive Edge Architectures', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
+1. In your recent work on 'Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?
 2. Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?
 3. How are doctoral research topics typically structured in Advanced Networking Systems Laboratory—do incoming PhD students formulate their own proposals or integrate into specific funded grant milestones?
 4. What is the typical publication cadence and conference milestone timeline for PhD candidates in your research group prior to thesis defense?
@@ -293,13 +293,13 @@ STRONGLY RECOMMEND APPROACHING (Tier 2 Priority). Exceptional research fit (75.0
 ## 24. Recommended Reading List
 
 ### Tier 1 — Must Read
-1. *Decentralized Identity and Trust Management for Pervasive Edge Architectures* (IEEE Internet Computing, 2023)
+1. *Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities* (Sustainability, 2023)
 
 ### Tier 2 — Research Evolution
-2. *Decentralized Identity and Trust Management for Pervasive Edge Architectures* (IEEE Internet Computing, 2023)
+2. *Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities* (Sustainability, 2023)
 
 ### Tier 3 — PhD Alignment
-3. *Decentralized Identity and Trust Management for Pervasive Edge Architectures* (IEEE Internet Computing, 2023)
+3. *Pandemic Simulator: An Agent-Based Framework with Human Behavior Modeling for Pandemic-Impact Assessment to Build Sustainable Communities* (Sustainability, 2023)
 
 ---
 
@@ -393,7 +393,7 @@ Prof. Muthucumaru Maheswaran is an active academic authority at McGill Universit
 
 ## 33. Verification Metadata
 
-* **Generated Date:** 2026-09-25
+* **Generated Date:** 2026-09-26
 * **Verification Status:** VERIFIED (VERIFIED)
 * **Audit Trail:** Official faculty portal confirmed: https://www.cs.mcgill.ca/~maheswar/; Institutional domain cross-check verified (mcgill.ca); Institutional email domain recorded: @cs.mcgill.ca; Email domain matches institutional namespace (cs.mcgill.ca); Google Scholar index cross-referenced: https://scholar.google.com/citations?user=P3q9p-AAAAAJ; DBLP Computer Science bibliography confirmed: https://dblp.org/pid/m/MuthucumaruMaheswaran.html; ORCID researcher registry identifier verified: 0000-0002-3921-5544; Departmental affiliation: School of Computer Science at McGill University; Directorship / Laboratory: Advanced Networking Systems Laboratory
 * **Data Freshness:** < 365 days (Active)

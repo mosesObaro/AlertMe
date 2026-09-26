@@ -1,7 +1,7 @@
 # PhD Research & Funding Intelligence Report: Hong Kong
 **Country Code:** HK  
 **Primary Currency:** HKD  
-**Execution Date:** 2026-09-25  
+**Execution Date:** 2026-09-26  
 **Target PhD Field:** Edge Computing, Edge AI & Distributed Systems  
 
 ---
@@ -42,15 +42,15 @@ Hong Kong offers an internationally renowned doctoral research ecosystem charact
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Prof. Jiannong Cao** | The Hong Kong Polytechnic University | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_jiannong_cao/dossier.md) |
 | **Prof. Song Guo** | The Hong Kong Polytechnic University | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_song_guo/dossier.md) |
-| **Prof. Lin Wang** | The Hong Kong University of Science and Technology | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_lin_wang/dossier.md) |
 | **Prof. Chuan Wu** | The University of Hong Kong | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_chuan_wu/dossier.md) |
 | **Prof. Jianping Wang** | City University of Hong Kong | Tier 1 | 100.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_jianping_wang/dossier.md) |
 | **Prof. Wei Wang** | The Hong Kong University of Science and Technology | Tier 1 | 97.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_wei_wang/dossier.md) |
+| **Prof. Lin Wang** | The Hong Kong University of Science and Technology | Tier 1 | 97.0% | CONFIRMED_ACTIVE | [Dossier](professors/prof_lin_wang/dossier.md) |
 | **Prof. Minghua Chen** | The Chinese University of Hong Kong | Tier 1 | 96.2% | STRONG_EVIDENCE | [Dossier](professors/prof_minghua_chen/dossier.md) |
-| **Prof. Heming Cui** | The University of Hong Kong | Tier 1 | 93.2% | STRONG_EVIDENCE | [Dossier](professors/prof_heming_cui/dossier.md) |
+| **Prof. John C.S. Lui** | The Chinese University of Hong Kong | Tier 1 | 93.2% | STRONG_EVIDENCE | [Dossier](professors/prof_john_c_s_lui/dossier.md) |
+| **Prof. Heming Cui** | The University of Hong Kong | Tier 1 | 88.0% | STRONG_EVIDENCE | [Dossier](professors/prof_heming_cui/dossier.md) |
 | **Prof. Xiaowen Chu** | Hong Kong Baptist University | Tier 1 | 82.5% | CONFIRMED_ACTIVE | [Dossier](professors/prof_xiaowen_chu/dossier.md) |
-| **Prof. John C.S. Lui** | The Chinese University of Hong Kong | Tier 1 | 71.2% | STRONG_EVIDENCE | [Dossier](professors/prof_john_c_s_lui/dossier.md) |
-| **Prof. Sam Kwong** | Lingnan University | Tier 2 | 62.5% | STRONG_EVIDENCE | [Dossier](professors/prof_sam_kwong/dossier.md) |
+| **Prof. Sam Kwong** | Lingnan University | Tier 2 | 71.3% | STRONG_EVIDENCE | [Dossier](professors/prof_sam_kwong/dossier.md) |
 | **Prof. Philip L.H. Yu** | The Education University of Hong Kong | Tier 3 | 57.3% | POSSIBLE | [Dossier](professors/prof_philip_l_h_yu/dossier.md) |
 
 ---
@@ -155,4 +155,4 @@ Hong Kong offers an internationally renowned doctoral research ecosystem charact
 4. **Target Deadline:** Submit institutional application ahead of **2026-12-01**.
 
 ---
-*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-25.*
+*Report compiled automatically by the Global Country-Based PhD Funding and Supervisor Intelligence Engine on 2026-09-26.*

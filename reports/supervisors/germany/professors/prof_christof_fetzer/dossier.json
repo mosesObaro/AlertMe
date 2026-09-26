@@ -5,7 +5,7 @@
     "department": "Faculty of Computer Science",
     "country": "Germany",
     "country_code": "INT",
-    "generated_date": "2026-09-25",
+    "generated_date": "2026-09-26",
     "last_verified": "2026-09-15",
     "areas_analyzed_count": 5,
     "publications_analyzed_count": 1,
@@ -59,7 +59,7 @@
       "MicroVMs & Containers",
       "Edge Cloud Resilience"
     ],
-    "alignment_score": 72.0,
+    "alignment_score": 79.0,
     "priority_tier": "Tier 1"
   },
   "executive_summary": "Prof. Christof Fetzer is a prominent researcher in Dependable Systems at TU Dresden (Germany), directing research within the Systems Engineering Group. This assessment evaluates Prof. Christof Fetzer's academic trajectory from foundational computing and systems architectures to state-of-the-art collaborative edge intelligence and distributed execution frameworks.\n\nWith verified recruitment standing (CONFIRMED_ACTIVE) and direct synergy with TV-L E13 Research Associate (Wissenschaftlicher Mitarbeiter / Doctoral Position) (€48,000 - €56,000 gross/year (100% TV-L E13 salary) or €36,000 - €42,000 (75% TV-L E13), including full health, unemployment, and statutory pension insurance; Deadline: 2026-12-01), Prof. Christof Fetzer presents an outstanding doctoral supervisor opportunity bridging systems engineering, runtime profiling, and Edge AI.",
@@ -130,7 +130,7 @@
         "Connected infrastructure"
       ],
       "representative_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "major_contributions": "Demonstrated high-throughput, low-latency distributed edge execution across heterogeneous devices.",
       "collaborators": [
@@ -158,7 +158,7 @@
       "application_domain": "Autonomous connected devices, smart city edge infrastructure, industrial IoT.",
       "activity_period": "2016–Present (Continuous Core Focus)",
       "representative_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "evidence_level": "Documented (Top-tier peer-reviewed transactions and active laboratory testbeds)"
     },
@@ -192,7 +192,7 @@
       "application_domain": "Real-time multi-camera video analytics, intelligent mobile assistants, edge healthcare devices.",
       "activity_period": "2020–Present (Rapidly Growing Frontier)",
       "representative_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Collaborative Edge AI Systems (2024)"
       ],
       "evidence_level": "Documented (Recent 2023–2026 conference papers and sponsored grants)"
     }
@@ -207,7 +207,7 @@
       "current_relevance": "Governs current laboratory directions and student recruitment topics.",
       "explanation_type": "Evidence-based interpretation",
       "supporting_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "evidence": "Documented in recent peer-reviewed publication metadata."
     }
@@ -220,7 +220,7 @@
       "evolution_description": "Evolved from distributed algorithm consistency protocols to peer-to-peer sensor aggregation, and now to serverless Edge Mesh coordination.",
       "current_relevance": "Central tenet of current edge computing frameworks seeking resilience against single points of failure.",
       "representative_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "evidence": "Consistent presence of decentralized, non-master-worker topologies across publications."
     },
@@ -240,25 +240,25 @@
       "evolution_description": "Consistently complements mathematical formulations with working software prototypes validated on physical embedded hardware testbeds.",
       "current_relevance": "Strong differentiator making the professor's research immediately practical and actionable.",
       "representative_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "evidence": "Documented experimental evaluations on Raspberry Pi clusters, NVIDIA Jetson boards, and software-defined networks."
     }
   ],
   "major_publications": [
     {
-      "title": "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs",
+      "title": "Cost-based Virtual Machine Scheduling for Data-as-a-Service",
       "year": 2023,
-      "venue": "IEEE Micro",
-      "doi_or_url": "https://doi.org/10.1109/MM.2023.328901",
-      "research_area": "Direct foundational technology for enterprise-grade edge deployments.",
-      "problem_addressed": "Protecting proprietary AI weights and user data on physically accessible untrusted edge hardware.",
-      "approach_methodology": "Transparent container shielding inside hardware enclaves with optimized asynchronous system calls.",
-      "key_contribution": "Reduces enclave overhead from 40% down to under 5% for standard edge microservices.",
+      "venue": "JUCS - Journal of Universal Computer Science",
+      "doi_or_url": "https://doi.org/10.3897/jucs.99223",
+      "research_area": "Cloud Computing and Resource Management (Information Systems)",
+      "problem_addressed": "Very large Data-as-a-Service platforms need cost-aware resource decisions that limit service-agreement breaches.",
+      "approach_methodology": "A cost model for querying distributed data sources over VMs in multi-site data centres, with a cost-based VM scheduler validated on a characterised real DaaS workload.",
+      "key_contribution": "Cost-based VM scheduling that performs at least twice as well as round-robin assignment on average.",
       "why_it_matters": "Validates that distributed and edge-native architectures can outperform centralized cloud offload under real-world network dynamics.",
       "relevance_to_applicant": "Provides a concrete systems architecture directly synergistic with your engineering background in software optimization and runtime execution.",
       "influence_on_later_work": "Serves as the benchmark and conceptual foundation for ongoing doctoral student investigations in the laboratory.",
-      "is_seminal": true,
+      "is_seminal": false,
       "is_recent": true
     }
   ],
@@ -268,7 +268,7 @@
       "classification": "Primary Specialization",
       "evidence": "Documented in recent publications (2021–2023) and ongoing laboratory projects.",
       "recent_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "current_projects": [
         "Confidential Edge Computing Infrastructure",
@@ -308,8 +308,11 @@
   "evolution_map_text": "2023–2019: Distributed Systems Foundations & Networked Computing\n  │\n  ▼\n2020–2023: Edge Intelligence & Collaborative Distributed Computing\n  │\n  ▼\nCurrent Frontier: Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs)",
   "collaboration_network": {
     "institutional_collaborators": [
-      "C. Fetzer",
-      "S. Arnautov"
+      "Ana Cristina Oliveira",
+      "Marco Aurélio Spohn",
+      "Christof W. Fetzer",
+      "Do Le Quoc",
+      "André Martin"
     ],
     "industry_government_partners": [
       "National Research Councils",
@@ -432,10 +435,10 @@
       "direction_number": 1,
       "title": "Adaptive Heterogeneous Split Neural Inference over Volatile Edge Meshes",
       "problem_statement": "Deep neural model partitioning fails when edge devices experience sudden thermal throttling, battery degradation, or wireless bandwidth fluctuations.",
-      "professor_expertise": "Prof. Christof Fetzer's pioneering work in split computing and early-exit networks (Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs).",
+      "professor_expertise": "Prof. Christof Fetzer's pioneering work in split computing and early-exit networks (Cost-based Virtual Machine Scheduling for Data-as-a-Service).",
       "candidate_value_add": "Native client systems engineering (profiling on real mobile hardware accelerators) to design dynamic runtime split-point selectors.",
       "supporting_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "research_gap": "Lack of zero-overhead runtime profilers on mobile client devices to guide dynamic split and early-exit decisions.",
       "potential_contribution": "Formulate a lightweight client-side reinforcement learning controller that cuts inference latency by >45% under volatile conditions.",
@@ -456,10 +459,10 @@
       "direction_number": 2,
       "title": "Decentralized Peer-to-Peer Task Orchestration Without Central Cloud Controllers",
       "problem_statement": "Smart city edge nodes require sub-10ms task dispatch without dependency on centralized cloud orchestrators.",
-      "professor_expertise": "Prof. Christof Fetzer's research in decentralized edge computing architectures (Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs).",
+      "professor_expertise": "Prof. Christof Fetzer's research in decentralized edge computing architectures (Cost-based Virtual Machine Scheduling for Data-as-a-Service).",
       "candidate_value_add": "Distributed systems background in consensus algorithms, fault-tolerant sockets, and gRPC communication protocols.",
       "supporting_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "research_gap": "Centralized edge controllers introduce single points of failure and routing bottlenecks under high-density micro-clouds.",
       "potential_contribution": "Develop a peer-to-peer work-stealing protocol with provable latency bounds for heterogeneous edge devices.",
@@ -483,7 +486,7 @@
       "professor_expertise": "Prof. Christof Fetzer's focus on distributed machine learning and resource-adaptive optimization.",
       "candidate_value_add": "Software engineering design patterns for robust asynchronous background workers and graceful client reconnection.",
       "supporting_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "research_gap": "Existing federated learning frameworks discard straggler models or suffer from gradient staleness.",
       "potential_contribution": "Design a speculative aggregation scheme that extracts partial representations from straggler early-exits without delaying global rounds.",
@@ -507,7 +510,7 @@
       "professor_expertise": "Prof. Christof Fetzer's long-standing research into energy-constrained sensor networks and IoT optimization.",
       "candidate_value_add": "Hardware-software boundary fluency from Computer Engineering background to interface power monitoring hardware.",
       "supporting_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "research_gap": "Static 8-bit/4-bit quantization fails to adapt dynamically to incoming solar energy harvesting rates.",
       "potential_contribution": "Create an energy-driven dynamic bitwidth selector for streaming edge perception.",
@@ -531,7 +534,7 @@
       "professor_expertise": "Prof. Christof Fetzer's active research in real-time edge video stream analytics.",
       "candidate_value_add": "Systems security and cryptography protocol implementation skills.",
       "supporting_publications": [
-        "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+        "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
       ],
       "research_gap": "High cryptographic overhead of zero-knowledge verifiable inference on resource-constrained video sensor nodes.",
       "potential_contribution": "Design a lightweight verifiable edge inference pipeline that attests feature extraction without exposing raw pixel streams.",
@@ -642,7 +645,7 @@
   },
   "questions_for_professor": {
     "research_questions": [
-      "In your recent work on 'Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?",
+      "In your recent work on 'Cost-based Virtual Machine Scheduling for Data-as-a-Service', what is the primary systems bottleneck when scaling across heterogeneous devices with different neural hardware accelerators?",
       "Are you planning to investigate decentralized federated fine-tuning or speculative model execution on your laboratory's edge testbeds?"
     ],
     "supervision_questions": [
@@ -662,9 +665,9 @@
     {
       "tier": 1,
       "tier_label": "Tier 1 — Current Research Frontier (Must Read)",
-      "paper_title": "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs",
+      "paper_title": "Cost-based Virtual Machine Scheduling for Data-as-a-Service",
       "year": 2023,
-      "venue": "IEEE Micro",
+      "venue": "JUCS - Journal of Universal Computer Science",
       "why_read": "Defines the professor's active research frontier in edge computing and modern model execution.",
       "key_concept": "Collaborative edge intelligence and model partitioning.",
       "connection_to_research": "Represents the state of the art in Systems Engineering Group.",
@@ -673,9 +676,9 @@
     {
       "tier": 2,
       "tier_label": "Tier 2 — Research Evolution & Architecture",
-      "paper_title": "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs",
+      "paper_title": "Cost-based Virtual Machine Scheduling for Data-as-a-Service",
       "year": 2023,
-      "venue": "IEEE Micro",
+      "venue": "JUCS - Journal of Universal Computer Science",
       "why_read": "Establishes the architectural foundation connecting earlier pervasive computing to edge mesh frameworks.",
       "key_concept": "Decentralized peer-to-peer coordination without central controllers.",
       "connection_to_research": "The architectural backbone of Prof. Christof Fetzer's edge systems research.",
@@ -684,9 +687,9 @@
     {
       "tier": 3,
       "tier_label": "Tier 3 — PhD Proposal Alignment & Synergy",
-      "paper_title": "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs",
+      "paper_title": "Cost-based Virtual Machine Scheduling for Data-as-a-Service",
       "year": 2023,
-      "venue": "IEEE Micro",
+      "venue": "JUCS - Journal of Universal Computer Science",
       "why_read": "Provides technical algorithms directly relatable to your software optimization background.",
       "key_concept": "Dynamic task scheduling and resource allocation under bandwidth limits.",
       "connection_to_research": "Algorithmic formulation of scheduling problems in distributed edge environments.",
@@ -710,8 +713,8 @@
       "3. Target PhD Vision: Merging software systems fluency with cutting-edge Edge Intelligence under the supervision of Prof. Christof Fetzer."
     ],
     "papers_to_cite": [
-      "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs",
-      "Shielding Edge Container Workloads via Hardware Enclaves: Performance and Security Trade-offs"
+      "Cost-based Virtual Machine Scheduling for Data-as-a-Service",
+      "Cost-based Virtual Machine Scheduling for Data-as-a-Service"
     ]
   },
   "publication_trends": {
@@ -780,7 +783,7 @@
   },
   "final_profile": "Prof. Christof Fetzer is an active academic authority at TU Dresden, leading research within the Systems Engineering Group. Over a prolific academic trajectory spanning from 2023 to 2023, Prof. Christof Fetzer has pioneered systems-grounded solutions addressing foundational distributed systems, resource-constrained networking, and state-of-the-art Edge Intelligence architectures.",
   "one_sentence_identity": "Prof. Christof Fetzer is primarily a researcher in Dependable Systems, with expertise spanning Confidential Computing at Edge, Hardware Security Enclaves (SGX/SEV), with recent work increasingly focused on Collaborative Edge Intelligence (Split Inference & Early-Exit DNNs).",
-  "recommendation": "STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (72.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.",
+  "recommendation": "STRONGLY RECOMMEND APPROACHING (Tier 1 Priority). Exceptional research fit (79.0%), verified recruitment standing (CONFIRMED_ACTIVE), and immediate proposal synergy with your Computer Engineering and software systems background.",
   "sources": {
     "facts": [
       "Official Faculty Profile: https://tu-dresden.de/ing/informatik/syt/die-professur/inhaber",
