@@ -1,9 +1,9 @@
 {
   "meta": {
     "last_updated": "2026-09-27",
-    "total_items": 35,
-    "high_relevance_count": 22,
-    "papers_count": 17,
+    "total_items": 36,
+    "high_relevance_count": 23,
+    "papers_count": 18,
     "conferences_count": 2,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -14,8 +14,15 @@
       "topic": "Edge AI",
       "direction": "↑↑",
       "status": "Surging",
-      "recent_count": 9,
+      "recent_count": 10,
       "historical_count": 4
+    },
+    {
+      "topic": "TinyML",
+      "direction": "↑↑",
+      "status": "Surging",
+      "recent_count": 3,
+      "historical_count": 1
     },
     {
       "topic": "Federated Learning",
@@ -30,13 +37,6 @@
       "status": "Steady",
       "recent_count": 2,
       "historical_count": 2
-    },
-    {
-      "topic": "TinyML",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 2,
-      "historical_count": 1
     },
     {
       "topic": "Edge Inference",
@@ -2284,7 +2284,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "Edge AI in Wearable Devices",
@@ -2414,6 +2415,94 @@
       },
       "intelligence": {
         "why_it_matters": "This work investigates Relevance (law) and Green computing. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
+        "methodology": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
+        "key_contribution": "The objective is not to claim unverified experimental results, but to establish a practical research framework that can subsequently be tested on resource-constrained edge hardware",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.2/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      },
+      "alert_mode": "daily"
+    },
+    {
+      "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+      "url": "https://doi.org/10.5281/zenodo.22953475",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Prathamesh Uttam Patil"
+      ],
+      "doi": "10.5281/zenodo.22953475",
+      "arxiv_id": null,
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-09-27",
+      "abstract": "Abstract Artificial Intelligence of Things (AIoT) is transforming Internet of Things (IoT) systems by enabling data-driven decisions close to the point where data are generated. However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs. This paper examines Edge AI as a sustainable computing approach for energy-efficient smart IoT systems, with particular relevance to the development priorities associated with Viksit Bharat 2047. The study follows a descriptive and analytical approach based on research literature concerning TinyML, on-device machine learning, Edge AI, and energy-aware IoT. It proposes an architecture consisting of sensing, local inference, edge coordination, selective cloud processing, and energy-aware orchestration. The paper further identifies measurable parameters including accuracy, inference latency, energy per inference, communication volume, memory footprint, and reliability for evaluating sustainable AIoT systems. The objective is not to claim unverified experimental results, but to establish a practical research framework that can subsequently be tested on resource-constrained edge hardware. The study indicates that sustainable AIoT should be evaluated not only through predictive performance but also through the computational, communication, and energy resources required to deliver each intelligent decision.",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "topics": [
+        "Computer science",
+        "Cloud computing",
+        "Edge computing",
+        "Enhanced Data Rates for GSM Evolution",
+        "Relevance (law)",
+        "Reliability (semiconductor)",
+        "Inference",
+        "Internet of Things",
+        "Energy (signal processing)",
+        "Edge device",
+        "Smart objects",
+        "Efficient energy use",
+        "Artificial intelligence",
+        "Key (lock)",
+        "Data science",
+        "Architecture",
+        "Point (geometry)",
+        "Green computing",
+        "The Internet",
+        "Distributed computing",
+        "Big data",
+        "Applications of artificial intelligence",
+        "Data mining",
+        "Machine to machine",
+        "Smart city",
+        "Machine learning",
+        "Computer security",
+        "Server",
+        "Sustainable development"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_e64c48af90c23ad3",
+      "score": {
+        "topic_score": 3.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.2,
+        "matched_topics": [
+          "Edge AI",
+          "Internet of Things",
+          "TinyML",
+          "IoT"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Key research area match: TinyML (+0.4)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Upcoming date: 2026-10-31 (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Computer science and Cloud computing. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
         "research_problem": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
         "methodology": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
         "key_contribution": "The objective is not to claim unverified experimental results, but to establish a practical research framework that can subsequently be tested on resource-constrained edge hardware",
@@ -3386,7 +3475,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "From PyTorch to the NPU: LLM-Agent-Driven Model Conversion Across Heterogeneous Inference Runtimes",

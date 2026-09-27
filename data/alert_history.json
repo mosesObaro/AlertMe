@@ -2366,5 +2366,163 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+    "url": "https://doi.org/10.5281/zenodo.22953475",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Prathamesh Uttam Patil"
+    ],
+    "doi": "10.5281/zenodo.22953475",
+    "arxiv_id": null,
+    "publication_date": "2026-10-31",
+    "discovery_date": "2026-09-27",
+    "abstract": "Abstract Artificial Intelligence of Things (AIoT) is transforming Internet of Things (IoT) systems by enabling data-driven decisions close to the point where data are generated. However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs. This paper examines Edge AI as a sustainable computing approach for energy-efficient smart IoT systems, with particular relevance to the development priorities associated with Viksit Bharat 2047. The study follows a descriptive and analytical approach based on research literature concerning TinyML, on-device machine learning, Edge AI, and energy-aware IoT. It proposes an architecture consisting of sensing, local inference, edge coordination, selective cloud processing, and energy-aware orchestration. The paper further identifies measurable parameters including accuracy, inference latency, energy per inference, communication volume, memory footprint, and reliability for evaluating sustainable AIoT systems. The objective is not to claim unverified experimental results, but to establish a practical research framework that can subsequently be tested on resource-constrained edge hardware. The study indicates that sustainable AIoT should be evaluated not only through predictive performance but also through the computational, communication, and energy resources required to deliver each intelligent decision.",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "topics": [
+      "Computer science",
+      "Cloud computing",
+      "Edge computing",
+      "Enhanced Data Rates for GSM Evolution",
+      "Relevance (law)",
+      "Reliability (semiconductor)",
+      "Inference",
+      "Internet of Things",
+      "Energy (signal processing)",
+      "Edge device",
+      "Smart objects",
+      "Efficient energy use",
+      "Artificial intelligence",
+      "Key (lock)",
+      "Data science",
+      "Architecture",
+      "Point (geometry)",
+      "Green computing",
+      "The Internet",
+      "Distributed computing",
+      "Big data",
+      "Applications of artificial intelligence",
+      "Data mining",
+      "Machine to machine",
+      "Smart city",
+      "Machine learning",
+      "Computer security",
+      "Server",
+      "Sustainable development"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_e64c48af90c23ad3",
+    "score": {
+      "topic_score": 3.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 8.2,
+      "matched_topics": [
+        "Edge AI",
+        "Internet of Things",
+        "TinyML",
+        "IoT"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title)",
+        "✓ Key research area match: TinyML (+0.4)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Upcoming date: 2026-10-31 (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Computer science and Cloud computing. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
+      "methodology": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
+      "key_contribution": "The objective is not to claim unverified experimental results, but to establish a practical research framework that can subsequently be tested on resource-constrained edge hardware",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "8.2/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "weekly"
+  },
+  {
+    "title": "Review of bearing fault diagnosis based on neural networks",
+    "url": "https://doaj.org/article/b9fe601a0ea84636a856af7354cfdb5d",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "survey",
+    "authors": [
+      "Xiaoning HU",
+      "Yan LIANG"
+    ],
+    "doi": "10.13374/j.issn2095-9389.2026.03.13.002",
+    "arxiv_id": null,
+    "publication_date": "2026-10-01",
+    "discovery_date": "2026-09-27",
+    "abstract": "Bearings are critical components in rotating machinery, and their condition directly determines the operational efficiency and safety of industrial equipment. Traditional bearing fault diagnosis methods rely heavily on manual feature extraction, making it difficult to deal with complex industrial scenarios such as strong noise, variable working conditions, and scarce fault samples. In recent years, deep neural networks have overcome the inherent limitations of traditional methods through robust adaptive feature learning, thereby establishing widespread utility in the field of bearing fault diagnosis. This review systematically summarizes the progress of neural network-based bearing fault diagnosis. First, the importance of bearing fault diagnosis and the shortcomings of traditional methods, including time-frequency analysis, empirical mode decomposition, variational mode decomposition, and entropy-based methods, are discussed, highlighting their strong dependence on expert experience, weak noise robustness, poor generalization under variable conditions, and difficulty in identifying compound faults. Subsequently, a comprehensive comparison of various neural network architectures is made. Convolutional neural networks (CNNs) are good at extracting local spatial features. A one-dimensional CNN is lightweight and functions in real time but has difficulty capturing long-term dependencies. A two-dimensional CNN combined with a time-frequency diagram has strong visual interpretability, but the computational cost is high. An improved CNN combined with multiscale convolution, graph convolution, attention mechanism, and residual connection could significantly enhance the robustness and generalizability of the model under strong noise and variable conditions; however, it also increases the complexity of the model. While recurrent neural networks (RNNs), particularly long short-term memory (LSTM) and bidirectional LSTM, effectively capture temporal dependencies in vibration signals, they are susceptible to vanishing or exploding gradients and incur high training costs. Hybrid models, such as CNN-RNN and CNN-Transformer, combine local feature extraction with global dependency modeling. CNN-RNN achieves balanced learning of spatiotemporal features at a moderate cost. CNN-Transformer demonstrates clear advantages in dealing with long sequences, strong noise, and compound faults, but requires substantial volumes of data and computing resources. This review also analyzes four major engineering challenges in bearing fault diagnosis: variable operating conditions, strong noise environments, small samples and data imbalance, and cross-machine or cross-domain diagnosis. Domain adaptation and domain generalization techniques for variable conditions are examined. For the industrial strong-noise environment, noise robust methods such as the deep residual shrinkage network and attention mechanism are summarized. The problem of data scarcity and imbalance is addressed through data enhancement strategies such as generative adversarial networks and digital twin technology, as well as few-shot and meta-learning methods. Cross-device diagnostic methods, such as federated learning and domain alignment strategies, are summarized. Although considerable progress has been made, several gaps remain in current research. First, the diagnostic accuracy of the model often decreases sharply under extreme dynamic conditions, such as continuous change of rotational speed, impact load, and temperature drift. Second, multisource heterogeneous data fusion faces challenges when the sensor sampling rates differ, and certain channel data are temporarily missing. Third, there is an inherent contradiction between the lightweight model design for edge deployment and the noise robustness under low signal-to-noise ratios. Fourth, unsupervised self-learning research is insufficient in the context of unlabeled data in actual industrial monitoring. To address these research gaps, this paper proposes future research directions, including domain generalization methods based on causal inference to decouple fault causal characteristics and working condition interference; cross-modal attention and graph neural network for intelligent multisource data fusion; a joint optimized lightweight neural network for resource-constrained edge devices that takes into account delay, power consumption, and noise robustness; and self-supervised learning for unlabeled monitoring data that automatically finds fault features. This review aims to provide a systematic reference for subsequent research and engineering implementation of intelligent bearing fault diagnosis, supporting the advancement of smart manufacturing.",
+    "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+    "topics": [
+      "Robustness (evolution)",
+      "Computer science",
+      "Artificial intelligence",
+      "Artificial neural network",
+      "Convolutional neural network",
+      "Bearing (navigation)",
+      "Machine learning",
+      "Residual",
+      "Noise (video)",
+      "Fault (geology)",
+      "Feature (linguistics)",
+      "Fault detection and isolation",
+      "Pattern recognition (psychology)",
+      "Variable (mathematics)",
+      "Redundancy (engineering)",
+      "Generalizability theory",
+      "Field (mathematics)",
+      "Deep learning",
+      "Data mining",
+      "Engineering",
+      "Condition monitoring",
+      "Control engineering"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_1ba256e756bca740",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.7,
+      "negative_penalty": 0.0,
+      "final_score": 6.9,
+      "matched_topics": [
+        "Federated Learning"
+      ],
+      "reasons": [
+        "✓ Secondary topic with Edge context: Federated Learning",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Upcoming date: 2026-10-01 (+1.5)",
+        "✓ Comprehensive Literature Survey / Review (+0.7)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "weekly"
   }
 ]

@@ -3,8 +3,15 @@
     "topic": "Edge AI",
     "direction": "↑↑",
     "status": "Surging",
-    "recent_count": 9,
+    "recent_count": 10,
     "historical_count": 4
+  },
+  {
+    "topic": "TinyML",
+    "direction": "↑↑",
+    "status": "Surging",
+    "recent_count": 3,
+    "historical_count": 1
   },
   {
     "topic": "Federated Learning",
@@ -19,13 +26,6 @@
     "status": "Steady",
     "recent_count": 2,
     "historical_count": 2
-  },
-  {
-    "topic": "TinyML",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
-    "historical_count": 1
   },
   {
     "topic": "Edge Inference",
