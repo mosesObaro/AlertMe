@@ -3,22 +3,29 @@
     "topic": "Edge AI",
     "direction": "↑↑",
     "status": "Surging",
-    "recent_count": 7,
+    "recent_count": 9,
     "historical_count": 4
   },
   {
     "topic": "Federated Learning",
-    "direction": "→",
-    "status": "Steady",
-    "recent_count": 1,
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
     "historical_count": 1
   },
   {
     "topic": "Computation Offloading",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 1,
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 2,
     "historical_count": 2
+  },
+  {
+    "topic": "TinyML",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 2,
+    "historical_count": 1
   },
   {
     "topic": "Edge Inference",
@@ -33,13 +40,6 @@
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 2
-  },
-  {
-    "topic": "TinyML",
-    "direction": "→",
-    "status": "Steady",
-    "recent_count": 1,
-    "historical_count": 1
   },
   {
     "topic": "6G + Edge",

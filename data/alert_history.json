@@ -2116,5 +2116,255 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "A novel real-time integrated adaptive stable offloading (RIASO) algorithm in multi-access edge computing",
+    "url": "https://doi.org/10.1007/s10586-026-06444-8",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Hala Elhadidy",
+      "Heba Saleh",
+      "Rawya Rizk",
+      "Walaa Saber"
+    ],
+    "doi": "10.1007/s10586-026-06444-8",
+    "arxiv_id": null,
+    "publication_date": "2026-09-27",
+    "discovery_date": "2026-09-27",
+    "abstract": "Abstract Mobile Edge Computing (MEC) and Mobile Computation Offloading (MCO) help IoT devices with limited computational capabilities and battery by offloading tasks to the nearest resource-rich servers in MEC. Deciding to execute the tasks at the user device or the edge server can be optimized by AI techniques such as Deep Reinforcement Learning (DRL). In this paper, A Real-time Integrated Adaptive Stable Offloading (RIASO) algorithm is proposed based on Lyapunov optimization (LO), Multi Output Learning (MOL), and DRL. In RIASO, a new training policy that regulates the start time of the training procedure can effectively shorten the response time. Also the size of the memory is examined and reduced. RIASO optimizes network data processing capabilities while maintaining long-term data queue stability and average consumed power constraints that makes it adaptable to changes. RIASO achieves high accuracy and efficiency in terms of critical performance metrics such as computation rate, energy consumption, and memory usage.",
+    "venue": "Cluster Computing",
+    "topics": [
+      "Computer science",
+      "Lyapunov optimization",
+      "Computation offloading",
+      "Mobile edge computing",
+      "Server",
+      "Enhanced Data Rates for GSM Evolution",
+      "Edge device",
+      "Computation",
+      "Edge computing",
+      "Queue",
+      "Stability (learning theory)",
+      "Mobile device",
+      "Reinforcement learning",
+      "Distributed computing",
+      "Power (physics)",
+      "Wireless",
+      "Response time",
+      "Real-time computing",
+      "Adaptive optimization",
+      "Algorithm",
+      "Efficient energy use",
+      "Battery (electricity)",
+      "Energy consumption",
+      "Queueing theory",
+      "Internet of Things",
+      "Embedded system",
+      "Mobile computing",
+      "Computational complexity theory",
+      "Network packet",
+      "Online algorithm",
+      "Adaptive algorithm",
+      "Optimization problem"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_c347124b814d3250",
+    "score": {
+      "topic_score": 3.5,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 8.5,
+      "matched_topics": [
+        "Computation Offloading",
+        "Mobile Edge Computing",
+        "IoT",
+        "Edge Computing",
+        "Multi-access Edge Computing",
+        "MEC"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Abstract)",
+        "✓ Key research area match: Computation Offloading (+0.4)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Freshly published (0d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Computation Offloading (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Computer science and Lyapunov optimization. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Deciding to execute the tasks at the user device or the edge server can be optimized by AI techniques such as Deep Reinforcement Learning (DRL)",
+      "key_contribution": "RIASO achieves high accuracy and efficiency in terms of critical performance metrics such as computation rate, energy consumption, and memory usage.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "8.5/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+    "url": "https://doi.org/10.5281/zenodo.22953474",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Prathamesh Uttam Patil"
+    ],
+    "doi": "10.5281/zenodo.22953474",
+    "arxiv_id": null,
+    "publication_date": "2026-10-31",
+    "discovery_date": "2026-09-27",
+    "abstract": "Abstract Artificial Intelligence of Things (AIoT) is transforming Internet of Things (IoT) systems by enabling data-driven decisions close to the point where data are generated. However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs. This paper examines Edge AI as a sustainable computing approach for energy-efficient smart IoT systems, with particular relevance to the development priorities associated with Viksit Bharat 2047. The study follows a descriptive and analytical approach based on research literature concerning TinyML, on-device machine learning, Edge AI, and energy-aware IoT. It proposes an architecture consisting of sensing, local inference, edge coordination, selective cloud processing, and energy-aware orchestration. The paper further identifies measurable parameters including accuracy, inference latency, energy per inference, communication volume, memory footprint, and reliability for evaluating sustainable AIoT systems. The objective is not to claim unverified experimental results, but to establish a practical research framework that can subsequently be tested on resource-constrained edge hardware. The study indicates that sustainable AIoT should be evaluated not only through predictive performance but also through the computational, communication, and energy resources required to deliver each intelligent decision.",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "topics": [
+      "Relevance (law)",
+      "Green computing",
+      "Big data",
+      "The Internet",
+      "Edge device",
+      "Inference",
+      "Smart city",
+      "Sustainable development",
+      "Artificial intelligence",
+      "Distributed computing",
+      "Applications of artificial intelligence",
+      "Machine to machine",
+      "Data science",
+      "Point (geometry)",
+      "Reliability (semiconductor)",
+      "Machine learning",
+      "Server",
+      "Smart objects",
+      "Architecture",
+      "Internet of Things",
+      "Data mining",
+      "Cloud computing",
+      "Energy (signal processing)",
+      "Edge computing",
+      "Efficient energy use",
+      "Key (lock)",
+      "Computer science",
+      "Computer security",
+      "Enhanced Data Rates for GSM Evolution"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_79a7f035d1a158ad",
+    "score": {
+      "topic_score": 3.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 8.2,
+      "matched_topics": [
+        "Internet of Things",
+        "IoT",
+        "Edge AI",
+        "TinyML"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title)",
+        "✓ Key research area match: TinyML (+0.4)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Upcoming date: 2026-10-31 (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Relevance (law) and Green computing. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
+      "methodology": "However, conventional cloud-centric architectures can introduce communication overhead, latency, privacy concerns, and additional energy costs",
+      "key_contribution": "The objective is not to claim unverified experimental results, but to establish a practical research framework that can subsequently be tested on resource-constrained edge hardware",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "8.2/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
+  },
+  {
+    "title": "AI For Sustainable Development Opportunities & Innovation",
+    "url": "https://doi.org/10.5281/zenodo.22933762",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Saloni Ananda Patil"
+    ],
+    "doi": "10.5281/zenodo.22933762",
+    "arxiv_id": null,
+    "publication_date": "2026-09-30",
+    "discovery_date": "2026-09-27",
+    "abstract": "Abstract Artificial Intelligence is increasingly being explored as a tool for accelerating progress toward sustainable development. AI can analyse large datasets, identify patterns, forecast events, optimise systems and support decision-making across agriculture, energy, water, healthcare, education, cities, industry and environmental management. Recent research shows that AI-for-SDG research is expanding rapidly, while also revealing gaps in social inclusion, governance and assessment of AI’s own environmental footprint. This project examines the major opportunities for AI-enabled sustainable development, including smart agriculture, renewable-energy optimisation, climate and disaster forecasting, intelligent waste management, sustainable cities, healthcare and education. It also discusses innovation pathways such as machine learning, computer vision, remote sensing, generative AI, digital twins and edge AI. The study emphasises that technological capability alone is insufficient: responsible AI requires reliable data, transparency, privacy, human oversight, equitable access, energy-efficient computing and lifecycle environmental assessment.",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "topics": [
+      "Sustainable development",
+      "Business",
+      "Corporate governance",
+      "Sustainability",
+      "Knowledge management",
+      "Engineering",
+      "Environmental planning",
+      "Environmental governance",
+      "Climate governance",
+      "Environmental resource management",
+      "Industry 4.0",
+      "Climate change",
+      "Process management",
+      "Applications of artificial intelligence",
+      "Big data",
+      "Engineering management",
+      "Environmental impact assessment",
+      "Emerging technologies",
+      "Computer science"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_c1fe2800fdac8929",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Abstract)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Upcoming date: 2026-09-30 (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
   }
 ]
