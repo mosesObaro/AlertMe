@@ -3234,5 +3234,185 @@
       "Control engineering",
       "Engineering"
     ]
+  },
+  "Ahmed-Rafik Baahmed": {
+    "name": "Ahmed-Rafik Baahmed",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence",
+        "url": "http://arxiv.org/abs/2609.31159v1",
+        "date": "2026-09-25",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-28",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI"
+    ]
+  },
+  "Jean-François Dollinger": {
+    "name": "Jean-François Dollinger",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence",
+        "url": "http://arxiv.org/abs/2609.31159v1",
+        "date": "2026-09-25",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-28",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI"
+    ]
+  },
+  "Amine Brahmia": {
+    "name": "Amine Brahmia",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence",
+        "url": "http://arxiv.org/abs/2609.31159v1",
+        "date": "2026-09-25",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-28",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI"
+    ]
+  },
+  "Mourad Zghal": {
+    "name": "Mourad Zghal",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence",
+        "url": "http://arxiv.org/abs/2609.31159v1",
+        "date": "2026-09-25",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-09-28",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI"
+    ]
   }
 }
