@@ -173,9 +173,9 @@ class StorageManager:
                 
         self.save_state()
 
-    def has_recent_alert_for_paper(self, paper_title: str, days_window: int = 14) -> bool:
+    def has_recent_alert_for_paper(self, paper_title: str, days_window: int = 14, reference_date: Optional[date] = None) -> bool:
         """Suppresses duplicate alerts for the same paper within a spaced window."""
-        today = date.today()
+        today = reference_date or date.today()
         for past_alert in reversed(self.alert_history):
             if past_alert.get("paper_title") == paper_title:
                 try:

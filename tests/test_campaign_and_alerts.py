@@ -66,7 +66,8 @@ class TestCampaignAndAlerts(unittest.TestCase):
         
         # Check storage has recorded the alert
         self.assertEqual(len(self.storage.alert_history), 1)
-        self.assertTrue(self.storage.has_recent_alert_for_paper(alert1.paper_title, days_window=14))
+        self.assertTrue(self.storage.has_recent_alert_for_paper(
+            alert1.paper_title, days_window=14, reference_date=date(2026, 9, 13)))
 
     def test_three_day_cycle_and_dossier_generation(self):
         alert_gen = AlertGenerator(self.storage, self.campaign)
