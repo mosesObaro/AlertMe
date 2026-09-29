@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-28T04:41:11.141040",
+  "last_updated": "2026-09-29T03:53:13.936366",
   "familiarity": {
     "polyu_cao_jiannong": {
       "researcher_id": "polyu_cao_jiannong",
@@ -37,15 +37,17 @@
     },
     "cuhk_chen_minghua": {
       "researcher_id": "cuhk_chen_minghua",
-      "papers_exposed": [],
+      "papers_exposed": [
+        "Markov Approximation for Combinatorial Network Optimization"
+      ],
       "papers_read": [],
       "topics_exposed": [],
       "research_projects_exposed": [],
       "research_trajectory_understood": false,
       "recruitment_verified": false,
-      "familiarity_score": 0.0,
-      "last_exposed": null,
-      "exposure_cycle_day": 1,
+      "familiarity_score": 33.3,
+      "last_exposed": "2026-09-29",
+      "exposure_cycle_day": 2,
       "cycle_completed": false,
       "cycles_completed": 0
     },
@@ -900,6 +902,41 @@
       "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jianping_Wang_PhD_Supervisor_Profile.docx",
       "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jianping_Wang_PhD_Supervisor_Profile.pdf",
       "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Jianping_Wang_PhD_Supervisor_Profile.epub"
+    },
+    {
+      "alert_id": "cuhk_chen_minghua_day1_20260929",
+      "date": "2026-09-29",
+      "weeks_remaining": 9,
+      "days_remaining": 63,
+      "university": "The Chinese University of Hong Kong",
+      "professor": "Prof. Minghua Chen",
+      "department": "Department of Information Engineering (IE)",
+      "research_group": "Advanced Networking and System Research Laboratory (ANSRLab)",
+      "priority_tier": "Tier 1",
+      "research_alignment_pct": 93,
+      "recruitment_status": "STRONG_EVIDENCE",
+      "recruitment_evidence": "I am constantly looking for excellent PhD students with strong passion and solid mathematical/systems background. Please submit your application through CUHK Graduate School and mention my name. [Source: faculty_homepage, Date: 2026-05-20]",
+      "cycle_day": 1,
+      "today_research_focus": "Foundational & Seminal Research Deconstruction",
+      "paper_title": "Markov Approximation for Combinatorial Network Optimization",
+      "paper_author": "Minghua Chen, Soung Chang Liew, Ziyu Shao",
+      "paper_year": 2013,
+      "paper_link": "https://doi.org/10.1109/tit.2013.2268923",
+      "research_problem": "Many network design problems are combinatorial and hard to solve with distributed algorithms.",
+      "approach": "Markov approximation: approximating the optimum with a log-sum-exp function whose solution is the stationary distribution of time-reversible Markov chains that can be run distributedly.",
+      "key_contribution": "A general framework for designing distributed algorithms with provable performance, illustrated through three network applications.",
+      "why_it_matters_for_edge": "Mobile Ad Hoc Networks (Computer Networks and Communications)",
+      "research_trajectory": "Prof. Minghua Chen has shaped modern systems research. Trajectory: Began in peer-to-peer streaming and network coding algorithms; established fundamental competitive ratio bounds for energy-efficient datacenters; currently leads online optimization for sustainable edge intelligence and edge-cloud federated networks.",
+      "what_to_read_next": "Follow up with 'Unsupervised Learning for Solving AC Optimal Power Flows: Design, Analysis, and Experiment' for current extensions.",
+      "potential_phd_alignment": "Potential PhD Topics: Online Algorithms for Carbon-Aware Computation Offloading under Renewable Intermittency; Multi-Objective Pareto Optimization for Real-Time Edge Video Analytics.",
+      "application_action_today": "Review Prof. Minghua Chen's official lab website and extract core systems models from 'Markov Approximation for Combinatorial Network Optimization'.",
+      "scholarship_connection": "CUHK Vice-Chancellor's PhD Scholarship Scheme (HK$40,000 - HK$80,000 award + tuition waiver + full studentship). Supervisor endorsement significantly strengthens departmental ranking.",
+      "deadline_info": "2026-12-01 23:59:59 HKT (63 days / 9 weeks remaining)",
+      "next_action": "Tomorrow (Day 2): Deep dive into recent breakthrough publications (past 1-2 years), active grants, and methodology.",
+      "dossier_report_link": "https://github.com/mosesObaro/AlertMe/blob/main/reports/supervisors/Prof_Minghua_Chen_PhD_Supervisor_Profile.md",
+      "dossier_docx_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Minghua_Chen_PhD_Supervisor_Profile.docx",
+      "dossier_pdf_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Minghua_Chen_PhD_Supervisor_Profile.pdf",
+      "dossier_epub_link": "https://raw.githubusercontent.com/mosesObaro/AlertMe/main/reports/supervisors/Prof_Minghua_Chen_PhD_Supervisor_Profile.epub"
     }
   ],
   "campaign_state": {}
