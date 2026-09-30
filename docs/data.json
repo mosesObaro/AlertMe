@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-29",
-    "total_items": 38,
-    "high_relevance_count": 23,
-    "papers_count": 18,
+    "last_updated": "2026-09-30",
+    "total_items": 37,
+    "high_relevance_count": 24,
+    "papers_count": 20,
     "conferences_count": 2,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -15,7 +15,7 @@
       "direction": "↑↑",
       "status": "Surging",
       "recent_count": 9,
-      "historical_count": 4
+      "historical_count": 5
     },
     {
       "topic": "TinyML",
@@ -2935,6 +2935,60 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Toward System-of-Systems Integration for Composable Cloud-HPC-Edge AI Platforms",
+      "url": "http://arxiv.org/abs/2609.33427v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Sumit Rakesh",
+        "Rajkumar Saini"
+      ],
+      "doi": null,
+      "arxiv_id": "2609.33427v1",
+      "publication_date": "2026-09-27",
+      "discovery_date": "2026-09-30",
+      "abstract": "Modern AI platforms increasingly combine infrastructure stacks and operating models designed around different assumptions, including cloud-style service platforms, HPC workload-management systems, cloud-native orchestration, data and artifact systems, managed connectivity, observability, and edge or cyber-physical environments. Existing work demonstrates effective bridges between selected stacks, but a general way to reason about composition across independently controlled systems remains underdeveloped. We argue that such platforms can be usefully viewed as systems of systems (SoS) when independently useful systems retain their own control, management, lifecycles, policies, and failure semantics while contributing to a higher-level AI platform capability. We frame composable integration as an approach to cross-system coordination based on interfaces, contracts, mappings, references, policy context, and operational evidence, while preserving native control planes and avoiding dependence on a single topology or orchestration stack. The resulting direction is converged in use and federated in control. The paper presents a peer constituent-system view, a boundary test for distinguishing constituent systems from components, local dependencies, and independently useful systems outside the current SoS boundary, a local, shared, and scoped responsibility model, seven integration surfaces, and a representative cross-system workflow. It concludes with evidence classes and research questions for evaluating interoperability, governance, observability, fault containment, evolution, and reuse.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_e8e6a83fb0c2121a",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (3d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Modern AI platforms increasingly combine infrastructure stacks and operating models designed around different assumptions, including cloud-style service platforms, HPC workload-management systems, cloud-native orchestration, data and artifact systems, managed connectivity, observability, and edge or cyber-physical environments",
+        "key_contribution": "Existing work demonstrates effective bridges between selected stacks, but a general way to reason about composition across independently controlled systems remains underdeveloped",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
       "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
       "source": "Linux Foundation / LF Edge Blog",
@@ -3852,144 +3906,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] paulzierep/metagenomic-binning-benchmark (★ 0)",
-      "url": "https://github.com/paulzierep/metagenomic-binning-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "paulzierep"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-29",
-      "discovery_date": "2026-09-29",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_1da78b59889de3df",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] abdullahmehboob20s/benchmarks (★ 0)",
-      "url": "https://github.com/abdullahmehboob20s/benchmarks",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "abdullahmehboob20s"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-29",
-      "discovery_date": "2026-09-29",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_39a6c683f1b18c53",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] schamanichands/arkts-code-retrieval-benchmark (★ 0)",
-      "url": "https://github.com/schamanichands/arkts-code-retrieval-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "schamanichands"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-09-29",
-      "discovery_date": "2026-09-29",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_d69312f819a1388c",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
       "title": "CloudAM 2026 : 15th International Workshop on Cloud and Edge Computing, and Applications Management",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202965&copyownerid=43185",
       "source": "Conference Feed",
@@ -3998,8 +3914,8 @@
       "authors": [],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-29",
-      "discovery_date": "2026-09-29",
+      "publication_date": "2026-09-30",
+      "discovery_date": "2026-09-30",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [],
@@ -4031,6 +3947,55 @@
       "raw_metadata": {}
     },
     {
+      "title": "Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence",
+      "url": "http://arxiv.org/abs/2609.31159v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Ahmed-Rafik Baahmed",
+        "Jean-François Dollinger",
+        "Amine Brahmia",
+        "Mourad Zghal"
+      ],
+      "doi": null,
+      "arxiv_id": "2609.31159v1",
+      "publication_date": "2026-09-25",
+      "discovery_date": "2026-09-30",
+      "abstract": "We propose a momentum-guided federated split distillation framework for personalized, efficient, and autonomous temporal edge intelligence. We introduce TeRR-SAtt, our novel temporal reservoir student attention design that combines fixed reservoir representations, a lightweight temporal student, and personalized output modules. We also present AMGF, our anticipatory momentum-guided fusion mechanism that clusters clients through learning momentum and derives specialized teacher updates. On real-world smart-building data, TeRR-SAtt reduces edge training latency by 65.50%, inference latency by 44.70%, training memory usage by 18.40%, and inference CPU usage by 33.10% over the considered baselines. At the same time, AMGF improves local learning by up to 35.31% in RMSE compared to global updates.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.AI",
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_47b7dfc9128d09dd",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.2,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge Training",
+          "Edge Intelligence"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Intelligence (Title), Edge Training (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Published within last week (5d ago) (+1.2)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
       "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
       "source": "Linux Foundation / LF Edge Blog",
@@ -4042,7 +4007,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-29",
+      "discovery_date": "2026-09-30",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -4065,7 +4030,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (104d ago) (+0.2)",
+          "• Published >30d ago (105d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

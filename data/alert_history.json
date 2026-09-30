@@ -2524,5 +2524,60 @@
       "cited_by_count": 0
     },
     "alert_mode": "weekly"
+  },
+  {
+    "title": "Toward System-of-Systems Integration for Composable Cloud-HPC-Edge AI Platforms",
+    "url": "http://arxiv.org/abs/2609.33427v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Sumit Rakesh",
+      "Rajkumar Saini"
+    ],
+    "doi": null,
+    "arxiv_id": "2609.33427v1",
+    "publication_date": "2026-09-27",
+    "discovery_date": "2026-09-30",
+    "abstract": "Modern AI platforms increasingly combine infrastructure stacks and operating models designed around different assumptions, including cloud-style service platforms, HPC workload-management systems, cloud-native orchestration, data and artifact systems, managed connectivity, observability, and edge or cyber-physical environments. Existing work demonstrates effective bridges between selected stacks, but a general way to reason about composition across independently controlled systems remains underdeveloped. We argue that such platforms can be usefully viewed as systems of systems (SoS) when independently useful systems retain their own control, management, lifecycles, policies, and failure semantics while contributing to a higher-level AI platform capability. We frame composable integration as an approach to cross-system coordination based on interfaces, contracts, mappings, references, policy context, and operational evidence, while preserving native control planes and avoiding dependence on a single topology or orchestration stack. The resulting direction is converged in use and federated in control. The paper presents a peer constituent-system view, a boundary test for distinguishing constituent systems from components, local dependencies, and independently useful systems outside the current SoS boundary, a local, shared, and scoped responsibility model, seven integration surfaces, and a representative cross-system workflow. It concludes with evidence classes and research questions for evaluating interoperability, governance, observability, fault containment, evolution, and reuse.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_e8e6a83fb0c2121a",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.8,
+      "matched_topics": [
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Title)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (3d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Modern AI platforms increasingly combine infrastructure stacks and operating models designed around different assumptions, including cloud-style service platforms, HPC workload-management systems, cloud-native orchestration, data and artifact systems, managed connectivity, observability, and edge or cyber-physical environments",
+      "key_contribution": "Existing work demonstrates effective bridges between selected stacks, but a general way to reason about composition across independently controlled systems remains underdeveloped",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.8/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
