@@ -1,5 +1,12 @@
 [
   {
+    "topic": "Federated Learning",
+    "direction": "↑↑",
+    "status": "Surging",
+    "recent_count": 3,
+    "historical_count": 1
+  },
+  {
     "topic": "TinyML",
     "direction": "↑↑",
     "status": "Surging",
@@ -12,13 +19,6 @@
     "status": "Rising",
     "recent_count": 8,
     "historical_count": 6
-  },
-  {
-    "topic": "Federated Learning",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 2,
-    "historical_count": 1
   },
   {
     "topic": "Computation Offloading",

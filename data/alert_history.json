@@ -2579,5 +2579,508 @@
     "opportunity_data": null,
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "ACM/IEEE Symposium on Edge Computing (SEC 2026)",
+    "url": "https://acm-ieee-sec.org/2026/",
+    "source": "ACM / IEEE Computer Society (Curated Official Conference Registry)",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "workshop",
+    "authors": [
+      "ACM / IEEE Computer Society"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-01",
+    "discovery_date": "2026-10-01",
+    "abstract": "[Symposium] The premier forum for edge computing systems, architectures, algorithms, and applications, bringing together researchers and practitioners across academia and industry. Dates: 2026-11-10 to 2026-11-12. Location: Seattle, WA, USA (hybrid). Registration Fee: $350 (Student) / $750 (Regular). Subsidies: ACM/IEEE Student Member Registration: $350 (over 50% discount vs regular $750); ACM/IEEE Student Travel Grant (STG): Up to $1,200 travel and accommodation stipend + registration waiver.",
+    "venue": "ACM/IEEE Symposium on Edge Computing (SEC 2026) — Seattle, WA, USA",
+    "topics": [
+      "Edge Computing",
+      "Edge AI",
+      "Cloudlets",
+      "Edge Security",
+      "Edge-Cloud Collaboration",
+      "TinyML Systems"
+    ],
+    "institution": "ACM / IEEE Computer Society",
+    "location": "Seattle, WA, USA",
+    "deadline": "2026-06-15",
+    "is_urgent": false,
+    "id": "evt_b09505c1b6f3279b",
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.3,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 8.9,
+      "matched_topics": [
+        "Edge Computing",
+        "Edge AI",
+        "Cloudlets",
+        "Edge Security",
+        "Edge-Cloud Collaboration",
+        "TinyML Systems"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Computing (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: TinyML, Edge Security (+0.8)",
+        "Tier 1 professional organization (ACM / IEEE Computer Society) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Early-bird discount window open (+0.3)",
+        "Event upcoming in 40 days (+0.3)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Edge Computing and Edge AI. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "[Symposium] The premier forum for edge computing systems, architectures, algorithms, and applications, bringing together researchers and practitioners across academia and industry",
+      "key_contribution": "Subsidies: ACM/IEEE Student Member Registration: $350 (over 50% discount vs regular $750); ACM/IEEE Student Travel Grant (STG): Up to $1,200 travel and accommodation stipend + registration waiver.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "8.9/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": {
+      "kind": "event",
+      "event_type": "symposium",
+      "event_name": "ACM/IEEE Symposium on Edge Computing (SEC 2026)",
+      "organizer": "ACM / IEEE Computer Society",
+      "format": "hybrid",
+      "location": "Seattle, WA, USA",
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-12",
+      "fee_status": "paid",
+      "registration_fee": "$350 (Student) / $750 (Regular)",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": false,
+      "has_early_bird": true,
+      "has_fee_waiver": false,
+      "discounts_count": 3,
+      "discounts_subsidies": [
+        {
+          "discount_type": "student_rate",
+          "name": "ACM/IEEE Student Member Registration",
+          "amount_or_rate": "$350 (over 50% discount vs regular $750)",
+          "eligibility": "Full-time undergraduate or graduate students with valid student ID or ACM/IEEE student membership.",
+          "deadline": "2026-10-15",
+          "application_url": "https://acm-ieee-sec.org/2026/registration.html"
+        },
+        {
+          "discount_type": "travel_grant",
+          "name": "ACM/IEEE Student Travel Grant (STG)",
+          "amount_or_rate": "Up to $1,200 travel and accommodation stipend + registration waiver",
+          "eligibility": "Graduate students, particularly authors of accepted papers and students from underrepresented institutions.",
+          "deadline": "2026-09-15",
+          "application_url": "https://acm-ieee-sec.org/2026/travel_grants.html"
+        },
+        {
+          "discount_type": "early_bird",
+          "name": "Early-Bird Registration",
+          "amount_or_rate": "Save $100 before October 1, 2026",
+          "eligibility": "Open to all attendees registering prior to cutoff date.",
+          "deadline": "2026-10-01",
+          "application_url": null
+        }
+      ],
+      "official_website": "https://acm-ieee-sec.org/2026/",
+      "cfp_deadline": "2026-06-15",
+      "description": "The premier forum for edge computing systems, architectures, algorithms, and applications, bringing together researchers and practitioners across academia and industry.",
+      "relevance_score": 8.9
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "IEEE INFOCOM 2027",
+    "url": "https://infocom2027.ieee-infocom.org/",
+    "source": "IEEE Communications Society (ComSoc) (Curated Official Conference Registry)",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "conference_cfp",
+    "authors": [
+      "IEEE Communications Society (ComSoc)"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-01",
+    "discovery_date": "2026-10-01",
+    "abstract": "[Academic Conference] Top-tier conference covering networking, distributed algorithms, Mobile Edge Computing (MEC), resource scheduling, and edge intelligence protocols. Dates: 2027-04-18 to 2027-04-21. Location: London, UK (in_person). Registration Fee: £420 (Student) / £890 (Regular). Subsidies: IEEE Student Member Rate: £420 (vs £890 standard author rate); IEEE ComSoc Student Travel Grant: Up to $1,500 reimbursement for international travel and lodging.",
+    "venue": "IEEE INFOCOM 2027 — London, UK",
+    "topics": [
+      "Mobile Edge Computing",
+      "Edge Networking",
+      "Resource Allocation",
+      "Distributed Algorithms",
+      "6G & Edge Intelligence"
+    ],
+    "institution": "IEEE Communications Society (ComSoc)",
+    "location": "London, UK",
+    "deadline": "2026-10-15",
+    "is_urgent": true,
+    "id": "evt_7325bda453ac5d51",
+    "score": {
+      "topic_score": 3.0,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.3,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 8.0,
+      "matched_topics": [
+        "Mobile Edge Computing",
+        "Edge Networking",
+        "Resource Allocation",
+        "Distributed Algorithms",
+        "6G & Edge Intelligence"
+      ],
+      "reasons": [
+        "Primary Edge topic match in description: Edge Computing, Edge Intelligence, Mobile Edge Computing (+1.8)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Tier 1 professional organization (IEEE Communications Society (ComSoc)) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Active CFP deadline in 14 days (+0.7)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Mobile Edge Computing and Edge Networking. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "[Academic Conference] Top-tier conference covering networking, distributed algorithms, Mobile Edge Computing (MEC), resource scheduling, and edge intelligence protocols",
+      "key_contribution": "Subsidies: IEEE Student Member Rate: £420 (vs £890 standard author rate); IEEE ComSoc Student Travel Grant: Up to $1,500 reimbursement for international travel and lodging.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "8.0/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": {
+      "kind": "event",
+      "event_type": "academic_conference",
+      "event_name": "IEEE INFOCOM 2027",
+      "organizer": "IEEE Communications Society (ComSoc)",
+      "format": "in_person",
+      "location": "London, UK",
+      "start_date": "2027-04-18",
+      "end_date": "2027-04-21",
+      "fee_status": "paid",
+      "registration_fee": "£420 (Student) / £890 (Regular)",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": false,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "student_rate",
+          "name": "IEEE Student Member Rate",
+          "amount_or_rate": "£420 (vs £890 standard author rate)",
+          "eligibility": "Full-time PhD and MSc students with valid IEEE ComSoc student membership.",
+          "deadline": "2027-03-01",
+          "application_url": null
+        },
+        {
+          "discount_type": "travel_grant",
+          "name": "IEEE ComSoc Student Travel Grant",
+          "amount_or_rate": "Up to $1,500 reimbursement for international travel and lodging",
+          "eligibility": "PhD students presenting peer-reviewed papers or posters at INFOCOM.",
+          "deadline": "2027-02-15",
+          "application_url": null
+        }
+      ],
+      "official_website": "https://infocom2027.ieee-infocom.org/",
+      "cfp_deadline": "2026-10-15",
+      "description": "Top-tier conference covering networking, distributed algorithms, Mobile Edge Computing (MEC), resource scheduling, and edge intelligence protocols.",
+      "relevance_score": 8.0
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "IEEE ICDCS 2027 (International Conference on Distributed Computing Systems)",
+    "url": "https://icdcs2027.org",
+    "source": "IEEE Computer Society (Curated Official Conference Registry)",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "conference_cfp",
+    "authors": [
+      "IEEE Computer Society"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-01",
+    "discovery_date": "2026-10-01",
+    "abstract": "[Academic Conference] Flagship distributed computing venue covering edge intelligence, fog nodes, decentralized consensus, and federated edge architectures. Dates: 2027-07-12 to 2027-07-15. Location: Tokyo, Japan (in_person). Registration Fee: ¥55,000 (Student) / ¥110,000 (Regular). Subsidies: IEEE Student Member Registration: 50% discount on registration fee; IEEE TCPP / ICDCS Student Travel Grant: Up to $1,000 travel assistance.",
+    "venue": "IEEE ICDCS 2027 (International Conference on Distributed Computing Systems) — Tokyo, Japan",
+    "topics": [
+      "Distributed Systems",
+      "Edge Computing",
+      "Fog Computing",
+      "Federated Learning at the Edge",
+      "Consensus Protocols"
+    ],
+    "institution": "IEEE Computer Society",
+    "location": "Tokyo, Japan",
+    "deadline": "2026-12-10",
+    "is_urgent": false,
+    "id": "evt_33e4781e77dc1d17",
+    "score": {
+      "topic_score": 3.4,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.3,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 7.7,
+      "matched_topics": [
+        "Distributed Systems",
+        "Edge Computing",
+        "Fog Computing",
+        "Federated Learning at the Edge",
+        "Consensus Protocols"
+      ],
+      "reasons": [
+        "Primary Edge topic match in description: Edge Computing, Edge Intelligence, Fog Computing (+1.8)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Distributed Systems (+0.4)",
+        "Tier 1 professional organization (IEEE Computer Society) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Distributed Systems and Edge Computing. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "[Academic Conference] Flagship distributed computing venue covering edge intelligence, fog nodes, decentralized consensus, and federated edge architectures",
+      "key_contribution": "Subsidies: IEEE Student Member Registration: 50% discount on registration fee; IEEE TCPP / ICDCS Student Travel Grant: Up to $1,000 travel assistance.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.7/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": {
+      "kind": "event",
+      "event_type": "academic_conference",
+      "event_name": "IEEE ICDCS 2027 (International Conference on Distributed Computing Systems)",
+      "organizer": "IEEE Computer Society",
+      "format": "in_person",
+      "location": "Tokyo, Japan",
+      "start_date": "2027-07-12",
+      "end_date": "2027-07-15",
+      "fee_status": "paid",
+      "registration_fee": "¥55,000 (Student) / ¥110,000 (Regular)",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": false,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "student_rate",
+          "name": "IEEE Student Member Registration",
+          "amount_or_rate": "50% discount on registration fee",
+          "eligibility": "Registered students with valid IEEE student ID.",
+          "deadline": null,
+          "application_url": null
+        },
+        {
+          "discount_type": "travel_grant",
+          "name": "IEEE TCPP / ICDCS Student Travel Grant",
+          "amount_or_rate": "Up to $1,000 travel assistance",
+          "eligibility": "Authors of papers in technical sessions and workshops.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://icdcs2027.org",
+      "cfp_deadline": "2026-12-10",
+      "description": "Flagship distributed computing venue covering edge intelligence, fog nodes, decentralized consensus, and federated edge architectures.",
+      "relevance_score": 7.7
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "IEEE ComSoc School on Edge Computing and Distributed Intelligence 2027",
+    "url": "https://www.comsoc.org/education-training/ieee-comsoc-schools",
+    "source": "IEEE Communications Society (IEEE ComSoc Schools Directory)",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "event",
+    "authors": [
+      "IEEE Communications Society"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-01",
+    "discovery_date": "2026-10-01",
+    "abstract": "[Training Program] Advanced 5-day doctoral training course taught by leading international professors on edge resource scheduling, split DNN learning, and edge mesh testbeds. Dates: 2027-09-06 to 2027-09-10. Location: Cambridge, UK (in_person). Registration Fee: £300 (Students) / £600 (Regular). Subsidies: ComSoc Doctoral Attendance Grant: Full tuition waiver and student dormitory accommodation; Subsidized Student Registration: £300 (50% reduction including daily lunches and social dinner).",
+    "venue": "IEEE ComSoc School on Edge Computing and Distributed Intelligence 2027 — Cambridge, UK",
+    "topics": [
+      "Edge Computing",
+      "Distributed AI at the Edge",
+      "Edge Orchestration",
+      "Task Scheduling",
+      "Edge Benchmarking"
+    ],
+    "institution": "IEEE Communications Society",
+    "location": "Cambridge, UK",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "evt_fbdb858a87ccc114",
+    "score": {
+      "topic_score": 2.9,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.7,
+      "negative_penalty": 0.0,
+      "final_score": 7.1,
+      "matched_topics": [
+        "Edge Computing",
+        "Distributed AI at the Edge",
+        "Edge Orchestration",
+        "Task Scheduling",
+        "Edge Benchmarking"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Computing (+2.5)",
+        "Adjacency systems topics matched: Edge Mesh (+0.4)",
+        "Tier 1 professional organization (IEEE Communications Society) (+2.5)",
+        "Subsidized student rate available (+0.5)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Dedicated doctoral/researcher training program (+0.7)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "event_type": "training_program",
+      "event_name": "IEEE ComSoc School on Edge Computing and Distributed Intelligence 2027",
+      "organizer": "IEEE Communications Society",
+      "format": "in_person",
+      "location": "Cambridge, UK",
+      "start_date": "2027-09-06",
+      "end_date": "2027-09-10",
+      "fee_status": "paid",
+      "registration_fee": "£300 (Students) / £600 (Regular)",
+      "has_student_discount": true,
+      "has_travel_grant": false,
+      "has_scholarship": true,
+      "has_early_bird": false,
+      "has_fee_waiver": false,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "scholarship",
+          "name": "ComSoc Doctoral Attendance Grant",
+          "amount_or_rate": "Full tuition waiver and student dormitory accommodation",
+          "eligibility": "PhD students in years 1-3 working in edge computing or distributed networks.",
+          "deadline": "2027-06-01",
+          "application_url": null
+        },
+        {
+          "discount_type": "student_rate",
+          "name": "Subsidized Student Registration",
+          "amount_or_rate": "£300 (50% reduction including daily lunches and social dinner)",
+          "eligibility": "Registered full-time doctoral students.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.comsoc.org/education-training/ieee-comsoc-schools",
+      "cfp_deadline": null,
+      "description": "Advanced 5-day doctoral training course taught by leading international professors on edge resource scheduling, split DNN learning, and edge mesh testbeds.",
+      "relevance_score": 7.1
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "IEEE ComSoc Technical Webinar: Edge Intelligence in 6G Distributed Networks",
+    "url": "https://www.comsoc.org/education-training/webinars",
+    "source": "IEEE Communications Society (ComSoc) (IEEE ComSoc Webinar Catalog)",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "event",
+    "authors": [
+      "IEEE Communications Society (ComSoc)"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-01",
+    "discovery_date": "2026-10-01",
+    "abstract": "[Webinar] Distinguished Lecturer seminar focusing on mathematical and architectural frameworks for distributed federated learning across next-generation 6G edge nodes. Dates: 2026-11-18 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: Free for IEEE Members & Students. Subsidies: Complimentary Student Member Registration: Free access.",
+    "venue": "IEEE ComSoc Technical Webinar: Edge Intelligence in 6G Distributed Networks — Online / Virtual",
+    "topics": [
+      "Edge Intelligence",
+      "6G",
+      "Federated Learning at the Edge",
+      "Distributed Edge Systems"
+    ],
+    "institution": "IEEE Communications Society (ComSoc)",
+    "location": "Online / Virtual",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "evt_a5a5352cfafbed5f",
+    "score": {
+      "topic_score": 3.7,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.5,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.0,
+      "matched_topics": [
+        "Edge Intelligence",
+        "6G",
+        "Federated Learning at the Edge",
+        "Distributed Edge Systems"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Intelligence (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Tier 1 professional organization (IEEE Communications Society (ComSoc)) (+2.5)",
+        "Subsidized student rate available (+0.5)",
+        "Event upcoming in 48 days (+0.3)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "event_type": "webinar",
+      "event_name": "IEEE ComSoc Technical Webinar: Edge Intelligence in 6G Distributed Networks",
+      "organizer": "IEEE Communications Society (ComSoc)",
+      "format": "online",
+      "location": "Online / Virtual",
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-18",
+      "fee_status": "paid",
+      "registration_fee": "Free for IEEE Members & Students",
+      "has_student_discount": true,
+      "has_travel_grant": false,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": false,
+      "discounts_count": 1,
+      "discounts_subsidies": [
+        {
+          "discount_type": "student_rate",
+          "name": "Complimentary Student Member Registration",
+          "amount_or_rate": "Free access",
+          "eligibility": "All IEEE and IEEE ComSoc student members.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.comsoc.org/education-training/webinars",
+      "cfp_deadline": null,
+      "description": "Distinguished Lecturer seminar focusing on mathematical and architectural frameworks for distributed federated learning across next-generation 6G edge nodes.",
+      "relevance_score": 7.0
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
