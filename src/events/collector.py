@@ -9,6 +9,7 @@ from src.models import ResearchItem, CredibilityTier
 from src.events.models import EdgeEvent
 from src.events.normalizer import EventNormalizer
 from src.events.verifier import EventVerifier
+from src.events.scorer import EventScorer
 from src.utils.config_loader import ConfigManager
 from src.utils.logger import logger
 
@@ -29,6 +30,7 @@ class EdgeEventCollector(BaseCollector):
         self.config = config_manager or ConfigManager()
         self.normalizer = EventNormalizer()
         self.verifier = EventVerifier()
+        self.scorer = EventScorer(config_manager=self.config)
         self.events_cache: List[EdgeEvent] = []
 
     def fetch_events(self) -> List[EdgeEvent]:
@@ -80,8 +82,10 @@ class EdgeEventCollector(BaseCollector):
             except Exception as e:
                 logger.debug(f"Feed '{feed_name}' poll skipped or failed: {e}")
 
-        # Verify all collected events
+        # Verify and score all collected events
         verified_events = self.verifier.verify_all(events)
+        for ev in verified_events:
+            self.scorer.score_event(ev)
         self.events_cache = verified_events
         return verified_events
 

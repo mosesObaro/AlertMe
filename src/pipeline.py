@@ -194,7 +194,7 @@ class ResearchPipeline:
                     "description": item.abstract
                 })
 
-        # Fallback to persistent events state if none collected in current run
+        # Fallback to persistent events state or curated events if none in ranked_items
         if not events_list:
             try:
                 from src.events.state_manager import EventsStateManager
@@ -204,7 +204,16 @@ class ResearchPipeline:
             except Exception:
                 pass
 
-        # Persist opportunities and scholarships
+        if not events_list:
+            try:
+                from src.events.collector import EdgeEventCollector
+                col = EdgeEventCollector(config_manager=self.config)
+                evts = col.fetch_events()
+                events_list = [e.to_dict() for e in evts if e.relevance_score >= min_score]
+            except Exception:
+                pass
+
+        # Persist opportunities, scholarships, and events
         if phd_opportunities:
             prev_opps = self.state_manager.load_opportunities()
             opp_urls = {o.get("link") for o in phd_opportunities if o.get("link")}
@@ -216,6 +225,13 @@ class ResearchPipeline:
 
         if scholarships:
             self.state_manager.save_scholarships(scholarships)
+
+        if events_list:
+            try:
+                from src.events.state_manager import EventsStateManager
+                EventsStateManager().save_events(events_list)
+            except Exception as e:
+                logger.warning(f"Failed to persist events state: {e}")
 
         # 4. Intelligence & Deep Structured Analysis
         for item in ranked_items:

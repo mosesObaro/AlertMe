@@ -91,13 +91,22 @@ class EmailRenderer:
                         "description": i.abstract
                     })
 
-            # If not in items, fall back to persistent events state manager
+            # If not in items, fall back to persistent events state manager or curated events
             if not event_list:
                 try:
                     from src.events.state_manager import EventsStateManager
                     saved_events = EventsStateManager().load_events()
                     if saved_events:
-                        event_list = [e.to_dict() for e in saved_events[:3]]
+                        event_list = [e.to_dict() for e in saved_events[:4]]
+                except Exception:
+                    pass
+
+            if not event_list:
+                try:
+                    from src.events.collector import EdgeEventCollector
+                    col = EdgeEventCollector()
+                    evts = col.fetch_events()
+                    event_list = [e.to_dict() for e in evts if e.relevance_score >= 6.5][:4]
                 except Exception:
                     pass
 
@@ -187,6 +196,15 @@ class EmailRenderer:
                     saved_events = EventsStateManager().load_events()
                     if saved_events:
                         event_list = [e.to_dict() for e in saved_events[:5]]
+                except Exception:
+                    pass
+
+            if not event_list:
+                try:
+                    from src.events.collector import EdgeEventCollector
+                    col = EdgeEventCollector()
+                    evts = col.fetch_events()
+                    event_list = [e.to_dict() for e in evts if e.relevance_score >= 6.5][:5]
                 except Exception:
                     pass
 
