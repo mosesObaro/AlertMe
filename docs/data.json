@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-10-01",
-    "total_items": 48,
+    "total_items": 46,
     "high_relevance_count": 27,
     "papers_count": 20,
     "conferences_count": 4,
@@ -2182,7 +2182,8 @@
         "description": "The premier forum for edge computing systems, architectures, algorithms, and applications, bringing together researchers and practitioners across academia and industry.",
         "relevance_score": 8.9
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
@@ -3011,7 +3012,8 @@
         "description": "Top-tier conference covering networking, distributed algorithms, Mobile Edge Computing (MEC), resource scheduling, and edge intelligence protocols.",
         "relevance_score": 8.0
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Bibliometric Analysis of Hybrid Cloud Computing",
@@ -3532,7 +3534,8 @@
         "description": "Flagship distributed computing venue covering edge intelligence, fog nodes, decentralized consensus, and federated edge architectures.",
         "relevance_score": 7.7
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
@@ -4049,7 +4052,8 @@
         "description": "Advanced 5-day doctoral training course taught by leading international professors on edge resource scheduling, split DNN learning, and edge mesh testbeds.",
         "relevance_score": 7.1
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "[Code/Benchmark] F4bian1012/phlame-tinyml (★ 1)",
@@ -4192,7 +4196,8 @@
         "description": "Distinguished Lecturer seminar focusing on mathematical and architectural frameworks for distributed federated learning across next-generation 6G edge nodes.",
         "relevance_score": 7.0
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Review of bearing fault diagnosis based on neural networks",
@@ -4585,26 +4590,26 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] wojons/mafia-ai-benchmark (★ 0)",
-      "url": "https://github.com/wojons/mafia-ai-benchmark",
+      "title": "[Code/Benchmark] djouallah/lakehouse_benchmark (★ 7)",
+      "url": "https://github.com/djouallah/lakehouse_benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "wojons"
+        "djouallah"
       ],
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-10-01",
       "discovery_date": "2026-10-01",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "abstract": "Open source edge computing repository. (Stars: 7, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_a9c93988490d61aa",
+      "id": "item_6c9a3ba2eaa03494",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -4626,99 +4631,7 @@
       "intelligence": null,
       "opportunity_data": null,
       "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Avin-Amiri/eeg-dl-benchmark (★ 0)",
-      "url": "https://github.com/Avin-Amiri/eeg-dl-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Avin-Amiri"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-01",
-      "discovery_date": "2026-10-01",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_760ae77b7c10a581",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] liuwanwan92/ct-framework-benchmarks-e85d88e1 (★ 0)",
-      "url": "https://github.com/liuwanwan92/ct-framework-benchmarks-e85d88e1",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "liuwanwan92"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-01",
-      "discovery_date": "2026-10-01",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_1edde1975a8a169a",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
+        "stars": 7,
         "forks": 0
       }
     },
@@ -4834,9 +4747,9 @@
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [
-        "Distributed Systems",
+        "IoT",
         "Edge Computing",
-        "IoT"
+        "Distributed Systems"
       ],
       "institution": "",
       "location": "",
