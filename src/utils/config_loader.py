@@ -64,6 +64,7 @@ class ConfigManager:
         self.research_groups = load_yaml_file(self.config_dir / "research_groups.yaml")
         self.profile = load_yaml_file(self.config_dir / "profile.yaml")
         self.phd_opportunities = load_yaml_file(self.config_dir / "phd_opportunities.yaml")
+        self.events_config = load_yaml_file(self.config_dir / "events.yaml")
 
     def reload(self):
         """Reloads all configuration files."""
@@ -73,6 +74,11 @@ class ConfigManager:
         self.research_groups = load_yaml_file(self.config_dir / "research_groups.yaml")
         self.profile = load_yaml_file(self.config_dir / "profile.yaml")
         self.phd_opportunities = load_yaml_file(self.config_dir / "phd_opportunities.yaml")
+        self.events_config = load_yaml_file(self.config_dir / "events.yaml")
+
+    @property
+    def events(self) -> dict:
+        return self.events_config
 
     @property
     def primary_topics(self) -> list:

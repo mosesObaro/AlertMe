@@ -443,6 +443,153 @@ def run_supervisors_cli(args):
                 print(f"  Status: {status} ({email_res.get('error', email_res.get('subject', ''))})")
 
 
+def run_events_cli(args):
+    """Executes the Edge Computing Events pipeline and displays results."""
+    from src.events.pipeline import EdgeEventsPipeline
+    from src.events.verifier import EventVerifier
+
+    pipeline = EdgeEventsPipeline()
+    res = pipeline.run(
+        min_score=args.min_score,
+        include_concluded=args.include_concluded,
+        dry_run=args.dry_run,
+        send_email=args.send_email
+    )
+
+    events = res["events"]
+
+    # CLI-level filters
+    if getattr(args, "type", None):
+        events = [e for e in events if e.event_type.lower() == args.type.lower()]
+    if getattr(args, "format", None):
+        events = [e for e in events if e.format.lower() == args.format.lower()]
+    if getattr(args, "student_rates", False):
+        events = [e for e in events if e.has_student_discount]
+    if getattr(args, "travel_grants", False):
+        events = [e for e in events if e.has_travel_grant]
+    if getattr(args, "open_cfps", False):
+        verifier = EventVerifier()
+        events = verifier.filter_open_cfps(events)
+
+    print("\n" + "=" * 80)
+    print(" EDGE COMPUTING EVENTS & OPPORTUNITIES INTELLIGENCE")
+    print("=" * 80)
+    print(f"  Total Collected:   {res['total_collected']}")
+    print(f"  Unique Events:     {res['unique_events']}")
+    print(f"  Active/Upcoming:   {res['active_events']}")
+    print(f"  Filtered Matches:  {len(events)} (min score: {args.min_score})")
+    print("=" * 80 + "\n")
+
+    if not events:
+        print("No events matched the specified filter criteria.\n")
+        return
+
+    for idx, ev in enumerate(events, 1):
+        type_str = ev.event_type.replace('_', ' ').title()
+        dates_str = f"{ev.start_date or 'TBA'} to {ev.end_date or 'TBA'}"
+        subsidies_str = []
+        if ev.has_student_discount:
+            subsidies_str.append("Student Rate")
+        if ev.has_travel_grant:
+            subsidies_str.append("Travel Grant")
+        if ev.has_scholarship:
+            subsidies_str.append("Scholarship")
+        if ev.has_fee_waiver:
+            subsidies_str.append("Fee Waiver")
+        subsidies_display = ", ".join(subsidies_str) if subsidies_str else "Standard Fee"
+
+        print(f"[{idx}] {ev.event_name}")
+        print(f"    Type:       {type_str} | Status: {ev.status.upper()} | Score: {ev.relevance_score:.1f}/10.0")
+        print(f"    Organizer:  {ev.organizer}")
+        print(f"    Dates:      {dates_str} | Location: {ev.location} ({ev.format.upper()})")
+        print(f"    Fee:        {ev.registration_fee or ev.fee_status.title()} | Subsidies: {subsidies_display}")
+        if ev.cfp_deadline:
+            print(f"    CFP Due:    {ev.cfp_deadline}")
+        if ev.official_website:
+            print(f"    Website:    {ev.official_website}")
+        if ev.discounts_subsidies:
+            print("    Key Subsidies & Grants:")
+            for d in ev.discounts_subsidies[:2]:
+                print(f"      * {d.name} ({d.discount_type}): {d.amount_or_rate}")
+        print("-" * 80)
+
+    if getattr(args, "export_markdown", None):
+        md_text = pipeline.render_markdown_summary(events)
+        out_path = Path(args.export_markdown)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(md_text, encoding="utf-8")
+        print(f"\n[Saved Markdown summary to: {out_path}]\n")
+
+
+def test_event_sources_cli(args):
+    """Tests connectivity and event retrieval across all configured event sources."""
+    print("\nTesting Edge Computing Event discovery sources...\n")
+    from src.events.collector import EdgeEventCollector
+    collector = EdgeEventCollector()
+    events = collector.fetch_events()
+
+    print(f"{'Event Source / Feed':<45} | {'Type':<22} | {'Events Found'}")
+    print("-" * 80)
+
+    by_source = {}
+    for ev in events:
+        src = ev.source or "Curated Registry"
+        by_source[src] = by_source.get(src, 0) + 1
+
+    for src, count in by_source.items():
+        print(f"{src:<45} | {'Event Provider':<22} | {count}")
+
+    print("-" * 80)
+    print(f"Total Discovered Events: {len(events)}\n")
+
+
+def debug_event_score_cli(args):
+    """Debugs 0-10 relevance scoring for an event."""
+    from src.events.models import EdgeEvent
+    from src.events.scorer import EventScorer
+    from src.events.normalizer import EventNormalizer
+
+    normalizer = EventNormalizer()
+    scorer = EventScorer()
+
+    raw_event = {
+        "event_name": args.name,
+        "organizer": args.organizer or "Professional Organization",
+        "description": args.description or "",
+        "registration_fee": args.fee or "",
+        "cfp_deadline": args.cfp or None,
+        "start_date": args.date or None,
+        "location": args.location or "Hybrid"
+    }
+
+    event = normalizer.normalize(raw_event)
+    breakdown = scorer.score_event(event)
+
+    print("\n" + "=" * 65)
+    print(" EDGE EVENT RELEVANCE SCORING DEBUGGER")
+    print("=" * 65)
+    print(f"Event:       {event.event_name}")
+    print(f"Organizer:   {event.organizer}")
+    print(f"Type:        {event.event_type} ({event.format})")
+    print(f"Fee/Status:  {event.registration_fee or event.fee_status.title()}")
+    print("-" * 65)
+    print(f"Topic Relevance Score:        {breakdown.topic_score:>5.2f} / 4.0")
+    print(f"Source Credibility Score:     {breakdown.credibility_score:>5.2f} / 2.5")
+    print(f"Affordability & Subsidies:    {breakdown.affordability_boost:>5.2f} / 1.5")
+    print(f"Actionability & Urgency:      {breakdown.actionability_boost:>5.2f} / 1.0")
+    print(f"PhD Value & Research Track:   {breakdown.phd_value_boost:>5.2f} / 1.0")
+    print(f"Negative Penalties:           {breakdown.negative_penalty:>5.2f}")
+    print("-" * 65)
+    print(f"FINAL RELEVANCE SCORE:        {breakdown.final_score:>5.1f} / 10.0")
+
+    decision = "ELIGIBLE FOR ALERT" if breakdown.final_score >= 6.5 else "FILTERED OUT (Below 6.5)"
+    print(f"DECISION:                     {decision}")
+    print("\nTRANSPARENT REASONS:")
+    for r in breakdown.reasons:
+        print(f"  * {r}")
+    print("=" * 65 + "\n")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Edge Computing PhD Research Intelligence Assistant CLI",
@@ -512,6 +659,32 @@ def main():
     sup_parser.add_argument("--send-email", action="store_true", help="Dispatch email alert with download links")
     sup_parser.add_argument("--skip-excel", dest="update_excel", action="store_false", help="Skip updating Excel workbook")
 
+    # Command: events
+    evt_parser = subparsers.add_parser("events", help="Discover and track academic and industrial Edge Computing events")
+    evt_parser.add_argument("--type", choices=["academic_conference", "industry_conference", "workshop", "symposium", "webinar", "training_program", "summer_school", "bootcamp"], default=None, help="Filter by event type")
+    evt_parser.add_argument("--format", choices=["in_person", "online", "hybrid"], default=None, help="Filter by delivery format")
+    evt_parser.add_argument("--student-rates", action="store_true", help="Filter for events offering student discount rates")
+    evt_parser.add_argument("--travel-grants", action="store_true", help="Filter for events offering student travel grants")
+    evt_parser.add_argument("--open-cfps", action="store_true", help="Filter for events with active open CFP submission deadlines")
+    evt_parser.add_argument("--min-score", type=float, default=6.5, help="Minimum relevance score threshold (default: 6.5)")
+    evt_parser.add_argument("--include-concluded", action="store_true", help="Include past/concluded events")
+    evt_parser.add_argument("--export-markdown", default=None, help="Export events digest to specified Markdown file path")
+    evt_parser.add_argument("--dry-run", action="store_true", help="Run without persisting state or sending alerts")
+    evt_parser.add_argument("--send-email", action="store_true", help="Dispatch email alert with discovered events")
+
+    # Command: test-event-sources
+    subparsers.add_parser("test-event-sources", help="Test Edge Computing event discovery feeds and registries")
+
+    # Command: debug-event-score
+    devt_parser = subparsers.add_parser("debug-event-score", help="Debug 0-10 relevance scoring for an event")
+    devt_parser.add_argument("--name", required=True, help="Event name")
+    devt_parser.add_argument("--organizer", default="ACM / IEEE", help="Event organizer")
+    devt_parser.add_argument("--description", default="", help="Event description or topics")
+    devt_parser.add_argument("--fee", default="", help="Registration fee details")
+    devt_parser.add_argument("--cfp", default=None, help="CFP deadline (YYYY-MM-DD)")
+    devt_parser.add_argument("--date", default=None, help="Event date (YYYY-MM-DD)")
+    devt_parser.add_argument("--location", default="Hybrid", help="Event location or online/hybrid")
+
     args = parser.parse_args()
 
     if args.command == "run":
@@ -536,6 +709,12 @@ def main():
         debug_opportunity_score(args)
     elif args.command == "supervisors":
         run_supervisors_cli(args)
+    elif args.command == "events":
+        run_events_cli(args)
+    elif args.command == "test-event-sources":
+        test_event_sources_cli(args)
+    elif args.command == "debug-event-score":
+        debug_event_score_cli(args)
     else:
         parser.print_help()
 

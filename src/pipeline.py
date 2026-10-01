@@ -19,6 +19,7 @@ from src.collectors.opportunities import OpportunityCollector
 from src.collectors.lab_recruitment import LabRecruitmentCollector
 from src.collectors.scholarships import ScholarshipCollector
 from src.collectors.github_repos import GitHubRepoCollector
+from src.events.collector import EdgeEventCollector
 from src.deduplication.deduplicator import Deduplicator
 from src.ranking.scorer import RelevanceScorer
 from src.summarization.intelligence import IntelligenceEngine
@@ -117,6 +118,9 @@ class ResearchPipeline:
 
         # GitHub Edge Repos & Benchmarks
         self.collectors.append(GitHubRepoCollector(name="GitHub Benchmarks"))
+
+        # Edge Computing Events & Academic/Industrial Opportunities
+        self.collectors.append(EdgeEventCollector(name="Edge Computing Events", config_manager=self.config))
 
     def run(self, mode: str = "daily", dry_run: bool = False) -> Dict[str, Any]:
         """Executes full discovery, analysis, persistence, and dispatch pipeline."""

@@ -1,0 +1,736 @@
+# Edge Computing Events Configuration
+# Covers Academic Conferences, Industry Conferences, Workshops & Symposia, Webinars, and Training/Bootcamps
+
+events_settings:
+  min_score: 6.5
+  upcoming_window_days: 270 # Look ahead window for events
+  state_file: "data/events.json"
+  seen_events_file: "data/seen_events.json"
+
+search_specifications:
+  primary_keywords:
+    - "Edge Computing"
+    - "Edge AI"
+    - "Edge Intelligence"
+    - "Mobile Edge Computing"
+    - "Multi-access Edge Computing"
+    - "MEC"
+    - "Fog Computing"
+    - "Cloud-Edge Continuum"
+    - "Distributed Edge Systems"
+    - "Federated Learning at the Edge"
+    - "Device-Edge-Cloud"
+    - "Computation Offloading"
+    - "Cloudlets"
+  secondary_keywords:
+    - "Distributed Systems"
+    - "Internet of Things"
+    - "IoT"
+    - "TinyML"
+    - "Serverless Computing"
+    - "Pervasive Computing"
+    - "5G/6G Networks"
+    - "Edge Security"
+    - "Edge Storage"
+    - "Edge Mesh"
+    - "Microservices at the Edge"
+  training_keywords:
+    - "Bootcamp"
+    - "Summer School"
+    - "Winter School"
+    - "Training Program"
+    - "Hands-on Workshop"
+    - "Tutorial"
+    - "Certification"
+    - "Doctoral Symposium"
+  negative_keywords:
+    - "crypto"
+    - "bitcoin"
+    - "nft"
+    - "web development bootcamp"
+    - "react js"
+    - "css tips"
+    - "affiliate marketing"
+    - "real estate"
+    - "dropshipping"
+
+discount_rules:
+  student_rate_keywords:
+    - "student rate"
+    - "student registration"
+    - "student ticket"
+    - "student discount"
+    - "acm student member"
+    - "ieee student member"
+    - "graduate student"
+    - "postgraduate"
+  travel_grant_keywords:
+    - "travel grant"
+    - "student travel grant"
+    - "stg"
+    - "travel award"
+    - "nsf travel grant"
+    - "acm sigmobile travel grant"
+    - "ieee comsoc travel grant"
+    - "travel stipend"
+  scholarship_keywords:
+    - "scholarship"
+    - "fellowship"
+    - "diversity scholarship"
+    - "inclusion grant"
+    - "attendance grant"
+  fee_waiver_keywords:
+    - "fee waiver"
+    - "hardship waiver"
+    - "developing country"
+    - "complimentary registration"
+    - "free admission"
+  early_bird_keywords:
+    - "early bird"
+    - "early-bird"
+    - "advance registration"
+    - "early registration"
+
+event_feeds:
+  - name: "WikiCFP Edge Computing"
+    url: "http://www.wikicfp.com/cfp/rss?cat=edge%20computing"
+    type: "rss"
+    default_event_type: "academic_conference"
+    tier: "tier3_conference"
+    enabled: true
+
+  - name: "WikiCFP Distributed Systems"
+    url: "http://www.wikicfp.com/cfp/rss?cat=distributed%20systems"
+    type: "rss"
+    default_event_type: "academic_conference"
+    tier: "tier3_conference"
+    enabled: true
+
+curated_events:
+  # =========================================================================
+  # 1. ACADEMIC CONFERENCES
+  # =========================================================================
+  - event_name: "ACM/IEEE Symposium on Edge Computing (SEC 2026)"
+    organizer: "ACM / IEEE Computer Society"
+    event_type: "academic_conference"
+    description: "The premier forum for edge computing systems, architectures, algorithms, and applications, bringing together researchers and practitioners across academia and industry."
+    topics:
+      - "Edge Computing"
+      - "Edge AI"
+      - "Cloudlets"
+      - "Edge Security"
+      - "Edge-Cloud Collaboration"
+      - "TinyML Systems"
+    start_date: "2026-11-10"
+    end_date: "2026-11-12"
+    location: "Seattle, WA, USA"
+    format: "hybrid"
+    country: "United States"
+    region: "North America"
+    official_website: "https://acm-ieee-sec.org/2026/"
+    registration_url: "https://acm-ieee-sec.org/2026/registration.html"
+    registration_fee: "$350 (Student) / $750 (Regular)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_early_bird: true
+    has_fee_waiver: true
+    discounts_subsidies:
+      - discount_type: "student_rate"
+        name: "ACM/IEEE Student Member Registration"
+        amount_or_rate: "$350 (over 50% discount vs regular $750)"
+        eligibility: "Full-time undergraduate or graduate students with valid student ID or ACM/IEEE student membership."
+        deadline: "2026-10-15"
+        application_url: "https://acm-ieee-sec.org/2026/registration.html"
+      - discount_type: "travel_grant"
+        name: "ACM/IEEE Student Travel Grant (STG)"
+        amount_or_rate: "Up to $1,200 travel and accommodation stipend + registration waiver"
+        eligibility: "Graduate students, particularly authors of accepted papers and students from underrepresented institutions."
+        deadline: "2026-09-15"
+        application_url: "https://acm-ieee-sec.org/2026/travel_grants.html"
+      - discount_type: "early_bird"
+        name: "Early-Bird Registration"
+        amount_or_rate: "Save $100 before October 1, 2026"
+        eligibility: "Open to all attendees registering prior to cutoff date."
+        deadline: "2026-10-01"
+    cfp_deadline: "2026-06-15"
+    important_dates:
+      cfp_deadline: "2026-06-15"
+      notification: "2026-08-20"
+      camera_ready: "2026-09-25"
+      early_bird_deadline: "2026-10-01"
+      conference_dates: "2026-11-10 to 2026-11-12"
+    target_audience:
+      - "PhD Researchers"
+      - "Systems Architects"
+      - "Edge Computing Engineers"
+      - "Faculty & Postdocs"
+    source: "Curated Official Conference Registry"
+    source_url: "https://acm-ieee-sec.org"
+
+  - event_name: "IEEE INFOCOM 2027"
+    organizer: "IEEE Communications Society (ComSoc)"
+    event_type: "academic_conference"
+    description: "Top-tier conference covering networking, distributed algorithms, Mobile Edge Computing (MEC), resource scheduling, and edge intelligence protocols."
+    topics:
+      - "Mobile Edge Computing"
+      - "Edge Networking"
+      - "Resource Allocation"
+      - "Distributed Algorithms"
+      - "6G & Edge Intelligence"
+    start_date: "2027-04-18"
+    end_date: "2027-04-21"
+    location: "London, UK"
+    format: "in_person"
+    country: "United Kingdom"
+    region: "Europe"
+    official_website: "https://infocom2027.ieee-infocom.org/"
+    registration_url: "https://infocom2027.ieee-infocom.org/registration"
+    registration_fee: "£420 (Student) / £890 (Regular)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_early_bird: true
+    discounts_subsidies:
+      - discount_type: "student_rate"
+        name: "IEEE Student Member Rate"
+        amount_or_rate: "£420 (vs £890 standard author rate)"
+        eligibility: "Full-time PhD and MSc students with valid IEEE ComSoc student membership."
+        deadline: "2027-03-01"
+      - discount_type: "travel_grant"
+        name: "IEEE ComSoc Student Travel Grant"
+        amount_or_rate: "Up to $1,500 reimbursement for international travel and lodging"
+        eligibility: "PhD students presenting peer-reviewed papers or posters at INFOCOM."
+        deadline: "2027-02-15"
+    cfp_deadline: "2026-10-15"
+    important_dates:
+      cfp_deadline: "2026-10-15"
+      notification: "2026-12-15"
+      camera_ready: "2027-01-31"
+      early_bird_deadline: "2027-03-01"
+    target_audience:
+      - "Networking Researchers"
+      - "Edge Systems Specialists"
+      - "PhD Students"
+    source: "Curated Official Conference Registry"
+    source_url: "https://infocom.ieee.org"
+
+  - event_name: "ACM MobiCom 2026"
+    organizer: "ACM SIGMOBILE"
+    event_type: "academic_conference"
+    description: "International Conference on Mobile Computing and Networking, highlighting wireless edge systems, collaborative mobile inference, and ubiquitous computing."
+    topics:
+      - "Mobile Computing"
+      - "Edge AI"
+      - "Wireless Edge"
+      - "Collaborative Inference"
+      - "Pervasive Systems"
+    start_date: "2026-10-19"
+    end_date: "2026-10-23"
+    location: "Madrid, Spain"
+    format: "hybrid"
+    country: "Spain"
+    region: "Europe"
+    official_website: "https://sigmobile.org/mobicom/2026/"
+    registration_url: "https://sigmobile.org/mobicom/2026/registration.html"
+    registration_fee: "€380 (Student) / €820 (Regular)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_early_bird: true
+    discounts_subsidies:
+      - discount_type: "travel_grant"
+        name: "ACM SIGMOBILE Student Travel Grant"
+        amount_or_rate: "Up to €1,000 travel stipend + student registration waiver"
+        eligibility: "Enrolled PhD/graduate students conducting mobile and edge systems research."
+        deadline: "2026-08-30"
+    cfp_deadline: "2026-03-20"
+    important_dates:
+      cfp_deadline: "2026-03-20"
+      notification: "2026-06-25"
+      early_bird_deadline: "2026-09-10"
+    target_audience:
+      - "Mobile Systems Researchers"
+      - "Edge AI Engineers"
+    source: "Curated Official Conference Registry"
+    source_url: "https://sigmobile.org/mobicom"
+
+  - event_name: "USENIX ATC 2027 (Annual Technical Conference)"
+    organizer: "USENIX Association"
+    event_type: "academic_conference"
+    description: "Premier systems conference covering distributed operating systems, container runtimes, cloud-edge storage, and low-latency infrastructure."
+    topics:
+      - "Distributed Systems"
+      - "Edge/Cloud Infrastructure"
+      - "Operating Systems"
+      - "Serverless Runtime"
+      - "Storage Systems"
+    start_date: "2027-07-07"
+    end_date: "2027-07-09"
+    location: "Boston, MA, USA"
+    format: "hybrid"
+    country: "United States"
+    region: "North America"
+    official_website: "https://www.usenix.org/conference/atc27"
+    registration_url: "https://www.usenix.org/conference/atc27/registration"
+    registration_fee: "$400 (Student) / $950 (Regular)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_fee_waiver: true
+    discounts_subsidies:
+      - discount_type: "scholarship"
+        name: "USENIX Student Conference Grant"
+        amount_or_rate: "Full conference registration fee waiver + travel grant"
+        eligibility: "Full-time students in computer science and engineering studying systems."
+        deadline: "2027-05-15"
+        application_url: "https://www.usenix.org/student-programs"
+    cfp_deadline: "2027-01-12"
+    important_dates:
+      cfp_deadline: "2027-01-12"
+      notification: "2027-04-05"
+    target_audience:
+      - "Systems Software Engineers"
+      - "PhD Researchers"
+    source: "Curated Official Conference Registry"
+    source_url: "https://www.usenix.org"
+
+  - event_name: "IEEE ICDCS 2027 (International Conference on Distributed Computing Systems)"
+    organizer: "IEEE Computer Society"
+    event_type: "academic_conference"
+    description: "Flagship distributed computing venue covering edge intelligence, fog nodes, decentralized consensus, and federated edge architectures."
+    topics:
+      - "Distributed Systems"
+      - "Edge Computing"
+      - "Fog Computing"
+      - "Federated Learning at the Edge"
+      - "Consensus Protocols"
+    start_date: "2027-07-12"
+    end_date: "2027-07-15"
+    location: "Tokyo, Japan"
+    format: "in_person"
+    country: "Japan"
+    region: "Asia"
+    official_website: "https://icdcs2027.org"
+    registration_url: "https://icdcs2027.org/registration"
+    registration_fee: "¥55,000 (Student) / ¥110,000 (Regular)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_early_bird: true
+    discounts_subsidies:
+      - discount_type: "student_rate"
+        name: "IEEE Student Member Registration"
+        amount_or_rate: "50% discount on registration fee"
+        eligibility: "Registered students with valid IEEE student ID."
+      - discount_type: "travel_grant"
+        name: "IEEE TCPP / ICDCS Student Travel Grant"
+        amount_or_rate: "Up to $1,000 travel assistance"
+        eligibility: "Authors of papers in technical sessions and workshops."
+    cfp_deadline: "2026-12-10"
+    important_dates:
+      cfp_deadline: "2026-12-10"
+      notification: "2027-03-01"
+      early_bird_deadline: "2027-05-20"
+    target_audience:
+      - "Distributed Systems Researchers"
+      - "Doctoral Candidates"
+    source: "Curated Official Conference Registry"
+    source_url: "https://icdcs.org"
+
+  # =========================================================================
+  # 2. INDUSTRIAL CONFERENCES
+  # =========================================================================
+  - event_name: "KubeCon + CloudNativeCon Europe 2027"
+    organizer: "Cloud Native Computing Foundation (CNCF) / Linux Foundation"
+    event_type: "industry_conference"
+    description: "The world's leading open-source cloud native event featuring dedicated tracks on Cloud-Edge Continuum, KubeEdge, Akraino, and distributed Kubernetes deployments."
+    topics:
+      - "Cloud-Edge Continuum"
+      - "KubeEdge"
+      - "Edge Orchestration"
+      - "Kubernetes"
+      - "Distributed AI at the Edge"
+    start_date: "2027-03-23"
+    end_date: "2027-03-26"
+    location: "Amsterdam, Netherlands"
+    format: "hybrid"
+    country: "Netherlands"
+    region: "Europe"
+    official_website: "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/"
+    registration_url: "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/register/"
+    registration_fee: "$150 (Student) / $1,200 (Corporate)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_early_bird: true
+    discounts_subsidies:
+      - discount_type: "scholarship"
+        name: "Dan Kohn Diversity & Student Scholarship"
+        amount_or_rate: "100% free registration + up to $1,500 travel reimbursement"
+        eligibility: "Full-time students and members of underrepresented open source communities."
+        deadline: "2027-01-10"
+        application_url: "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/attend/scholarships/"
+      - discount_type: "student_rate"
+        name: "CNCF Academic Student Pass"
+        amount_or_rate: "$150 in-person / Free virtual pass"
+        eligibility: "Enrolled university students with verifiable .edu or academic email."
+        deadline: "2027-03-01"
+    cfp_deadline: "2026-11-01"
+    important_dates:
+      cfp_deadline: "2026-11-01"
+      scholarship_deadline: "2027-01-10"
+      early_bird_deadline: "2027-01-25"
+    target_audience:
+      - "Cloud Native Engineers"
+      - "Edge Platform Developers"
+      - "Academic Researchers"
+    source: "Linux Foundation Events Registry"
+    source_url: "https://events.linuxfoundation.org"
+
+  - event_name: "Edge Computing World 2026"
+    organizer: "Topio Networks / Edge Computing Association"
+    event_type: "industry_conference"
+    description: "Global business and technical summit for edge infrastructure, enterprise IoT, MEC deployment cases, and real-time AI inference architectures."
+    topics:
+      - "Edge Computing"
+      - "Enterprise Edge"
+      - "MEC"
+      - "Edge AI Deployment"
+      - "Industrial IoT"
+    start_date: "2026-10-27"
+    end_date: "2026-10-29"
+    location: "Santa Clara, CA, USA"
+    format: "hybrid"
+    country: "United States"
+    region: "North America"
+    official_website: "https://www.edgecomputingworld.com/"
+    registration_url: "https://www.edgecomputingworld.com/register"
+    registration_fee: "Free (Virtual) / $795 (In-Person Pass)"
+    fee_status: "hybrid_free"
+    has_student_discount: true
+    has_travel_grant: false
+    has_scholarship: false
+    has_early_bird: true
+    has_fee_waiver: true
+    discounts_subsidies:
+      - discount_type: "fee_waiver"
+        name: "Free Virtual Attendee Pass"
+        amount_or_rate: "100% Free digital access to all keynotes and recorded sessions"
+        eligibility: "Open to students, researchers, and global online participants."
+      - discount_type: "student_rate"
+        name: "Academic In-Person Rate"
+        amount_or_rate: "$195 (over 75% discount vs $795)"
+        eligibility: "University students and faculty members with university credentials."
+    important_dates:
+      early_bird_deadline: "2026-09-30"
+      event_dates: "2026-10-27 to 2026-10-29"
+    target_audience:
+      - "Industry Leaders"
+      - "IoT & Edge Practitioners"
+      - "Graduate Researchers"
+    source: "Industry Event Announcements"
+    source_url: "https://www.edgecomputingworld.com"
+
+  # =========================================================================
+  # 3. WORKSHOPS & SYMPOSIA
+  # =========================================================================
+  - event_name: "ACM EdgeSys 2027 (International Workshop on Edge Systems, Analytics and Networking)"
+    organizer: "ACM EuroSys / SIGOPS"
+    event_type: "workshop"
+    description: "Specialized systems workshop co-located with EuroSys focused on low-overhead edge runtimes, split inference, TinyML, and edge benchmarking."
+    topics:
+      - "Edge Systems"
+      - "Edge Analytics"
+      - "TinyML"
+      - "Edge Benchmarking"
+      - "Split Learning"
+    start_date: "2027-04-26"
+    end_date: "2027-04-26"
+    location: "Munich, Germany"
+    format: "hybrid"
+    country: "Germany"
+    region: "Europe"
+    official_website: "https://edgesys.org/2027/"
+    registration_url: "https://edgesys.org/2027/register"
+    registration_fee: "€150 (Student Workshop Rate)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_early_bird: true
+    discounts_subsidies:
+      - discount_type: "travel_grant"
+        name: "EuroSys & EdgeSys Student Travel Grants"
+        amount_or_rate: "Up to €800 for travel and workshop registration"
+        eligibility: "Enrolled graduate students with accepted paper or poster."
+        deadline: "2027-03-01"
+    cfp_deadline: "2027-01-20"
+    important_dates:
+      cfp_deadline: "2027-01-20"
+      notification: "2027-02-28"
+      camera_ready: "2027-03-20"
+    target_audience:
+      - "Edge Systems Researchers"
+      - "Doctoral Students"
+    source: "Curated Workshop Series"
+    source_url: "https://edgesys.org"
+
+  - event_name: "HotEdge 2027 (USENIX Workshop on Hot Topics in Edge Computing)"
+    organizer: "USENIX Association"
+    event_type: "workshop"
+    description: "High-impact workshop bringing together researchers to discuss contentious and provocative new directions in edge computing, edge storage, and hardware heterogeneity."
+    topics:
+      - "Edge Computing"
+      - "Hardware Heterogeneity"
+      - "Edge Mesh"
+      - "Fault Tolerance at Edge"
+      - "Edge Storage"
+    start_date: "2027-07-06"
+    end_date: "2027-07-06"
+    location: "Boston, MA, USA"
+    format: "hybrid"
+    country: "United States"
+    region: "North America"
+    official_website: "https://www.usenix.org/conference/hotedge27"
+    registration_url: "https://www.usenix.org/conference/hotedge27/registration"
+    registration_fee: "$195 (Student) / $450 (Regular)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    discounts_subsidies:
+      - discount_type: "scholarship"
+        name: "USENIX Student Travel Program"
+        amount_or_rate: "Free registration + flight/hotel stipend"
+        eligibility: "Full-time graduate students."
+    cfp_deadline: "2027-03-10"
+    important_dates:
+      cfp_deadline: "2027-03-10"
+      notification: "2027-04-20"
+    target_audience:
+      - "PhD Researchers"
+      - "Systems Architects"
+    source: "USENIX Workshop Portal"
+    source_url: "https://www.usenix.org"
+
+  # =========================================================================
+  # 4. WEBINARS
+  # =========================================================================
+  - event_name: "LF Edge Webinar: State of Open Source Edge Computing & Akraino Blueprints"
+    organizer: "The Linux Foundation (LF Edge)"
+    event_type: "webinar"
+    description: "Deep dive into production open-source edge stacks including EdgeX Foundry, Akraino Edge Stack, and Open Horizon for edge AI workload orchestration."
+    topics:
+      - "Edge Computing"
+      - "EdgeX Foundry"
+      - "Akraino"
+      - "Edge Orchestration"
+      - "Open Source Edge"
+    start_date: "2026-10-22"
+    end_date: "2026-10-22"
+    location: "Online / Virtual"
+    format: "online"
+    country: "Global"
+    region: "Online"
+    official_website: "https://www.lfedge.org/resources/webinars/"
+    registration_url: "https://zoom.us/webinar/register/lfedge-2026-state-of-edge"
+    registration_fee: "Free"
+    fee_status: "free"
+    has_student_discount: false
+    has_travel_grant: false
+    has_scholarship: false
+    has_early_bird: false
+    has_fee_waiver: true
+    discounts_subsidies:
+      - discount_type: "fee_waiver"
+        name: "Free Public Webinar Registration"
+        amount_or_rate: "100% Free admission + on-demand recording access"
+        eligibility: "Open to researchers, students, developers worldwide."
+    important_dates:
+      webinar_date: "2026-10-22 (16:00 UTC)"
+    target_audience:
+      - "Edge Developers"
+      - "Academic Researchers"
+      - "PhD Students"
+    source: "Linux Foundation LF Edge Webinar Portal"
+    source_url: "https://www.lfedge.org"
+
+  - event_name: "IEEE ComSoc Technical Webinar: Edge Intelligence in 6G Distributed Networks"
+    organizer: "IEEE Communications Society (ComSoc)"
+    event_type: "webinar"
+    description: "Distinguished Lecturer seminar focusing on mathematical and architectural frameworks for distributed federated learning across next-generation 6G edge nodes."
+    topics:
+      - "Edge Intelligence"
+      - "6G"
+      - "Federated Learning at the Edge"
+      - "Distributed Edge Systems"
+    start_date: "2026-11-18"
+    end_date: "2026-11-18"
+    location: "Online / Virtual"
+    format: "online"
+    country: "Global"
+    region: "Online"
+    official_website: "https://www.comsoc.org/education-training/webinars"
+    registration_url: "https://www.comsoc.org/education-training/webinars/edge-intelligence-6g"
+    registration_fee: "Free for IEEE Members & Students"
+    fee_status: "free"
+    has_student_discount: true
+    has_travel_grant: false
+    has_scholarship: false
+    has_early_bird: false
+    discounts_subsidies:
+      - discount_type: "student_rate"
+        name: "Complimentary Student Member Registration"
+        amount_or_rate: "Free access"
+        eligibility: "All IEEE and IEEE ComSoc student members."
+    important_dates:
+      webinar_date: "2026-11-18 (14:00 GMT)"
+    target_audience:
+      - "PhD Researchers"
+      - "Network Engineers"
+    source: "IEEE ComSoc Webinar Catalog"
+    source_url: "https://www.comsoc.org"
+
+  # =========================================================================
+  # 5. TRAINING PROGRAMS, COURSES, AND BOOTCAMPS
+  # =========================================================================
+  - event_name: "TinyML & Edge AI Summer School 2027"
+    organizer: "TinyML Foundation / Harvard University / ICTP"
+    event_type: "summer_school"
+    description: "Hands-on intensive academic training program covering model quantization, hardware acceleration on microcontrollers, and low-power distributed inference."
+    topics:
+      - "TinyML"
+      - "Edge AI"
+      - "Quantization for Edge"
+      - "Hardware Acceleration"
+      - "Edge Model Compression"
+    start_date: "2027-06-14"
+    end_date: "2027-06-18"
+    location: "Trieste, Italy"
+    format: "hybrid"
+    country: "Italy"
+    region: "Europe"
+    official_website: "https://www.tinyml.org/education/summer-school-2027"
+    registration_url: "https://www.tinyml.org/education/summer-school-2027/apply"
+    registration_fee: "€250 (In-person) / Free (Virtual)"
+    fee_status: "hybrid_free"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    has_early_bird: false
+    has_fee_waiver: true
+    discounts_subsidies:
+      - discount_type: "scholarship"
+        name: "ICTP / TinyML Full Fellowship"
+        amount_or_rate: "100% tuition waiver + travel flights + lodging stipend"
+        eligibility: "PhD students and early-career researchers from developing nations."
+        deadline: "2027-03-15"
+        application_url: "https://www.tinyml.org/fellowships"
+      - discount_type: "fee_waiver"
+        name: "Free Online Track"
+        amount_or_rate: "Free live stream and lab assignments access"
+        eligibility: "Open to any student worldwide with basic Python and ML background."
+    important_dates:
+      application_deadline: "2027-03-15"
+      selection_announcement: "2027-04-15"
+      school_dates: "2027-06-14 to 2027-06-18"
+    target_audience:
+      - "PhD Students"
+      - "Embedded Systems Engineers"
+      - "Graduate Researchers"
+    source: "TinyML Educational Registry"
+    source_url: "https://www.tinyml.org"
+
+  - event_name: "IEEE ComSoc School on Edge Computing and Distributed Intelligence 2027"
+    organizer: "IEEE Communications Society"
+    event_type: "training_program"
+    description: "Advanced 5-day doctoral training course taught by leading international professors on edge resource scheduling, split DNN learning, and edge mesh testbeds."
+    topics:
+      - "Edge Computing"
+      - "Distributed AI at the Edge"
+      - "Edge Orchestration"
+      - "Task Scheduling"
+      - "Edge Benchmarking"
+    start_date: "2027-09-06"
+    end_date: "2027-09-10"
+    location: "Cambridge, UK"
+    format: "in_person"
+    country: "United Kingdom"
+    region: "Europe"
+    official_website: "https://www.comsoc.org/education-training/ieee-comsoc-schools"
+    registration_url: "https://www.comsoc.org/education-training/cambridge-edge-school-2027"
+    registration_fee: "£300 (Students) / £600 (Regular)"
+    fee_status: "paid"
+    has_student_discount: true
+    has_travel_grant: true
+    has_scholarship: true
+    discounts_subsidies:
+      - discount_type: "scholarship"
+        name: "ComSoc Doctoral Attendance Grant"
+        amount_or_rate: "Full tuition waiver and student dormitory accommodation"
+        eligibility: "PhD students in years 1-3 working in edge computing or distributed networks."
+        deadline: "2027-06-01"
+      - discount_type: "student_rate"
+        name: "Subsidized Student Registration"
+        amount_or_rate: "£300 (50% reduction including daily lunches and social dinner)"
+        eligibility: "Registered full-time doctoral students."
+    important_dates:
+      application_deadline: "2027-06-01"
+      notification: "2027-06-25"
+      school_dates: "2027-09-06 to 2027-09-10"
+    target_audience:
+      - "PhD Candidates"
+      - "Early Stage Researchers"
+    source: "IEEE ComSoc Schools Directory"
+    source_url: "https://www.comsoc.org"
+
+  - event_name: "LF Edge & Akraino Edge Developer Bootcamp 2026"
+    organizer: "The Linux Foundation (LF Edge) & CNCF"
+    event_type: "bootcamp"
+    description: "Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices."
+    topics:
+      - "Edge Computing"
+      - "KubeEdge"
+      - "Microservices at the Edge"
+      - "EdgeX Foundry"
+      - "Edge Benchmarking"
+    start_date: "2026-11-16"
+    end_date: "2026-11-18"
+    location: "Online / Virtual"
+    format: "online"
+    country: "Global"
+    region: "Online"
+    official_website: "https://www.lfedge.org/education/bootcamps/"
+    registration_url: "https://www.lfedge.org/education/bootcamps/register"
+    registration_fee: "$50 (Student Certification Exam fee optional) / Free Attendance"
+    fee_status: "hybrid_free"
+    has_student_discount: true
+    has_travel_grant: false
+    has_scholarship: true
+    has_early_bird: false
+    has_fee_waiver: true
+    discounts_subsidies:
+      - discount_type: "fee_waiver"
+        name: "Free Virtual Bootcamp Attendance"
+        amount_or_rate: "100% Free access to all hands-on labs, live code walkthroughs, and Slack community"
+        eligibility: "Open to students, academic researchers, and open-source contributors."
+      - discount_type: "student_rate"
+        name: "Subsidized LF Edge Certification Voucher"
+        amount_or_rate: "$50 (85% discount vs $350 standard exam fee)"
+        eligibility: "Students who complete all hands-on lab exercises during the bootcamp."
+    important_dates:
+      registration_deadline: "2026-11-15"
+      bootcamp_dates: "2026-11-16 to 2026-11-18"
+    target_audience:
+      - "PhD Students"
+      - "Edge Software Engineers"
+      - "Distributed Systems Practitioners"
+    source: "Linux Foundation Training Catalog"
+    source_url: "https://www.lfedge.org"

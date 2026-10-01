@@ -1,0 +1,428 @@
+[
+  {
+    "event_name": "ACM/IEEE Symposium on Edge Computing (SEC 2026)",
+    "organizer": "ACM / IEEE Computer Society",
+    "event_type": "academic_conference",
+    "description": "The premier forum for edge computing systems, architectures, algorithms, and applications, bringing together researchers and practitioners across academia and industry.",
+    "topics": [
+      "Edge Computing",
+      "Edge AI",
+      "Cloudlets",
+      "Edge Security",
+      "Edge-Cloud Collaboration",
+      "TinyML Systems"
+    ],
+    "start_date": "2026-11-10",
+    "end_date": "2026-11-12",
+    "location": "Seattle, WA, USA",
+    "format": "hybrid",
+    "country": "United States",
+    "region": "North America",
+    "official_website": "https://acm-ieee-sec.org/2026/",
+    "registration_url": "https://acm-ieee-sec.org/2026/registration.html",
+    "registration_fee": "$350 (Student) / $750 (Regular)",
+    "fee_status": "paid",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": true,
+    "has_early_bird": true,
+    "has_fee_waiver": true,
+    "discounts_subsidies": [
+      {
+        "discount_type": "student_rate",
+        "name": "ACM/IEEE Student Member Registration",
+        "amount_or_rate": "$350 (over 50% discount vs regular $750)",
+        "eligibility": "Full-time undergraduate or graduate students with valid student ID or ACM/IEEE student membership.",
+        "deadline": "2026-10-15",
+        "application_url": "https://acm-ieee-sec.org/2026/registration.html"
+      },
+      {
+        "discount_type": "travel_grant",
+        "name": "ACM/IEEE Student Travel Grant (STG)",
+        "amount_or_rate": "Up to $1,200 travel and accommodation stipend + registration waiver",
+        "eligibility": "Graduate students, particularly authors of accepted papers and students from underrepresented institutions.",
+        "deadline": "2026-09-15",
+        "application_url": "https://acm-ieee-sec.org/2026/travel_grants.html"
+      },
+      {
+        "discount_type": "early_bird",
+        "name": "Early-Bird Registration",
+        "amount_or_rate": "Save $100 before October 1, 2026",
+        "eligibility": "Open to all attendees registering prior to cutoff date.",
+        "deadline": "2026-10-01",
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Full-time undergraduate or graduate students with valid student ID or ACM/IEEE student membership. Graduate students, particularly authors of accepted papers and students from underrepresented institutions.",
+    "cfp_deadline": "2026-06-15",
+    "important_dates": {
+      "cfp_deadline": "2026-06-15",
+      "notification": "2026-08-20",
+      "camera_ready": "2026-09-25",
+      "early_bird_deadline": "2026-10-01",
+      "conference_dates": "2026-11-10 to 2026-11-12"
+    },
+    "target_audience": [
+      "PhD Researchers",
+      "Systems Architects",
+      "Edge Computing Engineers",
+      "Faculty & Postdocs"
+    ],
+    "source_url": "https://acm-ieee-sec.org",
+    "source": "Curated Official Conference Registry",
+    "discovery_date": "2026-10-01",
+    "last_verified_date": "2026-10-01",
+    "status": "registration_open",
+    "relevance_score": 9.4,
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 2.5,
+      "affordability_boost": 1.5,
+      "actionability_boost": 0.6,
+      "phd_value_boost": 0.8,
+      "negative_penalty": 0.0,
+      "final_score": 9.4,
+      "matched_topics": [
+        "Edge Computing",
+        "Edge AI",
+        "Cloudlets",
+        "Edge Security"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Computing (+2.5)",
+        "Tier 1 professional organization (ACM / IEEE Computer Society) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Early-bird discount window open (+0.3)",
+        "Event upcoming in 40 days (+0.3)"
+      ]
+    },
+    "id": "evt_sec2026acmieee",
+    "raw_metadata": {}
+  },
+  {
+    "event_name": "KubeCon + CloudNativeCon Europe 2027",
+    "organizer": "Cloud Native Computing Foundation (CNCF) / Linux Foundation",
+    "event_type": "industry_conference",
+    "description": "The world's leading open-source cloud native event featuring dedicated tracks on Cloud-Edge Continuum, KubeEdge, Akraino, and distributed Kubernetes deployments.",
+    "topics": [
+      "Cloud-Edge Continuum",
+      "KubeEdge",
+      "Edge Orchestration",
+      "Kubernetes",
+      "Distributed AI at the Edge"
+    ],
+    "start_date": "2027-03-23",
+    "end_date": "2027-03-26",
+    "location": "Amsterdam, Netherlands",
+    "format": "hybrid",
+    "country": "Netherlands",
+    "region": "Europe",
+    "official_website": "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/",
+    "registration_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/register/",
+    "registration_fee": "$150 (Student) / $1,200 (Corporate)",
+    "fee_status": "paid",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": true,
+    "has_early_bird": true,
+    "has_fee_waiver": false,
+    "discounts_subsidies": [
+      {
+        "discount_type": "scholarship",
+        "name": "Dan Kohn Diversity & Student Scholarship",
+        "amount_or_rate": "100% free registration + up to $1,500 travel reimbursement",
+        "eligibility": "Full-time students and members of underrepresented open source communities.",
+        "deadline": "2027-01-10",
+        "application_url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-europe-2027/attend/scholarships/"
+      },
+      {
+        "discount_type": "student_rate",
+        "name": "CNCF Academic Student Pass",
+        "amount_or_rate": "$150 in-person / Free virtual pass",
+        "eligibility": "Enrolled university students with verifiable .edu or academic email.",
+        "deadline": "2027-03-01",
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Full-time students and members of underrepresented open source communities. Enrolled university students with verifiable .edu email.",
+    "cfp_deadline": "2026-11-01",
+    "important_dates": {
+      "cfp_deadline": "2026-11-01",
+      "scholarship_deadline": "2027-01-10",
+      "early_bird_deadline": "2027-01-25"
+    },
+    "target_audience": [
+      "Cloud Native Engineers",
+      "Edge Platform Developers",
+      "Academic Researchers"
+    ],
+    "source_url": "https://events.linuxfoundation.org",
+    "source": "Linux Foundation Events Registry",
+    "discovery_date": "2026-10-01",
+    "last_verified_date": "2026-10-01",
+    "status": "cfp_open",
+    "relevance_score": 8.7,
+    "score": {
+      "topic_score": 3.2,
+      "credibility_score": 2.0,
+      "affordability_boost": 1.5,
+      "actionability_boost": 1.0,
+      "phd_value_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 8.7,
+      "matched_topics": [
+        "Cloud-Edge Continuum",
+        "Edge Orchestration",
+        "Distributed Systems"
+      ],
+      "reasons": [
+        "Primary Edge topic match in description: Cloud-Edge Continuum (+1.8)",
+        "Tier 2 established foundation (CNCF / Linux Foundation) (+2.0)",
+        "Student travel grant & Dan Kohn scholarship available (+1.5)",
+        "Active CFP deadline in 31 days (+0.7)"
+      ]
+    },
+    "id": "evt_kubeconeu2027cncf",
+    "raw_metadata": {}
+  },
+  {
+    "event_name": "ACM EdgeSys 2027 (International Workshop on Edge Systems, Analytics and Networking)",
+    "organizer": "ACM EuroSys / SIGOPS",
+    "event_type": "workshop",
+    "description": "Specialized systems workshop co-located with EuroSys focused on low-overhead edge runtimes, split inference, TinyML, and edge benchmarking.",
+    "topics": [
+      "Edge Systems",
+      "Edge Analytics",
+      "TinyML",
+      "Edge Benchmarking",
+      "Split Learning"
+    ],
+    "start_date": "2027-04-26",
+    "end_date": "2027-04-26",
+    "location": "Munich, Germany",
+    "format": "hybrid",
+    "country": "Germany",
+    "region": "Europe",
+    "official_website": "https://edgesys.org/2027/",
+    "registration_url": "https://edgesys.org/2027/register",
+    "registration_fee": "€150 (Student Workshop Rate)",
+    "fee_status": "paid",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": true,
+    "has_early_bird": true,
+    "has_fee_waiver": false,
+    "discounts_subsidies": [
+      {
+        "discount_type": "travel_grant",
+        "name": "EuroSys & EdgeSys Student Travel Grants",
+        "amount_or_rate": "Up to €800 for travel and workshop registration",
+        "eligibility": "Enrolled graduate students with accepted paper or poster.",
+        "deadline": "2027-03-01",
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Enrolled graduate students with accepted paper or poster.",
+    "cfp_deadline": "2027-01-20",
+    "important_dates": {
+      "cfp_deadline": "2027-01-20",
+      "notification": "2027-02-28",
+      "camera_ready": "2027-03-20"
+    },
+    "target_audience": [
+      "Edge Systems Researchers",
+      "Doctoral Students"
+    ],
+    "source_url": "https://edgesys.org",
+    "source": "Curated Workshop Series",
+    "discovery_date": "2026-10-01",
+    "last_verified_date": "2026-10-01",
+    "status": "cfp_open",
+    "relevance_score": 9.1,
+    "score": {
+      "topic_score": 3.8,
+      "credibility_score": 2.5,
+      "affordability_boost": 1.3,
+      "actionability_boost": 0.5,
+      "phd_value_boost": 1.0,
+      "negative_penalty": 0.0,
+      "final_score": 9.1,
+      "matched_topics": [
+        "Edge Systems",
+        "Edge Computing",
+        "TinyML",
+        "Distributed Systems"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: EdgeSys (+2.5)",
+        "Tier 1 professional organization (ACM EuroSys / SIGOPS) (+2.5)",
+        "EuroSys Student Travel Grant available (+0.8)",
+        "Doctoral symposium & research workshop track (+0.8)"
+      ]
+    },
+    "id": "evt_edgesys2027acm",
+    "raw_metadata": {}
+  },
+  {
+    "event_name": "LF Edge Webinar: State of Open Source Edge Computing & Akraino Blueprints",
+    "organizer": "The Linux Foundation (LF Edge)",
+    "event_type": "webinar",
+    "description": "Deep dive into production open-source edge stacks including EdgeX Foundry, Akraino Edge Stack, and Open Horizon for edge AI workload orchestration.",
+    "topics": [
+      "Edge Computing",
+      "EdgeX Foundry",
+      "Akraino",
+      "Edge Orchestration",
+      "Open Source Edge"
+    ],
+    "start_date": "2026-10-22",
+    "end_date": "2026-10-22",
+    "location": "Online / Virtual",
+    "format": "online",
+    "country": "Global",
+    "region": "Online",
+    "official_website": "https://www.lfedge.org/resources/webinars/",
+    "registration_url": "https://zoom.us/webinar/register/lfedge-2026-state-of-edge",
+    "registration_fee": "Free",
+    "fee_status": "free",
+    "has_student_discount": false,
+    "has_travel_grant": false,
+    "has_scholarship": false,
+    "has_early_bird": false,
+    "has_fee_waiver": true,
+    "discounts_subsidies": [
+      {
+        "discount_type": "fee_waiver",
+        "name": "Free Public Webinar Registration",
+        "amount_or_rate": "100% Free admission + on-demand recording access",
+        "eligibility": "Open to researchers, students, developers worldwide.",
+        "deadline": null,
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Open to researchers, students, developers worldwide.",
+    "cfp_deadline": null,
+    "important_dates": {
+      "webinar_date": "2026-10-22 (16:00 UTC)"
+    },
+    "target_audience": [
+      "Edge Developers",
+      "Academic Researchers",
+      "PhD Students"
+    ],
+    "source_url": "https://www.lfedge.org",
+    "source": "Linux Foundation LF Edge Webinar Portal",
+    "discovery_date": "2026-10-01",
+    "last_verified_date": "2026-10-01",
+    "status": "registration_open",
+    "relevance_score": 8.3,
+    "score": {
+      "topic_score": 3.5,
+      "credibility_score": 2.0,
+      "affordability_boost": 1.5,
+      "actionability_boost": 0.8,
+      "phd_value_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 8.3,
+      "matched_topics": [
+        "Edge Computing",
+        "Edge Orchestration"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Computing (+2.5)",
+        "Tier 2 established foundation (The Linux Foundation) (+2.0)",
+        "100% Free registration (+1.0)",
+        "Event upcoming in 21 days (+0.3)"
+      ]
+    },
+    "id": "evt_lfedge_webinar_20261022",
+    "raw_metadata": {}
+  },
+  {
+    "event_name": "TinyML & Edge AI Summer School 2027",
+    "organizer": "TinyML Foundation / Harvard University / ICTP",
+    "event_type": "summer_school",
+    "description": "Hands-on intensive academic training program covering model quantization, hardware acceleration on microcontrollers, and low-power distributed inference.",
+    "topics": [
+      "TinyML",
+      "Edge AI",
+      "Quantization for Edge",
+      "Hardware Acceleration",
+      "Edge Model Compression"
+    ],
+    "start_date": "2027-06-14",
+    "end_date": "2027-06-18",
+    "location": "Trieste, Italy",
+    "format": "hybrid",
+    "country": "Italy",
+    "region": "Europe",
+    "official_website": "https://www.tinyml.org/education/summer-school-2027",
+    "registration_url": "https://www.tinyml.org/education/summer-school-2027/apply",
+    "registration_fee": "€250 (In-person) / Free (Virtual)",
+    "fee_status": "hybrid_free",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": true,
+    "has_early_bird": false,
+    "has_fee_waiver": true,
+    "discounts_subsidies": [
+      {
+        "discount_type": "scholarship",
+        "name": "ICTP / TinyML Full Fellowship",
+        "amount_or_rate": "100% tuition waiver + travel flights + lodging stipend",
+        "eligibility": "PhD students and early-career researchers from developing nations.",
+        "deadline": "2027-03-15",
+        "application_url": "https://www.tinyml.org/fellowships"
+      },
+      {
+        "discount_type": "fee_waiver",
+        "name": "Free Online Track",
+        "amount_or_rate": "Free live stream and lab assignments access",
+        "eligibility": "Open to any student worldwide with basic Python and ML background.",
+        "deadline": null,
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "PhD students and early-career researchers from developing nations. Free online track open worldwide.",
+    "cfp_deadline": null,
+    "important_dates": {
+      "application_deadline": "2027-03-15",
+      "selection_announcement": "2027-04-15",
+      "school_dates": "2027-06-14 to 2027-06-18"
+    },
+    "target_audience": [
+      "PhD Students",
+      "Embedded Systems Engineers",
+      "Graduate Researchers"
+    ],
+    "source_url": "https://www.tinyml.org",
+    "source": "TinyML Educational Registry",
+    "discovery_date": "2026-10-01",
+    "last_verified_date": "2026-10-01",
+    "status": "upcoming",
+    "relevance_score": 9.2,
+    "score": {
+      "topic_score": 3.7,
+      "credibility_score": 2.0,
+      "affordability_boost": 1.5,
+      "actionability_boost": 0.5,
+      "phd_value_boost": 1.0,
+      "negative_penalty": 0.0,
+      "final_score": 9.2,
+      "matched_topics": [
+        "Edge AI",
+        "TinyML",
+        "Edge Computing"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge AI & TinyML (+2.5)",
+        "Tier 2 established university/lab (Harvard / ICTP / TinyML) (+2.0)",
+        "Full fellowship & tuition waiver supported (+1.5)",
+        "Dedicated doctoral/researcher training program (+0.7)"
+      ]
+    },
+    "id": "evt_tinyml_summerschool_2027",
+    "raw_metadata": {}
+  }
+]
