@@ -91,6 +91,22 @@ Briefing for {{ date_str }} ({{ total_items }} Items)
 {% endfor %}
 {% endif %}
 
+{% if events %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎪 UPCOMING EDGE COMPUTING EVENTS & WORKSHOPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for evt in events %}
+• {{ evt.event_name or evt.title }} ({{ (evt.event_type or 'Event')|replace('_', ' ')|title }} | {{ (evt.format or 'Hybrid')|upper }})
+  Organizer: {{ evt.organizer or 'Edge Computing Community' }} | Location: {{ evt.location or 'Online' }}
+  Dates: {{ evt.start_date or 'TBA' }}{% if evt.end_date and evt.end_date != evt.start_date %} to {{ evt.end_date }}{% endif %} | Fee: {{ evt.registration_fee or (evt.fee_status|title if evt.fee_status else 'Standard') }}
+  {% if evt.cfp_deadline %}CFP Deadline: {{ evt.cfp_deadline }}
+  {% endif %}{% if evt.has_travel_grant %}[STUDENT TRAVEL GRANT AVAILABLE]
+  {% endif %}{% if evt.has_student_discount %}[STUDENT DISCOUNT AVAILABLE]
+  {% endif %}Link: {{ evt.official_website or evt.link or evt.url }}
+
+{% endfor %}
+{% endif %}
+
 --
 Edge PhD Research Assistant | Free Infrastructure
 

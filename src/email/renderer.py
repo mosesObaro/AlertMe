@@ -24,6 +24,7 @@ class EmailRenderer:
         items: List[ResearchItem],
         opportunities: Optional[List[Any]] = None,
         scholarships: Optional[List[Any]] = None,
+        events: Optional[List[Any]] = None,
         dashboard_url: str = "https://example.github.io/edge-phd-alert/"
     ) -> Tuple[str, str, str]:
         """Renders Daily Digest email (subject, html, text)."""
@@ -33,7 +34,7 @@ class EmailRenderer:
         # Group items
         top_devs = [i for i in items if i.score and i.score.final_score >= 8.5]
         papers = [i for i in items if i.item_type in [ItemType.PAPER.value, ItemType.PREPRINT.value, ItemType.SURVEY.value] and i not in top_devs]
-        confs = [i for i in items if i.item_type in [ItemType.CONFERENCE_CFP.value, ItemType.WORKSHOP.value]]
+        confs = [i for i in items if i.item_type in [ItemType.CONFERENCE_CFP.value, ItemType.WORKSHOP.value] and (not i.opportunity_data or i.opportunity_data.get("kind") != "event")]
 
         # Handle opportunities: either passed explicitly or extracted from items
         opp_list = []
@@ -66,6 +67,40 @@ class EmailRenderer:
                 if i.opportunity_data and i.opportunity_data.get("kind") == "scholarship":
                     schol_list.append(i.opportunity_data)
 
+        # Handle events: either passed explicitly or extracted from items / state
+        event_list = []
+        if events is not None:
+            event_list = [e.to_dict() if hasattr(e, "to_dict") else e for e in events]
+        else:
+            for i in items:
+                if i.opportunity_data and i.opportunity_data.get("kind") == "event":
+                    event_list.append(i.opportunity_data)
+                elif i.item_type == ItemType.EVENT.value:
+                    event_list.append({
+                        "event_name": i.title,
+                        "organizer": i.institution or i.source,
+                        "event_type": "academic_conference",
+                        "format": "hybrid",
+                        "location": i.location or "Global",
+                        "official_website": i.url,
+                        "link": i.url,
+                        "relevance_score": i.score.final_score if i.score else 7.0,
+                        "fee_status": "paid",
+                        "registration_fee": "",
+                        "cfp_deadline": i.deadline,
+                        "description": i.abstract
+                    })
+
+            # If not in items, fall back to persistent events state manager
+            if not event_list:
+                try:
+                    from src.events.state_manager import EventsStateManager
+                    saved_events = EventsStateManager().load_events()
+                    if saved_events:
+                        event_list = [e.to_dict() for e in saved_events[:3]]
+                except Exception:
+                    pass
+
         ctx = {
             "subject": subject,
             "date_str": today_str,
@@ -75,6 +110,7 @@ class EmailRenderer:
             "opportunities": opp_list,
             "scholarships": schol_list,
             "conferences": confs,
+            "events": event_list,
             "dashboard_url": dashboard_url
         }
 
@@ -94,6 +130,7 @@ class EmailRenderer:
         study_guide: Dict[str, Any],
         opportunities: Optional[List[Any]] = None,
         scholarships: Optional[List[Any]] = None,
+        events: Optional[List[Any]] = None,
         dashboard_url: str = "https://example.github.io/edge-phd-alert/"
     ) -> Tuple[str, str, str]:
         """Renders Weekly Digest email (subject, html, text)."""
@@ -102,7 +139,7 @@ class EmailRenderer:
 
         top_devs = [i for i in items if i.score and i.score.final_score >= 8.0][:5]
         papers = [i for i in items if i.item_type in [ItemType.PAPER.value, ItemType.PREPRINT.value, ItemType.SURVEY.value] and i not in top_devs][:8]
-        confs = [i for i in items if i.item_type in [ItemType.CONFERENCE_CFP.value, ItemType.WORKSHOP.value]][:4]
+        confs = [i for i in items if i.item_type in [ItemType.CONFERENCE_CFP.value, ItemType.WORKSHOP.value] and (not i.opportunity_data or i.opportunity_data.get("kind") != "event")][:4]
 
         opp_list = []
         if opportunities is not None:
@@ -136,6 +173,23 @@ class EmailRenderer:
                     schol_list.append(i.opportunity_data)
             schol_list = schol_list[:5]
 
+        # Handle events for weekly digest
+        event_list = []
+        if events is not None:
+            event_list = [e.to_dict() if hasattr(e, "to_dict") else e for e in events][:5]
+        else:
+            for i in items:
+                if i.opportunity_data and i.opportunity_data.get("kind") == "event":
+                    event_list.append(i.opportunity_data)
+            if not event_list:
+                try:
+                    from src.events.state_manager import EventsStateManager
+                    saved_events = EventsStateManager().load_events()
+                    if saved_events:
+                        event_list = [e.to_dict() for e in saved_events[:5]]
+                except Exception:
+                    pass
+
         ctx = {
             "subject": subject,
             "date_str": today_str,
@@ -145,6 +199,7 @@ class EmailRenderer:
             "opportunities": opp_list,
             "scholarships": schol_list,
             "conferences": confs,
+            "events": event_list,
             "trends": trends,
             "supervisors": supervisors,
             "study_guide": study_guide,

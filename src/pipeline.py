@@ -149,9 +149,10 @@ class ResearchPipeline:
         min_score = self.config.alert_thresholds.get("minimum_score", 6.5)
         ranked_items = self.scorer.filter_and_rank(unique_items, min_score=min_score)
 
-        # Extract PhD opportunities and scholarships
+        # Extract PhD opportunities, scholarships, and events
         phd_opportunities: List[Dict[str, Any]] = []
         scholarships: List[Dict[str, Any]] = []
+        events_list: List[Dict[str, Any]] = []
 
         for item in ranked_items:
             opp_data = item.opportunity_data
@@ -161,6 +162,8 @@ class ResearchPipeline:
                     phd_opportunities.append(opp_data)
                 elif kind == "scholarship":
                     scholarships.append(opp_data)
+                elif kind == "event":
+                    events_list.append(opp_data)
             elif item.item_type in [ItemType.PHD_OPPORTUNITY.value, ItemType.FELLOWSHIP.value]:
                 phd_opportunities.append({
                     "title": item.title,
@@ -175,6 +178,31 @@ class ResearchPipeline:
                     "direct_quote": None,
                     "deadline": item.deadline
                 })
+            elif item.item_type == ItemType.EVENT.value:
+                events_list.append({
+                    "event_name": item.title,
+                    "organizer": item.institution or item.source,
+                    "event_type": "academic_conference",
+                    "format": "hybrid",
+                    "location": item.location or "Global",
+                    "official_website": item.url,
+                    "link": item.url,
+                    "relevance_score": item.score.final_score if item.score else 7.0,
+                    "fee_status": "paid",
+                    "registration_fee": "",
+                    "cfp_deadline": item.deadline,
+                    "description": item.abstract
+                })
+
+        # Fallback to persistent events state if none collected in current run
+        if not events_list:
+            try:
+                from src.events.state_manager import EventsStateManager
+                saved_events = EventsStateManager().load_events()
+                if saved_events:
+                    events_list = [e.to_dict() for e in saved_events]
+            except Exception:
+                pass
 
         # Persist opportunities and scholarships
         if phd_opportunities:
@@ -252,7 +280,8 @@ class ResearchPipeline:
             subject, html, text = self.email_renderer.render_daily_digest(
                 items=daily_items,
                 opportunities=phd_opportunities[:3],
-                scholarships=scholarships[:3]
+                scholarships=scholarships[:3],
+                events=events_list[:3]
             )
             email_sent = self.email_sender.send(subject, html, text)
             if not dry_run and daily_items:
@@ -272,7 +301,8 @@ class ResearchPipeline:
                 supervisors=top_supervisors,
                 study_guide=study_guide,
                 opportunities=phd_opportunities[:5],
-                scholarships=scholarships[:5]
+                scholarships=scholarships[:5],
+                events=events_list[:5]
             )
             email_sent = self.email_sender.send(subject, html, text)
             if not dry_run and weekly_items:

@@ -79,7 +79,25 @@ Why you received this:
 {% endfor %}
 {% endif %}
 
-{% if total_items == 0 %}
+{% if events %}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎪 EDGE COMPUTING EVENTS & OPPORTUNITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+{% for evt in events %}
+• {{ evt.event_name or evt.title }} ({{ (evt.event_type or 'Event')|replace('_', ' ')|title }} | {{ (evt.format or 'Hybrid')|upper }})
+  Organizer: {{ evt.organizer or 'Edge Computing Community' }}
+  Dates: {{ evt.start_date or 'TBA' }}{% if evt.end_date and evt.end_date != evt.start_date %} to {{ evt.end_date }}{% endif %} | Location: {{ evt.location or 'Online' }}
+  Fee: {{ evt.registration_fee or (evt.fee_status|title if evt.fee_status else 'Standard') }}
+  {% if evt.cfp_deadline %}CFP Deadline: {{ evt.cfp_deadline }}
+  {% endif %}{% if evt.has_travel_grant %}[STUDENT TRAVEL GRANT AVAILABLE]
+  {% endif %}{% if evt.has_student_discount %}[STUDENT DISCOUNT AVAILABLE]
+  {% endif %}{% if evt.discounts_subsidies %}Subsidies: {% for d in evt.discounts_subsidies %}{{ d.name }} ({{ d.amount_or_rate }}){% if not loop.last %}; {% endif %}{% endfor %}
+  {% endif %}Link: {{ evt.official_website or evt.link or evt.url }}
+
+{% endfor %}
+{% endif %}
+
+{% if total_items == 0 and not events %}
 No high-priority Edge Computing developments were detected today.
 {% endif %}
 

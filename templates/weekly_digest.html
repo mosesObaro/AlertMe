@@ -65,6 +65,7 @@
     .card-paper { border-left: 4px solid #3b82f6; }
     .card-opp { border-left: 4px solid #10b981; }
     .card-conf { border-left: 4px solid #f59e0b; }
+    .card-event { border-left: 4px solid #6366f1; }
     .card-study { border-left: 4px solid #8b5cf6; background: #fdf4ff; border-color: #f0abfc; }
     .item-title {
       font-size: 16px;
@@ -95,6 +96,9 @@
     .badge-funding { background: #dbeafe; color: #1d4ed8; border: 1px solid #93c5fd; }
     .badge-dependant { background: #f3e8ff; color: #6b21a8; border: 1px solid #d8b4fe; }
     .badge-permitted { background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; }
+    .badge-event-format { background: #e0e7ff; color: #4338ca; border: 1px solid #c7d2fe; }
+    .badge-event-free { background: #dcfce7; color: #15803d; border: 1px solid #86efac; }
+    .badge-event-grant { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
     .quote-box { background: #f8fafc; border-left: 3px solid #10b981; padding: 8px 12px; margin: 8px 0; font-size: 12px; font-style: italic; color: #334155; border-radius: 0 4px 4px 0; }
     .disclaimer-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 10px 14px; margin-top: 14px; font-size: 11px; color: #166534; line-height: 1.4; }
     .item-meta {
@@ -390,6 +394,58 @@
         <a href="{{ item.url }}" class="item-title" target="_blank">{{ item.title }}</a>
         <div class="item-meta">{% if item.deadline %}<strong>Deadline:</strong> {{ item.deadline }} &bull; {% endif %}{{ item.venue }}</div>
         <div style="font-size: 13px; color: #334155;">{{ item.abstract }}</div>
+      </div>
+      {% endfor %}
+      {% endif %}
+
+      <!-- 9. EDGE COMPUTING EVENTS & OPPORTUNITIES -->
+      {% if events %}
+      <div class="section-title">🎪 Edge Computing Events & Academic/Industrial Opportunities</div>
+      {% for evt in events %}
+      <div class="card card-event">
+        <div style="display: flex; justify-content: space-between;">
+          <a href="{{ evt.official_website or evt.link or evt.url }}" class="item-title" target="_blank">{{ evt.event_name or evt.title }}</a>
+          {% if evt.relevance_score %}
+          <span class="score-badge {% if evt.relevance_score >= 8.5 %}score-critical{% elif evt.relevance_score >= 7.5 %}score-high{% else %}score-good{% endif %}">
+            {{ evt.relevance_score }}/10
+          </span>
+          {% endif %}
+        </div>
+        <div class="item-meta">
+          <strong>Organizer:</strong> {{ evt.organizer or 'Edge Computing Community' }}
+          {% if evt.start_date %}&bull; <strong>Dates:</strong> {{ evt.start_date }}{% if evt.end_date and evt.end_date != evt.start_date %} &ndash; {{ evt.end_date }}{% endif %}{% endif %}
+          {% if evt.location %}&bull; <strong>Location:</strong> {{ evt.location }}{% endif %}
+          {% if evt.cfp_deadline %}&bull; <strong>CFP Deadline:</strong> <span style="color: #dc2626; font-weight: 600;">{{ evt.cfp_deadline }}</span>{% endif %}
+        </div>
+        <div style="margin-bottom: 6px;">
+          <span class="badge-status badge-event-format">{{ (evt.format or 'Hybrid')|replace('_', ' ')|title }}</span>
+          <span class="badge-status">{{ (evt.event_type or 'Conference')|replace('_', ' ')|title }}</span>
+          {% if evt.fee_status == 'free' %}
+          <span class="badge-status badge-event-free">🟢 Free Registration</span>
+          {% elif evt.registration_fee %}
+          <span class="badge-status badge-likely">💳 {{ evt.registration_fee }}</span>
+          {% endif %}
+          {% if evt.has_travel_grant %}
+          <span class="badge-status badge-event-grant">✈️ Student Travel Grant</span>
+          {% endif %}
+          {% if evt.has_student_discount %}
+          <span class="badge-status badge-funding">🎓 Student Rate Available</span>
+          {% endif %}
+          {% if evt.has_fee_waiver %}
+          <span class="badge-status badge-recruiting">🎟️ Fee Waiver Available</span>
+          {% endif %}
+        </div>
+        {% if evt.discounts_subsidies %}
+        <div style="font-size: 12px; color: #4b5563; margin-bottom: 4px;">
+          <strong>Subsidies & Grants:</strong>
+          {% for d in evt.discounts_subsidies %}
+          {{ d.name }} ({{ d.amount_or_rate }}){% if not loop.last %}; {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+        {% if evt.description %}
+        <div style="font-size: 13px; color: #334155;">{{ evt.description[:220] }}{% if evt.description|length > 220 %}...{% endif %}</div>
+        {% endif %}
       </div>
       {% endfor %}
       {% endif %}

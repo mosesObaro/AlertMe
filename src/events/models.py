@@ -257,12 +257,21 @@ class EdgeEvent:
                 "organizer": self.organizer,
                 "format": self.format,
                 "location": self.location,
+                "start_date": self.start_date,
+                "end_date": self.end_date,
                 "fee_status": self.fee_status,
+                "registration_fee": self.registration_fee,
                 "has_student_discount": self.has_student_discount,
                 "has_travel_grant": self.has_travel_grant,
+                "has_scholarship": self.has_scholarship,
+                "has_early_bird": self.has_early_bird,
+                "has_fee_waiver": self.has_fee_waiver,
                 "discounts_count": len(self.discounts_subsidies),
+                "discounts_subsidies": [d.to_dict() for d in self.discounts_subsidies],
                 "official_website": self.official_website,
-                "cfp_deadline": self.cfp_deadline
+                "cfp_deadline": self.cfp_deadline,
+                "description": self.description,
+                "relevance_score": self.relevance_score
             },
             id=self.id
         )

@@ -105,3 +105,104 @@ def test_email_sender_console_dry_run():
         text_body="Test Text"
     )
     assert success is True
+
+
+@pytest.fixture
+def sample_event():
+    from src.events.models import EdgeEvent, EventType, EventFormat, FeeStatus, DiscountOpportunity, DiscountType
+    return EdgeEvent(
+        event_name="IEEE International Conference on Edge Computing (EDGE 2026)",
+        organizer="IEEE Computer Society",
+        event_type=EventType.ACADEMIC_CONFERENCE.value,
+        description="Premier academic forum on edge architectures and distributed edge AI systems.",
+        topics=["Edge Computing", "Edge AI", "Distributed Systems"],
+        start_date="2026-07-06",
+        end_date="2026-07-10",
+        location="Chicago, IL, USA",
+        format=EventFormat.HYBRID.value,
+        official_website="https://conferences.computer.org/edge/2026/",
+        registration_fee="$550 (Student: $250)",
+        fee_status=FeeStatus.PAID.value,
+        discounts_subsidies=[
+            DiscountOpportunity(
+                name="IEEE TCPP Student Travel Grant",
+                discount_type=DiscountType.TRAVEL_GRANT.value,
+                amount_or_rate="Up to $1,000 USD",
+                eligibility="Full-time PhD students"
+            ),
+            DiscountOpportunity(
+                name="Early Bird Student Registration",
+                discount_type=DiscountType.STUDENT_RATE.value,
+                amount_or_rate="$250 USD",
+                eligibility="Active IEEE student members"
+            )
+        ],
+        has_student_discount=True,
+        has_travel_grant=True,
+        cfp_deadline="2026-03-15",
+        relevance_score=9.3
+    )
+
+
+def test_render_daily_digest_with_events(sample_items, sample_event):
+    renderer = EmailRenderer()
+    subject, html, text = renderer.render_daily_digest(
+        items=sample_items,
+        events=[sample_event]
+    )
+
+    assert "Edge Computing Events & Opportunities" in html
+    assert "IEEE International Conference on Edge Computing" in html
+    assert "IEEE Computer Society" in html
+    assert "Chicago, IL, USA" in html
+    assert "2026-03-15" in html
+    assert "Student Travel Grant" in html
+    assert "Student Rate Available" in html
+    assert "Up to $1,000 USD" in html
+
+    # Text digest assertions
+    assert "EDGE COMPUTING EVENTS & OPPORTUNITIES" in text
+    assert "IEEE International Conference on Edge Computing" in text
+    assert "CFP Deadline: 2026-03-15" in text
+    assert "[STUDENT TRAVEL GRANT AVAILABLE]" in text
+    assert "https://conferences.computer.org/edge/2026/" in text
+
+
+def test_render_daily_digest_extracted_from_items(sample_items, sample_event):
+    renderer = EmailRenderer()
+    event_item = sample_event.to_research_item()
+    items_with_event = sample_items + [event_item]
+
+    subject, html, text = renderer.render_daily_digest(items=items_with_event)
+
+    assert "Edge Computing Events & Opportunities" in html
+    assert "IEEE International Conference on Edge Computing" in html
+    assert "EDGE COMPUTING EVENTS & OPPORTUNITIES" in text
+
+
+def test_render_weekly_digest_with_events(sample_items, sample_event):
+    renderer = EmailRenderer()
+    trends = [{"topic": "Edge AI", "direction": "↑↑", "status": "Surging", "recent_count": 10}]
+    supervisors = [{"name": "Mahadev Satyanarayanan", "institution": "CMU", "publication_count": 4, "average_relevance": 9.2}]
+    study_guide = {
+        "focus_topic": "Computation Offloading",
+        "concept": "Lyapunov Optimization for MEC",
+        "paper_title": "Adaptive Computation Offloading for Edge AI in 6G Networks",
+        "paper_url": "https://ieeexplore.ieee.org/document/1001",
+        "practical_exercise": "Simulate 2-node offloading in Python",
+        "research_question": "How to guarantee sub-10ms latency?",
+        "event_opportunity": {"title": "ACM SEC 2026", "url": "https://acm-ieee-sec.org", "type": "CFP"}
+    }
+
+    subject, html, text = renderer.render_weekly_digest(
+        items=sample_items,
+        trends=trends,
+        supervisors=supervisors,
+        study_guide=study_guide,
+        events=[sample_event]
+    )
+
+    assert "Edge Computing Events & Academic/Industrial Opportunities" in html
+    assert "IEEE International Conference on Edge Computing" in html
+    assert "UPCOMING EDGE COMPUTING EVENTS & WORKSHOPS" in text
+    assert "IEEE International Conference on Edge Computing" in text
