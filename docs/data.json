@@ -4590,26 +4590,26 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] djouallah/lakehouse_benchmark (★ 7)",
-      "url": "https://github.com/djouallah/lakehouse_benchmark",
+      "title": "[Code/Benchmark] veritasfuji-japan/rcc-revas-veritas-benchmark (★ 1)",
+      "url": "https://github.com/veritasfuji-japan/rcc-revas-veritas-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "djouallah"
+        "veritasfuji-japan"
       ],
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-10-01",
       "discovery_date": "2026-10-01",
-      "abstract": "Open source edge computing repository. (Stars: 7, Forks: 0)",
+      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 1)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_6c9a3ba2eaa03494",
+      "id": "item_2d10737524e7931c",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -4631,8 +4631,8 @@
       "intelligence": null,
       "opportunity_data": null,
       "raw_metadata": {
-        "stars": 7,
-        "forks": 0
+        "stars": 1,
+        "forks": 1
       }
     },
     {
@@ -4747,9 +4747,9 @@
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [
+        "Distributed Systems",
         "IoT",
-        "Edge Computing",
-        "Distributed Systems"
+        "Edge Computing"
       ],
       "institution": "",
       "location": "",
