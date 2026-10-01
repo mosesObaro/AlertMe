@@ -293,11 +293,13 @@ class ResearchPipeline:
 
         if mode == "daily":
             daily_items = [i for i in ranked_items if i.score and i.score.final_score >= daily_min][:daily_limit]
+            events_cfg = self.config.events if hasattr(self.config, "events") and isinstance(self.config.events, dict) else {}
+            events_limit = events_cfg.get("events_settings", {}).get("daily_events_limit", 8)
             subject, html, text = self.email_renderer.render_daily_digest(
                 items=daily_items,
                 opportunities=phd_opportunities[:3],
                 scholarships=scholarships[:3],
-                events=events_list[:3]
+                events=events_list[:events_limit]
             )
             email_sent = self.email_sender.send(subject, html, text)
             if not dry_run and daily_items:
@@ -311,6 +313,8 @@ class ResearchPipeline:
             opps = [i for i in weekly_items if i.item_type in [ItemType.PHD_OPPORTUNITY.value, ItemType.FELLOWSHIP.value]]
             
             study_guide = self.study_guide_gen.generate_focus_plan(top_papers, confs, opps)
+            events_cfg = self.config.events if hasattr(self.config, "events") and isinstance(self.config.events, dict) else {}
+            weekly_events_limit = events_cfg.get("events_settings", {}).get("weekly_events_limit", 10)
             subject, html, text = self.email_renderer.render_weekly_digest(
                 items=weekly_items,
                 trends=trends,
@@ -318,7 +322,7 @@ class ResearchPipeline:
                 study_guide=study_guide,
                 opportunities=phd_opportunities[:5],
                 scholarships=scholarships[:5],
-                events=events_list[:5]
+                events=events_list[:weekly_events_limit]
             )
             email_sent = self.email_sender.send(subject, html, text)
             if not dry_run and weekly_items:

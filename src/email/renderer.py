@@ -97,7 +97,7 @@ class EmailRenderer:
                     from src.events.state_manager import EventsStateManager
                     saved_events = EventsStateManager().load_events()
                     if saved_events:
-                        event_list = [e.to_dict() for e in saved_events[:4]]
+                        event_list = [e.to_dict() for e in saved_events[:8]]
                 except Exception:
                     pass
 
@@ -106,7 +106,7 @@ class EmailRenderer:
                     from src.events.collector import EdgeEventCollector
                     col = EdgeEventCollector()
                     evts = col.fetch_events()
-                    event_list = [e.to_dict() for e in evts if e.relevance_score >= 6.5][:4]
+                    event_list = [e.to_dict() for e in evts if e.relevance_score >= 6.5][:8]
                 except Exception:
                     pass
 

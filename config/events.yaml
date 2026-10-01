@@ -4,6 +4,8 @@
 events_settings:
   min_score: 6.5
   upcoming_window_days: 270 # Look ahead window for events
+  daily_events_limit: 8
+  weekly_events_limit: 10
   state_file: "data/events.json"
   seen_events_file: "data/seen_events.json"
 
