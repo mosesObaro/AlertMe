@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-09-30",
-    "total_items": 37,
+    "last_updated": "2026-10-01",
+    "total_items": 40,
     "high_relevance_count": 24,
-    "papers_count": 20,
+    "papers_count": 21,
     "conferences_count": 2,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -11,18 +11,18 @@
   },
   "trends": [
     {
-      "topic": "Edge AI",
-      "direction": "↑↑",
-      "status": "Surging",
-      "recent_count": 9,
-      "historical_count": 5
-    },
-    {
       "topic": "TinyML",
       "direction": "↑↑",
       "status": "Surging",
       "recent_count": 3,
       "historical_count": 1
+    },
+    {
+      "topic": "Edge AI",
+      "direction": "↑",
+      "status": "Rising",
+      "recent_count": 8,
+      "historical_count": 6
     },
     {
       "topic": "Federated Learning",
@@ -37,13 +37,6 @@
       "status": "Steady",
       "recent_count": 2,
       "historical_count": 2
-    },
-    {
-      "topic": "Edge Inference",
-      "direction": "→",
-      "status": "Steady",
-      "recent_count": 1,
-      "historical_count": 1
     },
     {
       "topic": "Resource Allocation",
@@ -72,6 +65,13 @@
       "status": "Stable",
       "recent_count": 0,
       "historical_count": 0
+    },
+    {
+      "topic": "Edge Inference",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 0,
+      "historical_count": 2
     },
     {
       "topic": "Split Learning",
@@ -2986,7 +2986,8 @@
         "is_ai_generated": false
       },
       "opportunity_data": null,
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
@@ -3856,6 +3857,52 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "Multi-layer Kerberos Protocol for Edge Computing",
+      "url": "https://doi.org/10.1007/978-3-032-39783-6_21",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Alaa M. Altarazi",
+        "Mohammad Awis Al Lababede",
+        "Sufyan Almajali"
+      ],
+      "doi": "10.1007/978-3-032-39783-6_21",
+      "arxiv_id": null,
+      "publication_date": "2026-09-30",
+      "discovery_date": "2026-10-01",
+      "abstract": "",
+      "venue": "Lecture notes in networks and systems",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_2f5623d0fdc1355c",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.8,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
+    },
+    {
       "title": "Distributed Edge Inference: an Experimental Study on Multiview Detection",
       "url": "http://arxiv.org/abs/2609.20009v1",
       "source": "arXiv",
@@ -3906,19 +3953,117 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "[Code/Benchmark] AhmedEhabH/dependency-aware-selective-regeneration-benchmark (★ 0)",
+      "url": "https://github.com/AhmedEhabH/dependency-aware-selective-regeneration-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "AhmedEhabH"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-01",
+      "discovery_date": "2026-10-01",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_a07c0fa0815168f6",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] URECA-Cking/Cking-Filtering-Benchmark (★ 0)",
+      "url": "https://github.com/URECA-Cking/Cking-Filtering-Benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "URECA-Cking"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-01",
+      "discovery_date": "2026-10-01",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_5e8497bc579fd3c1",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
       "title": "CloudAM 2026 : 15th International Workshop on Cloud and Edge Computing, and Applications Management",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202965&copyownerid=43185",
       "source": "Conference Feed",
       "source_tier": "tier3_conference",
       "item_type": "conference_cfp",
-      "authors": [],
+      "authors": [
+        "Professional Organization"
+      ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-09-30",
-      "discovery_date": "2026-09-30",
+      "publication_date": "2026-10-01",
+      "discovery_date": "2026-10-01",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
-      "topics": [],
+      "topics": [
+        "Edge Computing",
+        "IoT",
+        "Distributed Systems"
+      ],
       "institution": "",
       "location": "",
       "deadline": null,
@@ -3961,7 +4106,7 @@
       "doi": null,
       "arxiv_id": "2609.31159v1",
       "publication_date": "2026-09-25",
-      "discovery_date": "2026-09-30",
+      "discovery_date": "2026-10-01",
       "abstract": "We propose a momentum-guided federated split distillation framework for personalized, efficient, and autonomous temporal edge intelligence. We introduce TeRR-SAtt, our novel temporal reservoir student attention design that combines fixed reservoir representations, a lightweight temporal student, and personalized output modules. We also present AMGF, our anticipatory momentum-guided fusion mechanism that clusters clients through learning momentum and derives specialized teacher updates. On real-world smart-building data, TeRR-SAtt reduces edge training latency by 65.50%, inference latency by 44.70%, training memory usage by 18.40%, and inference CPU usage by 33.10% over the considered baselines. At the same time, AMGF improves local learning by up to 35.31% in RMSE compared to global updates.",
       "venue": "arXiv CS",
       "topics": [
@@ -3982,13 +4127,13 @@
         "negative_penalty": 0.0,
         "final_score": 6.5,
         "matched_topics": [
-          "Edge Training",
-          "Edge Intelligence"
+          "Edge Intelligence",
+          "Edge Training"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Intelligence (Title), Edge Training (Abstract)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (5d ago) (+1.2)"
+          "✓ Published within last week (6d ago) (+1.2)"
         ]
       },
       "intelligence": null,
@@ -4007,7 +4152,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-09-30",
+      "discovery_date": "2026-10-01",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -4030,7 +4175,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (105d ago) (+0.2)",
+          "• Published >30d ago (106d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

@@ -1,17 +1,17 @@
 [
   {
-    "topic": "Edge AI",
-    "direction": "↑↑",
-    "status": "Surging",
-    "recent_count": 9,
-    "historical_count": 5
-  },
-  {
     "topic": "TinyML",
     "direction": "↑↑",
     "status": "Surging",
     "recent_count": 3,
     "historical_count": 1
+  },
+  {
+    "topic": "Edge AI",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 8,
+    "historical_count": 6
   },
   {
     "topic": "Federated Learning",
@@ -26,13 +26,6 @@
     "status": "Steady",
     "recent_count": 2,
     "historical_count": 2
-  },
-  {
-    "topic": "Edge Inference",
-    "direction": "→",
-    "status": "Steady",
-    "recent_count": 1,
-    "historical_count": 1
   },
   {
     "topic": "Resource Allocation",
@@ -61,6 +54,13 @@
     "status": "Stable",
     "recent_count": 0,
     "historical_count": 0
+  },
+  {
+    "topic": "Edge Inference",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 0,
+    "historical_count": 2
   },
   {
     "topic": "Split Learning",
