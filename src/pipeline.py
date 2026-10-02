@@ -1,6 +1,7 @@
 """Master pipeline orchestrator for Edge PhD Research Intelligence."""
 
 import os
+import re
 from typing import List, Dict, Any, Optional
 from src.utils.config_loader import ConfigManager
 from src.utils.logger import logger
