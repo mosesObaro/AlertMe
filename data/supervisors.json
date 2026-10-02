@@ -3822,7 +3822,7 @@
         "score": 7.5
       }
     ],
-    "publication_count": 2,
+    "publication_count": 4,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -3833,7 +3833,7 @@
     "current_opportunities": [],
     "reasons": [
       "Academic Fit: ✓ Strong Edge Computing research fit: iot, tinyml",
-      "✓ Active recent publication record (2 papers)",
+      "✓ Active recent publication record (4 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
@@ -3875,7 +3875,7 @@
         "score": 7.4
       }
     ],
-    "publication_count": 1,
+    "publication_count": 2,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -3886,10 +3886,11 @@
     "current_opportunities": [],
     "reasons": [
       "Academic Fit: ✓ Strong Edge Computing research fit: tinyml",
+      "✓ Active recent publication record (2 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
-    "composite_score": 6.0,
+    "composite_score": 6.6,
     "average_relevance": 7.4,
     "topics": [
       "AI Systems",
@@ -3926,7 +3927,7 @@
         "score": 7.3
       }
     ],
-    "publication_count": 1,
+    "publication_count": 2,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -3937,10 +3938,11 @@
     "current_opportunities": [],
     "reasons": [
       "Academic Fit: ✓ Strong Edge Computing research fit: internet of things",
+      "✓ Active recent publication record (2 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "✓ Target country priority: Germany"
     ],
-    "composite_score": 6.6,
+    "composite_score": 7.2,
     "average_relevance": 7.3,
     "topics": [
       "Microcontrollers",
@@ -3977,7 +3979,7 @@
         "score": 7.0
       }
     ],
-    "publication_count": 1,
+    "publication_count": 2,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -3988,10 +3990,11 @@
     "current_opportunities": [],
     "reasons": [
       "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "✓ Active recent publication record (2 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
-    "composite_score": 6.0,
+    "composite_score": 6.6,
     "average_relevance": 7.0,
     "topics": [
       "Edge Computing",
@@ -4028,7 +4031,7 @@
         "score": 6.9
       }
     ],
-    "publication_count": 1,
+    "publication_count": 2,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -4040,10 +4043,11 @@
     "reasons": [
       "Academic Fit: ✓ Strong Edge Computing research fit: edge ai, tinyml",
       "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "✓ Active recent publication record (2 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
-    "composite_score": 6.4,
+    "composite_score": 7.1,
     "average_relevance": 6.9,
     "topics": [
       "Edge Model Compression",

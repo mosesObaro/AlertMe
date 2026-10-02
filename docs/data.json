@@ -1,9 +1,9 @@
 {
   "meta": {
     "last_updated": "2026-10-02",
-    "total_items": 63,
+    "total_items": 69,
     "high_relevance_count": 40,
-    "papers_count": 19,
+    "papers_count": 22,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -2044,7 +2044,8 @@
         "description": "Leading scientific forum for foundational research in cyber-physical systems, secure sensing loops, and autonomous real-time robotics.",
         "relevance_score": 9.0
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
@@ -2402,7 +2403,8 @@
         "description": "The premier flagship international conference on Machine Learning, Deep Learning, AI Systems, Computer Vision, and Neural Information Processing.",
         "relevance_score": 8.8
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
@@ -2628,7 +2630,8 @@
         "description": "Premier annual forum on sensor networks, networked embedded systems, IoT analytics, hardware platforms, and cyber-physical sensing.",
         "relevance_score": 8.7
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "A novel real-time integrated adaptive stable offloading (RIASO) algorithm in multi-access edge computing",
@@ -2829,7 +2832,8 @@
         "description": "The premier international venue for real-time systems, embedded AI timing guarantees, cyber-physical safety, and time-critical hardware architectures.",
         "relevance_score": 8.4
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Arm & Edge Impulse Embedded AI Hands-on Bootcamp 2026",
@@ -2934,7 +2938,8 @@
         "description": "Practical virtual bootcamp on building and deploying embedded computer vision and sensor ML models on Arm Cortex-M and Cortex-A microcontrollers.",
         "relevance_score": 8.3
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Edge AI in Wearable Devices",
@@ -3546,7 +3551,8 @@
         "description": "Flagship venue for embedded software design, real-time operating systems, cyber-physical modeling, and energy-aware embedded AI compiler frameworks.",
         "relevance_score": 8.1
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "IEEE IoT Technical Webinar: Intelligent IoT and Next-Generation Sensor Networks",
@@ -3640,7 +3646,8 @@
         "description": "Expert seminar exploring neuro-symbolic sensor fusion, energy-harvesting IoT nodes, and distributed federated perception across connected devices.",
         "relevance_score": 8.1
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "HotMobile 2027 (ACM International Workshop on Mobile Computing Systems and Applications)",
@@ -3744,7 +3751,8 @@
         "description": "High-energy workshop discussing provocative and hot topics in mobile sensing, pervasive IoT applications, wearable AI, and distributed perception.",
         "relevance_score": 8.0
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "CPS-IoT Week Graduate Training School & Doctoral Symposium 2027",
@@ -3845,7 +3853,8 @@
         "description": "Specialized graduate summer school providing hands-on instruction on low-power IoT network protocol stacks, real-time operating systems, and hardware-in-the-loop testbeds.",
         "relevance_score": 8.0
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "IEEE INFOCOM 2027",
@@ -4471,7 +4480,8 @@
         "description": "World-renowned intensive doctoral summer school covering deep learning theory, statistical machine learning, computer vision, and efficient reinforcement learning.",
         "relevance_score": 7.7
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "IEEE ICDCS 2027 (International Conference on Distributed Computing Systems)",
@@ -6314,13 +6324,13 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] G45P4R82/hpc-benchmark-cenapad (★ 0)",
-      "url": "https://github.com/G45P4R82/hpc-benchmark-cenapad",
+      "title": "[Code/Benchmark] AhmedEhabH/dependency-aware-selective-regeneration-benchmark (★ 0)",
+      "url": "https://github.com/AhmedEhabH/dependency-aware-selective-regeneration-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "G45P4R82"
+        "AhmedEhabH"
       ],
       "doi": null,
       "arxiv_id": null,
@@ -6333,7 +6343,145 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_d9843b521ce74e7e",
+      "id": "item_a07c0fa0815168f6",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] runs-on-demo/benchmark-public (★ 0)",
+      "url": "https://github.com/runs-on-demo/benchmark-public",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "runs-on-demo"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-02",
+      "discovery_date": "2026-10-02",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_2cb6aef6f854cf78",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] designfordrink/jev-benchmark (★ 0)",
+      "url": "https://github.com/designfordrink/jev-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "designfordrink"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-02",
+      "discovery_date": "2026-10-02",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_2748349f63f4ff92",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] beatriz985502293-max/Projeto-Integrador---Benchmarking-e-Portf-lio (★ 0)",
+      "url": "https://github.com/beatriz985502293-max/Projeto-Integrador---Benchmarking-e-Portf-lio",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "beatriz985502293-max"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-02",
+      "discovery_date": "2026-10-02",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_e7341496333619e9",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -6567,8 +6715,8 @@
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [
-        "IoT",
         "MEC",
+        "IoT",
         "Edge Computing",
         "Distributed Systems"
       ],
@@ -6593,6 +6741,182 @@
           "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
           "✓ Freshly published (0d ago) (+1.5)",
           "✓ Conference CFP / Submission Track (+0.8)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "Towards a Cloud Fog Edge System for Smart Building",
+      "url": "http://arxiv.org/abs/2610.01647v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Christophe Cérin",
+        "Mamadou Sow",
+        "Frédéric Andrès"
+      ],
+      "doi": null,
+      "arxiv_id": "2610.01647v1",
+      "publication_date": "2026-10-01",
+      "discovery_date": "2026-10-02",
+      "abstract": "In this article, we present our vision and recent advancements toward creating a decentralized system capable of learning from real-time data within buildings to support sustainable and privacy-preserving smart environments. Our approach promotes the concept of the building itself as the data center, aligning with the principles of edge computing to safeguard confidentiality and reduce reliance on external cloud infrastructure. This is particularly valuable in humanitarian contexts, where data sovereignty, energy efficiency, and infrastructure constraints are critical. We detail a lightweight, \"Kubernetes-like\" orchestration framework for deploying AI services within such environments and demonstrate our progress in implementing AI algorithms on low-power, cost-effective microcontrollers such as those in the Arduino ecosystem. By enabling in-situ learning directly on sensors or microcontrollers, our work aims to bring intelligent services to resource-limited settings, fostering autonomy, resilience, and sustainable development in vulnerable or underserved communities. The contributions in this article are related, firstly, to our project \"Online Machine Learning Algorithms for Embedded Systems\" and the evaluation of two new online algorithms. Secondly, we envision a cloud-fog-edge architecture based on the KOptim and FIWARE components, and we propose a methodology for coupling them. Experimental results of the online algorithms are also presented, showcasing real-world traces.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC",
+        "cs.LG"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_5b5b4589406abab8",
+      "score": {
+        "topic_score": 2.6,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.6,
+        "matched_topics": [
+          "Kubernetes",
+          "Edge Computing",
+          "Energy Efficiency"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Key research area match: Energy Efficiency (+0.4)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "A neuromodulable current-mode silicon neuron for robust and adaptive neuromorphic systems",
+      "url": "https://doi.org/10.1088/2634-4386/aeaf14",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Loris Mendolia",
+        "Chenxi Wen",
+        "Elisabetta Chicca",
+        "Giacomo Indiveri",
+        "Rodolphe J. Sepulchre",
+        "Jean‐Michel Redouté",
+        "Alessio Franci"
+      ],
+      "doi": "10.1088/2634-4386/aeaf14",
+      "arxiv_id": null,
+      "publication_date": "2026-10-01",
+      "discovery_date": "2026-10-02",
+      "abstract": "Abstract Neuromorphic engineering makes use of mixed-signal analog and digital circuits to directly emulate the computational principles of biological brains. Such electronic systems offer a high degree of adaptability, robustness, and energy efficiency across a wide range of tasks, from edge computing to robotics. Within this context, we investigate a key feature of biological neurons: their ability to carry out robust and reliable computation by adapting their input responses and spiking patterns to context through neuromodulation. Achieving analogous levels of robustness and adaptation in neuromorphic circuits through modulatory mechanisms is a largely unexplored path. We present a novel current-mode neuron design that supports robust neuromodulation with minimal model complexity, compatible with standard CMOS technologies. We first introduce a mathematical model of the circuit and provide tools to analyze and tune the neuron behavior; we then demonstrate both theoretically and experimentally the biologically plausible neuromodulation adaptation capabilities of the circuit over a wide range of parameters. All theoretical predictions were verified in experiments on a low-power 180 nm CMOS implementation of the proposed neuron circuit. Thanks to the analog underlying feedback structure, the proposed adaptive neuromodulable neuron exhibits a high degree of robustness, flexibility, and scalability across operating ranges of currents and temperatures, making it a perfect candidate for real-world neuromorphic applications.",
+      "venue": "Neuromorphic Computing and Engineering",
+      "topics": [
+        "Neuromorphic engineering",
+        "Computer science",
+        "Robustness (evolution)",
+        "CMOS",
+        "Scalability",
+        "Computation",
+        "Neuromodulation",
+        "Context (archaeology)",
+        "Electronic circuit",
+        "Electronic engineering",
+        "Computer architecture",
+        "Analogue electronics",
+        "Computer engineering",
+        "Digital electronics",
+        "Artificial neural network",
+        "Artificial intelligence",
+        "Efficient energy use",
+        "Adaptive system",
+        "Key (lock)",
+        "Transistor",
+        "Circuit design",
+        "Adaptation (eye)",
+        "Integrated circuit design",
+        "Stochastic computing"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_7105923c5efdfc91",
+      "score": {
+        "topic_score": 2.6,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.6,
+        "matched_topics": [
+          "Edge Computing",
+          "Energy Efficiency"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Key research area match: Energy Efficiency (+0.4)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
+    },
+    {
+      "title": "Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence",
+      "url": "http://arxiv.org/abs/2609.31159v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Ahmed-Rafik Baahmed",
+        "Jean-François Dollinger",
+        "Amine Brahmia",
+        "Mourad Zghal"
+      ],
+      "doi": null,
+      "arxiv_id": "2609.31159v1",
+      "publication_date": "2026-09-25",
+      "discovery_date": "2026-10-02",
+      "abstract": "We propose a momentum-guided federated split distillation framework for personalized, efficient, and autonomous temporal edge intelligence. We introduce TeRR-SAtt, our novel temporal reservoir student attention design that combines fixed reservoir representations, a lightweight temporal student, and personalized output modules. We also present AMGF, our anticipatory momentum-guided fusion mechanism that clusters clients through learning momentum and derives specialized teacher updates. On real-world smart-building data, TeRR-SAtt reduces edge training latency by 65.50%, inference latency by 44.70%, training memory usage by 18.40%, and inference CPU usage by 33.10% over the considered baselines. At the same time, AMGF improves local learning by up to 35.31% in RMSE compared to global updates.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.AI",
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_47b7dfc9128d09dd",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.2,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Edge Training",
+          "Edge Intelligence"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Intelligence (Title), Edge Training (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Published within last week (7d ago) (+1.2)"
         ]
       },
       "intelligence": null,

@@ -4132,5 +4132,695 @@
     },
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "ACM SenSys 2026 (Conference on Embedded Networked Sensor Systems)",
+    "url": "https://sensys.acm.org/2026/",
+    "source": "ACM SIGMOBILE / SIGBED (Curated Official Conference Registry)",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "conference_cfp",
+    "authors": [
+      "ACM SIGMOBILE / SIGBED"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-02",
+    "discovery_date": "2026-10-02",
+    "abstract": "[Academic Conference] The leading systems conference on architecture, design, implementation, and evaluation of networked embedded sensing, Intelligent IoT, and low-power distributed perception. Dates: 2026-11-09 to 2026-11-12. Location: Hong Kong, China (hybrid). Registration Fee: $320 (Student) / $720 (Regular). Subsidies: ACM Student Member Registration: $320 (vs $720 standard rate); ACM SIGBED & SIGMOBILE Student Travel Grant: Up to $1,200 travel/lodging stipend + registration waiver.",
+    "venue": "ACM SenSys 2026 (Conference on Embedded Networked Sensor Systems) — Hong Kong, China",
+    "topics": [
+      "Internet of Things",
+      "Sensor Networks",
+      "Embedded Systems",
+      "Intelligent IoT",
+      "Cyber-Physical Systems",
+      "Embedded AI"
+    ],
+    "institution": "ACM SIGMOBILE / SIGBED",
+    "location": "Hong Kong, China",
+    "deadline": "2026-06-10",
+    "is_urgent": false,
+    "id": "evt_aeccd5b94ca44b3c",
+    "score": {
+      "topic_score": 3.0,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.3,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 7.6,
+      "matched_topics": [
+        "Internet of Things",
+        "Sensor Networks",
+        "Embedded Systems",
+        "Intelligent IoT",
+        "Cyber-Physical Systems",
+        "Embedded AI"
+      ],
+      "reasons": [
+        "Primary Edge topic match in description: Embedded Systems, Internet of Things, IoT (+1.8)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Tier 1 professional organization (ACM SIGMOBILE / SIGBED) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Event upcoming in 38 days (+0.3)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Internet of Things and Sensor Networks. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "[Academic Conference] The leading systems conference on architecture, design, implementation, and evaluation of networked embedded sensing, Intelligent IoT, and low-power distributed perception",
+      "key_contribution": "[Academic Conference] The leading systems conference on architecture, design, implementation, and evaluation of networked embedded sensing, Intelligent IoT, and low-power distributed perception",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.6/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "ml_embedded_iot",
+      "event_type": "academic_conference",
+      "event_name": "ACM SenSys 2026 (Conference on Embedded Networked Sensor Systems)",
+      "organizer": "ACM SIGMOBILE / SIGBED",
+      "format": "hybrid",
+      "location": "Hong Kong, China",
+      "start_date": "2026-11-09",
+      "end_date": "2026-11-12",
+      "fee_status": "paid",
+      "registration_fee": "$320 (Student) / $720 (Regular)",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": false,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "student_rate",
+          "name": "ACM Student Member Registration",
+          "amount_or_rate": "$320 (vs $720 standard rate)",
+          "eligibility": "Full-time students with valid ACM student ID.",
+          "deadline": "2026-10-10",
+          "application_url": null
+        },
+        {
+          "discount_type": "travel_grant",
+          "name": "ACM SIGBED & SIGMOBILE Student Travel Grant",
+          "amount_or_rate": "Up to $1,200 travel/lodging stipend + registration waiver",
+          "eligibility": "PhD students presenting papers, posters, or demos at SenSys.",
+          "deadline": "2026-09-20",
+          "application_url": "https://sensys.acm.org/2026/travel_grants.html"
+        }
+      ],
+      "official_website": "https://sensys.acm.org/2026/",
+      "cfp_deadline": "2026-06-10",
+      "description": "The leading systems conference on architecture, design, implementation, and evaluation of networked embedded sensing, Intelligent IoT, and low-power distributed perception.",
+      "relevance_score": 7.6
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "tinyML Talks Technical Webinar Series 2026-2027",
+    "url": "https://www.tinyml.org/talks/",
+    "source": "TinyML Foundation (TinyML Webinar Portal)",
+    "source_tier": "tier4_industry",
+    "item_type": "event",
+    "authors": [
+      "TinyML Foundation"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-02",
+    "discovery_date": "2026-10-02",
+    "abstract": "[Webinar] Bi-weekly interactive technical webinars presented by leading industrial researchers and university professors on ultra-low-power neural inference and TinyML hardware. Dates: 2026-11-05 to 2026-11-05. Location: Online / Virtual (online). Registration Fee: Free. Subsidies: Free Global Public Registration: 100% Free worldwide interactive admission, Q&A, and on-demand slide/recording downloads.",
+    "venue": "tinyML Talks Technical Webinar Series 2026-2027 — Online / Virtual",
+    "topics": [
+      "TinyML",
+      "Embedded AI",
+      "Machine Learning",
+      "Low-Power ML",
+      "Microcontrollers"
+    ],
+    "institution": "TinyML Foundation",
+    "location": "Online / Virtual",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "evt_bedea92aac92ba58",
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 2.0,
+      "recency_score": 1.5,
+      "stage_boost": 1.3,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.6,
+      "matched_topics": [
+        "TinyML",
+        "Embedded AI",
+        "Machine Learning",
+        "Low-Power ML",
+        "Microcontrollers"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: TinyML (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Microcontrollers (+0.4)",
+        "Tier 2 established foundation/university (TinyML Foundation) (+2.0)",
+        "Free virtual track available (+0.8)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Event upcoming in 34 days (+0.3)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates TinyML and Embedded AI. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Not determinable from available metadata.",
+      "key_contribution": "Subsidies: Free Global Public Registration: 100% Free worldwide interactive admission, Q&A, and on-demand slide/recording downloads.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.6/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "ml_embedded_iot",
+      "event_type": "webinar",
+      "event_name": "tinyML Talks Technical Webinar Series 2026-2027",
+      "organizer": "TinyML Foundation",
+      "format": "online",
+      "location": "Online / Virtual",
+      "start_date": "2026-11-05",
+      "end_date": "2026-11-05",
+      "fee_status": "hybrid_free",
+      "registration_fee": "Free",
+      "has_student_discount": false,
+      "has_travel_grant": false,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": true,
+      "discounts_count": 1,
+      "discounts_subsidies": [
+        {
+          "discount_type": "fee_waiver",
+          "name": "Free Global Public Registration",
+          "amount_or_rate": "100% Free worldwide interactive admission, Q&A, and on-demand slide/recording downloads",
+          "eligibility": "Open to researchers, students, and engineers worldwide.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.tinyml.org/talks/",
+      "cfp_deadline": null,
+      "description": "Bi-weekly interactive technical webinars presented by leading industrial researchers and university professors on ultra-low-power neural inference and TinyML hardware.",
+      "relevance_score": 7.6
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "tinyML Summit 2027",
+    "url": "https://www.tinyml.org/event/summit-2027/",
+    "source": "TinyML Foundation (TinyML Foundation Registry)",
+    "source_tier": "tier4_industry",
+    "item_type": "event",
+    "authors": [
+      "TinyML Foundation"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-02",
+    "discovery_date": "2026-10-02",
+    "abstract": "[Industry Conference] The global industry summit uniting researchers, chip designers, and sensor architects advancing machine learning on ultra-low-power microcontrollers (<1mW). Dates: 2027-04-13 to 2027-04-15. Location: San Francisco, CA, USA (hybrid). Registration Fee: Free (Virtual Pass) / $495 (In-Person Pass). Subsidies: Free Virtual Pass: 100% Free global streaming of all technical keynotes and partner demonstrations; Student In-Person Fellowship: $95 student pass (80% discount vs $495).",
+    "venue": "tinyML Summit 2027 — San Francisco, CA, USA",
+    "topics": [
+      "TinyML",
+      "Embedded AI",
+      "Low-Power ML",
+      "Microcontrollers",
+      "Intelligent IoT"
+    ],
+    "institution": "TinyML Foundation",
+    "location": "San Francisco, CA, USA",
+    "deadline": "2027-02-28",
+    "is_urgent": false,
+    "id": "evt_4bb19b52b4d515fa",
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 2.0,
+      "recency_score": 1.5,
+      "stage_boost": 1.5,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.5,
+      "matched_topics": [
+        "TinyML",
+        "Embedded AI",
+        "Low-Power ML",
+        "Microcontrollers",
+        "Intelligent IoT"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: TinyML (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Microcontrollers (+0.4)",
+        "Tier 2 established foundation/university (TinyML Foundation) (+2.0)",
+        "Free virtual track available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Scholarship / attendance fee waiver supported (+0.5)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates TinyML and Embedded AI. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Not determinable from available metadata.",
+      "methodology": "Not determinable from available metadata.",
+      "key_contribution": "Subsidies: Free Virtual Pass: 100% Free global streaming of all technical keynotes and partner demonstrations; Student In-Person Fellowship: $95 student pass (80% discount vs $495).",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.5/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "ml_embedded_iot",
+      "event_type": "industry_conference",
+      "event_name": "tinyML Summit 2027",
+      "organizer": "TinyML Foundation",
+      "format": "hybrid",
+      "location": "San Francisco, CA, USA",
+      "start_date": "2027-04-13",
+      "end_date": "2027-04-15",
+      "fee_status": "hybrid_free",
+      "registration_fee": "Free (Virtual Pass) / $495 (In-Person Pass)",
+      "has_student_discount": true,
+      "has_travel_grant": false,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": true,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "fee_waiver",
+          "name": "Free Virtual Pass",
+          "amount_or_rate": "100% Free global streaming of all technical keynotes and partner demonstrations",
+          "eligibility": "Open to researchers, students, and engineers worldwide.",
+          "deadline": null,
+          "application_url": null
+        },
+        {
+          "discount_type": "student_rate",
+          "name": "Student In-Person Fellowship",
+          "amount_or_rate": "$95 student pass (80% discount vs $495)",
+          "eligibility": "Enrolled university students with verifiable academic email.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.tinyml.org/event/summit-2027/",
+      "cfp_deadline": null,
+      "description": "The global industry summit uniting researchers, chip designers, and sensor architects advancing machine learning on ultra-low-power microcontrollers (<1mW).",
+      "relevance_score": 7.5
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "ICLR 2027 (International Conference on Learning Representations)",
+    "url": "https://iclr.cc/Conferences/2027",
+    "source": "Institute for Learning Representations (Curated Official Conference Registry)",
+    "source_tier": "tier3_conference",
+    "item_type": "conference_cfp",
+    "authors": [
+      "Institute for Learning Representations"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-02",
+    "discovery_date": "2026-10-02",
+    "abstract": "[Academic Conference] Premier conference dedicated to representation learning, deep neural architectures, TinyML representations, and efficient model compression. Dates: 2027-04-26 to 2027-04-30. Location: Singapore (hybrid). Registration Fee: $300 (Student) / $850 (Regular). Subsidies: ICLR Financial Assistance & Travel Grant: Full registration waiver + up to $1,500 travel and accommodation grant; Student Admission Rate: $300 (reduced rate).",
+    "venue": "ICLR 2027 (International Conference on Learning Representations) — Singapore",
+    "topics": [
+      "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
+      "TinyML",
+      "AI Systems"
+    ],
+    "institution": "Institute for Learning Representations",
+    "location": "Singapore",
+    "deadline": "2026-09-28",
+    "is_urgent": false,
+    "id": "evt_572b1a7588f6ebcb",
+    "score": {
+      "topic_score": 3.4,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 7.4,
+      "matched_topics": [
+        "Machine Learning",
+        "Deep Learning",
+        "Computer Vision",
+        "TinyML",
+        "AI Systems"
+      ],
+      "reasons": [
+        "Primary Edge topic match in description: Machine Learning, Deep Learning, TinyML (+1.8)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Model Compression (+0.4)",
+        "Tier 1 professional organization (Institute for Learning Representations) (+2.5)",
+        "Subsidized student rate available (+0.5)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "ml_embedded_iot",
+      "event_type": "academic_conference",
+      "event_name": "ICLR 2027 (International Conference on Learning Representations)",
+      "organizer": "Institute for Learning Representations",
+      "format": "hybrid",
+      "location": "Singapore",
+      "start_date": "2027-04-26",
+      "end_date": "2027-04-30",
+      "fee_status": "paid",
+      "registration_fee": "$300 (Student) / $850 (Regular)",
+      "has_student_discount": true,
+      "has_travel_grant": false,
+      "has_scholarship": true,
+      "has_early_bird": false,
+      "has_fee_waiver": false,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "scholarship",
+          "name": "ICLR Financial Assistance & Travel Grant",
+          "amount_or_rate": "Full registration waiver + up to $1,500 travel and accommodation grant",
+          "eligibility": "Enrolled students with accepted papers and researchers from underrepresented regions.",
+          "deadline": "2027-02-15",
+          "application_url": "https://iclr.cc/Conferences/2027/FinancialAssistance"
+        },
+        {
+          "discount_type": "student_rate",
+          "name": "Student Admission Rate",
+          "amount_or_rate": "$300 (reduced rate)",
+          "eligibility": "Verified students.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://iclr.cc/Conferences/2027",
+      "cfp_deadline": "2026-09-28",
+      "description": "Premier conference dedicated to representation learning, deep neural architectures, TinyML representations, and efficient model compression.",
+      "relevance_score": 7.4
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Edge Computing World 2026",
+    "url": "https://www.edgecomputingworld.com/",
+    "source": "Topio Networks / Edge Computing Association (Industry Event Announcements)",
+    "source_tier": "tier4_industry",
+    "item_type": "event",
+    "authors": [
+      "Topio Networks / Edge Computing Association"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-02",
+    "discovery_date": "2026-10-02",
+    "abstract": "[Industry Conference] Global business and technical summit for edge infrastructure, enterprise IoT, MEC deployment cases, and real-time AI inference architectures. Dates: 2026-10-27 to 2026-10-29. Location: Santa Clara, CA, USA (hybrid). Registration Fee: Free (Virtual) / $795 (In-Person Pass). Subsidies: Free Virtual Attendee Pass: 100% Free digital access to all keynotes and recorded sessions; Academic In-Person Rate: $195 (over 75% discount vs $795).",
+    "venue": "Edge Computing World 2026 — Santa Clara, CA, USA",
+    "topics": [
+      "Edge Computing",
+      "Enterprise Edge",
+      "MEC",
+      "Edge AI Deployment",
+      "Industrial IoT"
+    ],
+    "institution": "Topio Networks / Edge Computing Association",
+    "location": "Santa Clara, CA, USA",
+    "deadline": "2026-09-30",
+    "is_urgent": false,
+    "id": "evt_e96196f23d06a66f",
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 1.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.5,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.3,
+      "matched_topics": [
+        "Edge Computing",
+        "Enterprise Edge",
+        "MEC",
+        "Edge AI Deployment",
+        "Industrial IoT"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Computing (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: IoT (+0.4)",
+        "Tier 3 industry consortium (Topio Networks / Edge Computing Association) (+1.5)",
+        "Free virtual track available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Event upcoming in 25 days (+0.3)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "edge_computing",
+      "event_type": "industry_conference",
+      "event_name": "Edge Computing World 2026",
+      "organizer": "Topio Networks / Edge Computing Association",
+      "format": "hybrid",
+      "location": "Santa Clara, CA, USA",
+      "start_date": "2026-10-27",
+      "end_date": "2026-10-29",
+      "fee_status": "hybrid_free",
+      "registration_fee": "Free (Virtual) / $795 (In-Person Pass)",
+      "has_student_discount": true,
+      "has_travel_grant": false,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": true,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "fee_waiver",
+          "name": "Free Virtual Attendee Pass",
+          "amount_or_rate": "100% Free digital access to all keynotes and recorded sessions",
+          "eligibility": "Open to students, researchers, and global online participants.",
+          "deadline": null,
+          "application_url": null
+        },
+        {
+          "discount_type": "student_rate",
+          "name": "Academic In-Person Rate",
+          "amount_or_rate": "$195 (over 75% discount vs $795)",
+          "eligibility": "University students and faculty members with university credentials.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.edgecomputingworld.com/",
+      "cfp_deadline": null,
+      "description": "Global business and technical summit for edge infrastructure, enterprise IoT, MEC deployment cases, and real-time AI inference architectures.",
+      "relevance_score": 7.3
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Embedded World 2027 (Exhibition & Conference)",
+    "url": "https://www.embedded-world.de/en",
+    "source": "NürnbergMesse / WEKA FACHMEDIEN (Industry Event Announcements)",
+    "source_tier": "tier3_conference",
+    "item_type": "event",
+    "authors": [
+      "NürnbergMesse / WEKA FACHMEDIEN"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-02",
+    "discovery_date": "2026-10-02",
+    "abstract": "[Academic Conference] The world's leading exhibition and conference for embedded system technologies, distributed IoT hardware, RISC-V, and embedded AI microprocessors. Dates: 2027-03-09 to 2027-03-11. Location: Nuremberg, Germany (hybrid). Registration Fee: Free (Student Day Pass / Expo) / €650 (Full Congress). Subsidies: Free Student Day Pass: 100% Free entry to exhibition halls, company tech talks, and student career forum; Academic Conference Pass: €180 technical conference pass (over 70% off regular €650).",
+    "venue": "Embedded World 2027 (Exhibition & Conference) — Nuremberg, Germany",
+    "topics": [
+      "Embedded Systems",
+      "Internet of Things",
+      "Embedded AI",
+      "Hardware Acceleration",
+      "Microcontrollers"
+    ],
+    "institution": "NürnbergMesse / WEKA FACHMEDIEN",
+    "location": "Nuremberg, Germany",
+    "deadline": "2027-01-30",
+    "is_urgent": false,
+    "id": "evt_5cf608b1279ad308",
+    "score": {
+      "topic_score": 3.8,
+      "credibility_score": 1.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.5,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 7.3,
+      "matched_topics": [
+        "Embedded Systems",
+        "Internet of Things",
+        "Embedded AI",
+        "Hardware Acceleration",
+        "Microcontrollers"
+      ],
+      "reasons": [
+        "Primary Edge topic match in description: Embedded Systems, Internet of Things, IoT (+1.8)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Microcontrollers, Hardware Acceleration (+0.8)",
+        "Tier 3 industry consortium (NürnbergMesse / WEKA FACHMEDIEN) (+1.5)",
+        "Free virtual track available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "ml_embedded_iot",
+      "event_type": "academic_conference",
+      "event_name": "Embedded World 2027 (Exhibition & Conference)",
+      "organizer": "NürnbergMesse / WEKA FACHMEDIEN",
+      "format": "hybrid",
+      "location": "Nuremberg, Germany",
+      "start_date": "2027-03-09",
+      "end_date": "2027-03-11",
+      "fee_status": "hybrid_free",
+      "registration_fee": "Free (Student Day Pass / Expo) / €650 (Full Congress)",
+      "has_student_discount": true,
+      "has_travel_grant": false,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": true,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "fee_waiver",
+          "name": "Free Student Day Pass",
+          "amount_or_rate": "100% Free entry to exhibition halls, company tech talks, and student career forum",
+          "eligibility": "University students with valid student ID or university matriculation certificate.",
+          "deadline": null,
+          "application_url": null
+        },
+        {
+          "discount_type": "student_rate",
+          "name": "Academic Conference Pass",
+          "amount_or_rate": "€180 technical conference pass (over 70% off regular €650)",
+          "eligibility": "Academic researchers, faculty, and enrolled PhD students.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.embedded-world.de/en",
+      "cfp_deadline": null,
+      "description": "The world's leading exhibition and conference for embedded system technologies, distributed IoT hardware, RISC-V, and embedded AI microprocessors.",
+      "relevance_score": 7.3
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "LF Edge Webinar: State of Open Source Edge Computing & Akraino Blueprints",
+    "url": "https://www.lfedge.org/resources/webinars/",
+    "source": "The Linux Foundation (LF Edge) (Linux Foundation LF Edge Webinar Portal)",
+    "source_tier": "tier4_industry",
+    "item_type": "event",
+    "authors": [
+      "The Linux Foundation (LF Edge)"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-02",
+    "discovery_date": "2026-10-02",
+    "abstract": "[Webinar] Deep dive into production open-source edge stacks including EdgeX Foundry, Akraino Edge Stack, and Open Horizon for edge AI workload orchestration. Dates: 2026-10-22 to 2026-10-22. Location: Online / Virtual (online). Registration Fee: Free. Subsidies: Free Public Webinar Registration: 100% Free admission + on-demand recording access.",
+    "venue": "LF Edge Webinar: State of Open Source Edge Computing & Akraino Blueprints — Online / Virtual",
+    "topics": [
+      "Edge Computing",
+      "EdgeX Foundry",
+      "Akraino",
+      "Edge Orchestration",
+      "Open Source Edge"
+    ],
+    "institution": "The Linux Foundation (LF Edge)",
+    "location": "Online / Virtual",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "evt_c72d3fc02d1b4b4f",
+    "score": {
+      "topic_score": 3.2,
+      "credibility_score": 2.0,
+      "recency_score": 1.5,
+      "stage_boost": 1.5,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.0,
+      "matched_topics": [
+        "Edge Computing",
+        "EdgeX Foundry",
+        "Akraino",
+        "Edge Orchestration",
+        "Open Source Edge"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Computing (+2.5)",
+        "Multi-topic Edge synergy (+0.7)",
+        "Tier 2 established foundation/university (The Linux Foundation (LF Edge)) (+2.0)",
+        "100% Free registration (+1.0)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Event upcoming in 20 days (+0.3)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "edge_computing",
+      "event_type": "webinar",
+      "event_name": "LF Edge Webinar: State of Open Source Edge Computing & Akraino Blueprints",
+      "organizer": "The Linux Foundation (LF Edge)",
+      "format": "online",
+      "location": "Online / Virtual",
+      "start_date": "2026-10-22",
+      "end_date": "2026-10-22",
+      "fee_status": "free",
+      "registration_fee": "Free",
+      "has_student_discount": false,
+      "has_travel_grant": false,
+      "has_scholarship": false,
+      "has_early_bird": false,
+      "has_fee_waiver": true,
+      "discounts_count": 1,
+      "discounts_subsidies": [
+        {
+          "discount_type": "fee_waiver",
+          "name": "Free Public Webinar Registration",
+          "amount_or_rate": "100% Free admission + on-demand recording access",
+          "eligibility": "Open to researchers, students, developers worldwide.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.lfedge.org/resources/webinars/",
+      "cfp_deadline": null,
+      "description": "Deep dive into production open-source edge stacks including EdgeX Foundry, Akraino Edge Stack, and Open Horizon for edge AI workload orchestration.",
+      "relevance_score": 7.0
+    },
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
