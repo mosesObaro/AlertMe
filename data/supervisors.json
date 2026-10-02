@@ -3631,5 +3631,426 @@
     "topics": [
       "Edge Computing"
     ]
+  },
+  "Neural Information Processing Systems Foundation": {
+    "name": "Neural Information Processing Systems Foundation",
+    "institution": "Neural Information Processing Systems Foundation",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Neural Networks",
+      "Low-Power ML",
+      "AI Systems",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "NeurIPS 2026 (Conference on Neural Information Processing Systems)",
+        "url": "https://neurips.cc/Conferences/2026",
+        "date": "2026-10-02",
+        "venue": "NeurIPS 2026 (Conference on Neural Information Processing Systems) — Sydney, Australia",
+        "score": 8.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 8.8,
+    "topics": [
+      "Neural Networks",
+      "Low-Power ML",
+      "AI Systems",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning"
+    ]
+  },
+  "Arm Ltd. & Edge Impulse": {
+    "name": "Arm Ltd. & Edge Impulse",
+    "institution": "Arm Ltd. & Edge Impulse",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Intelligent IoT",
+      "Microcontrollers",
+      "Computer Vision",
+      "Embedded AI",
+      "TinyML"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Arm & Edge Impulse Embedded AI Hands-on Bootcamp 2026",
+        "url": "https://edgeimpulse.com/community/developer-bootcamp/",
+        "date": "2026-10-02",
+        "venue": "Arm & Edge Impulse Embedded AI Hands-on Bootcamp 2026 — Online / Virtual",
+        "score": 8.3
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: iot, tinyml",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.2,
+    "average_relevance": 8.3,
+    "topics": [
+      "Intelligent IoT",
+      "Microcontrollers",
+      "Computer Vision",
+      "Embedded AI",
+      "TinyML"
+    ]
+  },
+  "University of Oxford / AI for Global Goals": {
+    "name": "University of Oxford / AI for Global Goals",
+    "institution": "University of Oxford / AI for Global Goals",
+    "country": "United Kingdom",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Neural Networks",
+      "AI Systems",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Oxford Machine Learning Summer School (OxML 2027)",
+        "url": "https://www.oxfordml.school/",
+        "date": "2026-10-02",
+        "venue": "Oxford Machine Learning Summer School (OxML 2027) — Oxford, UK",
+        "score": 7.7
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "✓ Target country priority: United Kingdom"
+    ],
+    "composite_score": 5.3,
+    "average_relevance": 7.7,
+    "topics": [
+      "Neural Networks",
+      "AI Systems",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning"
+    ]
+  },
+  "TinyML Foundation": {
+    "name": "TinyML Foundation",
+    "institution": "TinyML Foundation",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Microcontrollers",
+      "Low-Power ML",
+      "Embedded AI",
+      "Machine Learning",
+      "TinyML",
+      "Intelligent IoT"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "tinyML Talks Technical Webinar Series 2026-2027",
+        "url": "https://www.tinyml.org/talks/",
+        "date": "2026-10-02",
+        "venue": "tinyML Talks Technical Webinar Series 2026-2027 — Online / Virtual",
+        "score": 7.6
+      },
+      {
+        "title": "tinyML Summit 2027",
+        "url": "https://www.tinyml.org/event/summit-2027/",
+        "date": "2026-10-02",
+        "venue": "tinyML Summit 2027 — San Francisco, CA, USA",
+        "score": 7.5
+      }
+    ],
+    "publication_count": 2,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: iot, tinyml",
+      "✓ Active recent publication record (2 papers)",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.8,
+    "average_relevance": 7.5,
+    "topics": [
+      "Microcontrollers",
+      "Low-Power ML",
+      "Embedded AI",
+      "Machine Learning",
+      "TinyML",
+      "Intelligent IoT"
+    ]
+  },
+  "Institute for Learning Representations": {
+    "name": "Institute for Learning Representations",
+    "institution": "Institute for Learning Representations",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "AI Systems",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning",
+      "TinyML"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "ICLR 2027 (International Conference on Learning Representations)",
+        "url": "https://iclr.cc/Conferences/2027",
+        "date": "2026-10-02",
+        "venue": "ICLR 2027 (International Conference on Learning Representations) — Singapore",
+        "score": 7.4
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: tinyml",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.4,
+    "topics": [
+      "AI Systems",
+      "Computer Vision",
+      "Deep Learning",
+      "Machine Learning",
+      "TinyML"
+    ]
+  },
+  "NürnbergMesse / WEKA FACHMEDIEN": {
+    "name": "NürnbergMesse / WEKA FACHMEDIEN",
+    "institution": "NürnbergMesse / WEKA FACHMEDIEN",
+    "country": "Germany",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Microcontrollers",
+      "Embedded Systems",
+      "Hardware Acceleration",
+      "Embedded AI",
+      "Internet of Things"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Embedded World 2027 (Exhibition & Conference)",
+        "url": "https://www.embedded-world.de/en",
+        "date": "2026-10-02",
+        "venue": "Embedded World 2027 (Exhibition & Conference) — Nuremberg, Germany",
+        "score": 7.3
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: internet of things",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "✓ Target country priority: Germany"
+    ],
+    "composite_score": 6.6,
+    "average_relevance": 7.3,
+    "topics": [
+      "Microcontrollers",
+      "Embedded Systems",
+      "Hardware Acceleration",
+      "Embedded AI",
+      "Internet of Things"
+    ]
+  },
+  "The Linux Foundation": {
+    "name": "The Linux Foundation",
+    "institution": "The Linux Foundation (LF Edge)",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Edge Computing",
+      "Open Source Edge",
+      "EdgeX Foundry",
+      "Edge Orchestration",
+      "Akraino"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "LF Edge Webinar: State of Open Source Edge Computing & Akraino Blueprints",
+        "url": "https://www.lfedge.org/resources/webinars/",
+        "date": "2026-10-02",
+        "venue": "LF Edge Webinar: State of Open Source Edge Computing & Akraino Blueprints — Online / Virtual",
+        "score": 7.0
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.0,
+    "topics": [
+      "Edge Computing",
+      "Open Source Edge",
+      "EdgeX Foundry",
+      "Edge Orchestration",
+      "Akraino"
+    ]
+  },
+  "TinyML Foundation / Harvard University / ICTP": {
+    "name": "TinyML Foundation / Harvard University / ICTP",
+    "institution": "TinyML Foundation / Harvard University / ICTP",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Edge Model Compression",
+      "Edge AI",
+      "Hardware Acceleration",
+      "TinyML",
+      "Quantization for Edge"
+    ],
+    "academic_fit_score": 9.8,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "TinyML & Edge AI Summer School 2027",
+        "url": "https://www.tinyml.org/education/summer-school-2027",
+        "date": "2026-10-02",
+        "venue": "TinyML & Edge AI Summer School 2027 — Trieste, Italy",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-02",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai, tinyml",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.4,
+    "average_relevance": 6.9,
+    "topics": [
+      "Edge Model Compression",
+      "Edge AI",
+      "Hardware Acceleration",
+      "TinyML",
+      "Quantization for Edge"
+    ]
   }
 }
