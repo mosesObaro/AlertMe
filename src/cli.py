@@ -618,6 +618,65 @@ def debug_event_score_cli(args):
     print("=" * 65 + "\n")
 
 
+def generate_dashboard_cli(args):
+    """Regenerates the GitHub Pages dashboard data."""
+    from src.storage.state_manager import StateManager
+    from src.storage.dashboard_generator import DashboardGenerator
+
+    state_mgr = StateManager()
+    dash_gen = DashboardGenerator(state_mgr)
+    history = state_mgr.load_alert_history()
+    trends = state_mgr.load_trends()
+    supervisors_data = state_mgr.load_supervisors()
+    supervisors = list(supervisors_data.values()) if isinstance(supervisors_data, dict) else supervisors_data
+    opps = state_mgr.load_opportunities()
+    schols = state_mgr.load_scholarships()
+
+    from src.models import ResearchItem
+    current_items = []
+    for h in history[-50:]:
+        try:
+            current_items.append(ResearchItem.from_dict(dict(h)))
+        except Exception:
+            pass
+
+    dash_gen.generate_dashboard_data(
+        current_items=current_items,
+        trends=trends,
+        supervisors=supervisors[:20],
+        opportunities=opps,
+        scholarships=schols,
+    )
+    print("Dashboard data regenerated at docs/data.json")
+
+
+def run_research_gaps(args):
+    """Executes the Research Gap Analysis pipeline."""
+    from src.research_gaps.pipeline import ResearchGapPipeline
+
+    pipeline = ResearchGapPipeline()
+    skip_links = getattr(args, "skip_link_verification", False)
+    result = pipeline.run(verify_links=not skip_links)
+
+    print("\n" + "=" * 60)
+    print(" RESEARCH GAP ANALYSIS PIPELINE SUMMARY")
+    print("=" * 60)
+    print(f"Raw Items Collected:      {result.get('raw_items_collected', 0)}")
+    print(f"Unique Papers:            {result.get('unique_papers', 0)}")
+    print(f"Extracted Papers:         {result.get('extracted_papers', 0)}")
+    print(f"Research Problems:        {result.get('total_problems', 0)}")
+    print(f"  New:                    {result.get('new_problems', 0)}")
+    print(f"  Promising:              {result.get('promising_problems', 0)}")
+    print(f"  Shortlisted:            {result.get('shortlisted_problems', 0)}")
+    print(f"Research Gap Clusters:    {result.get('total_clusters', 0)}")
+    print(f"Research Directions:      {result.get('total_directions', 0)}")
+    print(f"Execution Time:           {result.get('execution_duration_seconds', 0):.1f}s")
+    print("=" * 60)
+    print("Dashboard data written to docs/data/")
+    print("Report written to reports/research_gap_report.md")
+    print("=" * 60 + "\n")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Edge Computing PhD Research Intelligence Assistant CLI",
@@ -714,10 +773,16 @@ def main():
     devt_parser.add_argument("--date", default=None, help="Event date (YYYY-MM-DD)")
     devt_parser.add_argument("--location", default="Hybrid", help="Event location or online/hybrid")
 
+    # Command: research-gaps
+    rg_parser = subparsers.add_parser("research-gaps", help="Run PhD Research Gap Analysis and Topic Discovery pipeline")
+    rg_parser.add_argument("--skip-link-verification", action="store_true", help="Skip external link verification stage")
+
     args = parser.parse_args()
 
     if args.command == "run":
         run_pipeline(args)
+    elif args.command == "research-gaps":
+        run_research_gaps(args)
     elif args.command == "test-sources":
         test_sources(args)
     elif args.command == "debug-score":

@@ -1,0 +1,403 @@
+[
+  {
+    "id": "prob_0fa12d0bba22cb99",
+    "problem_statement": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks",
+    "research_area": "Edge Computing",
+    "problem_cluster": "",
+    "supporting_papers": [
+      "doi_fd8071479658a576"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "However, the limitation is that the framework does not consider battery energy degradation during sustained bursty traffic"
+    ],
+    "unresolved_questions": [
+      "Future work will extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks"
+    ],
+    "evaluation_metrics": [
+      "latency",
+      "energy"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "Edge Computing",
+      "Edge AI",
+      "Distributed Systems"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.865627",
+    "first_seen": "2026-10-02T09:01:33.933132"
+  },
+  {
+    "id": "prob_41a1db4fe45b60de",
+    "problem_statement": "However, the fundamental bottleneck lies in communication overhead and extreme client device heterogeneity where stragglers degrade global model convergence speed",
+    "research_area": "Edge AI",
+    "problem_cluster": "",
+    "supporting_papers": [
+      "doi_3febbd2ef803f194"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "A major limitation of this work is the assumption of independent and identically distributed channel states between training rounds"
+    ],
+    "unresolved_questions": [
+      "Future research must address non-stationary communication channels and Byzantine client poisoning resilience"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "Federated learning enables collaborative model training across distributed clients without raw data sharing"
+    ],
+    "evaluation_metrics": [
+      "accuracy",
+      "convergence",
+      "precision",
+      "bandwidth"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "Federated Learning",
+      "Edge AI",
+      "Distributed Systems"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.867906",
+    "first_seen": "2026-10-02T09:01:33.934598"
+  },
+  {
+    "id": "prob_5339735dc598b893",
+    "problem_statement": "However, the challenge of activation memory footprint during backward passes remains unresolved for sub-megabyte devices",
+    "research_area": "AI for Resource-Constrained Systems",
+    "problem_cluster": "",
+    "supporting_papers": [
+      "doi_425477632614e9a7"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "Nevertheless, a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes"
+    ],
+    "unresolved_questions": [
+      "Future work plans to explore intermittent computing integration and hardware-aware sparse backpropagation"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "On-device model personalization is critical for privacy-sensitive IoT deployments, yet embedded microcontrollers have SRAM budgets below 512 KB, rendering standard backpropagation impossible"
+    ],
+    "evaluation_metrics": [
+      "throughput",
+      "energy",
+      "utilization"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "TinyML",
+      "AI for Resource-Constrained Systems",
+      "IoT"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.870431",
+    "first_seen": "2026-10-02T09:01:33.935741"
+  },
+  {
+    "id": "prob_c0c887f7e87a8013",
+    "problem_statement": "However, decentralized task scheduling across non-cooperative edge servers and base stations suffers from severe coordination overhead and partial observability bottlenecks",
+    "research_area": "Edge Computing",
+    "problem_cluster": "Edge-cloud computing & Edge computing",
+    "supporting_papers": [
+      "doi_ddfe2fa4e7ed2abf"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks"
+    ],
+    "unresolved_questions": [
+      "Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "Hierarchical edge-cloud architectures bridge latency-sensitive edge processing and capacity-rich central cloud data centers"
+    ],
+    "evaluation_metrics": [
+      "latency",
+      "utilization",
+      "bandwidth"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "Edge-Cloud Computing",
+      "Edge Computing",
+      "Distributed Systems"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.875100",
+    "first_seen": "2026-10-02T09:01:33.937409"
+  },
+  {
+    "id": "prob_bf3515b869b952fb",
+    "problem_statement": "However, naive asynchronous federated updates suffer from stale gradient divergence and catastrophic forgetting on non-IID client partitions",
+    "research_area": "Edge Computing",
+    "problem_cluster": "",
+    "supporting_papers": [
+      "doi_d325e3beedb8c4d0"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "The primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees"
+    ],
+    "unresolved_questions": [
+      "Future work will integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "Synchronous federated aggregation suffers from severe straggler delays in wide-area edge networks characterized by packet loss and intermittent device dropouts"
+    ],
+    "evaluation_metrics": [
+      "accuracy",
+      "delay",
+      "convergence"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "Federated Learning",
+      "Distributed Systems",
+      "Edge Computing"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.879607",
+    "first_seen": "2026-10-02T09:01:33.939830"
+  },
+  {
+    "id": "prob_bf59402256197e35",
+    "problem_statement": "Prolonging device operational lifetime is the paramount challenge for battery-powered IoT and wearable edge devices running continuous neural inference",
+    "research_area": "AI for Resource-Constrained Systems",
+    "problem_cluster": "",
+    "supporting_papers": [
+      "doi_e0a322390c8e2993"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "However, the limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles"
+    ],
+    "unresolved_questions": [
+      "Future work will explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "However, existing energy-efficient offloading heuristics treat energy consumption and task deadline satisfaction as decoupled objectives, failing under non-linear battery discharge characteristics"
+    ],
+    "evaluation_metrics": [
+      "latency",
+      "energy"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "AI for Resource-Constrained Systems",
+      "Edge Computing",
+      "IoT"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.882287",
+    "first_seen": "2026-10-02T09:01:33.941447"
+  },
+  {
+    "id": "prob_d760e6dee157a7cd",
+    "problem_statement": "However, cold start initialization latencies in containerized runtimes exceed 500 ms on edge nodes with limited I/O throughput, violating interactive SLA requirements",
+    "research_area": "Edge Computing",
+    "problem_cluster": "Edge-cloud computing & Edge computing",
+    "supporting_papers": [
+      "doi_f5496fcac867c5b9"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes"
+    ],
+    "unresolved_questions": [
+      "Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "We design WarmEdge, a predictive function pre-warming and snapshot restoration architecture that employs temporal graph neural networks to forecast invocation chains across edge microservices"
+    ],
+    "evaluation_metrics": [
+      "latency",
+      "throughput"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "Edge-Cloud Computing",
+      "Distributed Systems",
+      "Edge Computing"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.886698",
+    "first_seen": "2026-10-02T09:01:33.945861"
+  },
+  {
+    "id": "prob_7aa38747f5f80966",
+    "problem_statement": "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams",
+    "research_area": "AI for Resource-Constrained Systems",
+    "problem_cluster": "",
+    "supporting_papers": [
+      "doi_4ea506e06590cb85"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams"
+    ],
+    "unresolved_questions": [
+      "Future work will investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "We develop TemporalTokenSlim, an edge-centric spatial-temporal token pruning mechanism with token recovery caches and 4-bit integer weight-activation quantization"
+    ],
+    "evaluation_metrics": [],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "Edge AI",
+      "TinyML",
+      "AI for Resource-Constrained Systems"
+    ],
+    "status": "investigating",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.890452",
+    "first_seen": "2026-10-02T09:01:33.949001"
+  },
+  {
+    "id": "prob_485955b1b0142d04",
+    "problem_statement": "The limitation is that computing pairwise task similarity matrices introduces an O(N^2) communication bottleneck as the number of IIoT devices scales to thousands",
+    "research_area": "AI for Resource-Constrained Systems",
+    "problem_cluster": "",
+    "supporting_papers": [
+      "doi_3cc87478fb7b31a4"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "The limitation is that computing pairwise task similarity matrices introduces an O(N^2) communication bottleneck as the number of IIoT devices scales to thousands"
+    ],
+    "unresolved_questions": [
+      "Future work will explore hierarchical cluster representatives and decentralized discovery of cluster affiliations without central coordination"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "However, single-model federated learning performs poorly across divergent machine types, while negative knowledge transfer corrupts task-specific feature representations"
+    ],
+    "evaluation_metrics": [
+      "accuracy"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "IoT",
+      "Federated Learning",
+      "AI for Resource-Constrained Systems"
+    ],
+    "status": "new",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.894973",
+    "first_seen": "2026-10-02T09:01:33.953246"
+  },
+  {
+    "id": "prob_d91fd0fa21c444b0",
+    "problem_statement": "However, classical Paxos and Raft protocols suffer catastrophic availability loss during wide-area network partitions and frequent edge node churn",
+    "research_area": "Edge Computing",
+    "problem_cluster": "Edge-cloud computing & Edge computing",
+    "supporting_papers": [
+      "doi_789c6b6c1087b313"
+    ],
+    "evidence": [],
+    "frequency": 1,
+    "existing_approaches": [],
+    "known_limitations": [
+      "However, a major limitation is that state convergence under high conflict rates incurs substantial storage overhead from tombstone accumulation"
+    ],
+    "unresolved_questions": [
+      "Future work will investigate garbage collection protocols tailored for resource-constrained edge storage and formal verification of CRDT merge safety under Byzantine failures"
+    ],
+    "potential_research_questions": [],
+    "candidate_methods": [
+      "We propose EdgePaxos, a partition-tolerant consensus protocol utilizing conflict-free replicated data types (CRDTs) for local operations and speculative quorum commits during network reconvergence"
+    ],
+    "evaluation_metrics": [
+      "latency",
+      "convergence"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "supervisor_keywords": [
+      "Distributed Systems",
+      "Edge Computing",
+      "Edge-Cloud Computing"
+    ],
+    "status": "new",
+    "novelty_notes": "",
+    "significance_notes": "",
+    "feasibility_notes": "",
+    "publication_potential": "",
+    "last_updated": "2026-10-02T09:05:29.900151",
+    "first_seen": "2026-10-02T09:01:33.958207"
+  }
+]

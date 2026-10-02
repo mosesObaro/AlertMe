@@ -66,6 +66,7 @@ class ConfigManager:
         self.phd_opportunities = load_yaml_file(self.config_dir / "phd_opportunities.yaml")
         self.events_config = load_yaml_file(self.config_dir / "events.yaml")
         self.ml_iot_events_config = load_yaml_file(self.config_dir / "ml_iot_events.yaml")
+        self.research_gaps = load_yaml_file(self.config_dir / "research_gaps.yaml")
 
     def reload(self):
         """Reloads all configuration files."""
@@ -77,6 +78,7 @@ class ConfigManager:
         self.phd_opportunities = load_yaml_file(self.config_dir / "phd_opportunities.yaml")
         self.events_config = load_yaml_file(self.config_dir / "events.yaml")
         self.ml_iot_events_config = load_yaml_file(self.config_dir / "ml_iot_events.yaml")
+        self.research_gaps = load_yaml_file(self.config_dir / "research_gaps.yaml")
 
     @property
     def events(self) -> dict:

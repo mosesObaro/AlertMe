@@ -1,0 +1,1729 @@
+{
+  "prob_0fa12d0bba22cb99": [
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "relevant_research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "relevant_publications": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "matching_keywords": [
+        "ai",
+        "systems",
+        "computing",
+        "edge",
+        "distributed"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 1.0
+    },
+    {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge AI"
+      ],
+      "relevant_publications": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [
+        "ai",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.76
+    },
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "relevant_research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.75
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.643
+    },
+    {
+      "name": "Ankur Goyal",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.643
+    }
+  ],
+  "prob_41a1db4fe45b60de": [
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "relevant_research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "matching_keywords": [
+        "learning",
+        "systems",
+        "edge",
+        "distributed",
+        "federated"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.886
+    },
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "relevant_research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "relevant_publications": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "ai",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.829
+    },
+    {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge AI"
+      ],
+      "relevant_publications": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [
+        "ai",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.733
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.627
+    },
+    {
+      "name": "Ankur Goyal",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.627
+    }
+  ],
+  "prob_5339735dc598b893": [
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.627
+    },
+    {
+      "name": "Ankur Goyal",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.627
+    },
+    {
+      "name": "Prathamesh Uttam Patil",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Relevance (law)",
+        "Green computing",
+        "Big data",
+        "The Internet",
+        "Edge device",
+        "Inference",
+        "Smart city",
+        "Sustainable development",
+        "Artificial intelligence",
+        "Distributed computing",
+        "Applications of artificial intelligence",
+        "Machine to machine",
+        "Data science",
+        "Point (geometry)",
+        "Reliability (semiconductor)",
+        "Machine learning",
+        "Server",
+        "Smart objects",
+        "Architecture",
+        "Internet of Things",
+        "Data mining",
+        "Cloud computing",
+        "Energy (signal processing)",
+        "Edge computing",
+        "Efficient energy use",
+        "Key (lock)",
+        "Computer science",
+        "Computer security",
+        "Enhanced Data Rates for GSM Evolution"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+          "url": "https://doi.org/10.5281/zenodo.22953474",
+          "date": "2026-10-31",
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "score": 8.2
+        }
+      ],
+      "matching_keywords": [
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.608
+    },
+    {
+      "name": "Shiva Shrestha",
+      "institution": "Academic Institution",
+      "country": "",
+      "relevant_research_areas": [],
+      "relevant_publications": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.6
+    },
+    {
+      "name": "Kazi Shaharair Sharif",
+      "institution": "Academic Institution",
+      "country": "",
+      "relevant_research_areas": [],
+      "relevant_publications": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.6
+    }
+  ],
+  "prob_c0c887f7e87a8013": [
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "relevant_research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.75
+    },
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "relevant_research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "relevant_publications": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.667
+    },
+    {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge AI"
+      ],
+      "relevant_publications": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.667
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.643
+    },
+    {
+      "name": "Ankur Goyal",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.643
+    }
+  ],
+  "prob_bf3515b869b952fb": [
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "relevant_research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "matching_keywords": [
+        "learning",
+        "systems",
+        "edge",
+        "distributed",
+        "federated"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.886
+    },
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "relevant_research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "relevant_publications": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.829
+    },
+    {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge AI"
+      ],
+      "relevant_publications": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.657
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.641
+    },
+    {
+      "name": "Ankur Goyal",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.641
+    }
+  ],
+  "prob_bf59402256197e35": [
+    {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge AI"
+      ],
+      "relevant_publications": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [
+        "ai",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.714
+    },
+    {
+      "name": "Alaa M. Altarazi",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge Computing"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Multi-layer Kerberos Protocol for Edge Computing",
+          "url": "https://doi.org/10.1007/978-3-032-39783-6_21",
+          "date": "2026-09-30",
+          "venue": "Lecture notes in networks and systems",
+          "score": 6.8
+        }
+      ],
+      "matching_keywords": [
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.714
+    },
+    {
+      "name": "Mohammad Awis Al Lababede",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge Computing"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Multi-layer Kerberos Protocol for Edge Computing",
+          "url": "https://doi.org/10.1007/978-3-032-39783-6_21",
+          "date": "2026-09-30",
+          "venue": "Lecture notes in networks and systems",
+          "score": 6.8
+        }
+      ],
+      "matching_keywords": [
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.714
+    },
+    {
+      "name": "Sufyan Almajali",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge Computing"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Multi-layer Kerberos Protocol for Edge Computing",
+          "url": "https://doi.org/10.1007/978-3-032-39783-6_21",
+          "date": "2026-09-30",
+          "venue": "Lecture notes in networks and systems",
+          "score": 6.8
+        }
+      ],
+      "matching_keywords": [
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.714
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge",
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.655
+    }
+  ],
+  "prob_d760e6dee157a7cd": [
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "relevant_research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "relevant_publications": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.867
+    },
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "relevant_research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.75
+    },
+    {
+      "name": "Prof. Alice Smith",
+      "institution": "University of Cambridge",
+      "country": "United Kingdom",
+      "relevant_research_areas": [
+        "Cloudlet Systems",
+        "Edge Computing",
+        "Resource Allocation"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+          "url": "https://www.cst.cam.ac.uk/phd-positions",
+          "date": "2026-09-11",
+          "venue": "University of Cambridge — United Kingdom",
+          "score": 8.8
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.75
+    },
+    {
+      "name": "Prof. Raymond Liu",
+      "institution": "Hong Kong University of Science and Technology (HKUST)",
+      "country": "Hong Kong",
+      "relevant_research_areas": [
+        "Mobile Edge Computing",
+        "Hong Kong",
+        "6G",
+        "Distributed Intelligence",
+        "PhD Funding",
+        "International Scholarship",
+        "Dependant Support"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+          "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+          "date": "2026-09-11",
+          "venue": "Hong Kong University of Science and Technology (HKUST) — Hong Kong",
+          "score": 9.0
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.675
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.643
+    }
+  ],
+  "prob_7aa38747f5f80966": [
+    {
+      "name": "TinyML Foundation / Harvard University / ICTP",
+      "institution": "TinyML Foundation / Harvard University / ICTP",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge Model Compression",
+        "Edge AI",
+        "Hardware Acceleration",
+        "TinyML",
+        "Quantization for Edge"
+      ],
+      "relevant_publications": [
+        {
+          "title": "TinyML & Edge AI Summer School 2027",
+          "url": "https://www.tinyml.org/education/summer-school-2027",
+          "date": "2026-10-02",
+          "venue": "TinyML & Edge AI Summer School 2027 — Trieste, Italy",
+          "score": 6.9
+        }
+      ],
+      "matching_keywords": [
+        "tinyml",
+        "ai",
+        "edge",
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.745
+    },
+    {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Edge AI"
+      ],
+      "relevant_publications": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [
+        "ai",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.733
+    },
+    {
+      "name": "Prathamesh Uttam Patil",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Relevance (law)",
+        "Green computing",
+        "Big data",
+        "The Internet",
+        "Edge device",
+        "Inference",
+        "Smart city",
+        "Sustainable development",
+        "Artificial intelligence",
+        "Distributed computing",
+        "Applications of artificial intelligence",
+        "Machine to machine",
+        "Data science",
+        "Point (geometry)",
+        "Reliability (semiconductor)",
+        "Machine learning",
+        "Server",
+        "Smart objects",
+        "Architecture",
+        "Internet of Things",
+        "Data mining",
+        "Cloud computing",
+        "Energy (signal processing)",
+        "Edge computing",
+        "Efficient energy use",
+        "Key (lock)",
+        "Computer science",
+        "Computer security",
+        "Enhanced Data Rates for GSM Evolution"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+          "url": "https://doi.org/10.5281/zenodo.22953474",
+          "date": "2026-10-31",
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "score": 8.2
+        }
+      ],
+      "matching_keywords": [
+        "edge",
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.615
+    },
+    {
+      "name": "Shiva Shrestha",
+      "institution": "Academic Institution",
+      "country": "",
+      "relevant_research_areas": [],
+      "relevant_publications": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.6
+    },
+    {
+      "name": "Kazi Shaharair Sharif",
+      "institution": "Academic Institution",
+      "country": "",
+      "relevant_research_areas": [],
+      "relevant_publications": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.6
+    }
+  ],
+  "prob_485955b1b0142d04": [
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "relevant_research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "federated",
+        "learning"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.72
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.626
+    },
+    {
+      "name": "Ankur Goyal",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "for"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.626
+    },
+    {
+      "name": "Prathamesh Uttam Patil",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Relevance (law)",
+        "Green computing",
+        "Big data",
+        "The Internet",
+        "Edge device",
+        "Inference",
+        "Smart city",
+        "Sustainable development",
+        "Artificial intelligence",
+        "Distributed computing",
+        "Applications of artificial intelligence",
+        "Machine to machine",
+        "Data science",
+        "Point (geometry)",
+        "Reliability (semiconductor)",
+        "Machine learning",
+        "Server",
+        "Smart objects",
+        "Architecture",
+        "Internet of Things",
+        "Data mining",
+        "Cloud computing",
+        "Energy (signal processing)",
+        "Edge computing",
+        "Efficient energy use",
+        "Key (lock)",
+        "Computer science",
+        "Computer security",
+        "Enhanced Data Rates for GSM Evolution"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+          "url": "https://doi.org/10.5281/zenodo.22953474",
+          "date": "2026-10-31",
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "score": 8.2
+        }
+      ],
+      "matching_keywords": [
+        "for",
+        "learning"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.615
+    },
+    {
+      "name": "Shiva Shrestha",
+      "institution": "Academic Institution",
+      "country": "",
+      "relevant_research_areas": [],
+      "relevant_publications": [
+        {
+          "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+          "url": "http://arxiv.org/abs/2608.21172v1",
+          "date": "2026-08-21",
+          "score": 7.8
+        }
+      ],
+      "matching_keywords": [],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.6
+    }
+  ],
+  "prob_d91fd0fa21c444b0": [
+    {
+      "name": "Prof. David Miller",
+      "institution": "University of Toronto",
+      "country": "Canada",
+      "relevant_research_areas": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Intelligence"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+          "url": "https://web.ece.utoronto.ca/grad/phd/",
+          "date": "2026-09-11",
+          "venue": "University of Toronto — Canada",
+          "score": 9.3
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.75
+    },
+    {
+      "name": "Prof. Dr. Hans Weber",
+      "institution": "Technical University of Munich (TUM)",
+      "country": "Germany",
+      "relevant_research_areas": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "relevant_publications": [
+        {
+          "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+          "url": "https://www.tum.de/phd-edge-ai",
+          "date": "2026-09-11",
+          "venue": "Technical University of Munich (TUM) — Germany",
+          "score": 10.0
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.667
+    },
+    {
+      "name": "Sourabh Natu",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.643
+    },
+    {
+      "name": "Ankur Goyal",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Cloud computing",
+        "Key (lock)",
+        "Data management",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge computing",
+        "Real-time computing",
+        "Computer science",
+        "Group method of data handling",
+        "Data mining",
+        "Data processing",
+        "Internet of Things",
+        "Systems engineering",
+        "Real-time data",
+        "Edge device"
+      ],
+      "relevant_publications": [
+        {
+          "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+          "url": "https://doi.org/10.1007/s42452-026-09533-w",
+          "date": "2026-09-11",
+          "venue": "Discover Applied Sciences",
+          "score": 7.5
+        }
+      ],
+      "matching_keywords": [
+        "systems",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.643
+    },
+    {
+      "name": "Prathamesh Uttam Patil",
+      "institution": "Academic Institution",
+      "country": "International",
+      "relevant_research_areas": [
+        "Relevance (law)",
+        "Green computing",
+        "Big data",
+        "The Internet",
+        "Edge device",
+        "Inference",
+        "Smart city",
+        "Sustainable development",
+        "Artificial intelligence",
+        "Distributed computing",
+        "Applications of artificial intelligence",
+        "Machine to machine",
+        "Data science",
+        "Point (geometry)",
+        "Reliability (semiconductor)",
+        "Machine learning",
+        "Server",
+        "Smart objects",
+        "Architecture",
+        "Internet of Things",
+        "Data mining",
+        "Cloud computing",
+        "Energy (signal processing)",
+        "Edge computing",
+        "Efficient energy use",
+        "Key (lock)",
+        "Computer science",
+        "Computer security",
+        "Enhanced Data Rates for GSM Evolution"
+      ],
+      "relevant_publications": [
+        {
+          "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+          "url": "https://doi.org/10.5281/zenodo.22953474",
+          "date": "2026-10-31",
+          "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+          "score": 8.2
+        }
+      ],
+      "matching_keywords": [
+        "distributed",
+        "computing",
+        "edge"
+      ],
+      "profile_url": "",
+      "google_scholar_url": "",
+      "semantic_scholar_url": null,
+      "link_status": "unknown",
+      "match_score": 0.624
+    }
+  ]
+}

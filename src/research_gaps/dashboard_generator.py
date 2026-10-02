@@ -1,0 +1,187 @@
+"""Generates dashboard data and markdown reports for the research gap analysis module."""
+
+import datetime
+from pathlib import Path
+from typing import Any, Dict, List, Optional
+
+from src.storage.state_manager import _atomic_write_json
+from src.research_gaps.models import ProblemStatus
+from src.research_gaps.state_manager import ResearchGapStateManager
+from src.utils.logger import logger
+
+DOCS_DIR = Path(__file__).resolve().parent.parent.parent / "docs"
+REPORTS_DIR = Path(__file__).resolve().parent.parent.parent / "reports"
+
+
+class ResearchGapDashboardGenerator:
+    """Exports structured data for the GitHub Pages research-gap dashboard."""
+
+    def __init__(self, state_manager: Optional[ResearchGapStateManager] = None):
+        self.state_manager = state_manager or ResearchGapStateManager()
+        self.docs_dir = DOCS_DIR
+        self.docs_data_dir = self.docs_dir / "data"
+        self.docs_data_dir.mkdir(parents=True, exist_ok=True)
+        self.reports_dir = REPORTS_DIR
+        self.reports_dir.mkdir(parents=True, exist_ok=True)
+
+    def generate_dashboard_data(
+        self,
+        problems: List[Dict[str, Any]],
+        clusters: List[Dict[str, Any]],
+        directions: List[Dict[str, Any]],
+        papers: List[Dict[str, Any]],
+        feasibility_map: Dict[str, Any],
+        supervisor_map: Dict[str, Any],
+        link_results: Dict[str, Any],
+        pipeline_meta: Optional[Dict[str, Any]] = None,
+    ) -> Dict[str, Any]:
+        """Builds the full dashboard JSON payload."""
+        today = datetime.date.today().isoformat()
+        meta = pipeline_meta or {}
+
+        new_count = sum(1 for p in problems if p.get("status") == ProblemStatus.NEW)
+        promising_count = sum(1 for p in problems if p.get("status") == ProblemStatus.PROMISING)
+        shortlisted_count = sum(1 for p in problems if p.get("status") == ProblemStatus.SHORTLISTED)
+        investigating_count = sum(1 for p in problems if p.get("status") == ProblemStatus.INVESTIGATING)
+
+        verified_links = sum(1 for v in link_results.values() if isinstance(v, dict) and v.get("link_status") == "valid")
+        broken_links = sum(1 for v in link_results.values() if isinstance(v, dict) and v.get("link_status") == "broken")
+
+        payload = {
+            "meta": {
+                "last_updated": meta.get("last_updated", today),
+                "last_link_verification": meta.get("last_link_verification", today),
+                "total_papers": len(papers),
+                "total_problems": len(problems),
+                "total_clusters": len(clusters),
+                "total_directions": len(directions),
+                "new_problems": new_count,
+                "investigating_problems": investigating_count,
+                "promising_problems": promising_count,
+                "shortlisted_problems": shortlisted_count,
+                "verified_links": verified_links,
+                "broken_links": broken_links,
+            },
+            "problems": problems,
+            "clusters": clusters,
+            "directions": directions,
+            "papers": papers[:200],
+            "feasibility": feasibility_map,
+            "supervisors": supervisor_map,
+            "link_verification": link_results,
+        }
+        return payload
+
+    def write_dashboard_data(self, payload: Dict[str, Any]) -> None:
+        """Writes dashboard JSON files to docs/data/ for GitHub Pages consumption."""
+        try:
+            # Individual data files for the dashboard
+            _atomic_write_json(self.docs_data_dir / "research_problems.json", payload.get("problems", []))
+            _atomic_write_json(self.docs_data_dir / "research_gap_clusters.json", payload.get("clusters", []))
+            _atomic_write_json(self.docs_data_dir / "research_questions.json", payload.get("directions", []))
+            # Combined payload for single-fetch dashboard loading
+            _atomic_write_json(self.docs_data_dir / "research_gap_data.json", payload)
+            logger.info(f"Dashboard data written to {self.docs_data_dir}")
+        except Exception as e:
+            logger.error(f"Failed to write dashboard data: {e}")
+
+    def generate_report_markdown(
+        self,
+        problems: List[Dict[str, Any]],
+        clusters: List[Dict[str, Any]],
+        directions: List[Dict[str, Any]],
+        feasibility_map: Dict[str, Any],
+        supervisor_map: Dict[str, Any],
+    ) -> str:
+        """Generates a Markdown report summarizing the research gap analysis."""
+        lines = [
+            "# Research Gap Analysis Report",
+            "",
+            f"*Generated: {datetime.date.today().isoformat()}*",
+            "",
+            f"**Papers analyzed:** {sum(len(p.get('supporting_papers', [])) for p in problems)}  ",
+            f"**Research problems identified:** {len(problems)}  ",
+            f"**Research-gap clusters:** {len(clusters)}  ",
+            f"**Candidate research directions:** {len(directions)}  ",
+            "",
+            "---",
+            "",
+            "## Research Problems",
+            "",
+        ]
+
+        # Group by status
+        for status in [ProblemStatus.SHORTLISTED, ProblemStatus.PROMISING, ProblemStatus.INVESTIGATING, ProblemStatus.NEW]:
+            status_problems = [p for p in problems if p.get("status") == status]
+            if not status_problems:
+                continue
+            lines.append(f"### {status.capitalize()} ({len(status_problems)})")
+            lines.append("")
+            for p in status_problems:
+                lines.append(f"#### {p.get('problem_statement', 'Unknown')}")
+                lines.append(f"- **Research Area:** {p.get('research_area', 'N/A')}")
+                lines.append(f"- **Cluster:** {p.get('problem_cluster', 'N/A')}")
+                lines.append(f"- **Frequency:** {p.get('frequency', 0)}")
+                lines.append(f"- **Status:** {p.get('status', 'new')}")
+
+                if p.get("known_limitations"):
+                    lines.append("- **Known Limitations:**")
+                    for lim in p["known_limitations"][:5]:
+                        lines.append(f"  - {lim}")
+
+                if p.get("unresolved_questions"):
+                    lines.append("- **Unresolved Questions:**")
+                    for q in p["unresolved_questions"][:5]:
+                        lines.append(f"  - {q}")
+
+                # Feasibility
+                feas = feasibility_map.get(p.get("id", ""), {})
+                if feas:
+                    lines.append(f"- **Novelty:** {feas.get('novelty', 'unknown')}")
+                    lines.append(f"- **Feasibility:** {feas.get('feasibility', 'unknown')}")
+                    lines.append(f"- **Publication Potential:** {feas.get('publication_potential', 'unknown')}")
+
+                lines.append("")
+
+        # Clusters
+        lines.extend(["---", "", "## Research Gap Clusters", ""])
+        for c in clusters:
+            lines.append(f"### {c.get('name', 'Unknown Cluster')}")
+            lines.append(f"- **Research Area:** {c.get('research_area', 'N/A')}")
+            lines.append(f"- **Problems:** {len(c.get('supporting_problems', []))}")
+            lines.append(f"- **Papers:** {len(c.get('supporting_papers', []))}")
+            if c.get("recurring_limitations"):
+                lines.append("- **Recurring Limitations:**")
+                for lim in c["recurring_limitations"][:5]:
+                    lines.append(f"  - {lim}")
+            if c.get("open_questions"):
+                lines.append("- **Open Questions:**")
+                for q in c["open_questions"][:5]:
+                    lines.append(f"  - {q}")
+            lines.append("")
+
+        # Directions
+        lines.extend(["---", "", "## Candidate Research Directions", ""])
+        for d in directions:
+            lines.append(f"### {d.get('research_problem', 'Unknown')}")
+            lines.append(f"- **Gap:** {d.get('research_gap', 'N/A')}")
+            if d.get("research_questions"):
+                lines.append("- **Research Questions:**")
+                for rq in d["research_questions"]:
+                    lines.append(f"  1. {rq}")
+            lines.append(f"- **Potential Contribution:** {d.get('potential_contribution', 'N/A')}")
+            lines.append(f"- **Possible Methodology:** {d.get('possible_methodology', 'N/A')}")
+            lines.append(f"- **Evidence Supported:** {'Yes' if d.get('evidence_supported') else 'Speculative'}")
+            lines.append("")
+
+        return "\n".join(lines)
+
+    def write_report(self, content: str) -> None:
+        """Writes the Markdown report to the reports directory."""
+        report_path = self.reports_dir / "research_gap_report.md"
+        try:
+            with open(report_path, "w", encoding="utf-8") as f:
+                f.write(content)
+            logger.info(f"Research gap report written to {report_path}")
+        except Exception as e:
+            logger.error(f"Failed to write report: {e}")

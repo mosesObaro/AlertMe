@@ -1,0 +1,487 @@
+"""Comprehensive test suite for the Research Gap Analysis module."""
+
+import pytest
+from pathlib import Path
+from unittest.mock import MagicMock, patch
+from src.models import ResearchItem
+from src.research_gaps.models import (
+    ExtractedPaperInfo,
+    ResearchProblem,
+    ResearchGapCluster,
+    CandidateResearchDirection,
+    FeasibilityAssessment,
+    SupervisorMatch,
+    LinkVerificationResult,
+    ProblemStatus,
+    LinkStatus,
+)
+from src.research_gaps.gap_extractor import GapExtractor
+from src.research_gaps.problem_tracker import ProblemTracker
+from src.research_gaps.clustering import ProblemClusterer
+from src.research_gaps.question_generator import ResearchQuestionGenerator
+from src.research_gaps.supervisor_matcher import SupervisorMatcher
+from src.research_gaps.feasibility import FeasibilityAssessor
+from src.research_gaps.link_verifier import LinkVerifier
+from src.research_gaps.dashboard_generator import ResearchGapDashboardGenerator
+from src.research_gaps.state_manager import ResearchGapStateManager
+from src.deduplication.deduplicator import Deduplicator
+
+
+@pytest.fixture
+def sample_research_item():
+    return ResearchItem(
+        title="Dynamic Task Offloading for Edge Computing with Deep Reinforcement Learning",
+        url="https://arxiv.org/abs/2301.12345",
+        source="arXiv",
+        authors=["Alice Smith", "Bob Johnson"],
+        doi="10.1109/EDGE.2026.01",
+        arxiv_id="2301.12345",
+        publication_date="2024-06-15",
+        abstract="Edge computing enables low-latency processing. However, the challenge of dynamic task offloading in heterogeneous edge environments remains unresolved. We propose a deep reinforcement learning framework for joint computation offloading and resource allocation. Experimental results show that our approach achieves 30% latency reduction. The limitation is that this work does not consider energy consumption. Future work will extend to federated learning scenarios.",
+        venue="IEEE Edge Computing",
+        topics=["edge computing", "deep reinforcement learning", "task offloading"],
+    )
+
+
+@pytest.fixture
+def sample_extracted_paper(sample_research_item):
+    extractor = GapExtractor()
+    return extractor.extract(sample_research_item)
+
+
+@pytest.fixture
+def sample_problem():
+    return ResearchProblem(
+        id="prob_test123",
+        problem_statement="However, the challenge of dynamic task offloading in heterogeneous edge environments remains unresolved.",
+        research_area="Edge Computing",
+        problem_cluster="Resource Allocation",
+        supporting_papers=["paper_test1"],
+        evidence=["Paper A noted offloading latency bottleneck"],
+        frequency=1,
+        existing_approaches=["Deep Q-Networks", "Heuristic schedulers"],
+        known_limitations=["Does not consider energy consumption"],
+        unresolved_questions=["How to handle dynamic channel fading?"],
+        candidate_methods=["Lyapunov optimization with Actor-Critic"],
+        evaluation_metrics=["latency", "energy"],
+        status=ProblemStatus.NEW,
+    )
+
+
+# ── 1. Paper Extraction (GapExtractor) ──────────────────────────────
+
+def test_gap_extractor_basic(sample_research_item):
+    extractor = GapExtractor()
+    info = extractor.extract(sample_research_item)
+    assert info is not None
+    assert isinstance(info, ExtractedPaperInfo)
+    assert info.title == sample_research_item.title
+    assert info.year == 2024
+    assert "challenge" in info.research_problem.lower() or "unresolved" in info.research_problem.lower()
+    assert len(info.limitations) > 0
+    assert len(info.future_work) > 0
+    assert "latency" in info.evaluation_metrics
+
+
+def test_gap_extractor_empty_abstract():
+    extractor = GapExtractor()
+    item = ResearchItem(title="Test", url="http://test.com", source="Test", abstract="")
+    info = extractor.extract(item)
+    assert info.research_problem == ""
+    assert len(info.limitations) == 0
+    assert len(info.future_work) == 0
+
+
+def test_gap_extractor_batch(sample_research_item):
+    extractor = GapExtractor()
+    item2 = ResearchItem(
+        title="TinyML on Microcontrollers",
+        url="http://test2.com",
+        source="Test",
+        abstract="However, memory footprint remains a major bottleneck. We propose a pruning method.",
+    )
+    results = extractor.extract_batch([sample_research_item, item2])
+    assert len(results) == 2
+    assert results[0].title == sample_research_item.title
+    assert results[1].title == "TinyML on Microcontrollers"
+
+
+# ── 2. Paper Deduplication (Deduplicator reuse) ─────────────────────
+
+def test_deduplication_doi_match():
+    dedup = Deduplicator()
+    item1 = ResearchItem(title="Paper A", url="http://a.com", source="src", doi="10.123/456")
+    item2 = ResearchItem(title="Paper B", url="http://b.com", source="src", doi="10.123/456")
+    is_dup, _ = dedup.is_duplicate(item1, [item2])
+    assert is_dup
+
+
+def test_deduplication_title_similarity():
+    dedup = Deduplicator()
+    item1 = ResearchItem(title="Deep learning for edge computing in IoT", url="http://a.com", source="src")
+    item2 = ResearchItem(title="Deep Learning for Edge Computing in IoT Networks", url="http://b.com", source="src")
+    is_dup, _ = dedup.is_duplicate(item1, [item2])
+    assert is_dup
+
+
+# ── 3. Research Gap Extraction ──────────────────────────────────────
+
+def test_extract_research_problem(sample_extracted_paper):
+    assert sample_extracted_paper.research_problem != ""
+    assert "unresolved" in sample_extracted_paper.research_problem.lower() or "challenge" in sample_extracted_paper.research_problem.lower()
+
+
+def test_extract_limitations(sample_extracted_paper):
+    assert len(sample_extracted_paper.limitations) > 0
+    assert any("energy" in lim.lower() or "limitation" in lim.lower() for lim in sample_extracted_paper.limitations)
+
+
+def test_extract_future_work(sample_extracted_paper):
+    assert len(sample_extracted_paper.future_work) > 0
+    assert any("federated" in fw.lower() or "future" in fw.lower() for fw in sample_extracted_paper.future_work)
+
+
+# ── 4. Problem Tracker ──────────────────────────────────────────────
+
+def test_problem_tracker_add_new(tmp_path, sample_extracted_paper):
+    tracker = ProblemTracker(data_dir=tmp_path)
+    problem = tracker.add_or_update_problem(sample_extracted_paper, "Edge Computing")
+    assert problem is not None
+    assert problem.status == ProblemStatus.NEW
+    assert problem.frequency == 1
+    assert sample_extracted_paper.paper_id in problem.supporting_papers
+
+
+def test_problem_tracker_merge_evidence(tmp_path, sample_extracted_paper):
+    tracker = ProblemTracker(data_dir=tmp_path)
+    p1 = tracker.add_or_update_problem(sample_extracted_paper, "Edge Computing")
+    assert p1.frequency == 1
+
+    # Add second paper with same problem statement
+    paper2 = ExtractedPaperInfo(
+        paper_id="paper_2",
+        title="Another Paper on Offloading",
+        research_problem=sample_extracted_paper.research_problem,
+        limitations=["High communication overhead"],
+        future_work=["Hardware testbed evaluation"],
+    )
+    p2 = tracker.add_or_update_problem(paper2, "Edge Computing")
+    assert p2.frequency == 2
+    assert "paper_2" in p2.supporting_papers
+    assert "High communication overhead" in p2.known_limitations
+
+
+def test_problem_tracker_status_upgrade(tmp_path, sample_extracted_paper):
+    tracker = ProblemTracker(data_dir=tmp_path)
+    tracker.add_or_update_problem(sample_extracted_paper, "Edge Computing")
+
+    # Add 2 more times to reach frequency=3
+    for i in range(2):
+        paper = ExtractedPaperInfo(
+            paper_id=f"paper_extra_{i}",
+            title=f"Extra Paper {i}",
+            research_problem=sample_extracted_paper.research_problem,
+        )
+        p = tracker.add_or_update_problem(paper, "Edge Computing")
+
+    assert p.frequency == 3
+    assert p.status == ProblemStatus.INVESTIGATING  # Upgrades to investigating at freq >= 3
+    assert p.status != ProblemStatus.PROMISING  # NEVER auto-promotes to promising
+
+
+def test_problem_tracker_persistence(tmp_path, sample_problem):
+    tracker = ProblemTracker(data_dir=tmp_path)
+    tracker.save_problems([sample_problem])
+    loaded = tracker.load_problems()
+    assert len(loaded) == 1
+    assert loaded[0].id == sample_problem.id
+    assert loaded[0].problem_statement == sample_problem.problem_statement
+
+
+# ── 5. Clustering ───────────────────────────────────────────────────
+
+def test_clustering_similar_problems():
+    clusterer = ProblemClusterer(similarity_threshold=0.3, min_cluster_size=2)
+    p1 = ResearchProblem(
+        id="p1",
+        problem_statement="Dynamic task offloading latency in edge computing",
+        research_area="Edge Computing",
+        supervisor_keywords=["offloading", "latency", "edge"],
+        frequency=2,
+    )
+    p2 = ResearchProblem(
+        id="p2",
+        problem_statement="Task offloading latency minimization in edge systems",
+        research_area="Edge Computing",
+        supervisor_keywords=["offloading", "latency", "edge"],
+        frequency=2,
+    )
+    clusters = clusterer.cluster_problems([p1, p2], [])
+    assert len(clusters) >= 1
+    assert "p1" in clusters[0].supporting_problems
+    assert "p2" in clusters[0].supporting_problems
+
+
+def test_clustering_dissimilar_problems():
+    clusterer = ProblemClusterer(similarity_threshold=0.8, min_cluster_size=2)
+    p1 = ResearchProblem(
+        id="p1",
+        problem_statement="Quantum key distribution in satellite networks",
+        research_area="Quantum",
+        supervisor_keywords=["quantum", "satellite"],
+        frequency=1,
+    )
+    p2 = ResearchProblem(
+        id="p2",
+        problem_statement="TinyML model quantization for microcontrollers",
+        research_area="TinyML",
+        supervisor_keywords=["tinyml", "quantization"],
+        frequency=1,
+    )
+    clusters = clusterer.cluster_problems([p1, p2], [])
+    assert len(clusters) == 0  # No cluster formed (min_cluster_size=2)
+
+
+def test_cluster_update():
+    clusterer = ProblemClusterer()
+    existing = [ResearchGapCluster(cluster_id="c1", name="Edge AI", frequency=2)]
+    new = [ResearchGapCluster(cluster_id="c1", name="Edge AI", frequency=3)]
+    merged = clusterer.update_clusters(existing, new)
+    assert len(merged) == 1
+    assert merged[0].frequency == 5
+
+
+# ── 6. Problem Classification ───────────────────────────────────────
+
+def test_problem_status_new(sample_problem):
+    assert sample_problem.status == ProblemStatus.NEW
+
+
+def test_problem_no_auto_promising(tmp_path, sample_extracted_paper):
+    tracker = ProblemTracker(data_dir=tmp_path)
+    for i in range(10):  # Very high frequency
+        paper = ExtractedPaperInfo(
+            paper_id=f"paper_high_{i}",
+            title=f"Paper {i}",
+            research_problem=sample_extracted_paper.research_problem,
+        )
+        p = tracker.add_or_update_problem(paper, "Edge Computing")
+    assert p.status != ProblemStatus.PROMISING
+    assert p.status == ProblemStatus.INVESTIGATING
+
+
+# ── 7. Question Generation ──────────────────────────────────────────
+
+def test_question_generation(sample_problem, sample_extracted_paper):
+    generator = ResearchQuestionGenerator()
+    direction = generator.generate_directions(sample_problem, [sample_extracted_paper])
+    assert direction is not None
+    assert isinstance(direction, CandidateResearchDirection)
+    assert len(direction.research_questions) >= 2
+    assert len(direction.research_questions) <= 5
+    assert direction.potential_contribution != ""
+    assert direction.possible_methodology != ""
+
+
+def test_question_generation_evidence_flag(sample_problem, sample_extracted_paper):
+    generator = ResearchQuestionGenerator()
+    direction = generator.generate_directions(sample_problem, [sample_extracted_paper])
+    assert direction.evidence_supported is True
+
+
+# ── 8. Supervisor Matching ──────────────────────────────────────────
+
+def test_supervisor_matching(sample_problem):
+    matcher = SupervisorMatcher()
+    with patch.object(matcher, "load_supervisor_data") as mock_data:
+        mock_data.return_value = {
+            "prof_1": {
+                "name": "Prof. Alan Turing",
+                "institution": "Cambridge",
+                "country": "UK",
+                "research_areas": ["Edge Computing", "Task Offloading", "Distributed Systems"],
+                "topics": ["edge computing", "offloading"],
+                "profile_url": "https://example.com/turing",
+            }
+        }
+        matches = matcher.match_supervisors(sample_problem)
+        assert len(matches) > 0
+        assert matches[0].name == "Prof. Alan Turing"
+        assert matches[0].match_score > 0.0
+
+
+def test_supervisor_no_false_match(sample_problem):
+    matcher = SupervisorMatcher()
+    with patch.object(matcher, "load_supervisor_data") as mock_data:
+        mock_data.return_value = {
+            "prof_2": {
+                "name": "Prof. Gregor Mendel",
+                "institution": "Brno",
+                "country": "Czech",
+                "research_areas": ["Genetics", "Botany", "Plant Biology"],
+                "topics": ["genetics"],
+                "profile_url": "https://example.com/mendel",
+            }
+        }
+        matches = matcher.match_supervisors(sample_problem)
+        assert len(matches) == 0
+
+
+# ── 9. Link Verification ────────────────────────────────────────────
+
+def test_valid_url(tmp_path):
+    verifier = LinkVerifier(cache_dir=tmp_path)
+    mock_resp = MagicMock()
+    mock_resp.status_code = 200
+    mock_resp.url = "https://example.com/paper"
+    mock_resp.history = []
+    mock_resp.headers = {"Content-Type": "application/pdf"}
+    mock_resp.text = ""
+
+    with patch.object(verifier.session, "get", return_value=mock_resp):
+        res = verifier.verify_url("https://example.com/paper")
+        assert res.link_status == LinkStatus.VALID
+        assert res.http_status == 200
+
+
+def test_redirect_url(tmp_path):
+    verifier = LinkVerifier(cache_dir=tmp_path)
+    mock_resp = MagicMock()
+    mock_resp.status_code = 200
+    mock_resp.url = "https://example.com/canonical-paper"
+    mock_resp.history = [MagicMock()]  # Has history -> redirected
+    mock_resp.headers = {"Content-Type": "text/html"}
+    mock_resp.text = "<html><body>Paper content</body></html>"
+
+    with patch.object(verifier.session, "get", return_value=mock_resp):
+        res = verifier.verify_url("https://doi.org/10.123/paper")
+        assert res.link_status == LinkStatus.REDIRECTED
+        assert res.redirect_target == "https://example.com/canonical-paper"
+
+
+def test_broken_url_404(tmp_path):
+    verifier = LinkVerifier(cache_dir=tmp_path)
+    mock_resp = MagicMock()
+    mock_resp.status_code = 404
+    mock_resp.url = "https://example.com/missing"
+    mock_resp.history = []
+
+    with patch.object(verifier.session, "get", return_value=mock_resp):
+        res = verifier.verify_url("https://example.com/missing")
+        assert res.link_status == LinkStatus.BROKEN
+        assert res.http_status == 404
+
+
+def test_malformed_url(tmp_path):
+    verifier = LinkVerifier(cache_dir=tmp_path)
+    res = verifier.verify_url("not-a-valid-url")
+    assert res.link_status == LinkStatus.BROKEN
+    assert res.http_status == 0
+
+
+def test_unreachable_url(tmp_path):
+    verifier = LinkVerifier(cache_dir=tmp_path)
+    import requests
+    with patch("requests.get", side_effect=requests.exceptions.ConnectionError("Failed")):
+        res = verifier.verify_url("https://nonexistent-domain-12345.org")
+        assert res.link_status == LinkStatus.UNREACHABLE
+
+
+def test_canonical_url_replacement():
+    verifier = LinkVerifier()
+    paper = ExtractedPaperInfo(
+        doi="10.1109/EDGE.2026.01",
+        url="https://arxiv.org/abs/2301.12345",
+    )
+    canonical = verifier._find_canonical_url(paper)
+    assert canonical == "https://doi.org/10.1109/EDGE.2026.01"
+
+
+def test_cached_verification(tmp_path):
+    verifier = LinkVerifier(cache_dir=tmp_path)
+    cached_result = LinkVerificationResult(
+        url="https://example.com/cached",
+        link_status=LinkStatus.VALID,
+        http_status=200,
+        last_verified="2026-10-01T00:00:00",
+    )
+    cache = {cached_result.url: cached_result}
+    verifier.save_cache(cache)
+
+    # Re-instantiate to load from file
+    verifier2 = LinkVerifier(cache_dir=tmp_path)
+    with patch("requests.get") as mock_get:
+        res = verifier2.verify_url("https://example.com/cached")
+        assert res.link_status == LinkStatus.VALID
+        mock_get.assert_not_called()  # Cache hit, no network call
+
+
+# ── 10. Dashboard Data Generation ───────────────────────────────────
+
+def test_dashboard_data_generation(sample_problem):
+    dash_gen = ResearchGapDashboardGenerator()
+    payload = dash_gen.generate_dashboard_data(
+        problems=[sample_problem.to_dict()],
+        clusters=[],
+        directions=[],
+        papers=[],
+        feasibility_map={},
+        supervisor_map={},
+        link_results={},
+    )
+    assert "meta" in payload
+    assert "problems" in payload
+    assert payload["meta"]["total_problems"] == 1
+    assert payload["meta"]["new_problems"] == 1
+
+
+def test_dashboard_meta_counts(sample_problem):
+    dash_gen = ResearchGapDashboardGenerator()
+    p_promising = dict(sample_problem.to_dict(), id="p2", status=ProblemStatus.PROMISING)
+    p_shortlisted = dict(sample_problem.to_dict(), id="p3", status=ProblemStatus.SHORTLISTED)
+
+    payload = dash_gen.generate_dashboard_data(
+        problems=[sample_problem.to_dict(), p_promising, p_shortlisted],
+        clusters=[],
+        directions=[],
+        papers=[],
+        feasibility_map={},
+        supervisor_map={},
+        link_results={},
+    )
+    assert payload["meta"]["total_problems"] == 3
+    assert payload["meta"]["new_problems"] == 1
+    assert payload["meta"]["promising_problems"] == 1
+    assert payload["meta"]["shortlisted_problems"] == 1
+
+
+# ── 11. Feasibility Assessment ──────────────────────────────────────
+
+def test_feasibility_assessment(sample_problem, sample_extracted_paper):
+    assessor = FeasibilityAssessor()
+    assessment = assessor.assess(sample_problem, [sample_extracted_paper], [])
+    assert assessment is not None
+    assert isinstance(assessment, FeasibilityAssessment)
+    assert assessment.novelty in ["high", "medium", "low", "unknown"]
+    assert assessment.feasibility in ["high", "medium", "low", "unknown"]
+    assert assessment.significance in ["high", "medium", "low", "unknown"]
+    assert assessment.novelty_evidence != ""
+    assert assessment.phd_depth in ["high", "medium", "low", "unknown"]
+
+
+# ── 12. Models ──────────────────────────────────────────────────────
+
+def test_research_problem_to_dict(sample_problem):
+    data = sample_problem.to_dict()
+    assert isinstance(data, dict)
+    assert data["id"] == sample_problem.id
+    reconstructed = ResearchProblem.from_dict(data)
+    assert reconstructed.id == sample_problem.id
+    assert reconstructed.problem_statement == sample_problem.problem_statement
+
+
+def test_extracted_paper_id_generation():
+    p1 = ExtractedPaperInfo(title="Test Paper", url="https://example.com/1", doi="10.123/456")
+    p2 = ExtractedPaperInfo(title="Different Title", url="https://example.com/2", doi="10.123/456")
+    # Same DOI should produce same paper_id
+    assert p1.paper_id == p2.paper_id

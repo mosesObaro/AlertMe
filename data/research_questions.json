@@ -1,0 +1,260 @@
+[
+  {
+    "direction_id": "dir_cc9288eb1b51402a",
+    "problem_id": "prob_0fa12d0bba22cb99",
+    "research_problem": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks",
+    "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: However, the limitation is that the framework does not consider battery energy degradation during sustained bursty traffic",
+    "research_questions": [
+      "How can extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference be effectively addressed in Edge Computing?",
+      "What algorithmic or architectural approaches can overcome the limitation of limitation is that the framework does not consider battery energy degradation during sustained bursty traffic in Edge Computing?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling limitation is that the framework does not consider battery energy degradation during sustained bursty traffic within the decision framework will prevent performance degradation in Edge Computing.",
+      "An adaptive co-design approach incorporating extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing limitation is that the framework does not consider battery energy degradation during sustained bursty traffic in resource-constrained Edge Computing systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, energy across diverse workloads.",
+    "evaluation_metrics": [
+      "latency",
+      "energy"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future work will extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference"
+    ],
+    "evidence_supported": true
+  },
+  {
+    "direction_id": "dir_0f8d1ebc93198ecb",
+    "problem_id": "prob_41a1db4fe45b60de",
+    "research_problem": "However, the fundamental bottleneck lies in communication overhead and extreme client device heterogeneity where stragglers degrade global model convergence speed",
+    "research_gap": "Gap in Edge AI: existing approaches (current methods) leave unresolved: A major limitation of this work is the assumption of independent and identically distributed channel states between training rounds",
+    "research_questions": [
+      "How can address non-stationary communication channels and Byzantine client poisoning resilience be effectively addressed in Edge AI?",
+      "What algorithmic or architectural approaches can overcome the limitation of the assumption of independent and identically distributed channel states between training rounds in Edge AI?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling the assumption of independent and identically distributed channel states between training rounds within the decision framework will prevent performance degradation in Edge AI.",
+      "An adaptive co-design approach incorporating address non-stationary communication channels and Byzantine client poisoning resilience will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing the assumption of independent and identically distributed channel states between training rounds in resource-constrained Edge AI systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge AI testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring accuracy, convergence, precision across diverse workloads.",
+    "evaluation_metrics": [
+      "accuracy",
+      "convergence",
+      "precision",
+      "bandwidth"
+    ],
+    "required_datasets": [
+      "Extensive simulations on CIFAR-100 and FEMNIST demonstrate an 8.4x reduction in total uplink transmission bytes while maintaining top-1 accuracy within 1.2% of uncompressed FedAvg"
+    ],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future research must address non-stationary communication channels and Byzantine client poisoning resilience"
+    ],
+    "evidence_supported": true
+  },
+  {
+    "direction_id": "dir_ec60dc042617d790",
+    "problem_id": "prob_5339735dc598b893",
+    "research_problem": "However, the challenge of activation memory footprint during backward passes remains unresolved for sub-megabyte devices",
+    "research_gap": "Gap in AI for Resource-Constrained Systems: existing approaches (current methods) leave unresolved: Nevertheless, a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes",
+    "research_questions": [
+      "How can explore intermittent computing integration and hardware-aware sparse backpropagation be effectively addressed in AI for Resource-Constrained Systems?",
+      "What algorithmic or architectural approaches can overcome the limitation of a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes in AI for Resource-Constrained Systems?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes within the decision framework will prevent performance degradation in AI for Resource-Constrained Systems.",
+      "An adaptive co-design approach incorporating explore intermittent computing integration and hardware-aware sparse backpropagation will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes in resource-constrained AI for Resource-Constrained Systems systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world AI for Resource-Constrained Systems testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring throughput, energy, utilization across diverse workloads.",
+    "evaluation_metrics": [
+      "throughput",
+      "energy",
+      "utilization"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future work plans to explore intermittent computing integration and hardware-aware sparse backpropagation"
+    ],
+    "evidence_supported": true
+  },
+  {
+    "direction_id": "dir_41e52924671b5849",
+    "problem_id": "prob_c0c887f7e87a8013",
+    "research_problem": "However, decentralized task scheduling across non-cooperative edge servers and base stations suffers from severe coordination overhead and partial observability bottlenecks",
+    "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks",
+    "research_questions": [
+      "How can investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions be effectively addressed in Edge Computing?",
+      "What algorithmic or architectural approaches can overcome the limitation of a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks in Edge Computing?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks within the decision framework will prevent performance degradation in Edge Computing.",
+      "An adaptive co-design approach incorporating investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks in resource-constrained Edge Computing systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, utilization, bandwidth across diverse workloads.",
+    "evaluation_metrics": [
+      "latency",
+      "utilization",
+      "bandwidth"
+    ],
+    "required_datasets": [
+      "We propose a decentralized multi-agent deep deterministic policy gradient (MADDPG) framework with shared attention mechanisms that allows autonomous edge nodes to negotiate workload distribution without centralized telemetry"
+    ],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions"
+    ],
+    "evidence_supported": true
+  },
+  {
+    "direction_id": "dir_e9ffec0b3ba3e4eb",
+    "problem_id": "prob_bf3515b869b952fb",
+    "research_problem": "However, naive asynchronous federated updates suffer from stale gradient divergence and catastrophic forgetting on non-IID client partitions",
+    "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: The primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees",
+    "research_questions": [
+      "How can integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers be effectively addressed in Edge Computing?",
+      "What algorithmic or architectural approaches can overcome the limitation of the primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees in Edge Computing?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling the primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees within the decision framework will prevent performance degradation in Edge Computing.",
+      "An adaptive co-design approach incorporating integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing the primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees in resource-constrained Edge Computing systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring accuracy, delay, convergence across diverse workloads.",
+    "evaluation_metrics": [
+      "accuracy",
+      "delay",
+      "convergence"
+    ],
+    "required_datasets": [
+      "Testbed evaluations across 50 Raspberry Pi edge nodes show 3.1x faster wall-clock convergence time compared to FedAsync while matching centralized model accuracy"
+    ],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future work will integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers"
+    ],
+    "evidence_supported": true
+  },
+  {
+    "direction_id": "dir_fbf78dba08465d39",
+    "problem_id": "prob_bf59402256197e35",
+    "research_problem": "Prolonging device operational lifetime is the paramount challenge for battery-powered IoT and wearable edge devices running continuous neural inference",
+    "research_gap": "Gap in AI for Resource-Constrained Systems: existing approaches (current methods) leave unresolved: However, the limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles",
+    "research_questions": [
+      "How can explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning be effectively addressed in AI for Resource-Constrained Systems?",
+      "What algorithmic or architectural approaches can overcome the limitation of limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles in AI for Resource-Constrained Systems?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles within the decision framework will prevent performance degradation in AI for Resource-Constrained Systems.",
+      "An adaptive co-design approach incorporating explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles in resource-constrained AI for Resource-Constrained Systems systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world AI for Resource-Constrained Systems testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, energy across diverse workloads.",
+    "evaluation_metrics": [
+      "latency",
+      "energy"
+    ],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future work will explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning"
+    ],
+    "evidence_supported": true
+  },
+  {
+    "direction_id": "dir_088bbb01845f3678",
+    "problem_id": "prob_d760e6dee157a7cd",
+    "research_problem": "However, cold start initialization latencies in containerized runtimes exceed 500 ms on edge nodes with limited I/O throughput, violating interactive SLA requirements",
+    "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes",
+    "research_questions": [
+      "How can explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations be effectively addressed in Edge Computing?",
+      "What algorithmic or architectural approaches can overcome the limitation of memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes in Edge Computing?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes within the decision framework will prevent performance degradation in Edge Computing.",
+      "An adaptive co-design approach incorporating explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes in resource-constrained Edge Computing systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, throughput across diverse workloads.",
+    "evaluation_metrics": [
+      "latency",
+      "throughput"
+    ],
+    "required_datasets": [
+      "Benchmarked on a 16-node heterogeneous edge cluster, WarmEdge eliminates 76% of cold starts and reduces median pipeline latency by 45%"
+    ],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations"
+    ],
+    "evidence_supported": true
+  },
+  {
+    "direction_id": "dir_864c42e533ca09ee",
+    "problem_id": "prob_7aa38747f5f80966",
+    "research_problem": "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams",
+    "research_gap": "Gap in AI for Resource-Constrained Systems: existing approaches (current methods) leave unresolved: The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams",
+    "research_questions": [
+      "How can investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures be effectively addressed in AI for Resource-Constrained Systems?",
+      "What algorithmic or architectural approaches can overcome the limitation of the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams in AI for Resource-Constrained Systems?"
+    ],
+    "hypotheses": [
+      "Explicitly modeling the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams within the decision framework will prevent performance degradation in AI for Resource-Constrained Systems.",
+      "An adaptive co-design approach incorporating investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures will yield superior Pareto-optimal trade-offs."
+    ],
+    "potential_contribution": "A novel theoretical and algorithmic framework addressing the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams in resource-constrained AI for Resource-Constrained Systems systems.",
+    "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world AI for Resource-Constrained Systems testbeds.",
+    "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, throughput, energy across diverse workloads.",
+    "evaluation_metrics": [],
+    "required_datasets": [],
+    "infrastructure_requirements": [],
+    "risks": [
+      "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+      "High computational overhead of the proposed model on extreme edge devices."
+    ],
+    "unresolved_issues": [
+      "Future work will investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures"
+    ],
+    "evidence_supported": true
+  }
+]

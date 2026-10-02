@@ -1,0 +1,31 @@
+[
+  {
+    "cluster_id": "cluster_24403013ed8c403e",
+    "name": "Edge-cloud computing & Edge computing",
+    "description": "Cluster of research gaps around Edge-cloud computing & Edge computing in Edge Computing.",
+    "research_area": "Edge Computing",
+    "supporting_papers": [
+      "doi_ddfe2fa4e7ed2abf",
+      "doi_f5496fcac867c5b9",
+      "doi_789c6b6c1087b313"
+    ],
+    "supporting_problems": [
+      "prob_c0c887f7e87a8013",
+      "prob_d760e6dee157a7cd",
+      "prob_d91fd0fa21c444b0"
+    ],
+    "recurring_limitations": [
+      "However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks",
+      "The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes",
+      "However, a major limitation is that state convergence under high conflict rates incurs substantial storage overhead from tombstone accumulation"
+    ],
+    "open_questions": [
+      "Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions",
+      "Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations",
+      "Future work will investigate garbage collection protocols tailored for resource-constrained edge storage and formal verification of CRDT merge safety under Byzantine failures"
+    ],
+    "frequency": 6,
+    "first_seen": "2026-10-02T09:02:49.043094",
+    "last_seen": "2026-10-02T09:05:29.937169"
+  }
+]

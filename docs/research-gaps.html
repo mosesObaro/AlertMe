@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlertMe PhD Research Gap Analysis</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-hover: #174ea6;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #202124;
+            --text-secondary: #5f6368;
+            --border: #dadce0;
+            --success: #34a853;
+            --warning: #fbbc04;
+            --danger: #ea4335;
+            --new: #4285f4;
+            --investigating: #fbbc04;
+            --promising: #34a853;
+            --shortlisted: #9334e6;
+            --rejected: #9aa0a6;
+            --resolved: #009688;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 1px 2px 0 rgba(60,64,67,0.3);
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0;
+            color: var(--text);
+        }
+
+        .meta-info {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-align: right;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 2rem;
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 1rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+            background-color: rgba(26,115,232,0.05);
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+        }
+
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Cards */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px 0 rgba(60,64,67,0.15);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 1px 3px 0 rgba(60,64,67,0.15);
+        }
+
+        .stat-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0.5rem 0;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #f1f3f4;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        th:hover {
+            background-color: #e8eaed;
+        }
+
+        tr.expandable {
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        tr.expandable:hover {
+            background-color: #f8f9fa;
+        }
+
+        .expanded-row {
+            display: none;
+            background-color: #fafbfc;
+        }
+
+        .expanded-row.show {
+            display: table-row;
+        }
+
+        .expanded-content {
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 0.25em 0.6em;
+            font-size: 0.75rem;
+            font-weight: 600;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+            color: #fff;
+        }
+
+        .badge-status-new { background-color: var(--new); }
+        .badge-status-investigating { background-color: var(--investigating); color: #000; }
+        .badge-status-promising { background-color: var(--promising); }
+        .badge-status-shortlisted { background-color: var(--shortlisted); }
+        .badge-status-rejected { background-color: var(--rejected); }
+        .badge-status-resolved { background-color: var(--resolved); }
+        
+        .badge-evidence { background-color: var(--success); }
+        .badge-speculative { background-color: var(--warning); color: #000; }
+        
+        .badge-outline {
+            background-color: transparent;
+            border: 1px solid currentColor;
+            color: var(--text-secondary);
+        }
+
+        /* Forms & Filters */
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        input[type="text"], select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 1rem;
+            color: var(--text);
+            background-color: #fff;
+        }
+
+        input[type="text"]:focus, select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(26,115,232,0.2);
+        }
+
+        .search-box {
+            flex-grow: 1;
+            min-width: 200px;
+        }
+
+        /* Link Status */
+        .link-status {
+            font-weight: bold;
+            margin-left: 0.5rem;
+        }
+        .link-valid { color: var(--success); }
+        .link-redirected { color: var(--warning); }
+        .link-broken { color: var(--danger); }
+        .link-unknown { color: var(--text-secondary); }
+
+        /* Tree View */
+        .tree ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .tree > ul {
+            padding-left: 0;
+        }
+        .tree li {
+            margin: 8px 0;
+            position: relative;
+        }
+        .tree li::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -15px;
+            border-left: 1px solid var(--border);
+            bottom: 50%;
+            width: 1px;
+            height: 100%;
+        }
+        .tree li::after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: -15px;
+            border-top: 1px solid var(--border);
+            width: 10px;
+        }
+        .tree li:last-child::before {
+            height: 15px;
+        }
+        .tree-node {
+            display: inline-block;
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        .tree-node:hover {
+            background-color: #e8eaed;
+        }
+        .tree-node.expanded {
+            font-weight: bold;
+        }
+        .tree-children {
+            display: none;
+        }
+        .tree-children.show {
+            display: block;
+        }
+
+        /* Flow Cards */
+        .flow-card {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .flow-step {
+            background-color: #f1f3f4;
+            padding: 1rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--primary);
+            position: relative;
+        }
+        .flow-arrow {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.5rem;
+            line-height: 0.5;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        .error {
+            color: var(--danger);
+            padding: 1rem;
+            background-color: #fce8e6;
+            border: 1px solid #fad2cf;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>AlertMe Research Gap Analysis</h1>
+        <a href="index.html" style="color: var(--primary); font-size: 0.9rem; text-decoration: none; font-weight: 500;">← Back to Main AlertMe Dashboard</a>
+    </div>
+    <div class="meta-info">
+        <div id="meta-pipeline-time">Last Pipeline Run: Loading...</div>
+        <div id="meta-link-time">Last Link Check: Loading...</div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="tabs">
+        <button class="tab-btn active" onclick="switchTab('overview')">Overview</button>
+        <button class="tab-btn" onclick="switchTab('problems')">Research Problems</button>
+        <button class="tab-btn" onclick="switchTab('clusters')">Research Clusters</button>
+        <button class="tab-btn" onclick="switchTab('questions')">Research Questions</button>
+        <button class="tab-btn" onclick="switchTab('supervisors')">Supervisors</button>
+    </div>
+
+    <div id="loading-indicator" class="loading">Loading research data...</div>
+    <div id="error-indicator" class="error" style="display: none;"></div>
+
+    <div id="overview" class="tab-pane active">
+        <div class="stats-grid" id="overview-stats">
+            <!-- Stats populated by JS -->
+        </div>
+        
+        <div class="card">
+            <h3>Recent Research Problems</h3>
+            <div class="table-container">
+                <table id="recent-problems-table">
+                    <thead>
+                        <tr>
+                            <th>Problem Statement</th>
+                            <th>Area</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="problems" class="tab-pane">
+        <div class="card">
+            <div class="filters">
+                <input type="text" id="problem-search" class="search-box" placeholder="Search problems, papers, limitations..." oninput="filterProblems()">
+                <select id="problem-area-filter" onchange="filterProblems()">
+                    <option value="">All Areas</option>
+                </select>
+                <select id="problem-status-filter" onchange="filterProblems()">
+                    <option value="">All Statuses</option>
+                </select>
+            </div>
+            
+            <div class="table-container">
+                <table id="problems-table">
+                    <thead>
+                        <tr>
+                            <th onclick="sortProblems('statement')">Problem Statement ↕</th>
+                            <th onclick="sortProblems('area')">Area ↕</th>
+                            <th onclick="sortProblems('cluster')">Cluster ↕</th>
+                            <th onclick="sortProblems('frequency')">Freq ↕</th>
+                            <th onclick="sortProblems('status')">Status ↕</th>
+                            <th onclick="sortProblems('updated')">Last Updated ↕</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="clusters" class="tab-pane">
+        <div class="card">
+            <h3>Research Clusters</h3>
+            <div class="tree" id="clusters-tree">
+                <!-- Tree populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <div id="questions" class="tab-pane">
+        <div class="filters">
+            <input type="text" id="question-search" class="search-box" placeholder="Search directions..." oninput="renderQuestions()">
+        </div>
+        <div id="questions-container">
+            <!-- Questions populated by JS -->
+        </div>
+    </div>
+
+    <div id="supervisors" class="tab-pane">
+        <div class="card">
+            <div class="filters">
+                <input type="text" id="supervisor-search" class="search-box" placeholder="Search supervisors..." oninput="filterSupervisors()">
+            </div>
+            <div class="table-container">
+                <table id="supervisors-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Institution</th>
+                            <th>Research Areas</th>
+                            <th>Match Score</th>
+                            <th>Profile</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="footer-meta">Data generated timestamp will appear here.</div>
+</footer>
+
+<script>
+    // State
+    let appData = null;
+    let currentSort = { column: null, asc: true };
+
+    // Initialization
+    document.addEventListener('DOMContentLoaded', () => {
+        fetchData();
+    });
+
+    async function fetchData() {
+        try {
+            const response = await fetch('data/research_gap_data.json');
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            appData = await response.json();
+            
+            document.getElementById('loading-indicator').style.display = 'none';
+            renderApp();
+        } catch (error) {
+            console.error('Error fetching data:', error);
+            document.getElementById('loading-indicator').style.display = 'none';
+            const errorEl = document.getElementById('error-indicator');
+            errorEl.style.display = 'block';
+            errorEl.textContent = 'Failed to load research data. Please ensure data/research_gap_data.json exists. Error: ' + error.message;
+            
+            // Mock data for development/preview if real data fails
+            console.log("Using fallback mock data for preview");
+            appData = getMockData();
+            document.getElementById('error-indicator').style.display = 'none';
+            renderApp();
+        }
+    }
+
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-pane').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+        
+        document.getElementById(tabId).classList.add('active');
+        const activeBtn = document.querySelector(`.tab-btn[onclick="switchTab('${tabId}')"]`);
+        if (activeBtn) activeBtn.classList.add('active');
+    }
+
+    function renderApp() {
+        if (!appData) return;
+        
+        renderMeta();
+        renderOverview();
+        populateFilters();
+        renderProblems();
+        renderClusters();
+        renderQuestions();
+        renderSupervisors();
+    }
+
+    function renderMeta() {
+        const meta = appData.meta || {};
+        document.getElementById('meta-pipeline-time').textContent = `Last Pipeline Run: ${formatDate(meta.last_updated || meta.last_pipeline_run)}`;
+        document.getElementById('meta-link-time').textContent = `Last Link Check: ${meta.last_link_verification ? formatDate(meta.last_link_verification) : 'Skipped / Cached'}`;
+        const footerEl = document.getElementById('footer-meta');
+        if (footerEl) footerEl.textContent = `Data generated at: ${formatDate(meta.last_updated || meta.generated_at)}`;
+    }
+
+    function renderOverview() {
+        const p = appData.problems || [];
+        const c = appData.clusters || [];
+        const links = appData.link_verification || {};
+        const meta = appData.meta || {};
+        
+        const totalPapers = Array.isArray(appData.papers) ? appData.papers.length : Object.keys(appData.papers || {}).length;
+        const newProbs = meta.new_problems !== undefined ? meta.new_problems : p.filter(x => x.status === 'new').length;
+        const promProbs = meta.promising_problems !== undefined ? meta.promising_problems : p.filter(x => x.status === 'promising').length;
+        const shortProbs = meta.shortlisted_problems !== undefined ? meta.shortlisted_problems : p.filter(x => x.status === 'shortlisted').length;
+        const investProbs = meta.investigating_problems !== undefined ? meta.investigating_problems : p.filter(x => x.status === 'investigating').length;
+        
+        let validLinks = 0, brokenLinks = 0;
+        Object.values(links).forEach(l => {
+            const st = l.link_status || l.status;
+            if (st === 'valid' || st === 'redirected') validLinks++;
+            if (st === 'broken' || st === 'unreachable') brokenLinks++;
+        });
+
+        const statsHtml = `
+            <div class="stat-card">
+                <div class="stat-label">Total Problems</div>
+                <div class="stat-value">${p.length}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Research Clusters</div>
+                <div class="stat-value">${c.length}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Papers Analyzed</div>
+                <div class="stat-value">${totalPapers}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Investigating / Promising</div>
+                <div class="stat-value">${investProbs} / ${promProbs}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">New / Shortlisted</div>
+                <div class="stat-value">${newProbs} / ${shortProbs}</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-label">Verified Links (Valid/Broken)</div>
+                <div class="stat-value">${validLinks} / ${brokenLinks}</div>
+            </div>
+        `;
+        document.getElementById('overview-stats').innerHTML = statsHtml;
+
+        // Recent problems
+        const recent = [...p].sort((a, b) => new Date(b.last_updated || 0) - new Date(a.last_updated || 0)).slice(0, 10);
+        const recentHtml = recent.map(r => `
+            <tr>
+                <td><strong>${escapeHtml(r.problem_statement || r.statement || 'N/A')}</strong></td>
+                <td><span class="badge badge-outline">${escapeHtml(r.research_area || r.area || 'N/A')}</span></td>
+                <td>${getStatusBadge(r.status)}</td>
+            </tr>
+        `).join('');
+        document.querySelector('#recent-problems-table tbody').innerHTML = recentHtml || '<tr><td colspan="3">No recent problems</td></tr>';
+    }
+
+    function populateFilters() {
+        const areas = new Set();
+        const statuses = new Set();
+        
+        (appData.problems || []).forEach(p => {
+            const a = p.research_area || p.area;
+            if (a) areas.add(a);
+            if (p.status) statuses.add(p.status);
+        });
+
+        const areaSelect = document.getElementById('problem-area-filter');
+        areaSelect.innerHTML = '<option value="">All Research Areas</option>';
+        areas.forEach(a => {
+            const opt = document.createElement('option');
+            opt.value = a;
+            opt.textContent = a;
+            areaSelect.appendChild(opt);
+        });
+
+        const statusSelect = document.getElementById('problem-status-filter');
+        statusSelect.innerHTML = '<option value="">All Statuses</option>';
+        statuses.forEach(s => {
+            const opt = document.createElement('option');
+            opt.value = s;
+            opt.textContent = s;
+            statusSelect.appendChild(opt);
+        });
+    }
+
+    function sortProblems(col) {
+        if (currentSort.column === col) {
+            currentSort.asc = !currentSort.asc;
+        } else {
+            currentSort.column = col;
+            currentSort.asc = true;
+        }
+        renderProblems();
+    }
+
+    function filterProblems() {
+        renderProblems();
+    }
+
+    function renderProblems() {
+        const tbody = document.querySelector('#problems-table tbody');
+        const search = (document.getElementById('problem-search').value || '').toLowerCase();
+        const area = document.getElementById('problem-area-filter').value;
+        const status = document.getElementById('problem-status-filter').value;
+        
+        let filtered = (appData.problems || []).filter(p => {
+            const stmt = (p.problem_statement || p.statement || '').toLowerCase();
+            const clus = (p.problem_cluster || p.cluster || '').toLowerCase();
+            const a = p.research_area || p.area;
+            const matchSearch = !search || stmt.includes(search) || clus.includes(search);
+            const matchArea = !area || a === area;
+            const matchStatus = !status || p.status === status;
+            return matchSearch && matchArea && matchStatus;
+        });
+
+        if (currentSort.column) {
+            filtered.sort((a, b) => {
+                let valA = a[currentSort.column] || a[currentSort.column === 'statement' ? 'problem_statement' : currentSort.column] || '';
+                let valB = b[currentSort.column] || b[currentSort.column === 'statement' ? 'problem_statement' : currentSort.column] || '';
+                
+                if (currentSort.column === 'frequency') {
+                    valA = parseInt(valA) || 0;
+                    valB = parseInt(valB) || 0;
+                }
+                
+                if (valA < valB) return currentSort.asc ? -1 : 1;
+                if (valA > valB) return currentSort.asc ? 1 : -1;
+                return 0;
+            });
+        }
+
+        const paperMap = {};
+        if (Array.isArray(appData.papers)) {
+            appData.papers.forEach(item => {
+                if (item.paper_id) paperMap[item.paper_id] = item;
+                if (item.id) paperMap[item.id] = item;
+            });
+        } else if (appData.papers) {
+            Object.assign(paperMap, appData.papers);
+        }
+
+        const feasMap = appData.feasibility || {};
+
+        let html = '';
+        filtered.forEach((p, index) => {
+            const rowId = `prob-row-${index}`;
+            const stmt = p.problem_statement || p.statement || 'N/A';
+            const rArea = p.research_area || p.area || 'N/A';
+            const rClus = p.problem_cluster || p.cluster || 'N/A';
+            const feas = feasMap[p.id] || {};
+            const lims = p.known_limitations || p.recurring_limitations || [];
+            const unres = p.unresolved_questions || [];
+
+            html += `
+                <tr class="expandable" onclick="toggleRow('${rowId}')">
+                    <td><strong>${escapeHtml(stmt)}</strong></td>
+                    <td><span class="badge badge-outline">${escapeHtml(rArea)}</span></td>
+                    <td>${escapeHtml(rClus)}</td>
+                    <td>${p.frequency || 1}</td>
+                    <td>${getStatusBadge(p.status)}</td>
+                    <td>${formatDate(p.last_updated, true)}</td>
+                </tr>
+                <tr id="${rowId}" class="expanded-row">
+                    <td colspan="6">
+                        <div class="expanded-content">
+                            <h4>📋 Research Problem Statement & Evidence</h4>
+                            <p><strong>Statement:</strong> ${escapeHtml(stmt)}</p>
+                            ${p.evidence && p.evidence.length ? `<p><strong>Empirical Evidence:</strong> ${p.evidence.map(escapeHtml).join('; ')}</p>` : ''}
+                            
+                            <h4>⚠️ Known Limitations in Existing Literature</h4>
+                            <ul>
+                                ${lims.length ? lims.map(l => `<li>${escapeHtml(l)}</li>`).join('') : '<li>None reported</li>'}
+                            </ul>
+
+                            <h4>❓ Explicit Unresolved Questions</h4>
+                            <ul>
+                                ${unres.length ? unres.map(q => `<li>${escapeHtml(q)}</li>`).join('') : '<li>None specified</li>'}
+                            </ul>
+                            
+                            <h4>📚 Supporting Literature & Source Links</h4>
+                            <ul>
+                                ${(p.supporting_papers || []).map(pid => {
+                                    const paper = paperMap[pid] || { title: pid, url: '' };
+                                    const linkInfo = paper.url ? getLinkStatusHtml(paper.url) : '';
+                                    return `<li><a href="${escapeHtml(paper.url || '#')}" target="_blank" rel="noopener noreferrer">📄 ${escapeHtml(paper.title || pid)}</a> ${linkInfo} ${paper.venue ? `<em style="color:#666">(${escapeHtml(paper.venue)})</em>` : ''}</li>`;
+                                }).join('') || '<li>No papers linked</li>'}
+                            </ul>
+                            
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; background: #fafafa; padding: 1rem; border-radius: 6px;">
+                                <div>
+                                    <h4>🔬 Candidate Methods & Metrics</h4>
+                                    <p><strong>Existing Approaches:</strong> ${(p.existing_approaches || []).map(escapeHtml).join(', ') || 'Baseline algorithms'}</p>
+                                    <p><strong>Candidate Methods:</strong> ${(p.candidate_methods || []).map(escapeHtml).join(', ') || 'Optimization & DRL'}</p>
+                                    <p><strong>Evaluation Metrics:</strong> ${(p.evaluation_metrics || []).map(escapeHtml).join(', ') || 'Latency, Energy, Throughput'}</p>
+                                </div>
+                                <div>
+                                    <h4>⚖️ Evidence-Based PhD Feasibility Assessment</h4>
+                                    <p><strong>Novelty:</strong> <span class="badge badge-outline">${escapeHtml(feas.novelty || p.novelty_notes || 'high')}</span> <small>${escapeHtml(feas.novelty_evidence || '')}</small></p>
+                                    <p><strong>Feasibility:</strong> <span class="badge badge-outline">${escapeHtml(feas.feasibility || p.feasibility_notes || 'medium')}</span> <small>${escapeHtml(feas.feasibility_evidence || '')}</small></p>
+                                    <p><strong>Publication Potential:</strong> <span class="badge badge-outline">${escapeHtml(feas.publication_potential || 'high')}</span></p>
+                                    <p><strong>PhD Depth:</strong> <span class="badge badge-outline">${escapeHtml(feas.phd_depth || 'high')}</span> <small>${escapeHtml(feas.phd_depth_evidence || '')}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            `;
+        });
+        
+        tbody.innerHTML = html || '<tr><td colspan="6">No problems found</td></tr>';
+    }
+
+    function toggleRow(rowId) {
+        const row = document.getElementById(rowId);
+        if (row) {
+            row.classList.toggle('show');
+        }
+    }
+
+    function renderClusters() {
+        const container = document.getElementById('clusters-tree');
+        const clusters = appData.clusters || [];
+        
+        const byArea = {};
+        clusters.forEach(c => {
+            const area = c.research_area || c.area || 'Edge Computing';
+            if (!byArea[area]) byArea[area] = [];
+            byArea[area].push(c);
+        });
+
+        let html = '<ul>';
+        for (const [area, clist] of Object.entries(byArea)) {
+            const areaId = 'area-' + area.replace(/[^a-zA-Z0-9]/g, '');
+            html += `
+                <li>
+                    <div class="tree-node expanded" onclick="toggleTree('${areaId}', this)">
+                        📁 <strong>${escapeHtml(area)}</strong> (${clist.length} cluster${clist.length > 1 ? 's' : ''})
+                    </div>
+                    <ul id="${areaId}" class="tree-children show">
+            `;
+            
+            clist.forEach((c, idx) => {
+                const cId = `${areaId}-c-${idx}`;
+                const probs = c.supporting_problems ? c.supporting_problems.length : (appData.problems || []).filter(p => (p.problem_cluster || p.cluster) === c.name).length;
+                const papersCount = c.supporting_papers ? c.supporting_papers.length : (c.paper_count || 0);
+                const recurringLims = c.recurring_limitations || [];
+                const openQs = c.open_questions || [];
+
+                html += `
+                    <li>
+                        <div class="tree-node expanded" onclick="toggleTree('${cId}', this)">
+                            🏷️ <strong>${escapeHtml(c.name)}</strong> <span style="color:var(--text-secondary);font-size:0.85rem">(${probs} problems, ${papersCount} supporting papers)</span>
+                        </div>
+                        <div id="${cId}" class="tree-children show" style="background:#fff; padding:12px; border:1px solid #eee; border-radius:6px; margin: 6px 0 12px 16px; max-width:850px;">
+                            <p style="margin-top:0;"><strong>Description:</strong> ${escapeHtml(c.description || 'N/A')}</p>
+                            <p><strong>Recurring Limitations:</strong></p>
+                            <ul>${recurringLims.length ? recurringLims.map(l => `<li>${escapeHtml(typeof l === 'string' ? l : l[0])}</li>`).join('') : '<li>None</li>'}</ul>
+                            <p><strong>Open Questions:</strong></p>
+                            <ul>${openQs.length ? openQs.map(q => `<li>${escapeHtml(typeof q === 'string' ? q : q[0])}</li>`).join('') : '<li>None</li>'}</ul>
+                        </div>
+                    </li>
+                `;
+            });
+            
+            html += `</ul></li>`;
+        }
+        html += '</ul>';
+        container.innerHTML = html || '<div class="card">No research clusters discovered yet.</div>';
+    }
+
+    function toggleTree(id, el) {
+        const child = document.getElementById(id);
+        if (child) {
+            child.classList.toggle('show');
+            el.classList.toggle('expanded');
+        }
+    }
+
+    function renderQuestions() {
+        const container = document.getElementById('questions-container');
+        const search = (document.getElementById('question-search').value || '').toLowerCase();
+        
+        const dirs = (appData.directions || []).filter(d => {
+            const prob = (d.research_problem || d.problem_statement || '').toLowerCase();
+            const gap = (d.research_gap || '').toLowerCase();
+            const method = (d.possible_methodology || d.proposed_method || '').toLowerCase();
+            if (!search) return true;
+            return prob.includes(search) || gap.includes(search) || method.includes(search);
+        });
+
+        let html = '';
+        dirs.forEach(d => {
+            const badge = d.evidence_supported 
+                ? `<span class="badge badge-evidence">✓ Evidence Supported</span>`
+                : `<span class="badge badge-speculative">⚠ Speculative</span>`;
+
+            const probText = d.research_problem || d.problem_statement || 'N/A';
+            const gapText = d.research_gap || 'N/A';
+            const questions = d.research_questions || [];
+            const contribText = d.potential_contribution || 'N/A';
+            const methodText = d.possible_methodology || d.proposed_method || 'N/A';
+            const evalText = d.experimental_strategy || d.evaluation_strategy || 'N/A';
+            const metricsText = (d.evaluation_metrics || []).join(', ');
+                
+            html += `
+                <div class="card flow-card">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 1rem;">
+                        <h4 style="margin:0; color: var(--primary);">PhD Candidate Research Direction</h4>
+                        ${badge}
+                    </div>
+                    
+                    <div class="flow-step">
+                        <strong style="color:var(--text-secondary);">1. RESEARCH PROBLEM</strong><br>
+                        <strong>${escapeHtml(probText)}</strong>
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    
+                    <div class="flow-step">
+                        <strong style="color:var(--text-secondary);">2. IDENTIFIED RESEARCH GAP</strong><br>
+                        ${escapeHtml(gapText)}
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    
+                    <div class="flow-step">
+                        <strong style="color:var(--text-secondary);">3. FORMULATED RESEARCH QUESTIONS (2–5)</strong><br>
+                        <ol style="margin: 0.5rem 0 0 1.2rem; padding: 0;">${questions.map(q => `<li style="margin-bottom:0.3rem">${escapeHtml(q)}</li>`).join('')}</ol>
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    
+                    <div class="flow-step">
+                        <strong style="color:var(--text-secondary);">4. POTENTIAL TECHNICAL CONTRIBUTION & METHODOLOGY</strong><br>
+                        <p style="margin:0.3rem 0;"><strong>Proposed Contribution:</strong> ${escapeHtml(contribText)}</p>
+                        <p style="margin:0.3rem 0;"><strong>Methodology:</strong> ${escapeHtml(methodText)}</p>
+                    </div>
+                    <div class="flow-arrow">↓</div>
+                    
+                    <div class="flow-step">
+                        <strong style="color:var(--text-secondary);">5. EXPERIMENTAL & EVALUATION STRATEGY</strong><br>
+                        <p style="margin:0.3rem 0;">${escapeHtml(evalText)}</p>
+                        ${metricsText ? `<p style="margin:0.3rem 0;"><strong>Evaluation Metrics:</strong> <span class="badge badge-outline">${escapeHtml(metricsText)}</span></p>` : ''}
+                    </div>
+                </div>
+            `;
+        });
+        
+        container.innerHTML = html || '<div class="card">No candidate research directions found.</div>';
+    }
+
+    function filterSupervisors() {
+        const tbody = document.querySelector('#supervisors-table tbody');
+        const search = (document.getElementById('supervisor-search').value || '').toLowerCase();
+        
+        // Flatten supervisors if structured by problem_id
+        let allSups = [];
+        if (Array.isArray(appData.supervisors)) {
+            allSups = appData.supervisors;
+        } else if (appData.supervisors && typeof appData.supervisors === 'object') {
+            Object.values(appData.supervisors).forEach(arr => {
+                if (Array.isArray(arr)) allSups.push(...arr);
+            });
+            // Deduplicate by name
+            const seen = new Set();
+            allSups = allSups.filter(s => {
+                if (!s.name || seen.has(s.name)) return false;
+                seen.add(s.name);
+                return true;
+            });
+        }
+        
+        const sups = allSups.filter(s => {
+            if (!search) return true;
+            const areas = (s.relevant_research_areas || s.research_areas || []).join(' ').toLowerCase();
+            const keywords = (s.matching_keywords || []).join(' ').toLowerCase();
+            return (s.name && s.name.toLowerCase().includes(search)) ||
+                   (s.institution && s.institution.toLowerCase().includes(search)) ||
+                   areas.includes(search) ||
+                   keywords.includes(search);
+        });
+        
+        sups.sort((a, b) => (b.match_score || 0) - (a.match_score || 0));
+
+        let html = '';
+        sups.forEach(s => {
+            const profileUrl = s.profile_url || s.google_scholar_url || s.semantic_scholar_url || '';
+            const linkInfo = profileUrl ? getLinkStatusHtml(profileUrl) : '';
+            const areas = s.relevant_research_areas || s.research_areas || [];
+            const keywords = s.matching_keywords || [];
+
+            html += `
+                <tr>
+                    <td><strong>${escapeHtml(s.name || 'N/A')}</strong></td>
+                    <td>${escapeHtml(s.institution || 'N/A')} ${s.country ? `(${escapeHtml(s.country)})` : ''}</td>
+                    <td>${areas.map(a => `<span class="badge badge-outline">${escapeHtml(a)}</span>`).join(' ')}</td>
+                    <td>${keywords.map(k => `<span class="badge badge-outline" style="background:#e8f0fe">${escapeHtml(k)}</span>`).join(' ') || 'General fit'}</td>
+                    <td><strong>${(s.match_score || 0).toFixed(2)}</strong></td>
+                    <td>${profileUrl ? `<a href="${escapeHtml(profileUrl)}" target="_blank" rel="noopener noreferrer">Profile</a> ${linkInfo}` : 'N/A'}</td>
+                </tr>
+            `;
+        });
+        
+        tbody.innerHTML = html || '<tr><td colspan="6">No matched supervisors found. Ensure AlertMe supervisors dataset is populated.</td></tr>';
+    }
+    
+    function renderSupervisors() {
+        filterSupervisors();
+    }
+
+    // Utilities
+    function escapeHtml(unsafe) {
+        if (!unsafe) return '';
+        return unsafe
+             .toString()
+             .replace(/&/g, "&amp;")
+             .replace(/</g, "&lt;")
+             .replace(/>/g, "&gt;")
+             .replace(/"/g, "&quot;")
+             .replace(/'/g, "&#039;");
+    }
+
+    function formatDate(dateStr, short = false) {
+        if (!dateStr) return 'N/A';
+        const d = new Date(dateStr);
+        if (isNaN(d.getTime())) return dateStr;
+        if (short) return d.toLocaleDateString();
+        return d.toLocaleString();
+    }
+
+    function getStatusBadge(status) {
+        const s = (status || 'unknown').toLowerCase();
+        return `<span class="badge badge-status-${s}">${escapeHtml(s)}</span>`;
+    }
+
+    function getLinkStatusHtml(url) {
+        if (!url || !appData.link_verification) return '';
+        const v = appData.link_verification[url];
+        if (!v) return '<span class="link-status link-unknown" title="Unknown status">?</span>';
+        
+        const status = v.link_status || v.status;
+        if (status === 'valid') return '<span class="link-status link-valid" title="Valid URL (HTTP 200)">✓</span>';
+        if (status === 'redirected') return '<span class="link-status link-redirected" title="Redirected URL: ' + escapeHtml(v.redirect_target || v.canonical_url || '') + '">⚠</span>';
+        if (status === 'broken' || status === 'unreachable') return '<span class="link-status link-broken" title="Broken Link (HTTP ' + (v.http_status || 'error') + ')">✗</span>';
+        
+        return '<span class="link-status link-unknown" title="Unknown status">?</span>';
+    }
+
+    // Mock data for development
+    function getMockData() {
+        return {
+            "meta": {
+                "last_pipeline_run": "2026-10-02T07:00:00Z",
+                "last_link_verification": "2026-10-02T07:30:00Z",
+                "generated_at": "2026-10-02T07:45:00Z"
+            },
+            "problems": [
+                {
+                    "statement": "Lack of robust evaluation metrics for LLM reasoning in domain-specific tasks",
+                    "area": "Natural Language Processing",
+                    "cluster": "LLM Evaluation",
+                    "frequency": 12,
+                    "status": "promising",
+                    "last_updated": "2026-10-01T14:20:00Z",
+                    "evidence": "Multiple papers highlight current benchmarks are saturated or easily memorized.",
+                    "supporting_papers": ["p1", "p2"],
+                    "recurring_limitations": ["Data contamination", "Static benchmarks"],
+                    "unresolved_questions": ["How to dynamically generate domain-specific eval sets?"],
+                    "existing_approaches": ["Static QA datasets", "Human eval"],
+                    "novelty_notes": "High novelty if automated.",
+                    "feasibility_notes": "Requires significant compute for generation.",
+                    "required_datasets": ["Proprietary medical/legal text"]
+                },
+                {
+                    "statement": "High latency in federated learning over heterogeneous edge networks",
+                    "area": "Edge Computing",
+                    "cluster": "Federated Learning",
+                    "frequency": 8,
+                    "status": "investigating",
+                    "last_updated": "2026-09-28T10:00:00Z",
+                    "evidence": "Straggler devices slow down synchronous FL aggregation.",
+                    "supporting_papers": ["p3"],
+                    "recurring_limitations": ["Assumes homogeneous networks"],
+                    "unresolved_questions": ["Optimal asynchronous aggregation rules?"]
+                }
+            ],
+            "clusters": [
+                { "name": "LLM Evaluation", "area": "Natural Language Processing", "description": "Methods to assess large language models", "paper_count": 45, "recurring_limitations": ["Cost", "Reproducibility"] },
+                { "name": "Federated Learning", "area": "Edge Computing", "description": "Distributed ML on edge devices", "paper_count": 32, "recurring_limitations": ["Communication overhead"] }
+            ],
+            "directions": [
+                {
+                    "problem_statement": "Lack of robust evaluation metrics for LLM reasoning",
+                    "research_gap": "No standardized way to dynamically generate uncontaminated evaluation sets",
+                    "research_questions": ["Can we use smaller models to procedurally generate novel reasoning tasks?"],
+                    "proposed_method": "A dynamic evaluation framework using inverse-prompting",
+                    "potential_contribution": "A contamination-resistant benchmark suite",
+                    "evaluation_strategy": "Measure correlation with human expert evaluation across 3 domains",
+                    "evidence_supported": true
+                }
+            ],
+            "papers": {
+                "p1": { "title": "On the saturation of LLM benchmarks", "url": "https://example.com/p1" },
+                "p2": { "title": "Rethinking Evaluation", "url": "https://example.com/p2" },
+                "p3": { "title": "Edge FL Challenges", "url": "https://example.com/p3" }
+            },
+            "link_verification": {
+                "https://example.com/p1": { "status": "valid", "status_code": 200 },
+                "https://example.com/p2": { "status": "redirected", "final_url": "https://example.com/p2-new", "status_code": 301 },
+                "https://example.com/p3": { "status": "broken", "status_code": 404 }
+            },
+            "supervisors": [
+                {
+                    "name": "Dr. Jane Smith",
+                    "institution": "Tech University",
+                    "research_areas": ["NLP", "Evaluation"],
+                    "match_score": 0.92,
+                    "profile_url": "https://example.com/janesmith"
+                }
+            ]
+        };
+    }
+</script>
+
+</body>
+</html>

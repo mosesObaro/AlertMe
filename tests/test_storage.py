@@ -42,7 +42,14 @@ def test_state_manager_alert_history(tmp_path):
     assert history[0]["alert_mode"] == "daily"
 
 
-def test_dashboard_generator(tmp_path):
+def test_dashboard_generator(tmp_path, monkeypatch):
+    test_docs = tmp_path / "docs"
+    test_docs.mkdir(parents=True, exist_ok=True)
+    test_file = test_docs / "data.json"
+
+    import src.storage.dashboard_generator as dg
+    monkeypatch.setattr(dg, "DASHBOARD_DATA_FILE", test_file)
+
     sm = StateManager(data_dir=tmp_path)
     gen = DashboardGenerator(state_manager=sm)
 
@@ -54,14 +61,9 @@ def test_dashboard_generator(tmp_path):
     item.score = ScoreBreakdown(final_score=9.0)
 
     gen.generate_dashboard_data([item], trends=[], supervisors=[])
-    dashboard_file = gen.state_manager.data_dir.parent / "docs" / "data.json"
-    if not dashboard_file.exists():
-        # check default docs dir
-        import src.storage.dashboard_generator as dg
-        dashboard_file = dg.DASHBOARD_DATA_FILE
 
-    assert dashboard_file.exists()
-    with open(dashboard_file, "r", encoding="utf-8") as f:
+    assert test_file.exists()
+    with open(test_file, "r", encoding="utf-8") as f:
         data = json.load(f)
         assert "meta" in data
         assert "items" in data

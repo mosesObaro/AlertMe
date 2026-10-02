@@ -1,0 +1,3012 @@
+{
+  "meta": {
+    "last_updated": "2026-10-02T08:05:30.008255+00:00",
+    "last_link_verification": "",
+    "total_papers": 10,
+    "total_problems": 10,
+    "total_clusters": 1,
+    "total_directions": 8,
+    "new_problems": 2,
+    "investigating_problems": 8,
+    "promising_problems": 0,
+    "shortlisted_problems": 0,
+    "verified_links": 0,
+    "broken_links": 0
+  },
+  "problems": [
+    {
+      "id": "prob_0fa12d0bba22cb99",
+      "problem_statement": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks",
+      "research_area": "Edge Computing",
+      "problem_cluster": "",
+      "supporting_papers": [
+        "doi_fd8071479658a576"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "However, the limitation is that the framework does not consider battery energy degradation during sustained bursty traffic"
+      ],
+      "unresolved_questions": [
+        "Future work will extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks"
+      ],
+      "evaluation_metrics": [
+        "latency",
+        "energy"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.865627",
+      "first_seen": "2026-10-02T09:01:33.933132"
+    },
+    {
+      "id": "prob_41a1db4fe45b60de",
+      "problem_statement": "However, the fundamental bottleneck lies in communication overhead and extreme client device heterogeneity where stragglers degrade global model convergence speed",
+      "research_area": "Edge AI",
+      "problem_cluster": "",
+      "supporting_papers": [
+        "doi_3febbd2ef803f194"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "A major limitation of this work is the assumption of independent and identically distributed channel states between training rounds"
+      ],
+      "unresolved_questions": [
+        "Future research must address non-stationary communication channels and Byzantine client poisoning resilience"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "Federated learning enables collaborative model training across distributed clients without raw data sharing"
+      ],
+      "evaluation_metrics": [
+        "accuracy",
+        "convergence",
+        "precision",
+        "bandwidth"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "Federated Learning",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.867906",
+      "first_seen": "2026-10-02T09:01:33.934598"
+    },
+    {
+      "id": "prob_5339735dc598b893",
+      "problem_statement": "However, the challenge of activation memory footprint during backward passes remains unresolved for sub-megabyte devices",
+      "research_area": "AI for Resource-Constrained Systems",
+      "problem_cluster": "",
+      "supporting_papers": [
+        "doi_425477632614e9a7"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "Nevertheless, a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes"
+      ],
+      "unresolved_questions": [
+        "Future work plans to explore intermittent computing integration and hardware-aware sparse backpropagation"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "On-device model personalization is critical for privacy-sensitive IoT deployments, yet embedded microcontrollers have SRAM budgets below 512 KB, rendering standard backpropagation impossible"
+      ],
+      "evaluation_metrics": [
+        "throughput",
+        "energy",
+        "utilization"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "TinyML",
+        "AI for Resource-Constrained Systems",
+        "IoT"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.870431",
+      "first_seen": "2026-10-02T09:01:33.935741"
+    },
+    {
+      "id": "prob_c0c887f7e87a8013",
+      "problem_statement": "However, decentralized task scheduling across non-cooperative edge servers and base stations suffers from severe coordination overhead and partial observability bottlenecks",
+      "research_area": "Edge Computing",
+      "problem_cluster": "Edge-cloud computing & Edge computing",
+      "supporting_papers": [
+        "doi_ddfe2fa4e7ed2abf"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks"
+      ],
+      "unresolved_questions": [
+        "Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "Hierarchical edge-cloud architectures bridge latency-sensitive edge processing and capacity-rich central cloud data centers"
+      ],
+      "evaluation_metrics": [
+        "latency",
+        "utilization",
+        "bandwidth"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "Edge-Cloud Computing",
+        "Edge Computing",
+        "Distributed Systems"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.875100",
+      "first_seen": "2026-10-02T09:01:33.937409"
+    },
+    {
+      "id": "prob_bf3515b869b952fb",
+      "problem_statement": "However, naive asynchronous federated updates suffer from stale gradient divergence and catastrophic forgetting on non-IID client partitions",
+      "research_area": "Edge Computing",
+      "problem_cluster": "",
+      "supporting_papers": [
+        "doi_d325e3beedb8c4d0"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "The primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees"
+      ],
+      "unresolved_questions": [
+        "Future work will integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "Synchronous federated aggregation suffers from severe straggler delays in wide-area edge networks characterized by packet loss and intermittent device dropouts"
+      ],
+      "evaluation_metrics": [
+        "accuracy",
+        "delay",
+        "convergence"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Computing"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.879607",
+      "first_seen": "2026-10-02T09:01:33.939830"
+    },
+    {
+      "id": "prob_bf59402256197e35",
+      "problem_statement": "Prolonging device operational lifetime is the paramount challenge for battery-powered IoT and wearable edge devices running continuous neural inference",
+      "research_area": "AI for Resource-Constrained Systems",
+      "problem_cluster": "",
+      "supporting_papers": [
+        "doi_e0a322390c8e2993"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "However, the limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles"
+      ],
+      "unresolved_questions": [
+        "Future work will explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "However, existing energy-efficient offloading heuristics treat energy consumption and task deadline satisfaction as decoupled objectives, failing under non-linear battery discharge characteristics"
+      ],
+      "evaluation_metrics": [
+        "latency",
+        "energy"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "AI for Resource-Constrained Systems",
+        "Edge Computing",
+        "IoT"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.882287",
+      "first_seen": "2026-10-02T09:01:33.941447"
+    },
+    {
+      "id": "prob_d760e6dee157a7cd",
+      "problem_statement": "However, cold start initialization latencies in containerized runtimes exceed 500 ms on edge nodes with limited I/O throughput, violating interactive SLA requirements",
+      "research_area": "Edge Computing",
+      "problem_cluster": "Edge-cloud computing & Edge computing",
+      "supporting_papers": [
+        "doi_f5496fcac867c5b9"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes"
+      ],
+      "unresolved_questions": [
+        "Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "We design WarmEdge, a predictive function pre-warming and snapshot restoration architecture that employs temporal graph neural networks to forecast invocation chains across edge microservices"
+      ],
+      "evaluation_metrics": [
+        "latency",
+        "throughput"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "Edge-Cloud Computing",
+        "Distributed Systems",
+        "Edge Computing"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.886698",
+      "first_seen": "2026-10-02T09:01:33.945861"
+    },
+    {
+      "id": "prob_7aa38747f5f80966",
+      "problem_statement": "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams",
+      "research_area": "AI for Resource-Constrained Systems",
+      "problem_cluster": "",
+      "supporting_papers": [
+        "doi_4ea506e06590cb85"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams"
+      ],
+      "unresolved_questions": [
+        "Future work will investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "We develop TemporalTokenSlim, an edge-centric spatial-temporal token pruning mechanism with token recovery caches and 4-bit integer weight-activation quantization"
+      ],
+      "evaluation_metrics": [],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "Edge AI",
+        "TinyML",
+        "AI for Resource-Constrained Systems"
+      ],
+      "status": "investigating",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.890452",
+      "first_seen": "2026-10-02T09:01:33.949001"
+    },
+    {
+      "id": "prob_485955b1b0142d04",
+      "problem_statement": "The limitation is that computing pairwise task similarity matrices introduces an O(N^2) communication bottleneck as the number of IIoT devices scales to thousands",
+      "research_area": "AI for Resource-Constrained Systems",
+      "problem_cluster": "",
+      "supporting_papers": [
+        "doi_3cc87478fb7b31a4"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "The limitation is that computing pairwise task similarity matrices introduces an O(N^2) communication bottleneck as the number of IIoT devices scales to thousands"
+      ],
+      "unresolved_questions": [
+        "Future work will explore hierarchical cluster representatives and decentralized discovery of cluster affiliations without central coordination"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "However, single-model federated learning performs poorly across divergent machine types, while negative knowledge transfer corrupts task-specific feature representations"
+      ],
+      "evaluation_metrics": [
+        "accuracy"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "IoT",
+        "Federated Learning",
+        "AI for Resource-Constrained Systems"
+      ],
+      "status": "new",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.894973",
+      "first_seen": "2026-10-02T09:01:33.953246"
+    },
+    {
+      "id": "prob_d91fd0fa21c444b0",
+      "problem_statement": "However, classical Paxos and Raft protocols suffer catastrophic availability loss during wide-area network partitions and frequent edge node churn",
+      "research_area": "Edge Computing",
+      "problem_cluster": "Edge-cloud computing & Edge computing",
+      "supporting_papers": [
+        "doi_789c6b6c1087b313"
+      ],
+      "evidence": [],
+      "frequency": 1,
+      "existing_approaches": [],
+      "known_limitations": [
+        "However, a major limitation is that state convergence under high conflict rates incurs substantial storage overhead from tombstone accumulation"
+      ],
+      "unresolved_questions": [
+        "Future work will investigate garbage collection protocols tailored for resource-constrained edge storage and formal verification of CRDT merge safety under Byzantine failures"
+      ],
+      "potential_research_questions": [],
+      "candidate_methods": [
+        "We propose EdgePaxos, a partition-tolerant consensus protocol utilizing conflict-free replicated data types (CRDTs) for local operations and speculative quorum commits during network reconvergence"
+      ],
+      "evaluation_metrics": [
+        "latency",
+        "convergence"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "supervisor_keywords": [
+        "Distributed Systems",
+        "Edge Computing",
+        "Edge-Cloud Computing"
+      ],
+      "status": "new",
+      "novelty_notes": "",
+      "significance_notes": "",
+      "feasibility_notes": "",
+      "publication_potential": "",
+      "last_updated": "2026-10-02T09:05:29.900151",
+      "first_seen": "2026-10-02T09:01:33.958207"
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_id": "cluster_24403013ed8c403e",
+      "name": "Edge-cloud computing & Edge computing",
+      "description": "Cluster of research gaps around Edge-cloud computing & Edge computing in Edge Computing.",
+      "research_area": "Edge Computing",
+      "supporting_papers": [
+        "doi_ddfe2fa4e7ed2abf",
+        "doi_f5496fcac867c5b9",
+        "doi_789c6b6c1087b313"
+      ],
+      "supporting_problems": [
+        "prob_c0c887f7e87a8013",
+        "prob_d760e6dee157a7cd",
+        "prob_d91fd0fa21c444b0"
+      ],
+      "recurring_limitations": [
+        "However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks",
+        "The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes",
+        "However, a major limitation is that state convergence under high conflict rates incurs substantial storage overhead from tombstone accumulation"
+      ],
+      "open_questions": [
+        "Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions",
+        "Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations",
+        "Future work will investigate garbage collection protocols tailored for resource-constrained edge storage and formal verification of CRDT merge safety under Byzantine failures"
+      ],
+      "frequency": 6,
+      "first_seen": "2026-10-02T09:02:49.043094",
+      "last_seen": "2026-10-02T09:05:29.937169"
+    }
+  ],
+  "directions": [
+    {
+      "direction_id": "dir_cc9288eb1b51402a",
+      "problem_id": "prob_0fa12d0bba22cb99",
+      "research_problem": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks",
+      "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: However, the limitation is that the framework does not consider battery energy degradation during sustained bursty traffic",
+      "research_questions": [
+        "How can extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference be effectively addressed in Edge Computing?",
+        "What algorithmic or architectural approaches can overcome the limitation of limitation is that the framework does not consider battery energy degradation during sustained bursty traffic in Edge Computing?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling limitation is that the framework does not consider battery energy degradation during sustained bursty traffic within the decision framework will prevent performance degradation in Edge Computing.",
+        "An adaptive co-design approach incorporating extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing limitation is that the framework does not consider battery energy degradation during sustained bursty traffic in resource-constrained Edge Computing systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, energy across diverse workloads.",
+      "evaluation_metrics": [
+        "latency",
+        "energy"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future work will extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference"
+      ],
+      "evidence_supported": true
+    },
+    {
+      "direction_id": "dir_0f8d1ebc93198ecb",
+      "problem_id": "prob_41a1db4fe45b60de",
+      "research_problem": "However, the fundamental bottleneck lies in communication overhead and extreme client device heterogeneity where stragglers degrade global model convergence speed",
+      "research_gap": "Gap in Edge AI: existing approaches (current methods) leave unresolved: A major limitation of this work is the assumption of independent and identically distributed channel states between training rounds",
+      "research_questions": [
+        "How can address non-stationary communication channels and Byzantine client poisoning resilience be effectively addressed in Edge AI?",
+        "What algorithmic or architectural approaches can overcome the limitation of the assumption of independent and identically distributed channel states between training rounds in Edge AI?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling the assumption of independent and identically distributed channel states between training rounds within the decision framework will prevent performance degradation in Edge AI.",
+        "An adaptive co-design approach incorporating address non-stationary communication channels and Byzantine client poisoning resilience will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing the assumption of independent and identically distributed channel states between training rounds in resource-constrained Edge AI systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge AI testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring accuracy, convergence, precision across diverse workloads.",
+      "evaluation_metrics": [
+        "accuracy",
+        "convergence",
+        "precision",
+        "bandwidth"
+      ],
+      "required_datasets": [
+        "Extensive simulations on CIFAR-100 and FEMNIST demonstrate an 8.4x reduction in total uplink transmission bytes while maintaining top-1 accuracy within 1.2% of uncompressed FedAvg"
+      ],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future research must address non-stationary communication channels and Byzantine client poisoning resilience"
+      ],
+      "evidence_supported": true
+    },
+    {
+      "direction_id": "dir_ec60dc042617d790",
+      "problem_id": "prob_5339735dc598b893",
+      "research_problem": "However, the challenge of activation memory footprint during backward passes remains unresolved for sub-megabyte devices",
+      "research_gap": "Gap in AI for Resource-Constrained Systems: existing approaches (current methods) leave unresolved: Nevertheless, a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes",
+      "research_questions": [
+        "How can explore intermittent computing integration and hardware-aware sparse backpropagation be effectively addressed in AI for Resource-Constrained Systems?",
+        "What algorithmic or architectural approaches can overcome the limitation of a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes in AI for Resource-Constrained Systems?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes within the decision framework will prevent performance degradation in AI for Resource-Constrained Systems.",
+        "An adaptive co-design approach incorporating explore intermittent computing integration and hardware-aware sparse backpropagation will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes in resource-constrained AI for Resource-Constrained Systems systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world AI for Resource-Constrained Systems testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring throughput, energy, utilization across diverse workloads.",
+      "evaluation_metrics": [
+        "throughput",
+        "energy",
+        "utilization"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future work plans to explore intermittent computing integration and hardware-aware sparse backpropagation"
+      ],
+      "evidence_supported": true
+    },
+    {
+      "direction_id": "dir_41e52924671b5849",
+      "problem_id": "prob_c0c887f7e87a8013",
+      "research_problem": "However, decentralized task scheduling across non-cooperative edge servers and base stations suffers from severe coordination overhead and partial observability bottlenecks",
+      "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks",
+      "research_questions": [
+        "How can investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions be effectively addressed in Edge Computing?",
+        "What algorithmic or architectural approaches can overcome the limitation of a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks in Edge Computing?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks within the decision framework will prevent performance degradation in Edge Computing.",
+        "An adaptive co-design approach incorporating investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks in resource-constrained Edge Computing systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, utilization, bandwidth across diverse workloads.",
+      "evaluation_metrics": [
+        "latency",
+        "utilization",
+        "bandwidth"
+      ],
+      "required_datasets": [
+        "We propose a decentralized multi-agent deep deterministic policy gradient (MADDPG) framework with shared attention mechanisms that allows autonomous edge nodes to negotiate workload distribution without centralized telemetry"
+      ],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions"
+      ],
+      "evidence_supported": true
+    },
+    {
+      "direction_id": "dir_e9ffec0b3ba3e4eb",
+      "problem_id": "prob_bf3515b869b952fb",
+      "research_problem": "However, naive asynchronous federated updates suffer from stale gradient divergence and catastrophic forgetting on non-IID client partitions",
+      "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: The primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees",
+      "research_questions": [
+        "How can integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers be effectively addressed in Edge Computing?",
+        "What algorithmic or architectural approaches can overcome the limitation of the primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees in Edge Computing?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling the primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees within the decision framework will prevent performance degradation in Edge Computing.",
+        "An adaptive co-design approach incorporating integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing the primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees in resource-constrained Edge Computing systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring accuracy, delay, convergence across diverse workloads.",
+      "evaluation_metrics": [
+        "accuracy",
+        "delay",
+        "convergence"
+      ],
+      "required_datasets": [
+        "Testbed evaluations across 50 Raspberry Pi edge nodes show 3.1x faster wall-clock convergence time compared to FedAsync while matching centralized model accuracy"
+      ],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future work will integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers"
+      ],
+      "evidence_supported": true
+    },
+    {
+      "direction_id": "dir_fbf78dba08465d39",
+      "problem_id": "prob_bf59402256197e35",
+      "research_problem": "Prolonging device operational lifetime is the paramount challenge for battery-powered IoT and wearable edge devices running continuous neural inference",
+      "research_gap": "Gap in AI for Resource-Constrained Systems: existing approaches (current methods) leave unresolved: However, the limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles",
+      "research_questions": [
+        "How can explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning be effectively addressed in AI for Resource-Constrained Systems?",
+        "What algorithmic or architectural approaches can overcome the limitation of limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles in AI for Resource-Constrained Systems?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles within the decision framework will prevent performance degradation in AI for Resource-Constrained Systems.",
+        "An adaptive co-design approach incorporating explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles in resource-constrained AI for Resource-Constrained Systems systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world AI for Resource-Constrained Systems testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, energy across diverse workloads.",
+      "evaluation_metrics": [
+        "latency",
+        "energy"
+      ],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future work will explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning"
+      ],
+      "evidence_supported": true
+    },
+    {
+      "direction_id": "dir_088bbb01845f3678",
+      "problem_id": "prob_d760e6dee157a7cd",
+      "research_problem": "However, cold start initialization latencies in containerized runtimes exceed 500 ms on edge nodes with limited I/O throughput, violating interactive SLA requirements",
+      "research_gap": "Gap in Edge Computing: existing approaches (current methods) leave unresolved: The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes",
+      "research_questions": [
+        "How can explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations be effectively addressed in Edge Computing?",
+        "What algorithmic or architectural approaches can overcome the limitation of memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes in Edge Computing?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes within the decision framework will prevent performance degradation in Edge Computing.",
+        "An adaptive co-design approach incorporating explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes in resource-constrained Edge Computing systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world Edge Computing testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, throughput across diverse workloads.",
+      "evaluation_metrics": [
+        "latency",
+        "throughput"
+      ],
+      "required_datasets": [
+        "Benchmarked on a 16-node heterogeneous edge cluster, WarmEdge eliminates 76% of cold starts and reduces median pipeline latency by 45%"
+      ],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations"
+      ],
+      "evidence_supported": true
+    },
+    {
+      "direction_id": "dir_864c42e533ca09ee",
+      "problem_id": "prob_7aa38747f5f80966",
+      "research_problem": "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams",
+      "research_gap": "Gap in AI for Resource-Constrained Systems: existing approaches (current methods) leave unresolved: The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams",
+      "research_questions": [
+        "How can investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures be effectively addressed in AI for Resource-Constrained Systems?",
+        "What algorithmic or architectural approaches can overcome the limitation of the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams in AI for Resource-Constrained Systems?"
+      ],
+      "hypotheses": [
+        "Explicitly modeling the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams within the decision framework will prevent performance degradation in AI for Resource-Constrained Systems.",
+        "An adaptive co-design approach incorporating investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures will yield superior Pareto-optimal trade-offs."
+      ],
+      "potential_contribution": "A novel theoretical and algorithmic framework addressing the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams in resource-constrained AI for Resource-Constrained Systems systems.",
+      "possible_methodology": "Formulate the multi-objective optimization problem, combining Lyapunov drift-plus-penalty optimization with deep reinforcement learning, and validate on real-world AI for Resource-Constrained Systems testbeds.",
+      "experimental_strategy": "Evaluate on both trace-driven simulation and physical edge testbeds, measuring latency, throughput, energy across diverse workloads.",
+      "evaluation_metrics": [],
+      "required_datasets": [],
+      "infrastructure_requirements": [],
+      "risks": [
+        "Hardware heterogeneity may lead to inconsistent convergence behavior.",
+        "High computational overhead of the proposed model on extreme edge devices."
+      ],
+      "unresolved_issues": [
+        "Future work will investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures"
+      ],
+      "evidence_supported": true
+    }
+  ],
+  "papers": [
+    {
+      "paper_id": "doi_fd8071479658a576",
+      "title": "Adaptive Deep Neural Network Inference Acceleration at Edge via Joint Dynamic Partitioning and Resource Scheduling",
+      "authors": [
+        "Chen Wang",
+        "Sheng Zhang",
+        "Zhi Zhou",
+        "Xu Chen"
+      ],
+      "year": 2023,
+      "venue": "IEEE Transactions on Parallel and Distributed Systems",
+      "doi": "10.1109/TPDS.2023.3289012",
+      "url": "https://doi.org/10.1109/TPDS.2023.3289012",
+      "source": "IEEE TPDS",
+      "research_problem": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks",
+      "proposed_approach": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks",
+      "methodology": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks We propose an adaptive runtime partition framework called EdgeSplit that formulates layer-level offloading as a constrained Markov decision process",
+      "dataset_testbed": "",
+      "evaluation_metrics": [
+        "latency",
+        "energy"
+      ],
+      "main_contribution": "Experimental results on NVIDIA Jetson Xavier and Raspberry Pi 4 show that our approach achieves a 38% reduction in 99th-percentile inference latency compared to static split baselines",
+      "limitations": [
+        "However, the limitation is that the framework does not consider battery energy degradation during sustained bursty traffic"
+      ],
+      "future_work": [
+        "Future work will extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference"
+      ],
+      "keywords": [
+        "Edge Computing",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "abstract": "Deploying deep learning models on resource-constrained edge devices faces acute memory and latency bottlenecks. However, existing DNN partition schemes overlook dynamic wireless channel fluctuation and hardware runtime jitter, leading to severe tail latency in multi-tenant edge servers. We propose an adaptive runtime partition framework called EdgeSplit that formulates layer-level offloading as a constrained Markov decision process. Experimental results on NVIDIA Jetson Xavier and Raspberry Pi 4 show that our approach achieves a 38% reduction in 99th-percentile inference latency compared to static split baselines. However, the limitation is that the framework does not consider battery energy degradation during sustained bursty traffic. Future work will extend the optimization to energy harvesting environments and evaluate asynchronous multi-device cooperative inference.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_3febbd2ef803f194",
+      "title": "Communication-Efficient Federated Learning over Heterogeneous Edge Networks via Adaptive Model Pruning and Quantization",
+      "authors": [
+        "Yiqun Mei",
+        "Xidong Mu",
+        "Yuanwei Liu",
+        "Arumugam Nallanathan"
+      ],
+      "year": 2023,
+      "venue": "IEEE Journal on Selected Areas in Communications",
+      "doi": "10.1109/JSAC.2023.3242781",
+      "url": "https://doi.org/10.1109/JSAC.2023.3242781",
+      "source": "IEEE JSAC",
+      "research_problem": "However, the fundamental bottleneck lies in communication overhead and extreme client device heterogeneity where stragglers degrade global model convergence speed",
+      "proposed_approach": "Federated learning enables collaborative model training across distributed clients without raw data sharing",
+      "methodology": "Federated learning enables collaborative model training across distributed clients without raw data sharing However, the fundamental bottleneck lies in communication overhead and extreme client device heterogeneity where stragglers degrade global model convergence speed",
+      "dataset_testbed": "Extensive simulations on CIFAR-100 and FEMNIST demonstrate an 8.4x reduction in total uplink transmission bytes while maintaining top-1 accuracy within 1.2% of uncompressed FedAvg",
+      "evaluation_metrics": [
+        "accuracy",
+        "convergence",
+        "precision",
+        "bandwidth"
+      ],
+      "main_contribution": "Future research must address non-stationary communication channels and Byzantine client poisoning resilience",
+      "limitations": [
+        "A major limitation of this work is the assumption of independent and identically distributed channel states between training rounds"
+      ],
+      "future_work": [
+        "Future research must address non-stationary communication channels and Byzantine client poisoning resilience"
+      ],
+      "keywords": [
+        "Federated Learning",
+        "Edge AI",
+        "Distributed Systems"
+      ],
+      "abstract": "Federated learning enables collaborative model training across distributed clients without raw data sharing. However, the fundamental bottleneck lies in communication overhead and extreme client device heterogeneity where stragglers degrade global model convergence speed. We propose FedPruneQ, a joint structured pruning and mixed-precision quantization algorithm that dynamically adapts client sub-model capacities to local wireless uplink bandwidth. Extensive simulations on CIFAR-100 and FEMNIST demonstrate an 8.4x reduction in total uplink transmission bytes while maintaining top-1 accuracy within 1.2% of uncompressed FedAvg. A major limitation of this work is the assumption of independent and identically distributed channel states between training rounds. Future research must address non-stationary communication channels and Byzantine client poisoning resilience.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_425477632614e9a7",
+      "title": "TinyML in Microcontroller Fleets: Memory-Constrained On-Device Learning using Reversible Neural Architectures",
+      "authors": [
+        "Han Cai",
+        "Ji Lin",
+        "Yujun Lin",
+        "Song Han"
+      ],
+      "year": 2023,
+      "venue": "ACM International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "doi": "10.1145/3575693.3587641",
+      "url": "https://doi.org/10.1145/3575693.3587641",
+      "source": "ACM ASPLOS",
+      "research_problem": "However, the challenge of activation memory footprint during backward passes remains unresolved for sub-megabyte devices",
+      "proposed_approach": "On-device model personalization is critical for privacy-sensitive IoT deployments, yet embedded microcontrollers have SRAM budgets below 512 KB, rendering standard backpropagation impossible",
+      "methodology": "On-device model personalization is critical for privacy-sensitive IoT deployments, yet embedded microcontrollers have SRAM budgets below 512 KB, rendering standard backpropagation impossible We introduce TinyReversible, an ultra-compact reversible neural network architecture and runtime that reconstructs activations on-the-fly, reducing peak SRAM utilization by 6.2x during fine-tuning",
+      "dataset_testbed": "",
+      "evaluation_metrics": [
+        "throughput",
+        "energy",
+        "utilization"
+      ],
+      "main_contribution": "Empirical validation on STM32F7 microcontrollers demonstrates successful transfer learning under 256 KB SRAM constraints with an inference throughput of 14 FPS",
+      "limitations": [
+        "Nevertheless, a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes"
+      ],
+      "future_work": [
+        "Future work plans to explore intermittent computing integration and hardware-aware sparse backpropagation"
+      ],
+      "keywords": [
+        "TinyML",
+        "AI for Resource-Constrained Systems",
+        "IoT"
+      ],
+      "abstract": "On-device model personalization is critical for privacy-sensitive IoT deployments, yet embedded microcontrollers have SRAM budgets below 512 KB, rendering standard backpropagation impossible. However, the challenge of activation memory footprint during backward passes remains unresolved for sub-megabyte devices. We introduce TinyReversible, an ultra-compact reversible neural network architecture and runtime that reconstructs activations on-the-fly, reducing peak SRAM utilization by 6.2x during fine-tuning. Empirical validation on STM32F7 microcontrollers demonstrates successful transfer learning under 256 KB SRAM constraints with an inference throughput of 14 FPS. Nevertheless, a critical limitation is that computational overhead increases total training energy consumption by 22%, making it unsuitable for battery-less ambient IoT nodes. Future work plans to explore intermittent computing integration and hardware-aware sparse backpropagation.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_ddfe2fa4e7ed2abf",
+      "title": "Decentralized Resource Allocation in Multi-Tier Edge-Cloud Computing via Multi-Agent Reinforcement Learning",
+      "authors": [
+        "Liang Huang",
+        "Xiaomin Feng",
+        "Chunming Wu",
+        "Zheng Chang"
+      ],
+      "year": 2023,
+      "venue": "IEEE Transactions on Mobile Computing",
+      "doi": "10.1109/TMC.2022.3198754",
+      "url": "https://doi.org/10.1109/TMC.2022.3198754",
+      "source": "IEEE TMC",
+      "research_problem": "However, decentralized task scheduling across non-cooperative edge servers and base stations suffers from severe coordination overhead and partial observability bottlenecks",
+      "proposed_approach": "Hierarchical edge-cloud architectures bridge latency-sensitive edge processing and capacity-rich central cloud data centers",
+      "methodology": "Hierarchical edge-cloud architectures bridge latency-sensitive edge processing and capacity-rich central cloud data centers We propose a decentralized multi-agent deep deterministic policy gradient (MADDPG) framework with shared attention mechanisms that allows autonomous edge nodes to negotiate workload distribution without centralized telemetry",
+      "dataset_testbed": "We propose a decentralized multi-agent deep deterministic policy gradient (MADDPG) framework with shared attention mechanisms that allows autonomous edge nodes to negotiate workload distribution without centralized telemetry",
+      "evaluation_metrics": [
+        "latency",
+        "utilization",
+        "bandwidth"
+      ],
+      "main_contribution": "Evaluation against real Google cluster traces shows 24% lower task drop ratios and 19% improved edge bandwidth utilization",
+      "limitations": [
+        "However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks"
+      ],
+      "future_work": [
+        "Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions"
+      ],
+      "keywords": [
+        "Edge-Cloud Computing",
+        "Edge Computing",
+        "Distributed Systems"
+      ],
+      "abstract": "Hierarchical edge-cloud architectures bridge latency-sensitive edge processing and capacity-rich central cloud data centers. However, decentralized task scheduling across non-cooperative edge servers and base stations suffers from severe coordination overhead and partial observability bottlenecks. We propose a decentralized multi-agent deep deterministic policy gradient (MADDPG) framework with shared attention mechanisms that allows autonomous edge nodes to negotiate workload distribution without centralized telemetry. Evaluation against real Google cluster traces shows 24% lower task drop ratios and 19% improved edge bandwidth utilization. However, a key limitation is the vulnerability to non-stationary policies when edge nodes join or leave dynamically in ad-hoc mobile networks. Future work will investigate zero-shot transfer learning across heterogeneous topologies and formal safety constraints using control barrier functions.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_d325e3beedb8c4d0",
+      "title": "Robust Federated Learning with Asynchronous Aggregation over Unreliable Edge Wireless Links",
+      "authors": [
+        "Zhe Qu",
+        "Rui Duan",
+        "Lianjie Cao",
+        "Jie Xu"
+      ],
+      "year": 2024,
+      "venue": "IEEE INFOCOM",
+      "doi": "10.1109/INFOCOM48880.2024.10621450",
+      "url": "https://doi.org/10.1109/INFOCOM48880.2024.10621450",
+      "source": "IEEE INFOCOM",
+      "research_problem": "However, naive asynchronous federated updates suffer from stale gradient divergence and catastrophic forgetting on non-IID client partitions",
+      "proposed_approach": "Synchronous federated aggregation suffers from severe straggler delays in wide-area edge networks characterized by packet loss and intermittent device dropouts",
+      "methodology": "Synchronous federated aggregation suffers from severe straggler delays in wide-area edge networks characterized by packet loss and intermittent device dropouts However, naive asynchronous federated updates suffer from stale gradient divergence and catastrophic forgetting on non-IID client partitions",
+      "dataset_testbed": "Testbed evaluations across 50 Raspberry Pi edge nodes show 3.1x faster wall-clock convergence time compared to FedAsync while matching centralized model accuracy",
+      "evaluation_metrics": [
+        "accuracy",
+        "delay",
+        "convergence"
+      ],
+      "main_contribution": "Testbed evaluations across 50 Raspberry Pi edge nodes show 3.1x faster wall-clock convergence time compared to FedAsync while matching centralized model accuracy",
+      "limitations": [
+        "The primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees"
+      ],
+      "future_work": [
+        "Future work will integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers"
+      ],
+      "keywords": [
+        "Federated Learning",
+        "Distributed Systems",
+        "Edge Computing"
+      ],
+      "abstract": "Synchronous federated aggregation suffers from severe straggler delays in wide-area edge networks characterized by packet loss and intermittent device dropouts. However, naive asynchronous federated updates suffer from stale gradient divergence and catastrophic forgetting on non-IID client partitions. We present AsyncEdge-FL, an asynchronous aggregation mechanism incorporating staleness-damped exponential weighting and Lyapunov-guided client sampling. Testbed evaluations across 50 Raspberry Pi edge nodes show 3.1x faster wall-clock convergence time compared to FedAsync while matching centralized model accuracy. The primary limitation of this work is that it assumes trusted edge aggregation servers and does not provide formal differential privacy guarantees. Future work will integrate homomorphic encryption and investigate decentralized peer-to-peer gossip aggregation without parameter servers.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_e0a322390c8e2993",
+      "title": "Energy-Aware Task Offloading and Resource Allocation for Battery-Constrained Edge AI Devices",
+      "authors": [
+        "Tingting Liu",
+        "Jun Zhang",
+        "Eckhard Grass"
+      ],
+      "year": 2024,
+      "venue": "IEEE Transactions on Green Communications and Networking",
+      "doi": "10.1109/TGCN.2024.3361280",
+      "url": "https://doi.org/10.1109/TGCN.2024.3361280",
+      "source": "IEEE TGCN",
+      "research_problem": "Prolonging device operational lifetime is the paramount challenge for battery-powered IoT and wearable edge devices running continuous neural inference",
+      "proposed_approach": "However, existing energy-efficient offloading heuristics treat energy consumption and task deadline satisfaction as decoupled objectives, failing under non-linear battery discharge characteristics",
+      "methodology": "However, existing energy-efficient offloading heuristics treat energy consumption and task deadline satisfaction as decoupled objectives, failing under non-linear battery discharge characteristics We formulate a joint dynamic voltage-frequency scaling (DVFS) and wireless transmission power control model as a mixed-integer non-linear program (MINLP), solved via low-complexity geometric programming approximation",
+      "dataset_testbed": "",
+      "evaluation_metrics": [
+        "latency",
+        "energy"
+      ],
+      "main_contribution": "Experimental results on energy-harvesting IoT nodes demonstrate a 41% reduction in cumulative energy dissipation while meeting 95% of hard real-time latency deadlines",
+      "limitations": [
+        "However, the limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles"
+      ],
+      "future_work": [
+        "Future work will explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning"
+      ],
+      "keywords": [
+        "AI for Resource-Constrained Systems",
+        "Edge Computing",
+        "IoT"
+      ],
+      "abstract": "Prolonging device operational lifetime is the paramount challenge for battery-powered IoT and wearable edge devices running continuous neural inference. However, existing energy-efficient offloading heuristics treat energy consumption and task deadline satisfaction as decoupled objectives, failing under non-linear battery discharge characteristics. We formulate a joint dynamic voltage-frequency scaling (DVFS) and wireless transmission power control model as a mixed-integer non-linear program (MINLP), solved via low-complexity geometric programming approximation. Experimental results on energy-harvesting IoT nodes demonstrate a 41% reduction in cumulative energy dissipation while meeting 95% of hard real-time latency deadlines. However, the limitation is that the framework requires exact knowledge of battery internal resistance and temperature curves, which drift over battery aging cycles. Future work will explore online reinforcement learning for battery state-of-health estimation and adaptive policy tuning.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_f5496fcac867c5b9",
+      "title": "Serverless Computing at the Edge: Cold Start Latency Mitigation for Distributed Microservice Pipelines",
+      "authors": [
+        "Ahmet Faruk Yuruk",
+        "David Bermbach",
+        "Volker Markl"
+      ],
+      "year": 2023,
+      "venue": "ACM Symposium on Cloud Computing",
+      "doi": "10.1145/3627703.3629571",
+      "url": "https://doi.org/10.1145/3627703.3629571",
+      "source": "ACM SoCC",
+      "research_problem": "However, cold start initialization latencies in containerized runtimes exceed 500 ms on edge nodes with limited I/O throughput, violating interactive SLA requirements",
+      "proposed_approach": "We design WarmEdge, a predictive function pre-warming and snapshot restoration architecture that employs temporal graph neural networks to forecast invocation chains across edge microservices",
+      "methodology": "We design WarmEdge, a predictive function pre-warming and snapshot restoration architecture that employs temporal graph neural networks to forecast invocation chains across edge microservices",
+      "dataset_testbed": "Benchmarked on a 16-node heterogeneous edge cluster, WarmEdge eliminates 76% of cold starts and reduces median pipeline latency by 45%",
+      "evaluation_metrics": [
+        "latency",
+        "throughput"
+      ],
+      "main_contribution": "Benchmarked on a 16-node heterogeneous edge cluster, WarmEdge eliminates 76% of cold starts and reduces median pipeline latency by 45%",
+      "limitations": [
+        "The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes"
+      ],
+      "future_work": [
+        "Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations"
+      ],
+      "keywords": [
+        "Edge-Cloud Computing",
+        "Distributed Systems",
+        "Edge Computing"
+      ],
+      "abstract": "Function-as-a-Service (FaaS) simplifies deploying modular AI services across edge-cloud topologies. However, cold start initialization latencies in containerized runtimes exceed 500 ms on edge nodes with limited I/O throughput, violating interactive SLA requirements. We design WarmEdge, a predictive function pre-warming and snapshot restoration architecture that employs temporal graph neural networks to forecast invocation chains across edge microservices. Benchmarked on a 16-node heterogeneous edge cluster, WarmEdge eliminates 76% of cold starts and reduces median pipeline latency by 45%. The core limitation is memory thrashing when total pre-warmed snapshot sizes exceed available edge RAM during bursty traffic spikes. Future research will explore hierarchical snapshot tiering to NVMe storage and zero-copy shared memory IPC between FaaS invocations.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_4ea506e06590cb85",
+      "title": "Low-Power Transformer Architectures for Real-Time Edge Video Analytics",
+      "authors": [
+        "Zhuofan Zong",
+        "Dongzhi Jiang",
+        "Guanglu Song",
+        "Yu Liu"
+      ],
+      "year": 2024,
+      "venue": "IEEE Conference on Computer Vision and Pattern Recognition",
+      "doi": "10.1109/CVPR52688.2024.01523",
+      "url": "https://doi.org/10.1109/CVPR52688.2024.01523",
+      "source": "IEEE CVPR",
+      "research_problem": "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams",
+      "proposed_approach": "We develop TemporalTokenSlim, an edge-centric spatial-temporal token pruning mechanism with token recovery caches and 4-bit integer weight-activation quantization",
+      "methodology": "We develop TemporalTokenSlim, an edge-centric spatial-temporal token pruning mechanism with token recovery caches and 4-bit integer weight-activation quantization Evaluated on NVIDIA Jetson Orin Nano, the model achieves 28.5 FPS real-time object tracking at 12W power envelope with minimal mAP loss (0.8%)",
+      "dataset_testbed": "",
+      "evaluation_metrics": [],
+      "main_contribution": "Evaluated on NVIDIA Jetson Orin Nano, the model achieves 28.5 FPS real-time object tracking at 12W power envelope with minimal mAP loss (0.8%)",
+      "limitations": [
+        "The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams"
+      ],
+      "future_work": [
+        "Future work will investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures"
+      ],
+      "keywords": [
+        "Edge AI",
+        "TinyML",
+        "AI for Resource-Constrained Systems"
+      ],
+      "abstract": "Vision Transformers (ViTs) deliver superior spatial-temporal representation for intelligent video surveillance, yet quadratic self-attention complexity severely inhibits deployment on embedded edge accelerators. However, existing token pruning techniques induce temporal flicker and inconsistent object tracklets across sequential video frames. We develop TemporalTokenSlim, an edge-centric spatial-temporal token pruning mechanism with token recovery caches and 4-bit integer weight-activation quantization. Evaluated on NVIDIA Jetson Orin Nano, the model achieves 28.5 FPS real-time object tracking at 12W power envelope with minimal mAP loss (0.8%). The primary limitation is that the token recovery cache requires dedicated SRAM buffers that scale linearly with video resolution, creating bottlenecks on Ultra-HD streams. Future work will investigate sparse linear attention mechanisms and hardware-software co-design with emerging NPU architectures.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_3cc87478fb7b31a4",
+      "title": "Privacy-Preserving Federated Multi-Task Learning for Heterogeneous Industrial IoT Sensor Networks",
+      "authors": [
+        "Yang Liu",
+        "Yan Kang",
+        "Tianjian Chen",
+        "Qiang Yang"
+      ],
+      "year": 2023,
+      "venue": "IEEE Transactions on Industrial Informatics",
+      "doi": "10.1109/TII.2023.3298142",
+      "url": "https://doi.org/10.1109/TII.2023.3298142",
+      "source": "IEEE TII",
+      "research_problem": "The limitation is that computing pairwise task similarity matrices introduces an O(N^2) communication bottleneck as the number of IIoT devices scales to thousands",
+      "proposed_approach": "However, single-model federated learning performs poorly across divergent machine types, while negative knowledge transfer corrupts task-specific feature representations",
+      "methodology": "However, single-model federated learning performs poorly across divergent machine types, while negative knowledge transfer corrupts task-specific feature representations We formulate a federated multi-task learning architecture based on clustered personal encoders and secure parameter sharing via differential privacy",
+      "dataset_testbed": "Tested on multi-facility vibration and temperature datasets, our approach achieves 15% higher fault classification accuracy compared to standard federated baselines",
+      "evaluation_metrics": [
+        "accuracy"
+      ],
+      "main_contribution": "Tested on multi-facility vibration and temperature datasets, our approach achieves 15% higher fault classification accuracy compared to standard federated baselines",
+      "limitations": [
+        "The limitation is that computing pairwise task similarity matrices introduces an O(N^2) communication bottleneck as the number of IIoT devices scales to thousands"
+      ],
+      "future_work": [
+        "Future work will explore hierarchical cluster representatives and decentralized discovery of cluster affiliations without central coordination"
+      ],
+      "keywords": [
+        "IoT",
+        "Federated Learning",
+        "AI for Resource-Constrained Systems"
+      ],
+      "abstract": "Industrial IoT (IIoT) sensors monitor heterogeneous machines with distinct operational dynamics and private telemetry. However, single-model federated learning performs poorly across divergent machine types, while negative knowledge transfer corrupts task-specific feature representations. We formulate a federated multi-task learning architecture based on clustered personal encoders and secure parameter sharing via differential privacy. Tested on multi-facility vibration and temperature datasets, our approach achieves 15% higher fault classification accuracy compared to standard federated baselines. The limitation is that computing pairwise task similarity matrices introduces an O(N^2) communication bottleneck as the number of IIoT devices scales to thousands. Future work will explore hierarchical cluster representatives and decentralized discovery of cluster affiliations without central coordination.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    },
+    {
+      "paper_id": "doi_789c6b6c1087b313",
+      "title": "Resilient Consensus Protocols for Geo-Distributed Edge Infrastructure under Intermittent Connectivity",
+      "authors": [
+        "Marta Patiño-Martínez",
+        "Ricardo Jimenez-Peris",
+        "Valerio Schiavoni"
+      ],
+      "year": 2024,
+      "venue": "IEEE International Conference on Distributed Computing Systems",
+      "doi": "10.1109/ICDCS60910.2024.00045",
+      "url": "https://doi.org/10.1109/ICDCS60910.2024.00045",
+      "source": "IEEE ICDCS",
+      "research_problem": "However, classical Paxos and Raft protocols suffer catastrophic availability loss during wide-area network partitions and frequent edge node churn",
+      "proposed_approach": "We propose EdgePaxos, a partition-tolerant consensus protocol utilizing conflict-free replicated data types (CRDTs) for local operations and speculative quorum commits during network reconvergence",
+      "methodology": "We propose EdgePaxos, a partition-tolerant consensus protocol utilizing conflict-free replicated data types (CRDTs) for local operations and speculative quorum commits during network reconvergence",
+      "dataset_testbed": "",
+      "evaluation_metrics": [
+        "latency",
+        "convergence"
+      ],
+      "main_contribution": "Empirical evaluation across 8 cloud regions and 24 edge nodes demonstrates a 4x reduction in commit latency and zero downtime during simulated transatlantic cable cuts",
+      "limitations": [
+        "However, a major limitation is that state convergence under high conflict rates incurs substantial storage overhead from tombstone accumulation"
+      ],
+      "future_work": [
+        "Future work will investigate garbage collection protocols tailored for resource-constrained edge storage and formal verification of CRDT merge safety under Byzantine failures"
+      ],
+      "keywords": [
+        "Distributed Systems",
+        "Edge Computing",
+        "Edge-Cloud Computing"
+      ],
+      "abstract": "State machine replication across geo-distributed edge clusters is essential for consistent metadata management. However, classical Paxos and Raft protocols suffer catastrophic availability loss during wide-area network partitions and frequent edge node churn. We propose EdgePaxos, a partition-tolerant consensus protocol utilizing conflict-free replicated data types (CRDTs) for local operations and speculative quorum commits during network reconvergence. Empirical evaluation across 8 cloud regions and 24 edge nodes demonstrates a 4x reduction in commit latency and zero downtime during simulated transatlantic cable cuts. However, a major limitation is that state convergence under high conflict rates incurs substantial storage overhead from tombstone accumulation. Future work will investigate garbage collection protocols tailored for resource-constrained edge storage and formal verification of CRDT merge safety under Byzantine failures.",
+      "citation_count": 0,
+      "discovery_date": "2026-10-02"
+    }
+  ],
+  "feasibility": {
+    "prob_0fa12d0bba22cb99": {
+      "problem_id": "prob_0fa12d0bba22cb99",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "medium",
+      "data_evidence": "May require synthetic workloads or simulated traces.",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Prof. Dr. Hans Weber, LF Edge, Prof. David Miller).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_41a1db4fe45b60de": {
+      "problem_id": "prob_41a1db4fe45b60de",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "high",
+      "data_evidence": "Public datasets/benchmarks identified in literature (1 mentioned).",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Prof. David Miller, Prof. Dr. Hans Weber, LF Edge).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_5339735dc598b893": {
+      "problem_id": "prob_5339735dc598b893",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "medium",
+      "data_evidence": "May require synthetic workloads or simulated traces.",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Sourabh Natu, Ankur Goyal, Prathamesh Uttam Patil).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_c0c887f7e87a8013": {
+      "problem_id": "prob_c0c887f7e87a8013",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "high",
+      "data_evidence": "Public datasets/benchmarks identified in literature (1 mentioned).",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Prof. David Miller, Prof. Dr. Hans Weber, LF Edge).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_bf3515b869b952fb": {
+      "problem_id": "prob_bf3515b869b952fb",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "high",
+      "data_evidence": "Public datasets/benchmarks identified in literature (1 mentioned).",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Prof. David Miller, Prof. Dr. Hans Weber, LF Edge).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_bf59402256197e35": {
+      "problem_id": "prob_bf59402256197e35",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "medium",
+      "data_evidence": "May require synthetic workloads or simulated traces.",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (LF Edge, Alaa M. Altarazi, Mohammad Awis Al Lababede).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_d760e6dee157a7cd": {
+      "problem_id": "prob_d760e6dee157a7cd",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "high",
+      "data_evidence": "Public datasets/benchmarks identified in literature (1 mentioned).",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Prof. Dr. Hans Weber, Prof. David Miller, Prof. Alice Smith).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_7aa38747f5f80966": {
+      "problem_id": "prob_7aa38747f5f80966",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "medium",
+      "data_evidence": "May require synthetic workloads or simulated traces.",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (TinyML Foundation / Harvard University / ICTP, LF Edge, Prathamesh Uttam Patil).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_485955b1b0142d04": {
+      "problem_id": "prob_485955b1b0142d04",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "high",
+      "data_evidence": "Public datasets/benchmarks identified in literature (1 mentioned).",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Prof. David Miller, Sourabh Natu, Ankur Goyal).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    },
+    "prob_d91fd0fa21c444b0": {
+      "problem_id": "prob_d91fd0fa21c444b0",
+      "novelty": "high",
+      "novelty_evidence": "Based on 1 paper(s) found directly addressing this problem.",
+      "significance": "medium",
+      "significance_evidence": "Addressed by at least one major limitation identified in recent work.",
+      "feasibility": "medium",
+      "feasibility_evidence": "Partial methodology established in literature.",
+      "data_availability": "medium",
+      "data_evidence": "May require synthetic workloads or simulated traces.",
+      "infrastructure_requirements": "high",
+      "infrastructure_evidence": "Can be evaluated with standard GPU workstations and edge emulation testbeds.",
+      "supervisor_fit": "high",
+      "supervisor_fit_evidence": "Strong alignment with 5 researchers (Prof. David Miller, Prof. Dr. Hans Weber, Sourabh Natu).",
+      "publication_potential": "high",
+      "publication_evidence": "High interest in top-tier conferences (SEC, INFOCOM, MobiCom, NeurIPS).",
+      "phd_depth": "medium",
+      "phd_depth_evidence": "Sufficient for focused PhD scope or initial papers."
+    }
+  },
+  "supervisors": {
+    "prob_0fa12d0bba22cb99": [
+      {
+        "name": "Prof. Dr. Hans Weber",
+        "institution": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "relevant_research_areas": [
+          "Edge Computing",
+          "Edge AI",
+          "Distributed Systems"
+        ],
+        "relevant_publications": [
+          {
+            "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+            "url": "https://www.tum.de/phd-edge-ai",
+            "date": "2026-09-11",
+            "venue": "Technical University of Munich (TUM) — Germany",
+            "score": 10.0
+          }
+        ],
+        "matching_keywords": [
+          "ai",
+          "systems",
+          "computing",
+          "edge",
+          "distributed"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 1.0
+      },
+      {
+        "name": "LF Edge",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge AI"
+        ],
+        "relevant_publications": [
+          {
+            "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+            "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+            "date": "2026-09-10",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          },
+          {
+            "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+            "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+            "date": "2026-09-22",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [
+          "ai",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.76
+      },
+      {
+        "name": "Prof. David Miller",
+        "institution": "University of Toronto",
+        "country": "Canada",
+        "relevant_research_areas": [
+          "Federated Learning",
+          "Distributed Systems",
+          "Edge Intelligence"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+            "url": "https://web.ece.utoronto.ca/grad/phd/",
+            "date": "2026-09-11",
+            "venue": "University of Toronto — Canada",
+            "score": 9.3
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.75
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.643
+      },
+      {
+        "name": "Ankur Goyal",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.643
+      }
+    ],
+    "prob_41a1db4fe45b60de": [
+      {
+        "name": "Prof. David Miller",
+        "institution": "University of Toronto",
+        "country": "Canada",
+        "relevant_research_areas": [
+          "Federated Learning",
+          "Distributed Systems",
+          "Edge Intelligence"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+            "url": "https://web.ece.utoronto.ca/grad/phd/",
+            "date": "2026-09-11",
+            "venue": "University of Toronto — Canada",
+            "score": 9.3
+          }
+        ],
+        "matching_keywords": [
+          "learning",
+          "systems",
+          "edge",
+          "distributed",
+          "federated"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.886
+      },
+      {
+        "name": "Prof. Dr. Hans Weber",
+        "institution": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "relevant_research_areas": [
+          "Edge Computing",
+          "Edge AI",
+          "Distributed Systems"
+        ],
+        "relevant_publications": [
+          {
+            "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+            "url": "https://www.tum.de/phd-edge-ai",
+            "date": "2026-09-11",
+            "venue": "Technical University of Munich (TUM) — Germany",
+            "score": 10.0
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "ai",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.829
+      },
+      {
+        "name": "LF Edge",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge AI"
+        ],
+        "relevant_publications": [
+          {
+            "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+            "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+            "date": "2026-09-10",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          },
+          {
+            "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+            "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+            "date": "2026-09-22",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [
+          "ai",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.733
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.627
+      },
+      {
+        "name": "Ankur Goyal",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.627
+      }
+    ],
+    "prob_5339735dc598b893": [
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.627
+      },
+      {
+        "name": "Ankur Goyal",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.627
+      },
+      {
+        "name": "Prathamesh Uttam Patil",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Relevance (law)",
+          "Green computing",
+          "Big data",
+          "The Internet",
+          "Edge device",
+          "Inference",
+          "Smart city",
+          "Sustainable development",
+          "Artificial intelligence",
+          "Distributed computing",
+          "Applications of artificial intelligence",
+          "Machine to machine",
+          "Data science",
+          "Point (geometry)",
+          "Reliability (semiconductor)",
+          "Machine learning",
+          "Server",
+          "Smart objects",
+          "Architecture",
+          "Internet of Things",
+          "Data mining",
+          "Cloud computing",
+          "Energy (signal processing)",
+          "Edge computing",
+          "Efficient energy use",
+          "Key (lock)",
+          "Computer science",
+          "Computer security",
+          "Enhanced Data Rates for GSM Evolution"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+            "url": "https://doi.org/10.5281/zenodo.22953474",
+            "date": "2026-10-31",
+            "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+            "score": 8.2
+          }
+        ],
+        "matching_keywords": [
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.608
+      },
+      {
+        "name": "Shiva Shrestha",
+        "institution": "Academic Institution",
+        "country": "",
+        "relevant_research_areas": [],
+        "relevant_publications": [
+          {
+            "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+            "url": "http://arxiv.org/abs/2608.21172v1",
+            "date": "2026-08-21",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.6
+      },
+      {
+        "name": "Kazi Shaharair Sharif",
+        "institution": "Academic Institution",
+        "country": "",
+        "relevant_research_areas": [],
+        "relevant_publications": [
+          {
+            "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+            "url": "http://arxiv.org/abs/2608.21172v1",
+            "date": "2026-08-21",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.6
+      }
+    ],
+    "prob_c0c887f7e87a8013": [
+      {
+        "name": "Prof. David Miller",
+        "institution": "University of Toronto",
+        "country": "Canada",
+        "relevant_research_areas": [
+          "Federated Learning",
+          "Distributed Systems",
+          "Edge Intelligence"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+            "url": "https://web.ece.utoronto.ca/grad/phd/",
+            "date": "2026-09-11",
+            "venue": "University of Toronto — Canada",
+            "score": 9.3
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.75
+      },
+      {
+        "name": "Prof. Dr. Hans Weber",
+        "institution": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "relevant_research_areas": [
+          "Edge Computing",
+          "Edge AI",
+          "Distributed Systems"
+        ],
+        "relevant_publications": [
+          {
+            "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+            "url": "https://www.tum.de/phd-edge-ai",
+            "date": "2026-09-11",
+            "venue": "Technical University of Munich (TUM) — Germany",
+            "score": 10.0
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.667
+      },
+      {
+        "name": "LF Edge",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge AI"
+        ],
+        "relevant_publications": [
+          {
+            "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+            "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+            "date": "2026-09-10",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          },
+          {
+            "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+            "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+            "date": "2026-09-22",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.667
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.643
+      },
+      {
+        "name": "Ankur Goyal",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.643
+      }
+    ],
+    "prob_bf3515b869b952fb": [
+      {
+        "name": "Prof. David Miller",
+        "institution": "University of Toronto",
+        "country": "Canada",
+        "relevant_research_areas": [
+          "Federated Learning",
+          "Distributed Systems",
+          "Edge Intelligence"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+            "url": "https://web.ece.utoronto.ca/grad/phd/",
+            "date": "2026-09-11",
+            "venue": "University of Toronto — Canada",
+            "score": 9.3
+          }
+        ],
+        "matching_keywords": [
+          "learning",
+          "systems",
+          "edge",
+          "distributed",
+          "federated"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.886
+      },
+      {
+        "name": "Prof. Dr. Hans Weber",
+        "institution": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "relevant_research_areas": [
+          "Edge Computing",
+          "Edge AI",
+          "Distributed Systems"
+        ],
+        "relevant_publications": [
+          {
+            "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+            "url": "https://www.tum.de/phd-edge-ai",
+            "date": "2026-09-11",
+            "venue": "Technical University of Munich (TUM) — Germany",
+            "score": 10.0
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.829
+      },
+      {
+        "name": "LF Edge",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge AI"
+        ],
+        "relevant_publications": [
+          {
+            "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+            "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+            "date": "2026-09-10",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          },
+          {
+            "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+            "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+            "date": "2026-09-22",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.657
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.641
+      },
+      {
+        "name": "Ankur Goyal",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.641
+      }
+    ],
+    "prob_bf59402256197e35": [
+      {
+        "name": "LF Edge",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge AI"
+        ],
+        "relevant_publications": [
+          {
+            "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+            "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+            "date": "2026-09-10",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          },
+          {
+            "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+            "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+            "date": "2026-09-22",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [
+          "ai",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.714
+      },
+      {
+        "name": "Alaa M. Altarazi",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge Computing"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Multi-layer Kerberos Protocol for Edge Computing",
+            "url": "https://doi.org/10.1007/978-3-032-39783-6_21",
+            "date": "2026-09-30",
+            "venue": "Lecture notes in networks and systems",
+            "score": 6.8
+          }
+        ],
+        "matching_keywords": [
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.714
+      },
+      {
+        "name": "Mohammad Awis Al Lababede",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge Computing"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Multi-layer Kerberos Protocol for Edge Computing",
+            "url": "https://doi.org/10.1007/978-3-032-39783-6_21",
+            "date": "2026-09-30",
+            "venue": "Lecture notes in networks and systems",
+            "score": 6.8
+          }
+        ],
+        "matching_keywords": [
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.714
+      },
+      {
+        "name": "Sufyan Almajali",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge Computing"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Multi-layer Kerberos Protocol for Edge Computing",
+            "url": "https://doi.org/10.1007/978-3-032-39783-6_21",
+            "date": "2026-09-30",
+            "venue": "Lecture notes in networks and systems",
+            "score": 6.8
+          }
+        ],
+        "matching_keywords": [
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.714
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge",
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.655
+      }
+    ],
+    "prob_d760e6dee157a7cd": [
+      {
+        "name": "Prof. Dr. Hans Weber",
+        "institution": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "relevant_research_areas": [
+          "Edge Computing",
+          "Edge AI",
+          "Distributed Systems"
+        ],
+        "relevant_publications": [
+          {
+            "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+            "url": "https://www.tum.de/phd-edge-ai",
+            "date": "2026-09-11",
+            "venue": "Technical University of Munich (TUM) — Germany",
+            "score": 10.0
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.867
+      },
+      {
+        "name": "Prof. David Miller",
+        "institution": "University of Toronto",
+        "country": "Canada",
+        "relevant_research_areas": [
+          "Federated Learning",
+          "Distributed Systems",
+          "Edge Intelligence"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+            "url": "https://web.ece.utoronto.ca/grad/phd/",
+            "date": "2026-09-11",
+            "venue": "University of Toronto — Canada",
+            "score": 9.3
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.75
+      },
+      {
+        "name": "Prof. Alice Smith",
+        "institution": "University of Cambridge",
+        "country": "United Kingdom",
+        "relevant_research_areas": [
+          "Cloudlet Systems",
+          "Edge Computing",
+          "Resource Allocation"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Fully Funded Doctoral Studentship in Edge Computing Continuum & Resource Allocation",
+            "url": "https://www.cst.cam.ac.uk/phd-positions",
+            "date": "2026-09-11",
+            "venue": "University of Cambridge — United Kingdom",
+            "score": 8.8
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.75
+      },
+      {
+        "name": "Prof. Raymond Liu",
+        "institution": "Hong Kong University of Science and Technology (HKUST)",
+        "country": "Hong Kong",
+        "relevant_research_areas": [
+          "Mobile Edge Computing",
+          "Hong Kong",
+          "6G",
+          "Distributed Intelligence",
+          "PhD Funding",
+          "International Scholarship",
+          "Dependant Support"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Hong Kong PhD Fellowship (HKPFS) in Mobile Edge Computing & 6G Networks",
+            "url": "https://cerg1.ugc.edu.hk/hkpfs/index.html",
+            "date": "2026-09-11",
+            "venue": "Hong Kong University of Science and Technology (HKUST) — Hong Kong",
+            "score": 9.0
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.675
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.643
+      }
+    ],
+    "prob_7aa38747f5f80966": [
+      {
+        "name": "TinyML Foundation / Harvard University / ICTP",
+        "institution": "TinyML Foundation / Harvard University / ICTP",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge Model Compression",
+          "Edge AI",
+          "Hardware Acceleration",
+          "TinyML",
+          "Quantization for Edge"
+        ],
+        "relevant_publications": [
+          {
+            "title": "TinyML & Edge AI Summer School 2027",
+            "url": "https://www.tinyml.org/education/summer-school-2027",
+            "date": "2026-10-02",
+            "venue": "TinyML & Edge AI Summer School 2027 — Trieste, Italy",
+            "score": 6.9
+          }
+        ],
+        "matching_keywords": [
+          "tinyml",
+          "ai",
+          "edge",
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.745
+      },
+      {
+        "name": "LF Edge",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Edge AI"
+        ],
+        "relevant_publications": [
+          {
+            "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+            "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+            "date": "2026-09-10",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          },
+          {
+            "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+            "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+            "date": "2026-09-22",
+            "venue": "Linux Foundation / LF Edge Blog",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [
+          "ai",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.733
+      },
+      {
+        "name": "Prathamesh Uttam Patil",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Relevance (law)",
+          "Green computing",
+          "Big data",
+          "The Internet",
+          "Edge device",
+          "Inference",
+          "Smart city",
+          "Sustainable development",
+          "Artificial intelligence",
+          "Distributed computing",
+          "Applications of artificial intelligence",
+          "Machine to machine",
+          "Data science",
+          "Point (geometry)",
+          "Reliability (semiconductor)",
+          "Machine learning",
+          "Server",
+          "Smart objects",
+          "Architecture",
+          "Internet of Things",
+          "Data mining",
+          "Cloud computing",
+          "Energy (signal processing)",
+          "Edge computing",
+          "Efficient energy use",
+          "Key (lock)",
+          "Computer science",
+          "Computer security",
+          "Enhanced Data Rates for GSM Evolution"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+            "url": "https://doi.org/10.5281/zenodo.22953474",
+            "date": "2026-10-31",
+            "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+            "score": 8.2
+          }
+        ],
+        "matching_keywords": [
+          "edge",
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.615
+      },
+      {
+        "name": "Shiva Shrestha",
+        "institution": "Academic Institution",
+        "country": "",
+        "relevant_research_areas": [],
+        "relevant_publications": [
+          {
+            "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+            "url": "http://arxiv.org/abs/2608.21172v1",
+            "date": "2026-08-21",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.6
+      },
+      {
+        "name": "Kazi Shaharair Sharif",
+        "institution": "Academic Institution",
+        "country": "",
+        "relevant_research_areas": [],
+        "relevant_publications": [
+          {
+            "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+            "url": "http://arxiv.org/abs/2608.21172v1",
+            "date": "2026-08-21",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.6
+      }
+    ],
+    "prob_485955b1b0142d04": [
+      {
+        "name": "Prof. David Miller",
+        "institution": "University of Toronto",
+        "country": "Canada",
+        "relevant_research_areas": [
+          "Federated Learning",
+          "Distributed Systems",
+          "Edge Intelligence"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+            "url": "https://web.ece.utoronto.ca/grad/phd/",
+            "date": "2026-09-11",
+            "venue": "University of Toronto — Canada",
+            "score": 9.3
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "federated",
+          "learning"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.72
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.626
+      },
+      {
+        "name": "Ankur Goyal",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "for"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.626
+      },
+      {
+        "name": "Prathamesh Uttam Patil",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Relevance (law)",
+          "Green computing",
+          "Big data",
+          "The Internet",
+          "Edge device",
+          "Inference",
+          "Smart city",
+          "Sustainable development",
+          "Artificial intelligence",
+          "Distributed computing",
+          "Applications of artificial intelligence",
+          "Machine to machine",
+          "Data science",
+          "Point (geometry)",
+          "Reliability (semiconductor)",
+          "Machine learning",
+          "Server",
+          "Smart objects",
+          "Architecture",
+          "Internet of Things",
+          "Data mining",
+          "Cloud computing",
+          "Energy (signal processing)",
+          "Edge computing",
+          "Efficient energy use",
+          "Key (lock)",
+          "Computer science",
+          "Computer security",
+          "Enhanced Data Rates for GSM Evolution"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+            "url": "https://doi.org/10.5281/zenodo.22953474",
+            "date": "2026-10-31",
+            "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+            "score": 8.2
+          }
+        ],
+        "matching_keywords": [
+          "for",
+          "learning"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.615
+      },
+      {
+        "name": "Shiva Shrestha",
+        "institution": "Academic Institution",
+        "country": "",
+        "relevant_research_areas": [],
+        "relevant_publications": [
+          {
+            "title": "Thermo-FL: Thermal-Aware Robust Federated Fine-Tuning of Large Language Models for Edge AI",
+            "url": "http://arxiv.org/abs/2608.21172v1",
+            "date": "2026-08-21",
+            "score": 7.8
+          }
+        ],
+        "matching_keywords": [],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.6
+      }
+    ],
+    "prob_d91fd0fa21c444b0": [
+      {
+        "name": "Prof. David Miller",
+        "institution": "University of Toronto",
+        "country": "Canada",
+        "relevant_research_areas": [
+          "Federated Learning",
+          "Distributed Systems",
+          "Edge Intelligence"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Funded PhD Research Position in Distributed Edge Systems & Federated Learning",
+            "url": "https://web.ece.utoronto.ca/grad/phd/",
+            "date": "2026-09-11",
+            "venue": "University of Toronto — Canada",
+            "score": 9.3
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.75
+      },
+      {
+        "name": "Prof. Dr. Hans Weber",
+        "institution": "Technical University of Munich (TUM)",
+        "country": "Germany",
+        "relevant_research_areas": [
+          "Edge Computing",
+          "Edge AI",
+          "Distributed Systems"
+        ],
+        "relevant_publications": [
+          {
+            "title": "PhD Position in Autonomous Edge Intelligence & Distributed Deep Learning",
+            "url": "https://www.tum.de/phd-edge-ai",
+            "date": "2026-09-11",
+            "venue": "Technical University of Munich (TUM) — Germany",
+            "score": 10.0
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.667
+      },
+      {
+        "name": "Sourabh Natu",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.643
+      },
+      {
+        "name": "Ankur Goyal",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Cloud computing",
+          "Key (lock)",
+          "Data management",
+          "Enhanced Data Rates for GSM Evolution",
+          "Edge computing",
+          "Real-time computing",
+          "Computer science",
+          "Group method of data handling",
+          "Data mining",
+          "Data processing",
+          "Internet of Things",
+          "Systems engineering",
+          "Real-time data",
+          "Edge device"
+        ],
+        "relevant_publications": [
+          {
+            "title": "A systematic review of data handling and management techniques in edge computing for IoT",
+            "url": "https://doi.org/10.1007/s42452-026-09533-w",
+            "date": "2026-09-11",
+            "venue": "Discover Applied Sciences",
+            "score": 7.5
+          }
+        ],
+        "matching_keywords": [
+          "systems",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.643
+      },
+      {
+        "name": "Prathamesh Uttam Patil",
+        "institution": "Academic Institution",
+        "country": "International",
+        "relevant_research_areas": [
+          "Relevance (law)",
+          "Green computing",
+          "Big data",
+          "The Internet",
+          "Edge device",
+          "Inference",
+          "Smart city",
+          "Sustainable development",
+          "Artificial intelligence",
+          "Distributed computing",
+          "Applications of artificial intelligence",
+          "Machine to machine",
+          "Data science",
+          "Point (geometry)",
+          "Reliability (semiconductor)",
+          "Machine learning",
+          "Server",
+          "Smart objects",
+          "Architecture",
+          "Internet of Things",
+          "Data mining",
+          "Cloud computing",
+          "Energy (signal processing)",
+          "Edge computing",
+          "Efficient energy use",
+          "Key (lock)",
+          "Computer science",
+          "Computer security",
+          "Enhanced Data Rates for GSM Evolution"
+        ],
+        "relevant_publications": [
+          {
+            "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
+            "url": "https://doi.org/10.5281/zenodo.22953474",
+            "date": "2026-10-31",
+            "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+            "score": 8.2
+          }
+        ],
+        "matching_keywords": [
+          "distributed",
+          "computing",
+          "edge"
+        ],
+        "profile_url": "",
+        "google_scholar_url": "",
+        "semantic_scholar_url": null,
+        "link_status": "unknown",
+        "match_score": 0.624
+      }
+    ]
+  },
+  "link_verification": {}
+}

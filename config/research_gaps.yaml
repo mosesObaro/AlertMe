@@ -1,0 +1,77 @@
+# Research Gap Analysis Configuration
+# Configurable research areas and pipeline settings for PhD topic discovery
+
+research_areas:
+  - "Edge Computing"
+  - "Edge AI"
+  - "Distributed Systems"
+  - "IoT"
+  - "Federated Learning"
+  - "TinyML"
+  - "Edge-Cloud Computing"
+  - "AI for Resource-Constrained Systems"
+
+# Search queries per academic source (maps to existing collectors)
+search_queries:
+  arxiv:
+    - 'cat:cs.DC AND (all:"edge computing" OR all:"edge AI" OR all:"federated learning" OR all:"TinyML")'
+    - 'cat:cs.LG AND (all:"federated learning" OR all:"on-device" OR all:"resource-constrained")'
+    - 'cat:cs.NI AND (all:"IoT" OR all:"edge-cloud" OR all:"mobile edge computing")'
+  openalex:
+    - "edge computing OR edge AI OR federated learning OR TinyML"
+    - "distributed inference OR edge-cloud computing OR IoT machine learning"
+  crossref:
+    - "edge computing edge AI federated learning"
+    - "TinyML resource-constrained distributed systems IoT"
+  semantic_scholar:
+    - "edge computing resource allocation federated learning"
+    - "TinyML edge AI model compression on-device inference"
+
+# Literature collection settings
+collection:
+  max_results_per_query: 40
+  years_back: 5
+  min_year: 2021
+
+# Problem tracker settings
+problem_tracker:
+  auto_status_rules:
+    # Do NOT auto-promote to "promising" based on frequency alone
+    frequency_threshold_for_investigating: 3
+  status_values:
+    - new
+    - investigating
+    - promising
+    - shortlisted
+    - rejected
+    - resolved
+
+# Clustering settings
+clustering:
+  similarity_threshold: 0.55
+  min_cluster_size: 2
+
+# Link verification settings
+link_verification:
+  enabled: true
+  timeout: 10
+  max_concurrent: 5
+  cache_ttl_hours: 168  # 7 days
+  rate_limit_delay: 0.5
+  retry_attempts: 2
+
+# Feasibility assessment dimensions
+feasibility_dimensions:
+  - novelty
+  - significance
+  - feasibility
+  - data_availability
+  - infrastructure_requirements
+  - supervisor_fit
+  - publication_potential
+  - phd_depth
+
+# Dashboard settings
+dashboard:
+  max_problems_display: 200
+  max_papers_per_problem: 20

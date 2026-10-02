@@ -1,0 +1,66 @@
+name: PhD Research Gap Analysis & Dashboard
+
+on:
+  schedule:
+    - cron: '0 9 * * 0'
+  workflow_dispatch:
+    inputs:
+      skip_link_verification:
+        description: "Skip link verification"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  research-gap-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          
+      - name: Install requirements
+        run: pip install -r requirements.txt
+        
+      - name: Run research gap pipeline
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SEMANTIC_SCHOLAR_API_KEY: ${{ secrets.SEMANTIC_SCHOLAR_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.skip_link_verification }}" = "true" ]; then
+            python -m src.cli research-gaps --skip-link-verification
+          else
+            python -m src.cli research-gaps
+          fi
+          
+      - name: Commit state changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/data/ reports/
+          git diff --staged --quiet || git commit -m "chore(data): update research gap analysis [skip ci]" && git push
+
+  deploy-pages:
+    needs: research-gap-analysis
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v4
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: deployment
+        uses: actions/deploy-pages@v4
