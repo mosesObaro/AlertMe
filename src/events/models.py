@@ -127,6 +127,7 @@ class EdgeEvent:
     discovery_date: str = field(default_factory=lambda: datetime.date.today().isoformat())
     last_verified_date: str = field(default_factory=lambda: datetime.date.today().isoformat())
     status: str = EventStatus.UPCOMING.value
+    domain: str = "edge_computing"
     relevance_score: float = 0.0
     score: Optional[EventScoreBreakdown] = None
     id: str = ""
@@ -193,11 +194,11 @@ class EdgeEvent:
 
         # Determine credibility tier
         org_lower = (self.organizer or "").lower()
-        if any(top in org_lower for top in ["ieee", "acm", "usenix"]):
+        if any(top in org_lower for top in ["ieee", "acm", "usenix", "neurips", "iclr", "aaai", "ijcai"]):
             tier = CredibilityTier.TIER1_ACADEMIC_STANDARDS.value
-        elif any(lab in org_lower for lab in ["university", "harvard", "cambridge", "ictp", "lab", "poly"]):
+        elif any(lab in org_lower for lab in ["university", "harvard", "cambridge", "oxford", "ictp", "lab", "poly", "stanford", "mit", "arm"]):
             tier = CredibilityTier.TIER2_UNIVERSITY_LAB.value
-        elif any(ind in org_lower for ind in ["linux foundation", "cncf", "topio", "industry", "openinfra"]):
+        elif any(ind in org_lower for ind in ["linux foundation", "cncf", "topio", "industry", "openinfra", "tinyml", "embedded world"]):
             tier = CredibilityTier.TIER4_INDUSTRY.value
         else:
             tier = CredibilityTier.TIER3_CONFERENCE.value
@@ -211,7 +212,7 @@ class EdgeEvent:
             negative_penalty=self.score.negative_penalty if self.score else 0.0,
             final_score=self.relevance_score,
             matched_topics=self.topics,
-            reasons=self.score.reasons if self.score else [f"Edge Computing event organized by {self.organizer}"]
+            reasons=self.score.reasons if self.score else [f"{self.domain.replace('_', ' ').title()} event organized by {self.organizer}"]
         )
 
         abstract = (
@@ -252,6 +253,7 @@ class EdgeEvent:
             score=score_breakdown,
             opportunity_data={
                 "kind": "event",
+                "domain": self.domain,
                 "event_type": self.event_type,
                 "event_name": self.event_name,
                 "organizer": self.organizer,
@@ -275,3 +277,8 @@ class EdgeEvent:
             },
             id=self.id
         )
+
+
+# Aliases for domain specialization and generic usage
+MLEmbeddedIoTEvent = EdgeEvent
+EventItem = EdgeEvent

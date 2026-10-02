@@ -1,0 +1,619 @@
+[
+  {
+    "event_name": "ACM/IEEE ICCPS 2027 (International Conference on Cyber-Physical Systems)",
+    "organizer": "ACM / IEEE Computer Society",
+    "event_type": "symposium",
+    "description": "Leading scientific forum for foundational research in cyber-physical systems, secure sensing loops, and autonomous real-time robotics.",
+    "topics": [
+      "Cyber-Physical Systems",
+      "Intelligent IoT",
+      "Sensor Networks",
+      "Embedded Systems"
+    ],
+    "start_date": "2027-05-10",
+    "end_date": "2027-05-13",
+    "location": "Milan, Italy",
+    "format": "hybrid",
+    "official_website": "https://iccps.acm.org/2027/",
+    "registration_url": "https://iccps.acm.org/2027/registration.html",
+    "registration_fee": "\u20ac280 (Student) / \u20ac650 (Regular)",
+    "fee_status": "paid",
+    "discounts_subsidies": [
+      {
+        "discount_type": "travel_grant",
+        "name": "CPS-IoT Week / ICCPS Student Travel Grant",
+        "amount_or_rate": "Up to \u20ac900 travel subsidy + registration fee assistance",
+        "eligibility": "Enrolled graduate students presenting accepted work.",
+        "deadline": "2027-03-20",
+        "application_url": null
+      },
+      {
+        "discount_type": "student_rate",
+        "name": "Student Registration Rate",
+        "amount_or_rate": "\u20ac280 (over 55% discount)",
+        "eligibility": "Registered students.",
+        "deadline": null,
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Enrolled graduate students presenting accepted work. Registered students.",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": false,
+    "has_early_bird": false,
+    "has_fee_waiver": false,
+    "cfp_deadline": "2026-10-20",
+    "important_dates": {
+      "cfp_deadline": "2026-10-20",
+      "notification": "2027-01-18",
+      "early_bird_deadline": "2027-03-31"
+    },
+    "target_audience": [
+      "Cyber-Physical Systems Researchers",
+      "Control & Embedded Systems Engineers",
+      "Doctoral Students"
+    ],
+    "country": "Italy",
+    "region": "Europe",
+    "source_url": "https://iccps.acm.org",
+    "source": "Curated Workshop Series",
+    "discovery_date": "2026-10-02",
+    "last_verified_date": "2026-10-02",
+    "status": "cfp_open",
+    "domain": "ml_embedded_iot",
+    "relevance_score": 9.0,
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 2.5,
+      "affordability_boost": 1.3,
+      "actionability_boost": 0.7,
+      "phd_value_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 9.0,
+      "matched_topics": [
+        "Embedded Systems",
+        "IoT",
+        "Intelligent IoT",
+        "Cyber-Physical Systems",
+        "Sensor Networks",
+        "Robotics"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Cyber-Physical Systems (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Robotics (+0.4)",
+        "Tier 1 professional organization (ACM / IEEE Computer Society) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Active CFP deadline in 18 days (+0.7)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "id": "evt_9ffb320c76f33db8",
+    "raw_metadata": {
+      "event_name": "ACM/IEEE ICCPS 2027 (International Conference on Cyber-Physical Systems)",
+      "organizer": "ACM / IEEE Computer Society",
+      "event_type": "symposium",
+      "description": "Leading scientific forum for foundational research in cyber-physical systems, secure sensing loops, and autonomous real-time robotics.",
+      "topics": [
+        "Cyber-Physical Systems",
+        "Intelligent IoT",
+        "Sensor Networks",
+        "Embedded Systems"
+      ],
+      "start_date": "2027-05-10",
+      "end_date": "2027-05-13",
+      "location": "Milan, Italy",
+      "format": "hybrid",
+      "country": "Italy",
+      "region": "Europe",
+      "official_website": "https://iccps.acm.org/2027/",
+      "registration_url": "https://iccps.acm.org/2027/registration.html",
+      "registration_fee": "\u20ac280 (Student) / \u20ac650 (Regular)",
+      "fee_status": "paid",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": false,
+      "has_early_bird": true,
+      "discounts_subsidies": [
+        {
+          "discount_type": "travel_grant",
+          "name": "CPS-IoT Week / ICCPS Student Travel Grant",
+          "amount_or_rate": "Up to \u20ac900 travel subsidy + registration fee assistance",
+          "eligibility": "Enrolled graduate students presenting accepted work.",
+          "deadline": "2027-03-20"
+        },
+        {
+          "discount_type": "student_rate",
+          "name": "Student Registration Rate",
+          "amount_or_rate": "\u20ac280 (over 55% discount)",
+          "eligibility": "Registered students."
+        }
+      ],
+      "cfp_deadline": "2026-10-20",
+      "important_dates": {
+        "cfp_deadline": "2026-10-20",
+        "notification": "2027-01-18",
+        "early_bird_deadline": "2027-03-31"
+      },
+      "target_audience": [
+        "Cyber-Physical Systems Researchers",
+        "Control & Embedded Systems Engineers",
+        "Doctoral Students"
+      ],
+      "source": "Curated Workshop Series",
+      "source_url": "https://iccps.acm.org"
+    }
+  },
+  {
+    "event_name": "NeurIPS 2026 (Conference on Neural Information Processing Systems)",
+    "organizer": "Neural Information Processing Systems Foundation",
+    "event_type": "academic_conference",
+    "description": "The premier flagship international conference on Machine Learning, Deep Learning, AI Systems, Computer Vision, and Neural Information Processing.",
+    "topics": [
+      "Machine Learning",
+      "Deep Learning",
+      "Neural Networks",
+      "AI Systems",
+      "Computer Vision",
+      "Low-Power ML"
+    ],
+    "start_date": "2026-12-06",
+    "end_date": "2026-12-12",
+    "location": "Sydney, Australia",
+    "format": "hybrid",
+    "official_website": "https://neurips.cc/Conferences/2026",
+    "registration_url": "https://neurips.cc/Conferences/2026/Registration",
+    "registration_fee": "$250 (Student) / $850 (Regular)",
+    "fee_status": "paid",
+    "discounts_subsidies": [
+      {
+        "discount_type": "student_rate",
+        "name": "Student Registration Pass",
+        "amount_or_rate": "$250 (over 70% discount vs regular $850)",
+        "eligibility": "Full-time enrolled undergraduate or graduate students with valid student ID.",
+        "deadline": "2026-11-01",
+        "application_url": "https://neurips.cc/Conferences/2026/Registration"
+      },
+      {
+        "discount_type": "travel_grant",
+        "name": "NeurIPS Student Travel Award",
+        "amount_or_rate": "Up to $1,500 travel and accommodation stipend + registration waiver",
+        "eligibility": "Graduate students, particularly student authors of accepted papers and students from underrepresented institutions.",
+        "deadline": "2026-09-15",
+        "application_url": "https://neurips.cc/Conferences/2026/TravelSupport"
+      },
+      {
+        "discount_type": "scholarship",
+        "name": "Diversity & Inclusion Scholar Award",
+        "amount_or_rate": "Full conference registration fee waiver + travel support",
+        "eligibility": "Researchers and students from underrepresented communities in AI/ML.",
+        "deadline": "2026-09-15",
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Full-time enrolled undergraduate or graduate students with valid student ID. Graduate students, particularly student authors of accepted papers and students from underrepresented institutions. Researchers and students from underrepresented communities in AI/ML.",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": true,
+    "has_early_bird": false,
+    "has_fee_waiver": false,
+    "cfp_deadline": "2026-05-22",
+    "important_dates": {
+      "cfp_deadline": "2026-05-22",
+      "notification": "2026-09-25",
+      "early_bird_deadline": "2026-10-15",
+      "conference_dates": "2026-12-06 to 2026-12-12"
+    },
+    "target_audience": [
+      "Machine Learning Researchers",
+      "PhD Students",
+      "AI Systems Architects",
+      "Postdoctoral Fellows"
+    ],
+    "country": "Australia",
+    "region": "Asia-Pacific",
+    "source_url": "https://neurips.cc",
+    "source": "Curated Official Conference Registry",
+    "discovery_date": "2026-10-02",
+    "last_verified_date": "2026-10-02",
+    "status": "registration_open",
+    "domain": "ml_embedded_iot",
+    "relevance_score": 8.8,
+    "score": {
+      "topic_score": 4.0,
+      "credibility_score": 2.5,
+      "affordability_boost": 1.5,
+      "actionability_boost": 0.3,
+      "phd_value_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 8.8,
+      "matched_topics": [
+        "Machine Learning",
+        "Deep Learning",
+        "Neural Information Processing",
+        "Neural Networks",
+        "Computer Vision",
+        "AI Systems",
+        "Low-Power ML"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Neural Information Processing (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Neural Networks (+0.4)",
+        "Tier 1 professional organization (Neural Information Processing Systems Foundation) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Event upcoming in 65 days (+0.3)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "id": "evt_77870b7a098d033c",
+    "raw_metadata": {
+      "event_name": "NeurIPS 2026 (Conference on Neural Information Processing Systems)",
+      "organizer": "Neural Information Processing Systems Foundation",
+      "event_type": "academic_conference",
+      "description": "The premier flagship international conference on Machine Learning, Deep Learning, AI Systems, Computer Vision, and Neural Information Processing.",
+      "topics": [
+        "Machine Learning",
+        "Deep Learning",
+        "Neural Networks",
+        "AI Systems",
+        "Computer Vision",
+        "Low-Power ML"
+      ],
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-12",
+      "location": "Sydney, Australia",
+      "format": "hybrid",
+      "country": "Australia",
+      "region": "Asia-Pacific",
+      "official_website": "https://neurips.cc/Conferences/2026",
+      "registration_url": "https://neurips.cc/Conferences/2026/Registration",
+      "registration_fee": "$250 (Student) / $850 (Regular)",
+      "fee_status": "paid",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": true,
+      "has_early_bird": true,
+      "has_fee_waiver": true,
+      "discounts_subsidies": [
+        {
+          "discount_type": "student_rate",
+          "name": "Student Registration Pass",
+          "amount_or_rate": "$250 (over 70% discount vs regular $850)",
+          "eligibility": "Full-time enrolled undergraduate or graduate students with valid student ID.",
+          "deadline": "2026-11-01",
+          "application_url": "https://neurips.cc/Conferences/2026/Registration"
+        },
+        {
+          "discount_type": "travel_grant",
+          "name": "NeurIPS Student Travel Award",
+          "amount_or_rate": "Up to $1,500 travel and accommodation stipend + registration waiver",
+          "eligibility": "Graduate students, particularly student authors of accepted papers and students from underrepresented institutions.",
+          "deadline": "2026-09-15",
+          "application_url": "https://neurips.cc/Conferences/2026/TravelSupport"
+        },
+        {
+          "discount_type": "scholarship",
+          "name": "Diversity & Inclusion Scholar Award",
+          "amount_or_rate": "Full conference registration fee waiver + travel support",
+          "eligibility": "Researchers and students from underrepresented communities in AI/ML.",
+          "deadline": "2026-09-15"
+        }
+      ],
+      "cfp_deadline": "2026-05-22",
+      "important_dates": {
+        "cfp_deadline": "2026-05-22",
+        "notification": "2026-09-25",
+        "early_bird_deadline": "2026-10-15",
+        "conference_dates": "2026-12-06 to 2026-12-12"
+      },
+      "target_audience": [
+        "Machine Learning Researchers",
+        "PhD Students",
+        "AI Systems Architects",
+        "Postdoctoral Fellows"
+      ],
+      "source": "Curated Official Conference Registry",
+      "source_url": "https://neurips.cc"
+    }
+  },
+  {
+    "event_name": "ACM/IEEE IPSN 2027 (International Conference on Information Processing in Sensor Networks)",
+    "organizer": "ACM / IEEE Computer Society (CPS-IoT Week 2027)",
+    "event_type": "academic_conference",
+    "description": "Premier annual forum on sensor networks, networked embedded systems, IoT analytics, hardware platforms, and cyber-physical sensing.",
+    "topics": [
+      "Sensor/IoT Networks",
+      "Embedded Systems",
+      "Cyber-Physical Systems",
+      "Intelligent IoT",
+      "Low-Power ML"
+    ],
+    "start_date": "2027-05-10",
+    "end_date": "2027-05-13",
+    "location": "Milan, Italy",
+    "format": "hybrid",
+    "official_website": "https://ipsn.acm.org/2027/",
+    "registration_url": "https://ipsn.acm.org/2027/registration.html",
+    "registration_fee": "\u20ac350 (Student CPS-IoT Week Pass) / \u20ac800 (Regular)",
+    "fee_status": "paid",
+    "discounts_subsidies": [
+      {
+        "discount_type": "travel_grant",
+        "name": "NSF & IEEE Student Travel Grant",
+        "amount_or_rate": "Full conference registration waiver + up to $1,200 travel reimbursement",
+        "eligibility": "Full-time graduate students attending CPS-IoT Week.",
+        "deadline": "2027-03-15",
+        "application_url": null
+      },
+      {
+        "discount_type": "student_rate",
+        "name": "CPS-IoT Week Multi-Conference Student Pass",
+        "amount_or_rate": "\u20ac350 (covers IPSN, ICCPS, and all co-located workshops)",
+        "eligibility": "Enrolled university students with verifiable academic email.",
+        "deadline": null,
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Full-time graduate students attending CPS-IoT Week. Enrolled university students with verifiable academic email.",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": false,
+    "has_early_bird": false,
+    "has_fee_waiver": false,
+    "cfp_deadline": "2026-10-25",
+    "important_dates": {
+      "cfp_deadline": "2026-10-25",
+      "notification": "2027-01-20",
+      "early_bird_deadline": "2027-03-31"
+    },
+    "target_audience": [
+      "Sensor Network Researchers",
+      "Cyber-Physical Systems Specialists",
+      "Doctoral Students"
+    ],
+    "country": "Italy",
+    "region": "Europe",
+    "source_url": "https://ipsn.acm.org",
+    "source": "Curated Official Conference Registry",
+    "discovery_date": "2026-10-02",
+    "last_verified_date": "2026-10-02",
+    "status": "cfp_open",
+    "domain": "ml_embedded_iot",
+    "relevance_score": 8.7,
+    "score": {
+      "topic_score": 3.7,
+      "credibility_score": 2.5,
+      "affordability_boost": 1.3,
+      "actionability_boost": 0.7,
+      "phd_value_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 8.7,
+      "matched_topics": [
+        "Embedded Systems",
+        "IoT",
+        "Intelligent IoT",
+        "Cyber-Physical Systems",
+        "Sensor Networks",
+        "IoT Networks",
+        "Low-Power ML"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Sensor Networks (+2.5)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Tier 1 professional organization (ACM / IEEE Computer Society (CPS-IoT Week 2027)) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Active CFP deadline in 23 days (+0.7)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "id": "evt_4fc57d78051b3e48",
+    "raw_metadata": {
+      "event_name": "ACM/IEEE IPSN 2027 (International Conference on Information Processing in Sensor Networks)",
+      "organizer": "ACM / IEEE Computer Society (CPS-IoT Week 2027)",
+      "event_type": "academic_conference",
+      "description": "Premier annual forum on sensor networks, networked embedded systems, IoT analytics, hardware platforms, and cyber-physical sensing.",
+      "topics": [
+        "Sensor/IoT Networks",
+        "Embedded Systems",
+        "Cyber-Physical Systems",
+        "Intelligent IoT",
+        "Low-Power ML"
+      ],
+      "start_date": "2027-05-10",
+      "end_date": "2027-05-13",
+      "location": "Milan, Italy",
+      "format": "hybrid",
+      "country": "Italy",
+      "region": "Europe",
+      "official_website": "https://ipsn.acm.org/2027/",
+      "registration_url": "https://ipsn.acm.org/2027/registration.html",
+      "registration_fee": "\u20ac350 (Student CPS-IoT Week Pass) / \u20ac800 (Regular)",
+      "fee_status": "paid",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": true,
+      "has_early_bird": true,
+      "discounts_subsidies": [
+        {
+          "discount_type": "travel_grant",
+          "name": "NSF & IEEE Student Travel Grant",
+          "amount_or_rate": "Full conference registration waiver + up to $1,200 travel reimbursement",
+          "eligibility": "Full-time graduate students attending CPS-IoT Week.",
+          "deadline": "2027-03-15"
+        },
+        {
+          "discount_type": "student_rate",
+          "name": "CPS-IoT Week Multi-Conference Student Pass",
+          "amount_or_rate": "\u20ac350 (covers IPSN, ICCPS, and all co-located workshops)",
+          "eligibility": "Enrolled university students with verifiable academic email."
+        }
+      ],
+      "cfp_deadline": "2026-10-25",
+      "important_dates": {
+        "cfp_deadline": "2026-10-25",
+        "notification": "2027-01-20",
+        "early_bird_deadline": "2027-03-31"
+      },
+      "target_audience": [
+        "Sensor Network Researchers",
+        "Cyber-Physical Systems Specialists",
+        "Doctoral Students"
+      ],
+      "source": "Curated Official Conference Registry",
+      "source_url": "https://ipsn.acm.org"
+    }
+  },
+  {
+    "event_name": "IEEE RTSS 2026 (IEEE Real-Time Systems Symposium)",
+    "organizer": "IEEE Computer Society",
+    "event_type": "symposium",
+    "description": "The premier international venue for real-time systems, embedded AI timing guarantees, cyber-physical safety, and time-critical hardware architectures.",
+    "topics": [
+      "Embedded Systems",
+      "Real-Time Systems",
+      "Cyber-Physical Systems",
+      "Embedded AI",
+      "Hardware Acceleration"
+    ],
+    "start_date": "2026-12-01",
+    "end_date": "2026-12-04",
+    "location": "Montreal, Canada",
+    "format": "hybrid",
+    "official_website": "https://rtss.org/2026/",
+    "registration_url": "https://rtss.org/2026/registration",
+    "registration_fee": "$380 (Student) / $790 (Regular)",
+    "fee_status": "paid",
+    "discounts_subsidies": [
+      {
+        "discount_type": "student_rate",
+        "name": "IEEE Student Member Registration",
+        "amount_or_rate": "$380 (over 50% discount vs regular $790)",
+        "eligibility": "Active IEEE student members.",
+        "deadline": "2026-11-01",
+        "application_url": null
+      },
+      {
+        "discount_type": "travel_grant",
+        "name": "IEEE TCRTS Student Travel Grant",
+        "amount_or_rate": "Up to $1,000 travel assistance",
+        "eligibility": "Graduate students presenting papers or participating in doctoral session.",
+        "deadline": "2026-10-15",
+        "application_url": null
+      }
+    ],
+    "discount_eligibility": "Active IEEE student members. Graduate students presenting papers or participating in doctoral session.",
+    "has_student_discount": true,
+    "has_travel_grant": true,
+    "has_scholarship": false,
+    "has_early_bird": false,
+    "has_fee_waiver": false,
+    "cfp_deadline": "2026-05-30",
+    "important_dates": {
+      "cfp_deadline": "2026-05-30",
+      "notification": "2026-08-15",
+      "early_bird_deadline": "2026-10-25"
+    },
+    "target_audience": [
+      "Embedded Systems Researchers",
+      "Real-Time Systems Engineers",
+      "PhD Researchers"
+    ],
+    "country": "Canada",
+    "region": "North America",
+    "source_url": "https://rtss.org",
+    "source": "Curated Official Conference Registry",
+    "discovery_date": "2026-10-02",
+    "last_verified_date": "2026-10-02",
+    "status": "registration_open",
+    "domain": "ml_embedded_iot",
+    "relevance_score": 8.4,
+    "score": {
+      "topic_score": 3.8,
+      "credibility_score": 2.5,
+      "affordability_boost": 1.3,
+      "actionability_boost": 0.3,
+      "phd_value_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 8.4,
+      "matched_topics": [
+        "Embedded Systems",
+        "Embedded AI",
+        "Cyber-Physical Systems",
+        "Real-Time Systems",
+        "Hardware Acceleration"
+      ],
+      "reasons": [
+        "Primary Edge topic match in description: Embedded Systems, Embedded AI, Cyber-Physical Systems (+1.8)",
+        "Multi-topic Edge synergy across tracks (+1.2)",
+        "Adjacency systems topics matched: Real-Time Systems, Hardware Acceleration (+0.8)",
+        "Tier 1 professional organization (IEEE Computer Society) (+2.5)",
+        "Student travel grant / STG available (+0.8)",
+        "Subsidized student rate available (+0.5)",
+        "Event upcoming in 60 days (+0.3)",
+        "Peer-reviewed academic research conference/symposium (+0.5)"
+      ]
+    },
+    "id": "evt_3599961c82cc73e9",
+    "raw_metadata": {
+      "event_name": "IEEE RTSS 2026 (IEEE Real-Time Systems Symposium)",
+      "organizer": "IEEE Computer Society",
+      "event_type": "academic_conference",
+      "description": "The premier international venue for real-time systems, embedded AI timing guarantees, cyber-physical safety, and time-critical hardware architectures.",
+      "topics": [
+        "Embedded Systems",
+        "Real-Time Systems",
+        "Cyber-Physical Systems",
+        "Embedded AI",
+        "Hardware Acceleration"
+      ],
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-04",
+      "location": "Montreal, Canada",
+      "format": "hybrid",
+      "country": "Canada",
+      "region": "North America",
+      "official_website": "https://rtss.org/2026/",
+      "registration_url": "https://rtss.org/2026/registration",
+      "registration_fee": "$380 (Student) / $790 (Regular)",
+      "fee_status": "paid",
+      "has_student_discount": true,
+      "has_travel_grant": true,
+      "has_scholarship": false,
+      "has_early_bird": true,
+      "discounts_subsidies": [
+        {
+          "discount_type": "student_rate",
+          "name": "IEEE Student Member Registration",
+          "amount_or_rate": "$380 (over 50% discount vs regular $790)",
+          "eligibility": "Active IEEE student members.",
+          "deadline": "2026-11-01"
+        },
+        {
+          "discount_type": "travel_grant",
+          "name": "IEEE TCRTS Student Travel Grant",
+          "amount_or_rate": "Up to $1,000 travel assistance",
+          "eligibility": "Graduate students presenting papers or participating in doctoral session.",
+          "deadline": "2026-10-15"
+        }
+      ],
+      "cfp_deadline": "2026-05-30",
+      "important_dates": {
+        "cfp_deadline": "2026-05-30",
+        "notification": "2026-08-15",
+        "early_bird_deadline": "2026-10-25"
+      },
+      "target_audience": [
+        "Embedded Systems Researchers",
+        "Real-Time Systems Engineers",
+        "PhD Researchers"
+      ],
+      "source": "Curated Official Conference Registry",
+      "source_url": "https://rtss.org"
+    }
+  }
+]

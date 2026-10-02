@@ -1,23 +1,55 @@
-# Edge Computing Events Module
+# Events Intelligence Modules: Edge Computing & ML/Embedded/IoT
 
-The **Edge Computing Events Module** is an automated discovery, tracking, and evaluation system for academic conferences, industrial summits, workshops, symposia, webinars, and doctoral training programs/bootcamps related to **Edge Computing, Edge AI, Distributed Systems, Fog Computing, Cloud-Edge Continuum, and MEC**.
+The **Events Intelligence System** provides automated discovery, tracking, verification, and evaluation for academic conferences, industrial summits, workshops, symposia, webinars, and doctoral training programs/bootcamps across two specialized research domains:
+
+1. **Edge Computing**: Edge AI, Distributed Systems, Fog Computing, Cloud-Edge Continuum, MEC, and Mobile Systems.
+2. **Machine Learning / Embedded Systems / IoT**: Machine Learning, Deep Learning, Embedded Systems, TinyML, Intelligent IoT, Cyber-Physical Systems (CPS), Computer Vision, and Sensor Networks.
 
 ---
 
 ## 1. Architectural Pipeline Lifecycle
 
-The module strictly adheres to AlertMe's core design pattern:
+Both modules strictly adhere to AlertMe's core pipeline design:
 
 ```text
-Collect ──► Normalize ──► Deduplicate ──► Verify ──► Score ──► State & Notify
+Collect ──► Normalize ──► Deduplicate ──► Verify & Filter ──► Score ──► State & Notify
 ```
 
-1. **Collect (`src/events/collector.py`)**: Fetches events from curated registries (`config/events.yaml`) and active RSS/Atom event feeds (e.g. WikiCFP, IEEE, ACM, Linux Foundation).
-2. **Normalize (`src/events/normalizer.py`)**: Standardizes dates to ISO 8601, classifies event types and delivery formats (in-person, online, hybrid), parses registration fees, extracts discount/subsidy opportunities, and captures CFP deadlines.
-3. **Deduplicate (`src/events/deduplicator.py`)**: Eliminates redundant event listings using canonical URL matching, acronym resolution (e.g., matching "SEC 2026" with "ACM/IEEE Symposium on Edge Computing 2026"), and sequence matching with year sensitivity. Merges richer subsidy and registration details into the canonical record.
-4. **Verify (`src/events/verifier.py`)**: Checks event dates and CFP deadlines against current time, marking passed events as `CONCLUDED`, active submission windows as `CFP_OPEN`, and upcoming registration as `REGISTRATION_OPEN`.
-5. **Score (`src/events/scorer.py`)**: Calculates a transparent 0–10 multi-factor relevance score prioritizing PhD-relevant research, IEEE/ACM/USENIX credibility, student subsidies, and active submission timelines.
-6. **State & Alert (`src/events/state_manager.py` & `src/events/pipeline.py`)**: Persists active items atomically in `data/events.json`, tracks seen event IDs in `data/seen_events.json`, records history in `data/events_history.json`, and generates Markdown/email briefings.
+1. **Collect (`src/events/collector.py`)**:
+   - `EdgeEventCollector`: Gathers events from `config/events.yaml` (curated items and RSS feeds like WikiCFP Edge, IEEE, ACM).
+   - `MLEmbeddedIoTEventCollector`: Gathers events from `config/ml_iot_events.yaml` (curated items and RSS feeds for ML, Embedded Systems, and IoT).
+   - Generic `ConfigurableEventCollector`: Base collector adaptable to any domain configuration.
+
+2. **Normalize (`src/events/normalizer.py`)**:
+   - Standardizes dates to ISO 8601 (`YYYY-MM-DD`).
+   - Classifies event types and delivery formats (`in_person`, `online`, `hybrid`).
+   - Parses registration fees and detects free vs. hybrid-free events.
+   - Extracts discount/subsidy opportunities (student rates, travel grants, scholarships, fee waivers).
+   - Captures CFP submission deadlines.
+
+3. **Deduplicate (`src/events/deduplicator.py`)**:
+   - Eliminates redundant event listings using canonical URL matching.
+   - Acronym resolution across Edge, ML, Embedded, and IoT venues (e.g., `SEC`, `NeurIPS`, `ICLR`, `SenSys`, `IPSN`, `RTSS`, `EMSOFT`, `TinyML`, `MobiSys`, `IoTDI`, `IOTSWC`).
+   - Sequence matching with year sensitivity.
+   - Merges richer subsidy and registration details into the canonical record.
+
+4. **Verify & Filter (`src/events/verifier.py`)**:
+   - Predatory conference and deceptive listing filter (`is_predatory_or_suspicious`): Detects known predatory organizers (WASET, OMICS, etc.) and spam indicators ("guaranteed acceptance", "review in 24 hours"), marking them as `CANCELLED` and inactive.
+   - Deadline and status verification: Marks concluded events as `CONCLUDED`, active submission windows as `CFP_OPEN`, and upcoming registration as `REGISTRATION_OPEN`.
+
+5. **Score (`src/events/scorer.py`)**:
+   - Transparent 0–10 multi-factor relevance scoring.
+   - Domain-specific search specifications and keyword weighting.
+   - Source credibility tiers (IEEE, ACM, USENIX, NeurIPS Foundation, ICLR, TinyML Foundation, Oxford, Arm, etc.).
+   - Student subsidies and financial accessibility bonuses.
+   - Severe negative penalties (-5.0) for cancelled/predatory events.
+
+6. **State & Alert (`src/events/state_manager.py` & `src/events/pipeline.py`)**:
+   - Domain-isolated state persistence:
+     - Edge: `data/events.json`, `data/seen_events.json`, `data/events_history.json`
+     - ML/IoT: `data/ml_iot_events.json`, `data/seen_ml_iot_events.json`, `data/ml_iot_events_history.json`
+   - Atomically written JSON stores.
+   - Interleaved daily/weekly email notifications with visual domain badges (`⚡ Edge Systems` vs `🤖 ML / Embedded / IoT`).
 
 ---
 
@@ -25,28 +57,29 @@ Collect ──► Normalize ──► Deduplicate ──► Verify ──► Sco
 
 | Event Type | Identifier | Examples |
 | :--- | :--- | :--- |
-| **Academic Conference** | `academic_conference` | ACM SEC, IEEE INFOCOM, ACM MobiCom, USENIX ATC, IEEE ICDCS |
-| **Industrial Conference** | `industry_conference` | KubeCon + CloudNativeCon, Edge Computing World, OpenInfra Summit |
-| **Workshop & Symposium** | `workshop`, `symposium` | ACM EdgeSys, USENIX HotEdge, IEEE EdgeSP |
-| **Webinar** | `webinar` | LF Edge Technical Webinar Series, IEEE ComSoc 6G Edge Series |
-| **Training & Bootcamp** | `summer_school`, `training_program`, `bootcamp` | TinyML Summer School, IEEE ComSoc School, LF Edge Bootcamp |
+| **Academic Conference** | `academic_conference` | ACM SEC, NeurIPS, ICLR, ACM SenSys, ACM/IEEE IPSN, IEEE RTSS, EMSOFT |
+| **Industrial Conference** | `industry_conference` | Embedded World, tinyML Summit, IOTSWC, KubeCon, Edge Computing World |
+| **Workshop & Symposium** | `workshop`, `symposium` | ACM EdgeSys, HotMobile, ICCPS, USENIX HotEdge, IEEE EdgeSP |
+| **Webinar** | `webinar` | tinyML Talks, IEEE IoT Webinar Series, LF Edge Technical Series |
+| **Training & Bootcamp** | `summer_school`, `training_program`, `bootcamp` | OxML Summer School, CPS-IoT Week Summer School, Arm & Edge Impulse Bootcamp |
 
-Delivery Formats supported:
+Delivery formats supported:
 - `in_person`: Physical on-site attendance
 - `online`: 100% Virtual / live stream / on-demand
 - `hybrid`: Dual in-person with remote track
 
 ---
 
-## 3. Data Model Schema (`EdgeEvent`)
+## 3. Data Model Schema (`EdgeEvent` / `MLEmbeddedIoTEvent`)
 
-Each event is modeled as an `EdgeEvent` dataclass ([`src/events/models.py`](models.py)) with the following core attributes:
+Both domains use the unified `EdgeEvent` dataclass ([`src/events/models.py`](models.py)), also aliased as `MLEmbeddedIoTEvent` and `EventItem`:
 
 - `event_name` (`str`): Full event name.
 - `organizer` (`str`): Professional body, university lab, or industry association.
-- `event_type` (`str`): One of the event types above.
+- `domain` (`str`): `edge_computing` or `ml_embedded_iot`.
+- `event_type` (`str`): Event category (`academic_conference`, `workshop`, `webinar`, etc.).
 - `description` (`str`): Cleaned description of tracks, scope, and technical themes.
-- `topics` (`List[str]`): List of matched edge computing keywords and tracks.
+- `topics` (`List[str]`): List of matched keywords and tracks.
 - `start_date` / `end_date` (`str`, ISO YYYY-MM-DD): Event execution dates.
 - `location` (`str`): City, State, Country or "Online".
 - `format` (`str`): `in_person`, `online`, or `hybrid`.
@@ -54,17 +87,17 @@ Each event is modeled as an `EdgeEvent` dataclass ([`src/events/models.py`](mode
 - `registration_url` (`str`): Direct attendee registration URL.
 - `registration_fee` (`str`): Fee string (e.g., "$350 (Student) / $750 (Regular)").
 - `fee_status` (`str`): `free`, `paid`, `hybrid_free`, or `unknown`.
-- `discounts_subsidies` (`List[DiscountOpportunity]`): Structured list of student rates, travel grants, scholarships, early bird discounts, and fee waivers.
+- `discounts_subsidies` (`List[DiscountOpportunity]`): Structured list of student rates, travel grants, scholarships, early-bird rates, and fee waivers.
 - `discount_eligibility` (`str`): Summarized student eligibility requirements.
 - `has_student_discount` (`bool`): True if subsidized student ticket is offered.
-- `has_travel_grant` (`bool`): True if travel stipend (e.g. STG) is available.
+- `has_travel_grant` (`bool`): True if travel stipend (STG) is available.
 - `has_scholarship` (`bool`): True if attendance fellowship/scholarship exists.
 - `has_early_bird` (`bool`): True if early registration window is active.
 - `has_fee_waiver` (`bool`): True if 100% free virtual or hardship waiver exists.
 - `cfp_deadline` (`Optional[str]`): Paper or poster submission cutoff date.
 - `important_dates` (`Dict[str, str]`): Key dates (notification, camera-ready, early bird).
 - `target_audience` (`List[str]`): Targeted roles (PhD researchers, engineers, faculty).
-- `status` (`str`): `upcoming`, `cfp_open`, `registration_open`, `ongoing`, `concluded`.
+- `status` (`str`): `upcoming`, `cfp_open`, `registration_open`, `ongoing`, `concluded`, `cancelled`.
 - `relevance_score` (`float`): 0–10 score with `EventScoreBreakdown`.
 
 ---
@@ -76,14 +109,14 @@ Events are scored objectively out of 10.0 using six dimensions:
 $$\text{Final Score} = \min(10.0, \text{Topic} + \text{Credibility} + \text{Affordability} + \text{Actionability} + \text{PhD Boost} + \text{Penalty})$$
 
 1. **Topic Relevance (0 to 4.0 points)**:
-   - Primary focus in event title: **+2.5** (e.g. *Edge Computing*, *Edge AI*, *MEC*, *Fog Computing*).
+   - Primary domain keyword in title: **+2.5** (e.g., *Machine Learning*, *Embedded Systems*, *IoT*, *TinyML*, *Edge AI*).
    - Match in description: **+1.8**.
-   - Multi-topic edge synergy across tracks: **+0.7 to +1.2**.
-   - Secondary systems keywords (Distributed Systems, IoT, TinyML, Serverless): **+0.4 to +0.8**.
+   - Multi-topic synergy across tracks: **+0.7 to +1.2**.
+   - Secondary systems keywords: **+0.4 to +0.8**.
 2. **Source Credibility (0 to 2.5 points)**:
-   - Tier 1 Professional Bodies (IEEE, ACM, USENIX): **+2.5**.
-   - Tier 2 Open Source Foundations & Universities (Linux Foundation, CNCF, Harvard, Cambridge): **+2.0**.
-   - Tier 3 Industry Consortia (Topio, TinyML Foundation, Eclipse): **+1.5**.
+   - Tier 1: IEEE, ACM, USENIX, NeurIPS, ICLR, AAAI, ICML, CVPR: **+2.5**.
+   - Tier 2: TinyML Foundation, Oxford, Cambridge, MIT, Stanford, Arm, Edge Impulse: **+2.0**.
+   - Tier 3: Reputable industrial consortia and associations: **+1.5**.
 3. **Affordability & Student Subsidies (0 to 1.5 points)**:
    - 100% Free event: **+1.0** (Free virtual track: **+0.8**).
    - Student Travel Grant (STG) / Travel stipend: **+0.8**.
@@ -98,8 +131,9 @@ $$\text{Final Score} = \min(10.0, \text{Topic} + \text{Credibility} + \text{Affo
    - Doctoral summer school / technical training program: **+0.7**.
    - Peer-reviewed research conference or workshop: **+0.5**.
 6. **Negative Penalties (0 to -5.0 points)**:
+   - Predatory / suspicious / fake conference claims: **-5.0**.
    - Concluded / expired event: **-4.0**.
-   - Non-technical spam, crypto, generic web dev bootcamps: **-3.0**.
+   - Non-technical spam, generic commercial bootcamps: **-3.0**.
 
 ---
 
@@ -108,8 +142,14 @@ $$\text{Final Score} = \min(10.0, \text{Topic} + \text{Credibility} + \text{Affo
 The module integrates directly into AlertMe's root CLI:
 
 ```bash
-# Discover active events meeting default threshold (6.5)
-python cli.py events
+# Discover active events across all domains (Edge + ML/Embedded/IoT)
+python cli.py events --domain all
+
+# Filter specifically for Edge Computing events
+python cli.py events --domain edge
+
+# Filter specifically for ML / Embedded / IoT events
+python cli.py events --domain ml_iot
 
 # Filter by event type
 python cli.py events --type academic_conference
@@ -129,80 +169,71 @@ python cli.py events --format online
 python cli.py events --format in_person
 
 # Export Markdown summary digest
-python cli.py events --export-markdown reports/upcoming_edge_events.md
+python cli.py events --domain all --export-markdown reports/upcoming_events.md
 
 # Test connectivity and metrics of all configured event feeds
 python cli.py test-event-sources
-
-# Debug transparent 0-10 score for any candidate event
-python cli.py debug-event-score \
-  --name "ACM/IEEE Symposium on Edge Computing (SEC 2026)" \
-  --organizer "ACM / IEEE" \
-  --description "Doctoral symposium and student travel grants available." \
-  --fee "$350 Student" \
-  --cfp "2026-11-15" \
-  --date "2026-11-10"
 ```
 
 ---
 
 ## 6. How to Add New Event Sources
 
-### Option A: Add a Curated Event (No Code Required)
+### Option A: Add a Curated ML / Embedded / IoT Event (No Code Required)
 
-Open `config/events.yaml` and append a new entry under `curated_events`:
+Open `config/ml_iot_events.yaml` and append a new entry under `curated_events`:
 
 ```yaml
 curated_events:
-  - event_name: "IEEE SECON 2027"
-    organizer: "IEEE Communications Society"
+  - event_name: "ACM SenSys 2027"
+    organizer: "ACM SIGMOBILE"
     event_type: "academic_conference"
-    description: "International Conference on Sensing, Communication, and Networking with edge sensing and TinyML tracks."
+    description: "Conference on Embedded Networked Sensor Systems, low-power ML, and intelligent IoT."
     topics:
-      - "Edge Computing"
+      - "Embedded Systems"
       - "IoT"
       - "TinyML"
-    start_date: "2027-06-20"
-    end_date: "2027-06-23"
-    location: "Rome, Italy"
+      - "Sensor Networks"
+    start_date: "2027-11-10"
+    end_date: "2027-11-13"
+    location: "Delft, Netherlands"
     format: "in_person"
-    official_website: "https://secon2027.ieee-secon.org/"
-    registration_fee: "€380 (Student) / €750 (Regular)"
+    official_website: "https://sensys.acm.org/2027/"
+    registration_fee: "$400 (Student) / $850 (Regular)"
     fee_status: "paid"
     has_student_discount: true
     has_travel_grant: true
     discounts_subsidies:
-      - discount_type: "student_rate"
-        name: "IEEE Student Member Rate"
-        amount_or_rate: "€380"
-        eligibility: "Enrolled students with valid IEEE ID."
       - discount_type: "travel_grant"
-        name: "IEEE ComSoc Travel Grant"
-        amount_or_rate: "Up to €1,000"
-        eligibility: "Student authors presenting papers."
-    cfp_deadline: "2027-01-15"
+        name: "ACM SIGMOBILE Student Travel Grant"
+        amount_or_rate: "Up to $1,200"
+        eligibility: "Student authors presenting research."
+    cfp_deadline: "2027-05-15"
 ```
 
 ### Option B: Add an RSS/Atom Event Feed
 
-In `config/events.yaml`, append under `event_feeds`:
+In `config/ml_iot_events.yaml` (or `config/events.yaml` for Edge), append under `event_feeds`:
 
 ```yaml
 event_feeds:
-  - name: "USENIX Upcoming Conferences Feed"
-    url: "https://www.usenix.org/conferences/upcoming.xml"
+  - name: "WikiCFP Embedded Systems Feed"
+    url: "http://www.wikicfp.com/cfp/rss?cat=embedded%20system"
     type: "rss"
     default_event_type: "academic_conference"
     tier: "tier1_academic_standards"
     enabled: true
 ```
 
-The `EdgeEventCollector` will automatically poll the feed, extract titles, parse dates, match keywords, and verify deadlines.
+The collector automatically polls the feed, extracts titles, parses dates, matches keywords, verifies deadlines, and filters out predatory sources.
 
-### Option C: Adding a Custom API or Scraper Collector
+---
 
-To add programmatic scrapers (e.g. for a custom university portal or GraphQL API):
-1. Subclass `BaseCollector` or extend `EdgeEventCollector` in `src/events/collector.py`.
-2. Yield raw event dictionaries.
-3. Pass them through `self.normalizer.normalize(raw_data)`.
-4. The pipeline handles deduplication, verification, scoring, and alerting automatically.
+## 7. Email Digest Integration
+
+The event discovery pipeline runs automatically as part of the daily PhD Alert pipeline.
+Both Edge Computing and ML/Embedded/IoT events are scored and balanced so that top-ranking opportunities from both domains are displayed in the daily alert email:
+
+- `⚡ Edge Systems` badge: Highlights edge architectures, MEC, and cloud-edge continuum events.
+- `🤖 ML / Embedded / IoT` badge: Highlights machine learning, TinyML, embedded systems, and intelligent IoT events.
+- Subsidies such as **Student Rates Available**, **Student Travel Grant**, **Early Bird**, and **100% Free** are prominently badged in the digest cards.

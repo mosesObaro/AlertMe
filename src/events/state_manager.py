@@ -34,12 +34,23 @@ def _atomic_write_json(filepath: Path, data: Any):
 class EventsStateManager:
     """Handles JSON persistence of active events, seen IDs, and alerting history."""
 
-    def __init__(self, data_dir: Optional[Path] = None):
+    def __init__(
+        self,
+        data_dir: Optional[Path] = None,
+        domain: str = "edge",
+        events_file: Optional[Path] = None,
+        seen_events_file: Optional[Path] = None,
+        history_file: Optional[Path] = None
+    ):
         self.data_dir = Path(data_dir) if data_dir else DATA_DIR
         self.data_dir.mkdir(parents=True, exist_ok=True)
-        self.events_file = self.data_dir / "events.json"
-        self.seen_events_file = self.data_dir / "seen_events.json"
-        self.history_file = self.data_dir / "events_history.json"
+        self.domain = domain
+
+        prefix = "ml_iot_" if any(d in domain.lower() for d in ["ml", "iot", "embedded"]) else ""
+
+        self.events_file = Path(events_file) if events_file else self.data_dir / f"{prefix}events.json"
+        self.seen_events_file = Path(seen_events_file) if seen_events_file else self.data_dir / f"seen_{prefix}events.json"
+        self.history_file = Path(history_file) if history_file else self.data_dir / f"{prefix}events_history.json"
 
     def load_events(self) -> List[EdgeEvent]:
         """Loads active events list from JSON."""
@@ -48,14 +59,14 @@ class EventsStateManager:
         try:
             with open(self.events_file, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                return [EdgeEvent.from_dict(item) for item in data] if isinstance(data, list) else []
+                return [EdgeEvent.from_dict(item) if isinstance(item, dict) else item for item in data] if isinstance(data, list) else []
         except Exception as e:
             logger.warning(f"Error loading {self.events_file}: {e}")
             return []
 
-    def save_events(self, events: List[EdgeEvent]):
+    def save_events(self, events: List[Any]):
         """Persists events list atomically."""
-        data = [e.to_dict() for e in events]
+        data = [e.to_dict() if hasattr(e, "to_dict") else e for e in events]
         _atomic_write_json(self.events_file, data)
 
     def load_seen_event_ids(self) -> Set[str]:
@@ -103,3 +114,10 @@ class EventsStateManager:
         if len(history) > 1000:
             history = history[-1000:]
         _atomic_write_json(self.history_file, history)
+
+
+class MLEventsStateManager(EventsStateManager):
+    """Convenience state manager specialized for ML, Embedded and IoT events."""
+
+    def __init__(self, data_dir: Optional[Path] = None):
+        super().__init__(data_dir=data_dir, domain="ml_iot")

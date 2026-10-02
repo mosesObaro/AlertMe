@@ -95,18 +95,22 @@ class EmailRenderer:
             if not event_list:
                 try:
                     from src.events.state_manager import EventsStateManager
-                    saved_events = EventsStateManager().load_events()
+                    saved_events = EventsStateManager(domain="edge").load_events()
                     if saved_events:
-                        event_list = [e.to_dict() for e in saved_events[:8]]
+                        event_list.extend([e.to_dict() for e in saved_events[:5]])
+                    ml_events = EventsStateManager(domain="ml_iot").load_events()
+                    if ml_events:
+                        event_list.extend([e.to_dict() for e in ml_events[:5]])
                 except Exception:
                     pass
 
             if not event_list:
                 try:
-                    from src.events.collector import EdgeEventCollector
-                    col = EdgeEventCollector()
-                    evts = col.fetch_events()
-                    event_list = [e.to_dict() for e in evts if e.relevance_score >= 6.5][:8]
+                    from src.events.collector import EdgeEventCollector, MLEmbeddedIoTEventCollector
+                    for col_cls in [EdgeEventCollector, MLEmbeddedIoTEventCollector]:
+                        col = col_cls()
+                        evts = col.fetch_events()
+                        event_list.extend([e.to_dict() for e in evts if e.relevance_score >= 6.5][:5])
                 except Exception:
                     pass
 

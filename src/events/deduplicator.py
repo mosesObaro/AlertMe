@@ -35,10 +35,16 @@ def extract_event_year(text: str) -> Optional[str]:
 
 
 def extract_acronym(text: str) -> Optional[str]:
-    """Extracts known conference acronyms (e.g., SEC, INFOCOM, MOBICOM, ATC, NSDI, ICDCS)."""
+    """Extracts known conference acronyms (e.g., SEC, INFOCOM, MOBICOM, NEURIPS, SENSYS, IPSN, RTSS, etc.)."""
     common_acronyms = [
+        # Edge & Systems
         "sec", "infocom", "mobicom", "atc", "nsdi", "icdcs", "sensys",
-        "secon", "edgesys", "hotedge", "kubecon", "openinfra"
+        "secon", "edgesys", "hotedge", "kubecon", "openinfra", "mobisys",
+        # Machine Learning / AI
+        "neurips", "iclr", "icml", "cvpr", "eccv", "iccv", "aaai", "ijcai", "tinyml",
+        # Embedded Systems & IoT
+        "emsoft", "ipsn", "rtss", "rtas", "iccps", "date", "dac", "cases", "codes",
+        "iotdi", "ewsn", "iotswc"
     ]
     words = re.findall(r'\b[a-zA-Z0-9\-]+\b', text.lower())
     for w in words:

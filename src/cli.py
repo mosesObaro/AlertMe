@@ -444,19 +444,42 @@ def run_supervisors_cli(args):
 
 
 def run_events_cli(args):
-    """Executes the Edge Computing Events pipeline and displays results."""
-    from src.events.pipeline import EdgeEventsPipeline
+    """Executes the Events pipeline (Edge Computing & ML/Embedded/IoT) and displays results."""
+    from src.events.pipeline import EdgeEventsPipeline, MLEmbeddedIoTEventsPipeline
     from src.events.verifier import EventVerifier
 
-    pipeline = EdgeEventsPipeline()
-    res = pipeline.run(
-        min_score=args.min_score,
-        include_concluded=args.include_concluded,
-        dry_run=args.dry_run,
-        send_email=args.send_email
-    )
+    domain_choice = getattr(args, "domain", "all")
+    all_events = []
+    total_col = 0
+    unique_cnt = 0
+    active_cnt = 0
 
-    events = res["events"]
+    pipelines = []
+    if domain_choice in ["all", "edge"]:
+        pipelines.append(EdgeEventsPipeline())
+    if domain_choice in ["all", "ml_iot", "ml"]:
+        pipelines.append(MLEmbeddedIoTEventsPipeline())
+
+    for pipe in pipelines:
+        res = pipe.run(
+            min_score=args.min_score,
+            include_concluded=args.include_concluded,
+            dry_run=args.dry_run,
+            send_email=False # We handle unified email below if requested
+        )
+        total_col += res.get("total_collected", 0)
+        unique_cnt += res.get("unique_events", 0)
+        active_cnt += res.get("active_events", 0)
+        all_events.extend(res.get("events", []))
+
+    # Deduplicate across pipelines by event name
+    seen_ids = set()
+    deduped = []
+    for ev in sorted(all_events, key=lambda x: x.relevance_score, reverse=True):
+        if ev.id not in seen_ids:
+            seen_ids.add(ev.id)
+            deduped.append(ev)
+    events = deduped
 
     # CLI-level filters
     if getattr(args, "type", None):
@@ -472,11 +495,12 @@ def run_events_cli(args):
         events = verifier.filter_open_cfps(events)
 
     print("\n" + "=" * 80)
-    print(" EDGE COMPUTING EVENTS & OPPORTUNITIES INTELLIGENCE")
+    print(" ACADEMIC & INDUSTRY EVENTS INTELLIGENCE (EDGE, ML, EMBEDDED & IOT)")
     print("=" * 80)
-    print(f"  Total Collected:   {res['total_collected']}")
-    print(f"  Unique Events:     {res['unique_events']}")
-    print(f"  Active/Upcoming:   {res['active_events']}")
+    print(f"  Domain Filter:     {domain_choice.upper()}")
+    print(f"  Total Collected:   {total_col}")
+    print(f"  Unique Events:     {len(deduped)}")
+    print(f"  Active/Upcoming:   {active_cnt}")
     print(f"  Filtered Matches:  {len(events)} (min score: {args.min_score})")
     print("=" * 80 + "\n")
 
@@ -497,8 +521,9 @@ def run_events_cli(args):
         if ev.has_fee_waiver:
             subsidies_str.append("Fee Waiver")
         subsidies_display = ", ".join(subsidies_str) if subsidies_str else "Standard Fee"
+        domain_tag = "🤖 ML/Embedded/IoT" if ev.domain == "ml_embedded_iot" else "⚡ Edge Systems"
 
-        print(f"[{idx}] {ev.event_name}")
+        print(f"[{idx}] {ev.event_name}  [{domain_tag}]")
         print(f"    Type:       {type_str} | Status: {ev.status.upper()} | Score: {ev.relevance_score:.1f}/10.0")
         print(f"    Organizer:  {ev.organizer}")
         print(f"    Dates:      {dates_str} | Location: {ev.location} ({ev.format.upper()})")
@@ -513,8 +538,8 @@ def run_events_cli(args):
                 print(f"      * {d.name} ({d.discount_type}): {d.amount_or_rate}")
         print("-" * 80)
 
-    if getattr(args, "export_markdown", None):
-        md_text = pipeline.render_markdown_summary(events)
+    if getattr(args, "export_markdown", None) and pipelines:
+        md_text = pipelines[0].render_markdown_summary(events)
         out_path = Path(args.export_markdown)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(md_text, encoding="utf-8")
@@ -523,10 +548,13 @@ def run_events_cli(args):
 
 def test_event_sources_cli(args):
     """Tests connectivity and event retrieval across all configured event sources."""
-    print("\nTesting Edge Computing Event discovery sources...\n")
-    from src.events.collector import EdgeEventCollector
-    collector = EdgeEventCollector()
-    events = collector.fetch_events()
+    print("\nTesting Academic & Industry Event discovery sources (Edge & ML/IoT)...\n")
+    from src.events.collector import EdgeEventCollector, MLEmbeddedIoTEventCollector
+
+    events = []
+    for col_cls in [EdgeEventCollector, MLEmbeddedIoTEventCollector]:
+        col = col_cls()
+        events.extend(col.fetch_events())
 
     print(f"{'Event Source / Feed':<45} | {'Type':<22} | {'Events Found'}")
     print("-" * 80)
@@ -660,7 +688,8 @@ def main():
     sup_parser.add_argument("--skip-excel", dest="update_excel", action="store_false", help="Skip updating Excel workbook")
 
     # Command: events
-    evt_parser = subparsers.add_parser("events", help="Discover and track academic and industrial Edge Computing events")
+    evt_parser = subparsers.add_parser("events", help="Discover and track academic and industrial events (Edge, ML, Embedded, IoT)")
+    evt_parser.add_argument("--domain", choices=["all", "edge", "ml_iot"], default="all", help="Event domain filter: all, edge, or ml_iot (default: all)")
     evt_parser.add_argument("--type", choices=["academic_conference", "industry_conference", "workshop", "symposium", "webinar", "training_program", "summer_school", "bootcamp"], default=None, help="Filter by event type")
     evt_parser.add_argument("--format", choices=["in_person", "online", "hybrid"], default=None, help="Filter by delivery format")
     evt_parser.add_argument("--student-rates", action="store_true", help="Filter for events offering student discount rates")

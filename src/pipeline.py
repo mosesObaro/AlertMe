@@ -19,7 +19,7 @@ from src.collectors.opportunities import OpportunityCollector
 from src.collectors.lab_recruitment import LabRecruitmentCollector
 from src.collectors.scholarships import ScholarshipCollector
 from src.collectors.github_repos import GitHubRepoCollector
-from src.events.collector import EdgeEventCollector
+from src.events.collector import EdgeEventCollector, MLEmbeddedIoTEventCollector
 from src.deduplication.deduplicator import Deduplicator
 from src.ranking.scorer import RelevanceScorer
 from src.summarization.intelligence import IntelligenceEngine
@@ -122,6 +122,9 @@ class ResearchPipeline:
         # Edge Computing Events & Academic/Industrial Opportunities
         self.collectors.append(EdgeEventCollector(name="Edge Computing Events", config_manager=self.config))
 
+        # ML, Embedded Systems & IoT Events
+        self.collectors.append(MLEmbeddedIoTEventCollector(name="ML, Embedded & IoT Events", config_manager=self.config))
+
     def run(self, mode: str = "daily", dry_run: bool = False) -> Dict[str, Any]:
         """Executes full discovery, analysis, persistence, and dispatch pipeline."""
         logger.info(f"=== Starting Research Pipeline (Mode: {mode.upper()}, Dry-Run: {dry_run}) ===")
@@ -198,20 +201,35 @@ class ResearchPipeline:
         if not events_list:
             try:
                 from src.events.state_manager import EventsStateManager
-                saved_events = EventsStateManager().load_events()
+                saved_events = EventsStateManager(domain="edge").load_events()
                 if saved_events:
-                    events_list = [e.to_dict() for e in saved_events]
+                    events_list.extend([e.to_dict() for e in saved_events])
+                ml_saved = EventsStateManager(domain="ml_iot").load_events()
+                if ml_saved:
+                    events_list.extend([e.to_dict() for e in ml_saved])
             except Exception:
                 pass
 
         if not events_list:
             try:
-                from src.events.collector import EdgeEventCollector
-                col = EdgeEventCollector(config_manager=self.config)
-                evts = col.fetch_events()
-                events_list = [e.to_dict() for e in evts if e.relevance_score >= min_score]
+                from src.events.collector import EdgeEventCollector, MLEmbeddedIoTEventCollector
+                for col_cls in [EdgeEventCollector, MLEmbeddedIoTEventCollector]:
+                    col = col_cls(config_manager=self.config)
+                    evts = col.fetch_events()
+                    events_list.extend([e.to_dict() for e in evts if e.relevance_score >= min_score])
             except Exception:
                 pass
+
+        # Deduplicate and sort events by relevance score descending
+        if events_list:
+            seen_names = set()
+            deduped_events = []
+            for ev in sorted(events_list, key=lambda x: x.get("relevance_score", 0), reverse=True):
+                norm_name = re.sub(r'[^a-zA-Z0-9]', '', (ev.get("event_name") or ev.get("title") or "").lower())
+                if norm_name and norm_name not in seen_names:
+                    seen_names.add(norm_name)
+                    deduped_events.append(ev)
+            events_list = deduped_events
 
         # Persist opportunities, scholarships, and events
         if phd_opportunities:
@@ -229,6 +247,12 @@ class ResearchPipeline:
         if events_list:
             try:
                 from src.events.state_manager import EventsStateManager
+                edge_evts = [e for e in events_list if e.get("domain") != "ml_embedded_iot"]
+                ml_evts = [e for e in events_list if e.get("domain") == "ml_embedded_iot"]
+                if edge_evts:
+                    EventsStateManager(domain="edge").save_events(edge_evts)
+                if ml_evts:
+                    EventsStateManager(domain="ml_iot").save_events(ml_evts)
                 EventsStateManager().save_events(events_list)
             except Exception as e:
                 logger.warning(f"Failed to persist events state: {e}")
@@ -295,11 +319,29 @@ class ResearchPipeline:
             daily_items = [i for i in ranked_items if i.score and i.score.final_score >= daily_min][:daily_limit]
             events_cfg = self.config.events if hasattr(self.config, "events") and isinstance(self.config.events, dict) else {}
             events_limit = events_cfg.get("events_settings", {}).get("daily_events_limit", 8)
+            ml_cfg = self.config.ml_iot_events if hasattr(self.config, "ml_iot_events") and isinstance(self.config.ml_iot_events, dict) else {}
+            ml_events_limit = ml_cfg.get("events_settings", {}).get("daily_events_limit", 8)
+            effective_daily_limit = max(events_limit, ml_events_limit, 8)
+
+            # Balanced selection so both Edge and ML/IoT domains are visible in daily digest
+            edge_events = [e for e in events_list if e.get("domain") != "ml_embedded_iot"]
+            ml_events = [e for e in events_list if e.get("domain") == "ml_embedded_iot"]
+            if edge_events and ml_events:
+                balanced_events = []
+                for i in range(max(len(edge_events), len(ml_events))):
+                    if i < len(edge_events) and len(balanced_events) < effective_daily_limit:
+                        balanced_events.append(edge_events[i])
+                    if i < len(ml_events) and len(balanced_events) < effective_daily_limit:
+                        balanced_events.append(ml_events[i])
+                events_for_daily = balanced_events
+            else:
+                events_for_daily = events_list[:effective_daily_limit]
+
             subject, html, text = self.email_renderer.render_daily_digest(
                 items=daily_items,
                 opportunities=phd_opportunities[:3],
                 scholarships=scholarships[:3],
-                events=events_list[:events_limit]
+                events=events_for_daily
             )
             email_sent = self.email_sender.send(subject, html, text)
             if not dry_run and daily_items:
@@ -315,6 +357,23 @@ class ResearchPipeline:
             study_guide = self.study_guide_gen.generate_focus_plan(top_papers, confs, opps)
             events_cfg = self.config.events if hasattr(self.config, "events") and isinstance(self.config.events, dict) else {}
             weekly_events_limit = events_cfg.get("events_settings", {}).get("weekly_events_limit", 10)
+            ml_cfg = self.config.ml_iot_events if hasattr(self.config, "ml_iot_events") and isinstance(self.config.ml_iot_events, dict) else {}
+            ml_weekly_limit = ml_cfg.get("events_settings", {}).get("weekly_events_limit", 10)
+            effective_weekly_limit = max(weekly_events_limit, ml_weekly_limit, 10)
+
+            edge_events = [e for e in events_list if e.get("domain") != "ml_embedded_iot"]
+            ml_events = [e for e in events_list if e.get("domain") == "ml_embedded_iot"]
+            if edge_events and ml_events:
+                balanced_weekly = []
+                for i in range(max(len(edge_events), len(ml_events))):
+                    if i < len(edge_events) and len(balanced_weekly) < effective_weekly_limit:
+                        balanced_weekly.append(edge_events[i])
+                    if i < len(ml_events) and len(balanced_weekly) < effective_weekly_limit:
+                        balanced_weekly.append(ml_events[i])
+                events_for_weekly = balanced_weekly
+            else:
+                events_for_weekly = events_list[:effective_weekly_limit]
+
             subject, html, text = self.email_renderer.render_weekly_digest(
                 items=weekly_items,
                 trends=trends,
@@ -322,7 +381,7 @@ class ResearchPipeline:
                 study_guide=study_guide,
                 opportunities=phd_opportunities[:5],
                 scholarships=scholarships[:5],
-                events=events_list[:weekly_events_limit]
+                events=events_for_weekly
             )
             email_sent = self.email_sender.send(subject, html, text)
             if not dry_run and weekly_items:

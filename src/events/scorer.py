@@ -9,30 +9,47 @@ from src.utils.logger import logger
 
 
 class EventScorer:
-    """Computes transparent, multi-factor relevance scores for academic and industrial Edge events."""
+    """Computes transparent, multi-factor relevance scores for academic and industrial events."""
 
-    def __init__(self, config_manager: Optional[ConfigManager] = None):
+    def __init__(
+        self,
+        config_manager: Optional[ConfigManager] = None,
+        search_specs: Optional[Dict[str, Any]] = None,
+        config_key: Optional[str] = None,
+        domain: Optional[str] = None
+    ):
         self.config = config_manager or ConfigManager()
-        events_cfg = self.config.events if hasattr(self.config, "events") else {}
-        search_specs = events_cfg.get("search_specifications", {}) if isinstance(events_cfg, dict) else {}
+        self.domain = domain or "edge_computing"
+
+        if search_specs:
+            specs = search_specs
+        elif config_key:
+            cfg = getattr(self.config, config_key, {})
+            specs = cfg.get("search_specifications", {}) if isinstance(cfg, dict) else {}
+        elif domain and any(d in domain.lower() for d in ["ml", "iot", "embedded"]):
+            cfg = getattr(self.config, "ml_iot_events", {})
+            specs = cfg.get("search_specifications", {}) if isinstance(cfg, dict) else {}
+        else:
+            events_cfg = self.config.events if hasattr(self.config, "events") else {}
+            specs = events_cfg.get("search_specifications", {}) if isinstance(events_cfg, dict) else {}
 
         # Load keywords from config with robust fallbacks
-        self.primary_keywords = search_specs.get("primary_keywords", [
+        self.primary_keywords = specs.get("primary_keywords", [
             "Edge Computing", "Edge AI", "Edge Intelligence", "Mobile Edge Computing",
             "Multi-access Edge Computing", "MEC", "Fog Computing", "Cloud-Edge Continuum",
             "Distributed Edge Systems", "Federated Learning at the Edge", "Device-Edge-Cloud",
             "Computation Offloading", "Cloudlets"
         ])
-        self.secondary_keywords = search_specs.get("secondary_keywords", [
+        self.secondary_keywords = specs.get("secondary_keywords", [
             "Distributed Systems", "Internet of Things", "IoT", "TinyML",
             "Serverless Computing", "Pervasive Computing", "5G/6G Networks",
             "Edge Security", "Edge Storage", "Edge Mesh", "Microservices at the Edge"
         ])
-        self.training_keywords = search_specs.get("training_keywords", [
+        self.training_keywords = specs.get("training_keywords", [
             "Bootcamp", "Summer School", "Winter School", "Training Program",
             "Hands-on Workshop", "Tutorial", "Doctoral Symposium"
         ])
-        self.negative_keywords = search_specs.get("negative_keywords", [
+        self.negative_keywords = specs.get("negative_keywords", [
             "crypto", "bitcoin", "nft", "web development bootcamp", "react js",
             "css tips", "affiliate marketing", "dropshipping"
         ])
@@ -145,21 +162,21 @@ class EventScorer:
         return min(4.0, score), matched
 
     def _compute_credibility_score(self, event: EdgeEvent, reasons: List[str]) -> float:
-        org_lower = f"{event.organizer} {event.source}".lower()
+        org_lower = f"{event.organizer} {event.source} {event.event_name}".lower()
         website_lower = (event.official_website or "").lower()
 
         # Tier 1 Professional Organizations
-        if any(org in org_lower or org in website_lower for org in ["ieee", "acm", "usenix"]):
+        if any(org in org_lower or org in website_lower for org in ["ieee", "acm", "usenix", "neurips", "iclr", "aaai", "ijcai"]):
             reasons.append(f"Tier 1 professional organization ({event.organizer}) (+2.5)")
             return 2.5
 
         # Tier 2 Open Source Foundations & Top Academic Labs
-        if any(org in org_lower for org in ["linux foundation", "cncf", "openinfra", "tinyml foundation", "harvard", "cambridge", "ictp", "university"]):
+        if any(org in org_lower for org in ["linux foundation", "cncf", "openinfra", "tinyml foundation", "harvard", "cambridge", "oxford", "ictp", "university", "arm", "mit", "stanford"]):
             reasons.append(f"Tier 2 established foundation/university ({event.organizer}) (+2.0)")
             return 2.0
 
         # Tier 3 Industry Associations
-        if any(org in org_lower for org in ["topio", "association", "consortium", "eclipse"]):
+        if any(org in org_lower for org in ["topio", "association", "consortium", "eclipse", "embedded world"]):
             reasons.append(f"Tier 3 industry consortium ({event.organizer}) (+1.5)")
             return 1.5
 
@@ -254,6 +271,17 @@ class EventScorer:
         if event.status == EventStatus.CONCLUDED.value:
             penalty -= 4.0
             reasons.append("Event is already concluded (-4.0)")
+
+        # Cancelled or flagged event
+        if event.status == EventStatus.CANCELLED.value:
+            penalty -= 5.0
+            reasons.append("Event is cancelled or flagged (-5.0)")
+
+        # Predatory conference detection
+        predatory_entities = ["waset", "omics", "bit congress", "bit group", "scholarena", "sciencedomain", "allied academies"]
+        if any(p in combined for p in predatory_entities):
+            penalty -= 5.0
+            reasons.append("Identified predatory conference entity (-5.0)")
 
         # Negative spam keywords
         for neg in self.negative_keywords:

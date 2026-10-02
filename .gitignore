@@ -24,3 +24,11 @@ Thumbs.db
 # Local Environment Overrides (Never commit secrets!)
 .env
 .env.local
+
+# Runtime Event State Files
+data/events.json
+data/events_history.json
+data/ml_iot_events.json
+data/ml_iot_events_history.json
+data/seen_events.json
+data/seen_ml_iot_events.json

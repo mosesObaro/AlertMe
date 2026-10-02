@@ -331,7 +331,7 @@
       {% endif %}
 
       {% if events %}
-      <div class="section-title">🎪 Edge Computing Events & Opportunities</div>
+      <div class="section-title">🎪 Edge Computing Events & Opportunities (Edge, ML & IoT)</div>
       {% for evt in events %}
       <div class="card card-event">
         <div class="card-header">
@@ -343,7 +343,7 @@
           {% endif %}
         </div>
         <div class="item-meta">
-          <strong>Organizer:</strong> {{ evt.organizer or 'Edge Computing Community' }}
+          <strong>Organizer:</strong> {{ evt.organizer or 'Research Community' }}
           {% if evt.start_date %}&bull; <strong>Dates:</strong> {{ evt.start_date }}{% if evt.end_date and evt.end_date != evt.start_date %} &ndash; {{ evt.end_date }}{% endif %}{% endif %}
           {% if evt.location %}&bull; <strong>Location:</strong> {{ evt.location }}{% endif %}
           {% if evt.cfp_deadline %}&bull; <strong>CFP Deadline:</strong> <span style="color: #dc2626; font-weight: 600;">{{ evt.cfp_deadline }}</span>{% endif %}
@@ -351,6 +351,11 @@
         <div style="margin-bottom: 8px;">
           <span class="badge-status badge-event-format">{{ (evt.format or 'Hybrid')|replace('_', ' ')|title }}</span>
           <span class="badge-status">{{ (evt.event_type or 'Conference')|replace('_', ' ')|title }}</span>
+          {% if evt.domain == 'ml_embedded_iot' or 'Machine Learning' in evt.topics or 'IoT' in evt.topics or 'Embedded' in evt.topics or 'TinyML' in evt.topics %}
+          <span class="badge-status" style="background: #eef2ff; color: #4338ca; border: 1px solid #c7d2fe;">🤖 ML / Embedded / IoT</span>
+          {% else %}
+          <span class="badge-status" style="background: #ecfeff; color: #0891b2; border: 1px solid #a5f3fc;">⚡ Edge Systems</span>
+          {% endif %}
           {% if evt.fee_status == 'free' %}
           <span class="badge-status badge-event-free">🟢 Free Registration</span>
           {% elif evt.registration_fee %}

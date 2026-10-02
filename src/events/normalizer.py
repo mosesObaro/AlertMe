@@ -119,8 +119,8 @@ class EventNormalizer:
         eligibility_notes: List[str] = []
 
         # Determine fee status
-        has_free_signal = any(w in combined for w in ["100% free", "free registration", "free admission", "free attendance", "no fee", "free to attend", "free virtual", "complimentary registration"])
-        has_paid_signal = bool(raw_fee) or any(sym in combined for sym in ["$", "€", "£", "¥", "usd", "eur", "gbp", "paid", "regular attendees", "in-person pass", "in-person ticket", "onsite fee"])
+        has_free_signal = "free" in raw_fee.lower() or any(w in combined for w in ["100% free", "free registration", "free admission", "free attendance", "no fee", "free to attend", "free virtual", "complimentary registration"])
+        has_paid_signal = (bool(raw_fee) and "free" not in raw_fee.lower()) or any(sym in combined for sym in ["$", "€", "£", "¥", "usd", "eur", "gbp", "paid", "regular attendees", "in-person pass", "in-person ticket", "onsite fee"])
 
         if has_free_signal and has_paid_signal:
             fee_status = FeeStatus.HYBRID_FREE.value

@@ -22,6 +22,13 @@ class EventVerifier:
         event.last_verified_date = today.isoformat()
         is_active = True
 
+        # Check for predatory or suspicious event listings
+        is_pred, pred_reason = self.is_predatory_or_suspicious(event)
+        if is_pred:
+            event.status = EventStatus.CANCELLED.value
+            logger.warning(f"Event '{event.event_name}' flagged as predatory/suspicious: {pred_reason}")
+            return event, False
+
         # Check end date / start date for event conclusion
         end_dt = self._parse_date_safe(event.end_date)
         start_dt = self._parse_date_safe(event.start_date)
@@ -46,6 +53,32 @@ class EventVerifier:
                 event.status = EventStatus.UPCOMING.value
 
         return event, is_active
+
+    @staticmethod
+    def is_predatory_or_suspicious(event: EdgeEvent) -> Tuple[bool, str]:
+        """Detects predatory, fake, or suspicious conferences."""
+        combined = f"{event.event_name} {event.organizer} {event.description} {event.official_website}".lower()
+        
+        # Known predatory organizer entities
+        predatory_entities = [
+            "waset", "world academy of science, engineering and technology",
+            "omics", "omics international", "bit congress", "bit group",
+            "scholarena", "sciencedomain", "allied academies", "conference series llc"
+        ]
+        for pred in predatory_entities:
+            if pred in combined:
+                return True, f"Identified known predatory entity: {pred}"
+
+        # Suspicious guarantees/red flags
+        red_flags = [
+            "guaranteed acceptance", "review in 24 hours", "review in 48 hours",
+            "pay to publish in 3 days", "no peer review required", "instant acceptance certificate"
+        ]
+        for flag in red_flags:
+            if flag in combined:
+                return True, f"Suspicious predatory claim: '{flag}'"
+
+        return False, ""
 
     def verify_all(self, events: List[EdgeEvent]) -> List[EdgeEvent]:
         """Verifies a list of events in place."""

@@ -93,7 +93,7 @@ Briefing for {{ date_str }} ({{ total_items }} Items)
 
 {% if events %}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-🎪 UPCOMING EDGE COMPUTING EVENTS & WORKSHOPS
+🎪 UPCOMING EDGE COMPUTING EVENTS & WORKSHOPS (EDGE, ML & IOT)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 {% for evt in events %}
 • {{ evt.event_name or evt.title }} ({{ (evt.event_type or 'Event')|replace('_', ' ')|title }} | {{ (evt.format or 'Hybrid')|upper }})

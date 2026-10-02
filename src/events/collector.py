@@ -1,4 +1,6 @@
-"""Event collector for Edge Computing academic and industrial events."""
+"""Event collectors for academic and industrial events.
+Includes generic ConfigurableEventCollector, EdgeEventCollector, and MLEmbeddedIoTEventCollector.
+"""
 
 import datetime
 from typing import List, Dict, Any, Optional
@@ -14,35 +16,55 @@ from src.utils.config_loader import ConfigManager
 from src.utils.logger import logger
 
 
-class EdgeEventCollector(BaseCollector):
+class ConfigurableEventCollector(BaseCollector):
     """
-    Collects academic conferences, industry summits, workshops, webinars, and training bootcamps.
-    Reads curated events from events.yaml and polls external feeds.
+    Generic, configuration-driven event collector.
+    Discovers academic conferences, industry summits, workshops, webinars, and training bootcamps.
+    Reads curated events from specified configuration and polls external feeds.
     """
 
     def __init__(
         self,
-        name: str = "Edge Computing Events",
+        name: str = "Academic & Industry Events",
         config_manager: Optional[ConfigManager] = None,
+        config_dict: Optional[Dict[str, Any]] = None,
+        domain: str = "general",
+        tier: str = CredibilityTier.TIER3_CONFERENCE.value,
         enabled: bool = True
     ):
-        super().__init__(name=name, tier=CredibilityTier.TIER3_CONFERENCE.value, enabled=enabled)
+        super().__init__(name=name, tier=tier, enabled=enabled)
         self.config = config_manager or ConfigManager()
+        self.domain = domain
+        self._explicit_config = config_dict
         self.normalizer = EventNormalizer()
         self.verifier = EventVerifier()
-        self.scorer = EventScorer(config_manager=self.config)
+        self.scorer = EventScorer(
+            config_manager=self.config,
+            domain=self.domain,
+            search_specs=self.events_config.get("search_specifications") if isinstance(self.events_config, dict) else None
+        )
         self.events_cache: List[EdgeEvent] = []
+
+    @property
+    def events_config(self) -> Dict[str, Any]:
+        """Resolves configuration dictionary for this collector."""
+        if self._explicit_config is not None:
+            return self._explicit_config
+        if hasattr(self.config, "get_events_config"):
+            return self.config.get_events_config(self.domain)
+        return self.config.events if hasattr(self.config, "events") else {}
 
     def fetch_events(self) -> List[EdgeEvent]:
         """Fetches and normalizes raw events from curated lists and active feeds."""
         events: List[EdgeEvent] = []
-        events_cfg = self.config.events if hasattr(self.config, "events") else {}
+        events_cfg = self.events_config
 
         # 1. Collect Curated Events
         curated_list = events_cfg.get("curated_events", []) if isinstance(events_cfg, dict) else []
         for raw in curated_list:
             try:
                 event = self.normalizer.normalize(raw)
+                event.domain = self.domain
                 events.append(event)
             except Exception as e:
                 logger.warning(f"Error normalizing curated event '{raw.get('event_name')}': {e}")
@@ -78,6 +100,7 @@ class EdgeEventCollector(BaseCollector):
                         "event_type": feed_info.get("default_event_type", "academic_conference")
                     }
                     event = self.normalizer.normalize(raw_item)
+                    event.domain = self.domain
                     events.append(event)
             except Exception as e:
                 logger.debug(f"Feed '{feed_name}' poll skipped or failed: {e}")
@@ -93,3 +116,47 @@ class EdgeEventCollector(BaseCollector):
         """Implements BaseCollector interface, bridging events to ResearchItem."""
         events = self.fetch_events()
         return [event.to_research_item() for event in events]
+
+
+class EdgeEventCollector(ConfigurableEventCollector):
+    """
+    Collects academic conferences, industry summits, workshops, webinars, and training bootcamps
+    for the Edge Computing research domain.
+    """
+
+    def __init__(
+        self,
+        name: str = "Edge Computing Events",
+        config_manager: Optional[ConfigManager] = None,
+        enabled: bool = True
+    ):
+        cfg_mgr = config_manager or ConfigManager()
+        super().__init__(
+            name=name,
+            config_manager=cfg_mgr,
+            domain="edge_computing",
+            config_dict=getattr(cfg_mgr, "events", {}),
+            enabled=enabled
+        )
+
+
+class MLEmbeddedIoTEventCollector(ConfigurableEventCollector):
+    """
+    Collects academic conferences, industry summits, workshops, webinars, and training bootcamps
+    for Machine Learning, Embedded Systems, and Internet of Things (IoT) domains.
+    """
+
+    def __init__(
+        self,
+        name: str = "ML/Embedded/IoT Events",
+        config_manager: Optional[ConfigManager] = None,
+        enabled: bool = True
+    ):
+        cfg_mgr = config_manager or ConfigManager()
+        super().__init__(
+            name=name,
+            config_manager=cfg_mgr,
+            domain="ml_embedded_iot",
+            config_dict=getattr(cfg_mgr, "ml_iot_events", {}),
+            enabled=enabled
+        )

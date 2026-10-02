@@ -1,9 +1,11 @@
-"""End-to-end pipeline orchestrator for Edge Computing Events."""
+"""End-to-end pipeline orchestrator for Academic and Industrial Events.
+Includes generic EventsPipeline, EdgeEventsPipeline, and MLEmbeddedIoTEventsPipeline.
+"""
 
 import datetime
 from typing import List, Dict, Any, Optional
 from src.events.models import EdgeEvent, EventStatus
-from src.events.collector import EdgeEventCollector
+from src.events.collector import EdgeEventCollector, MLEmbeddedIoTEventCollector, ConfigurableEventCollector
 from src.events.normalizer import EventNormalizer
 from src.events.deduplicator import EventDeduplicator
 from src.events.verifier import EventVerifier
@@ -14,20 +16,38 @@ from src.utils.logger import logger
 from src.email.sender import EmailSender
 
 
-class EdgeEventsPipeline:
+class EventsPipeline:
     """
     Executes the complete event discovery and tracking lifecycle:
     collect → normalize → deduplicate → verify → score → notify → state
     """
 
-    def __init__(self, config_manager: Optional[ConfigManager] = None):
+    def __init__(
+        self,
+        config_manager: Optional[ConfigManager] = None,
+        collector: Optional[Any] = None,
+        domain: str = "edge_computing",
+        state_manager: Optional[EventsStateManager] = None,
+        title: str = "Events & Academic/Industrial Opportunities"
+    ):
         self.config = config_manager or ConfigManager()
-        self.collector = EdgeEventCollector(config_manager=self.config)
+        self.domain = domain
+        self.title = title
+        self.collector = collector or (
+            MLEmbeddedIoTEventCollector(config_manager=self.config)
+            if any(d in domain.lower() for d in ["ml", "iot", "embedded"])
+            else EdgeEventCollector(config_manager=self.config)
+        )
         self.normalizer = EventNormalizer()
         self.deduplicator = EventDeduplicator()
         self.verifier = EventVerifier()
-        self.scorer = EventScorer(config_manager=self.config)
-        self.state_manager = EventsStateManager()
+        specs = self.collector.events_config.get("search_specifications") if hasattr(self.collector, "events_config") else None
+        self.scorer = EventScorer(
+            config_manager=self.config,
+            domain=self.domain,
+            search_specs=specs
+        )
+        self.state_manager = state_manager or EventsStateManager(domain=self.domain)
 
     def run(
         self,
@@ -37,7 +57,7 @@ class EdgeEventsPipeline:
         send_email: bool = False
     ) -> Dict[str, Any]:
         """Runs the full events discovery and tracking pipeline."""
-        logger.info(f"=== Starting Edge Computing Events Pipeline (Dry-run: {dry_run}) ===")
+        logger.info(f"=== Starting {self.title} Pipeline (Dry-run: {dry_run}) ===")
 
         # 1. Collect
         raw_events = self.collector.fetch_events()
@@ -88,7 +108,7 @@ class EdgeEventsPipeline:
         """Renders formatted Markdown summary of events grouped by type."""
         today_str = datetime.date.today().strftime("%Y-%m-%d")
         lines = [
-            f"# Edge Computing Events & Academic/Industrial Opportunities",
+            f"# {self.title}",
             f"**Generated:** {today_str} | **Total Events:** {len(events)}\n",
             "---",
         ]
@@ -134,10 +154,38 @@ class EdgeEventsPipeline:
         try:
             email_sender = EmailSender(self.config.email_config)
             today_str = datetime.date.today().strftime("%d %b %Y")
-            subject = f"[Edge PhD Events Alert] {today_str} — {len(events)} High-Relevance Opportunities"
+            subject = f"[{self.title}] {today_str} — {len(events)} High-Relevance Opportunities"
             markdown_body = self.render_markdown_summary(events)
             html_body = f"<html><body><pre style='font-family: sans-serif; white-space: pre-wrap;'>{markdown_body}</pre></body></html>"
             return email_sender.send(subject=subject, html_content=html_body, text_content=markdown_body)
         except Exception as e:
             logger.error(f"Failed to dispatch events email alert: {e}")
             return False
+
+
+class EdgeEventsPipeline(EventsPipeline):
+    """Pipeline for Edge Computing events."""
+
+    def __init__(self, config_manager: Optional[ConfigManager] = None):
+        cfg = config_manager or ConfigManager()
+        super().__init__(
+            config_manager=cfg,
+            collector=EdgeEventCollector(config_manager=cfg),
+            domain="edge_computing",
+            state_manager=EventsStateManager(domain="edge"),
+            title="Edge Computing Events & Academic/Industrial Opportunities"
+        )
+
+
+class MLEmbeddedIoTEventsPipeline(EventsPipeline):
+    """Pipeline for Machine Learning, Embedded Systems & IoT events."""
+
+    def __init__(self, config_manager: Optional[ConfigManager] = None):
+        cfg = config_manager or ConfigManager()
+        super().__init__(
+            config_manager=cfg,
+            collector=MLEmbeddedIoTEventCollector(config_manager=cfg),
+            domain="ml_embedded_iot",
+            state_manager=EventsStateManager(domain="ml_iot"),
+            title="ML, Embedded Systems & IoT Events & Opportunities"
+        )
