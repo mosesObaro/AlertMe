@@ -1225,3 +1225,97 @@ def test_tfidf_jaccard_clustering():
     assert sim_high > sim_low
     assert sim_high > 0.40
 
+
+def test_phd_assessor_criteria_numbers_and_rules():
+    from src.research_gaps.phd_assessor import PhDQualificationAssessor
+    from src.research_gaps.models import UnsolvedProblemCluster, CorpusPaper, EvidenceClaim
+
+    assessor = PhDQualificationAssessor()
+    cluster = UnsolvedProblemCluster(
+        cluster_id="c1",
+        title="Edge Task Offloading Latency",
+        key_phrases=["edge offloading", "latency bottleneck"],
+        quoted_claims=[
+            EvidenceClaim(claim_text="Edge offloading latency remains unoptimized.", paper_id="p1"),
+            EvidenceClaim(claim_text="Energy consumption during offloading is unresolved.", paper_id="p2"),
+        ],
+        support_count=2,
+        professors=["Prof. A", "Prof. B"],
+        solution_status="open",
+        solution_evidence=[],
+    )
+
+    papers = [
+        CorpusPaper(
+            paper_id="p1",
+            title="Edge Offloading Study",
+            venue="IEEE Transactions on Mobile Computing",
+            citation_count=25,
+            year=2024,
+            abstract="We evaluate latency metrics and dataset benchmarks on edge testbeds with github.com code.",
+        ),
+        CorpusPaper(
+            paper_id="p2",
+            title="Energy Constraints in TinyML",
+            venue="ACM SEC",
+            citation_count=15,
+            year=2025,
+            abstract="Throughput and accuracy benchmarks were measured on public dataset open source repository.",
+        ),
+    ]
+
+    result = assessor.assess_qualification(cluster, papers)
+    assert result.outcome in ("qualified", "borderline")
+    assert len(result.criteria) == 6
+
+    for crit_name, crit in result.criteria.items():
+        assert crit.criterion_name == crit_name
+        assert crit.verdict in ("pass", "partial", "fail")
+        assert isinstance(crit.numbers, dict)
+        assert len(crit.numbers) > 0
+        assert len(crit.rule_description) > 5
+        assert crit.confidence in ("high", "medium", "low")
+
+
+def test_phd_assessor_insufficient_evidence():
+    from src.research_gaps.phd_assessor import PhDQualificationAssessor
+    from src.research_gaps.models import UnsolvedProblemCluster, CorpusPaper, ProfessorCorpus
+
+    assessor = PhDQualificationAssessor()
+    cluster = UnsolvedProblemCluster(cluster_id="c_small", title="Sparse problem")
+    papers = [CorpusPaper(paper_id="p1", title="Single Paper")]
+
+    prof_corpus = ProfessorCorpus(
+        professor_name="Prof. Limited",
+        papers=papers,
+        insufficient_corpus=True,
+    )
+
+    result = assessor.assess_qualification(cluster, papers, professor_corpus=prof_corpus)
+    assert result.outcome == "insufficient_evidence"
+    assert "Insufficient evidence" in result.summary_reason
+
+
+def test_phd_assessor_rejected_outcome():
+    from src.research_gaps.phd_assessor import PhDQualificationAssessor
+    from src.research_gaps.models import UnsolvedProblemCluster, CorpusPaper, EvidenceClaim
+
+    assessor = PhDQualificationAssessor()
+    cluster = UnsolvedProblemCluster(
+        cluster_id="c_addressed",
+        title="Addressed problem",
+        solution_status="addressed",
+        solution_evidence=[{"id": "w1"}, {"id": "w2"}, {"id": "w3"}, {"id": "w4"}],
+        quoted_claims=[],  # 0 sub-problems
+    )
+    papers = [
+        CorpusPaper(paper_id="p1", title="Paper 1", year=2020),
+        CorpusPaper(paper_id="p2", title="Paper 2", year=2021),
+    ]
+
+    result = assessor.assess_qualification(cluster, papers)
+    assert result.outcome == "rejected"
+    assert result.criteria["original"].verdict == "fail"
+    assert result.criteria["doctoral_scope"].verdict == "fail"
+
+
