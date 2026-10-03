@@ -38,12 +38,8 @@ class Confidence:
 
 class ExtractionMethod:
     """How a paper's gap information was produced."""
-    LLM = "llm"
-    # No ANTHROPIC_API_KEY configured: deterministic extractor used by design.
+    RULES = "rules"
     DETERMINISTIC = "deterministic"
-    # An LLM call was attempted and failed: deterministic extractor used instead.
-    DETERMINISTIC_FALLBACK = "deterministic_fallback"
-    # Data written by the pre-remediation regex extractor, migrated on load.
     LEGACY_REGEX = "legacy_regex"
 
 

@@ -15,7 +15,6 @@ from src.research_gaps.models import (
     EvidenceClaim,
     Confidence,
 )
-from src.research_gaps.llm_client import AnthropicClient, ModelNotFoundError, LLMExecutionError
 from src.storage.state_manager import _atomic_write_json
 from src.utils.logger import logger
 
@@ -88,7 +87,7 @@ class ProblemTracker:
         self,
         data_dir: Optional[Path] = None,
         config: Optional[Dict[str, Any]] = None,
-        llm_client: Optional[AnthropicClient] = None,
+        llm_client: Optional[Any] = None,
         cache_dir: Optional[Path] = None,
     ):
         self.data_dir = data_dir or DATA_DIR
@@ -96,17 +95,11 @@ class ProblemTracker:
         self.problems_file = self.data_dir / "research_problems.json"
 
         self.config = config or self._load_config()
-        llm_cfg = self.config.get("llm", {})
-        self.grouping_model = llm_cfg.get("grouping_model", "claude-sonnet-5-5")
-        self.temperature = float(llm_cfg.get("temperature", 0.0))
-        self.max_retries = int(llm_cfg.get("max_retries", 1))
-
         grp_cfg = self.config.get("grouping", {})
         self.shortlist_max = int(grp_cfg.get("shortlist_max", 5))
         self.shortlist_threshold = float(grp_cfg.get("shortlist_threshold", 0.20))
         self.fallback_threshold = float(grp_cfg.get("fallback_threshold", 0.28))
 
-        self.llm_client = llm_client or AnthropicClient()
         self.cache_dir = cache_dir or (self.data_dir / "grouping_cache")
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.cache_file = self.cache_dir / "cache.json"
@@ -348,37 +341,12 @@ class ProblemTracker:
         if shortlist[0][1] >= 0.999:
             return shortlist[0][0], False
 
-        # Stage 2: Semantic evaluation
-        if self.llm_client.is_available():
-            try:
-                matched = self._match_with_llm(
-                    statement=problem_statement,
-                    research_area=research_area,
-                    candidate_methods=cand_methods,
-                    keywords=keywords,
-                    shortlist=shortlist,
-                )
-                return matched, False
-            except ModelNotFoundError:
-                # 404 is a configuration error: must raise immediately
-                raise
-            except Exception as e:
-                self.fallback_count += 1
-                logger.warning(
-                    f"Grouping LLM call failed for problem '{problem_statement[:40]}...': {e}. "
-                    f"Falling back to shortlist threshold ({self.fallback_threshold})."
-                )
-
-        # Fallback mode (no LLM key available, or transient API failure)
-        used_fallback = True
+        # Rule-based candidate matching based on shortlist similarity
         top_cand, top_sim = shortlist[0]
         if top_sim >= self.fallback_threshold:
-            logger.info(
-                f"Fallback matched '{problem_statement[:30]}' -> '{top_cand.problem_statement[:30]}' (sim={top_sim:.3f})"
-            )
-            return top_cand, used_fallback
+            return top_cand, True
 
-        return None, used_fallback
+        return None, False
 
     def find_existing_problem(
         self,

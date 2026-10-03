@@ -15,7 +15,6 @@ from src.research_gaps.models import (
     Confidence,
     canonical_paper_id,
 )
-from src.research_gaps.llm_client import AnthropicClient, ModelNotFoundError, LLMExecutionError
 from src.utils.logger import logger
 
 DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
@@ -107,19 +106,13 @@ class GapExtractor:
         self,
         config: Optional[Dict[str, Any]] = None,
         cache_dir: Optional[Path] = None,
-        llm_client: Optional[AnthropicClient] = None,
+        llm_client: Optional[Any] = None,
     ):
         self.config = config or self._load_config()
         self.cache_dir = cache_dir or (DATA_DIR / "extractor_cache")
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self.cache_file = self.cache_dir / "cache.json"
 
-        llm_cfg = self.config.get("llm", {})
-        self.model = llm_cfg.get("extractor_model", "claude-sonnet-5-5")
-        self.temperature = float(llm_cfg.get("temperature", 0.0))
-        self.max_retries = int(llm_cfg.get("max_retries", 1))
-
-        self.llm_client = llm_client or AnthropicClient()
         self.cache = self._load_cache()
 
         # Telemetry counts for pipeline reporting and CI verification
@@ -524,38 +517,14 @@ class GapExtractor:
             except Exception as e:
                 logger.warning(f"Cache read error for {cache_k}: {e}")
 
-        # Attempt structured Claude LLM extraction if available
-        if self.llm_client.is_available():
-            self.llm_call_count += 1
-            try:
-                extracted = self._extract_with_llm(item, paper_text, source_scope=source_scope)
-                self.cache[cache_k] = extracted.to_dict()
-                self._save_cache()
-                self.total_extracted += 1
-                return extracted
-            except ModelNotFoundError:
-                # 404 is a configuration error: raise immediately per spec
-                raise
-            except Exception as e:
-                self.fallback_count += 1
-                logger.warning(
-                    f"LLM extraction failed for paper '{item.title}': {e}. "
-                    f"Falling back to deterministic extraction (extraction_method='deterministic_fallback')."
-                )
-                extracted = self._extract_deterministic(
-                    item, paper_text, is_fallback=True, source_scope=source_scope
-                )
-                self.cache[cache_k] = extracted.to_dict()
-                self._save_cache()
-                self.total_extracted += 1
-                return extracted
-        else:
-            # No API key provided: use deterministic extractor
-            extracted = self._extract_deterministic(
-                item, paper_text, is_fallback=False, source_scope=source_scope
-            )
-            self.total_extracted += 1
-            return extracted
+        extracted = self._extract_deterministic(
+            item, paper_text, is_fallback=False, source_scope=source_scope
+        )
+        extracted.extraction_method = "rules"
+        self.cache[cache_k] = extracted.to_dict()
+        self._save_cache()
+        self.total_extracted += 1
+        return extracted
 
     def extract_batch(
         self,
@@ -568,14 +537,10 @@ class GapExtractor:
         for item in items:
             try:
                 results.append(self.extract(item, source_scope=source_scope))
-            except ModelNotFoundError:
-                # 404 is a configuration error: abort batch immediately
-                raise
             except Exception as e:
                 logger.error(f"Failed to extract info from '{item.title}': {e}")
 
         logger.info(
-            f"Extraction batch complete: {len(results)} papers processed. "
-            f"(LLM calls: {self.llm_call_count}, Fallbacks: {self.fallback_count})"
+            f"Extraction batch complete: {len(results)} papers processed."
         )
         return results

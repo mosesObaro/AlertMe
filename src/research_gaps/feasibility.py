@@ -12,7 +12,6 @@ from src.research_gaps.models import (
     SupervisorMatch,
     FeasibilityAssessment,
 )
-from src.research_gaps.llm_client import AnthropicClient, ModelNotFoundError, LLMExecutionError
 from src.storage.state_manager import _atomic_write_json
 from src.utils.logger import logger
 
@@ -107,7 +106,7 @@ class FeasibilityAssessor:
     def __init__(
         self,
         config: Optional[Dict[str, Any]] = None,
-        llm_client: Optional[AnthropicClient] = None,
+        llm_client: Optional[Any] = None,
         cache_dir: Optional[Path] = None,
     ):
         self.config = config or self._load_config()
@@ -116,17 +115,11 @@ class FeasibilityAssessor:
         self.cache_file = self.cache_dir / "cache.json"
         self.openalex_cache_file = self.cache_dir / "openalex_cache.json"
 
-        llm_cfg = self.config.get("llm", {})
-        self.assessor_model = llm_cfg.get("assessor_model", "claude-opus-5-5")
-        self.temperature = float(llm_cfg.get("temperature", 0.0))
-        self.max_retries = int(llm_cfg.get("max_retries", 1))
-
         assess_cfg = self.config.get("assessment", {})
         self.min_source_count = int(assess_cfg.get("min_source_count", 2))
         self.high_saturation = int(assess_cfg.get("works_count_high_saturation", 100))
         self.low_saturation = int(assess_cfg.get("works_count_low_saturation", 15))
 
-        self.llm_client = llm_client or AnthropicClient()
         self.cache = self._load_json(self.cache_file)
         self.openalex_cache = self._load_json(self.openalex_cache_file)
 
@@ -502,23 +495,6 @@ class FeasibilityAssessor:
         if cache_key in self.cache:
             ratings = self.cache[cache_key]
 
-        # 4. LLM assessment if available and not cached
-        if ratings is None and self.llm_client.is_available():
-            try:
-                ratings = self._assess_with_llm(problem, evidence)
-                self.cache[cache_key] = ratings
-                self._save_cache(self.cache_file, self.cache)
-            except ModelNotFoundError:
-                # 404 is a configuration error: raise immediately per spec
-                raise
-            except Exception as e:
-                self.fallback_count += 1
-                logger.warning(
-                    f"Opus assessment failed for '{problem.problem_statement[:40]}...': {e}. "
-                    f"Using deterministic rubric fallback."
-                )
-
-        # 5. Deterministic fallback if still None
         if ratings is None:
             ratings = self._assess_deterministic(problem, evidence)
             self.cache[cache_key] = ratings
