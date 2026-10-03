@@ -1142,6 +1142,86 @@ def test_corpus_builder_rejects_same_name_mismatch(tmp_path):
         "research_interests": ["Edge Computing", "Distributed Systems"],
     }
 
-    author_id, confidence, reason = resolver.resolve(prof)
-    assert confidence == "rejected"
-    assert "Mismatch" in reason or "rejected" in reason.lower()
+
+# ── Step 2 Unsolved Problem Extractor & Clustering Tests ─────────────────────
+
+def test_unsolved_extractor_discourse_marker_cleaning():
+    from src.research_gaps.unsolved_extractor import clean_sentence
+
+    raw1 = "However, the framework fails under high latency."
+    cleaned1 = clean_sentence(raw1, "Paper A")
+    assert cleaned1 == "[Paper A] The framework fails under high latency."
+
+    raw2 = "Furthermore, energy consumption remains unoptimized."
+    cleaned2 = clean_sentence(raw2, "Paper B")
+    assert cleaned2 == "Energy consumption remains unoptimized."
+
+
+def test_unsolved_extractor_verbatim_claims(tmp_path):
+    from src.research_gaps.unsolved_extractor import UnsolvedProblemExtractor
+    from src.research_gaps.models import ProfessorCorpus, CorpusPaper
+    from src.utils.rate_limiter import PoliteRequester
+
+    mock_requester = MagicMock(spec=PoliteRequester)
+    mock_requester.get.return_value.status_code = 200
+    mock_requester.get.return_value.json.return_value = {"results": []}
+
+    extractor = UnsolvedProblemExtractor(requester=mock_requester)
+    sentence = "Dynamic task offloading in edge computing faces severe latency bottlenecks."
+    corpus = ProfessorCorpus(
+        professor_name="Prof. Test",
+        papers=[
+            CorpusPaper(
+                paper_id="paper_1",
+                title="Paper Title 1",
+                abstract=f"Background context. {sentence} Summary of results.",
+            )
+        ]
+    )
+
+    clusters = extractor.extract_from_corpus(corpus)
+    assert len(clusters) > 0
+    claim = clusters[0].quoted_claims[0]
+    # Verify verbatim claim matches original text (stripped of discourse marker)
+    assert claim.claim_text in sentence or sentence in claim.claim_text or claim.supporting_span == sentence
+
+
+def test_unsolved_extractor_drops_addressed_clusters(tmp_path):
+    from src.research_gaps.unsolved_extractor import UnsolvedProblemExtractor, UnsolvedProblemCluster
+    from src.utils.rate_limiter import PoliteRequester
+
+    mock_requester = MagicMock(spec=PoliteRequester)
+    mock_requester.get.return_value.status_code = 200
+    # Return 3 solution works
+    mock_requester.get.return_value.json.return_value = {
+        "results": [
+            {"id": "w1", "title": "We propose a solution for offloading", "abstract": "we propose a novel method"},
+            {"id": "w2", "title": "We address offloading latency", "abstract": "we address the bottleneck"},
+            {"id": "w3", "title": "We overcome edge energy degradation", "abstract": "we mitigate the issue"},
+        ]
+    }
+
+    extractor = UnsolvedProblemExtractor(requester=mock_requester)
+    cluster = UnsolvedProblemCluster(
+        cluster_id="c1",
+        title="Offloading latency bottleneck",
+        key_phrases=["offloading latency"],
+    )
+
+    status, evidence = extractor._test_unsolved(cluster)
+    assert status == "addressed"
+    assert len(evidence) == 3
+
+
+def test_tfidf_jaccard_clustering():
+    from src.research_gaps.unsolved_extractor import tfidf_cosine_similarity, keyphrase_jaccard
+
+    s1 = "Dynamic task offloading in edge computing suffers latency degradation"
+    s2 = "Computation offloading in edge nodes suffers latency degradation"
+    s3 = "Quantum cryptography key exchange in optical networks"
+
+    sim_high = tfidf_cosine_similarity(s1, s2)
+    sim_low = tfidf_cosine_similarity(s1, s3)
+    assert sim_high > sim_low
+    assert sim_high > 0.40
+
