@@ -315,6 +315,10 @@ class CorpusBuilder:
                 pass
         return {}
 
+    def build_corpus(self, prof: Dict[str, Any]) -> ProfessorCorpus:
+        """Alias for build_corpus_for_professor."""
+        return self.build_corpus_for_professor(prof)
+
     def build_corpus_for_professor(self, prof: Dict[str, Any]) -> ProfessorCorpus:
         """Builds, scores, and saves corpus for a professor."""
         prof_name = prof.get("name", "Unknown")

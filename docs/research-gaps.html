@@ -24,6 +24,17 @@
             --resolved: #009688;
         }
 
+        .badge-role-own { background-color: #e8f0fe; color: #1a73e8; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem; }
+        .badge-role-related { background-color: #f1f3f4; color: #5f6368; font-weight: bold; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem; }
+        .badge-outcome-qualified { background-color: #e6f4ea; color: #137333; border: 1px solid #ceead6; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+        .badge-outcome-borderline { background-color: #fef7e0; color: #b06000; border: 1px solid #feefc3; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+        .badge-outcome-rejected { background-color: #fce8e6; color: #c5221f; border: 1px solid #fad2cf; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+        .badge-outcome-insufficient_evidence { background-color: #f1f3f4; color: #5f6368; border: 1px solid #dadce0; padding: 4px 8px; border-radius: 4px; font-weight: bold; }
+        .ieee-quote { background-color: #e8f0fe; border-left: 4px solid #1a73e8; padding: 0.5rem 1rem; margin: 0.5rem 0; font-style: italic; border-radius: 4px; }
+        .ieee-template { margin: 0.3rem 0; color: #202124; }
+        .download-btn { background-color: #1a73e8; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; font-weight: 500; margin-top: 0.5rem; }
+        .download-btn:hover { background-color: #174ea6; }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
@@ -436,7 +447,8 @@
 
 <div class="container">
     <div class="tabs">
-        <button class="tab-btn active" onclick="switchTab('overview')">Overview</button>
+        <button class="tab-btn active" onclick="switchTab('phd-4step')">4-Step PhD Topic Discovery</button>
+        <button class="tab-btn" onclick="switchTab('overview')">Overview</button>
         <button class="tab-btn" onclick="switchTab('problems')">Research Problems</button>
         <button class="tab-btn" onclick="switchTab('clusters')">Research Clusters</button>
         <button class="tab-btn" onclick="switchTab('questions')">Research Questions</button>
@@ -446,7 +458,48 @@
     <div id="loading-indicator" class="loading">Loading research data...</div>
     <div id="error-indicator" class="error" style="display: none;"></div>
 
-    <div id="overview" class="tab-pane active">
+    <div id="phd-4step" class="tab-pane active">
+        <div class="card" style="background-color:#e8f0fe;border-color:#aecbfa;margin-bottom:1.5rem;">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+                <div>
+                    <h3 style="margin:0;color:#174ea6;">4-Step PhD Research Gap Analysis</h3>
+                    <p style="margin:0.25rem 0 0 0;font-size:0.9rem;color:#1a73e8;">
+                        Rule-Based Analysis (TF-IDF/Jaccard Statistics + Dublin Descriptors EQF Level 8). <strong>No AI models used.</strong>
+                    </p>
+                </div>
+                <span class="badge" style="background:#1a73e8;color:white;font-size:0.85rem;padding:6px 12px;">extraction_method="rules"</span>
+            </div>
+        </div>
+
+        <div class="stats-grid" id="4step-stats">
+            <!-- Stats populated by JS -->
+        </div>
+
+        <div class="card">
+            <h3>Filters &amp; Professor Selection</h3>
+            <div class="filters" style="flex-wrap:wrap;gap:0.75rem;">
+                <input type="text" id="prof-search" class="search-box" placeholder="Filter by professor name or university..." oninput="render4StepAnalysis()" style="flex:1;min-width:220px;">
+                <select id="prof-outcome-filter" class="filter-select" onchange="render4StepAnalysis()" style="min-width:160px;">
+                    <option value="">All PhD Outcomes</option>
+                    <option value="qualified">Qualified</option>
+                    <option value="borderline">Borderline</option>
+                    <option value="rejected">Rejected</option>
+                    <option value="insufficient_evidence">Insufficient Evidence</option>
+                </select>
+                <select id="prof-status-filter" class="filter-select" onchange="render4StepAnalysis()" style="min-width:150px;">
+                    <option value="">All Solution Statuses</option>
+                    <option value="open">Open</option>
+                    <option value="partially_addressed">Partially Addressed</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="professors-4step-container">
+            <!-- Populated by JS -->
+        </div>
+    </div>
+
+    <div id="overview" class="tab-pane">
         <div class="stats-grid" id="overview-stats">
             <!-- Stats populated by JS -->
         </div>
@@ -611,6 +664,7 @@
         if (!appData) return;
         
         renderMeta();
+        render4StepAnalysis();
         renderOverview();
         populateFilters();
         renderProblems();
@@ -1314,8 +1368,311 @@
                     "google_scholar_url": "",
                     "relevant_publications": []
                 }
-            ]
+            ],
+            "professors": getMock4StepProfessors()
         };
+    }
+
+    function render4StepAnalysis() {
+        if (!appData) return;
+        const container = document.getElementById('professors-4step-container');
+        if (!container) return;
+
+        const profs = (appData.professors && appData.professors.length > 0) ? appData.professors : getMock4StepProfessors();
+        const search = (document.getElementById('prof-search')?.value || '').toLowerCase();
+        const outcomeFilter = document.getElementById('prof-outcome-filter')?.value || '';
+        const statusFilter = document.getElementById('prof-status-filter')?.value || '';
+
+        let totalProfs = profs.length;
+        let totalPapers = 0;
+        let totalProblems = 0;
+        let totalQualified = 0;
+
+        profs.forEach(p => {
+            totalPapers += (p.papers || []).length;
+            const probs = p.unsolved_problems || [];
+            totalProblems += probs.length;
+            const quals = p.phd_qualifications || {};
+            Object.values(quals).forEach(q => {
+                if (q.outcome === 'qualified') totalQualified++;
+            });
+        });
+
+        const statsContainer = document.getElementById('4step-stats');
+        if (statsContainer) {
+            statsContainer.innerHTML = `
+                <div class="stat-card">
+                    <div class="stat-value">${totalProfs}</div>
+                    <div class="stat-label">Professors Analyzed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${totalPapers}</div>
+                    <div class="stat-label">Literature Papers</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">${totalProblems}</div>
+                    <div class="stat-label">Unsolved Problem Clusters</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" style="color:var(--success);">${totalQualified}</div>
+                    <div class="stat-label">Qualified PhD Topics</div>
+                </div>
+            `;
+        }
+
+        let html = '';
+        profs.forEach((p, idx) => {
+            if (search && !p.professor_name.toLowerCase().includes(search) && !(p.university || '').toLowerCase().includes(search)) {
+                return;
+            }
+
+            const probs = p.unsolved_problems || [];
+            const quals = p.phd_qualifications || {};
+            const stmts = p.research_statements || {};
+            const corpusSum = p.corpus_summary || { count: (p.papers || []).length, target_count: 20 };
+
+            if (outcomeFilter) {
+                const hasOutcome = Object.values(quals).some(q => q.outcome === outcomeFilter);
+                if (!hasOutcome) return;
+            }
+
+            if (statusFilter) {
+                const hasStatus = probs.some(pr => pr.solution_status === statusFilter);
+                if (!hasStatus) return;
+            }
+
+            html += `
+                <div class="card" style="margin-bottom:2rem;border-top:4px solid var(--primary);">
+                    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;">
+                        <div>
+                            <h2 style="margin:0 0 0.25rem 0;color:var(--primary);">${escapeHtml(p.professor_name)}</h2>
+                            <div style="color:var(--text-secondary);font-size:0.9rem;">
+                                🏢 ${escapeHtml(p.university || 'University')} | Last Processed: 📅 ${escapeHtml(p.last_processed_date || 'Recent')}
+                                ${p.openalex_author_id ? ` | OpenAlex ID: <code>${escapeHtml(p.openalex_author_id)}</code>` : ''}
+                            </div>
+                        </div>
+                        <div>
+                            <span class="badge ${corpusSum.insufficient_corpus ? 'badge-outcome-rejected' : 'badge-outcome-qualified'}">
+                                Corpus: ${corpusSum.count} / ${corpusSum.target_count || 20} papers
+                            </span>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:1.5rem;">
+                        <h4 style="border-bottom:2px solid var(--border);padding-bottom:0.25rem;color:var(--text-secondary);">
+                            STEP 1. Paper Corpus (${(p.papers || []).length} papers collected)
+                        </h4>
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Role</th>
+                                        <th>Title</th>
+                                        <th>Year</th>
+                                        <th>Venue</th>
+                                        <th>Score</th>
+                                        <th>Reason</th>
+                                        <th>DOI/Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${(p.papers || []).map(pap => `
+                                        <tr>
+                                            <td><span class="badge badge-role-${pap.role || 'related'}">${escapeHtml(pap.role || 'related')}</span></td>
+                                            <td><strong>${escapeHtml(pap.title)}</strong></td>
+                                            <td>${pap.year || 'n.d.'}</td>
+                                            <td>${escapeHtml(pap.venue || 'ArXiv / Refereed')}</td>
+                                            <td>${(pap.relevance_score || 0).toFixed(2)}</td>
+                                            <td style="font-size:0.85rem;color:var(--text-secondary);">${escapeHtml(pap.relevance_reason || 'topical match')}</td>
+                                            <td>${pap.doi ? `<a href="https://doi.org/${escapeHtml(pap.doi)}" target="_blank">DOI</a>` : (pap.url ? `<a href="${escapeHtml(pap.url)}" target="_blank">Link</a>` : '-')}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:1.5rem;">
+                        <h4 style="border-bottom:2px solid var(--border);padding-bottom:0.25rem;color:var(--text-secondary);">
+                            STEP 2. Unsolved Problem Clusters &amp; Solution Test
+                        </h4>
+                        ${probs.length === 0 ? '<p style="color:var(--text-secondary);">No open problem clusters extracted.</p>' : probs.map(cl => {
+                            const qual = quals[cl.cluster_id] || {};
+                            const stmt = stmts[cl.cluster_id] || {};
+                            const outcome = qual.outcome || 'insufficient_evidence';
+
+                            return `
+                                <div style="background:#f8f9fa;border:1px solid var(--border);border-radius:6px;padding:1rem;margin-bottom:1rem;">
+                                    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
+                                        <h4 style="margin:0;color:var(--text);">${escapeHtml(cl.title || 'Unsolved Cluster')}</h4>
+                                        <div>
+                                            <span class="badge badge-status-${cl.solution_status || 'open'}">${escapeHtml(cl.solution_status || 'open')}</span>
+                                            <span class="badge badge-outcome-${outcome}">${escapeHtml(outcome.toUpperCase())}</span>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top:0.5rem;font-size:0.9rem;">
+                                        <strong>Quoted Limitations / Open Questions (${(cl.quoted_claims || []).length}):</strong>
+                                        <ul style="margin:0.25rem 0 0 1.25rem;padding:0;">
+                                            ${(cl.quoted_claims || []).map(qc => `
+                                                <li style="margin-bottom:0.25rem;">
+                                                    <em>"${escapeHtml(qc.claim_text || String(qc))}"</em>
+                                                </li>
+                                            `).join('')}
+                                        </ul>
+                                    </div>
+
+                                    <div style="margin-top:1rem;background:white;padding:0.75rem;border-radius:4px;border:1px solid var(--border);">
+                                        <h5 style="margin:0 0 0.5rem 0;color:var(--text-secondary);">STEP 3. PhD Qualification Rubric (Dublin Descriptors Level 8)</h5>
+                                        <p style="font-size:0.85rem;color:var(--text-secondary);margin-bottom:0.5rem;">${escapeHtml(qual.summary_reason || '')}</p>
+                                        <div class="table-container">
+                                            <table style="font-size:0.85rem;">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Criterion</th>
+                                                        <th>Verdict</th>
+                                                        <th>Rule &amp; Numbers</th>
+                                                        <th>Confidence</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    ${Object.entries(qual.criteria || {}).map(([cname, crit]) => `
+                                                        <tr>
+                                                            <td><strong>${escapeHtml(cname)}</strong></td>
+                                                            <td><span class="badge badge-outcome-${crit.verdict === 'pass' ? 'qualified' : (crit.verdict === 'partial' ? 'borderline' : 'rejected')}">${escapeHtml((crit.verdict || 'fail').toUpperCase())}</span></td>
+                                                            <td>${escapeHtml(crit.rule_description)}</td>
+                                                            <td>${escapeHtml(crit.confidence || 'medium')}</td>
+                                                        </tr>
+                                                    `).join('')}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    ${stmt.title ? `
+                                        <div style="margin-top:1rem;background:white;padding:1rem;border-radius:6px;border:1px solid var(--border);">
+                                            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+                                                <h5 style="margin:0;color:var(--primary);">STEP 4. ${escapeHtml(stmt.title)}</h5>
+                                                <button class="download-btn" onclick="downloadStatement('${escapeHtml(stmt.problem_id)}', '${escapeHtml(encodeURIComponent(stmt.markdown_content || ''))}')">
+                                                    📄 Download Statement (.md)
+                                                </button>
+                                            </div>
+                                            <p style="font-size:0.85rem;color:var(--text-secondary);margin:0.5rem 0;">
+                                                <strong>Index Terms:</strong> ${escapeHtml((stmt.index_terms || []).join(', '))}
+                                            </p>
+                                            <div style="background:#f8f9fa;padding:0.75rem;border-radius:4px;font-size:0.9rem;margin:0.5rem 0;">
+                                                <strong>Abstract:</strong> ${escapeHtml(stmt.abstract || '')}
+                                            </div>
+                                            <div style="margin-top:0.75rem;">
+                                                <strong>IEEE Sections (Tagged Sentences):</strong>
+                                                ${Object.entries(stmt.sections || {}).map(([secTitle, sentList]) => `
+                                                    <div style="margin-top:0.5rem;">
+                                                        <h6 style="margin:0.25rem 0;color:var(--text);">${escapeHtml(secTitle)}</h6>
+                                                        ${(sentList || []).map(s => `
+                                                            <div class="${s.tag === 'quote' ? 'ieee-quote' : 'ieee-template'}">
+                                                                ${s.tag === 'quote' ? '💬 <em>Quote:</em> ' : ''}${escapeHtml(s.text)}
+                                                            </div>
+                                                        `).join('')}
+                                                    </div>
+                                                `).join('')}
+                                            </div>
+                                            <div style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-secondary);">
+                                                <strong>IEEE References:</strong>
+                                                <ol style="margin:0.25rem 0 0 1.25rem;padding:0;">
+                                                    ${(stmt.references || []).map(ref => `
+                                                        <li>${escapeHtml(ref.formatted_citation || ref.title)}</li>
+                                                    `).join('')}
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    ` : ''}
+                                </div>
+                            `;
+                        }).join('')}
+                    </div>
+                </div>
+            `;
+        });
+
+        if (!html) {
+            html = '<div class="card"><p style="color:var(--text-secondary);">No professors matched the selected filters.</p></div>';
+        }
+
+        container.innerHTML = html;
+    }
+
+    function downloadStatement(problemId, encodedContent) {
+        const content = decodeURIComponent(encodedContent);
+        const blob = new Blob([content], { type: 'text/markdown;charset=utf-8;' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.setAttribute('href', url);
+        link.setAttribute('download', `${problemId}.md`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+    function getMock4StepProfessors() {
+        return [
+            {
+                "professor_name": "Prof. Edith Ngai",
+                "university": "The University of Hong Kong",
+                "openalex_author_id": "A5023910241",
+                "last_processed_date": "2026-10-04",
+                "corpus_summary": { "count": 22, "target_count": 20, "insufficient_corpus": false },
+                "papers": [
+                    { "role": "own", "title": "On-Device Deep Learning for Smart Cities", "year": 2025, "venue": "IEEE Internet of Things Journal", "relevance_score": 0.92, "relevance_reason": "seed paper", "doi": "10.1109/JIOT.2025.01" },
+                    { "role": "related", "title": "Resource Allocation in Heterogeneous Edge Computing", "year": 2024, "venue": "IEEE Transactions on Mobile Computing", "relevance_score": 0.84, "relevance_reason": "cites seed paper", "doi": "10.1109/TMC.2024.02" }
+                ],
+                "unsolved_problems": [
+                    {
+                        "cluster_id": "cluster_ngai_01",
+                        "title": "Edge Offloading Latency Bottleneck under Dynamic Wireless Conditions",
+                        "solution_status": "open",
+                        "quoted_claims": [
+                            { "claim_text": "Edge offloading latency remains unoptimized under rapid channel degradation.", "supporting_span": "Edge offloading latency remains unoptimized under rapid channel degradation." },
+                            { "claim_text": "Energy consumption during offloading exceeds battery bounds on resource-constrained devices.", "supporting_span": "Energy consumption during offloading exceeds battery bounds on resource-constrained devices." }
+                        ]
+                    }
+                ],
+                "phd_qualifications": {
+                    "cluster_ngai_01": {
+                        "outcome": "qualified",
+                        "summary_reason": "Qualified: Originality and Scope passed with 4 pass criteria and 2 partial criteria.",
+                        "criteria": {
+                            "original": { "criterion_name": "original", "verdict": "pass", "rule_description": "Problem is open with 0 direct solutions.", "confidence": "high" },
+                            "significant": { "criterion_name": "significant", "verdict": "pass", "rule_description": "Supported by 2 claims with 35 citations.", "confidence": "high" },
+                            "doctoral_scope": { "criterion_name": "doctoral_scope", "verdict": "pass", "rule_description": "2 distinct sub-problems support 3 research questions.", "confidence": "high" },
+                            "rigorous": { "criterion_name": "rigorous", "verdict": "pass", "rule_description": "Detected latency, throughput, and energy benchmarks.", "confidence": "high" },
+                            "feasible": { "criterion_name": "feasible", "verdict": "pass", "rule_description": "Open code/datasets referenced.", "confidence": "high" },
+                            "publishable": { "criterion_name": "publishable", "verdict": "pass", "rule_description": "2 papers in IEEE transactions.", "confidence": "high" }
+                        }
+                    }
+                },
+                "research_statements": {
+                    "cluster_ngai_01": {
+                        "problem_id": "cluster_ngai_01",
+                        "title": "IEEE Research Statement: Edge Offloading Latency Bottleneck",
+                        "abstract": "This IEEE research statement presents a structured PhD proposal on Edge Offloading Latency Bottleneck. Based on rule-based extraction from 22 recent publications, the study addresses open limitation claims including: Edge offloading latency remains unoptimized under rapid channel degradation. The proposed work formulates 3 central research questions evaluating latency, throughput, and energy. Evaluation plan and expected contributions target high-impact refereed venues with open-source artifacts.",
+                        "index_terms": ["Edge Offloading", "Latency Bottleneck", "Edge Computing", "Rule-Based Analysis"],
+                        "sections": {
+                            "I. Introduction": [
+                                { "text": "This research statement investigates Edge Offloading Latency Bottleneck in the context of recent literature.", "tag": "template" },
+                                { "text": "Edge offloading latency remains unoptimized under rapid channel degradation [1].", "tag": "quote" }
+                            ],
+                            "IV. Research Questions and Objectives": [
+                                { "text": "RQ1: How can algorithmic optimizations in edge offloading address latency degradation? [1]", "tag": "template" },
+                                { "text": "RQ2: What metrics and benchmarks demonstrate scalable performance under dynamic channel constraints? [2]", "tag": "template" }
+                            ]
+                        },
+                        "references": [
+                            { "number": 1, "formatted_citation": "[1] E. Ngai et al., \"On-Device Deep Learning for Smart Cities,\" IEEE Internet of Things Journal, 2025. DOI: https://doi.org/10.1109/JIOT.2025.01." }
+                        ],
+                        "markdown_content": "# IEEE Research Statement: Edge Offloading Latency Bottleneck\n\n## Abstract\nThis IEEE research statement presents a structured PhD proposal on Edge Offloading Latency Bottleneck.\n\n## References\n[1] E. Ngai et al., \"On-Device Deep Learning for Smart Cities,\" IEEE Internet of Things Journal, 2025."
+                    }
+                }
+            }
+        ];
     }
 </script>
 

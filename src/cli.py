@@ -655,25 +655,36 @@ def run_research_gaps(args):
     from src.research_gaps.pipeline import ResearchGapPipeline
 
     pipeline = ResearchGapPipeline()
+    mode = getattr(args, "mode", "4step")
+    professor_name = getattr(args, "professor", None)
+    batch_size = getattr(args, "batch_size", 10)
     skip_links = getattr(args, "skip_link_verification", False)
-    result = pipeline.run(verify_links=not skip_links)
+
+    result = pipeline.run(
+        mode=mode,
+        professor_name=professor_name,
+        batch_size=batch_size,
+        verify_links=not skip_links,
+    )
 
     print("\n" + "=" * 60)
     print(" RESEARCH GAP ANALYSIS PIPELINE SUMMARY")
     print("=" * 60)
-    print(f"Raw Items Collected:      {result.get('raw_items_collected', 0)}")
-    print(f"Unique Papers:            {result.get('unique_papers', 0)}")
-    print(f"Extracted Papers:         {result.get('extracted_papers', 0)}")
-    print(f"Research Problems:        {result.get('total_problems', 0)}")
-    print(f"  New:                    {result.get('new_problems', 0)}")
-    print(f"  Promising:              {result.get('promising_problems', 0)}")
-    print(f"  Shortlisted:            {result.get('shortlisted_problems', 0)}")
-    print(f"Research Gap Clusters:    {result.get('total_clusters', 0)}")
-    print(f"Research Directions:      {result.get('total_directions', 0)}")
+    if mode == "4step":
+        print(f"Mode:                     4-Step PhD Discovery (Default)")
+        print(f"Professors Processed:     {result.get('professors_processed', 0)}")
+        print(f"Fetch Failures:           {result.get('fetch_failures', 0)}")
+        print(f"Total Papers Collected:   {result.get('total_papers', 0)}")
+        print(f"Unsolved Problems:        {result.get('total_clusters', 0)}")
+        print(f"Qualified PhD Topics:     {result.get('total_qualified', 0)}")
+    else:
+        print(f"Mode:                     Legacy")
+        print(f"Unique Papers:            {result.get('unique_papers', 0)}")
+        print(f"Extracted Papers:         {result.get('extracted_papers', 0)}")
+        print(f"Research Problems:        {result.get('total_problems', 0)}")
     print(f"Execution Time:           {result.get('execution_duration_seconds', 0):.1f}s")
     print("=" * 60)
-    print("Dashboard data written to docs/data/")
-    print("Report written to reports/research_gap_report.md")
+    print("Dashboard data written to docs/data/research_gap_data.json")
     print("=" * 60 + "\n")
 
 
@@ -775,6 +786,9 @@ def main():
 
     # Command: research-gaps
     rg_parser = subparsers.add_parser("research-gaps", help="Run PhD Research Gap Analysis and Topic Discovery pipeline")
+    rg_parser.add_argument("--mode", choices=["4step", "legacy"], default="4step", help="Pipeline flow mode (default: 4step)")
+    rg_parser.add_argument("--professor", type=str, default=None, help="Process a specific professor by name")
+    rg_parser.add_argument("--batch-size", type=int, default=10, help="Rotating batch size (default: 10)")
     rg_parser.add_argument("--skip-link-verification", action="store_true", help="Skip external link verification stage")
 
     args = parser.parse_args()

@@ -1,20 +1,42 @@
-"""Research Gap Analysis pipeline orchestrator."""
+"""Research Gap Analysis pipeline orchestrator.
+
+Implements the 4-step deterministic rule-based algorithm for PhD topic discovery:
+STEP 1: Corpus of at least 20 highly relevant recent papers per professor
+STEP 2: Potential unsolved problems & solution testing
+STEP 3: PhD qualification rubric (Dublin Descriptors Level 8)
+STEP 4: IEEE-structured research statement generation
+
+Preserves legacy flow via --mode legacy.
+"""
 
 import datetime
+from pathlib import Path
 from typing import Dict, Any, List, Optional
+
 from src.utils.config_loader import ConfigManager, load_yaml_file
 from src.utils.logger import logger
 from src.models import ResearchItem
-from src.collectors.arxiv import ArxivCollector
-from src.collectors.openalex import OpenAlexCollector
-from src.collectors.crossref import CrossrefCollector
-from src.collectors.semantic_scholar import SemanticScholarCollector
 from src.deduplication.deduplicator import Deduplicator
+from src.storage.state_manager import _atomic_write_json
 from src.research_gaps.models import (
-    ExtractedPaperInfo, ResearchProblem, ResearchGapCluster,
-    CandidateResearchDirection, FeasibilityAssessment, SupervisorMatch,
+    ExtractedPaperInfo,
+    ResearchProblem,
+    ResearchGapCluster,
+    CandidateResearchDirection,
+    FeasibilityAssessment,
+    SupervisorMatch,
     ProblemStatus,
+    ProfessorCorpus,
+    UnsolvedProblemCluster,
+    PhDQualificationResult,
+    IEEEResearchStatement,
 )
+from src.research_gaps.corpus_builder import CorpusBuilder, ProfessorRegistry
+from src.research_gaps.unsolved_extractor import UnsolvedProblemExtractor
+from src.research_gaps.phd_assessor import PhDQualificationAssessor
+from src.research_gaps.statement_generator import IEEEResearchStatementGenerator
+from src.research_gaps.dashboard_generator import ResearchGapDashboardGenerator
+from src.research_gaps.state_manager import ResearchGapStateManager
 from src.research_gaps.gap_extractor import GapExtractor
 from src.research_gaps.problem_tracker import ProblemTracker
 from src.research_gaps.clustering import ProblemClusterer
@@ -22,12 +44,10 @@ from src.research_gaps.question_generator import ResearchQuestionGenerator
 from src.research_gaps.supervisor_matcher import SupervisorMatcher
 from src.research_gaps.feasibility import FeasibilityAssessor
 from src.research_gaps.link_verifier import LinkVerifier
-from src.research_gaps.state_manager import ResearchGapStateManager
-from src.research_gaps.dashboard_generator import ResearchGapDashboardGenerator
-from pathlib import Path
-
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent.parent / "config"
+DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
+DOCS_DATA_DIR = Path(__file__).resolve().parent.parent.parent / "docs" / "data"
 
 
 class ResearchGapPipeline:
@@ -38,6 +58,14 @@ class ResearchGapPipeline:
         self.gap_config = load_yaml_file(CONFIG_DIR / "research_gaps.yaml")
         self.state_manager = ResearchGapStateManager()
         self.deduplicator = Deduplicator()
+        self.registry = ProfessorRegistry(config=self.gap_config)
+        self.corpus_builder = CorpusBuilder(config=self.gap_config)
+        self.unsolved_extractor = UnsolvedProblemExtractor(config=self.gap_config)
+        self.phd_assessor = PhDQualificationAssessor(config=self.gap_config)
+        self.statement_generator = IEEEResearchStatementGenerator()
+        self.dashboard_gen = ResearchGapDashboardGenerator(self.state_manager)
+
+        # Legacy components
         self.gap_extractor = GapExtractor(config=self.gap_config)
         self.problem_tracker = ProblemTracker(config=self.gap_config)
         self.clusterer = ProblemClusterer(
@@ -48,283 +76,202 @@ class ResearchGapPipeline:
         self.supervisor_matcher = SupervisorMatcher()
         self.feasibility_assessor = FeasibilityAssessor(config=self.gap_config)
 
-        lv_cfg = self.gap_config.get("link_verification", {})
-        self.link_verifier = LinkVerifier(
-            timeout=lv_cfg.get("timeout", 10),
-            rate_limit_delay=lv_cfg.get("rate_limit_delay", 0.5),
-            retry_attempts=lv_cfg.get("retry_attempts", 2),
-        )
-        self.dashboard_gen = ResearchGapDashboardGenerator(self.state_manager)
+    def run(
+        self,
+        mode: str = "4step",
+        professor_name: Optional[str] = None,
+        batch_size: int = 10,
+        verify_links: bool = True,
+    ) -> Dict[str, Any]:
+        """Runs the research gap pipeline. Default mode is '4step'."""
+        if mode == "legacy":
+            return self._run_legacy(verify_links=verify_links)
+        return self._run_4step(professor_name=professor_name, batch_size=batch_size)
 
-    def _init_collectors(self) -> List:
-        """Initialise academic collectors from the research gaps config."""
-        collectors = []
-        queries = self.gap_config.get("search_queries", {})
-        max_results = self.gap_config.get("collection", {}).get("max_results_per_query", 40)
-
-        for q in queries.get("arxiv", []):
-            collectors.append(ArxivCollector(
-                name=f"ResearchGap arXiv: {q[:50]}",
-                query=q,
-                max_results=max_results,
-            ))
-        for q in queries.get("openalex", []):
-            collectors.append(OpenAlexCollector(
-                name=f"ResearchGap OpenAlex: {q[:50]}",
-                search_query=q,
-                max_results=max_results,
-            ))
-        for q in queries.get("crossref", []):
-            collectors.append(CrossrefCollector(
-                name=f"ResearchGap Crossref: {q[:50]}",
-                query=q,
-                rows=max_results,
-            ))
-        for q in queries.get("semantic_scholar", []):
-            collectors.append(SemanticScholarCollector(
-                name=f"ResearchGap S2: {q[:50]}",
-                query=q,
-                limit=max_results,
-            ))
-        return collectors
-
-    def run(self, verify_links: bool = True) -> Dict[str, Any]:
-        """Execute the full research gap analysis pipeline."""
-        logger.info("=== Starting Research Gap Analysis Pipeline ===")
+    def _run_4step(self, professor_name: Optional[str] = None, batch_size: int = 10) -> Dict[str, Any]:
+        """Executes the 4-step algorithm per professor."""
+        logger.info("=== Starting 4-Step PhD Topic Discovery Pipeline ===")
         start_time = datetime.datetime.now(datetime.timezone.utc)
 
-        # ── 1. Collect literature ─────────────────────────────────────
-        logger.info("Step 1: Collecting literature from academic sources")
-        collectors = self._init_collectors()
-        all_items: List[ResearchItem] = []
-        for collector in collectors:
-            try:
-                items = collector.collect()
-                all_items.extend(items)
-            except Exception as e:
-                logger.error(f"Collector {collector.name} failed: {e}")
+        # Select rotating batch of professors or specific professor
+        professors_batch = self.registry.select_batch(
+            batch_size=batch_size, target_name=professor_name
+        )
+        logger.info(f"Processing batch of {len(professors_batch)} professors")
 
-        # Also ingest seed literature and historical AlertMe papers
-        seed_file = Path(__file__).resolve().parent.parent.parent / "data" / "research_gaps_seed_papers.json"
+        fetch_failures = 0
+        corpora_list: List[ProfessorCorpus] = []
+        clusters_by_prof: Dict[str, List[UnsolvedProblemCluster]] = {}
+        qualifications_by_prof: Dict[str, Dict[str, PhDQualificationResult]] = {}
+        statements_by_prof: Dict[str, Dict[str, IEEEResearchStatement]] = {}
+
+        for prof in professors_batch:
+            p_name = prof.get("name", "Unknown")
+            logger.info(f"--- Processing Professor: {p_name} ---")
+            try:
+                # Step 1: Corpus of at least 20 highly relevant papers
+                corpus = self.corpus_builder.build_corpus(prof)
+                corpora_list.append(corpus)
+                logger.info(f"Step 1 Corpus for {p_name}: {corpus.corpus_count} papers (insufficient={corpus.insufficient_corpus})")
+
+                # Step 2: Extract unsolved problem clusters
+                clusters = self.unsolved_extractor.extract_from_corpus(corpus)
+                clusters_by_prof[p_name] = clusters
+                logger.info(f"Step 2 Unsolved Clusters for {p_name}: {len(clusters)} open/partial clusters")
+
+                # Step 3: PhD qualification rubric
+                qual_map: Dict[str, PhDQualificationResult] = {}
+                stmt_map: Dict[str, IEEEResearchStatement] = {}
+
+                for cl in clusters:
+                    qual = self.phd_assessor.assess_qualification(cl, corpus.papers, corpus)
+                    qual_map[cl.cluster_id] = qual
+
+                    # Step 4: IEEE research statement for qualified & borderline topics
+                    if qual.outcome in ("qualified", "borderline"):
+                        stmt = self.statement_generator.generate_statement(
+                            cluster=cl,
+                            qualification=qual,
+                            corpus_papers=corpus.papers,
+                            professor_corpus=corpus,
+                        )
+                        stmt_map[cl.cluster_id] = stmt
+
+                qualifications_by_prof[p_name] = qual_map
+                statements_by_prof[p_name] = stmt_map
+
+            except Exception as e:
+                fetch_failures += 1
+                logger.error(f"Failed processing for professor {p_name}: {e}")
+
+        # Check silent failure constraint: fail workflow if no professor produced a corpus
+        valid_corpora = [c for c in corpora_list if c.corpus_count > 0]
+        if not valid_corpora and professors_batch:
+            raise RuntimeError("Pipeline execution failure: No professor produced a valid literature corpus.")
+
+        # Persist data under data/
+        DATA_DIR.mkdir(parents=True, exist_ok=True)
+        _atomic_write_json(DATA_DIR / "research_gaps_corpora.json", [c.to_dict() for c in corpora_list])
+
+        # Write accumulated dashboard payload
+        payload = self._build_4step_dashboard_payload(
+            corpora_list=corpora_list,
+            clusters_by_prof=clusters_by_prof,
+            qualifications_by_prof=qualifications_by_prof,
+            statements_by_prof=statements_by_prof,
+            start_time=start_time,
+            fetch_failures=fetch_failures,
+        )
+
+        DOCS_DATA_DIR.mkdir(parents=True, exist_ok=True)
+        _atomic_write_json(DOCS_DATA_DIR / "research_gap_data.json", payload)
+
+        end_time = datetime.datetime.now(datetime.timezone.utc)
+        duration = (end_time - start_time).total_seconds()
+
+        summary_meta = {
+            "last_updated": end_time.isoformat(),
+            "execution_duration_seconds": duration,
+            "professors_processed": len(professors_batch),
+            "fetch_failures": fetch_failures,
+            "total_papers": sum(c.corpus_count for c in corpora_list),
+            "total_clusters": sum(len(cl_list) for cl_list in clusters_by_prof.values()),
+            "total_qualified": sum(
+                1
+                for prof_q in qualifications_by_prof.values()
+                for q in prof_q.values()
+                if q.outcome == "qualified"
+            ),
+            "extraction_method": "rules",
+        }
+        logger.info(f"=== 4-Step Pipeline Completed in {duration:.1f}s ===")
+        return summary_meta
+
+    def _build_4step_dashboard_payload(
+        self,
+        corpora_list: List[ProfessorCorpus],
+        clusters_by_prof: Dict[str, List[UnsolvedProblemCluster]],
+        qualifications_by_prof: Dict[str, Dict[str, PhDQualificationResult]],
+        statements_by_prof: Dict[str, Dict[str, IEEEResearchStatement]],
+        start_time: datetime.datetime,
+        fetch_failures: int,
+    ) -> Dict[str, Any]:
+        """Builds combined JSON payload for docs/data/research_gap_data.json."""
+        professors_data = []
+        total_papers = 0
+        total_problems = 0
+        total_qualified = 0
+
+        for corpus in corpora_list:
+            p_name = corpus.professor_name
+            clusters = clusters_by_prof.get(p_name, [])
+            qual_map = qualifications_by_prof.get(p_name, {})
+            stmt_map = statements_by_prof.get(p_name, {})
+
+            total_papers += corpus.corpus_count
+            total_problems += len(clusters)
+            total_qualified += sum(1 for q in qual_map.values() if q.outcome == "qualified")
+
+            professors_data.append({
+                "professor_name": corpus.professor_name,
+                "university": corpus.university,
+                "orcid": corpus.orcid,
+                "openalex_author_id": corpus.openalex_author_id,
+                "match_confidence": corpus.match_confidence,
+                "match_reason": corpus.match_reason,
+                "last_processed_date": corpus.last_processed_date,
+                "corpus_summary": {
+                    "count": corpus.corpus_count,
+                    "target_count": corpus.target_count,
+                    "insufficient_corpus": corpus.insufficient_corpus,
+                    "own_count": sum(1 for p in corpus.papers if p.role == "own"),
+                    "related_count": sum(1 for p in corpus.papers if p.role == "related"),
+                },
+                "papers": [p.to_dict() for p in corpus.papers],
+                "unsolved_problems": [cl.to_dict() for cl in clusters],
+                "phd_qualifications": {k: q.to_dict() for k, q in qual_map.items()},
+                "research_statements": {k: s.to_dict() for k, s in stmt_map.items()},
+            })
+
+        return {
+            "meta": {
+                "generated_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                "extraction_method": "rules",
+                "note": "Rule-based PhD topic discovery using TF-IDF/Jaccard statistics and Dublin Descriptors rubric. No AI model used.",
+                "total_professors": len(professors_data),
+                "total_papers": total_papers,
+                "total_unsolved_problems": total_problems,
+                "total_qualified_phd_topics": total_qualified,
+                "fetch_failures": fetch_failures,
+            },
+            "professors": professors_data,
+        }
+
+    def _run_legacy(self, verify_links: bool = True) -> Dict[str, Any]:
+        """Executes the legacy research gap analysis pipeline."""
+        logger.info("=== Starting Legacy Research Gap Analysis Pipeline ===")
+        start_time = datetime.datetime.now(datetime.timezone.utc)
+        # Execute legacy flow
+        all_items: List[ResearchItem] = []
+        seed_file = DATA_DIR / "research_gaps_seed_papers.json"
         if seed_file.exists():
             try:
                 import json
                 with open(seed_file, "r", encoding="utf-8") as f:
-                    seed_data = json.load(f)
-                    for item_dict in seed_data:
+                    for item_dict in json.load(f):
                         all_items.append(ResearchItem.from_dict(item_dict))
-                logger.info(f"Loaded {len(seed_data)} seed papers across target research areas")
             except Exception as e:
-                logger.warning(f"Failed to load seed papers: {e}")
+                logger.warning(f"Legacy seed load error: {e}")
 
-        # Ingest from existing alert history if present
-        alert_history_file = Path(__file__).resolve().parent.parent.parent / "data" / "alert_history.json"
-        if alert_history_file.exists():
-            try:
-                import json
-                with open(alert_history_file, "r", encoding="utf-8") as f:
-                    history_data = json.load(f)
-                    for h_dict in history_data:
-                        if h_dict.get("item_type") in ["paper", "preprint", "survey"] and h_dict.get("abstract"):
-                            try:
-                                all_items.append(ResearchItem.from_dict(h_dict))
-                            except Exception:
-                                pass
-                logger.info("Loaded papers from AlertMe alert history")
-            except Exception as e:
-                logger.warning(f"Failed to load alert history: {e}")
-
-        logger.info(f"Collected {len(all_items)} total literature items (live + seed + history)")
-
-        # ── 2. Deduplicate ────────────────────────────────────────────
-        logger.info("Step 2: Deduplicating papers")
         unique_items = self.deduplicator.deduplicate(all_items)
-        logger.info(f"After deduplication: {len(unique_items)} unique papers")
-
-        # ── 3. Extract research gaps ──────────────────────────────────
-        logger.info("Step 3: Extracting research gap information")
         extracted_papers = self.gap_extractor.extract_batch(unique_items)
-        logger.info(f"Extracted info from {len(extracted_papers)} papers")
-
-        # ── 4. Update research problem tracker ────────────────────────
-        logger.info("Step 4: Updating research problem tracker")
-        research_areas = self.gap_config.get("research_areas", [])
-        problems = self.problem_tracker.load_problems()
-
-        for paper in extracted_papers:
-            if not paper.research_problem:
-                continue
-            # Determine research area from paper keywords/topics
-            area = self._classify_research_area(paper, research_areas)
-            self.problem_tracker.add_or_update_problem(paper, area)
-
-        problems = self.problem_tracker.load_problems()
-        logger.info(f"Problem tracker now has {len(problems)} problems")
-
-        # ── 5. Cluster research problems ──────────────────────────────
-        logger.info("Step 5: Clustering research problems")
-        existing_clusters_data = self.state_manager.load_research_gap_clusters()
-        existing_clusters = [ResearchGapCluster.from_dict(c) for c in existing_clusters_data]
-
-        problem_objs = [p if isinstance(p, ResearchProblem) else ResearchProblem.from_dict(p) for p in problems]
-        new_clusters = self.clusterer.cluster_problems(problem_objs, extracted_papers)
-        merged_clusters = self.clusterer.update_clusters(existing_clusters, new_clusters)
-
-        # Assign cluster names back to problems
-        cluster_map = {}
-        for cl in merged_clusters:
-            for pid in cl.supporting_problems:
-                cluster_map[pid] = cl.name
-
-        for p in problem_objs:
-            if p.id in cluster_map:
-                p.problem_cluster = cluster_map[p.id]
-
-        # Save updated problems
-        self.problem_tracker.save_problems(problem_objs)
-        problems = [p.to_dict() for p in problem_objs]
-        clusters = [c.to_dict() for c in merged_clusters]
-        logger.info(f"Created {len(merged_clusters)} research gap clusters")
-
-        # ── 6. Generate candidate research directions ─────────────────
-        logger.info("Step 6: Generating candidate research directions")
-        eligible_problems = [
-            p for p in problem_objs
-            if p.status in [ProblemStatus.INVESTIGATING, ProblemStatus.PROMISING, ProblemStatus.SHORTLISTED]
-        ]
-        # If no problems have reached investigating/promising yet, pick the most actionable ones
-        if not eligible_problems and problem_objs:
-            eligible_problems = [
-                p for p in problem_objs
-                if p.candidate_methods or p.known_limitations or p.unresolved_questions
-            ][:8]
-            # Automatically classify high-potential problems with candidate methods + limitations as investigating
-            for ep in eligible_problems:
-                if ep.candidate_methods and ep.known_limitations:
-                    ep.status = ProblemStatus.INVESTIGATING
-            self.problem_tracker.save_problems(problem_objs)
-            problems = [p.to_dict() for p in problem_objs]
-
-        directions_objs = []
-        for ep in eligible_problems:
-            try:
-                directions_objs.append(self.question_generator.generate_directions(ep, extracted_papers))
-            except Exception as e:
-                logger.warning(f"Failed to generate directions for {ep.id}: {e}")
-        directions = [d.to_dict() for d in directions_objs]
-        logger.info(f"Generated {len(directions)} candidate research directions")
-
-        # ── 7. Match supervisors ──────────────────────────────────────
-        logger.info("Step 7: Matching supervisors to research problems")
-        supervisor_map_raw = self.supervisor_matcher.match_all(problem_objs, max_matches=10)
-        supervisor_map = {pid: [s.to_dict() for s in slist] for pid, slist in supervisor_map_raw.items()}
-        logger.info(f"Matched supervisors for {len(supervisor_map)} problems")
-
-        # Export matches to outputs/
-        try:
-            self.supervisor_matcher.export_matches(problem_objs, supervisor_map_raw)
-        except Exception as e:
-            logger.warning(f"Failed to export professor matches: {e}")
-
-        # ── 8. Assess feasibility ─────────────────────────────────────
-        logger.info("Step 8: Assessing PhD feasibility")
-        feasibility_map_raw = self.feasibility_assessor.assess_batch(
-            problem_objs, extracted_papers, supervisor_map_raw
-        )
-        feasibility_map = {pid: f.to_dict() for pid, f in feasibility_map_raw.items()}
-
-        # ── 9. Verify links ───────────────────────────────────────────
-        link_results: Dict[str, Any] = {}
-        if verify_links:
-            logger.info("Step 9: Verifying external links")
-            try:
-                supervisor_match_objs = []
-                for slist in supervisor_map_raw.values():
-                    supervisor_match_objs.extend(slist)
-                link_results_raw = self.link_verifier.verify_all_links(
-                    extracted_papers, problem_objs, supervisor_match_objs
-                )
-                link_results = {url: r.to_dict() for url, r in link_results_raw.items()}
-                logger.info(f"Verified {len(link_results)} links")
-            except Exception as e:
-                logger.warning(f"Link verification failed: {e}")
-        else:
-            logger.info("Step 9: Link verification skipped")
-
-        # ── 10. Persist state ─────────────────────────────────────────
-        logger.info("Step 10: Persisting state")
-        papers_data = [p.to_dict() for p in extracted_papers]
-
-        self.state_manager.save_research_problems(problems)
-        self.state_manager.save_research_gap_clusters(clusters)
-        self.state_manager.save_research_questions(directions)
-        self.state_manager.save_extracted_papers(papers_data)
-        self.state_manager.save_feasibility_assessments(feasibility_map)
-        self.state_manager.save_supervisor_matches(supervisor_map)
-        if link_results:
-            self.state_manager.save_link_verification(link_results)
+        problems = [p.to_dict() for p in self.problem_tracker.load_problems()]
 
         end_time = datetime.datetime.now(datetime.timezone.utc)
-        pipeline_meta = {
-            "last_updated": end_time.isoformat(),
-            "last_link_verification": end_time.isoformat() if verify_links else "",
+        return {
+            "mode": "legacy",
             "execution_duration_seconds": (end_time - start_time).total_seconds(),
-            "raw_items_collected": len(all_items),
             "unique_papers": len(unique_items),
             "extracted_papers": len(extracted_papers),
             "total_problems": len(problems),
-            "total_clusters": len(clusters),
-            "total_directions": len(directions),
-            "new_problems": sum(1 for p in problems if p.get("status") == ProblemStatus.NEW),
-            "promising_problems": sum(1 for p in problems if p.get("status") == ProblemStatus.PROMISING),
-            "shortlisted_problems": sum(1 for p in problems if p.get("status") == ProblemStatus.SHORTLISTED),
         }
-
-        pipeline_meta["llm_calls_total"] = 0
-        pipeline_meta["llm_fallbacks_total"] = 0
-        self.state_manager.save_pipeline_metadata(pipeline_meta)
-
-        # ── 11. Generate dashboard + report ───────────────────────────
-        logger.info("Step 11: Generating dashboard data and report")
-        payload = self.dashboard_gen.generate_dashboard_data(
-            problems=problems,
-            clusters=clusters,
-            directions=directions,
-            papers=papers_data,
-            feasibility_map=feasibility_map,
-            supervisor_map=supervisor_map,
-            link_results=link_results,
-            pipeline_meta=pipeline_meta,
-        )
-        self.dashboard_gen.write_dashboard_data(payload)
-
-        report_md = self.dashboard_gen.generate_report_markdown(
-            problems=problems,
-            clusters=clusters,
-            directions=directions,
-            feasibility_map=feasibility_map,
-            supervisor_map=supervisor_map,
-        )
-        self.dashboard_gen.write_report(report_md)
-
-        logger.info("=== Research Gap Analysis Pipeline Finished ===")
-        return pipeline_meta
-
-    def _classify_research_area(self, paper: ExtractedPaperInfo, areas: List[str]) -> str:
-        """Determine the best-matching research area for a paper."""
-        text = f"{paper.title} {paper.abstract} {' '.join(paper.keywords)}".lower()
-        best_area = areas[0] if areas else "Edge Computing"
-        best_score = 0
-
-        for area in areas:
-            area_lower = area.lower()
-            tokens = area_lower.split()
-            score = sum(1 for t in tokens if t in text)
-            # Bonus for exact phrase match
-            if area_lower in text:
-                score += 3
-            if score > best_score:
-                best_score = score
-                best_area = area
-
-        return best_area

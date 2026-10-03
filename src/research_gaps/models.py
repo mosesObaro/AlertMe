@@ -535,6 +535,10 @@ class ProfessorCorpus:
     insufficient_corpus: bool = False
     last_processed_date: str = ""
 
+    def __post_init__(self):
+        if not self.corpus_count and self.papers:
+            self.corpus_count = len(self.papers)
+
     def to_dict(self) -> Dict[str, Any]:
         d = asdict(self)
         d["papers"] = [p.to_dict() if hasattr(p, "to_dict") else p for p in self.papers]

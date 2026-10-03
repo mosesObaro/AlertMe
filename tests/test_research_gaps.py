@@ -1319,3 +1319,162 @@ def test_phd_assessor_rejected_outcome():
     assert result.criteria["doctoral_scope"].verdict == "fail"
 
 
+def test_ieee_statement_generator_structure(tmp_path):
+    from src.research_gaps.statement_generator import IEEEResearchStatementGenerator
+    from src.research_gaps.models import (
+        UnsolvedProblemCluster, CorpusPaper, PhDQualificationResult, EvidenceClaim, ProfessorCorpus
+    )
+
+    generator = IEEEResearchStatementGenerator(reports_dir=tmp_path / "statements")
+    cluster = UnsolvedProblemCluster(
+        cluster_id="c_test_01",
+        title="Edge Task Offloading Latency Bottleneck",
+        key_phrases=["edge task offloading", "latency bottleneck"],
+        quoted_claims=[
+            EvidenceClaim(claim_text="Edge offloading latency remains unoptimized under heavy load.", paper_id="p1"),
+            EvidenceClaim(claim_text="Energy degradation exceeds bounds on constrained devices.", paper_id="p2"),
+        ],
+    )
+    papers = [
+        CorpusPaper(paper_id="p1", title="Edge Offloading Study", authors=["Alice Smith"], year=2024, doi="10.1109/EDGE.01"),
+        CorpusPaper(paper_id="p2", title="Energy Bounds in TinyML", authors=["Bob Jones"], year=2025, doi="10.1109/TMC.02"),
+    ]
+    qual = PhDQualificationResult(problem_id="c_test_01", outcome="qualified")
+    prof_corpus = ProfessorCorpus(professor_name="Prof. Test", papers=papers)
+
+    stmt = generator.generate_statement(cluster, qual, papers, prof_corpus)
+
+    # 1. Section order check
+    expected_sections = [
+        "I. Introduction", "II. Related Work", "III. Problem Statement and Research Gap",
+        "IV. Research Questions and Objectives", "V. Proposed Approach", "VI. Evaluation Plan",
+        "VII. Expected Contributions", "VIII. Work Plan"
+    ]
+    assert list(stmt.sections.keys()) == expected_sections
+
+    # 2. Research questions end in "?"
+    assert len(stmt.research_questions) >= 2
+    for rq in stmt.research_questions:
+        assert rq.strip().endswith("?") or "?" in rq
+
+    # 3. Every [n] resolves in first-citation order
+    cited_nums = []
+    for s_list in stmt.sections.values():
+        for sent in s_list:
+            for num in sent.citation_numbers:
+                if num not in cited_nums:
+                    cited_nums.append(num)
+
+    ref_nums = [r["number"] for r in stmt.references]
+    for num in cited_nums:
+        assert num in ref_nums
+
+    # First citation order: first cited num must be 1, second 2, etc.
+    assert cited_nums == list(range(1, len(cited_nums) + 1))
+
+    # 4. Word count <= 1200
+    assert stmt.word_count <= 1200
+
+    # 5. Tagged sentences
+    for s_list in stmt.sections.values():
+        for sent in s_list:
+            assert sent.tag in ("quote", "template")
+
+    # 6. File saved
+    saved_file = tmp_path / "statements" / "c_test_01.md"
+    assert saved_file.exists()
+
+
+def test_no_anthropic_imports_or_keys():
+    from pathlib import Path
+    repo_root = Path(__file__).resolve().parent.parent
+    rg_dir = repo_root / "src" / "research_gaps"
+    wf_file = repo_root / ".github" / "workflows" / "research-gap-analysis.yml"
+
+    for py_file in rg_dir.glob("*.py"):
+        content = py_file.read_text(encoding="utf-8")
+        assert "import anthropic" not in content, f"Anthropic import found in {py_file}"
+        assert "AnthropicClient" not in content, f"AnthropicClient reference found in {py_file}"
+        assert "ANTHROPIC_API_KEY" not in content, f"ANTHROPIC_API_KEY reference found in {py_file}"
+
+    if wf_file.exists():
+        content = wf_file.read_text(encoding="utf-8")
+        assert "ANTHROPIC_API_KEY" not in content, "ANTHROPIC_API_KEY found in workflow"
+
+
+def test_json_holds_all_four_stages_for_fixture_professor(tmp_path):
+    import datetime
+    from src.research_gaps.pipeline import ResearchGapPipeline
+    from src.research_gaps.models import (
+        ProfessorCorpus, CorpusPaper, UnsolvedProblemCluster, PhDQualificationResult, IEEEResearchStatement
+    )
+
+    pipeline = ResearchGapPipeline()
+    corpus = ProfessorCorpus(professor_name="Prof. Fixture", papers=[CorpusPaper(paper_id="p1", title="P1")])
+    cluster = UnsolvedProblemCluster(cluster_id="c1", title="Cluster 1")
+    qual = PhDQualificationResult(problem_id="c1", outcome="qualified")
+    stmt = IEEEResearchStatement(problem_id="c1", title="IEEE Title")
+
+    payload = pipeline._build_4step_dashboard_payload(
+        corpora_list=[corpus],
+        clusters_by_prof={"Prof. Fixture": [cluster]},
+        qualifications_by_prof={"Prof. Fixture": {"c1": qual}},
+        statements_by_prof={"Prof. Fixture": {"c1": stmt}},
+        start_time=datetime.datetime.now(datetime.timezone.utc),
+        fetch_failures=0,
+    )
+
+    assert len(payload["professors"]) == 1
+    prof_entry = payload["professors"][0]
+    assert "papers" in prof_entry  # Step 1
+    assert "unsolved_problems" in prof_entry  # Step 2
+    assert "phd_qualifications" in prof_entry  # Step 3
+    assert "research_statements" in prof_entry  # Step 4
+    assert payload["meta"]["extraction_method"] == "rules"
+
+
+def test_pipeline_end_to_end_offline(tmp_path):
+    from src.research_gaps.pipeline import ResearchGapPipeline
+    from unittest.mock import patch, MagicMock
+
+    pipeline = ResearchGapPipeline()
+
+    mock_prof = {
+        "name": "Prof. Test Offline",
+        "university": "Test University",
+        "orcid": "0000-0001-2345-6789",
+        "research_interests": ["Edge Computing"],
+    }
+
+    with patch.object(pipeline.registry, "select_batch", return_value=[mock_prof]), \
+         patch.object(pipeline.corpus_builder, "build_corpus") as mock_build_corpus:
+
+        from src.research_gaps.models import ProfessorCorpus, CorpusPaper
+        mock_build_corpus.return_value = ProfessorCorpus(
+            professor_name="Prof. Test Offline",
+            university="Test University",
+            papers=[
+                CorpusPaper(
+                    paper_id="p1",
+                    title="Dynamic Offloading in Heterogeneous Edge Environments",
+                    abstract="Background. However, the limitation of edge offloading latency remains unoptimized under dynamic conditions.",
+                    year=2024,
+                    venue="IEEE TMC",
+                ),
+                CorpusPaper(
+                    paper_id="p2",
+                    title="Resource Allocation for TinyML",
+                    abstract="Background. Furthermore, energy degradation remains an open challenge on constrained devices.",
+                    year=2025,
+                    venue="ACM SEC",
+                )
+            ]
+        )
+
+        res = pipeline.run(mode="4step", batch_size=1)
+        assert res["professors_processed"] == 1
+        assert res["extraction_method"] == "rules"
+        assert res["fetch_failures"] == 0
+
+
+
