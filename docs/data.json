@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-02",
-    "total_items": 69,
+    "last_updated": "2026-10-03",
+    "total_items": 65,
     "high_relevance_count": 40,
-    "papers_count": 22,
+    "papers_count": 21,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -4756,7 +4756,8 @@
         "description": "The leading systems conference on architecture, design, implementation, and evaluation of networked embedded sensing, Intelligent IoT, and low-power distributed perception.",
         "relevance_score": 7.6
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "tinyML Talks Technical Webinar Series 2026-2027",
@@ -4852,7 +4853,8 @@
         "description": "Bi-weekly interactive technical webinars presented by leading industrial researchers and university professors on ultra-low-power neural inference and TinyML hardware.",
         "relevance_score": 7.6
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "tinyML Summit 2027",
@@ -4956,7 +4958,8 @@
         "description": "The global industry summit uniting researchers, chip designers, and sensor architects advancing machine learning on ultra-low-power microcontrollers (<1mW).",
         "relevance_score": 7.5
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "A systematic review of data handling and management techniques in edge computing for IoT",
@@ -5123,7 +5126,8 @@
         "description": "Premier conference dedicated to representation learning, deep neural architectures, TinyML representations, and efficient model compression.",
         "relevance_score": 7.4
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Edge Computing World 2026",
@@ -5220,7 +5224,8 @@
         "description": "Global business and technical summit for edge infrastructure, enterprise IoT, MEC deployment cases, and real-time AI inference architectures.",
         "relevance_score": 7.3
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Embedded World 2027 (Exhibition & Conference)",
@@ -5317,7 +5322,8 @@
         "description": "The world's leading exhibition and conference for embedded system technologies, distributed IoT hardware, RISC-V, and embedded AI microprocessors.",
         "relevance_score": 7.3
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Joint Computation Offloading and Resource Allocation in Mobile-Edge Cloud Computing: A Two-Layer Game Approach",
@@ -5846,7 +5852,8 @@
         "description": "Deep dive into production open-source edge stacks including EdgeX Foundry, Akraino Edge Stack, and Open Horizon for edge AI workload orchestration.",
         "relevance_score": 7.0
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "IEEE ComSoc Technical Webinar: Edge Intelligence in 6G Distributed Networks",
@@ -5943,8 +5950,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
+      "publication_date": "2026-10-03",
+      "discovery_date": "2026-10-03",
       "abstract": "[Summer School] Hands-on intensive academic training program covering model quantization, hardware acceleration on microcontrollers, and low-power distributed inference. Dates: 2027-06-14 to 2027-06-18. Location: Trieste, Italy (hybrid). Registration Fee: €250 (In-person) / Free (Virtual). Subsidies: ICTP / TinyML Full Fellowship: 100% tuition waiver + travel flights + lodging stipend; Free Online Track: Free live stream and lab assignments access.",
       "venue": "TinyML & Edge AI Summer School 2027 — Trieste, Italy",
       "topics": [
@@ -6198,8 +6205,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
+      "publication_date": "2026-10-03",
+      "discovery_date": "2026-10-03",
       "abstract": "[Workshop] High-impact workshop bringing together researchers to discuss contentious and provocative new directions in edge computing, edge storage, and hardware heterogeneity. Dates: 2027-07-06 to 2027-07-06. Location: Boston, MA, USA (hybrid). Registration Fee: $195 (Student) / $450 (Regular). Subsidies: USENIX Student Travel Program: Free registration + flight/hotel stipend.",
       "venue": "HotEdge 2027 (USENIX Workshop on Hot Topics in Edge Computing) — Boston, MA, USA",
       "topics": [
@@ -6324,18 +6331,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] AhmedEhabH/dependency-aware-selective-regeneration-benchmark (★ 0)",
-      "url": "https://github.com/AhmedEhabH/dependency-aware-selective-regeneration-benchmark",
+      "title": "[Code/Benchmark] Vyom-Repo/LinkUp-db-benchmark (★ 0)",
+      "url": "https://github.com/Vyom-Repo/LinkUp-db-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "AhmedEhabH"
+        "Vyom-Repo"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
+      "publication_date": "2026-10-03",
+      "discovery_date": "2026-10-03",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -6343,145 +6350,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_a07c0fa0815168f6",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] runs-on-demo/benchmark-public (★ 0)",
-      "url": "https://github.com/runs-on-demo/benchmark-public",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "runs-on-demo"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_2cb6aef6f854cf78",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] designfordrink/jev-benchmark (★ 0)",
-      "url": "https://github.com/designfordrink/jev-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "designfordrink"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_2748349f63f4ff92",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] beatriz985502293-max/Projeto-Integrador---Benchmarking-e-Portf-lio (★ 0)",
-      "url": "https://github.com/beatriz985502293-max/Projeto-Integrador---Benchmarking-e-Portf-lio",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "beatriz985502293-max"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_e7341496333619e9",
+      "id": "item_3fbc78c24f8a7a5b",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -6518,8 +6387,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
+      "publication_date": "2026-10-03",
+      "discovery_date": "2026-10-03",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -6556,7 +6425,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 45 days (+0.3)",
+          "Event upcoming in 44 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -6615,8 +6484,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
+      "publication_date": "2026-10-03",
+      "discovery_date": "2026-10-03",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -6710,14 +6579,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-02",
-      "discovery_date": "2026-10-02",
+      "publication_date": "2026-10-03",
+      "discovery_date": "2026-10-03",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [
-        "MEC",
-        "IoT",
         "Edge Computing",
+        "IoT",
+        "MEC",
         "Distributed Systems"
       ],
       "institution": "",
@@ -6761,7 +6630,7 @@
       "doi": null,
       "arxiv_id": "2610.01647v1",
       "publication_date": "2026-10-01",
-      "discovery_date": "2026-10-02",
+      "discovery_date": "2026-10-03",
       "abstract": "In this article, we present our vision and recent advancements toward creating a decentralized system capable of learning from real-time data within buildings to support sustainable and privacy-preserving smart environments. Our approach promotes the concept of the building itself as the data center, aligning with the principles of edge computing to safeguard confidentiality and reduce reliance on external cloud infrastructure. This is particularly valuable in humanitarian contexts, where data sovereignty, energy efficiency, and infrastructure constraints are critical. We detail a lightweight, \"Kubernetes-like\" orchestration framework for deploying AI services within such environments and demonstrate our progress in implementing AI algorithms on low-power, cost-effective microcontrollers such as those in the Arduino ecosystem. By enabling in-situ learning directly on sensors or microcontrollers, our work aims to bring intelligent services to resource-limited settings, fostering autonomy, resilience, and sustainable development in vulnerable or underserved communities. The contributions in this article are related, firstly, to our project \"Online Machine Learning Algorithms for Embedded Systems\" and the evaluation of two new online algorithms. Secondly, we envision a cloud-fog-edge architecture based on the KOptim and FIWARE components, and we propose a methodology for coupling them. Experimental results of the online algorithms are also presented, showcasing real-world traces.",
       "venue": "arXiv CS",
       "topics": [
@@ -6782,15 +6651,15 @@
         "negative_penalty": 0.0,
         "final_score": 6.6,
         "matched_topics": [
+          "Energy Efficiency",
           "Kubernetes",
-          "Edge Computing",
-          "Energy Efficiency"
+          "Edge Computing"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
           "✓ Key research area match: Energy Efficiency (+0.4)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)"
+          "✓ Freshly published (2d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -6815,7 +6684,7 @@
       "doi": "10.1088/2634-4386/aeaf14",
       "arxiv_id": null,
       "publication_date": "2026-10-01",
-      "discovery_date": "2026-10-02",
+      "discovery_date": "2026-10-03",
       "abstract": "Abstract Neuromorphic engineering makes use of mixed-signal analog and digital circuits to directly emulate the computational principles of biological brains. Such electronic systems offer a high degree of adaptability, robustness, and energy efficiency across a wide range of tasks, from edge computing to robotics. Within this context, we investigate a key feature of biological neurons: their ability to carry out robust and reliable computation by adapting their input responses and spiking patterns to context through neuromodulation. Achieving analogous levels of robustness and adaptation in neuromorphic circuits through modulatory mechanisms is a largely unexplored path. We present a novel current-mode neuron design that supports robust neuromodulation with minimal model complexity, compatible with standard CMOS technologies. We first introduce a mathematical model of the circuit and provide tools to analyze and tune the neuron behavior; we then demonstrate both theoretically and experimentally the biologically plausible neuromodulation adaptation capabilities of the circuit over a wide range of parameters. All theoretical predictions were verified in experiments on a low-power 180 nm CMOS implementation of the proposed neuron circuit. Thanks to the analog underlying feedback structure, the proposed adaptive neuromodulable neuron exhibits a high degree of robustness, flexibility, and scalability across operating ranges of currents and temperatures, making it a perfect candidate for real-world neuromorphic applications.",
       "venue": "Neuromorphic Computing and Engineering",
       "topics": [
@@ -6858,14 +6727,14 @@
         "negative_penalty": 0.0,
         "final_score": 6.6,
         "matched_topics": [
-          "Edge Computing",
-          "Energy Efficiency"
+          "Energy Efficiency",
+          "Edge Computing"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
           "✓ Key research area match: Energy Efficiency (+0.4)",
           "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)"
+          "✓ Freshly published (2d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -6873,55 +6742,6 @@
       "raw_metadata": {
         "cited_by_count": 0
       }
-    },
-    {
-      "title": "Momentum-Guided Federated Split Distillation for Personalized Temporal Edge Intelligence",
-      "url": "http://arxiv.org/abs/2609.31159v1",
-      "source": "arXiv",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "preprint",
-      "authors": [
-        "Ahmed-Rafik Baahmed",
-        "Jean-François Dollinger",
-        "Amine Brahmia",
-        "Mourad Zghal"
-      ],
-      "doi": null,
-      "arxiv_id": "2609.31159v1",
-      "publication_date": "2026-09-25",
-      "discovery_date": "2026-10-02",
-      "abstract": "We propose a momentum-guided federated split distillation framework for personalized, efficient, and autonomous temporal edge intelligence. We introduce TeRR-SAtt, our novel temporal reservoir student attention design that combines fixed reservoir representations, a lightweight temporal student, and personalized output modules. We also present AMGF, our anticipatory momentum-guided fusion mechanism that clusters clients through learning momentum and derives specialized teacher updates. On real-world smart-building data, TeRR-SAtt reduces edge training latency by 65.50%, inference latency by 44.70%, training memory usage by 18.40%, and inference CPU usage by 33.10% over the considered baselines. At the same time, AMGF improves local learning by up to 35.31% in RMSE compared to global updates.",
-      "venue": "arXiv CS",
-      "topics": [
-        "cs.AI",
-        "cs.DC"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "arxiv_47b7dfc9128d09dd",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 2.5,
-        "recency_score": 1.2,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.5,
-        "matched_topics": [
-          "Edge Training",
-          "Edge Intelligence"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Intelligence (Title), Edge Training (Abstract)",
-          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (7d ago) (+1.2)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
     },
     {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
@@ -6935,7 +6755,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-02",
+      "discovery_date": "2026-10-03",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -6958,7 +6778,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (107d ago) (+0.2)",
+          "• Published >30d ago (108d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
