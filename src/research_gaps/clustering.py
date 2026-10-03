@@ -68,7 +68,7 @@ class ProblemClusterer:
         """Aggregate known_limitations from grouped problems, return unique items sorted by frequency."""
         all_limitations = []
         for p in problems:
-            all_limitations.extend(p.known_limitations)
+            all_limitations.extend(p.limitation_texts())
 
         counts = Counter(all_limitations)
         return [lim for lim, _ in counts.most_common()]
@@ -77,7 +77,7 @@ class ProblemClusterer:
         """Aggregate unresolved_questions from grouped problems, return unique items sorted by frequency."""
         all_questions = []
         for p in problems:
-            all_questions.extend(p.unresolved_questions)
+            all_questions.extend(p.question_texts())
 
         counts = Counter(all_questions)
         return [q for q, _ in counts.most_common()]

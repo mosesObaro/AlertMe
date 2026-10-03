@@ -36,7 +36,16 @@ class ResearchGapStateManager:
             return default
 
     def load_research_problems(self) -> List[Dict[str, Any]]:
-        return self._load_json(self.problems_file, default=[])
+        from src.research_gaps.models import ResearchProblem
+        raw = self._load_json(self.problems_file, default=[])
+        migrated = []
+        for item in raw:
+            if isinstance(item, dict):
+                p = ResearchProblem.from_dict(item)
+                migrated.append(p.to_dict())
+            else:
+                migrated.append(item)
+        return migrated
 
     def save_research_problems(self, data: List[Dict[str, Any]]) -> None:
         _atomic_write_json(self.problems_file, data)
@@ -54,7 +63,16 @@ class ResearchGapStateManager:
         _atomic_write_json(self.questions_file, data)
 
     def load_extracted_papers(self) -> List[Dict[str, Any]]:
-        return self._load_json(self.papers_file, default=[])
+        from src.research_gaps.models import ExtractedPaperInfo
+        raw = self._load_json(self.papers_file, default=[])
+        migrated = []
+        for item in raw:
+            if isinstance(item, dict):
+                ep = ExtractedPaperInfo.from_dict(item)
+                migrated.append(ep.to_dict())
+            else:
+                migrated.append(item)
+        return migrated
 
     def save_extracted_papers(self, data: List[Dict[str, Any]]) -> None:
         _atomic_write_json(self.papers_file, data)

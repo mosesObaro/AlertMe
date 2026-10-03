@@ -75,3 +75,25 @@ feasibility_dimensions:
 dashboard:
   max_problems_display: 200
   max_papers_per_problem: 20
+
+# LLM Provider Configuration (Models live here, never in code)
+llm:
+  provider: "anthropic"
+  api_key_env: "ANTHROPIC_API_KEY"
+  extractor_model: "claude-sonnet-5-5"
+  grouping_model: "claude-sonnet-5-5"
+  assessor_model: "claude-opus-5-5"
+  temperature: 0.0
+  max_retries: 1
+
+# Two-stage Grouping Settings
+grouping:
+  shortlist_max: 5
+  shortlist_threshold: 0.35
+  fallback_threshold: 0.55
+
+# Evidence-based Assessment Settings (OpenAlex evidence thresholds)
+assessment:
+  min_source_count: 2
+  works_count_high_saturation: 100
+  works_count_low_saturation: 15

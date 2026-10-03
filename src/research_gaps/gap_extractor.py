@@ -3,7 +3,7 @@
 import re
 from typing import List, Optional
 from src.models import ResearchItem
-from src.research_gaps.models import ExtractedPaperInfo
+from src.research_gaps.models import ExtractedPaperInfo, EvidenceClaim
 from src.utils.logger import logger
 
 
@@ -99,8 +99,9 @@ class GapExtractor:
         main_contribution = contrib_sents[0] if contrib_sents else (sentences[-1] if sentences else "")
 
         metrics = self._extract_metrics(abstract)
-        limitations = list(limit_sents)
-        future_work = list(future_sents)
+        # Sentences are lifted verbatim from the abstract, so each is its own supporting span.
+        limitations = [EvidenceClaim(claim_text=s, paper_id=item.id, supporting_span=s) for s in limit_sents]
+        future_work = [EvidenceClaim(claim_text=s, paper_id=item.id, supporting_span=s) for s in future_sents]
 
         # Build keywords from topics + extracted terms
         keywords = list(item.topics) if item.topics else []

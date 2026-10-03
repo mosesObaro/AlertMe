@@ -226,8 +226,8 @@ class SupervisorMatcher:
         prob_tokens = self._tokens_from_list(
             list(problem.supervisor_keywords)
             + [problem.research_area]
-            + problem.known_limitations[:3]
-            + problem.unresolved_questions[:3]
+            + problem.limitation_texts()[:3]
+            + problem.question_texts()[:3]
         )
 
         matching: List[Dict] = []

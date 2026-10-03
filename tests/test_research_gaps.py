@@ -750,3 +750,77 @@ def test_supervisor_per_country_data_loads(tmp_path):
     finally:
         sm_module.SUPERVISORS_DATA_DIR = original_dir
         sm_module._COUNTRY_DIRS = original_dirs
+
+
+# ── 14. Phase 1 Data Model & Provenance Tests ─────────────────────────
+
+def test_evidence_claim_coercion_and_equality():
+    from src.research_gaps.models import EvidenceClaim, coerce_claims
+    claim = EvidenceClaim.coerce("Battery drain under burst traffic", default_paper_id="paper_123")
+    assert claim.claim_text == "Battery drain under burst traffic"
+    assert claim.paper_id == "paper_123"
+    assert claim.supporting_span == "Battery drain under burst traffic"
+    assert "battery" in claim.lower()
+    assert claim == "Battery drain under burst traffic"
+
+    claims = coerce_claims(["Limitation A", {"claim_text": "Limitation B", "paper_id": "p2", "supporting_span": "span B"}], default_paper_id="p1")
+    assert len(claims) == 2
+    assert claims[0].paper_id == "p1"
+    assert claims[1].paper_id == "p2"
+    assert claims[1].supporting_span == "span B"
+
+
+def test_citation_from_research_item():
+    from src.models import ResearchItem
+    from src.research_gaps.models import Citation
+    item = ResearchItem(
+        title="Adaptive Edge Intelligence",
+        url="https://doi.org/10.1109/TPDS.2023.12345",
+        source="IEEE",
+        authors=["Alice Smith", "Bob Jones"],
+        doi="10.1109/TPDS.2023.12345",
+        publication_date="2023-05-01",
+        venue="IEEE TPDS",
+    )
+    cit = Citation.from_research_item(item)
+    assert cit.doi == "10.1109/TPDS.2023.12345"
+    assert cit.year == 2023
+    assert cit.link == "https://doi.org/10.1109/TPDS.2023.12345"
+    assert "Alice Smith & Bob Jones (2023)" in cit.format()
+    assert "IEEE TPDS" in cit.format()
+
+    # Fallback to URL when DOI is missing
+    item_no_doi = ResearchItem(title="Tech Report", url="https://example.com/report", source="Web")
+    cit2 = Citation.from_research_item(item_no_doi)
+    assert cit2.doi is None
+    assert cit2.link == "https://example.com/report"
+
+
+def test_canonical_paper_id_consistency():
+    from src.models import ResearchItem
+    from src.research_gaps.models import canonical_paper_id
+    doi = "10.1109/tpds.2023.3289012"
+    item = ResearchItem(title="Test", url="http://x.com", source="s", doi=doi)
+    cid = canonical_paper_id(doi=doi)
+    assert item.id == cid
+    assert cid.startswith("doi_")
+
+
+def test_legacy_research_problem_migration():
+    from src.research_gaps.models import ResearchProblem, ExtractionMethod, Confidence
+    legacy_dict = {
+        "id": "prob_old1",
+        "problem_statement": "Old bottleneck in edge computing",
+        "research_area": "Edge Computing",
+        "supporting_papers": ["doi_12345"],
+        "known_limitations": ["Old limitation string"],
+        "unresolved_questions": ["Old question string"],
+    }
+    prob = ResearchProblem.from_dict(legacy_dict)
+    assert prob.extraction_method == ExtractionMethod.LEGACY_REGEX
+    assert prob.confidence == Confidence.LOW
+    assert len(prob.known_limitations) == 1
+    assert prob.known_limitations[0].claim_text == "Old limitation string"
+    assert prob.known_limitations[0].paper_id == "doi_12345"
+    assert prob.known_limitations[0].supporting_span == "Old limitation string"
+

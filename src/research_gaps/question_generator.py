@@ -28,7 +28,7 @@ class ResearchQuestionGenerator:
         eval_metrics = list(problem.evaluation_metrics)
         datasets = []
         infra = list(problem.infrastructure_requirements)
-        unresolved = list(problem.unresolved_questions)
+        unresolved = problem.question_texts()
 
         for p in relevant_papers:
             eval_metrics.extend(p.evaluation_metrics)
@@ -41,7 +41,7 @@ class ResearchQuestionGenerator:
         direction = CandidateResearchDirection(
             problem_id=problem.id,
             research_problem=problem.problem_statement,
-            research_gap=f"Gap in {problem.research_area}: existing approaches ({', '.join(problem.existing_approaches[:2]) or 'current methods'}) leave unresolved: {'; '.join(problem.known_limitations[:2]) or 'scalability challenges'}",
+            research_gap=f"Gap in {problem.research_area}: existing approaches ({', '.join(problem.existing_approaches[:2]) or 'current methods'}) leave unresolved: {'; '.join(problem.limitation_texts()[:2]) or 'scalability challenges'}",
             research_questions=research_questions,
             hypotheses=hypotheses,
             potential_contribution=potential_contribution,
@@ -104,7 +104,7 @@ class ResearchQuestionGenerator:
         area = problem.research_area or "Edge Computing"
 
         # From unresolved questions
-        for q in problem.unresolved_questions:
+        for q in problem.question_texts():
             clean_q = self._clean_phrase(q)
             if clean_q:
                 questions.append(f"How can {clean_q} be effectively addressed in {area}?")
@@ -112,7 +112,7 @@ class ResearchQuestionGenerator:
                 break
 
         # From known limitations
-        for lim in problem.known_limitations:
+        for lim in problem.limitation_texts():
             clean_lim = self._clean_phrase(lim)
             if clean_lim:
                 questions.append(f"What algorithmic or architectural approaches can overcome the limitation of {clean_lim} in {area}?")
@@ -132,13 +132,13 @@ class ResearchQuestionGenerator:
         area = problem.research_area or "Edge Computing"
 
         if problem.known_limitations:
-            lim = self._clean_phrase(problem.known_limitations[0])
+            lim = self._clean_phrase(problem.known_limitations[0].claim_text)
             hypotheses.append(
                 f"Explicitly modeling {lim} within the decision framework will prevent performance degradation in {area}."
             )
 
         if problem.unresolved_questions:
-            unres = self._clean_phrase(problem.unresolved_questions[0])
+            unres = self._clean_phrase(problem.unresolved_questions[0].claim_text)
             hypotheses.append(
                 f"An adaptive co-design approach incorporating {unres} will yield superior Pareto-optimal trade-offs."
             )
@@ -153,7 +153,7 @@ class ResearchQuestionGenerator:
         """Identify what a novel contribution could be."""
         area = problem.research_area or "Edge Computing"
         if problem.known_limitations:
-            lim = self._clean_phrase(problem.known_limitations[0])
+            lim = self._clean_phrase(problem.known_limitations[0].claim_text)
             return f"A novel theoretical and algorithmic framework addressing {lim} in resource-constrained {area} systems."
         return f"An end-to-end adaptive framework and empirical benchmark dataset addressing verified bottlenecks in {area}."
 

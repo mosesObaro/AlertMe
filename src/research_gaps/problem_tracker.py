@@ -5,7 +5,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import List, Optional
 
-from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo, ProblemStatus
+from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo, ProblemStatus, EvidenceClaim
 from src.storage.state_manager import _atomic_write_json
 from src.utils.logger import logger
 
@@ -52,6 +52,16 @@ class ProblemTracker:
                 return p
         return None
 
+    @staticmethod
+    def _merge_claims(target: List[EvidenceClaim], incoming: List[EvidenceClaim]) -> None:
+        """Append claims not already present (same paper and same text); provenance is preserved."""
+        seen = {(c.paper_id, c.claim_text) for c in target}
+        for claim in incoming:
+            key = (claim.paper_id, claim.claim_text)
+            if key not in seen:
+                target.append(claim)
+                seen.add(key)
+
     def merge_evidence(self, existing: ResearchProblem, paper: ExtractedPaperInfo) -> ResearchProblem:
         """Merge new evidence into an existing problem without duplicating."""
         existing.last_updated = datetime.now().isoformat()
@@ -60,13 +70,8 @@ class ProblemTracker:
             existing.supporting_papers.append(paper.paper_id)
             existing.frequency += 1
 
-        for limitation in paper.limitations:
-            if limitation not in existing.known_limitations:
-                existing.known_limitations.append(limitation)
-
-        for future_work in paper.future_work:
-            if future_work not in existing.unresolved_questions:
-                existing.unresolved_questions.append(future_work)
+        self._merge_claims(existing.known_limitations, paper.limitations)
+        self._merge_claims(existing.unresolved_questions, paper.future_work)
 
         # Upgrade to investigating at frequency >= 3, but NEVER auto-promote to promising
         if existing.status == ProblemStatus.NEW and existing.frequency >= 3:
