@@ -1059,3 +1059,89 @@ def test_dashboard_html_contains_no_papermap():
 
 
 
+
+# ── Step 1 Corpus Builder Tests ─────────────────────────────────────────────
+
+def test_corpus_builder_reaches_20_or_flags_insufficient_corpus(tmp_path):
+    from src.research_gaps.corpus_builder import CorpusBuilder
+    from src.utils.rate_limiter import PoliteRequester
+
+    mock_requester = MagicMock(spec=PoliteRequester)
+    # Mock OpenAlex author search
+    mock_requester.get.return_value.status_code = 200
+    mock_requester.get.return_value.json.return_value = {
+        "results": [
+            {
+                "id": "https://openalex.org/A12345",
+                "last_known_institution": {"display_name": "The Hong Kong Polytechnic University"},
+                "x_concepts": [{"display_name": "Edge Computing"}, {"display_name": "Distributed Systems"}],
+            }
+        ]
+    }
+
+    builder = CorpusBuilder(data_dir=tmp_path, requester=mock_requester)
+    prof = {
+        "id": "prof_jiannong_cao",
+        "name": "Prof. Jiannong Cao",
+        "clean_name": "Jiannong Cao",
+        "university": "The Hong Kong Polytechnic University",
+        "research_interests": ["Edge Computing", "Distributed Systems"],
+    }
+
+    corpus = builder.build_corpus_for_professor(prof)
+    assert corpus.professor_name == "Prof. Jiannong Cao"
+    assert corpus.match_confidence in ["high", "medium"]
+    assert hasattr(corpus, "insufficient_corpus")
+    assert corpus.target_count == 20
+
+
+def test_corpus_builder_excludes_below_threshold(tmp_path):
+    from src.research_gaps.corpus_builder import CorpusBuilder, CorpusPaper
+
+    builder = CorpusBuilder(data_dir=tmp_path)
+    prof = {
+        "id": "prof_test",
+        "name": "Test Prof",
+        "research_interests": ["Edge AI", "Offloading"],
+        "research_summary": "Edge computing and offloading",
+    }
+    high_rel = CorpusPaper(
+        paper_id="p1", title="Edge AI Offloading", abstract="Edge AI offloading framework", role="related", year=2025
+    )
+    low_rel = CorpusPaper(
+        paper_id="p2", title="Unrelated Medieval History", abstract="History of castles", role="related", year=2021
+    )
+
+    scored = builder._score_candidates([high_rel, low_rel], prof, set())
+    assert high_rel.relevance_score > low_rel.relevance_score
+    assert high_rel.relevance_score >= builder.relevance_threshold
+    assert low_rel.relevance_score < builder.relevance_threshold
+
+
+def test_corpus_builder_rejects_same_name_mismatch(tmp_path):
+    from src.research_gaps.corpus_builder import OpenAlexAuthorResolver
+    from src.utils.rate_limiter import PoliteRequester
+
+    mock_requester = MagicMock(spec=PoliteRequester)
+    mock_requester.get.return_value.status_code = 200
+    mock_requester.get.return_value.json.return_value = {
+        "results": [
+            {
+                "id": "https://openalex.org/A99999",
+                "last_known_institution": {"display_name": "Department of Cardiology, Paris Hospital"},
+                "x_concepts": [{"display_name": "Cardiology"}, {"display_name": "Heart Surgery"}],
+            }
+        ]
+    }
+
+    resolver = OpenAlexAuthorResolver(requester=mock_requester)
+    prof = {
+        "name": "John Smith",
+        "clean_name": "John Smith",
+        "university": "MIT CSAIL",
+        "research_interests": ["Edge Computing", "Distributed Systems"],
+    }
+
+    author_id, confidence, reason = resolver.resolve(prof)
+    assert confidence == "rejected"
+    assert "Mismatch" in reason or "rejected" in reason.lower()

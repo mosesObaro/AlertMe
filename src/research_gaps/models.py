@@ -486,3 +486,187 @@ class SupervisorMatch:
     @classmethod
     def from_dict(cls, data: Dict[str, Any]) -> "SupervisorMatch":
         return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+# ── Step 1-4 Domain Models ───────────────────────────────────────────────────
+
+@dataclass
+class CorpusPaper:
+    """A paper included in a professor's corpus."""
+    paper_id: str = ""
+    title: str = ""
+    doi: Optional[str] = None
+    arxiv_id: Optional[str] = None
+    year: int = 0
+    venue: str = ""
+    url: str = ""
+    authors: List[str] = field(default_factory=list)
+    role: str = "related"  # "own" or "related"
+    relevance_score: float = 0.0
+    relevance_reason: str = ""
+    citation_count: int = 0
+    full_text_sections: Dict[str, str] = field(default_factory=dict)
+    abstract: str = ""
+    is_oa: bool = False
+    openalex_id: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "CorpusPaper":
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class ProfessorCorpus:
+    """Collected paper corpus for a professor."""
+    professor_id: str = ""
+    professor_name: str = ""
+    university: str = ""
+    orcid: Optional[str] = None
+    openalex_author_id: Optional[str] = None
+    match_confidence: str = "high"  # "high", "medium", "low", "rejected"
+    match_reason: str = ""
+    research_interests: List[str] = field(default_factory=list)
+    papers: List[CorpusPaper] = field(default_factory=list)
+    corpus_count: int = 0
+    target_count: int = 20
+    insufficient_corpus: bool = False
+    last_processed_date: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        d = asdict(self)
+        d["papers"] = [p.to_dict() if hasattr(p, "to_dict") else p for p in self.papers]
+        return d
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "ProfessorCorpus":
+        data = dict(data)
+        if "papers" in data and isinstance(data["papers"], list):
+            data["papers"] = [
+                CorpusPaper.from_dict(p) if isinstance(p, dict) else p for p in data["papers"]
+            ]
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class UnsolvedProblemCluster:
+    """Cluster of limitation/future-work claims tested for solution coverage."""
+    cluster_id: str = ""
+    title: str = ""
+    key_phrases: List[str] = field(default_factory=list)
+    quoted_claims: List[EvidenceClaim] = field(default_factory=list)
+    support_count: int = 0
+    papers: List[str] = field(default_factory=list)
+    professors: List[str] = field(default_factory=list)
+    solution_status: str = "open"  # "open", "partially_addressed", "addressed", "unclear"
+    solution_evidence: List[Dict[str, Any]] = field(default_factory=list)
+    extraction_method: str = "rules"
+
+    def to_dict(self) -> Dict[str, Any]:
+        d = asdict(self)
+        d["quoted_claims"] = [
+            c.to_dict() if hasattr(c, "to_dict") else c for c in self.quoted_claims
+        ]
+        return d
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "UnsolvedProblemCluster":
+        data = dict(data)
+        if "quoted_claims" in data and isinstance(data["quoted_claims"], list):
+            data["quoted_claims"] = [
+                EvidenceClaim.from_dict(c) if isinstance(c, dict) else c for c in data["quoted_claims"]
+            ]
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class PhDQualificationCriterion:
+    """Verdict for one of the 6 PhD qualification dimensions."""
+    criterion_name: str = ""
+    verdict: str = "fail"  # "pass", "partial", "fail"
+    numbers: Dict[str, Any] = field(default_factory=dict)
+    rule_description: str = ""
+    confidence: str = "high"
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "PhDQualificationCriterion":
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class PhDQualificationResult:
+    """Outcome of PhD qualification rubric assessment."""
+    problem_id: str = ""
+    outcome: str = "rejected"  # "qualified", "borderline", "rejected", "insufficient_evidence"
+    criteria: Dict[str, PhDQualificationCriterion] = field(default_factory=dict)
+    summary_reason: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        d = asdict(self)
+        d["criteria"] = {
+            k: v.to_dict() if hasattr(v, "to_dict") else v for k, v in self.criteria.items()
+        }
+        return d
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "PhDQualificationResult":
+        data = dict(data)
+        if "criteria" in data and isinstance(data["criteria"], dict):
+            data["criteria"] = {
+                k: PhDQualificationCriterion.from_dict(v) if isinstance(v, dict) else v
+                for k, v in data["criteria"].items()
+            }
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class IEEESentence:
+    """A sentence in an IEEE research statement tagged as template or quote."""
+    text: str = ""
+    tag: str = "template"  # "quote" or "template"
+    citation_numbers: List[int] = field(default_factory=list)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "IEEESentence":
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class IEEEResearchStatement:
+    """Structured IEEE research statement."""
+    problem_id: str = ""
+    title: str = ""
+    abstract: str = ""
+    index_terms: List[str] = field(default_factory=list)
+    sections: Dict[str, List[IEEESentence]] = field(default_factory=dict)
+    research_questions: List[str] = field(default_factory=list)
+    references: List[Dict[str, Any]] = field(default_factory=list)
+    word_count: int = 0
+    markdown_content: str = ""
+
+    def to_dict(self) -> Dict[str, Any]:
+        d = asdict(self)
+        d["sections"] = {
+            sec: [s.to_dict() if hasattr(s, "to_dict") else s for s in s_list]
+            for sec, s_list in self.sections.items()
+        }
+        return d
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "IEEEResearchStatement":
+        data = dict(data)
+        if "sections" in data and isinstance(data["sections"], dict):
+            data["sections"] = {
+                sec: [IEEESentence.from_dict(s) if isinstance(s, dict) else s for s in s_list]
+                for sec, s_list in data["sections"].items()
+            }
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
