@@ -986,3 +986,245 @@ def test_extractor_cache_roundtrip(tmp_path, sample_research_item):
     assert res2.research_problem == res1.research_problem
 
 
+# ── 16. Phase 3 Two-Stage Problem Grouping Tests ──────────────────────
+
+LABELLED_PAPER_PAIRS = [
+    # True positives: equivalent technical research bottleneck
+    (
+        "Dynamic task offloading in edge environments incurs severe latency bottlenecks under time-varying wireless channel fading",
+        "Dynamic computation offloading frameworks for edge devices suffer from unpredictable latency spikes caused by wireless channel fading",
+        True,
+    ),
+    (
+        "Federated learning on heterogeneous edge devices suffers from client drift and straggler delays during model synchronization",
+        "Straggler effects and heterogeneous compute capacities degrade convergence rates and synchronization latency in edge federated learning",
+        True,
+    ),
+    # True negatives: distinct technical bottlenecks in edge domain
+    (
+        "Dynamic task offloading in edge environments incurs severe latency bottlenecks under time-varying wireless channel fading",
+        "Quantization and pruning of deep neural networks on microcontroller units induces catastrophic accuracy loss",
+        False,
+    ),
+    (
+        "Federated learning on heterogeneous edge devices suffers from client drift and straggler delays during model synchronization",
+        "Security vulnerabilities in vehicular edge computing architectures enable man-in-the-middle spoofing of roadside units",
+        False,
+    ),
+    (
+        "Dynamic task offloading in edge environments incurs severe latency bottlenecks under time-varying wireless channel fading",
+        "Battery thermal degradation accelerates during burst cryptographic hashing in mobile edge nodes",
+        False,
+    ),
+]
+
+
+def test_labelled_paper_pairs_fixture_tuning():
+    """Validates that Jaccard similarity separates positive pairs (>=0.28) from negative pairs (<0.20)."""
+    from src.research_gaps.problem_tracker import extract_problem_tokens, compute_token_jaccard
+
+    for s1, s2, is_same in LABELLED_PAPER_PAIRS:
+        t1 = extract_problem_tokens(s1)
+        t2 = extract_problem_tokens(s2)
+        sim = compute_token_jaccard(t1, t2)
+        if is_same:
+            assert sim >= 0.28, f"Positive pair failed threshold: {sim:.3f} < 0.28 for '{s1[:30]}' / '{s2[:30]}'"
+        else:
+            assert sim < 0.20, f"Negative pair exceeded threshold: {sim:.3f} >= 0.20 for '{s1[:30]}' / '{s2[:30]}'"
+
+
+def test_grouping_stage1_shortlisting(tmp_path):
+    from src.research_gaps.problem_tracker import ProblemTracker, extract_problem_tokens
+    from src.research_gaps.models import ResearchProblem
+
+    tracker = ProblemTracker(data_dir=tmp_path)
+    # Populate existing problems
+    p1 = ResearchProblem(
+        id="prob_offload_1",
+        problem_statement="Dynamic computation offloading under wireless channel fading in edge devices",
+        research_area="Edge Computing",
+        supervisor_keywords=["edge computing", "offloading", "wireless"],
+    )
+    p2 = ResearchProblem(
+        id="prob_quant_2",
+        problem_statement="Quantization noise in microcontroller deep learning models",
+        research_area="Edge Computing",
+        supervisor_keywords=["quantization", "microcontroller", "tinyml"],
+    )
+    tracker.save_problems([p1, p2])
+
+    query_stmt = "Dynamic task offloading suffers latency degradation under severe wireless fading"
+    tokens = extract_problem_tokens(query_stmt, keywords=["offloading", "edge computing"])
+    shortlist = tracker.shortlist_candidates(tokens, query_stmt, [p1, p2])
+
+    # Only p1 should be in shortlist; p2 should be excluded due to low overlap
+    assert len(shortlist) == 1
+    assert shortlist[0][0].id == "prob_offload_1"
+
+
+def test_grouping_stage2_llm_mock(tmp_path):
+    from src.research_gaps.problem_tracker import ProblemTracker
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.return_value = {
+        "matching_problem_id": "prob_target_123",
+        "reasoning": "Both papers address wireless fading during edge task offloading.",
+    }
+
+    tracker = ProblemTracker(data_dir=tmp_path, llm_client=mock_client)
+    target_prob = ResearchProblem(
+        id="prob_target_123",
+        problem_statement="Dynamic task offloading fails under severe wireless channel fading",
+        research_area="Edge Computing",
+        supervisor_keywords=["offloading", "fading", "edge"],
+        frequency=1,
+        supporting_papers=["paper_init"],
+    )
+    tracker.save_problems([target_prob])
+
+    incoming_paper = ExtractedPaperInfo(
+        paper_id="paper_new_1",
+        title="Adaptive Offloading Framework",
+        research_problem="Wireless channel fluctuations induce unpredictable latency in edge task offloading",
+        keywords=["offloading", "wireless", "edge"],
+    )
+
+    merged = tracker.add_or_update_problem(incoming_paper, "Edge Computing")
+    assert merged.id == "prob_target_123"
+    assert merged.frequency == 2
+    assert "paper_new_1" in merged.supporting_papers
+    assert mock_client.call_structured.call_count == 1
+
+
+def test_grouping_stage2_llm_distinct_problem(tmp_path):
+    from src.research_gaps.problem_tracker import ProblemTracker
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo, ProblemStatus
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    # LLM determines none of the candidates match
+    mock_client.call_structured.return_value = {
+        "matching_problem_id": None,
+        "reasoning": "Different abstraction layer: on-device memory vs edge network offloading.",
+    }
+
+    tracker = ProblemTracker(data_dir=tmp_path, llm_client=mock_client)
+    p_existing = ResearchProblem(
+        id="prob_offload",
+        problem_statement="Dynamic task offloading in edge nodes",
+        research_area="Edge Computing",
+        supervisor_keywords=["offloading", "edge"],
+    )
+    tracker.save_problems([p_existing])
+
+    incoming_paper = ExtractedPaperInfo(
+        paper_id="paper_distinct_1",
+        title="Microcontroller Memory Optimization",
+        research_problem="Edge on-device SRAM capacity constraints during neural network compilation",
+        keywords=["edge", "sram", "memory"],
+    )
+
+    res = tracker.add_or_update_problem(incoming_paper, "Edge Computing")
+    assert res.id != "prob_offload"
+    assert res.status == ProblemStatus.NEW
+    assert res.frequency == 1
+
+
+def test_grouping_stage2_pairwise_cache_hit(tmp_path):
+    from src.research_gaps.problem_tracker import ProblemTracker, PROMPT_VERSION
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+
+    tracker = ProblemTracker(data_dir=tmp_path, llm_client=mock_client)
+    existing = ResearchProblem(
+        id="prob_existing_1",
+        problem_statement="Dynamic task offloading under wireless channel fading",
+        research_area="Edge Computing",
+        supervisor_keywords=["offloading", "wireless"],
+    )
+    tracker.save_problems([existing])
+
+    incoming = ExtractedPaperInfo(
+        paper_id="paper_cached",
+        title="Paper Title",
+        research_problem="Task offloading latency spikes under channel fading in edge networks",
+        keywords=["offloading", "wireless"],
+    )
+
+    # Prepopulate cache with pair decision
+    pair_k = tracker._pair_cache_key(incoming.research_problem, existing.id)
+    tracker.cache[pair_k] = {"matches": True, "reasoning": "Cached match", "prompt_version": PROMPT_VERSION}
+
+    merged = tracker.add_or_update_problem(incoming, "Edge Computing")
+    assert merged.id == existing.id
+    # No LLM call should have occurred
+    assert mock_client.call_structured.call_count == 0
+
+
+def test_grouping_model_not_found_raises_immediately(tmp_path):
+    from src.research_gaps.problem_tracker import ProblemTracker
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo
+    from src.research_gaps.llm_client import AnthropicClient, ModelNotFoundError
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.side_effect = ModelNotFoundError("Model 404")
+
+    tracker = ProblemTracker(data_dir=tmp_path, llm_client=mock_client)
+    existing = ResearchProblem(
+        id="prob_1",
+        problem_statement="Dynamic task offloading in edge computing",
+        research_area="Edge Computing",
+        supervisor_keywords=["offloading", "edge"],
+    )
+    tracker.save_problems([existing])
+
+    incoming = ExtractedPaperInfo(
+        paper_id="paper_x",
+        title="Paper",
+        research_problem="Computation offloading bottleneck in edge devices",
+        keywords=["offloading", "edge"],
+    )
+
+    with pytest.raises(ModelNotFoundError):
+        tracker.add_or_update_problem(incoming, "Edge Computing")
+
+
+def test_grouping_fallback_without_llm_marks_low_confidence(tmp_path):
+    from src.research_gaps.problem_tracker import ProblemTracker
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo, Confidence
+
+    # LLM client not available (default when no API key)
+    tracker = ProblemTracker(data_dir=tmp_path)
+    existing = ResearchProblem(
+        id="prob_offload_base",
+        problem_statement="Dynamic task offloading in edge environments incurs severe latency bottlenecks under time-varying wireless channel fading",
+        research_area="Edge Computing",
+        supervisor_keywords=["offloading", "latency", "fading", "wireless", "edge"],
+        frequency=1,
+        supporting_papers=["paper_init"],
+    )
+    tracker.save_problems([existing])
+
+    # Second paper matching the positive pair (Jaccard ~ 0.318 > fallback_threshold 0.28)
+    incoming = ExtractedPaperInfo(
+        paper_id="paper_fallback_2",
+        title="Offloading Paper 2",
+        research_problem="Dynamic computation offloading frameworks for edge devices suffer from unpredictable latency spikes caused by wireless channel fading",
+        keywords=["offloading", "latency", "fading", "wireless", "edge"],
+    )
+
+    merged = tracker.add_or_update_problem(incoming, "Edge Computing")
+    assert merged.id == "prob_offload_base"
+    assert merged.frequency == 2
+    assert merged.confidence == Confidence.LOW
+
+
+

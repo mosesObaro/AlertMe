@@ -89,8 +89,8 @@ llm:
 # Two-stage Grouping Settings
 grouping:
   shortlist_max: 5
-  shortlist_threshold: 0.35
-  fallback_threshold: 0.55
+  shortlist_threshold: 0.20
+  fallback_threshold: 0.28
 
 # Evidence-based Assessment Settings (OpenAlex evidence thresholds)
 assessment:
