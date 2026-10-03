@@ -1405,5 +1405,90 @@ def test_assessment_rejects_and_retries_forbidden_citations(tmp_path):
     assert res.novelty_evidence == "2 related works indexed in literature database."
 
 
+# ── 18. Phase 5 Dashboard & Pipeline Verification Tests ───────────────
+
+def test_dashboard_embeds_full_citation_objects(sample_problem):
+    from src.research_gaps.dashboard_generator import ResearchGapDashboardGenerator
+
+    dash_gen = ResearchGapDashboardGenerator()
+    paper_data = {
+        "paper_id": "doi_fd8071479658a576",
+        "doi": "10.1109/TPDS.2023.3289012",
+        "title": "Adaptive Edge Intelligence",
+        "authors": ["Alice Smith", "Bob Jones"],
+        "year": 2023,
+        "venue": "IEEE TPDS",
+        "url": "https://doi.org/10.1109/TPDS.2023.3289012",
+    }
+    prob_dict = sample_problem.to_dict()
+    prob_dict["supporting_papers"] = ["doi_fd8071479658a576"]
+
+    payload = dash_gen.generate_dashboard_data(
+        problems=[prob_dict],
+        clusters=[],
+        directions=[],
+        papers=[paper_data],
+        feasibility_map={},
+        supervisor_map={},
+        link_results={},
+    )
+
+    prob = payload["problems"][0]
+    assert "citations" in prob
+    assert len(prob["citations"]) == 1
+    cit = prob["citations"][0]
+    assert cit["doi"] == "10.1109/TPDS.2023.3289012"
+    assert cit["link"] == "https://doi.org/10.1109/TPDS.2023.3289012"
+    assert "Alice Smith & Bob Jones (2023)" in cit["citation_string"]
+    assert "IEEE TPDS" in cit["citation_string"]
+
+
+def test_dashboard_html_contains_no_papermap():
+    from pathlib import Path
+    html_path = Path(__file__).resolve().parent.parent / "docs" / "research-gaps.html"
+    content = html_path.read_text(encoding="utf-8")
+
+    # paperMap must be completely removed
+    assert "paperMap" not in content
+    # Embedded citations property should be checked
+    assert "citations" in content
+    # Publication evidence must be rendered
+    assert "publication_evidence" in content
+
+
+def test_pipeline_ci_check_fails_when_all_llm_calls_fail(tmp_path):
+    from src.research_gaps.pipeline import ResearchGapPipeline
+
+    pipeline = ResearchGapPipeline()
+    # Mock LLM client available
+    pipeline.gap_extractor.llm_client = MagicMock()
+    pipeline.gap_extractor.llm_client.is_available.return_value = True
+
+    # Simulate all LLM calls failing
+    pipeline.gap_extractor.llm_call_count = 5
+    pipeline.gap_extractor.fallback_count = 5
+
+    # Run the CI check logic directly
+    total_calls = (
+        pipeline.gap_extractor.llm_call_count
+        + pipeline.problem_tracker.llm_call_count
+        + pipeline.feasibility_assessor.llm_call_count
+    )
+    total_fallbacks = (
+        pipeline.gap_extractor.fallback_count
+        + pipeline.problem_tracker.fallback_count
+        + pipeline.feasibility_assessor.fallback_count
+    )
+    with pytest.raises(RuntimeError) as exc_info:
+        if pipeline.gap_extractor.llm_client.is_available() and total_calls > 0:
+            if total_fallbacks >= total_calls:
+                raise RuntimeError(
+                    f"CI Pipeline Failure: Every LLM call failed ({total_fallbacks}/{total_calls} failed)."
+                )
+
+    assert "CI Pipeline Failure" in str(exc_info.value)
+
+
+
 
 

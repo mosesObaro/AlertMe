@@ -38,15 +38,15 @@ class ResearchGapPipeline:
         self.gap_config = load_yaml_file(CONFIG_DIR / "research_gaps.yaml")
         self.state_manager = ResearchGapStateManager()
         self.deduplicator = Deduplicator()
-        self.gap_extractor = GapExtractor()
-        self.problem_tracker = ProblemTracker()
+        self.gap_extractor = GapExtractor(config=self.gap_config)
+        self.problem_tracker = ProblemTracker(config=self.gap_config)
         self.clusterer = ProblemClusterer(
             similarity_threshold=self.gap_config.get("clustering", {}).get("similarity_threshold", 0.55),
             min_cluster_size=self.gap_config.get("clustering", {}).get("min_cluster_size", 2),
         )
         self.question_generator = ResearchQuestionGenerator()
         self.supervisor_matcher = SupervisorMatcher()
-        self.feasibility_assessor = FeasibilityAssessor()
+        self.feasibility_assessor = FeasibilityAssessor(config=self.gap_config)
 
         lv_cfg = self.gap_config.get("link_verification", {})
         self.link_verifier = LinkVerifier(
@@ -279,6 +279,27 @@ class ResearchGapPipeline:
             "promising_problems": sum(1 for p in problems if p.get("status") == ProblemStatus.PROMISING),
             "shortlisted_problems": sum(1 for p in problems if p.get("status") == ProblemStatus.SHORTLISTED),
         }
+
+        total_llm_calls = (
+            self.gap_extractor.llm_call_count
+            + self.problem_tracker.llm_call_count
+            + self.feasibility_assessor.llm_call_count
+        )
+        total_fallbacks = (
+            self.gap_extractor.fallback_count
+            + self.problem_tracker.fallback_count
+            + self.feasibility_assessor.fallback_count
+        )
+        pipeline_meta["llm_calls_total"] = total_llm_calls
+        pipeline_meta["llm_fallbacks_total"] = total_fallbacks
+
+        # Fail the CI job if an API key was supplied, calls were attempted, and every call failed
+        if self.gap_extractor.llm_client.is_available() and total_llm_calls > 0:
+            if total_fallbacks >= total_llm_calls:
+                raise RuntimeError(
+                    f"CI Pipeline Failure: Every LLM call failed ({total_fallbacks}/{total_llm_calls} failed)."
+                )
+
         self.state_manager.save_pipeline_metadata(pipeline_meta)
 
         # ── 11. Generate dashboard + report ───────────────────────────

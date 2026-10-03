@@ -761,16 +761,6 @@
             });
         }
 
-        const paperMap = {};
-        if (Array.isArray(appData.papers)) {
-            appData.papers.forEach(item => {
-                if (item.paper_id) paperMap[item.paper_id] = item;
-                if (item.id) paperMap[item.id] = item;
-            });
-        } else if (appData.papers) {
-            Object.assign(paperMap, appData.papers);
-        }
-
         const feasMap = appData.feasibility || {};
 
         let html = '';
@@ -780,8 +770,11 @@
             const rArea = p.research_area || p.area || 'N/A';
             const rClus = p.problem_cluster || p.cluster || 'N/A';
             const feas = feasMap[p.id] || {};
-            const lims = p.known_limitations || p.recurring_limitations || [];
-            const unres = p.unresolved_questions || [];
+            const rawLims = p.known_limitations || p.recurring_limitations || [];
+            const rawUnres = p.unresolved_questions || [];
+            const lims = rawLims.map(l => (typeof l === 'object' && l !== null ? (l.claim_text || '') : l)).filter(Boolean);
+            const unres = rawUnres.map(q => (typeof q === 'object' && q !== null ? (q.claim_text || '') : q)).filter(Boolean);
+            const citations = p.citations || [];
 
             html += `
                 <tr class="expandable" onclick="toggleRow('${rowId}')">
@@ -811,11 +804,16 @@
                             
                             <h4>📚 Supporting Literature & Source Links</h4>
                             <ul>
-                                ${(p.supporting_papers || []).map(pid => {
-                                    const paper = paperMap[pid] || { title: pid, url: '' };
-                                    const linkInfo = paper.url ? getLinkStatusHtml(paper.url) : '';
-                                    return `<li><a href="${escapeHtml(paper.url || '#')}" target="_blank" rel="noopener noreferrer">📄 ${escapeHtml(paper.title || pid)}</a> ${linkInfo} ${paper.venue ? `<em style="color:#666">(${escapeHtml(paper.venue)})</em>` : ''}</li>`;
-                                }).join('') || '<li>No papers linked</li>'}
+                                ${citations.length ? citations.map(c => {
+                                    const link = c.link || (c.doi ? `https://doi.org/${encodeURIComponent(c.doi)}` : c.url) || '#';
+                                    const linkInfo = (link && link !== '#') ? getLinkStatusHtml(link) : '';
+                                    const authors = (c.authors && c.authors.length) ? (c.authors.length > 3 ? `${escapeHtml(c.authors[0])} et al.` : c.authors.map(escapeHtml).join(' & ')) : 'Unknown authors';
+                                    const year = c.year ? `(${c.year})` : '(n.d.)';
+                                    const title = escapeHtml((c.title || 'Untitled').replace(/\.$/, ''));
+                                    const venue = c.venue ? `<em>${escapeHtml(c.venue)}.</em>` : '';
+                                    const text = `${authors} ${year}. ${title}. ${venue}`.trim();
+                                    return `<li><a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">📄 ${text}</a> ${linkInfo}</li>`;
+                                }).join('') : ((p.supporting_papers || []).map(pid => `<li>📄 ${escapeHtml(pid)}</li>`).join('') || '<li>No papers linked</li>')}
                             </ul>
                             
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem; background: #fafafa; padding: 1rem; border-radius: 6px;">
@@ -829,7 +827,7 @@
                                     <h4>⚖️ Evidence-Based PhD Feasibility Assessment</h4>
                                     <p><strong>Novelty:</strong> <span class="badge badge-outline">${escapeHtml(feas.novelty || p.novelty_notes || 'high')}</span> <small>${escapeHtml(feas.novelty_evidence || '')}</small></p>
                                     <p><strong>Feasibility:</strong> <span class="badge badge-outline">${escapeHtml(feas.feasibility || p.feasibility_notes || 'medium')}</span> <small>${escapeHtml(feas.feasibility_evidence || '')}</small></p>
-                                    <p><strong>Publication Potential:</strong> <span class="badge badge-outline">${escapeHtml(feas.publication_potential || 'high')}</span></p>
+                                    <p><strong>Publication Potential:</strong> <span class="badge badge-outline">${escapeHtml(feas.publication_potential || 'high')}</span> <small>${escapeHtml(feas.publication_evidence || '')}</small></p>
                                     <p><strong>PhD Depth:</strong> <span class="badge badge-outline">${escapeHtml(feas.phd_depth || 'high')}</span> <small>${escapeHtml(feas.phd_depth_evidence || '')}</small></p>
                                 </div>
                             </div>

@@ -47,8 +47,45 @@ class ResearchGapDashboardGenerator:
         verified_links = sum(1 for v in link_results.values() if isinstance(v, dict) and v.get("link_status") == "valid")
         broken_links = sum(1 for v in link_results.values() if isinstance(v, dict) and v.get("link_status") == "broken")
 
-        # ── Enrich problems with their supervisor matches inline ─────────────
-        # Build a flat supervisor list for the dashboard "Supervisors" tab
+        # ── Embed full Citation objects from papers directly into problems ────
+        citations_map: Dict[str, Dict[str, Any]] = {}
+        for p in papers:
+            pid = p.get("paper_id") or p.get("id")
+            if pid:
+                doi = p.get("doi") or None
+                url = p.get("url") or ""
+                link = f"https://doi.org/{doi}" if doi else url
+                authors = p.get("authors") or []
+                year = p.get("year") or 0
+                title = p.get("title") or "Untitled"
+                venue = p.get("venue") or ""
+
+                if len(authors) > 3:
+                    author_str = f"{authors[0]} et al."
+                elif len(authors) == 2:
+                    author_str = f"{authors[0]} & {authors[1]}"
+                elif len(authors) == 1:
+                    author_str = authors[0]
+                else:
+                    author_str = "Unknown authors"
+                year_str = str(year) if year else "n.d."
+                citation_str = f"{author_str} ({year_str}). {title.rstrip('.')}."
+                if venue:
+                    citation_str += f" {venue.rstrip('.')}."
+
+                citations_map[pid] = {
+                    "paper_id": pid,
+                    "doi": doi,
+                    "title": title,
+                    "authors": authors,
+                    "year": year,
+                    "venue": venue,
+                    "url": url,
+                    "link": link,
+                    "citation_string": citation_str,
+                }
+
+        # ── Enrich problems with supervisor matches and embedded citations ──
         supervisor_list: List[Dict[str, Any]] = []
         supervisor_stats: Dict[str, Any] = {
             "total_matches": 0,
@@ -59,8 +96,26 @@ class ResearchGapDashboardGenerator:
         for prob_dict in problems:
             prob_id = prob_dict.get("id", "")
             prob_matches = supervisor_map.get(prob_id, [])
-            # Attach matches inline for fast rendering
             prob_dict["supervisor_matches"] = prob_matches
+
+            # Embed citations directly inside each problem record
+            prob_citations = []
+            for pid in prob_dict.get("supporting_papers", []):
+                if pid in citations_map:
+                    prob_citations.append(citations_map[pid])
+                else:
+                    prob_citations.append({
+                        "paper_id": pid,
+                        "doi": None,
+                        "title": pid,
+                        "authors": [],
+                        "year": 0,
+                        "venue": "",
+                        "url": "",
+                        "link": "",
+                        "citation_string": pid,
+                    })
+            prob_dict["citations"] = prob_citations
 
             for m in prob_matches:
                 if not isinstance(m, dict):
@@ -163,19 +218,29 @@ class ResearchGapDashboardGenerator:
                 if p.get("known_limitations"):
                     lines.append("- **Known Limitations:**")
                     for lim in p["known_limitations"][:5]:
-                        lines.append(f"  - {lim}")
+                        lim_text = lim.get("claim_text", "") if isinstance(lim, dict) else str(lim)
+                        lines.append(f"  - {lim_text}")
 
                 if p.get("unresolved_questions"):
                     lines.append("- **Unresolved Questions:**")
                     for q in p["unresolved_questions"][:5]:
-                        lines.append(f"  - {q}")
+                        q_text = q.get("claim_text", "") if isinstance(q, dict) else str(q)
+                        lines.append(f"  - {q_text}")
+
+                if p.get("citations"):
+                    lines.append("- **Supporting Literature:**")
+                    for cit in p["citations"][:5]:
+                        c_str = cit.get("citation_string") or cit.get("title", "")
+                        c_link = cit.get("link") or ""
+                        lines.append(f"  - [{c_str}]({c_link})" if c_link else f"  - {c_str}")
 
                 # Feasibility
                 feas = feasibility_map.get(p.get("id", ""), {})
                 if feas:
-                    lines.append(f"- **Novelty:** {feas.get('novelty', 'unknown')}")
-                    lines.append(f"- **Feasibility:** {feas.get('feasibility', 'unknown')}")
-                    lines.append(f"- **Publication Potential:** {feas.get('publication_potential', 'unknown')}")
+                    lines.append(f"- **Novelty:** {feas.get('novelty', 'unknown')} ({feas.get('novelty_evidence', '')})")
+                    lines.append(f"- **Feasibility:** {feas.get('feasibility', 'unknown')} ({feas.get('feasibility_evidence', '')})")
+                    lines.append(f"- **Publication Potential:** {feas.get('publication_potential', 'unknown')} ({feas.get('publication_evidence', '')})")
+                    lines.append(f"- **PhD Depth:** {feas.get('phd_depth', 'unknown')} ({feas.get('phd_depth_evidence', '')})")
 
                 lines.append("")
 
