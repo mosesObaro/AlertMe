@@ -1227,4 +1227,183 @@ def test_grouping_fallback_without_llm_marks_low_confidence(tmp_path):
     assert merged.confidence == Confidence.LOW
 
 
+# ── 17. Phase 4 Feasibility Assessment Tests ──────────────────────────
+
+def test_assessment_insufficient_evidence_below_min_source_count(tmp_path):
+    from src.research_gaps.feasibility import FeasibilityAssessor
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo
+
+    assessor = FeasibilityAssessor(cache_dir=tmp_path / "cache")
+    problem = ResearchProblem(
+        id="prob_single_source",
+        problem_statement="Isolated problem statement",
+        supporting_papers=["paper_1"],  # 1 paper < min_source_count (2)
+    )
+    paper1 = ExtractedPaperInfo(paper_id="paper_1", title="Paper 1")
+
+    res = assessor.assess(problem, [paper1], [])
+    assert res.novelty == "unknown"
+    assert "Insufficient evidence" in res.novelty_evidence
+    assert res.feasibility == "unknown"
+    assert "Insufficient evidence" in res.feasibility_evidence
+    assert res.publication_potential == "unknown"
+    assert "Insufficient evidence" in res.publication_evidence
+    assert res.phd_depth == "unknown"
+    assert "Insufficient evidence" in res.phd_depth_evidence
+
+
+def test_assessment_deterministic_rubric(tmp_path):
+    from src.research_gaps.feasibility import FeasibilityAssessor
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo, EvidenceClaim
+
+    assessor = FeasibilityAssessor(cache_dir=tmp_path / "cache")
+    problem = ResearchProblem(
+        id="prob_sufficient_sources",
+        problem_statement="Task offloading under severe battery energy degradation",
+        supporting_papers=["paper_1", "paper_2"],
+        known_limitations=[
+            EvidenceClaim(claim_text="Battery drain", paper_id="paper_1", supporting_span="Battery drain"),
+            EvidenceClaim(claim_text="Thermal throttle", paper_id="paper_2", supporting_span="Thermal throttle"),
+        ],
+        unresolved_questions=[
+            EvidenceClaim(claim_text="Energy harvesting", paper_id="paper_1", supporting_span="Energy harvesting"),
+            EvidenceClaim(claim_text="Cooperative offload", paper_id="paper_2", supporting_span="Cooperative offload"),
+        ],
+        candidate_methods=["Actor-critic reinforcement learning", "Dynamic voltage scaling"],
+        existing_approaches=["Baseline heuristic"],
+    )
+    paper1 = ExtractedPaperInfo(paper_id="paper_1", title="Paper 1", citation_count=20)
+    paper2 = ExtractedPaperInfo(paper_id="paper_2", title="Paper 2", citation_count=15)
+
+    res = assessor.assess(problem, [paper1, paper2], [])
+    assert res.novelty in ["high", "medium", "low"]
+    assert "SEC" not in res.publication_evidence
+    assert "INFOCOM" not in res.publication_evidence
+    assert "MobiCom" not in res.publication_evidence
+    assert "NeurIPS" not in res.publication_evidence
+    assert "literature" in res.novelty_evidence.lower()
+    assert res.feasibility == "high"  # has methods and existing approaches
+    assert res.publication_potential == "high"  # 2 limitations
+    assert res.phd_depth == "high"  # 2 unresolved questions
+
+
+def test_assessment_opus_llm_mock(tmp_path):
+    from src.research_gaps.feasibility import FeasibilityAssessor
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.return_value = {
+        "novelty": "high",
+        "novelty_evidence": "Low saturation: only 2 related works indexed in literature database.",
+        "novelty_confidence": "high",
+        "feasibility": "high",
+        "feasibility_evidence": "Candidate methods established across 2 supporting papers.",
+        "feasibility_confidence": "medium",
+        "publication_potential": "high",
+        "publication_evidence": "Significant bottleneck supported by 35 citations across paper_1 and paper_2.",
+        "publication_confidence": "high",
+        "phd_depth": "high",
+        "phd_depth_evidence": "Multi-year thesis scope supported by 2 unresolved questions.",
+        "phd_depth_confidence": "high",
+    }
+
+    assessor = FeasibilityAssessor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    problem = ResearchProblem(
+        id="prob_opus_test",
+        problem_statement="Dynamic task offloading under thermal throttling",
+        supporting_papers=["paper_1", "paper_2"],
+    )
+    paper1 = ExtractedPaperInfo(paper_id="paper_1", title="Paper 1")
+    paper2 = ExtractedPaperInfo(paper_id="paper_2", title="Paper 2")
+
+    res = assessor.assess(problem, [paper1, paper2], [])
+    assert res.novelty == "high"
+    assert "2 related works" in res.novelty_evidence
+    assert res.feasibility == "high"
+    assert res.publication_potential == "high"
+    assert mock_client.call_structured.call_count == 1
+    # Model ID passed should be claude-opus-5-5
+    call_args = mock_client.call_structured.call_args[1]
+    assert call_args["model"] == "claude-opus-5-5"
+
+
+def test_assessment_opus_model_not_found_raises_immediately(tmp_path):
+    from src.research_gaps.feasibility import FeasibilityAssessor
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo
+    from src.research_gaps.llm_client import AnthropicClient, ModelNotFoundError
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.side_effect = ModelNotFoundError("Model claude-opus-5-5 not found (404)")
+
+    assessor = FeasibilityAssessor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    problem = ResearchProblem(
+        id="prob_404_test",
+        problem_statement="Problem statement",
+        supporting_papers=["paper_1", "paper_2"],
+    )
+    paper1 = ExtractedPaperInfo(paper_id="paper_1", title="Paper 1")
+    paper2 = ExtractedPaperInfo(paper_id="paper_2", title="Paper 2")
+
+    with pytest.raises(ModelNotFoundError):
+        assessor.assess(problem, [paper1, paper2], [])
+
+
+def test_assessment_rejects_and_retries_forbidden_citations(tmp_path):
+    from src.research_gaps.feasibility import FeasibilityAssessor
+    from src.research_gaps.models import ResearchProblem, ExtractedPaperInfo
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+
+    # First attempt cites forbidden external conference; second attempt succeeds with valid evidence
+    invalid_resp = {
+        "novelty": "high",
+        "novelty_evidence": "High interest at SEC, INFOCOM, and MobiCom top-tier conferences.",
+        "novelty_confidence": "high",
+        "feasibility": "high",
+        "feasibility_evidence": "Established methods.",
+        "feasibility_confidence": "high",
+        "publication_potential": "high",
+        "publication_evidence": "Accepted at NeurIPS.",
+        "publication_confidence": "high",
+        "phd_depth": "high",
+        "phd_depth_evidence": "2 questions.",
+        "phd_depth_confidence": "high",
+    }
+    valid_resp = {
+        "novelty": "high",
+        "novelty_evidence": "2 related works indexed in literature database.",
+        "novelty_confidence": "high",
+        "feasibility": "high",
+        "feasibility_evidence": "Established methods in 2 papers.",
+        "feasibility_confidence": "high",
+        "publication_potential": "high",
+        "publication_evidence": "20 citations across supporting papers.",
+        "publication_confidence": "high",
+        "phd_depth": "high",
+        "phd_depth_evidence": "2 questions.",
+        "phd_depth_confidence": "high",
+    }
+    mock_client.call_structured.side_effect = [invalid_resp, valid_resp]
+
+    assessor = FeasibilityAssessor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    problem = ResearchProblem(
+        id="prob_retry_test",
+        problem_statement="Problem statement",
+        supporting_papers=["paper_1", "paper_2"],
+    )
+    paper1 = ExtractedPaperInfo(paper_id="paper_1", title="Paper 1")
+    paper2 = ExtractedPaperInfo(paper_id="paper_2", title="Paper 2")
+
+    res = assessor.assess(problem, [paper1, paper2], [])
+    assert mock_client.call_structured.call_count == 2
+    assert "SEC" not in res.novelty_evidence
+    assert res.novelty_evidence == "2 related works indexed in literature database."
+
+
+
 
