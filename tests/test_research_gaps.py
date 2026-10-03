@@ -824,3 +824,165 @@ def test_legacy_research_problem_migration():
     assert prob.known_limitations[0].paper_id == "doi_12345"
     assert prob.known_limitations[0].supporting_span == "Old limitation string"
 
+
+# ── 15. Phase 2 Structured LLM Extractor Tests ────────────────────────
+
+def test_llm_extractor_structured_mock(tmp_path, sample_research_item):
+    from src.research_gaps.gap_extractor import GapExtractor
+    from src.research_gaps.models import ExtractionMethod, Confidence
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.return_value = {
+        "scoped_problem": "Dynamic task offloading frameworks fail to sustain performance under severe energy consumption constraints.",
+        "research_question": "How can dynamic offloading maintain latency bounds despite battery energy consumption constraints?",
+        "why_unresolved": "Interference creates unmodeled state transitions.",
+        "limitations": [
+            {
+                "claim_text": "Battery energy degradation is unconsidered",
+                "supporting_span": "The limitation is that this work does not consider energy consumption",
+            }
+        ],
+        "open_questions": [
+            {
+                "claim_text": "Extension to federated learning scenarios",
+                "supporting_span": "Future work will extend to federated learning scenarios",
+            }
+        ],
+        "existing_approaches": ["Static heuristic schedulers"],
+        "candidate_methods": ["Deep reinforcement learning actor-critic"],
+        "evaluation_metrics": ["latency", "energy"],
+    }
+
+    extractor = GapExtractor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    res = extractor.extract(sample_research_item)
+
+    assert res.extraction_method == ExtractionMethod.LLM
+    assert res.confidence == Confidence.NORMAL
+    assert res.research_problem == "Dynamic task offloading frameworks fail to sustain performance under severe energy consumption constraints."
+    assert len(res.limitations) == 1
+    assert res.limitations[0].supporting_span == "The limitation is that this work does not consider energy consumption"
+    assert len(res.future_work) == 1
+    assert res.future_work[0].supporting_span == "Future work will extend to federated learning scenarios"
+    assert res.existing_approaches == ["Static heuristic schedulers"]
+    assert res.candidate_methods == ["Deep reinforcement learning actor-critic"]
+
+
+def test_extractor_model_not_found_raises_immediately(tmp_path, sample_research_item):
+    from src.research_gaps.gap_extractor import GapExtractor
+    from src.research_gaps.llm_client import AnthropicClient, ModelNotFoundError
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.side_effect = ModelNotFoundError("Model claude-sonnet-5-5 not found (404)")
+
+    extractor = GapExtractor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    with pytest.raises(ModelNotFoundError):
+        extractor.extract(sample_research_item)
+
+    assert extractor.fallback_count == 0
+
+
+def test_extractor_transient_error_retries_and_falls_back(tmp_path, sample_research_item):
+    from src.research_gaps.gap_extractor import GapExtractor
+    from src.research_gaps.models import ExtractionMethod
+    from src.research_gaps.llm_client import AnthropicClient, LLMExecutionError
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.side_effect = LLMExecutionError("API 500 server error")
+
+    extractor = GapExtractor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    res = extractor.extract(sample_research_item)
+
+    # Max retries is 1, so 2 calls made before falling back
+    assert mock_client.call_structured.call_count == 2
+    assert res.extraction_method == ExtractionMethod.DETERMINISTIC_FALLBACK
+    assert extractor.fallback_count == 1
+
+
+def test_extractor_drops_unsupported_spans(tmp_path, sample_research_item):
+    from src.research_gaps.gap_extractor import GapExtractor
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.return_value = {
+        "scoped_problem": "Offloading latency bottleneck in edge computing.",
+        "research_question": "How to optimize?",
+        "why_unresolved": "Complex.",
+        "limitations": [
+            {
+                "claim_text": "Fabricated limitation",
+                "supporting_span": "This phrase absolutely does not appear anywhere in the abstract text at all.",
+            }
+        ],
+        "open_questions": [],
+        "existing_approaches": ["Heuristics"],
+        "candidate_methods": ["Novel DRL framework"],
+        "evaluation_metrics": ["latency"],
+    }
+
+    extractor = GapExtractor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    res = extractor.extract(sample_research_item)
+
+    assert len(res.limitations) == 0
+
+
+def test_extractor_flags_low_confidence_when_methods_equal_statement(tmp_path, sample_research_item):
+    from src.research_gaps.gap_extractor import GapExtractor
+    from src.research_gaps.models import Confidence
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    stmt = "Dynamic task offloading in heterogeneous edge environments"
+    mock_client.call_structured.return_value = {
+        "scoped_problem": stmt,
+        "research_question": "How to offload?",
+        "why_unresolved": "Hard.",
+        "limitations": [],
+        "open_questions": [],
+        "existing_approaches": ["Baselines"],
+        "candidate_methods": [stmt],  # Exact duplication symptom
+        "evaluation_metrics": ["latency"],
+    }
+
+    extractor = GapExtractor(cache_dir=tmp_path / "cache", llm_client=mock_client)
+    res = extractor.extract(sample_research_item)
+
+    assert res.confidence == Confidence.LOW
+    assert "candidate_methods_equals_statement" in res.low_confidence_reasons
+
+
+def test_extractor_cache_roundtrip(tmp_path, sample_research_item):
+    from src.research_gaps.gap_extractor import GapExtractor
+    from src.research_gaps.llm_client import AnthropicClient
+
+    mock_client = MagicMock(spec=AnthropicClient)
+    mock_client.is_available.return_value = True
+    mock_client.call_structured.return_value = {
+        "scoped_problem": "Dynamic task offloading in heterogeneous edge environments.",
+        "research_question": "How to optimize?",
+        "why_unresolved": "Hard.",
+        "limitations": [],
+        "open_questions": [],
+        "existing_approaches": ["Baselines"],
+        "candidate_methods": ["New algorithm"],
+        "evaluation_metrics": ["latency"],
+    }
+
+    cache_dir = tmp_path / "cache"
+    extractor1 = GapExtractor(cache_dir=cache_dir, llm_client=mock_client)
+    res1 = extractor1.extract(sample_research_item)
+    assert mock_client.call_structured.call_count == 1
+
+    # Second extractor instance reading from same cache dir
+    extractor2 = GapExtractor(cache_dir=cache_dir, llm_client=mock_client)
+    res2 = extractor2.extract(sample_research_item)
+    # Call count should still be 1 (served from cache)
+    assert mock_client.call_structured.call_count == 1
+    assert res2.research_problem == res1.research_problem
+
+
