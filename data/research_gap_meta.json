@@ -1,14 +1,14 @@
 {
-  "last_updated": "2026-10-02T08:05:30.008255+00:00",
-  "last_link_verification": "",
-  "execution_duration_seconds": 18.320941,
-  "raw_items_collected": 10,
-  "unique_papers": 10,
-  "extracted_papers": 10,
-  "total_problems": 10,
+  "last_updated": "2026-10-03T02:46:01.731412+00:00",
+  "last_link_verification": "2026-10-03T02:46:01.731412+00:00",
+  "execution_duration_seconds": 375.633537,
+  "raw_items_collected": 290,
+  "unique_papers": 269,
+  "extracted_papers": 269,
+  "total_problems": 111,
   "total_clusters": 1,
   "total_directions": 8,
-  "new_problems": 2,
+  "new_problems": 103,
   "promising_problems": 0,
   "shortlisted_problems": 0
 }
