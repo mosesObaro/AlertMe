@@ -247,6 +247,7 @@ class SupervisorMatch:
     semantic_scholar_url: str = ""
     link_status: str = LinkStatus.UNKNOWN
     match_score: float = 0.0
+    match_explanation: str = ""
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

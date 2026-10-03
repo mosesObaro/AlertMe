@@ -47,6 +47,38 @@ class ResearchGapDashboardGenerator:
         verified_links = sum(1 for v in link_results.values() if isinstance(v, dict) and v.get("link_status") == "valid")
         broken_links = sum(1 for v in link_results.values() if isinstance(v, dict) and v.get("link_status") == "broken")
 
+        # ── Enrich problems with their supervisor matches inline ─────────────
+        # Build a flat supervisor list for the dashboard "Supervisors" tab
+        supervisor_list: List[Dict[str, Any]] = []
+        supervisor_stats: Dict[str, Any] = {
+            "total_matches": 0,
+            "by_country": {},
+            "by_area": {},
+        }
+
+        for prob_dict in problems:
+            prob_id = prob_dict.get("id", "")
+            prob_matches = supervisor_map.get(prob_id, [])
+            # Attach matches inline for fast rendering
+            prob_dict["supervisor_matches"] = prob_matches
+
+            for m in prob_matches:
+                if not isinstance(m, dict):
+                    continue
+                supervisor_stats["total_matches"] += 1
+                country = m.get("country", "Unknown")
+                supervisor_stats["by_country"][country] = supervisor_stats["by_country"].get(country, 0) + 1
+                area = prob_dict.get("research_area", "Unknown")
+                supervisor_stats["by_area"][area] = supervisor_stats["by_area"].get(area, 0) + 1
+
+                # Add to flat supervisor list for the supervisors tab
+                supervisor_list.append({
+                    "problem_id": prob_id,
+                    "problem_statement": prob_dict.get("problem_statement", "")[:120],
+                    "research_area": prob_dict.get("research_area", ""),
+                    **m,
+                })
+
         payload = {
             "meta": {
                 "last_updated": meta.get("last_updated", today),
@@ -61,6 +93,8 @@ class ResearchGapDashboardGenerator:
                 "shortlisted_problems": shortlisted_count,
                 "verified_links": verified_links,
                 "broken_links": broken_links,
+                "total_supervisor_matches": supervisor_stats["total_matches"],
+                "supervisor_matches_by_country": supervisor_stats["by_country"],
             },
             "problems": problems,
             "clusters": clusters,
@@ -68,6 +102,7 @@ class ResearchGapDashboardGenerator:
             "papers": papers[:200],
             "feasibility": feasibility_map,
             "supervisors": supervisor_map,
+            "supervisor_list": supervisor_list,
             "link_verification": link_results,
         }
         return payload
@@ -79,6 +114,7 @@ class ResearchGapDashboardGenerator:
             _atomic_write_json(self.docs_data_dir / "research_problems.json", payload.get("problems", []))
             _atomic_write_json(self.docs_data_dir / "research_gap_clusters.json", payload.get("clusters", []))
             _atomic_write_json(self.docs_data_dir / "research_questions.json", payload.get("directions", []))
+            _atomic_write_json(self.docs_data_dir / "professor_matches.json", payload.get("supervisor_list", []))
             # Combined payload for single-fetch dashboard loading
             _atomic_write_json(self.docs_data_dir / "research_gap_data.json", payload)
             logger.info(f"Dashboard data written to {self.docs_data_dir}")

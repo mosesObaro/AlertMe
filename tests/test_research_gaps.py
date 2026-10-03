@@ -485,3 +485,268 @@ def test_extracted_paper_id_generation():
     p2 = ExtractedPaperInfo(title="Different Title", url="https://example.com/2", doi="10.123/456")
     # Same DOI should produce same paper_id
     assert p1.paper_id == p2.paper_id
+
+
+# ── 13. Enhanced SupervisorMatcher ──────────────────────────────────
+
+
+def _make_matcher_with_data(supervisor_data: dict) -> SupervisorMatcher:
+    """Helper: return a SupervisorMatcher whose load_supervisor_data is mocked."""
+    matcher = SupervisorMatcher()
+    matcher._professor_cache = supervisor_data
+    return matcher
+
+
+def test_supervisor_match_explanation_field(sample_problem):
+    """Matched SupervisorMatch should contain a non-empty match_explanation."""
+    matcher = _make_matcher_with_data({
+        "prof_edge": {
+            "name": "Prof. Edge Expert",
+            "university": "Test University",
+            "country": "UK",
+            "research_interests": ["Edge Computing", "Task Offloading", "Distributed Systems"],
+            "research_summary": "Expert in edge computing and task offloading for IoT.",
+            "edge_relevance": "Direct research in edge AI and distributed scheduling.",
+            "research_trajectory": "From cloud computing to edge intelligence.",
+        }
+    })
+    matches = matcher.match_supervisors(sample_problem)
+    assert len(matches) > 0
+    top = matches[0]
+    assert isinstance(top.match_explanation, str)
+    assert len(top.match_explanation) > 10  # Non-trivial explanation produced
+
+
+def test_supervisor_match_score_range(sample_problem):
+    """Match scores must be in [0, 1]."""
+    matcher = _make_matcher_with_data({
+        "prof_a": {
+            "name": "Prof. A",
+            "university": "Uni A",
+            "country": "Germany",
+            "research_interests": ["Edge Computing", "Federated Learning"],
+            "research_summary": "Federated learning at the edge.",
+            "edge_relevance": "edge inference and scheduling",
+            "research_trajectory": "Cloud to edge.",
+        },
+        "prof_b": {
+            "name": "Prof. B",
+            "university": "Uni B",
+            "country": "Canada",
+            "research_interests": ["Quantum Computing", "Number Theory"],
+            "research_summary": "Pure mathematics and quantum algorithms.",
+            "edge_relevance": "",
+            "research_trajectory": "Academia.",
+        },
+    })
+    matches = matcher.match_supervisors(sample_problem)
+    for m in matches:
+        assert 0.0 <= m.match_score <= 1.0
+
+
+def test_supervisor_recruitment_bonus(sample_problem):
+    """CONFIRMED_ACTIVE recruitment status should boost score over UNKNOWN."""
+    base_data = {
+        "name": "Prof. Active",
+        "university": "Active University",
+        "country": "HK",
+        "research_interests": ["Edge Computing"],
+        "research_summary": "edge computing",
+        "edge_relevance": "edge computing",
+        "research_trajectory": "edge systems",
+    }
+    prof_active = {**base_data, "recruitment": {"status": "CONFIRMED_ACTIVE"}}
+    prof_unknown = {**base_data, "name": "Prof. Passive", "recruitment": {"status": "UNKNOWN"}}
+
+    matcher_active = _make_matcher_with_data({"a": prof_active})
+    matcher_passive = _make_matcher_with_data({"b": prof_unknown})
+
+    score_active = matcher_active.match_supervisors(sample_problem)
+    score_passive = matcher_passive.match_supervisors(sample_problem)
+
+    if score_active and score_passive:
+        assert score_active[0].match_score >= score_passive[0].match_score
+
+
+def test_supervisor_pub_relevance_boosts_score(sample_problem):
+    """A professor with a relevant recent publication should score higher."""
+    base = {
+        "name": "Prof. Edge",
+        "university": "Tech University",
+        "country": "US",
+        "research_interests": ["Edge Computing", "Task Offloading"],
+        "research_summary": "edge computing research",
+        "edge_relevance": "edge offloading",
+        "research_trajectory": "edge systems",
+    }
+    relevant_pub = {
+        "title": "Dynamic task offloading in edge computing environments",
+        "year": 2024,
+        "topics": ["edge computing", "task offloading"],
+        "abstract": "We propose a deep reinforcement learning approach for task offloading in heterogeneous edge environments.",
+    }
+
+    prof_no_pubs = dict(base)
+    prof_with_pubs = {**base, "recent_papers": [relevant_pub]}
+
+    matcher_no_pubs = _make_matcher_with_data({"a": prof_no_pubs})
+    matcher_with_pubs = _make_matcher_with_data({"b": prof_with_pubs})
+
+    score_no = matcher_no_pubs.match_supervisors(sample_problem)
+    score_with = matcher_with_pubs.match_supervisors(sample_problem)
+
+    if score_no and score_with:
+        assert score_with[0].match_score >= score_no[0].match_score
+
+
+def test_supervisor_match_max_results(sample_problem):
+    """match_supervisors should return at most max_matches results."""
+    profs = {
+        f"prof_{i}": {
+            "name": f"Prof. {i}",
+            "university": f"Uni {i}",
+            "country": "UK",
+            "research_interests": ["Edge Computing", "Distributed Systems"],
+            "research_summary": "edge computing",
+            "edge_relevance": "edge",
+            "research_trajectory": "systems",
+        }
+        for i in range(20)
+    }
+    matcher = _make_matcher_with_data(profs)
+    matches = matcher.match_supervisors(sample_problem, max_matches=5)
+    assert len(matches) <= 5
+
+
+def test_supervisor_match_all_returns_dict(sample_problem):
+    """match_all returns a dict keyed by problem ID."""
+    matcher = _make_matcher_with_data({
+        "prof_x": {
+            "name": "Prof. X",
+            "university": "X Uni",
+            "country": "Japan",
+            "research_interests": ["Edge AI", "TinyML"],
+            "research_summary": "TinyML and edge AI.",
+            "edge_relevance": "tiny ml edge",
+            "research_trajectory": "edge systems",
+        }
+    })
+    result = matcher.match_all([sample_problem])
+    assert isinstance(result, dict)
+    assert sample_problem.id in result
+    assert isinstance(result[sample_problem.id], list)
+
+
+def test_supervisor_match_model_roundtrip(sample_problem):
+    """SupervisorMatch.to_dict() / from_dict() roundtrip preserves all fields."""
+    match = SupervisorMatch(
+        name="Dr. Test",
+        institution="Test University",
+        country="Canada",
+        relevant_research_areas=["Edge Computing", "Federated Learning"],
+        relevant_publications=[],
+        matching_keywords=["edge", "computing"],
+        profile_url="https://example.com/test",
+        google_scholar_url="https://scholar.google.com/test",
+        semantic_scholar_url="",
+        link_status=LinkStatus.UNKNOWN,
+        match_score=0.7531,
+        match_explanation="Test explanation for this match.",
+    )
+    d = match.to_dict()
+    assert d["name"] == "Dr. Test"
+    assert d["match_score"] == 0.7531
+    assert d["match_explanation"] == "Test explanation for this match."
+
+    restored = SupervisorMatch.from_dict(d)
+    assert restored.name == match.name
+    assert restored.match_score == match.match_score
+    assert restored.match_explanation == match.match_explanation
+
+
+def test_supervisor_export_matches_creates_files(tmp_path, sample_problem):
+    """export_matches should create all three output files."""
+    import importlib
+    import src.research_gaps.supervisor_matcher as sm_module
+
+    # Temporarily redirect OUTPUTS_DIR to tmp_path
+    original_dir = sm_module.OUTPUTS_DIR
+    sm_module.OUTPUTS_DIR = tmp_path
+    try:
+        matcher = SupervisorMatcher()
+        match = SupervisorMatch(
+            name="Prof. Export Test",
+            institution="Export University",
+            country="Sweden",
+            relevant_research_areas=["Edge Computing"],
+            matching_keywords=["edge"],
+            match_score=0.42,
+            match_explanation="Test export explanation.",
+        )
+        supervisor_map = {sample_problem.id: [match]}
+        matcher.export_matches([sample_problem], supervisor_map)
+
+        assert (tmp_path / "problem_professor_matches.json").exists()
+        assert (tmp_path / "problem_professor_matches.csv").exists()
+        assert (tmp_path / "problem_professor_matches.md").exists()
+
+        # Verify JSON structure
+        import json
+        data = json.loads((tmp_path / "problem_professor_matches.json").read_text())
+        assert isinstance(data, list)
+        assert data[0]["problem_id"] == sample_problem.id
+        assert len(data[0]["matches"]) == 1
+        assert data[0]["matches"][0]["name"] == "Prof. Export Test"
+        assert "match_explanation" in data[0]["matches"][0]
+    finally:
+        sm_module.OUTPUTS_DIR = original_dir
+
+
+def test_supervisor_no_match_below_threshold(sample_problem):
+    """Professors with zero keyword overlap should not appear in results."""
+    matcher = _make_matcher_with_data({
+        "prof_unrelated": {
+            "name": "Prof. Botany",
+            "university": "Botanical Institute",
+            "country": "Germany",
+            "research_interests": ["Mycology", "Plant Genetics", "Photosynthesis"],
+            "research_summary": "Studying photosynthesis and plant cell biology.",
+            "edge_relevance": "",
+            "research_trajectory": "From botany to plant genomics.",
+        }
+    })
+    matches = matcher.match_supervisors(sample_problem)
+    assert len(matches) == 0
+
+
+def test_supervisor_per_country_data_loads(tmp_path):
+    """_load_per_country_professors reads professors.json from country subdirs."""
+    import json as _json
+
+    # Create a fake country directory
+    country_dir = tmp_path / "test_country"
+    country_dir.mkdir()
+    profs = [
+        {
+            "researcher_id": "test_prof_1",
+            "name": "Prof. Test One",
+            "university": "Test University",
+            "country": "TestLand",
+            "research_interests": ["Edge Computing"],
+        }
+    ]
+    (country_dir / "professors.json").write_text(_json.dumps(profs))
+
+    import src.research_gaps.supervisor_matcher as sm_module
+    original_dir = sm_module.SUPERVISORS_DATA_DIR
+    original_dirs = sm_module._COUNTRY_DIRS
+    sm_module.SUPERVISORS_DATA_DIR = tmp_path
+    sm_module._COUNTRY_DIRS = ["test_country"]
+    try:
+        matcher = SupervisorMatcher(data_dir=tmp_path)
+        loaded = matcher._load_per_country_professors()
+        assert "test_prof_1" in loaded
+        assert loaded["test_prof_1"]["name"] == "Prof. Test One"
+    finally:
+        sm_module.SUPERVISORS_DATA_DIR = original_dir
+        sm_module._COUNTRY_DIRS = original_dirs

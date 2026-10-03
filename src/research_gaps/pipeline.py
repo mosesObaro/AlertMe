@@ -216,9 +216,15 @@ class ResearchGapPipeline:
 
         # ── 7. Match supervisors ──────────────────────────────────────
         logger.info("Step 7: Matching supervisors to research problems")
-        supervisor_map_raw = self.supervisor_matcher.match_all(problem_objs)
+        supervisor_map_raw = self.supervisor_matcher.match_all(problem_objs, max_matches=10)
         supervisor_map = {pid: [s.to_dict() for s in slist] for pid, slist in supervisor_map_raw.items()}
         logger.info(f"Matched supervisors for {len(supervisor_map)} problems")
+
+        # Export matches to outputs/
+        try:
+            self.supervisor_matcher.export_matches(problem_objs, supervisor_map_raw)
+        except Exception as e:
+            logger.warning(f"Failed to export professor matches: {e}")
 
         # ── 8. Assess feasibility ─────────────────────────────────────
         logger.info("Step 8: Assessing PhD feasibility")

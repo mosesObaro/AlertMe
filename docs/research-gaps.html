@@ -265,6 +265,64 @@
         .link-broken { color: var(--danger); }
         .link-unknown { color: var(--text-secondary); }
 
+        /* Match Score Bar */
+        .match-bar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .match-bar-bg {
+            width: 60px;
+            height: 8px;
+            background: #e8eaed;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .match-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+        .match-bar-high { background: var(--success); }
+        .match-bar-medium { background: var(--warning); }
+        .match-bar-low { background: var(--danger); }
+
+        /* Filter select */
+        .filter-select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--text);
+            background-color: #fff;
+        }
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        /* Supervisor expanded detail */
+        .sup-detail {
+            padding: 1rem 1.5rem;
+            border-left: 4px solid var(--primary);
+            background: #fafbfc;
+            font-size: 0.9rem;
+        }
+        .sup-detail-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 0.75rem;
+        }
+        .sup-detail-section strong {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.4px;
+            color: var(--text-secondary);
+        }
+
         /* Tree View */
         .tree ul {
             list-style-type: none;
@@ -460,21 +518,43 @@
 
     <div id="supervisors" class="tab-pane">
         <div class="card">
-            <div class="filters">
-                <input type="text" id="supervisor-search" class="search-box" placeholder="Search supervisors..." oninput="filterSupervisors()">
+            <h3 style="margin-bottom:1rem;">Professor–Research Problem Matches</h3>
+            <div class="filters" style="flex-wrap:wrap;gap:0.5rem;">
+                <input type="text" id="supervisor-search" class="search-box" placeholder="Search by name, institution, keyword..." oninput="filterSupervisors()" style="flex:1;min-width:200px;">
+                <select id="supervisor-country-filter" class="filter-select" onchange="filterSupervisors()" style="min-width:140px;">
+                    <option value="">All Countries</option>
+                </select>
+                <select id="supervisor-area-filter" class="filter-select" onchange="filterSupervisors()" style="min-width:160px;">
+                    <option value="">All Research Areas</option>
+                </select>
+                <select id="supervisor-score-filter" class="filter-select" onchange="filterSupervisors()" style="min-width:150px;">
+                    <option value="">Any Score</option>
+                    <option value="0.35">High confidence (≥0.35)</option>
+                    <option value="0.20">Medium+ (≥0.20)</option>
+                    <option value="0.10">Low+ (≥0.10)</option>
+                </select>
+                <select id="supervisor-sort" class="filter-select" onchange="filterSupervisors()" style="min-width:150px;">
+                    <option value="score">Sort: Score (High→Low)</option>
+                    <option value="name">Sort: Name (A→Z)</option>
+                    <option value="institution">Sort: Institution (A→Z)</option>
+                    <option value="area">Sort: Research Area</option>
+                </select>
             </div>
+            <div id="supervisor-stats" style="margin:0.75rem 0;font-size:0.85rem;color:var(--text-secondary);"></div>
             <div class="table-container">
                 <table id="supervisors-table">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Institution</th>
-                            <th>Research Areas</th>
-                            <th>Match Score</th>
-                            <th>Profile</th>
+                            <th style="min-width:160px;">Professor</th>
+                            <th style="min-width:200px;">Institution &amp; Country</th>
+                            <th style="min-width:140px;">Research Problem</th>
+                            <th style="min-width:120px;">Matching Areas</th>
+                            <th style="min-width:90px;">Match Score</th>
+                            <th style="min-width:80px;">Links</th>
+                            <th style="min-width:50px;">Details</th>
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody id="supervisors-tbody"></tbody>
                 </table>
             </div>
         </div>
@@ -898,11 +978,41 @@
         container.innerHTML = html || '<div class="card">No candidate research directions found.</div>';
     }
 
-    function filterSupervisors() {
-        const tbody = document.querySelector('#supervisors-table tbody');
-        const search = (document.getElementById('supervisor-search').value || '').toLowerCase();
-        
-        // Flatten supervisors if structured by problem_id
+    function populateSupervisorFilters() {
+        if (!appData) return;
+
+        // Build flat supervisor list from supervisor_list or legacy supervisors
+        const allSups = getSupervisorList();
+
+        const countries = [...new Set(allSups.map(s => s.country).filter(Boolean))].sort();
+        const areas = [...new Set(allSups.map(s => s.research_area).filter(Boolean))].sort();
+
+        const countrySelect = document.getElementById('supervisor-country-filter');
+        countries.forEach(c => {
+            const opt = document.createElement('option');
+            opt.value = c;
+            opt.textContent = c;
+            countrySelect.appendChild(opt);
+        });
+
+        const areaSelect = document.getElementById('supervisor-area-filter');
+        areas.forEach(a => {
+            const opt = document.createElement('option');
+            opt.value = a;
+            opt.textContent = a;
+            areaSelect.appendChild(opt);
+        });
+    }
+
+    function getSupervisorList() {
+        if (!appData) return [];
+
+        // Prefer the new flat supervisor_list (from enhanced dashboard_generator)
+        if (Array.isArray(appData.supervisor_list) && appData.supervisor_list.length > 0) {
+            return appData.supervisor_list;
+        }
+
+        // Fallback: flatten from supervisors map, de-duplicate by name
         let allSups = [];
         if (Array.isArray(appData.supervisors)) {
             allSups = appData.supervisors;
@@ -910,50 +1020,164 @@
             Object.values(appData.supervisors).forEach(arr => {
                 if (Array.isArray(arr)) allSups.push(...arr);
             });
-            // Deduplicate by name
             const seen = new Set();
             allSups = allSups.filter(s => {
-                if (!s.name || seen.has(s.name)) return false;
-                seen.add(s.name);
+                const key = (s.name || '') + '|' + (s.institution || '');
+                if (!s.name || seen.has(key)) return false;
+                seen.add(key);
                 return true;
             });
         }
-        
-        const sups = allSups.filter(s => {
-            if (!search) return true;
+        return allSups;
+    }
+
+    function matchScoreBar(score) {
+        const pct = Math.round(score * 100);
+        const barClass = score >= 0.35 ? 'match-bar-high' : score >= 0.20 ? 'match-bar-medium' : 'match-bar-low';
+        return `<div class="match-bar-wrap">
+            <div class="match-bar-bg"><div class="match-bar-fill ${barClass}" style="width:${pct}%"></div></div>
+            <span style="font-size:0.85rem;font-weight:600;">${score.toFixed(3)}</span>
+        </div>`;
+    }
+
+    function filterSupervisors() {
+        const tbody = document.getElementById('supervisors-tbody');
+        const search = (document.getElementById('supervisor-search').value || '').toLowerCase();
+        const countryFilter = (document.getElementById('supervisor-country-filter').value || '').toLowerCase();
+        const areaFilter = (document.getElementById('supervisor-area-filter').value || '').toLowerCase();
+        const scoreFilter = parseFloat(document.getElementById('supervisor-score-filter').value || '0') || 0;
+        const sortBy = document.getElementById('supervisor-sort').value || 'score';
+
+        let sups = getSupervisorList();
+
+        // Apply filters
+        sups = sups.filter(s => {
             const areas = (s.relevant_research_areas || s.research_areas || []).join(' ').toLowerCase();
             const keywords = (s.matching_keywords || []).join(' ').toLowerCase();
-            return (s.name && s.name.toLowerCase().includes(search)) ||
-                   (s.institution && s.institution.toLowerCase().includes(search)) ||
-                   areas.includes(search) ||
-                   keywords.includes(search);
+            const probStmt = (s.problem_statement || '').toLowerCase();
+            const resArea = (s.research_area || '').toLowerCase();
+
+            if (search && !(
+                (s.name || '').toLowerCase().includes(search) ||
+                (s.institution || '').toLowerCase().includes(search) ||
+                (s.country || '').toLowerCase().includes(search) ||
+                areas.includes(search) ||
+                keywords.includes(search) ||
+                probStmt.includes(search)
+            )) return false;
+
+            if (countryFilter && (s.country || '').toLowerCase() !== countryFilter) return false;
+            if (areaFilter && resArea !== areaFilter) return false;
+            if (scoreFilter && (s.match_score || 0) < scoreFilter) return false;
+
+            return true;
         });
-        
-        sups.sort((a, b) => (b.match_score || 0) - (a.match_score || 0));
+
+        // Sort
+        sups.sort((a, b) => {
+            if (sortBy === 'name') return (a.name || '').localeCompare(b.name || '');
+            if (sortBy === 'institution') return (a.institution || '').localeCompare(b.institution || '');
+            if (sortBy === 'area') return (a.research_area || '').localeCompare(b.research_area || '');
+            return (b.match_score || 0) - (a.match_score || 0);  // default: score desc
+        });
+
+        // Stats banner
+        const statsEl = document.getElementById('supervisor-stats');
+        const high = sups.filter(s => (s.match_score || 0) >= 0.35).length;
+        const med = sups.filter(s => (s.match_score || 0) >= 0.20 && (s.match_score || 0) < 0.35).length;
+        const low = sups.filter(s => (s.match_score || 0) < 0.20).length;
+        statsEl.innerHTML = `Showing <strong>${sups.length}</strong> matches — 
+            <span style="color:var(--success);">●</span> ${high} high-confidence 
+            <span style="color:var(--warning);">●</span> ${med} medium 
+            <span style="color:var(--danger);">●</span> ${low} low`;
 
         let html = '';
-        sups.forEach(s => {
-            const profileUrl = s.profile_url || s.google_scholar_url || s.semantic_scholar_url || '';
-            const linkInfo = profileUrl ? getLinkStatusHtml(profileUrl) : '';
+        sups.forEach((s, idx) => {
+            const profileUrl = s.profile_url || s.official_profile_url || '';
+            const scholarUrl = s.google_scholar_url || '';
             const areas = s.relevant_research_areas || s.research_areas || [];
             const keywords = s.matching_keywords || [];
+            const score = s.match_score || 0;
+            const rowId = `sup-detail-${s.problem_id || ''}-${idx}`;
+            const probStmt = s.problem_statement ? escapeHtml(s.problem_statement.substring(0, 80)) + '…' : 'N/A';
+            const explanation = s.match_explanation || '';
+            const pubs = s.relevant_publications || [];
+
+            // Confidence badge
+            let confBadge = '';
+            if (score >= 0.35) confBadge = '<span class="badge" style="background:var(--success);margin-left:4px;">High</span>';
+            else if (score >= 0.20) confBadge = '<span class="badge" style="background:var(--warning);color:#000;margin-left:4px;">Med</span>';
+            else confBadge = '<span class="badge" style="background:var(--danger);margin-left:4px;">Low</span>';
+
+            // Link column
+            let links = '';
+            if (profileUrl) links += `<a href="${escapeHtml(profileUrl)}" target="_blank" rel="noopener" title="Faculty Profile" style="margin-right:6px;">Profile</a>`;
+            if (scholarUrl) links += `<a href="${escapeHtml(scholarUrl)}" target="_blank" rel="noopener" title="Google Scholar">Scholar</a>`;
+            if (!links) links = '—';
 
             html += `
-                <tr>
-                    <td><strong>${escapeHtml(s.name || 'N/A')}</strong></td>
-                    <td>${escapeHtml(s.institution || 'N/A')} ${s.country ? `(${escapeHtml(s.country)})` : ''}</td>
-                    <td>${areas.map(a => `<span class="badge badge-outline">${escapeHtml(a)}</span>`).join(' ')}</td>
-                    <td>${keywords.map(k => `<span class="badge badge-outline" style="background:#e8f0fe">${escapeHtml(k)}</span>`).join(' ') || 'General fit'}</td>
-                    <td><strong>${(s.match_score || 0).toFixed(2)}</strong></td>
-                    <td>${profileUrl ? `<a href="${escapeHtml(profileUrl)}" target="_blank" rel="noopener noreferrer">Profile</a> ${linkInfo}` : 'N/A'}</td>
+                <tr class="expandable" onclick="toggleSupDetail('${rowId}')">
+                    <td><strong>${escapeHtml(s.name || 'N/A')}</strong>${confBadge}</td>
+                    <td>${escapeHtml(s.institution || 'N/A')}${s.country ? `<br><small style="color:var(--text-secondary);">${escapeHtml(s.country)}</small>` : ''}</td>
+                    <td style="font-size:0.8rem;color:var(--text-secondary);" title="${escapeHtml(s.problem_statement || '')}">${probStmt}</td>
+                    <td>${keywords.slice(0, 3).map(k => `<span class="badge badge-outline" style="background:#e8f0fe;margin:1px;">${escapeHtml(k)}</span>`).join('') || areas.slice(0, 2).map(a => `<span class="badge badge-outline" style="margin:1px;">${escapeHtml(a)}</span>`).join('') || '—'}</td>
+                    <td>${matchScoreBar(score)}</td>
+                    <td style="white-space:nowrap;">${links}</td>
+                    <td style="text-align:center;color:var(--text-secondary);">▶</td>
                 </tr>
-            `;
+                <tr id="${rowId}" class="expanded-row">
+                    <td colspan="7" style="padding:0;">
+                        <div class="sup-detail">
+                            <div class="sup-detail-grid">
+                                <div class="sup-detail-section">
+                                    <strong>Research Areas</strong>
+                                    <div>${areas.map(a => `<span class="badge badge-outline" style="margin:2px;">${escapeHtml(a)}</span>`).join('') || '—'}</div>
+                                </div>
+                                <div class="sup-detail-section">
+                                    <strong>Matching Keywords</strong>
+                                    <div>${keywords.map(k => `<span class="badge badge-outline" style="background:#e8f0fe;margin:2px;">${escapeHtml(k)}</span>`).join('') || '—'}</div>
+                                </div>
+                                ${explanation ? `<div class="sup-detail-section" style="grid-column:1/-1;">
+                                    <strong>Why This Match</strong>
+                                    <p style="margin:0;color:var(--text);">${escapeHtml(explanation)}</p>
+                                </div>` : ''}
+                                ${pubs.length ? `<div class="sup-detail-section" style="grid-column:1/-1;">
+                                    <strong>Relevant Publications</strong>
+                                    <ul style="margin:0;padding-left:1.5rem;">
+                                        ${pubs.slice(0, 3).map(p => {
+                                            const pubTitle = p.title || p.name || '';
+                                            const pubYear = p.year ? ` (${p.year})` : '';
+                                            const pubUrl = p.doi_or_url || p.url || '';
+                                            return pubUrl
+                                                ? `<li><a href="${escapeHtml(pubUrl)}" target="_blank" rel="noopener">${escapeHtml(pubTitle.substring(0, 90))}${pubYear}</a></li>`
+                                                : `<li>${escapeHtml(pubTitle.substring(0, 90))}${pubYear}</li>`;
+                                        }).join('')}
+                                    </ul>
+                                </div>` : ''}
+                                <div class="sup-detail-section">
+                                    <strong>Full Match Score</strong>
+                                    <p style="margin:0;">${score.toFixed(4)} ${confBadge}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>`;
         });
-        
-        tbody.innerHTML = html || '<tr><td colspan="6">No matched supervisors found. Ensure AlertMe supervisors dataset is populated.</td></tr>';
+
+        tbody.innerHTML = html || '<tr><td colspan="7" style="text-align:center;padding:2rem;">No matched supervisors found. Run the research-gaps pipeline to populate matches.</td></tr>';
     }
-    
+
+    function toggleSupDetail(rowId) {
+        const row = document.getElementById(rowId);
+        if (!row) return;
+        const isOpen = row.classList.contains('show');
+        // Close all others
+        document.querySelectorAll('.expanded-row.show').forEach(r => r.classList.remove('show'));
+        if (!isOpen) row.classList.add('show');
+    }
+
     function renderSupervisors() {
+        populateSupervisorFilters();
         filterSupervisors();
     }
 
@@ -1058,13 +1282,39 @@
                 "https://example.com/p2": { "status": "redirected", "final_url": "https://example.com/p2-new", "status_code": 301 },
                 "https://example.com/p3": { "status": "broken", "status_code": 404 }
             },
-            "supervisors": [
+            "supervisors": {},
+            "supervisor_list": [
                 {
+                    "problem_id": "prob_mock_001",
+                    "problem_statement": "Dynamic task offloading in heterogeneous edge environments remains unresolved",
+                    "research_area": "Edge Computing",
                     "name": "Dr. Jane Smith",
                     "institution": "Tech University",
-                    "research_areas": ["NLP", "Evaluation"],
-                    "match_score": 0.92,
-                    "profile_url": "https://example.com/janesmith"
+                    "country": "United Kingdom",
+                    "relevant_research_areas": ["Edge Computing", "Task Offloading", "Distributed Systems"],
+                    "matching_keywords": ["edge", "offloading", "distributed"],
+                    "match_score": 0.812,
+                    "match_explanation": "Dr. Jane Smith (Tech University) directly researches \"Edge Computing\", \"Task Offloading\" which closely aligns with the problem. Active publication track record in edge-cloud resource management.",
+                    "profile_url": "https://example.com/janesmith",
+                    "google_scholar_url": "https://scholar.google.com/citations?user=example",
+                    "relevant_publications": [
+                        {"title": "Adaptive Task Offloading in Heterogeneous Edge Networks", "year": 2024, "url": "https://example.com/pub1"}
+                    ]
+                },
+                {
+                    "problem_id": "prob_mock_001",
+                    "problem_statement": "Dynamic task offloading in heterogeneous edge environments remains unresolved",
+                    "research_area": "Edge Computing",
+                    "name": "Prof. Alan Turner",
+                    "institution": "Global Engineering School",
+                    "country": "Canada",
+                    "relevant_research_areas": ["Edge AI", "Federated Learning", "IoT"],
+                    "matching_keywords": ["edge", "computing"],
+                    "match_score": 0.423,
+                    "match_explanation": "Prof. Alan Turner (Global Engineering School) has relevant expertise in Edge AI and Federated Learning that partially aligns with resource constraints in edge environments.",
+                    "profile_url": "https://example.com/alanturner",
+                    "google_scholar_url": "",
+                    "relevant_publications": []
                 }
             ]
         };
