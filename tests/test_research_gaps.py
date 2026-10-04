@@ -1570,5 +1570,52 @@ def test_fallback_chain_order():
         assert res2.link_url == "https://example.com/paper.pdf"
 
 
+def test_evidence_bundle_builder(tmp_path):
+    from src.research_gaps.evidence_bundle import EvidenceBundleBuilder, save_evidence_bundles, load_evidence_bundles
+    from src.research_gaps.models import ExtractedPaperInfo, LinkStatus
+
+    builder = EvidenceBundleBuilder()
+
+    claims_paper = ExtractedPaperInfo(
+        paper_id="paper_claim_01",
+        title="Edge ML Resource Bottlenecks in Smart Sensors",
+        doi="10.1109/TMC.2024.01",
+        authors=["Alice Smith", "Bob Jones"],
+        year=2024,
+        venue="IEEE TMC",
+    )
+    corpus_paper = ExtractedPaperInfo(
+        paper_id="paper_corpus_02",
+        title="A Survey of Model Compression Techniques for Microcontrollers",
+        doi="10.1145/3676861",
+        authors=["Charlie Brown"],
+        year=2023,
+        venue="ACM Computing Surveys",
+    )
+
+    bundle = builder.build_evidence_bundle(
+        problem_id="prob_test_123",
+        claims_source_papers=[claims_paper],
+        corpus_papers=[corpus_paper],
+        max_works=40,
+    )
+
+    assert bundle.problem_id == "prob_test_123"
+    assert len(bundle.works) == 2
+    assert bundle.works[0].ref_key == "R1"
+    assert bundle.works[1].ref_key == "R2"
+    assert bundle.works[0].role == "gap_evidence"
+    assert bundle.works[1].role == "background"
+
+    # Test persistence
+    bundles_file = tmp_path / "evidence_bundles.json"
+    save_evidence_bundles({"prob_test_123": bundle}, bundles_file=bundles_file)
+    loaded = load_evidence_bundles(bundles_file=bundles_file)
+
+    assert "prob_test_123" in loaded
+    assert len(loaded["prob_test_123"].works) == 2
+    assert loaded["prob_test_123"].works[0].title == "Edge ML Resource Bottlenecks in Smart Sensors"
+
+
 
 

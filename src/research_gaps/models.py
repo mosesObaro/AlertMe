@@ -494,6 +494,76 @@ class FeasibilityAssessment:
 
 
 @dataclass
+class EvidenceWork:
+    """A structured bibliographic work in an evidence bundle."""
+    ref_key: str = ""  # R1, R2, ...
+    paper_id: str = ""
+    doi: Optional[str] = None
+    openalex_id: Optional[str] = None
+    title: str = ""
+    authors: List[str] = field(default_factory=list)
+    year: int = 0
+    venue: str = ""
+    link_url: str = ""
+    link_type: str = "none"
+    link_status: str = LinkStatus.NONE
+    verified_at: str = ""
+    role: str = "related_work"  # background, related_work, gap_evidence, method, evaluation
+    citation_count: int = 0
+    relevance_score: float = 0.0
+
+    def __post_init__(self):
+        self.doi = _normalize_doi(self.doi)
+
+    def to_citation(self) -> Citation:
+        return Citation(
+            paper_id=self.paper_id or f"paper_{hashlib.md5((self.title or '').encode()).hexdigest()[:8]}",
+            doi=self.doi,
+            title=self.title,
+            authors=list(self.authors),
+            year=self.year,
+            venue=self.venue,
+            url=self.link_url,
+        )
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "EvidenceWork":
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class EvidenceBundle:
+    """A bundle of up to 40 works with complete metadata and working links for a research problem."""
+    problem_id: str = ""
+    works: List[EvidenceWork] = field(default_factory=list)
+    created_at: str = field(default_factory=lambda: datetime.datetime.now(datetime.timezone.utc).isoformat())
+
+    def get_by_key(self, ref_key: str) -> Optional[EvidenceWork]:
+        for w in self.works:
+            if w.ref_key == ref_key:
+                return w
+        return None
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "problem_id": self.problem_id,
+            "works": [w.to_dict() for w in self.works],
+            "created_at": self.created_at,
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "EvidenceBundle":
+        return cls(
+            problem_id=data.get("problem_id", ""),
+            works=[EvidenceWork.from_dict(w) for w in data.get("works", [])],
+            created_at=data.get("created_at", ""),
+        )
+
+
+@dataclass
 class SupervisorMatch:
     """A potential supervisor matched to a research problem."""
     name: str = ""
