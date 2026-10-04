@@ -21,13 +21,19 @@ class ProblemStatus:
 
 class LinkStatus:
     """Status values for link verification."""
-    VALID = "valid"
-    REDIRECTED = "redirected"
-    BROKEN = "broken"
-    UNREACHABLE = "unreachable"
-    UNKNOWN = "unknown"
+    VERIFIED = "verified"
+    BLOCKED = "blocked"
+    DEAD = "dead"
+    NONE = "none"
 
-    ALL = [VALID, REDIRECTED, BROKEN, UNREACHABLE, UNKNOWN]
+    # Legacy compatibility aliases
+    VALID = "verified"
+    REDIRECTED = "verified"
+    BROKEN = "dead"
+    UNREACHABLE = "blocked"
+    UNKNOWN = "none"
+
+    ALL = [VERIFIED, BLOCKED, DEAD, NONE]
 
 
 class Confidence:
@@ -66,12 +72,20 @@ def canonical_paper_id(
     ).generate_id()
 
 
+import urllib.parse
+
+
 def _normalize_doi(doi: Optional[str]) -> Optional[str]:
     if not doi:
         return None
     clean = str(doi).strip()
-    clean = re.sub(r'^(https?://(dx\.)?doi\.org/|doi:\s*)', '', clean, flags=re.IGNORECASE)
-    return clean or None
+    if re.search(r'^(doi_|paper_)[a-f0-9]{8,}$', clean, re.IGNORECASE):
+        return None
+    clean = re.sub(r'^(https?://(dx\.)?doi\.org/|doi:\s*)', '', clean, flags=re.IGNORECASE).strip()
+    clean = clean.rstrip(".,;)")
+    if re.match(r"^10\.\d{4,9}/\S+$", clean):
+        return clean
+    return None
 
 
 def _extract_year(date_str: Any) -> int:
@@ -148,6 +162,9 @@ class Citation:
     venue: str = ""
     url: str = ""
 
+    def __post_init__(self):
+        self.doi = _normalize_doi(self.doi)
+
     @classmethod
     def from_research_item(cls, item: Any) -> "Citation":
         return cls(
@@ -162,10 +179,13 @@ class Citation:
 
     @property
     def link(self) -> str:
-        """Canonical link: https://doi.org/<doi> when a DOI exists, else the source URL."""
-        if self.doi:
-            return f"https://doi.org/{self.doi}"
-        return self.url or ""
+        """Canonical link: https://doi.org/<doi> when a valid DOI exists, else the source URL."""
+        clean_doi = _normalize_doi(self.doi)
+        if clean_doi:
+            return f"https://doi.org/{urllib.parse.quote(clean_doi, safe='/')}"
+        if self.url and (self.url.startswith("http://") or self.url.startswith("https://")) and "doi_" not in self.url:
+            return self.url
+        return ""
 
     def format_authors(self) -> str:
         names = [a for a in self.authors if a]
@@ -271,11 +291,20 @@ class ExtractedPaperInfo:
 class LinkVerificationResult:
     """Result of verifying an external URL."""
     url: str = ""
+    link_url: str = ""
+    link_type: str = "doi"  # "doi", "openalex_oa", "arxiv", "semantic_scholar", "openalex_work", "none"
+    link_status: str = LinkStatus.NONE  # "verified", "blocked", "dead", "none"
     canonical_url: str = ""
-    link_status: str = LinkStatus.UNKNOWN
     http_status: int = 0
     last_verified: str = ""
+    verified_at: str = ""
     redirect_target: str = ""
+
+    def __post_init__(self):
+        if not self.link_url and self.url:
+            self.link_url = self.url
+        if not self.verified_at and self.last_verified:
+            self.verified_at = self.last_verified
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -465,6 +494,76 @@ class FeasibilityAssessment:
 
 
 @dataclass
+class EvidenceWork:
+    """A structured bibliographic work in an evidence bundle."""
+    ref_key: str = ""  # R1, R2, ...
+    paper_id: str = ""
+    doi: Optional[str] = None
+    openalex_id: Optional[str] = None
+    title: str = ""
+    authors: List[str] = field(default_factory=list)
+    year: int = 0
+    venue: str = ""
+    link_url: str = ""
+    link_type: str = "none"
+    link_status: str = LinkStatus.NONE
+    verified_at: str = ""
+    role: str = "related_work"  # background, related_work, gap_evidence, method, evaluation
+    citation_count: int = 0
+    relevance_score: float = 0.0
+
+    def __post_init__(self):
+        self.doi = _normalize_doi(self.doi)
+
+    def to_citation(self) -> Citation:
+        return Citation(
+            paper_id=self.paper_id or f"paper_{hashlib.md5((self.title or '').encode()).hexdigest()[:8]}",
+            doi=self.doi,
+            title=self.title,
+            authors=list(self.authors),
+            year=self.year,
+            venue=self.venue,
+            url=self.link_url,
+        )
+
+    def to_dict(self) -> Dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "EvidenceWork":
+        return cls(**{k: v for k, v in data.items() if k in cls.__dataclass_fields__})
+
+
+@dataclass
+class EvidenceBundle:
+    """A bundle of up to 40 works with complete metadata and working links for a research problem."""
+    problem_id: str = ""
+    works: List[EvidenceWork] = field(default_factory=list)
+    created_at: str = field(default_factory=lambda: datetime.datetime.now(datetime.timezone.utc).isoformat())
+
+    def get_by_key(self, ref_key: str) -> Optional[EvidenceWork]:
+        for w in self.works:
+            if w.ref_key == ref_key:
+                return w
+        return None
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "problem_id": self.problem_id,
+            "works": [w.to_dict() for w in self.works],
+            "created_at": self.created_at,
+        }
+
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "EvidenceBundle":
+        return cls(
+            problem_id=data.get("problem_id", ""),
+            works=[EvidenceWork.from_dict(w) for w in data.get("works", [])],
+            created_at=data.get("created_at", ""),
+        )
+
+
+@dataclass
 class SupervisorMatch:
     """A potential supervisor matched to a research problem."""
     name: str = ""
@@ -509,6 +608,9 @@ class CorpusPaper:
     abstract: str = ""
     is_oa: bool = False
     openalex_id: str = ""
+
+    def __post_init__(self):
+        self.doi = _normalize_doi(self.doi)
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
@@ -655,6 +757,8 @@ class IEEEResearchStatement:
     references: List[Dict[str, Any]] = field(default_factory=list)
     word_count: int = 0
     markdown_content: str = ""
+    generation_method: str = "template"
+    under_referenced: bool = False
 
     def to_dict(self) -> Dict[str, Any]:
         d = asdict(self)

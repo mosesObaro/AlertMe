@@ -1477,4 +1477,226 @@ def test_pipeline_end_to_end_offline(tmp_path):
         assert res["fetch_failures"] == 0
 
 
+def test_doi_normalization_cases():
+    from src.research_gaps.link_verifier import LinkVerifier
+    verifier = LinkVerifier()
+
+    assert verifier.normalize_doi("https://doi.org/10.1109/TMC.2024.01.") == "10.1109/TMC.2024.01"
+    assert verifier.normalize_doi("http://dx.doi.org/10.1145/3676861,") == "10.1145/3676861"
+    assert verifier.normalize_doi("doi: 10.3390/s25144500") == "10.3390/s25144500"
+    assert verifier.normalize_doi("doi_a1b2c3d4e5f6") is None
+    assert verifier.normalize_doi("paper_12345678") is None
+    assert verifier.build_doi_url("10.1145/3676861") == "https://doi.org/10.1145/3676861"
+
+
+def test_doi_handle_api_verification():
+    from src.research_gaps.link_verifier import LinkVerifier, LinkStatus
+    from unittest.mock import MagicMock
+
+    verifier = LinkVerifier()
+
+    # 1. Registered (code 1)
+    mock_resp1 = MagicMock()
+    mock_resp1.status_code = 200
+    mock_resp1.json.return_value = {"responseCode": 1}
+    mock_red1 = MagicMock()
+    mock_red1.status_code = 200
+    mock_red1.history = []
+    mock_red1.url = "https://doi.org/10.1109/TMC.2024.01"
+
+    with patch.object(verifier.session, "get", side_effect=[mock_resp1, mock_red1]):
+        res1 = verifier.verify_doi("10.1109/TMC.2024.01")
+        assert res1.link_status == LinkStatus.VERIFIED
+
+    # 2. Not found (code 100)
+    mock_resp2 = MagicMock()
+    mock_resp2.status_code = 200
+    mock_resp2.json.return_value = {"responseCode": 100}
+    with patch.object(verifier.session, "get", return_value=mock_resp2):
+        res2 = verifier.verify_doi("10.9999/NONEXISTENT")
+        assert res2.link_status == LinkStatus.DEAD
+
+    # 3. Blocked (HTTP 403 / 429)
+    mock_resp3 = MagicMock()
+    mock_resp3.status_code = 200
+    mock_resp3.json.return_value = {"responseCode": 1}
+    mock_red3 = MagicMock()
+    mock_red3.status_code = 403
+    mock_red3.history = []
+    with patch.object(verifier.session, "get", side_effect=[mock_resp3, mock_red3]):
+        res3 = verifier.verify_doi("10.1109/BLOCKED")
+        assert res3.link_status == LinkStatus.BLOCKED
+
+
+def test_fallback_chain_order():
+    from src.research_gaps.link_verifier import LinkVerifier, LinkStatus
+
+    verifier = LinkVerifier()
+
+    # 1. DOI working
+    meta1 = {
+        "doi": "10.1109/TMC.2024.01",
+        "oa_url": "https://example.com/oa.pdf",
+        "arxiv_id": "2401.12345",
+    }
+    with patch.object(verifier, "verify_doi") as mock_vdoi:
+        from src.research_gaps.models import LinkVerificationResult
+        mock_vdoi.return_value = LinkVerificationResult(
+            url="https://doi.org/10.1109/TMC.2024.01",
+            link_url="https://doi.org/10.1109/TMC.2024.01",
+            link_type="doi",
+            link_status=LinkStatus.VERIFIED,
+        )
+        res1 = verifier.select_best_link(meta1)
+        assert res1.link_type == "doi"
+        assert res1.link_url == "https://doi.org/10.1109/TMC.2024.01"
+
+    # 2. DOI dead, OpenAlex OA working
+    meta2 = {
+        "doi": "10.9999/DEAD",
+        "oa_url": "https://example.com/paper.pdf",
+        "arxiv_id": "2401.12345",
+    }
+    with patch.object(verifier, "verify_doi") as mock_vdoi, \
+         patch.object(verifier, "verify_url") as mock_vurl:
+        mock_vdoi.return_value = LinkVerificationResult(link_status=LinkStatus.DEAD)
+        mock_vurl.return_value = LinkVerificationResult(
+            url="https://example.com/paper.pdf",
+            link_url="https://example.com/paper.pdf",
+            link_status=LinkStatus.VERIFIED,
+        )
+        res2 = verifier.select_best_link(meta2)
+        assert res2.link_type == "openalex_oa"
+        assert res2.link_url == "https://example.com/paper.pdf"
+
+
+def test_evidence_bundle_builder(tmp_path):
+    from src.research_gaps.evidence_bundle import EvidenceBundleBuilder, save_evidence_bundles, load_evidence_bundles
+    from src.research_gaps.models import ExtractedPaperInfo, LinkStatus
+
+    builder = EvidenceBundleBuilder()
+
+    claims_paper = ExtractedPaperInfo(
+        paper_id="paper_claim_01",
+        title="Edge ML Resource Bottlenecks in Smart Sensors",
+        doi="10.1109/TMC.2024.01",
+        authors=["Alice Smith", "Bob Jones"],
+        year=2024,
+        venue="IEEE TMC",
+    )
+    corpus_paper = ExtractedPaperInfo(
+        paper_id="paper_corpus_02",
+        title="A Survey of Model Compression Techniques for Microcontrollers",
+        doi="10.1145/3676861",
+        authors=["Charlie Brown"],
+        year=2023,
+        venue="ACM Computing Surveys",
+    )
+
+    bundle = builder.build_evidence_bundle(
+        problem_id="prob_test_123",
+        claims_source_papers=[claims_paper],
+        corpus_papers=[corpus_paper],
+        max_works=40,
+    )
+
+    assert bundle.problem_id == "prob_test_123"
+    assert len(bundle.works) == 2
+    assert bundle.works[0].ref_key == "R1"
+    assert bundle.works[1].ref_key == "R2"
+    assert bundle.works[0].role == "gap_evidence"
+    assert bundle.works[1].role == "background"
+
+    # Test persistence
+    bundles_file = tmp_path / "evidence_bundles.json"
+    save_evidence_bundles({"prob_test_123": bundle}, bundles_file=bundles_file)
+    loaded = load_evidence_bundles(bundles_file=bundles_file)
+
+    assert "prob_test_123" in loaded
+    assert len(loaded["prob_test_123"].works) == 2
+    assert loaded["prob_test_123"].works[0].title == "Edge ML Resource Bottlenecks in Smart Sensors"
+
+
+def test_gemini_formulator_model_check():
+    from src.research_gaps.llm_formulation import GeminiFormulator
+    import pytest
+
+    with pytest.raises(ValueError, match="Prohibited Gemini model"):
+        GeminiFormulator(config={"llm": {"model_id": "gemini-1.5-flash"}})
+
+
+def test_gemini_formulator_fallback_without_key():
+    from src.research_gaps.llm_formulation import GeminiFormulator
+    from src.research_gaps.models import UnsolvedProblemCluster, PhDQualificationResult, EvidenceBundle
+
+    formulator = GeminiFormulator()
+    formulator.api_key = None
+
+    cluster = UnsolvedProblemCluster(cluster_id="c1", title="Edge Offloading")
+    qual = PhDQualificationResult(problem_id="c1", outcome="qualified")
+    bundle = EvidenceBundle(problem_id="c1")
+
+    stmt = formulator.generate_statement(cluster, qual, bundle)
+    assert stmt is None
+
+
+def test_gemini_formulator_mock_success(monkeypatch):
+    import json
+    import requests
+    from src.research_gaps.llm_formulation import GeminiFormulator
+    from src.research_gaps.models import UnsolvedProblemCluster, PhDQualificationResult, EvidenceBundle, EvidenceWork
+    from unittest.mock import MagicMock
+
+    formulator = GeminiFormulator(config={"llm": {"model_id": "gemini-2.5-flash"}})
+    formulator.api_key = "fake_key_123"
+
+    work1 = EvidenceWork(ref_key="R1", paper_id="p1", title="Title 1", doi="10.1109/TMC.2024.01")
+    work2 = EvidenceWork(ref_key="R2", paper_id="p2", title="Title 2", doi="10.1145/3676861")
+    bundle = EvidenceBundle(problem_id="c1", works=[work1, work2])
+
+    cluster = UnsolvedProblemCluster(cluster_id="c1", title="Edge Offloading")
+    qual = PhDQualificationResult(problem_id="c1", outcome="qualified")
+
+    mock_llm_json = {
+        "title": "IEEE Proposal: Optimized Edge Offloading",
+        "abstract": "This study proposes an adaptive edge offloading scheme.",
+        "research_questions": ["How to optimize latency?"],
+        "sections": {
+            "Section I: Introduction & Background": "Context on edge computing [R1].",
+            "Section II: Problem Statement & Unsolved Gap": "Offloading bottleneck remains [R1] [R2].",
+            "Section III: Proposed Research Direction & Methodology": "Methodology proposed [R2].",
+            "Section IV: Expected Contributions & Impact": "Open source framework.",
+            "Section V: Experimental Strategy & Evaluation Metrics": "Benchmark suite [R1].",
+            "Section VI: Related Work & Comparative Analysis": "Related survey [R2].",
+            "Section VII: Conclusion & Next Steps": "Summary conclusions.",
+        },
+    }
+
+    def mock_post(*args, **kwargs):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "candidates": [
+                {
+                    "content": {
+                        "parts": [{"text": json.dumps(mock_llm_json)}]
+                    }
+                }
+            ]
+        }
+        return mock_resp
+
+    import requests
+    monkeypatch.setattr(requests, "post", mock_post)
+
+    stmt = formulator.generate_statement(cluster, qual, bundle)
+    assert stmt is not None
+    assert stmt.generation_method == "gemini-2.5-flash"
+    assert stmt.title == "IEEE Proposal: Optimized Edge Offloading"
+    assert len(stmt.research_questions) == 1
+    assert stmt.research_questions[0].endswith("?")
+    assert len(stmt.references) == 2
+
+
+
 

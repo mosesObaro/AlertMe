@@ -1476,7 +1476,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    ${(p.papers || []).map(pap => `
+                                    ${(p.papers || []).map(pap => {
+                                        let paperLink = '<span style="color:var(--text-secondary);font-style:italic;">link unavailable</span>';
+                                        const cleanDoi = pap.doi && !pap.doi.startsWith('doi_') && !pap.doi.startsWith('paper_') ? pap.doi : null;
+                                        if (cleanDoi) {
+                                            paperLink = `<a href="https://doi.org/${escapeHtml(cleanDoi)}" target="_blank" rel="noopener">https://doi.org/${escapeHtml(cleanDoi)}</a>`;
+                                        } else if (pap.url && !pap.url.includes('doi_') && !pap.url.includes('paper_')) {
+                                            paperLink = `<a href="${escapeHtml(pap.url)}" target="_blank" rel="noopener">${escapeHtml(pap.url)}</a>`;
+                                        }
+                                        return `
                                         <tr>
                                             <td><span class="badge badge-role-${pap.role || 'related'}">${escapeHtml(pap.role || 'related')}</span></td>
                                             <td><strong>${escapeHtml(pap.title)}</strong></td>
@@ -1484,9 +1492,9 @@
                                             <td>${escapeHtml(pap.venue || 'ArXiv / Refereed')}</td>
                                             <td>${(pap.relevance_score || 0).toFixed(2)}</td>
                                             <td style="font-size:0.85rem;color:var(--text-secondary);">${escapeHtml(pap.relevance_reason || 'topical match')}</td>
-                                            <td>${pap.doi ? `<a href="https://doi.org/${escapeHtml(pap.doi)}" target="_blank">DOI</a>` : (pap.url ? `<a href="${escapeHtml(pap.url)}" target="_blank">Link</a>` : '-')}</td>
+                                            <td>${paperLink}</td>
                                         </tr>
-                                    `).join('')}
+                                    `}).join('')}
                                 </tbody>
                             </table>
                         </div>
@@ -1550,11 +1558,16 @@
 
                                     ${stmt.title ? `
                                         <div style="margin-top:1rem;background:white;padding:1rem;border-radius:6px;border:1px solid var(--border);">
-                                            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+                                            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.5rem;">
                                                 <h5 style="margin:0;color:var(--primary);">STEP 4. ${escapeHtml(stmt.title)}</h5>
-                                                <button class="download-btn" onclick="downloadStatement('${escapeHtml(stmt.problem_id)}', '${escapeHtml(encodeURIComponent(stmt.markdown_content || ''))}')">
-                                                    📄 Download Statement (.md)
-                                                </button>
+                                                <div>
+                                                    <span class="badge" style="background:#1a73e8;color:white;">Method: ${escapeHtml(stmt.generation_method || 'template')}</span>
+                                                    <span class="badge" style="background:#5f6368;color:white;">${(stmt.references || []).length} References</span>
+                                                    ${stmt.under_referenced ? '<span class="badge" style="background:#ea4335;color:white;">UNDER-REFERENCED (&lt;20 refs)</span>' : ''}
+                                                    <button class="download-btn" style="margin-top:0;" onclick="downloadStatement('${escapeHtml(stmt.problem_id)}', '${escapeHtml(encodeURIComponent(stmt.markdown_content || ''))}')">
+                                                        📄 Download Statement (.md)
+                                                    </button>
+                                                </div>
                                             </div>
                                             <p style="font-size:0.85rem;color:var(--text-secondary);margin:0.5rem 0;">
                                                 <strong>Index Terms:</strong> ${escapeHtml((stmt.index_terms || []).join(', '))}
@@ -1569,18 +1582,25 @@
                                                         <h6 style="margin:0.25rem 0;color:var(--text);">${escapeHtml(secTitle)}</h6>
                                                         ${(sentList || []).map(s => `
                                                             <div class="${s.tag === 'quote' ? 'ieee-quote' : 'ieee-template'}">
-                                                                ${s.tag === 'quote' ? '💬 <em>Quote:</em> ' : ''}${escapeHtml(s.text)}
+                                                                ${s.tag === 'quote' ? '💬 <em>Quote:</em> ' : ''}${escapeHtml(s.text || String(s))}
                                                             </div>
                                                         `).join('')}
                                                     </div>
                                                 `).join('')}
                                             </div>
                                             <div style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-secondary);">
-                                                <strong>IEEE References:</strong>
+                                                <strong>IEEE References (${(stmt.references || []).length} total):</strong>
                                                 <ol style="margin:0.25rem 0 0 1.25rem;padding:0;">
-                                                    ${(stmt.references || []).map(ref => `
-                                                        <li>${escapeHtml(ref.formatted_citation || ref.title)}</li>
-                                                    `).join('')}
+                                                    ${(stmt.references || []).map(ref => {
+                                                        let refLinkStr = '<span style="color:var(--text-secondary);font-style:italic;">link unavailable</span>';
+                                                        const rDoi = ref.doi && !ref.doi.startsWith('doi_') && !ref.doi.startsWith('paper_') ? ref.doi : null;
+                                                        const rUrl = ref.url || ref.link || (rDoi ? `https://doi.org/${rDoi}` : null);
+                                                        if (rUrl && !rUrl.includes('doi_') && !rUrl.includes('paper_')) {
+                                                            refLinkStr = `<a href="${escapeHtml(rUrl)}" target="_blank" rel="noopener">${escapeHtml(rUrl)}</a>`;
+                                                        }
+                                                        const text = ref.formatted_citation || ref.title || 'Untitled Reference';
+                                                        return `<li style="margin-bottom:0.25rem;">${escapeHtml(text)} — ${refLinkStr}</li>`;
+                                                    }).join('')}
                                                 </ol>
                                             </div>
                                         </div>
