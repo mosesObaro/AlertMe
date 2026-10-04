@@ -29,9 +29,9 @@
   },
   {
     "topic": "Resource Allocation",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 1,
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 2,
     "historical_count": 2
   },
   {

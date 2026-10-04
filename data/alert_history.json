@@ -4822,5 +4822,91 @@
     },
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "Quality of Service Challenges and Solutions in Multi-Tenant Community Clouds: A Comprehensive Survey",
+    "url": "https://doi.org/10.5281/zenodo.23116091",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "survey",
+    "authors": [
+      "Anand Kumar H",
+      "Sunil Kumar",
+      "Mustafa Basthikodi"
+    ],
+    "doi": "10.5281/zenodo.23116091",
+    "arxiv_id": null,
+    "publication_date": "2026-10-03",
+    "discovery_date": "2026-10-04",
+    "abstract": "Community cloud computing has emerged as an effective deployment model for organizations that share common security policies, governance frameworks, and regulatory requirements while benefiting from collaborative resource sharing. By enabling multiple organizations to utilize a common cloud infrastructure, community clouds improve resource utilization, reduce operational costs, and facilitate secure collaboration. The integration of multi-tenancy further enhances infrastructure efficiency by allowing multiple tenants to share computing resources through logical isolation mechanisms implemented using virtualization and containerization technologies. However, the shared nature of these environments introduces significant challenges in maintaining consistent Quality of Service (QoS), including resource contention, workload interference, heterogeneous application demands, noisy-neighbor effects, and stringent Service Level Agreement (SLA) requirements. Consequently, effective QoS management has become a critical requirement for ensuring reliable, scalable, and fair service delivery in multi-tenant community cloud environments. This survey presents a comprehensive review of QoS management techniques developed for multi-tenant community clouds. It examines the evolution of community cloud computing, multi-tenancy models, virtualization technologies, and key QoS attributes such as response time, throughput, availability, reliability, scalability, latency, energy efficiency, fairness, and SLA compliance. Furthermore, the survey critically reviews recent advances in resource scheduling, dynamic resource allocation, load balancing, container orchestration, Software-Defined Networking (SDN), and Artificial Intelligence (AI)-based cloud optimization. Existing approaches are comparatively analyzed to identify their strengths, limitations, and applicability across different cloud scenarios. Finally, emerging research directions, including autonomous cloud management, edge–cloud integration, explainable artificial intelligence, and sustainability-aware resource management, are discussed to highlight future opportunities for developing adaptive, intelligent, and scalable QoS frameworks for next-generation community cloud infrastructures.",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "topics": [
+      "Cloud computing",
+      "Computer science",
+      "Quality of service",
+      "Virtualization",
+      "Resource (disambiguation)",
+      "Cloud computing security",
+      "Process management",
+      "Resource management (computing)",
+      "Deep integration",
+      "Service (business)",
+      "Software deployment",
+      "Computer security",
+      "Data governance",
+      "Quality (philosophy)",
+      "Risk analysis (engineering)",
+      "Scalability",
+      "Knowledge management",
+      "Key (lock)",
+      "Resource allocation",
+      "Service delivery framework",
+      "Shared resource",
+      "Container (type theory)",
+      "Data security",
+      "Workload",
+      "Utility computing"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_1eb68c34e0611213",
+    "score": {
+      "topic_score": 3.0,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.7,
+      "negative_penalty": 0.0,
+      "final_score": 7.7,
+      "matched_topics": [
+        "Cloud Computing",
+        "Resource Allocation",
+        "SDN",
+        "Energy Efficiency"
+      ],
+      "reasons": [
+        "✓ Secondary topic with Edge context: Cloud Computing, SDN",
+        "✓ Key research area match: Resource Allocation, Energy Efficiency (+0.8)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)",
+        "✓ Comprehensive Literature Survey / Review (+0.7)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Cloud computing and Computer science. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "However, the shared nature of these environments introduces significant challenges in maintaining consistent Quality of Service (QoS), including resource contention, workload interference, heterogeneous application demands, noisy-neighbor effects, and stringent Service Level Agreement (SLA) requirements",
+      "methodology": "Community cloud computing has emerged as an effective deployment model for organizations that share common security policies, governance frameworks, and regulatory requirements while benefiting from collaborative resource sharing",
+      "key_contribution": "Finally, emerging research directions, including autonomous cloud management, edge–cloud integration, explainable artificial intelligence, and sustainability-aware resource management, are discussed to highlight future opportunities for developing adaptive, intelligent, and scalable QoS frameworks for next-generation community cloud infrastructures.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.7/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
   }
 ]
