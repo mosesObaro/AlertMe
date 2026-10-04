@@ -21,13 +21,19 @@ class ProblemStatus:
 
 class LinkStatus:
     """Status values for link verification."""
-    VALID = "valid"
-    REDIRECTED = "redirected"
-    BROKEN = "broken"
-    UNREACHABLE = "unreachable"
-    UNKNOWN = "unknown"
+    VERIFIED = "verified"
+    BLOCKED = "blocked"
+    DEAD = "dead"
+    NONE = "none"
 
-    ALL = [VALID, REDIRECTED, BROKEN, UNREACHABLE, UNKNOWN]
+    # Legacy compatibility aliases
+    VALID = "verified"
+    REDIRECTED = "verified"
+    BROKEN = "dead"
+    UNREACHABLE = "blocked"
+    UNKNOWN = "none"
+
+    ALL = [VERIFIED, BLOCKED, DEAD, NONE]
 
 
 class Confidence:
@@ -285,11 +291,20 @@ class ExtractedPaperInfo:
 class LinkVerificationResult:
     """Result of verifying an external URL."""
     url: str = ""
+    link_url: str = ""
+    link_type: str = "doi"  # "doi", "openalex_oa", "arxiv", "semantic_scholar", "openalex_work", "none"
+    link_status: str = LinkStatus.NONE  # "verified", "blocked", "dead", "none"
     canonical_url: str = ""
-    link_status: str = LinkStatus.UNKNOWN
     http_status: int = 0
     last_verified: str = ""
+    verified_at: str = ""
     redirect_target: str = ""
+
+    def __post_init__(self):
+        if not self.link_url and self.url:
+            self.link_url = self.url
+        if not self.verified_at and self.last_verified:
+            self.verified_at = self.last_verified
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)

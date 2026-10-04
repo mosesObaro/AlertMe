@@ -1477,4 +1477,98 @@ def test_pipeline_end_to_end_offline(tmp_path):
         assert res["fetch_failures"] == 0
 
 
+def test_doi_normalization_cases():
+    from src.research_gaps.link_verifier import LinkVerifier
+    verifier = LinkVerifier()
+
+    assert verifier.normalize_doi("https://doi.org/10.1109/TMC.2024.01.") == "10.1109/TMC.2024.01"
+    assert verifier.normalize_doi("http://dx.doi.org/10.1145/3676861,") == "10.1145/3676861"
+    assert verifier.normalize_doi("doi: 10.3390/s25144500") == "10.3390/s25144500"
+    assert verifier.normalize_doi("doi_a1b2c3d4e5f6") is None
+    assert verifier.normalize_doi("paper_12345678") is None
+    assert verifier.build_doi_url("10.1145/3676861") == "https://doi.org/10.1145/3676861"
+
+
+def test_doi_handle_api_verification():
+    from src.research_gaps.link_verifier import LinkVerifier, LinkStatus
+    from unittest.mock import MagicMock
+
+    verifier = LinkVerifier()
+
+    # 1. Registered (code 1)
+    mock_resp1 = MagicMock()
+    mock_resp1.status_code = 200
+    mock_resp1.json.return_value = {"responseCode": 1}
+    mock_red1 = MagicMock()
+    mock_red1.status_code = 200
+    mock_red1.history = []
+    mock_red1.url = "https://doi.org/10.1109/TMC.2024.01"
+
+    with patch.object(verifier.session, "get", side_effect=[mock_resp1, mock_red1]):
+        res1 = verifier.verify_doi("10.1109/TMC.2024.01")
+        assert res1.link_status == LinkStatus.VERIFIED
+
+    # 2. Not found (code 100)
+    mock_resp2 = MagicMock()
+    mock_resp2.status_code = 200
+    mock_resp2.json.return_value = {"responseCode": 100}
+    with patch.object(verifier.session, "get", return_value=mock_resp2):
+        res2 = verifier.verify_doi("10.9999/NONEXISTENT")
+        assert res2.link_status == LinkStatus.DEAD
+
+    # 3. Blocked (HTTP 403 / 429)
+    mock_resp3 = MagicMock()
+    mock_resp3.status_code = 200
+    mock_resp3.json.return_value = {"responseCode": 1}
+    mock_red3 = MagicMock()
+    mock_red3.status_code = 403
+    mock_red3.history = []
+    with patch.object(verifier.session, "get", side_effect=[mock_resp3, mock_red3]):
+        res3 = verifier.verify_doi("10.1109/BLOCKED")
+        assert res3.link_status == LinkStatus.BLOCKED
+
+
+def test_fallback_chain_order():
+    from src.research_gaps.link_verifier import LinkVerifier, LinkStatus
+
+    verifier = LinkVerifier()
+
+    # 1. DOI working
+    meta1 = {
+        "doi": "10.1109/TMC.2024.01",
+        "oa_url": "https://example.com/oa.pdf",
+        "arxiv_id": "2401.12345",
+    }
+    with patch.object(verifier, "verify_doi") as mock_vdoi:
+        from src.research_gaps.models import LinkVerificationResult
+        mock_vdoi.return_value = LinkVerificationResult(
+            url="https://doi.org/10.1109/TMC.2024.01",
+            link_url="https://doi.org/10.1109/TMC.2024.01",
+            link_type="doi",
+            link_status=LinkStatus.VERIFIED,
+        )
+        res1 = verifier.select_best_link(meta1)
+        assert res1.link_type == "doi"
+        assert res1.link_url == "https://doi.org/10.1109/TMC.2024.01"
+
+    # 2. DOI dead, OpenAlex OA working
+    meta2 = {
+        "doi": "10.9999/DEAD",
+        "oa_url": "https://example.com/paper.pdf",
+        "arxiv_id": "2401.12345",
+    }
+    with patch.object(verifier, "verify_doi") as mock_vdoi, \
+         patch.object(verifier, "verify_url") as mock_vurl:
+        mock_vdoi.return_value = LinkVerificationResult(link_status=LinkStatus.DEAD)
+        mock_vurl.return_value = LinkVerificationResult(
+            url="https://example.com/paper.pdf",
+            link_url="https://example.com/paper.pdf",
+            link_status=LinkStatus.VERIFIED,
+        )
+        res2 = verifier.select_best_link(meta2)
+        assert res2.link_type == "openalex_oa"
+        assert res2.link_url == "https://example.com/paper.pdf"
+
+
+
 
