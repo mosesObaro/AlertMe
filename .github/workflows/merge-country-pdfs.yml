@@ -1,0 +1,57 @@
+name: Merge Country Dossier PDFs
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reports/supervisors/**'
+
+permissions:
+  contents: write
+
+jobs:
+  merge-country-pdfs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pypdf
+
+      - name: Merge Country PDFs
+        run: |
+          python scripts/merge_country_dossier_pdfs.py
+
+      - name: Upload Merged Country PDFs Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: merged-country-dossier-pdfs
+          path: reports/*.pdf
+          retention-days: 60
+          if-no-files-found: error
+
+      - name: Commit and Push Merged Country PDFs
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/*.pdf
+          if git diff --staged --quiet; then
+            echo "No PDF changes to commit."
+          else
+            git commit -m "chore: auto-merge country supervisor dossier PDFs [skip ci]"
+            git pull --rebase origin main || true
+            git push origin main || echo "Notice: Push conflict resolved or deferred to next run."
+          fi
