@@ -4908,5 +4908,269 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "INTELLIGENT CAD/CAM INTEGRATION FOR ADAPTIVE MANUFACTURING: A SYSTEMATIC REVIEW OF AI AND IOT FRAMEWORKS IN INDUSTRY 4.0",
+    "url": "https://doi.org/10.30574/wjaets.2026.21.1.0460",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "survey",
+    "authors": [
+      "MADIBA Krista Kundai",
+      "MADZIMURE Tatenda",
+      "MAFUKIDZE Liberty",
+      "MAFUKIDZE Trinity",
+      "MAKASI Farai"
+    ],
+    "doi": "10.30574/wjaets.2026.21.1.0460",
+    "arxiv_id": null,
+    "publication_date": "2026-10-04",
+    "discovery_date": "2026-10-04",
+    "abstract": "The union of Artificial Intelligence and the Internet of Things (IoT) is transforming the way Computer-Aided Design (CAD) and Computer-Aided Manufacturing (CAM) systems are used in the Industry 4.0 production process. Based on the PRISMA 2020 reporting framework (Page et al., 2021), this report is a systematic literature review on the intelligent integration of CAD and CAM technologies in adaptive manufacturing. Based on a structured search of major scientific databases, a curated list of peer-reviewed studies was analysed thematically to address five research questions related to designing with AI, toolpath optimisation using AI, IoT/IIoT architectures for real-time adaptive control, interoperability standards and barriers to AI adoption in specific sectors. AI models, especially deep learning, graph neural networks and reinforcement learning, have led the way in recent research and development on automatic feature recognition and toolpath generation, while digital twins, edge computing and Industrial Internet of Things (IIoT) sensor networks are more and more being used to implement predictive maintenance and closed-loop adaptive control in the shop floor. The design phase is also starting to change with Generative AI to enable manufacturability constraints to be built in earlier in the CAD process. The literature, however, shows that there are still significant gaps that need to be addressed: AI models deployed outside of the simulation environment are not adaptable in real-time, training datasets are not standardized and openly shared, and there are interoperability protocols that are still quite disjointed, and resources for small and medium enterprises (SMEs) looking to use these technologies are still limited. To situate these gaps in a particular developing-economy context, this review is also supplemented by a series of recently published empirical studies. The review suggests that interoperability standards, Human Safety for Industry 5.0 design principles, cybersecurity, and sustainable practice are the key factors that need to be coordinated for the intelligent CAD/CAM-IoT integration to be fully realised, and it presents a roadmap of future research directions for adaptive and connected manufacturing ecosystems.",
+    "venue": "World Journal of Advanced Engineering Technology and Sciences",
+    "topics": [
+      "Interoperability",
+      "Computer science",
+      "Industry 4.0",
+      "The Internet",
+      "Software engineering",
+      "Artificial intelligence",
+      "Internet of Things",
+      "European union",
+      "Systems engineering",
+      "Engineering",
+      "Manufacturing",
+      "CAD",
+      "Systematic review",
+      "Artificial neural network",
+      "Data science",
+      "Design for manufacturability",
+      "Ontology",
+      "Engineering management",
+      "Data integration",
+      "Intelligent decision support system",
+      "Digital manufacturing",
+      "Knowledge representation and reasoning",
+      "Automation",
+      "Digital transformation",
+      "Applications of artificial intelligence",
+      "Middleware (distributed applications)",
+      "Manufacturing engineering",
+      "Relevance (law)"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_36d2f5185259512c",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.7,
+      "negative_penalty": 0.0,
+      "final_score": 6.9,
+      "matched_topics": [
+        "Edge Computing",
+        "Internet of Things",
+        "IoT"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Abstract)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Freshly published (0d ago) (+1.5)",
+        "✓ Comprehensive Literature Survey / Review (+0.7)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "weekly"
+  },
+  {
+    "title": "TinyML & Edge AI Summer School 2027",
+    "url": "https://www.tinyml.org/education/summer-school-2027",
+    "source": "TinyML Foundation / Harvard University / ICTP (TinyML Educational Registry)",
+    "source_tier": "tier2_university_lab",
+    "item_type": "event",
+    "authors": [
+      "TinyML Foundation / Harvard University / ICTP"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-04",
+    "discovery_date": "2026-10-04",
+    "abstract": "[Summer School] Hands-on intensive academic training program covering model quantization, hardware acceleration on microcontrollers, and low-power distributed inference. Dates: 2027-06-14 to 2027-06-18. Location: Trieste, Italy (hybrid). Registration Fee: €250 (In-person) / Free (Virtual). Subsidies: ICTP / TinyML Full Fellowship: 100% tuition waiver + travel flights + lodging stipend; Free Online Track: Free live stream and lab assignments access.",
+    "venue": "TinyML & Edge AI Summer School 2027 — Trieste, Italy",
+    "topics": [
+      "TinyML",
+      "Edge AI",
+      "Quantization for Edge",
+      "Hardware Acceleration",
+      "Edge Model Compression"
+    ],
+    "institution": "TinyML Foundation / Harvard University / ICTP",
+    "location": "Trieste, Italy",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "evt_bf87f174d4eee581",
+    "score": {
+      "topic_score": 2.9,
+      "credibility_score": 2.0,
+      "recency_score": 1.5,
+      "stage_boost": 1.3,
+      "phd_boost": 0.7,
+      "negative_penalty": 0.0,
+      "final_score": 6.9,
+      "matched_topics": [
+        "TinyML",
+        "Edge AI",
+        "Quantization for Edge",
+        "Hardware Acceleration",
+        "Edge Model Compression"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge AI (+2.5)",
+        "Adjacency systems topics matched: TinyML (+0.4)",
+        "Tier 2 established foundation/university (TinyML Foundation / Harvard University / ICTP) (+2.0)",
+        "Free virtual track available (+0.8)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Dedicated doctoral/researcher training program (+0.7)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "edge_computing",
+      "event_type": "summer_school",
+      "event_name": "TinyML & Edge AI Summer School 2027",
+      "organizer": "TinyML Foundation / Harvard University / ICTP",
+      "format": "hybrid",
+      "location": "Trieste, Italy",
+      "start_date": "2027-06-14",
+      "end_date": "2027-06-18",
+      "fee_status": "hybrid_free",
+      "registration_fee": "€250 (In-person) / Free (Virtual)",
+      "has_student_discount": false,
+      "has_travel_grant": false,
+      "has_scholarship": true,
+      "has_early_bird": false,
+      "has_fee_waiver": true,
+      "discounts_count": 2,
+      "discounts_subsidies": [
+        {
+          "discount_type": "scholarship",
+          "name": "ICTP / TinyML Full Fellowship",
+          "amount_or_rate": "100% tuition waiver + travel flights + lodging stipend",
+          "eligibility": "PhD students and early-career researchers from developing nations.",
+          "deadline": "2027-03-15",
+          "application_url": "https://www.tinyml.org/fellowships"
+        },
+        {
+          "discount_type": "fee_waiver",
+          "name": "Free Online Track",
+          "amount_or_rate": "Free live stream and lab assignments access",
+          "eligibility": "Open to any student worldwide with basic Python and ML background.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.tinyml.org/education/summer-school-2027",
+      "cfp_deadline": null,
+      "description": "Hands-on intensive academic training program covering model quantization, hardware acceleration on microcontrollers, and low-power distributed inference.",
+      "relevance_score": 6.9
+    },
+    "raw_metadata": {},
+    "alert_mode": "weekly"
+  },
+  {
+    "title": "HotEdge 2027 (USENIX Workshop on Hot Topics in Edge Computing)",
+    "url": "https://www.usenix.org/conference/hotedge27",
+    "source": "USENIX Association (USENIX Workshop Portal)",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "workshop",
+    "authors": [
+      "USENIX Association"
+    ],
+    "doi": null,
+    "arxiv_id": null,
+    "publication_date": "2026-10-04",
+    "discovery_date": "2026-10-04",
+    "abstract": "[Workshop] High-impact workshop bringing together researchers to discuss contentious and provocative new directions in edge computing, edge storage, and hardware heterogeneity. Dates: 2027-07-06 to 2027-07-06. Location: Boston, MA, USA (hybrid). Registration Fee: $195 (Student) / $450 (Regular). Subsidies: USENIX Student Travel Program: Free registration + flight/hotel stipend.",
+    "venue": "HotEdge 2027 (USENIX Workshop on Hot Topics in Edge Computing) — Boston, MA, USA",
+    "topics": [
+      "Edge Computing",
+      "Hardware Heterogeneity",
+      "Edge Mesh",
+      "Fault Tolerance at Edge",
+      "Edge Storage"
+    ],
+    "institution": "USENIX Association",
+    "location": "Boston, MA, USA",
+    "deadline": "2027-03-10",
+    "is_urgent": false,
+    "id": "evt_a1e70589ccc3e9dc",
+    "score": {
+      "topic_score": 3.3,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.5,
+      "phd_boost": 0.5,
+      "negative_penalty": 0.0,
+      "final_score": 6.8,
+      "matched_topics": [
+        "Edge Computing",
+        "Hardware Heterogeneity",
+        "Edge Mesh",
+        "Fault Tolerance at Edge",
+        "Edge Storage"
+      ],
+      "reasons": [
+        "Direct Edge core focus in title: Edge Computing (+2.5)",
+        "Adjacency systems topics matched: Edge Storage, Edge Mesh (+0.8)",
+        "Tier 1 professional organization (USENIX Association) (+2.5)",
+        "Scholarship / attendance fee waiver supported (+0.5)",
+        "Interactive research workshop / tutorial track (+0.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": {
+      "kind": "event",
+      "domain": "edge_computing",
+      "event_type": "workshop",
+      "event_name": "HotEdge 2027 (USENIX Workshop on Hot Topics in Edge Computing)",
+      "organizer": "USENIX Association",
+      "format": "hybrid",
+      "location": "Boston, MA, USA",
+      "start_date": "2027-07-06",
+      "end_date": "2027-07-06",
+      "fee_status": "paid",
+      "registration_fee": "$195 (Student) / $450 (Regular)",
+      "has_student_discount": false,
+      "has_travel_grant": false,
+      "has_scholarship": true,
+      "has_early_bird": false,
+      "has_fee_waiver": false,
+      "discounts_count": 1,
+      "discounts_subsidies": [
+        {
+          "discount_type": "scholarship",
+          "name": "USENIX Student Travel Program",
+          "amount_or_rate": "Free registration + flight/hotel stipend",
+          "eligibility": "Full-time graduate students.",
+          "deadline": null,
+          "application_url": null
+        }
+      ],
+      "official_website": "https://www.usenix.org/conference/hotedge27",
+      "cfp_deadline": "2027-03-10",
+      "description": "High-impact workshop bringing together researchers to discuss contentious and provocative new directions in edge computing, edge storage, and hardware heterogeneity.",
+      "relevance_score": 6.8
+    },
+    "raw_metadata": {},
+    "alert_mode": "weekly"
   }
 ]

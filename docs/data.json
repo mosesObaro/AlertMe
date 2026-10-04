@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-10-04",
-    "total_items": 67,
+    "total_items": 66,
     "high_relevance_count": 41,
     "papers_count": 22,
     "conferences_count": 9,
@@ -187,6 +187,59 @@
       ]
     },
     {
+      "name": "TinyML Foundation / Harvard University / ICTP",
+      "institution": "TinyML Foundation / Harvard University / ICTP",
+      "country": "International",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Edge Model Compression",
+        "Edge AI",
+        "Hardware Acceleration",
+        "TinyML",
+        "Quantization for Edge"
+      ],
+      "academic_fit_score": 9.8,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "TinyML & Edge AI Summer School 2027",
+          "url": "https://www.tinyml.org/education/summer-school-2027",
+          "date": "2026-10-02",
+          "venue": "TinyML & Edge AI Summer School 2027 — Trieste, Italy",
+          "score": 6.9
+        }
+      ],
+      "publication_count": 5,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-10-02",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge ai, tinyml",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+        "✓ Strong publication volume: 5+ papers in target area",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location: International (Outside primary 6 target countries)"
+      ],
+      "composite_score": 7.4,
+      "average_relevance": 6.9,
+      "topics": [
+        "Edge Model Compression",
+        "Edge AI",
+        "Hardware Acceleration",
+        "TinyML",
+        "Quantization for Edge"
+      ]
+    },
+    {
       "name": "Prof. Raymond Liu",
       "institution": "Hong Kong University of Science and Technology (HKUST)",
       "country": "Hong Kong",
@@ -452,46 +505,6 @@
     },
     {
       "name": "Mazhar Ali",
-      "institution": "Academic Institution",
-      "country": "",
-      "department": "",
-      "profile_url": "",
-      "lab_website": "",
-      "research_areas": [],
-      "academic_fit_score": 10.0,
-      "recruitment_status": "not_verified",
-      "recruitment_evidence": "",
-      "recruitment_quote": "",
-      "recent_papers": [
-        {
-          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
-          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
-          "date": "2025",
-          "score": 7.7
-        }
-      ],
-      "publication_count": 2,
-      "citations_indicator": "",
-      "h_index": null,
-      "orcid": null,
-      "openalex_id": null,
-      "semantic_scholar_url": null,
-      "google_scholar_url": null,
-      "last_checked": "2026-09-11",
-      "current_opportunities": [],
-      "reasons": [
-        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
-        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
-        "✓ Active recent publication record (2 papers)",
-        "• Active researcher in target field; current recruitment status pending lab confirmation",
-        "• Location to be determined"
-      ],
-      "composite_score": 7.2,
-      "average_relevance": 7.7,
-      "topics": []
-    },
-    {
-      "name": "Abdullah Alourani",
       "institution": "Academic Institution",
       "country": "",
       "department": "",
@@ -630,6 +643,59 @@
       ]
     },
     {
+      "name": "TinyML Foundation / Harvard University / ICTP",
+      "institution": "TinyML Foundation / Harvard University / ICTP",
+      "country": "International",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Edge Model Compression",
+        "Edge AI",
+        "Hardware Acceleration",
+        "TinyML",
+        "Quantization for Edge"
+      ],
+      "academic_fit_score": 9.8,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "TinyML & Edge AI Summer School 2027",
+          "url": "https://www.tinyml.org/education/summer-school-2027",
+          "date": "2026-10-02",
+          "venue": "TinyML & Edge AI Summer School 2027 — Trieste, Italy",
+          "score": 6.9
+        }
+      ],
+      "publication_count": 5,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-10-02",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge ai, tinyml",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+        "✓ Strong publication volume: 5+ papers in target area",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location: International (Outside primary 6 target countries)"
+      ],
+      "composite_score": 7.4,
+      "average_relevance": 6.9,
+      "topics": [
+        "Edge Model Compression",
+        "Edge AI",
+        "Hardware Acceleration",
+        "TinyML",
+        "Quantization for Edge"
+      ]
+    },
+    {
       "name": "Prof. Raymond Liu",
       "institution": "Hong Kong University of Science and Technology (HKUST)",
       "country": "Hong Kong",
@@ -895,46 +961,6 @@
     },
     {
       "name": "Mazhar Ali",
-      "institution": "Academic Institution",
-      "country": "",
-      "department": "",
-      "profile_url": "",
-      "lab_website": "",
-      "research_areas": [],
-      "academic_fit_score": 10.0,
-      "recruitment_status": "not_verified",
-      "recruitment_evidence": "",
-      "recruitment_quote": "",
-      "recent_papers": [
-        {
-          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
-          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
-          "date": "2025",
-          "score": 7.7
-        }
-      ],
-      "publication_count": 2,
-      "citations_indicator": "",
-      "h_index": null,
-      "orcid": null,
-      "openalex_id": null,
-      "semantic_scholar_url": null,
-      "google_scholar_url": null,
-      "last_checked": "2026-09-11",
-      "current_opportunities": [],
-      "reasons": [
-        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
-        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
-        "✓ Active recent publication record (2 papers)",
-        "• Active researcher in target field; current recruitment status pending lab confirmation",
-        "• Location to be determined"
-      ],
-      "composite_score": 7.2,
-      "average_relevance": 7.7,
-      "topics": []
-    },
-    {
-      "name": "Abdullah Alourani",
       "institution": "Academic Institution",
       "country": "",
       "department": "",
@@ -4461,7 +4487,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "Oxford Machine Learning Summer School (OxML 2027)",
@@ -6087,8 +6114,8 @@
         "negative_penalty": 0.0,
         "final_score": 6.9,
         "matched_topics": [
-          "Internet of Things",
           "Edge Computing",
+          "Internet of Things",
           "IoT"
         ],
         "reasons": [
@@ -6496,13 +6523,13 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] matthieudejardins/ferrero-social-benchmark-demo (★ 0)",
-      "url": "https://github.com/matthieudejardins/ferrero-social-benchmark-demo",
+      "title": "[Code/Benchmark] tharindu-sankalpa/llm-serving-benchmark-mig (★ 0)",
+      "url": "https://github.com/tharindu-sankalpa/llm-serving-benchmark-mig",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "matthieudejardins"
+        "tharindu-sankalpa"
       ],
       "doi": null,
       "arxiv_id": null,
@@ -6515,53 +6542,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_01593dc5104515e3",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] ariffinsetya/llm-bahasa-creative-writing-benchmark (★ 0)",
-      "url": "https://github.com/ariffinsetya/llm-bahasa-creative-writing-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "ariffinsetya"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-04",
-      "discovery_date": "2026-10-04",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_9107b9fcff98ecde",
+      "id": "item_2ba134389d3ee24e",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -6795,10 +6776,10 @@
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [
-        "Edge Computing",
-        "IoT",
         "MEC",
-        "Distributed Systems"
+        "Edge Computing",
+        "Distributed Systems",
+        "IoT"
       ],
       "institution": "",
       "location": "",
