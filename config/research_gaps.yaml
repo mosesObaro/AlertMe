@@ -87,3 +87,20 @@ assessment:
   min_source_count: 2
   works_count_high_saturation: 100
   works_count_low_saturation: 15
+
+# Gemini LLM Settings for Problem Formulation & Statement Writing
+llm:
+  enabled: true
+  provider: "google"
+  model_id: "gemini-2.5-flash" # Current stable Flash-tier model (never gemini-1.5-*)
+  temperature: 0.2
+  max_calls_per_run: 15
+  retry_on_error: true
+  max_retries: 1
+  cache_dir: "data/llm_cache"
+  min_references_total: 20
+  min_references_section_1: 3
+  min_references_section_2: 8
+  min_references_section_3: 3
+  min_references_section_5: 3
+  min_references_section_6: 2

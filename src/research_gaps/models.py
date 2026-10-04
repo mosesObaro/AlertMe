@@ -757,6 +757,8 @@ class IEEEResearchStatement:
     references: List[Dict[str, Any]] = field(default_factory=list)
     word_count: int = 0
     markdown_content: str = ""
+    generation_method: str = "template"
+    under_referenced: bool = False
 
     def to_dict(self) -> Dict[str, Any]:
         d = asdict(self)

@@ -1617,5 +1617,86 @@ def test_evidence_bundle_builder(tmp_path):
     assert loaded["prob_test_123"].works[0].title == "Edge ML Resource Bottlenecks in Smart Sensors"
 
 
+def test_gemini_formulator_model_check():
+    from src.research_gaps.llm_formulation import GeminiFormulator
+    import pytest
+
+    with pytest.raises(ValueError, match="Prohibited Gemini model"):
+        GeminiFormulator(config={"llm": {"model_id": "gemini-1.5-flash"}})
+
+
+def test_gemini_formulator_fallback_without_key():
+    from src.research_gaps.llm_formulation import GeminiFormulator
+    from src.research_gaps.models import UnsolvedProblemCluster, PhDQualificationResult, EvidenceBundle
+
+    formulator = GeminiFormulator()
+    formulator.api_key = None
+
+    cluster = UnsolvedProblemCluster(cluster_id="c1", title="Edge Offloading")
+    qual = PhDQualificationResult(problem_id="c1", outcome="qualified")
+    bundle = EvidenceBundle(problem_id="c1")
+
+    stmt = formulator.generate_statement(cluster, qual, bundle)
+    assert stmt is None
+
+
+def test_gemini_formulator_mock_success(monkeypatch):
+    import json
+    import requests
+    from src.research_gaps.llm_formulation import GeminiFormulator
+    from src.research_gaps.models import UnsolvedProblemCluster, PhDQualificationResult, EvidenceBundle, EvidenceWork
+    from unittest.mock import MagicMock
+
+    formulator = GeminiFormulator(config={"llm": {"model_id": "gemini-2.5-flash"}})
+    formulator.api_key = "fake_key_123"
+
+    work1 = EvidenceWork(ref_key="R1", paper_id="p1", title="Title 1", doi="10.1109/TMC.2024.01")
+    work2 = EvidenceWork(ref_key="R2", paper_id="p2", title="Title 2", doi="10.1145/3676861")
+    bundle = EvidenceBundle(problem_id="c1", works=[work1, work2])
+
+    cluster = UnsolvedProblemCluster(cluster_id="c1", title="Edge Offloading")
+    qual = PhDQualificationResult(problem_id="c1", outcome="qualified")
+
+    mock_llm_json = {
+        "title": "IEEE Proposal: Optimized Edge Offloading",
+        "abstract": "This study proposes an adaptive edge offloading scheme.",
+        "research_questions": ["How to optimize latency?"],
+        "sections": {
+            "Section I: Introduction & Background": "Context on edge computing [R1].",
+            "Section II: Problem Statement & Unsolved Gap": "Offloading bottleneck remains [R1] [R2].",
+            "Section III: Proposed Research Direction & Methodology": "Methodology proposed [R2].",
+            "Section IV: Expected Contributions & Impact": "Open source framework.",
+            "Section V: Experimental Strategy & Evaluation Metrics": "Benchmark suite [R1].",
+            "Section VI: Related Work & Comparative Analysis": "Related survey [R2].",
+            "Section VII: Conclusion & Next Steps": "Summary conclusions.",
+        },
+    }
+
+    def mock_post(*args, **kwargs):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = {
+            "candidates": [
+                {
+                    "content": {
+                        "parts": [{"text": json.dumps(mock_llm_json)}]
+                    }
+                }
+            ]
+        }
+        return mock_resp
+
+    import requests
+    monkeypatch.setattr(requests, "post", mock_post)
+
+    stmt = formulator.generate_statement(cluster, qual, bundle)
+    assert stmt is not None
+    assert stmt.generation_method == "gemini-2.5-flash"
+    assert stmt.title == "IEEE Proposal: Optimized Edge Offloading"
+    assert len(stmt.research_questions) == 1
+    assert stmt.research_questions[0].endswith("?")
+    assert len(stmt.references) == 2
+
+
 
 

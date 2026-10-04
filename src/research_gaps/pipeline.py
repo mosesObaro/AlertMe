@@ -45,6 +45,7 @@ from src.research_gaps.supervisor_matcher import SupervisorMatcher
 from src.research_gaps.feasibility import FeasibilityAssessor
 from src.research_gaps.link_verifier import LinkVerifier
 from src.research_gaps.evidence_bundle import EvidenceBundleBuilder, save_evidence_bundles
+from src.research_gaps.llm_formulation import GeminiFormulator
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent.parent / "config"
 DATA_DIR = Path(__file__).resolve().parent.parent.parent / "data"
@@ -66,6 +67,7 @@ class ResearchGapPipeline:
         self.statement_generator = IEEEResearchStatementGenerator()
         self.dashboard_gen = ResearchGapDashboardGenerator(self.state_manager)
         self.evidence_builder = EvidenceBundleBuilder()
+        self.llm_formulator = GeminiFormulator(config=self.gap_config)
 
         # Legacy components
         self.gap_extractor = GapExtractor(config=self.gap_config)
@@ -107,6 +109,10 @@ class ResearchGapPipeline:
         qualifications_by_prof: Dict[str, Dict[str, PhDQualificationResult]] = {}
         statements_by_prof: Dict[str, Dict[str, IEEEResearchStatement]] = {}
 
+        llm_attempts = 0
+        llm_successes = 0
+        template_fallbacks = 0
+
         for prof in professors_batch:
             p_name = prof.get("name", "Unknown")
             logger.info(f"--- Processing Professor: {p_name} ---")
@@ -145,12 +151,29 @@ class ResearchGapPipeline:
 
                     # Step 4: IEEE research statement for qualified & borderline topics
                     if qual.outcome in ("qualified", "borderline"):
-                        stmt = self.statement_generator.generate_statement(
-                            cluster=cl,
-                            qualification=qual,
-                            corpus_papers=corpus.papers,
-                            professor_corpus=corpus,
-                        )
+                        stmt = None
+                        if self.llm_formulator.api_key:
+                            llm_attempts += 1
+                            stmt = self.llm_formulator.generate_statement(
+                                cluster=cl,
+                                qualification=qual,
+                                bundle=bundle,
+                            )
+                            if stmt:
+                                llm_successes += 1
+
+                        if not stmt:
+                            # Rule-based template fallback
+                            logger.warning(f"Using template fallback for statement generation (cluster_id={cl.cluster_id})")
+                            template_fallbacks += 1
+                            stmt = self.statement_generator.generate_statement(
+                                cluster=cl,
+                                qualification=qual,
+                                corpus_papers=corpus.papers,
+                                professor_corpus=corpus,
+                            )
+                            stmt.generation_method = "template"
+
                         stmt_map[cl.cluster_id] = stmt
 
                 save_evidence_bundles(all_bundles)
@@ -160,6 +183,10 @@ class ResearchGapPipeline:
             except Exception as e:
                 fetch_failures += 1
                 logger.error(f"Failed processing for professor {p_name}: {e}")
+
+        # Fail workflow if key was present but all LLM calls failed
+        if self.llm_formulator.api_key and llm_attempts > 0 and llm_successes == 0:
+            raise RuntimeError(f"LLM generation failed for all {llm_attempts} attempted problems despite GEMINI_API_KEY being present.")
 
         # Check silent failure constraint: fail workflow if no professor produced a corpus
         valid_corpora = [c for c in corpora_list if c.corpus_count > 0]
