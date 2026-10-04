@@ -66,12 +66,20 @@ def canonical_paper_id(
     ).generate_id()
 
 
+import urllib.parse
+
+
 def _normalize_doi(doi: Optional[str]) -> Optional[str]:
     if not doi:
         return None
     clean = str(doi).strip()
-    clean = re.sub(r'^(https?://(dx\.)?doi\.org/|doi:\s*)', '', clean, flags=re.IGNORECASE)
-    return clean or None
+    if re.search(r'^(doi_|paper_)[a-f0-9]{8,}$', clean, re.IGNORECASE):
+        return None
+    clean = re.sub(r'^(https?://(dx\.)?doi\.org/|doi:\s*)', '', clean, flags=re.IGNORECASE).strip()
+    clean = clean.rstrip(".,;)")
+    if re.match(r"^10\.\d{4,9}/\S+$", clean):
+        return clean
+    return None
 
 
 def _extract_year(date_str: Any) -> int:
@@ -148,6 +156,9 @@ class Citation:
     venue: str = ""
     url: str = ""
 
+    def __post_init__(self):
+        self.doi = _normalize_doi(self.doi)
+
     @classmethod
     def from_research_item(cls, item: Any) -> "Citation":
         return cls(
@@ -162,10 +173,13 @@ class Citation:
 
     @property
     def link(self) -> str:
-        """Canonical link: https://doi.org/<doi> when a DOI exists, else the source URL."""
-        if self.doi:
-            return f"https://doi.org/{self.doi}"
-        return self.url or ""
+        """Canonical link: https://doi.org/<doi> when a valid DOI exists, else the source URL."""
+        clean_doi = _normalize_doi(self.doi)
+        if clean_doi:
+            return f"https://doi.org/{urllib.parse.quote(clean_doi, safe='/')}"
+        if self.url and (self.url.startswith("http://") or self.url.startswith("https://")) and "doi_" not in self.url:
+            return self.url
+        return ""
 
     def format_authors(self) -> str:
         names = [a for a in self.authors if a]
@@ -509,6 +523,9 @@ class CorpusPaper:
     abstract: str = ""
     is_oa: bool = False
     openalex_id: str = ""
+
+    def __post_init__(self):
+        self.doi = _normalize_doi(self.doi)
 
     def to_dict(self) -> Dict[str, Any]:
         return asdict(self)
