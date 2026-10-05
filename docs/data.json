@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-04",
-    "total_items": 66,
-    "high_relevance_count": 41,
-    "papers_count": 22,
+    "last_updated": "2026-10-05",
+    "total_items": 70,
+    "high_relevance_count": 42,
+    "papers_count": 25,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -14,14 +14,14 @@
       "topic": "Edge AI",
       "direction": "↑↑",
       "status": "Surging",
-      "recent_count": 11,
-      "historical_count": 6
+      "recent_count": 12,
+      "historical_count": 7
     },
     {
       "topic": "TinyML",
       "direction": "↑↑",
       "status": "Surging",
-      "recent_count": 7,
+      "recent_count": 8,
       "historical_count": 1
     },
     {
@@ -32,17 +32,24 @@
       "historical_count": 1
     },
     {
-      "topic": "Computation Offloading",
+      "topic": "Resource Allocation",
       "direction": "→",
       "status": "Steady",
       "recent_count": 2,
       "historical_count": 2
     },
     {
-      "topic": "Resource Allocation",
-      "direction": "→",
-      "status": "Steady",
-      "recent_count": 2,
+      "topic": "Computation Offloading",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 3
+    },
+    {
+      "topic": "Edge Inference",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
       "historical_count": 2
     },
     {
@@ -65,13 +72,6 @@
       "status": "Stable",
       "recent_count": 0,
       "historical_count": 0
-    },
-    {
-      "topic": "Edge Inference",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 0,
-      "historical_count": 2
     },
     {
       "topic": "Split Learning",
@@ -4126,6 +4126,106 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Neuromorphic Computing Architectures for Low-Power Edge Inference in IoT Applications",
+      "url": "https://ecejournals.in/index.php/PECE/article/view/431",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Letahun Nemeon",
+        "P. Kharabi"
+      ],
+      "doi": "10.31838/ece/03.02.08",
+      "arxiv_id": null,
+      "publication_date": "2026-10-24",
+      "discovery_date": "2026-10-05",
+      "abstract": "The blistering advancements witnessed in the Internet of Things (IoT) ecosystem have led to the urgency of search outcomes that provide energy efficient, low latency, and smart processing support that manifests itself right at the edge. The traditional edge computing devices built on von Neumann architecture are inherently limited by being optimized to be adjacent in memory and processing components, which results in the high power required and latency, which are highly undesirable in devices with limited power resources; wearables, smart sensors, and remote-monitoring systems. A Neuromorphic computing approach based on the human brain blueprint presents a better alternative due to its implementation of spiking neural networks (SNNs) that allow asynchronous and event-driven computation, thus dramatically lowering power demand and yet being able to run real-time inference. This paper includes a holistic comparison of the most recent examples of the neuromorphic hardware platforms, such as Intel Loihi, IBM TrueNorth, and BrainScaleS system, with regard to their learning architectures, energy consumption, throughput, and suitability to the edge-based IoT applications. An empirical case study is carried out, which is a keyword spotting case study and event-based gesture recognition case study using Google Speech Commands and the DVS Gesture dataset sets, respectively. The neuromorphic systems presented a significant energy per inference improvement up to 15x and reduced latency at about 30 on traditional ARM Cortex-M7-based ANN implementations at very slight sacrifices in terms of classification accuracy. In addition, the Loihi platform showed on-chip learning utilizing spike-timing-dependent plasticity (STDP), which made the platform capable of dynamic and adaptive inference in fluctuating IoT applications. This paper also examines the integration issues of neuromorphic systems which include the compatibility with sensor modalities, immature software toolchains, and complexities to convert ANN to SNN. The results indicate that neuromorphic systems are highly suitable in ultra-low-power edge intelligence and provide a paradigm of scalable and biologically inspired, next-generation IoT systems. The lines of future research are described in such aspects as hybrid neuromorphic edge-cloud learning, unification of benchmark requirements, and designing secure, programmable, and reconfigurable neuromorphic co-processors to support adaptive edge AI.",
+      "venue": "Progress in Electronics and Communication Engineering",
+      "topics": [
+        "Neuromorphic engineering",
+        "Computer science",
+        "Edge computing",
+        "Computer architecture",
+        "Asynchronous communication",
+        "Inference",
+        "Enhanced Data Rates for GSM Evolution",
+        "Edge device",
+        "Implementation",
+        "IBM",
+        "Von Neumann architecture",
+        "Artificial intelligence",
+        "Artificial neural network",
+        "Distributed computing",
+        "Inference engine",
+        "Embedded system",
+        "Spiking neural network",
+        "Computer engineering",
+        "Cloud computing",
+        "Efficient energy use",
+        "Blueprint",
+        "Memory footprint",
+        "Low latency (capital markets)",
+        "Gesture recognition",
+        "Energy (signal processing)",
+        "Architecture",
+        "Key (lock)",
+        "Router",
+        "Unconventional computing",
+        "Machine learning",
+        "Ubiquitous computing",
+        "Scheme (mathematics)",
+        "ARM architecture",
+        "Energy consumption",
+        "Stochastic computing",
+        "Supercomputer",
+        "Reconfigurable computing",
+        "Smart objects",
+        "Memristor",
+        "Internet of Things"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_c234832e3eaa9c26",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "IoT",
+          "Edge Inference",
+          "Internet of Things",
+          "Edge Intelligence",
+          "Edge Computing",
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract), Edge Intelligence (Abstract)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Upcoming date: 2026-10-24 (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Neuromorphic engineering and Computer science. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "This paper also examines the integration issues of neuromorphic systems which include the compatibility with sensor modalities, immature software toolchains, and complexities to convert ANN to SNN",
+        "methodology": "The traditional edge computing devices built on von Neumann architecture are inherently limited by being optimized to be adjacent in memory and processing components, which results in the high power required and latency, which are highly undesirable in devices with limited power resources; wearables, smart sensors, and remote-monitoring systems",
+        "key_contribution": "The lines of future research are described in such aspects as hybrid neuromorphic edge-cloud learning, unification of benchmark requirements, and designing secure, programmable, and reconfigurable neuromorphic co-processors to support adaptive edge AI.",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
+    },
+    {
       "title": "Toward System-of-Systems Integration for Composable Cloud-HPC-Edge AI Platforms",
       "url": "http://arxiv.org/abs/2609.33427v1",
       "source": "arXiv",
@@ -5491,6 +5591,78 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Next-Generation Embedded Systems: Advanced Design Methodologies, Real-World Applications, and Emerging Technology Trends",
+      "url": "https://ecejournals.in/index.php/ESA/article/view/395",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "S.Poornimadarshini",
+        "T M Sathish Kumar"
+      ],
+      "doi": "10.31838/esa/03.02.01",
+      "arxiv_id": null,
+      "publication_date": "2026-10-05",
+      "discovery_date": "2026-10-05",
+      "abstract": "The evolution of embedded systems is more rapid and is bringing about a transformation across all systems of healthcare, automotive, industrial automation, and consumer electronics where intelligent, energy efficient and application specific solutions are becoming more important. The paper seeks to describe the complete analysis of next generation embedded systems especially in designing new approaches, practical implementations of the systems, and technological trends. The paper uses a structured review methodology; it would therefore pull together results of recently published peer-reviewed sources, industry reports, and case studies. Analysed methodologies are hw/sw co-design, power/energy conscious architecture, AI-driven optimisations, security-aware design and model-based development processes. The review findings also underscore the fact that a combination of edge AI accelerators, heterogeneous computing systems and secure, reconfigurable systems both maximizes performance per-watt and operational resiliency. The analysis also shows that new enablers like 5G/6G connectivity, neuromorphic computing and quantum-inspired algorithms will redefine embedded capabilities in application areas that generate particular latency and mission-critical applications. The discussion explains some of the major issues that the dialogue addresses such as security weaknesses, interoperability gaps, and sustainable design prerequisites. Every conclusion re-iterates the need to focus future research on cross-disciplinary research to come up with more scalable, secure, and eco-friendly embedded systems. The synthesis provides guidance to academic researchers, engineers and practitioners in the industry to utilize the current state of art developments in embedded systems, into the real world.",
+      "venue": "SCCTS Journal of Embedded Systems Design and Applications",
+      "topics": [
+        "Interoperability",
+        "Implementation",
+        "Computer science",
+        "Electronics",
+        "Systems engineering",
+        "Key (lock)",
+        "Emerging technologies",
+        "Engineering",
+        "Systems design",
+        "Focus (optics)",
+        "Engineering management",
+        "Efficient energy use",
+        "State (computer science)",
+        "Software engineering",
+        "Design methods",
+        "Industry 4.0",
+        "Enhanced Data Rates for GSM Evolution",
+        "Neuromorphic engineering",
+        "Model-driven architecture",
+        "Embedded system",
+        "Edge computing",
+        "Risk analysis (engineering)",
+        "Edge device"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_ba058364ca606c44",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "6G",
+          "Edge AI",
+          "5G"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
+    },
+    {
       "title": "AI For Sustainable Development Opportunities & Innovation",
       "url": "https://doi.org/10.5281/zenodo.22933761",
       "source": "OpenAlex",
@@ -6129,7 +6301,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "weekly"
     },
     {
       "title": "TinyML & Edge AI Summer School 2027",
@@ -6224,7 +6397,71 @@
         "description": "Hands-on intensive academic training program covering model quantization, hardware acceleration on microcontrollers, and low-power distributed inference.",
         "relevance_score": 6.9
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "weekly"
+    },
+    {
+      "title": "A Survey on mmWave Channel Attenuation and mMIMO Beamforming for Future Wireless Networks",
+      "url": "https://www.innove.org/ijist/index.php/ijist/article/view/365",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "survey",
+      "authors": [
+        "Mourtada Oubassghir",
+        "Mohamed Boulouird"
+      ],
+      "doi": "10.57675/imist.prsm/ijist-v10i1.365",
+      "arxiv_id": null,
+      "publication_date": "2026-10-04",
+      "discovery_date": "2026-10-05",
+      "abstract": "Millimeter-wave (mmWave) communication and massive multiple-input multiple-output (mMIMO) are widely used in 5G and are expected to remain important for future wireless systems. mmWave provides large bandwidth and can deliver very high data rates. mMIMO relies on large antenna arrays to increase array gain and to serve multiple users through beamforming and spatial multiplexing. These advantages come with practical limits. mmWave links are sensitive to propagation effects such as free-space loss, atmospheric absorption, blockage, rain, vegetation, and penetration through common materials. mMIMO also raises hardware and energy constraints because it needs more radio-frequency components and feasible array and beamforming designs. This paper reviews the main mmWave attenuation mechanisms, with focus on rain modeling and the role of raindrop size distribution at high frequencies, and on ITU-based vegetation loss including seasonal and tree-type effects. It also summarizes mMIMO beamforming architectures and antenna configurations, and outlines how mmWave and mMIMO can be combined with other techniques to improve link reliability in future networks.",
+      "venue": "International Journal of Information Science and Technology",
+      "topics": [
+        "Beamforming",
+        "Computer science",
+        "Electronic engineering",
+        "Bandwidth (computing)",
+        "Wireless",
+        "Channel (broadcasting)",
+        "Focus (optics)",
+        "Reliability (semiconductor)",
+        "Attenuation",
+        "Antenna array",
+        "Antenna (radio)",
+        "Wireless network",
+        "Omnidirectional antenna",
+        "Wireless sensor network",
+        "Noise (video)",
+        "Transceiver"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_3bcc6addf9a01dcc",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.7,
+        "negative_penalty": 0.0,
+        "final_score": 6.9,
+        "matched_topics": [
+          "5G"
+        ],
+        "reasons": [
+          "✓ Secondary topic with Edge context: 5G",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Comprehensive Literature Survey / Review (+0.7)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
     },
     {
       "title": "Review of bearing fault diagnosis based on neural networks",
@@ -6470,7 +6707,8 @@
         "description": "High-impact workshop bringing together researchers to discuss contentious and provocative new directions in edge computing, edge storage, and hardware heterogeneity.",
         "relevance_score": 6.8
       },
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "weekly"
     },
     {
       "title": "Distributed Edge Inference: an Experimental Study on Multiview Detection",
@@ -6523,18 +6761,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] tharindu-sankalpa/llm-serving-benchmark-mig (★ 0)",
-      "url": "https://github.com/tharindu-sankalpa/llm-serving-benchmark-mig",
+      "title": "[Code/Benchmark] 4ndr3s-00/workflow-benchmarks (★ 0)",
+      "url": "https://github.com/4ndr3s-00/workflow-benchmarks",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "tharindu-sankalpa"
+        "4ndr3s-00"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-04",
-      "discovery_date": "2026-10-04",
+      "publication_date": "2026-10-05",
+      "discovery_date": "2026-10-05",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -6542,7 +6780,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_2ba134389d3ee24e",
+      "id": "item_a4117fbcb165a94c",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -6569,6 +6807,52 @@
       }
     },
     {
+      "title": "[Code/Benchmark] powsybl/powsybl-benchmark (★ 0)",
+      "url": "https://github.com/powsybl/powsybl-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "powsybl"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-05",
+      "discovery_date": "2026-10-05",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 3)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_bb655dd69b249de0",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 3
+      }
+    },
+    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -6579,8 +6863,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-04",
-      "discovery_date": "2026-10-04",
+      "publication_date": "2026-10-05",
+      "discovery_date": "2026-10-05",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -6617,7 +6901,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 43 days (+0.3)",
+          "Event upcoming in 42 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -6676,8 +6960,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-04",
-      "discovery_date": "2026-10-04",
+      "publication_date": "2026-10-05",
+      "discovery_date": "2026-10-05",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -6761,6 +7045,80 @@
       "raw_metadata": {}
     },
     {
+      "title": "AI-Driven Smart Irrigation System Using Edge-Based Embedded Controllers",
+      "url": "https://ecejournals.in/index.php/PECE/article/view/427",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Fahad Al-Jame",
+        "Perera Manthila"
+      ],
+      "doi": "10.31838/ece/03.02.04",
+      "arxiv_id": null,
+      "publication_date": "2026-10-19",
+      "discovery_date": "2026-10-05",
+      "abstract": "This study brings out a new AI-based smart irrigation device aimed at solving the increasing problem of water shortage and poor agricultural procedures using emulated edge-based controllers. This combination of environmental sensing, lightweight machine learning algorithms and actuation on microcontrollers enables the system to do real time, adaptive irrigation scheduling. Their implementation of important parts like Raspberry Pi 4 as an AI inference module and an STM32 microcontroller as an actuator controller accelerates the responsiveness, increases security, and saves energy consumption since there is no need in cloud computing. Using the local climatic and soil moisture data the machine learning model identifies optimum irrigation time and duration looking at various parameters such as temperature, humidity, rain and crop-specific thresholds. The whole decision-making process is automated and carried out at the edge that makes it functional even without interruption in areas with poor or no internet connection. This was done by conducting extensive field tests within the semi-arid agricultural areas to prove the efficacy of the recommended solution. The findings show that there is a considerable gain in the efficiency of resources, with up to 38 percent of reduction of water use and 20 percent of increase in the yield of the crops contrasted to the conventional time-based irrigation schemes. Also, the system averaged a latency of only 34millisecs and consumed power at less than 2.5W which became very handy in deployment in rural areas. TinyML and its compatibility with cheap edge hardware are scalable and sustainable, which creates an efficient path to modernize the irrigation infrastructure in the developing world. This article does not only highlight the revolutionary nature of embedded AI in precision agriculture, but it precondition the further innovative development of the field of data-driven farm management and autonomous farm management. The one suggested is one of the options that could be implemented to achieve environmental sustainability, enhance the productivity of agriculture, and make smart and local decisions to use water intelligently.",
+      "venue": "Progress in Electronics and Communication Engineering",
+      "topics": [
+        "Microcontroller",
+        "Irrigation",
+        "Computer science",
+        "Agricultural engineering",
+        "Embedded system",
+        "Cloud computing",
+        "Edge computing",
+        "STM32",
+        "Actuator",
+        "Real-time computing",
+        "Scalability",
+        "Controller (irrigation)",
+        "Edge device",
+        "Software deployment",
+        "Soil moisture sensor",
+        "Simulation",
+        "Arduino",
+        "Server",
+        "Cash crop",
+        "Efficient energy use",
+        "Enhanced Data Rates for GSM Evolution",
+        "Energy consumption",
+        "Control system",
+        "Engineering",
+        "Programmable logic controller",
+        "Robotic arm"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_5bf22f0e391e6dd5",
+      "score": {
+        "topic_score": 2.6,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.6,
+        "matched_topics": [
+          "Cloud Computing",
+          "TinyML"
+        ],
+        "reasons": [
+          "✓ Secondary topic with Edge context: Cloud Computing",
+          "✓ Key research area match: TinyML (+0.4)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Upcoming date: 2026-10-19 (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 1
+      }
+    },
+    {
       "title": "CloudAM 2026 : 15th International Workshop on Cloud and Edge Computing, and Applications Management",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=202965&copyownerid=43185",
       "source": "Conference Feed",
@@ -6771,15 +7129,15 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-04",
-      "discovery_date": "2026-10-04",
+      "publication_date": "2026-10-05",
+      "discovery_date": "2026-10-05",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [
-        "MEC",
         "Edge Computing",
         "Distributed Systems",
-        "IoT"
+        "IoT",
+        "MEC"
       ],
       "institution": "",
       "location": "",
@@ -6809,56 +7167,6 @@
       "raw_metadata": {}
     },
     {
-      "title": "Towards a Cloud Fog Edge System for Smart Building",
-      "url": "http://arxiv.org/abs/2610.01647v1",
-      "source": "arXiv",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "preprint",
-      "authors": [
-        "Christophe Cérin",
-        "Mamadou Sow",
-        "Frédéric Andrès"
-      ],
-      "doi": null,
-      "arxiv_id": "2610.01647v1",
-      "publication_date": "2026-10-01",
-      "discovery_date": "2026-10-04",
-      "abstract": "In this article, we present our vision and recent advancements toward creating a decentralized system capable of learning from real-time data within buildings to support sustainable and privacy-preserving smart environments. Our approach promotes the concept of the building itself as the data center, aligning with the principles of edge computing to safeguard confidentiality and reduce reliance on external cloud infrastructure. This is particularly valuable in humanitarian contexts, where data sovereignty, energy efficiency, and infrastructure constraints are critical. We detail a lightweight, \"Kubernetes-like\" orchestration framework for deploying AI services within such environments and demonstrate our progress in implementing AI algorithms on low-power, cost-effective microcontrollers such as those in the Arduino ecosystem. By enabling in-situ learning directly on sensors or microcontrollers, our work aims to bring intelligent services to resource-limited settings, fostering autonomy, resilience, and sustainable development in vulnerable or underserved communities. The contributions in this article are related, firstly, to our project \"Online Machine Learning Algorithms for Embedded Systems\" and the evaluation of two new online algorithms. Secondly, we envision a cloud-fog-edge architecture based on the KOptim and FIWARE components, and we propose a methodology for coupling them. Experimental results of the online algorithms are also presented, showcasing real-world traces.",
-      "venue": "arXiv CS",
-      "topics": [
-        "cs.DC",
-        "cs.LG"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "arxiv_5b5b4589406abab8",
-      "score": {
-        "topic_score": 2.6,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.6,
-        "matched_topics": [
-          "Edge Computing",
-          "Kubernetes",
-          "Energy Efficiency"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Key research area match: Energy Efficiency (+0.4)",
-          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (3d ago) (+1.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
-    },
-    {
       "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
       "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
       "source": "Linux Foundation / LF Edge Blog",
@@ -6870,7 +7178,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-04",
+      "discovery_date": "2026-10-05",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -6893,7 +7201,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (109d ago) (+0.2)",
+          "• Published >30d ago (110d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
