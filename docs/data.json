@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-05",
-    "total_items": 70,
+    "last_updated": "2026-10-06",
+    "total_items": 69,
     "high_relevance_count": 42,
-    "papers_count": 25,
+    "papers_count": 24,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -4223,7 +4223,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "Toward System-of-Systems Integration for Composable Cloud-HPC-Edge AI Platforms",
@@ -5660,7 +5661,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "AI For Sustainable Development Opportunities & Innovation",
@@ -6401,69 +6403,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "A Survey on mmWave Channel Attenuation and mMIMO Beamforming for Future Wireless Networks",
-      "url": "https://www.innove.org/ijist/index.php/ijist/article/view/365",
-      "source": "OpenAlex",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "survey",
-      "authors": [
-        "Mourtada Oubassghir",
-        "Mohamed Boulouird"
-      ],
-      "doi": "10.57675/imist.prsm/ijist-v10i1.365",
-      "arxiv_id": null,
-      "publication_date": "2026-10-04",
-      "discovery_date": "2026-10-05",
-      "abstract": "Millimeter-wave (mmWave) communication and massive multiple-input multiple-output (mMIMO) are widely used in 5G and are expected to remain important for future wireless systems. mmWave provides large bandwidth and can deliver very high data rates. mMIMO relies on large antenna arrays to increase array gain and to serve multiple users through beamforming and spatial multiplexing. These advantages come with practical limits. mmWave links are sensitive to propagation effects such as free-space loss, atmospheric absorption, blockage, rain, vegetation, and penetration through common materials. mMIMO also raises hardware and energy constraints because it needs more radio-frequency components and feasible array and beamforming designs. This paper reviews the main mmWave attenuation mechanisms, with focus on rain modeling and the role of raindrop size distribution at high frequencies, and on ITU-based vegetation loss including seasonal and tree-type effects. It also summarizes mMIMO beamforming architectures and antenna configurations, and outlines how mmWave and mMIMO can be combined with other techniques to improve link reliability in future networks.",
-      "venue": "International Journal of Information Science and Technology",
-      "topics": [
-        "Beamforming",
-        "Computer science",
-        "Electronic engineering",
-        "Bandwidth (computing)",
-        "Wireless",
-        "Channel (broadcasting)",
-        "Focus (optics)",
-        "Reliability (semiconductor)",
-        "Attenuation",
-        "Antenna array",
-        "Antenna (radio)",
-        "Wireless network",
-        "Omnidirectional antenna",
-        "Wireless sensor network",
-        "Noise (video)",
-        "Transceiver"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_3bcc6addf9a01dcc",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.7,
-        "negative_penalty": 0.0,
-        "final_score": 6.9,
-        "matched_topics": [
-          "5G"
-        ],
-        "reasons": [
-          "✓ Secondary topic with Edge context: 5G",
-          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)",
-          "✓ Comprehensive Literature Survey / Review (+0.7)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "cited_by_count": 0
-      }
-    },
-    {
       "title": "Review of bearing fault diagnosis based on neural networks",
       "url": "https://doaj.org/article/b9fe601a0ea84636a856af7354cfdb5d",
       "source": "OpenAlex",
@@ -6761,18 +6700,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] 4ndr3s-00/workflow-benchmarks (★ 0)",
-      "url": "https://github.com/4ndr3s-00/workflow-benchmarks",
+      "title": "[Code/Benchmark] dzaragoza/LLM-benchmark (★ 0)",
+      "url": "https://github.com/dzaragoza/LLM-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "4ndr3s-00"
+        "dzaragoza"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-05",
-      "discovery_date": "2026-10-05",
+      "publication_date": "2026-10-06",
+      "discovery_date": "2026-10-06",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -6780,7 +6719,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_a4117fbcb165a94c",
+      "id": "item_d412601bbbd30b53",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -6807,26 +6746,26 @@
       }
     },
     {
-      "title": "[Code/Benchmark] powsybl/powsybl-benchmark (★ 0)",
-      "url": "https://github.com/powsybl/powsybl-benchmark",
+      "title": "[Code/Benchmark] depot/benchmark-kafka (★ 2)",
+      "url": "https://github.com/depot/benchmark-kafka",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "powsybl"
+        "depot"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-05",
-      "discovery_date": "2026-10-05",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 3)",
+      "publication_date": "2026-10-06",
+      "discovery_date": "2026-10-06",
+      "abstract": "Open source edge computing repository. (Stars: 2, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_bb655dd69b249de0",
+      "id": "item_8afa4c9c5c75ec17",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -6848,8 +6787,8 @@
       "intelligence": null,
       "opportunity_data": null,
       "raw_metadata": {
-        "stars": 0,
-        "forks": 3
+        "stars": 2,
+        "forks": 0
       }
     },
     {
@@ -6863,8 +6802,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-05",
-      "discovery_date": "2026-10-05",
+      "publication_date": "2026-10-06",
+      "discovery_date": "2026-10-06",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -6901,7 +6840,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 42 days (+0.3)",
+          "Event upcoming in 41 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -6960,8 +6899,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-05",
-      "discovery_date": "2026-10-05",
+      "publication_date": "2026-10-06",
+      "discovery_date": "2026-10-06",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7057,7 +6996,7 @@
       "doi": "10.31838/ece/03.02.04",
       "arxiv_id": null,
       "publication_date": "2026-10-19",
-      "discovery_date": "2026-10-05",
+      "discovery_date": "2026-10-06",
       "abstract": "This study brings out a new AI-based smart irrigation device aimed at solving the increasing problem of water shortage and poor agricultural procedures using emulated edge-based controllers. This combination of environmental sensing, lightweight machine learning algorithms and actuation on microcontrollers enables the system to do real time, adaptive irrigation scheduling. Their implementation of important parts like Raspberry Pi 4 as an AI inference module and an STM32 microcontroller as an actuator controller accelerates the responsiveness, increases security, and saves energy consumption since there is no need in cloud computing. Using the local climatic and soil moisture data the machine learning model identifies optimum irrigation time and duration looking at various parameters such as temperature, humidity, rain and crop-specific thresholds. The whole decision-making process is automated and carried out at the edge that makes it functional even without interruption in areas with poor or no internet connection. This was done by conducting extensive field tests within the semi-arid agricultural areas to prove the efficacy of the recommended solution. The findings show that there is a considerable gain in the efficiency of resources, with up to 38 percent of reduction of water use and 20 percent of increase in the yield of the crops contrasted to the conventional time-based irrigation schemes. Also, the system averaged a latency of only 34millisecs and consumed power at less than 2.5W which became very handy in deployment in rural areas. TinyML and its compatibility with cheap edge hardware are scalable and sustainable, which creates an efficient path to modernize the irrigation infrastructure in the developing world. This article does not only highlight the revolutionary nature of embedded AI in precision agriculture, but it precondition the further innovative development of the field of data-driven farm management and autonomous farm management. The one suggested is one of the options that could be implemented to achieve environmental sustainability, enhance the productivity of agriculture, and make smart and local decisions to use water intelligently.",
       "venue": "Progress in Electronics and Communication Engineering",
       "topics": [
@@ -7129,15 +7068,15 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-05",
-      "discovery_date": "2026-10-05",
+      "publication_date": "2026-10-06",
+      "discovery_date": "2026-10-06",
       "abstract": "15th International Workshop on Cloud and Edge Computing, and Applications Management [Florianópolis, Brazil] [Dec 1, 2026 - Dec 4, 2026]",
       "venue": "Conference CFP",
       "topics": [
-        "Edge Computing",
-        "Distributed Systems",
         "IoT",
-        "MEC"
+        "MEC",
+        "Edge Computing",
+        "Distributed Systems"
       ],
       "institution": "",
       "location": "",
@@ -7178,7 +7117,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-05",
+      "discovery_date": "2026-10-06",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7201,7 +7140,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (110d ago) (+0.2)",
+          "• Published >30d ago (111d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
