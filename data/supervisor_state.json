@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T11:51:04.009938",
+  "last_updated": "2026-10-07T11:36:20.781275",
   "campaign_history": {
     "hong_kong": [
       {
@@ -631,6 +631,26 @@
           "Prof. Sam Kwong",
           "Prof. Philip L.H. Yu"
         ]
+      },
+      {
+        "execution_date": "2026-10-07",
+        "universities_count": 8,
+        "professors_count": 12,
+        "funding_opportunities_count": 9,
+        "professors": [
+          "Prof. Jiannong Cao",
+          "Prof. Song Guo",
+          "Prof. Chuan Wu",
+          "Prof. Jianping Wang",
+          "Prof. Wei Wang",
+          "Prof. Lin Wang",
+          "Prof. Minghua Chen",
+          "Prof. John C.S. Lui",
+          "Prof. Heming Cui",
+          "Prof. Xiaowen Chu",
+          "Prof. Sam Kwong",
+          "Prof. Philip L.H. Yu"
+        ]
       }
     ],
     "uk": [
@@ -1024,6 +1044,23 @@
           "Dr. Eiko Yoneki",
           "Prof. Cecilia Mascolo"
         ]
+      },
+      {
+        "execution_date": "2026-10-07",
+        "universities_count": 8,
+        "professors_count": 9,
+        "funding_opportunities_count": 4,
+        "professors": [
+          "Prof. Jon Crowcroft",
+          "Prof. Julie A. McCann",
+          "Prof. Peter Pietzuch",
+          "Prof. Hamed Haddadi",
+          "Prof. Mahesh Marina",
+          "Prof. Dimitrios Pezaros",
+          "Prof. Nishanth Sastry",
+          "Dr. Eiko Yoneki",
+          "Prof. Cecilia Mascolo"
+        ]
       }
     ],
     "japan": [
@@ -1378,6 +1415,22 @@
           "Prof. Masaki Aida",
           "Prof. Fumio Teraoka"
         ]
+      },
+      {
+        "execution_date": "2026-10-07",
+        "universities_count": 8,
+        "professors_count": 8,
+        "funding_opportunities_count": 4,
+        "professors": [
+          "Prof. Hiroshi Esaki",
+          "Prof. Hiroki Matsutani",
+          "Prof. Koji Yatani",
+          "Prof. Kenjiro Cho",
+          "Prof. Toyotaro Suzumura",
+          "Prof. Hideyuki Kawashima",
+          "Prof. Masaki Aida",
+          "Prof. Fumio Teraoka"
+        ]
       }
     ],
     "germany": [
@@ -1719,6 +1772,22 @@
       },
       {
         "execution_date": "2026-10-06",
+        "universities_count": 8,
+        "professors_count": 8,
+        "funding_opportunities_count": 3,
+        "professors": [
+          "Prof. David Bermbach",
+          "Prof. Marco Caccamo",
+          "Prof. Michael Gerndt",
+          "Prof. Frank H. P. Fitzek",
+          "Prof. Jörg Ott",
+          "Prof. Thorsten Strufe",
+          "Prof. Christof Fetzer",
+          "Prof. Klaus Wehrle"
+        ]
+      },
+      {
+        "execution_date": "2026-10-07",
         "universities_count": 8,
         "professors_count": 8,
         "funding_opportunities_count": 3,
@@ -2102,6 +2171,22 @@
           "Prof. Ion Stoica",
           "Prof. Mahadev Satyanarayanan (Satya)"
         ]
+      },
+      {
+        "execution_date": "2026-10-07",
+        "universities_count": 8,
+        "professors_count": 8,
+        "funding_opportunities_count": 3,
+        "professors": [
+          "Prof. Indranil Gupta",
+          "Prof. Sanjay Shakkottai",
+          "Prof. Tarek Abdelzaher",
+          "Prof. Joseph E. Gonzalez",
+          "Prof. Klara Nahrstedt",
+          "Prof. Mung Chiang",
+          "Prof. Ion Stoica",
+          "Prof. Mahadev Satyanarayanan (Satya)"
+        ]
       }
     ],
     "canada": [
@@ -2459,6 +2544,22 @@
       },
       {
         "execution_date": "2026-10-06",
+        "universities_count": 8,
+        "professors_count": 8,
+        "funding_opportunities_count": 2,
+        "professors": [
+          "Prof. Jiangchuan Liu",
+          "Prof. Raouf Boutaba",
+          "Prof. Di Niu",
+          "Prof. Sathish Gopalakrishnan",
+          "Prof. Karthik Pattabiraman",
+          "Prof. Yashar Ganjali",
+          "Prof. Cristiana Amza",
+          "Prof. Muthucumaru Maheswaran"
+        ]
+      },
+      {
+        "execution_date": "2026-10-07",
         "universities_count": 8,
         "professors_count": 8,
         "funding_opportunities_count": 2,
@@ -2834,6 +2935,23 @@
       },
       {
         "execution_date": "2026-10-06",
+        "universities_count": 8,
+        "professors_count": 9,
+        "funding_opportunities_count": 2,
+        "professors": [
+          "Prof. Gerald Q. Maguire Jr.",
+          "Prof. James Gross",
+          "Prof. Sarunas Girdzijauskas",
+          "Prof. Erik Elmroth",
+          "Prof. Seif Haridi",
+          "Prof. Christian Rohner",
+          "Prof. Marina Papatriantafilou",
+          "Prof. Johan Eker",
+          "Prof. Per Stenström"
+        ]
+      },
+      {
+        "execution_date": "2026-10-07",
         "universities_count": 8,
         "professors_count": 9,
         "funding_opportunities_count": 2,
