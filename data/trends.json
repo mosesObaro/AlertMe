@@ -1,12 +1,5 @@
 [
   {
-    "topic": "Edge AI",
-    "direction": "↑↑",
-    "status": "Surging",
-    "recent_count": 12,
-    "historical_count": 7
-  },
-  {
     "topic": "TinyML",
     "direction": "↑↑",
     "status": "Surging",
@@ -19,6 +12,13 @@
     "status": "Surging",
     "recent_count": 3,
     "historical_count": 1
+  },
+  {
+    "topic": "Edge AI",
+    "direction": "↑",
+    "status": "Rising",
+    "recent_count": 10,
+    "historical_count": 9
   },
   {
     "topic": "Resource Allocation",
