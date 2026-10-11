@@ -6700,26 +6700,26 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] dzaragoza/LLM-benchmark (★ 2)",
-      "url": "https://github.com/dzaragoza/LLM-benchmark",
+      "title": "[Code/Benchmark] unluw/wukong-benchmark-automation (★ 0)",
+      "url": "https://github.com/unluw/wukong-benchmark-automation",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "dzaragoza"
+        "unluw"
       ],
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-10-11",
       "discovery_date": "2026-10-11",
-      "abstract": "Open source edge computing repository. (Stars: 2, Forks: 0)",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_8ee5bf6fd880d598",
+      "id": "item_b68991604168219e",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -6741,7 +6741,7 @@
       "intelligence": null,
       "opportunity_data": null,
       "raw_metadata": {
-        "stars": 2,
+        "stars": 0,
         "forks": 0
       }
     },
@@ -7027,10 +7027,10 @@
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
+        "MEC",
         "Edge Computing",
         "IoT",
-        "Distributed Systems",
-        "MEC"
+        "Distributed Systems"
       ],
       "institution": "",
       "location": "",
