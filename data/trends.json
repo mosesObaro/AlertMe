@@ -3,15 +3,15 @@
     "topic": "Edge AI",
     "direction": "↓",
     "status": "Declining",
-    "recent_count": 9,
-    "historical_count": 10
+    "recent_count": 8,
+    "historical_count": 11
   },
   {
     "topic": "TinyML",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 5,
-    "historical_count": 4
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 4,
+    "historical_count": 5
   },
   {
     "topic": "Federated Learning",
