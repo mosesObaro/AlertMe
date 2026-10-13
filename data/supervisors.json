@@ -5380,5 +5380,74 @@
     "topics": [
       "cs.DC"
     ]
+  },
+  "Wentao Liao": {
+    "name": "Wentao Liao",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Artificial intelligence",
+      "Computer vision",
+      "Sensor fusion",
+      "Fuse (electrical)",
+      "Work (physics)",
+      "Key (lock)",
+      "Simultaneous localization and mapping",
+      "Core (optical fiber)",
+      "Perception",
+      "Engineering",
+      "Human–computer interaction",
+      "Computer science",
+      "Enhanced Data Rates for GSM Evolution",
+      "Expert system"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Multi-Robot Collaborative SLAM in Warehouses: A Review",
+        "url": "https://doi.org/10.54254/2755-2721/2026.ba37691",
+        "date": "2026-10-13",
+        "venue": "Applied and Computational Engineering",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-13",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 6.9,
+    "topics": [
+      "Artificial intelligence",
+      "Computer vision",
+      "Sensor fusion",
+      "Fuse (electrical)",
+      "Work (physics)",
+      "Key (lock)",
+      "Simultaneous localization and mapping",
+      "Core (optical fiber)",
+      "Perception",
+      "Engineering",
+      "Human–computer interaction",
+      "Computer science",
+      "Enhanced Data Rates for GSM Evolution",
+      "Expert system"
+    ]
   }
 }
