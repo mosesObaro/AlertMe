@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-13",
+    "last_updated": "2026-10-14",
     "total_items": 70,
     "high_relevance_count": 42,
-    "papers_count": 26,
+    "papers_count": 27,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -14,7 +14,7 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 7,
+      "recent_count": 8,
       "historical_count": 12
     },
     {
@@ -5592,6 +5592,54 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+      "url": "http://arxiv.org/abs/2610.16395v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Zhanwei Wang",
+        "Jianhao Huang",
+        "Min Sheng",
+        "Kaibin Huang"
+      ],
+      "doi": null,
+      "arxiv_id": "2610.16395v1",
+      "publication_date": "2026-10-12",
+      "discovery_date": "2026-10-14",
+      "abstract": "The fusion of artificial intelligence (AI) and space technologies is extending spaceborne intelligence beyond onboard payloads toward a global infrastructure, here termed Space AI infrastructure (SpaceAI-Infra). Its promise rests on two distinctive advantages of space systems: abundant solar energy in orbit and the global reach of satellite constellations. Realizing this promise hinges on a fundamental systems question: How should satellite constellations be designed and orchestrated to deliver data-center-scale AI services competitive with their terrestrial counterparts? This article develops a roadmap-oriented answer. We first chart the evolution of SpaceAI-Infra through three progressive stages: onboard AI, Space Edge AI, and Space Cloud AI. By revisiting the space-constrained fundamentals for end-to-end token services, we derive enabling design principles and translate them into an integrated space edge--cloud architecture. The communication-centric space edge comprises free-flying LEO constellations that provide user-proximate computing and form the access and backhaul fabric for cloud AI services. Complementing the edge, the computing-centric space cloud comprises formation-flying satellite constellations organized as space data centers in dawn--dusk sun-synchronous orbits. A case study demonstrates that the proposed architecture can support data-center-scale foundation-model inference for millions of concurrent users worldwide.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_410b2d3c3eb5633c",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (2d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Next-Generation Embedded Systems: Advanced Design Methodologies, Real-World Applications, and Emerging Technology Trends",
       "url": "https://ecejournals.in/index.php/ESA/article/view/395",
       "source": "OpenAlex",
@@ -6237,7 +6285,7 @@
       "doi": "10.54254/2755-2721/2026.ba37691",
       "arxiv_id": null,
       "publication_date": "2026-10-13",
-      "discovery_date": "2026-10-13",
+      "discovery_date": "2026-10-14",
       "abstract": "With the rapid growth of e-commerce, Automated Guided Vehicles (AGVs) are increasingly deployed in intelligent warehouses, where Simultaneous Localization and Mapping (SLAM) provides the core localization capability. Warehouses differ from domestic or outdoor scenarios in four respects: highly structured regular rack layouts, quasi-static conditions with dynamic goods movement, GPS-denied weak-network communication, and perceptual degradation caused by long corridors and repetitive textures. This paper reviews recent progress in multi-robot collaborative SLAM tailored for warehouse scenarios. It analyzes warehouse-specific environmental characteristics, discusses single-robot SLAM solutions under weak-network constraints, examines anti-drift localization methods for degraded scenes, and compares multi-robot collaborative architectures and map fusion techniques. The review also identifies a gap between academic algorithms and industrial practice, and points to future directions including semantic-geometric fusion, edge computing, and large-model empowered intelligent warehouses.",
       "venue": "Applied and Computational Engineering",
       "topics": [
@@ -6275,7 +6323,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
           "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
           "✓ Comprehensive Literature Survey / Review (+0.7)"
         ]
       },
@@ -6760,52 +6808,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] DrakeCurtice/optical_mouse_sensor_benchmark (★ 0)",
-      "url": "https://github.com/DrakeCurtice/optical_mouse_sensor_benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "DrakeCurtice"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-13",
-      "discovery_date": "2026-10-13",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_fe5c5c7a21beba9f",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -6816,8 +6818,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-13",
-      "discovery_date": "2026-10-13",
+      "publication_date": "2026-10-14",
+      "discovery_date": "2026-10-14",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -6854,7 +6856,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 34 days (+0.3)",
+          "Event upcoming in 33 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -6913,8 +6915,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-13",
-      "discovery_date": "2026-10-13",
+      "publication_date": "2026-10-14",
+      "discovery_date": "2026-10-14",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7010,7 +7012,7 @@
       "doi": "10.31838/ece/03.02.04",
       "arxiv_id": null,
       "publication_date": "2026-10-19",
-      "discovery_date": "2026-10-13",
+      "discovery_date": "2026-10-14",
       "abstract": "This study brings out a new AI-based smart irrigation device aimed at solving the increasing problem of water shortage and poor agricultural procedures using emulated edge-based controllers. This combination of environmental sensing, lightweight machine learning algorithms and actuation on microcontrollers enables the system to do real time, adaptive irrigation scheduling. Their implementation of important parts like Raspberry Pi 4 as an AI inference module and an STM32 microcontroller as an actuator controller accelerates the responsiveness, increases security, and saves energy consumption since there is no need in cloud computing. Using the local climatic and soil moisture data the machine learning model identifies optimum irrigation time and duration looking at various parameters such as temperature, humidity, rain and crop-specific thresholds. The whole decision-making process is automated and carried out at the edge that makes it functional even without interruption in areas with poor or no internet connection. This was done by conducting extensive field tests within the semi-arid agricultural areas to prove the efficacy of the recommended solution. The findings show that there is a considerable gain in the efficiency of resources, with up to 38 percent of reduction of water use and 20 percent of increase in the yield of the crops contrasted to the conventional time-based irrigation schemes. Also, the system averaged a latency of only 34millisecs and consumed power at less than 2.5W which became very handy in deployment in rural areas. TinyML and its compatibility with cheap edge hardware are scalable and sustainable, which creates an efficient path to modernize the irrigation infrastructure in the developing world. This article does not only highlight the revolutionary nature of embedded AI in precision agriculture, but it precondition the further innovative development of the field of data-driven farm management and autonomous farm management. The one suggested is one of the options that could be implemented to achieve environmental sustainability, enhance the productivity of agriculture, and make smart and local decisions to use water intelligently.",
       "venue": "Progress in Electronics and Communication Engineering",
       "topics": [
@@ -7082,15 +7084,15 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-13",
-      "discovery_date": "2026-10-13",
+      "publication_date": "2026-10-14",
+      "discovery_date": "2026-10-14",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
+        "IoT",
         "Edge Computing",
-        "MEC",
         "Distributed Systems",
-        "IoT"
+        "MEC"
       ],
       "institution": "",
       "location": "",
@@ -7132,7 +7134,7 @@
       "doi": null,
       "arxiv_id": "2610.13830v1",
       "publication_date": "2026-10-09",
-      "discovery_date": "2026-10-13",
+      "discovery_date": "2026-10-14",
       "abstract": "The increasing heterogeneity and dynamism of cloud, fog, and edge computing make scheduling a challenging problem involving diverse resource capabilities, workload characteristics, latency and energy constraints, and competing optimization objectives. Although numerous scheduling methods have been proposed, existing reviews often provide fragmented coverage of computing environments, scheduling granularities, or technique families, offering limited guidance on selecting an appropriate approach for specific requirements. This review presents a comparative analysis of task, job, and workflow scheduling across the cloud, fog, and edge paradigms, covering heuristic, metaheuristic, learning-based, and hybrid techniques. Studies published between 2020 and 2026 are analyzed according to scheduling granularity, computing environment, optimization objectives, constraints, performance metrics, and evaluation tools. The analysis highlights trade-offs among computational efficiency, optimization capability, adaptability, and implementation complexity across technique families. Heuristic methods offer low computational overhead for relatively stable scheduling conditions, whereas metaheuristic methods are suited to complex and multi-objective optimization problems. Learning-based methods provide greater adaptability to dynamic and uncertain environments but introduce data, training, inference, and convergence requirements. Hybrid methods combine complementary capabilities but generally increase computational and implementation complexity. Based on these findings, a decision framework is developed to guide technique selection according to workload characteristics, environmental conditions, optimization objectives, resource constraints, and computational requirements.",
       "venue": "arXiv CS",
       "topics": [
@@ -7157,7 +7159,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (4d ago) (+1.2)"
+          "✓ Published within last week (5d ago) (+1.2)"
         ]
       },
       "intelligence": null,
@@ -7176,7 +7178,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-13",
+      "discovery_date": "2026-10-14",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7199,7 +7201,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (118d ago) (+0.2)",
+          "• Published >30d ago (119d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

@@ -5417,7 +5417,7 @@
         "score": 6.9
       }
     ],
-    "publication_count": 1,
+    "publication_count": 2,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -5428,10 +5428,11 @@
     "current_opportunities": [],
     "reasons": [
       "Academic Fit: • General computer science / systems research area",
+      "✓ Active recent publication record (2 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
-    "composite_score": 4.8,
+    "composite_score": 5.4,
     "average_relevance": 6.9,
     "topics": [
       "Artificial intelligence",
@@ -5448,6 +5449,178 @@
       "Computer science",
       "Enhanced Data Rates for GSM Evolution",
       "Expert system"
+    ]
+  },
+  "Zhanwei Wang": {
+    "name": "Zhanwei Wang",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+        "url": "http://arxiv.org/abs/2610.16395v1",
+        "date": "2026-10-12",
+        "venue": "arXiv CS",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-14",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Jianhao Huang": {
+    "name": "Jianhao Huang",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+        "url": "http://arxiv.org/abs/2610.16395v1",
+        "date": "2026-10-12",
+        "venue": "arXiv CS",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-14",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Min Sheng": {
+    "name": "Min Sheng",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+        "url": "http://arxiv.org/abs/2610.16395v1",
+        "date": "2026-10-12",
+        "venue": "arXiv CS",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-14",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Kaibin Huang": {
+    "name": "Kaibin Huang",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 5.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+        "url": "http://arxiv.org/abs/2610.16395v1",
+        "date": "2026-10-12",
+        "venue": "arXiv CS",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-14",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: • General computer science / systems research area",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 4.8,
+    "average_relevance": 7.2,
+    "topics": [
+      "cs.DC"
     ]
   }
 }

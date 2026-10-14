@@ -5346,5 +5346,54 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
+    "url": "http://arxiv.org/abs/2610.16395v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Zhanwei Wang",
+      "Jianhao Huang",
+      "Min Sheng",
+      "Kaibin Huang"
+    ],
+    "doi": null,
+    "arxiv_id": "2610.16395v1",
+    "publication_date": "2026-10-12",
+    "discovery_date": "2026-10-14",
+    "abstract": "The fusion of artificial intelligence (AI) and space technologies is extending spaceborne intelligence beyond onboard payloads toward a global infrastructure, here termed Space AI infrastructure (SpaceAI-Infra). Its promise rests on two distinctive advantages of space systems: abundant solar energy in orbit and the global reach of satellite constellations. Realizing this promise hinges on a fundamental systems question: How should satellite constellations be designed and orchestrated to deliver data-center-scale AI services competitive with their terrestrial counterparts? This article develops a roadmap-oriented answer. We first chart the evolution of SpaceAI-Infra through three progressive stages: onboard AI, Space Edge AI, and Space Cloud AI. By revisiting the space-constrained fundamentals for end-to-end token services, we derive enabling design principles and translate them into an integrated space edge--cloud architecture. The communication-centric space edge comprises free-flying LEO constellations that provide user-proximate computing and form the access and backhaul fabric for cloud AI services. Complementing the edge, the computing-centric space cloud comprises formation-flying satellite constellations organized as space data centers in dawn--dusk sun-synchronous orbits. A case study demonstrates that the proposed architecture can support data-center-scale foundation-model inference for millions of concurrent users worldwide.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_410b2d3c3eb5633c",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Abstract)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (2d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
