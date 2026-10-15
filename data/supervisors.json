@@ -5622,5 +5622,383 @@
     "topics": [
       "cs.DC"
     ]
+  },
+  "Li Lin": {
+    "name": "Li Lin",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Federated Distillation: A Survey",
+        "url": "https://doi.org/10.1145/3857792",
+        "date": "2026-10-14",
+        "venue": "ACM Computing Surveys",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-15",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: federated learning",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.9,
+    "topics": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ]
+  },
+  "Jianping Gou": {
+    "name": "Jianping Gou",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Federated Distillation: A Survey",
+        "url": "https://doi.org/10.1145/3857792",
+        "date": "2026-10-14",
+        "venue": "ACM Computing Surveys",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-15",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: federated learning",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.9,
+    "topics": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ]
+  },
+  "Baosheng Yu": {
+    "name": "Baosheng Yu",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Federated Distillation: A Survey",
+        "url": "https://doi.org/10.1145/3857792",
+        "date": "2026-10-14",
+        "venue": "ACM Computing Surveys",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-15",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: federated learning",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.9,
+    "topics": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ]
+  },
+  "Lan Du": {
+    "name": "Lan Du",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Federated Distillation: A Survey",
+        "url": "https://doi.org/10.1145/3857792",
+        "date": "2026-10-14",
+        "venue": "ACM Computing Surveys",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-15",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: federated learning",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.9,
+    "topics": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ]
+  },
+  "Tao Zhang": {
+    "name": "Tao Zhang",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Federated Distillation: A Survey",
+        "url": "https://doi.org/10.1145/3857792",
+        "date": "2026-10-14",
+        "venue": "ACM Computing Surveys",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-15",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: federated learning",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.9,
+    "topics": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ]
+  },
+  "Dacheng Tao": {
+    "name": "Dacheng Tao",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Federated Distillation: A Survey",
+        "url": "https://doi.org/10.1145/3857792",
+        "date": "2026-10-14",
+        "venue": "ACM Computing Surveys",
+        "score": 6.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-15",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: federated learning",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.9,
+    "topics": [
+      "Federated learning",
+      "Scale (ratio)",
+      "Knowledge management",
+      "Chemistry",
+      "Computer science",
+      "Distributed computing",
+      "Distillation",
+      "Physics",
+      "Organic chemistry",
+      "Data science",
+      "Quantum mechanics"
+    ]
   }
 }
