@@ -6000,5 +6000,319 @@
       "Data science",
       "Quantum mechanics"
     ]
+  },
+  "nbspDr. Vikas Kundu": {
+    "name": "nbspDr. Vikas Kundu",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Instrumentation (computer programming)",
+      "Cyber-physical system",
+      "Pressure sensor",
+      "Edge computing",
+      "Pipeline (software)",
+      "Real-time computing",
+      "Signal processing",
+      "Embedded system",
+      "Field (mathematics)",
+      "Sensor fusion",
+      "Simulation",
+      "Computer science",
+      "Intelligent sensor",
+      "Enhanced Data Rates for GSM Evolution",
+      "Robotics",
+      "Control engineering",
+      "Robot",
+      "Feature (linguistics)",
+      "Artificial intelligence",
+      "Edge device",
+      "Wearable technology",
+      "Human–computer interaction",
+      "Inertial measurement unit",
+      "Wearable computer",
+      "Drone",
+      "SIGNAL (programming language)",
+      "Accelerometer",
+      "Engineering",
+      "Wireless sensor network"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "AI-Enabled Wearable Sensor Technologies for Athlete Performance Monitoring: A Critical Review of Signal Processing, Machine Learning, and Real-Time Embedded Systems",
+        "url": "https://doi.org/10.64823/ijstm.2601002",
+        "date": "2026-10-16",
+        "venue": "OpenAlex",
+        "score": 7.9
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-16",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.9,
+    "topics": [
+      "Instrumentation (computer programming)",
+      "Cyber-physical system",
+      "Pressure sensor",
+      "Edge computing",
+      "Pipeline (software)",
+      "Real-time computing",
+      "Signal processing",
+      "Embedded system",
+      "Field (mathematics)",
+      "Sensor fusion",
+      "Simulation",
+      "Computer science",
+      "Intelligent sensor",
+      "Enhanced Data Rates for GSM Evolution",
+      "Robotics",
+      "Control engineering",
+      "Robot",
+      "Feature (linguistics)",
+      "Artificial intelligence",
+      "Edge device",
+      "Wearable technology",
+      "Human–computer interaction",
+      "Inertial measurement unit",
+      "Wearable computer",
+      "Drone",
+      "SIGNAL (programming language)",
+      "Accelerometer",
+      "Engineering",
+      "Wireless sensor network"
+    ]
+  },
+  "Mingjin Zhang": {
+    "name": "Mingjin Zhang",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+        "url": "http://arxiv.org/abs/2610.22172v1",
+        "date": "2026-10-15",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-16",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Jiannong Cao": {
+    "name": "Jiannong Cao",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+        "url": "http://arxiv.org/abs/2610.22172v1",
+        "date": "2026-10-15",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-16",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Tao Wu": {
+    "name": "Tao Wu",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+        "url": "http://arxiv.org/abs/2610.22172v1",
+        "date": "2026-10-15",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-16",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Xiangchun Chen": {
+    "name": "Xiangchun Chen",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+        "url": "http://arxiv.org/abs/2610.22172v1",
+        "date": "2026-10-15",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-16",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Ne Wang": {
+    "name": "Ne Wang",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+        "url": "http://arxiv.org/abs/2610.22172v1",
+        "date": "2026-10-15",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-10-16",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC"
+    ]
   }
 }

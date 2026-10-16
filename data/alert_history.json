@@ -5395,5 +5395,150 @@
     "opportunity_data": null,
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "AI-Enabled Wearable Sensor Technologies for Athlete Performance Monitoring: A Critical Review of Signal Processing, Machine Learning, and Real-Time Embedded Systems",
+    "url": "https://doi.org/10.64823/ijstm.2601002",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "survey",
+    "authors": [
+      "nbspDr. Vikas Kundu"
+    ],
+    "doi": "10.64823/ijstm.2601002",
+    "arxiv_id": null,
+    "publication_date": "2026-10-16",
+    "discovery_date": "2026-10-16",
+    "abstract": "Abstract Wearable sensing and artificial intelligence (AI) are increasingly being used to quantify athlete movement, physiological response, training load, and recovery in field and laboratory settings. However, the practical value of these systems depends not only on the predictive capability of an algorithm but also on sensor validity, signal quality, hardware constraints, real-time processing, and the transferability of models across athletes and sports. This review examines the technical pipeline linking wearable electronic sensors to athlete-monitoring decisions, with particular attention to inertial measurement units, global navigation satellite systems, photoplethysmography, electrocardiography, electromyography, pressure sensing, and multimodal systems. It synthesizes evidence on signal conditioning, segmentation, feature engineering, classical machine learning, deep learning, sensor fusion, edge inference, and embedded implementation. Existing reviews indicate that wearable devices can support useful monitoring, but accuracy varies by metric, device, movement pattern, and validation setting; performance under controlled conditions should not be assumed to generalize to competition. Key challenges include motion artifacts, inconsistent protocols, small and imbalanced datasets, leakage between training and test sets, limited external validation, battery and communication constraints, privacy, and unclear decision thresholds. The review proposes a layered reference architecture and a validation framework that links engineering performance to sport-specific usefulness. Future research should prioritize synchronized multimodal datasets, athlete-independent testing, interpretable and uncertainty-aware models, energy-efficient edge AI, secure data governance, and transparent reporting. The article’s contribution is an engineering-oriented synthesis that connects sensor physics and embedded constraints with the needs of physical education and sports science. Keywords: Inertial Measurement Units; Physiological Sensing; Sensor Fusion; Edge Computing; Sports Biomechanics Keywords: edge computing; Keywords: Inertial Measurement Units; Physiological Sensing; Sensor Fusion; Sports Biomechanics",
+    "venue": "",
+    "topics": [
+      "Wearable computer",
+      "Inertial measurement unit",
+      "Computer science",
+      "Field (mathematics)",
+      "SIGNAL (programming language)",
+      "Wearable technology",
+      "Enhanced Data Rates for GSM Evolution",
+      "Artificial intelligence",
+      "Human–computer interaction",
+      "Pipeline (software)",
+      "Intelligent sensor",
+      "Embedded system",
+      "Drone",
+      "Edge computing",
+      "Edge device",
+      "Wireless sensor network",
+      "Accelerometer",
+      "Robot",
+      "Signal processing",
+      "Instrumentation (computer programming)",
+      "Robotics",
+      "Engineering",
+      "Simulation",
+      "Cyber-physical system",
+      "Real-time computing",
+      "Sensor fusion",
+      "Pressure sensor",
+      "Control engineering",
+      "Feature (linguistics)"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_b923c932904002a7",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.7,
+      "negative_penalty": 0.0,
+      "final_score": 7.9,
+      "matched_topics": [
+        "Edge AI",
+        "Edge Inference",
+        "Edge Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Abstract), Edge AI (Abstract)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Freshly published (0d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)",
+        "✓ Comprehensive Literature Survey / Review (+0.7)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates Wearable computer and Inertial measurement unit. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "However, the practical value of these systems depends not only on the predictive capability of an algorithm but also on sensor validity, signal quality, hardware constraints, real-time processing, and the transferability of models across athletes and sports",
+      "methodology": "However, the practical value of these systems depends not only on the predictive capability of an algorithm but also on sensor validity, signal quality, hardware constraints, real-time processing, and the transferability of models across athletes and sports",
+      "key_contribution": "Keywords: Inertial Measurement Units; Physiological Sensing; Sensor Fusion; Edge Computing; Sports Biomechanics Keywords: edge computing; Keywords: Inertial Measurement Units; Physiological Sensing; Sensor Fusion; Sports Biomechanics",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.9/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Efficient KV Cache Migration for Geo-Distributed LLM Inference in Collaborative Edge Computing",
+    "url": "http://arxiv.org/abs/2610.22172v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Mingjin Zhang",
+      "Jiannong Cao",
+      "Tao Wu",
+      "Xiangchun Chen",
+      "Ne Wang"
+    ],
+    "doi": null,
+    "arxiv_id": "2610.22172v1",
+    "publication_date": "2026-10-15",
+    "discovery_date": "2026-10-16",
+    "abstract": "Large Language Models (LLMs) have shown exceptional capabilities but rely heavily on centralized cloud GPU clusters, leading to high bandwidth costs, latency, and privacy issues. Edge computing offers a solution by deploying LLMs closer to users on edge servers, yet single edge servers often cannot meet LLMs' heavy computational demands. Collaborative Edge Computing (CEC) addresses this challenge by integrating resources of multiple geo-distributed heterogeneous edge servers, which jointly host small model shards and associated Key-Value (KV) cache for distributed inference. However, edge servers may disconnect or easily become overloaded, making it essential to migrate stateful KV cache to other servers for ensuring continuous service. Existing cloud-based KV cache management methods, such as direct cross-GPUs transmission and recomputation from input tokens are ill-suited for bandwidth-constrained and resource-limited edge environments. In this work, we propose EdgeFlow, a novel hybrid KV cache migration scheme that integrates direct KV cache transmission with activation-based recomputation, leveraging parallel computation and communication to minimize migration time. On this basis, we formulate a multi-node KV migration optimization problem and design a 2-approximation algorithm based on improved linear programming relaxation and bipartite graph techniques. Extensive experiments on a real-world distributed LLM inference platform demonstrate that EdgeFlow reduces migration time by up to 45%, significantly enhancing the robustness and efficiency of distributed LLM inference in collaborative edge computing.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_97510a6dd1b5cc1e",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.8,
+      "matched_topics": [
+        "Edge Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Distributed Inference (+1.0)"
+      ]
+    },
+    "intelligence": {
+      "why_it_matters": "This work investigates cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+      "research_problem": "Large Language Models (LLMs) have shown exceptional capabilities but rely heavily on centralized cloud GPU clusters, leading to high bandwidth costs, latency, and privacy issues",
+      "methodology": "Large Language Models (LLMs) have shown exceptional capabilities but rely heavily on centralized cloud GPU clusters, leading to high bandwidth costs, latency, and privacy issues",
+      "key_contribution": "Extensive experiments on a real-world distributed LLM inference platform demonstrate that EdgeFlow reduces migration time by up to 45%, significantly enhancing the robustness and efficiency of distributed LLM inference in collaborative edge computing.",
+      "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+      "relevance_to_phd": "7.8/10",
+      "is_ai_generated": false
+    },
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
