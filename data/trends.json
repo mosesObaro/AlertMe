@@ -21,6 +21,13 @@
     "historical_count": 2
   },
   {
+    "topic": "Resource Allocation",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 2,
+    "historical_count": 3
+  },
+  {
     "topic": "Federated Learning",
     "direction": "↓",
     "status": "Declining",
@@ -29,13 +36,6 @@
   },
   {
     "topic": "Computation Offloading",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 1,
-    "historical_count": 3
-  },
-  {
-    "topic": "Resource Allocation",
     "direction": "↓",
     "status": "Declining",
     "recent_count": 1,
