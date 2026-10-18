@@ -1,8 +1,8 @@
 {
   "meta": {
     "last_updated": "2026-10-18",
-    "total_items": 73,
-    "high_relevance_count": 44,
+    "total_items": 72,
+    "high_relevance_count": 45,
     "papers_count": 28,
     "conferences_count": 9,
     "opportunities_count": 4,
@@ -14,7 +14,7 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 9,
+      "recent_count": 10,
       "historical_count": 12
     },
     {
@@ -4651,6 +4651,62 @@
       "alert_mode": "daily"
     },
     {
+      "title": "[Code/Benchmark] NGAURAV951/edge-ai-riscv-vision (★ 0)",
+      "url": "https://github.com/NGAURAV951/edge-ai-riscv-vision",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "NGAURAV951"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-18",
+      "discovery_date": "2026-10-18",
+      "abstract": "Hardware-aware Edge AI vision system integrating quantized machine learning, embedded C firmware, and RTL-based hardware acceleration. The project explores low-latency on-device inference, lightweight feature extraction, Verilog dot-product acceleration, benchmarking, and a future RISC-V FPGA implementation for efficient edge computing. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_3fbda4913e6d3368",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 7.7,
+        "matched_topics": [
+          "Edge Computing",
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract), Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Edge Intelligence architecture. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "Not determinable from available metadata.",
+        "key_contribution": "(Stars: 0, Forks: 0)",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.7/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
       "title": "Quality of Service Challenges and Solutions in Multi-Tenant Community Clouds: A Comprehensive Survey",
       "url": "https://doi.org/10.5281/zenodo.23116091",
       "source": "OpenAlex",
@@ -6894,98 +6950,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] php/benchmarking-data (★ 17)",
-      "url": "https://github.com/php/benchmarking-data",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "php"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-18",
-      "discovery_date": "2026-10-18",
-      "abstract": "Open source edge computing repository. (Stars: 17, Forks: 4)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_73bafdcfdd1035fa",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 17,
-        "forks": 4
-      }
-    },
-    {
-      "title": "[Code/Benchmark] Tom1tk/p100-inference-benchmarks (★ 0)",
-      "url": "https://github.com/Tom1tk/p100-inference-benchmarks",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "Tom1tk"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-18",
-      "discovery_date": "2026-10-18",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_52da682efdeccd01",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -7268,8 +7232,8 @@
       "venue": "Conference CFP",
       "topics": [
         "Distributed Systems",
-        "Edge Computing",
         "IoT",
+        "Edge Computing",
         "MEC"
       ],
       "institution": "",
