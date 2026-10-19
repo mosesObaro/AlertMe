@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-10-18",
-    "total_items": 72,
+    "last_updated": "2026-10-19",
+    "total_items": 73,
     "high_relevance_count": 45,
     "papers_count": 28,
     "conferences_count": 9,
@@ -32,13 +32,6 @@
       "historical_count": 2
     },
     {
-      "topic": "Resource Allocation",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 2,
-      "historical_count": 3
-    },
-    {
       "topic": "Federated Learning",
       "direction": "↓",
       "status": "Declining",
@@ -47,6 +40,13 @@
     },
     {
       "topic": "Computation Offloading",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 3
+    },
+    {
+      "topic": "Resource Allocation",
       "direction": "↓",
       "status": "Declining",
       "recent_count": 1,
@@ -4704,7 +4704,8 @@
       "raw_metadata": {
         "stars": 0,
         "forks": 0
-      }
+      },
+      "alert_mode": "weekly"
     },
     {
       "title": "Quality of Service Challenges and Solutions in Multi-Tenant Community Clouds: A Comprehensive Survey",
@@ -6950,6 +6951,52 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "[Code/Benchmark] martinalex000/benchmarking_website (★ 0)",
+      "url": "https://github.com/martinalex000/benchmarking_website",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "martinalex000"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-19",
+      "discovery_date": "2026-10-19",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_c56e829058665747",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -6960,8 +7007,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-18",
-      "discovery_date": "2026-10-18",
+      "publication_date": "2026-10-19",
+      "discovery_date": "2026-10-19",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -6998,7 +7045,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 29 days (+0.3)",
+          "Event upcoming in 28 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7057,8 +7104,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-18",
-      "discovery_date": "2026-10-18",
+      "publication_date": "2026-10-19",
+      "discovery_date": "2026-10-19",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7154,7 +7201,7 @@
       "doi": "10.31838/ece/03.02.04",
       "arxiv_id": null,
       "publication_date": "2026-10-19",
-      "discovery_date": "2026-10-18",
+      "discovery_date": "2026-10-19",
       "abstract": "This study brings out a new AI-based smart irrigation device aimed at solving the increasing problem of water shortage and poor agricultural procedures using emulated edge-based controllers. This combination of environmental sensing, lightweight machine learning algorithms and actuation on microcontrollers enables the system to do real time, adaptive irrigation scheduling. Their implementation of important parts like Raspberry Pi 4 as an AI inference module and an STM32 microcontroller as an actuator controller accelerates the responsiveness, increases security, and saves energy consumption since there is no need in cloud computing. Using the local climatic and soil moisture data the machine learning model identifies optimum irrigation time and duration looking at various parameters such as temperature, humidity, rain and crop-specific thresholds. The whole decision-making process is automated and carried out at the edge that makes it functional even without interruption in areas with poor or no internet connection. This was done by conducting extensive field tests within the semi-arid agricultural areas to prove the efficacy of the recommended solution. The findings show that there is a considerable gain in the efficiency of resources, with up to 38 percent of reduction of water use and 20 percent of increase in the yield of the crops contrasted to the conventional time-based irrigation schemes. Also, the system averaged a latency of only 34millisecs and consumed power at less than 2.5W which became very handy in deployment in rural areas. TinyML and its compatibility with cheap edge hardware are scalable and sustainable, which creates an efficient path to modernize the irrigation infrastructure in the developing world. This article does not only highlight the revolutionary nature of embedded AI in precision agriculture, but it precondition the further innovative development of the field of data-driven farm management and autonomous farm management. The one suggested is one of the options that could be implemented to achieve environmental sustainability, enhance the productivity of agriculture, and make smart and local decisions to use water intelligently.",
       "venue": "Progress in Electronics and Communication Engineering",
       "topics": [
@@ -7199,14 +7246,14 @@
         "negative_penalty": 0.0,
         "final_score": 6.6,
         "matched_topics": [
-          "TinyML",
-          "Cloud Computing"
+          "Cloud Computing",
+          "TinyML"
         ],
         "reasons": [
           "✓ Secondary topic with Edge context: Cloud Computing",
           "✓ Key research area match: TinyML (+0.4)",
           "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
-          "✓ Upcoming date: 2026-10-19 (+1.5)"
+          "✓ Freshly published (0d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -7226,14 +7273,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-18",
-      "discovery_date": "2026-10-18",
+      "publication_date": "2026-10-19",
+      "discovery_date": "2026-10-19",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
         "Distributed Systems",
-        "IoT",
         "Edge Computing",
+        "IoT",
         "MEC"
       ],
       "institution": "",
@@ -7264,39 +7311,49 @@
       "raw_metadata": {}
     },
     {
-      "title": "Nexus - Object-Driven Edge Protocol (Nexus-ODEP)",
-      "url": "https://doi.org/10.5281/zenodo.23427130",
+      "title": "INTELLIGENT TASK SCHEDULING IN CLOUD ROBOTICS",
+      "url": "https://doi.org/10.25258/ijddt.16.75s.84",
       "source": "OpenAlex",
       "source_tier": "tier1_academic_standards",
       "item_type": "paper",
-      "authors": [
-        "Michael Schultz"
-      ],
-      "doi": "10.5281/zenodo.23427130",
+      "authors": [],
+      "doi": "10.25258/ijddt.16.75s.84",
       "arxiv_id": null,
-      "publication_date": "2026-10-17",
-      "discovery_date": "2026-10-18",
-      "abstract": "Deutsch:Das Nexus Object-Driven Edge Protocol (Nexus-ODEP) ist ein universelles, quelloffenes Meta- und Rahmenprotokoll für eingebettete Systeme, das Internet der Dinge (IoT), Industrie 4.0 und die professionelle Veranstaltungstechnik. Nexus-ODEP bricht radikal mit dem traditionellen Prinzip des zentralisierten, kontinuierlichen Daten-Streamings und der Abhängigkeit von Cloud-Infrastrukturen. Durch konsequentes Edge Computing verlagert das Protokoll die funktionale Logik, die zeitbasierte Ressourcen-Planung und die hardwareseitige Konfliktlösung direkt auf die dezentralen Knotenpunkte (Peer-to-Peer).Nexus-ODEP ist vollständig payload-agnostisch: Es definiert keine branchenspezifischen Anwendungsbefehle, sondern das administrative, zeitgesteuerte Rahmenwerk für deren konfliktfreie Ausführung. Über ein hardwareseitiges, kalenderbasiertes Ressourcen-Management mit hochpräziser Zeitsynchronisation (IEEE 1588 PTP oder NTP) ermöglicht Nexus-ODEP einen sicheren Multi-Controller-Betrieb via TCP/IP. Ressourcen (z. B. Antriebsachsen, Sensoren, Aktuatoren oder Farb-Engines) können exklusiv oder geteilt (Shared mit Prioritäten-Queues) gebucht werden. Durch das Konzept der Virtual Devices (VD) können rechenstarke Knoten autonom als Proxy-Server agieren und untergeordnete, serielle oder klassische Bus-Geräte kaskadieren. Für unzuverlässige Transportwege (Mobilfunk, WAN, Internet) bietet Nexus-ODEP eine integrierte Buffer-Ahead-Engine, die Netzwerk-Jitter und Paketverluste durch zeitlich entkoppelte Befehlspufferung vollständig kompensiert.Architektonisch umgeht Nexus-ODEP das klassische, universumsbasierte Verteilungs-Prinzip zentraler Steuerungsdatenbanken (wie es durch Schutzrechte von Drittanbietern blockiert ist) durch den Einsatz von abstrakter Virtualisierung und lokaler Intelligenz auf der Geräte-CPU. English:The Nexus Object-Driven Edge Protocol (Nexus-ODEP) is a universal, open-source meta-framework and control protocol designed for embedded systems, the Internet of Things (IoT), Industry 4.0, and professional entertainment technology. Nexus-ODEP fundamentally dismantles traditional centralized streaming architectures and cloud dependencies. By utilizing edge computing, the protocol shifts administrative logic, time-based resource allocation, and device-level conflict resolution directly to the decentralized nodes (peer-to-peer).Nexus-ODEP is entirely payload-agnostic: it does not dictate sector-specific application commands, but rather provides the robust, time-synchronized structural envelope for their conflict-free execution. Operating on a hardware-level, calendar-based resource allocation engine synchronized via high-precision time protocols (IEEE 1588 PTP or NTP), Nexus-ODEP enables true multi-controller operation over TCP/IP. Node resources (e.g., drive axes, sensors, actuators, or color engines) can be reserved either exclusively or in shared mode utilizing priority queues. Through Virtual Devices (VD), high-performance edge nodes autonomously act as proxy servers to cascade subordinate legacy or serial bus devices. For unreliable network layers (cellular, WAN, internet), Nexus-ODEP features a native Buffer-Ahead Engine that completely mitigates network jitter and packet loss through time-decoupled command pre-buffering.Architecturally, Nexus-ODEP bypasses universe-based distribution principles of centralized master control databases (protected by third-party proprietary frameworks) by systematically leveraging abstract virtualization and localized intelligence on the node's CPU.",
-      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "publication_date": "2026-10-18",
+      "discovery_date": "2026-10-19",
+      "abstract": "Cloud robotics is an emerging multidisciplinary research area in computer science, combining cloud computing an Internetbased model for sharing computing resources and services via virtualization technologies with robotics to extend the scarce onboard resources and capabilities of robots.Scheduling search is still an open issue: scheduling (plans, decisions) involved in the starting execution placement and distribution of the execution of computational tasks across the Cloudrobotic local, the (robot) edge and the Cloud layers).This systematic comparative review and analysis of over 42 journal articles (2020-2026) regarding intelligent task scheduling algorithms-including classical heuristics, meta-heuristics, reinforcement learning, and deep learning-is not intended to be an exhaustive survey of the complete literature.This review is further enriched by empirical analysis of a real-world dataset of 12,000 cloud-robotic scheduling problems (Oct 2025Oct 2026) of CC01 cloud-robotic benchmark, featuring 8 tables of comparison, algorithm pseudocodes, system architecture and empirical results analysis.HAF hybrid adaptive configuration is a mixture of NSGA-II, Deep Q-Network with all the seven benchmark models.It boasts mean latency of 11.6 ms, resource use of 91.2%, a task completion fraction of 95.3%, and energy saving of 34.1%.The analysis of dataset and edge computing reveals that it acts as the top scheduling layer (48.3%) just for local execution, having 7.3 times lower latency than a cloud with a restricted capacity.",
+      "venue": "International Journal of Drug Delivery Technology",
       "topics": [
-        "Nexus (standard)",
         "Computer science",
-        "Protocol (science)",
-        "Internet protocol suite",
         "Cloud computing",
-        "Enhanced Data Rates for GSM Evolution",
-        "The Internet",
-        "Engineering",
-        "Computer network",
-        "Internet Protocol",
-        "Resource (disambiguation)",
-        "Humanities"
+        "Scheduling (production processes)",
+        "Distributed computing",
+        "Robotics",
+        "Artificial intelligence",
+        "Virtualization",
+        "Latency (audio)",
+        "Reinforcement learning",
+        "Edge computing",
+        "Two-level scheduling",
+        "Task analysis",
+        "Machine learning",
+        "Job shop scheduling",
+        "Benchmark (surveying)",
+        "Dynamic priority scheduling",
+        "Artificial neural network",
+        "Deep learning",
+        "Fair-share scheduling",
+        "Task (project management)",
+        "Robot",
+        "Real-time computing",
+        "Empirical research",
+        "Shared resource"
       ],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "doi_9d8ee341476fb4df",
+      "id": "doi_4cfec4c710037a97",
       "score": {
         "topic_score": 2.6,
         "credibility_score": 2.5,
@@ -7306,14 +7363,13 @@
         "negative_penalty": 0.0,
         "final_score": 6.6,
         "matched_topics": [
-          "Resource Allocation",
+          "Cloud Computing",
           "Edge Computing",
-          "IoT",
-          "Internet of Things"
+          "Task Scheduling"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Key research area match: Resource Allocation (+0.4)",
+          "✓ Key research area match: Task Scheduling (+0.4)",
           "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
           "✓ Freshly published (1d ago) (+1.5)"
         ]
@@ -7336,7 +7392,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-18",
+      "discovery_date": "2026-10-19",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7359,7 +7415,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (123d ago) (+0.2)",
+          "• Published >30d ago (124d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
