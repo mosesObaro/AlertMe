@@ -3,14 +3,14 @@
     "topic": "Edge AI",
     "direction": "↓",
     "status": "Declining",
-    "recent_count": 10,
-    "historical_count": 12
+    "recent_count": 9,
+    "historical_count": 13
   },
   {
     "topic": "TinyML",
     "direction": "↓",
     "status": "Declining",
-    "recent_count": 4,
+    "recent_count": 3,
     "historical_count": 5
   },
   {
