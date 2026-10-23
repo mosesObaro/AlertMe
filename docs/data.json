@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-22",
-    "total_items": 70,
+    "last_updated": "2026-10-23",
+    "total_items": 74,
     "high_relevance_count": 45,
-    "papers_count": 26,
+    "papers_count": 28,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -16,6 +16,13 @@
       "status": "Declining",
       "recent_count": 9,
       "historical_count": 13
+    },
+    {
+      "topic": "Resource Allocation",
+      "direction": "→",
+      "status": "Steady",
+      "recent_count": 3,
+      "historical_count": 3
     },
     {
       "topic": "TinyML",
@@ -40,13 +47,6 @@
     },
     {
       "topic": "Computation Offloading",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 1,
-      "historical_count": 3
-    },
-    {
-      "topic": "Resource Allocation",
       "direction": "↓",
       "status": "Declining",
       "recent_count": 1,
@@ -5794,6 +5794,105 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Constrained Federated Reinforcement Learning for Secure Offloading in Vehicular Edge Computing",
+      "url": "http://arxiv.org/abs/2610.27651v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Zhiyu Wang",
+        "Muhammed F. Esgin",
+        "Mohammad Goudarzi"
+      ],
+      "doi": null,
+      "arxiv_id": "2610.27651v1",
+      "publication_date": "2026-10-20",
+      "discovery_date": "2026-10-23",
+      "abstract": "Vehicular Edge Computing (VEC) reduces latency for computation-intensive vehicular applications by offloading tasks to roadside edge servers. Real vehicular workloads, however, consist of dependent subtasks with stringent reliability needs, while the cross-region collaborative learning used to adapt offloading policies must stay robust to heterogeneous data and secure over open wireless channels. We propose CRAFT, a Constrained Reinforcement-based Adaptive Federated Task Offloading framework that casts Directed Acyclic Graph (DAG)-structured offloading and resource allocation as a Constrained Markov Decision Process. CRAFT couples centralized-critic policy learning with Lagrangian relaxation to explicitly regulate the long-term task-completion constraint, and uses two-tier federated aggregation with proximal regularization to jointly mitigate non-Independent and Identically Distributed (non-IID) drift and stabilize constraint adaptation. Confidentiality and integrity for federated parameter exchange are provided by post-quantum homomorphic encryption and lattice-based signatures with modest amortized overhead. On a Virtual Machine-based testbed over a realistic Melbourne Central Business District network with real computation kernels, CRAFT cuts weighted cost by up to 42% over state-of-the-art baselines, maintains a completion rate of around 96%, and adds 6.4% security overhead.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_30eebbd75891d7fc",
+      "score": {
+        "topic_score": 3.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "Resource Allocation",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Key research area match: Resource Allocation (+0.4)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (3d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "Fault-Tolerant Offloading Framework for Real-Time Applications in Mobile Edge Computing",
+      "url": "http://arxiv.org/abs/2610.26142v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Chuanchao Gao",
+        "Yiyang Gao",
+        "Michael Yuhas",
+        "Arvind Easwaran"
+      ],
+      "doi": "10.1109/RTAS68450.2026.00028",
+      "arxiv_id": "2610.26142v1",
+      "publication_date": "2026-10-19",
+      "discovery_date": "2026-10-23",
+      "abstract": "This paper studies a Deadline-constrained task Offloading and resource Allocation Problem (DOAP) in a backhaul-network-enabled Mobile Edge Computing (MEC) system with both bandwidth and computational resource constraints. The goal is to maximize the total inference accuracy improvement across all tasks. We formulate this problem, denoted as $\\mathbf{P}$, as an Integer Linear Programming (ILP) problem and show it is NP-hard via a reduction from the maximum-weight three-dimensional matching problem. To address $\\mathbf{P}$, we develop $\\mathtt{FastSA}$, a linear-time $\\frac{1}{10}$-approximation algorithm based on the local-ratio technique. To the best of our knowledge, $\\mathtt{FastSA}$ provides the first constant-factor performance guarantee for backhaul-network-enabled DOAPs. In addition, we introduce a fault detection and recovery framework that enables robust MEC operation under backhaul link and edge server failures. Experiments using profiled image classification workloads and real-world taxi traces show that $\\mathtt{FastSA}$ achieves an average accuracy improvement of $25.6\\%$ over benchmark algorithms under fault-free conditions while maintaining the lowest runtime. Under fault-injected scenarios, our framework reduces performance degradation by an average of $12.8\\%$, demonstrating its effectiveness in fault handling.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_1e3461ae20dae477",
+      "score": {
+        "topic_score": 3.5,
+        "credibility_score": 2.5,
+        "recency_score": 1.2,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "MEC",
+          "Edge Computing",
+          "Resource Allocation",
+          "Mobile Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Title)",
+          "✓ Key research area match: Resource Allocation (+0.4)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Published within last week (4d ago) (+1.2)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Space AI Infrastructure: Where the Edge Meets the Orbital Cloud",
       "url": "http://arxiv.org/abs/2610.16395v1",
       "source": "arXiv",
@@ -6951,6 +7050,98 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "[Code/Benchmark] VeireRobotics/VeireBenchmarkVids (★ 0)",
+      "url": "https://github.com/VeireRobotics/VeireBenchmarkVids",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "VeireRobotics"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-23",
+      "discovery_date": "2026-10-23",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_c51eeef4413eb6d3",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] vLLM-HUST/vllm-hust-benchmark (★ 1)",
+      "url": "https://github.com/vLLM-HUST/vllm-hust-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "vLLM-HUST"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-23",
+      "discovery_date": "2026-10-23",
+      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 3)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_d6d0470a948009e7",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 1,
+        "forks": 3
+      }
+    },
+    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -6961,8 +7152,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-22",
-      "discovery_date": "2026-10-22",
+      "publication_date": "2026-10-23",
+      "discovery_date": "2026-10-23",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -6999,7 +7190,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 25 days (+0.3)",
+          "Event upcoming in 24 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7058,8 +7249,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-22",
-      "discovery_date": "2026-10-22",
+      "publication_date": "2026-10-23",
+      "discovery_date": "2026-10-23",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7153,15 +7344,15 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-22",
-      "discovery_date": "2026-10-22",
+      "publication_date": "2026-10-23",
+      "discovery_date": "2026-10-23",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
+        "MEC",
         "IoT",
-        "Distributed Systems",
         "Edge Computing",
-        "MEC"
+        "Distributed Systems"
       ],
       "institution": "",
       "location": "",
@@ -7202,7 +7393,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-22",
+      "discovery_date": "2026-10-23",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7225,7 +7416,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (127d ago) (+0.2)",
+          "• Published >30d ago (128d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },

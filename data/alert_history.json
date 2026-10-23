@@ -5597,5 +5597,106 @@
       "forks": 0
     },
     "alert_mode": "weekly"
+  },
+  {
+    "title": "Constrained Federated Reinforcement Learning for Secure Offloading in Vehicular Edge Computing",
+    "url": "http://arxiv.org/abs/2610.27651v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Zhiyu Wang",
+      "Muhammed F. Esgin",
+      "Mohammad Goudarzi"
+    ],
+    "doi": null,
+    "arxiv_id": "2610.27651v1",
+    "publication_date": "2026-10-20",
+    "discovery_date": "2026-10-23",
+    "abstract": "Vehicular Edge Computing (VEC) reduces latency for computation-intensive vehicular applications by offloading tasks to roadside edge servers. Real vehicular workloads, however, consist of dependent subtasks with stringent reliability needs, while the cross-region collaborative learning used to adapt offloading policies must stay robust to heterogeneous data and secure over open wireless channels. We propose CRAFT, a Constrained Reinforcement-based Adaptive Federated Task Offloading framework that casts Directed Acyclic Graph (DAG)-structured offloading and resource allocation as a Constrained Markov Decision Process. CRAFT couples centralized-critic policy learning with Lagrangian relaxation to explicitly regulate the long-term task-completion constraint, and uses two-tier federated aggregation with proximal regularization to jointly mitigate non-Independent and Identically Distributed (non-IID) drift and stabilize constraint adaptation. Confidentiality and integrity for federated parameter exchange are provided by post-quantum homomorphic encryption and lattice-based signatures with modest amortized overhead. On a Virtual Machine-based testbed over a realistic Melbourne Central Business District network with real computation kernels, CRAFT cuts weighted cost by up to 42% over state-of-the-art baselines, maintains a completion rate of around 96%, and adds 6.4% security overhead.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_30eebbd75891d7fc",
+    "score": {
+      "topic_score": 3.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "Resource Allocation",
+        "Edge Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title)",
+        "✓ Key research area match: Resource Allocation (+0.4)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (3d ago) (+1.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
+  },
+  {
+    "title": "Fault-Tolerant Offloading Framework for Real-Time Applications in Mobile Edge Computing",
+    "url": "http://arxiv.org/abs/2610.26142v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Chuanchao Gao",
+      "Yiyang Gao",
+      "Michael Yuhas",
+      "Arvind Easwaran"
+    ],
+    "doi": "10.1109/RTAS68450.2026.00028",
+    "arxiv_id": "2610.26142v1",
+    "publication_date": "2026-10-19",
+    "discovery_date": "2026-10-23",
+    "abstract": "This paper studies a Deadline-constrained task Offloading and resource Allocation Problem (DOAP) in a backhaul-network-enabled Mobile Edge Computing (MEC) system with both bandwidth and computational resource constraints. The goal is to maximize the total inference accuracy improvement across all tasks. We formulate this problem, denoted as $\\mathbf{P}$, as an Integer Linear Programming (ILP) problem and show it is NP-hard via a reduction from the maximum-weight three-dimensional matching problem. To address $\\mathbf{P}$, we develop $\\mathtt{FastSA}$, a linear-time $\\frac{1}{10}$-approximation algorithm based on the local-ratio technique. To the best of our knowledge, $\\mathtt{FastSA}$ provides the first constant-factor performance guarantee for backhaul-network-enabled DOAPs. In addition, we introduce a fault detection and recovery framework that enables robust MEC operation under backhaul link and edge server failures. Experiments using profiled image classification workloads and real-world taxi traces show that $\\mathtt{FastSA}$ achieves an average accuracy improvement of $25.6\\%$ over benchmark algorithms under fault-free conditions while maintaining the lowest runtime. Under fault-injected scenarios, our framework reduces performance degradation by an average of $12.8\\%$, demonstrating its effectiveness in fault handling.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_1e3461ae20dae477",
+    "score": {
+      "topic_score": 3.5,
+      "credibility_score": 2.5,
+      "recency_score": 1.2,
+      "stage_boost": 0.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "MEC",
+        "Edge Computing",
+        "Resource Allocation",
+        "Mobile Edge Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Title), Mobile Edge Computing (Title)",
+        "✓ Key research area match: Resource Allocation (+0.4)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Published within last week (4d ago) (+1.2)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]

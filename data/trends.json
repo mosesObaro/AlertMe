@@ -7,6 +7,13 @@
     "historical_count": 13
   },
   {
+    "topic": "Resource Allocation",
+    "direction": "→",
+    "status": "Steady",
+    "recent_count": 3,
+    "historical_count": 3
+  },
+  {
     "topic": "TinyML",
     "direction": "↓",
     "status": "Declining",
@@ -29,13 +36,6 @@
   },
   {
     "topic": "Computation Offloading",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 1,
-    "historical_count": 3
-  },
-  {
-    "topic": "Resource Allocation",
     "direction": "↓",
     "status": "Declining",
     "recent_count": 1,
