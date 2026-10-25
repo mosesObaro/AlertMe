@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-10-25",
-    "total_items": 73,
+    "total_items": 75,
     "high_relevance_count": 46,
     "papers_count": 29,
     "conferences_count": 9,
@@ -5154,7 +5154,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "ACM SenSys 2026 (Conference on Embedded Networked Sensor Systems)",
@@ -7141,6 +7142,98 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "[Code/Benchmark] dzaragoza/LLM-benchmark (★ 2)",
+      "url": "https://github.com/dzaragoza/LLM-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "dzaragoza"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-25",
+      "discovery_date": "2026-10-25",
+      "abstract": "Open source edge computing repository. (Stars: 2, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_8ee5bf6fd880d598",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 2,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] depot/benchmark-kafka (★ 2)",
+      "url": "https://github.com/depot/benchmark-kafka",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "depot"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-25",
+      "discovery_date": "2026-10-25",
+      "abstract": "Open source edge computing repository. (Stars: 2, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_8afa4c9c5c75ec17",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 2,
+        "forks": 0
+      }
+    },
+    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -7348,9 +7441,9 @@
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
-        "MEC",
         "IoT",
         "Distributed Systems",
+        "MEC",
         "Edge Computing"
       ],
       "institution": "",
