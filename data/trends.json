@@ -8,10 +8,10 @@
   },
   {
     "topic": "Resource Allocation",
-    "direction": "↑",
-    "status": "Rising",
-    "recent_count": 4,
-    "historical_count": 3
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 3,
+    "historical_count": 4
   },
   {
     "topic": "TinyML",

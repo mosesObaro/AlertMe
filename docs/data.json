@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-10-26",
-    "total_items": 75,
+    "last_updated": "2026-10-27",
+    "total_items": 74,
     "high_relevance_count": 46,
     "papers_count": 29,
     "conferences_count": 9,
@@ -19,10 +19,10 @@
     },
     {
       "topic": "Resource Allocation",
-      "direction": "↑",
-      "status": "Rising",
-      "recent_count": 4,
-      "historical_count": 3
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 3,
+      "historical_count": 4
     },
     {
       "topic": "TinyML",
@@ -7142,18 +7142,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] DuskXi/Disk-Scan-Benchmark (★ 0)",
-      "url": "https://github.com/DuskXi/Disk-Scan-Benchmark",
+      "title": "[Code/Benchmark] MattCCC/mobile-architecture-benchmark (★ 0)",
+      "url": "https://github.com/MattCCC/mobile-architecture-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "DuskXi"
+        "MattCCC"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-26",
-      "discovery_date": "2026-10-26",
+      "publication_date": "2026-10-27",
+      "discovery_date": "2026-10-27",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7161,7 +7161,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_aa847770408f6b25",
+      "id": "item_0806dc108ab9e61e",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7188,52 +7188,6 @@
       }
     },
     {
-      "title": "[Code/Benchmark] victorhcunha/benchmark-configurations-and-scripts (★ 0)",
-      "url": "https://github.com/victorhcunha/benchmark-configurations-and-scripts",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "victorhcunha"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-10-26",
-      "discovery_date": "2026-10-26",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 1)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_2ed9ef6d3953d930",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 1
-      }
-    },
-    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -7244,8 +7198,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-26",
-      "discovery_date": "2026-10-26",
+      "publication_date": "2026-10-27",
+      "discovery_date": "2026-10-27",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7282,7 +7236,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 21 days (+0.3)",
+          "Event upcoming in 20 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7341,8 +7295,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-26",
-      "discovery_date": "2026-10-26",
+      "publication_date": "2026-10-27",
+      "discovery_date": "2026-10-27",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7436,15 +7390,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-26",
-      "discovery_date": "2026-10-26",
+      "publication_date": "2026-10-27",
+      "discovery_date": "2026-10-27",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
         "Edge Computing",
-        "MEC",
-        "Distributed Systems",
-        "IoT"
+        "IoT",
+        "Distributed Systems"
       ],
       "institution": "",
       "location": "",
@@ -7485,7 +7438,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-26",
+      "discovery_date": "2026-10-27",
       "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7508,7 +7461,7 @@
         "reasons": [
           "✓ Primary topic match: Edge AI (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (131d ago) (+0.2)",
+          "• Published >30d ago (132d ago) (+0.2)",
           "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
