@@ -7,17 +7,17 @@
     "historical_count": 15
   },
   {
-    "topic": "Resource Allocation",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 3,
-    "historical_count": 4
-  },
-  {
     "topic": "TinyML",
     "direction": "↓",
     "status": "Declining",
     "recent_count": 3,
+    "historical_count": 5
+  },
+  {
+    "topic": "Resource Allocation",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 2,
     "historical_count": 5
   },
   {
