@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-10-30",
-    "total_items": 74,
+    "last_updated": "2026-10-31",
+    "total_items": 77,
     "high_relevance_count": 46,
-    "papers_count": 29,
+    "papers_count": 30,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -14,7 +14,7 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 7,
+      "recent_count": 6,
       "historical_count": 15
     },
     {
@@ -6668,6 +6668,70 @@
       "alert_mode": "daily"
     },
     {
+      "title": "IoT- and AI-Based Fertilizer Recommendation for Onion: A Systematic Review",
+      "url": "https://doi.org/10.5281/zenodo.23760473",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "survey",
+      "authors": [
+        "Sushil R. Deokar",
+        "Tuasif Shaikh"
+      ],
+      "doi": "10.5281/zenodo.23760473",
+      "arxiv_id": null,
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
+      "abstract": "Abstract Imbalanced, non-site-specific fertilizer application undermines the productivity and environmental sustainability of onion (Allium cepa L.), an economically important Indian horticultural crop. Blanket recommendations derived from state-level package-of-practice guidelines cannot capture the spatial and temporal heterogeneity of soil nutrient status, moisture, and micro-climate that exists even within a single field. Low-cost IoT sensor networks, cloud/edge computing, and machine learning (ML) now offer a pathway to real-time, site-specific nutrient management (SSNM). This review synthesizes AI-driven fertilizer recommendation frameworks across the sensing layer (capacitive/resistive moisture sensors, ion-selective NPK probes, optical methods), the connectivity layer (LoRaWAN, NB-IoT, Wi-Fi, MQTT/CoAP), and the intelligence layer (regression, tree-ensemble, and deep-learning models, including CNN-based leaf-deficiency diagnosis), and compares forty-one peer-reviewed studies from 2019–2025. Four gaps emerge: (i) scarce multi-season labeled onion datasets, (ii) weak linkage between prediction models and economically optimal fertilizer doses, (iii) poor interoperability between sensor hardware and recommendation software, and (iv) minimal field-scale validation. We propose a five-layer reference architecture, the AI-Driven Fertilizer Recommendation Framework (AIFRF), combining IoT soil monitoring, a hybrid ensemble-deep-learning engine, explainable AI, and a farmer-facing mobile advisory interface for onion, and outline a research agenda centered on open datasets, low-cost nutrient sensing, federated/transfer learning, and multi-location field trials.",
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "topics": [
+        "Fertilizer",
+        "Interoperability",
+        "Agricultural engineering",
+        "Sustainability",
+        "Productivity",
+        "Computer science",
+        "Nutrient",
+        "Environmental science",
+        "Soil nutrients",
+        "Field (mathematics)",
+        "Moisture",
+        "Precision agriculture",
+        "Interface (matter)",
+        "Layer (electronics)",
+        "Nutrient management",
+        "Remote sensing"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_b1849a71ac00a067",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.7,
+        "negative_penalty": 0.0,
+        "final_score": 6.9,
+        "matched_topics": [
+          "IoT",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Comprehensive Literature Survey / Review (+0.7)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
+    },
+    {
       "title": "INTELLIGENT CAD/CAM INTEGRATION FOR ADAPTIVE MANUFACTURING: A SYSTEMATIC REVIEW OF AI AND IOT FRAMEWORKS IN INDUSTRY 4.0",
       "url": "https://doi.org/10.30574/wjaets.2026.21.1.0460",
       "source": "OpenAlex",
@@ -7142,18 +7206,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] Shambhavigantla/ire-a3-ann-benchmark (★ 0)",
-      "url": "https://github.com/Shambhavigantla/ire-a3-ann-benchmark",
+      "title": "[Code/Benchmark] perpetualxbeta-ai/ai-model-benchmarker (★ 0)",
+      "url": "https://github.com/perpetualxbeta-ai/ai-model-benchmarker",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "Shambhavigantla"
+        "perpetualxbeta-ai"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-30",
-      "discovery_date": "2026-10-30",
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7161,7 +7225,145 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_e59394add41ff0cf",
+      "id": "item_cc983bd582149d4b",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] 2010180016y-netizen/saas-benchmarks (★ 0)",
+      "url": "https://github.com/2010180016y-netizen/saas-benchmarks",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "2010180016y-netizen"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_97a02c9b0db7f667",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] nasehqusyairy/sast-llm-benchmark (★ 0)",
+      "url": "https://github.com/nasehqusyairy/sast-llm-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "nasehqusyairy"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_b97b1821695663b1",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] riquedss/uff-tcc-video-anomaly-benchmark (★ 0)",
+      "url": "https://github.com/riquedss/uff-tcc-video-anomaly-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "riquedss"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_56258034a308f281",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7198,8 +7400,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-30",
-      "discovery_date": "2026-10-30",
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7236,7 +7438,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 17 days (+0.3)",
+          "Event upcoming in 16 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7295,8 +7497,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-30",
-      "discovery_date": "2026-10-30",
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7390,14 +7592,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-10-30",
-      "discovery_date": "2026-10-30",
+      "publication_date": "2026-10-31",
+      "discovery_date": "2026-10-31",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
         "IoT",
-        "Edge Computing",
-        "Distributed Systems"
+        "Distributed Systems",
+        "Edge Computing"
       ],
       "institution": "",
       "location": "",
@@ -7420,49 +7622,6 @@
           "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
           "✓ Freshly published (0d ago) (+1.5)",
           "✓ Conference CFP / Submission Track (+0.8)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
-    },
-    {
-      "title": "Open Horizon Reaches LF Edge Impact Stage 3: What It Means for Edge AI",
-      "url": "https://lfedge.org/open-horizon-reaches-lf-edge-impact-stage-3-what-it-means-for-edge-ai/",
-      "source": "Linux Foundation / LF Edge Blog",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "standards_update",
-      "authors": [
-        "LF Edge"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-06-17",
-      "discovery_date": "2026-10-30",
-      "abstract": "By Joe Pearson, TSC Chair, Open Horizon (LF Edge) TL;DR Open Horizon has reached LF Edge Stage 3 (Impact Stage), the highest maturity level in the LF Edge Project Lifecycle....",
-      "venue": "Linux Foundation / LF Edge Blog",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_e5fb999eaf167239",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 2.5,
-        "recency_score": 0.2,
-        "stage_boost": 1.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.5,
-        "matched_topics": [
-          "Edge AI"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge AI (Title)",
-          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "• Published >30d ago (135d ago) (+0.2)",
-          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
         ]
       },
       "intelligence": null,
