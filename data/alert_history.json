@@ -5788,5 +5788,75 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "SOFIA: A Neuro-Symbolic Edge Intelligence Framework for Sustainable, Explainable, and Sovereign AI Based on Edge-Cloud Continuum, Data Gravity, and Knowledge Gravity Principles",
+    "url": "https://doi.org/10.5281/zenodo.23845154",
+    "source": "OpenAlex",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "paper",
+    "authors": [
+      "Antonio Salis",
+      "Patrizia Loi",
+      "Monica Medda"
+    ],
+    "doi": "10.5281/zenodo.23845154",
+    "arxiv_id": null,
+    "publication_date": "2026-11-01",
+    "discovery_date": "2026-11-01",
+    "abstract": "The rapid adoption of Artificial Intelligence (AI) across public administrations, industry, education, and critical infrastructures is increasing demands for computational efficiency, transparency, sustainability, and regulatory compliance. While cloud-centric AI architectures have enabled major advances in machine learning, they face growing challenges related to data movement, latency, energy consumption, explainability, cybersecurity, and digital sovereignty. At the same time, European regulatory frameworks such as the European AI Act, GDPR, NIS2, the Data Act, and the Data Governance Act impose heterogeneous requirements concerning AI risk management, data protection, cybersecurity, data governance, accountability, and access to data. Current research addresses Edge Computing, Neuro-Symbolic AI, Knowledge Graphs, Explainable AI, and Sustainable AI largely as separate domains. This paper presents SOFIA (Sovereign, Ontology-driven Framework for Intelligent Action), a knowledge-driven neuro-symbolic framework that integrates Edge-Cloud Continuum principles, Data Gravity, Knowledge Graphs, and Governance-by-Design mechanisms. SOFIA defines and operationalizes the concept of Knowledge Gravity, extending compute-to-data approaches by distributing semantic knowledge, reasoning capabilities, policies, and regulatory constraints directly to decision points across the continuum. Through the combination of machine learning, symbolic reasoning, and continuously evolving Knowledge Graphs, SOFIA is designed to support explainable and governance-aware intelligence on resource-constrained edge devices. By aiming to reduce reliance on centralized infrastructures and repeated retraining, the framework seeks to improve sustainability, traceability, and digital sovereignty, and support compliance processes. SOFIA therefore represents a promising pathway toward distributed, explainable, and sustainable AI ecosystems operating across the Edge-Cloud Continuum.",
+    "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+    "topics": [
+      "Computer science",
+      "Data governance",
+      "Data science",
+      "Corporate governance",
+      "Knowledge management",
+      "Applications of artificial intelligence",
+      "Artificial intelligence",
+      "Knowledge integration",
+      "Enhanced Data Rates for GSM Evolution",
+      "Risk analysis (engineering)",
+      "Knowledge-based systems",
+      "Information privacy",
+      "Data integration",
+      "Data Protection Act 1998",
+      "Knowledge representation and reasoning",
+      "Digital transformation",
+      "Semantic Web",
+      "Automated reasoning",
+      "Big data",
+      "General Data Protection Regulation",
+      "Decision support system"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "doi_71091b619a7f1be7",
+    "score": {
+      "topic_score": 2.8,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 6.8,
+      "matched_topics": [
+        "Edge Intelligence",
+        "Edge Computing"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Abstract), Edge Intelligence (Title)",
+        "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+        "✓ Freshly published (0d ago) (+1.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {
+      "cited_by_count": 0
+    },
+    "alert_mode": "weekly"
   }
 ]
