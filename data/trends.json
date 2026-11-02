@@ -14,13 +14,6 @@
     "historical_count": 5
   },
   {
-    "topic": "Resource Allocation",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 2,
-    "historical_count": 5
-  },
-  {
     "topic": "Federated Learning",
     "direction": "↓",
     "status": "Declining",
@@ -33,6 +26,13 @@
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 3
+  },
+  {
+    "topic": "Resource Allocation",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 1,
+    "historical_count": 6
   },
   {
     "topic": "6G + Edge",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-01",
+    "last_updated": "2026-11-02",
     "total_items": 75,
     "high_relevance_count": 46,
     "papers_count": 30,
@@ -25,13 +25,6 @@
       "historical_count": 5
     },
     {
-      "topic": "Resource Allocation",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 2,
-      "historical_count": 5
-    },
-    {
       "topic": "Federated Learning",
       "direction": "↓",
       "status": "Declining",
@@ -44,6 +37,13 @@
       "status": "Declining",
       "recent_count": 1,
       "historical_count": 3
+    },
+    {
+      "topic": "Resource Allocation",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 6
     },
     {
       "topic": "6G + Edge",
@@ -7071,7 +7071,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "weekly"
     },
     {
       "title": "HotEdge 2027 (USENIX Workshop on Hot Topics in Edge Computing)",
@@ -7211,18 +7212,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] karthi2k06-alt/ML-Based-Pre-Screening-and-Verification-Referral-for-Lithography-Hotspots-on-ICCAD-12-Benchmarks (★ 0)",
-      "url": "https://github.com/karthi2k06-alt/ML-Based-Pre-Screening-and-Verification-Referral-for-Lithography-Hotspots-on-ICCAD-12-Benchmarks",
+      "title": "[Code/Benchmark] 1tz-j0rdan/P01-11-cross-language-benchmarking-suite (★ 0)",
+      "url": "https://github.com/1tz-j0rdan/P01-11-cross-language-benchmarking-suite",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "karthi2k06-alt"
+        "1tz-j0rdan"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-01",
-      "discovery_date": "2026-11-01",
+      "publication_date": "2026-11-02",
+      "discovery_date": "2026-11-02",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7230,7 +7231,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_d87778fff8b67d43",
+      "id": "item_37553da7866ab8a8",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7257,26 +7258,26 @@
       }
     },
     {
-      "title": "[Code/Benchmark] ayobi/amf-novelty-benchmark (★ 1)",
-      "url": "https://github.com/ayobi/amf-novelty-benchmark",
+      "title": "[Code/Benchmark] jgera/cloud-gpu-benchmark (★ 0)",
+      "url": "https://github.com/jgera/cloud-gpu-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "ayobi"
+        "jgera"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-01",
-      "discovery_date": "2026-11-01",
-      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
+      "publication_date": "2026-11-02",
+      "discovery_date": "2026-11-02",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_e6e87fe3c21eb132",
+      "id": "item_0128e02ed36c8448",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7298,7 +7299,7 @@
       "intelligence": null,
       "opportunity_data": null,
       "raw_metadata": {
-        "stars": 1,
+        "stars": 0,
         "forks": 0
       }
     },
@@ -7313,8 +7314,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-01",
-      "discovery_date": "2026-11-01",
+      "publication_date": "2026-11-02",
+      "discovery_date": "2026-11-02",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7351,7 +7352,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 15 days (+0.3)",
+          "Event upcoming in 14 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7410,8 +7411,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-01",
-      "discovery_date": "2026-11-01",
+      "publication_date": "2026-11-02",
+      "discovery_date": "2026-11-02",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7505,14 +7506,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-01",
-      "discovery_date": "2026-11-01",
+      "publication_date": "2026-11-02",
+      "discovery_date": "2026-11-02",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
-        "IoT",
         "Distributed Systems",
-        "Edge Computing"
+        "Edge Computing",
+        "IoT"
       ],
       "institution": "",
       "location": "",
