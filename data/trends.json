@@ -3,8 +3,15 @@
     "topic": "Edge AI",
     "direction": "↓",
     "status": "Declining",
-    "recent_count": 5,
+    "recent_count": 6,
     "historical_count": 16
+  },
+  {
+    "topic": "Resource Allocation",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 3,
+    "historical_count": 6
   },
   {
     "topic": "TinyML",
@@ -26,13 +33,6 @@
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 3
-  },
-  {
-    "topic": "Resource Allocation",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 1,
-    "historical_count": 6
   },
   {
     "topic": "6G + Edge",

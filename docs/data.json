@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-11-02",
-    "total_items": 75,
-    "high_relevance_count": 46,
-    "papers_count": 30,
+    "last_updated": "2026-11-03",
+    "total_items": 82,
+    "high_relevance_count": 47,
+    "papers_count": 32,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -14,8 +14,15 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 5,
+      "recent_count": 6,
       "historical_count": 16
+    },
+    {
+      "topic": "Resource Allocation",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 3,
+      "historical_count": 6
     },
     {
       "topic": "TinyML",
@@ -37,13 +44,6 @@
       "status": "Declining",
       "recent_count": 1,
       "historical_count": 3
-    },
-    {
-      "topic": "Resource Allocation",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 1,
-      "historical_count": 6
     },
     {
       "topic": "6G + Edge",
@@ -3019,6 +3019,95 @@
       },
       "raw_metadata": {},
       "alert_mode": "daily"
+    },
+    {
+      "title": "Co-Design of a Low-Power RISC-V Processor and a Reconfigurable Neural Network Accelerator for Edge AI Computing",
+      "url": "https://doi.org/10.70088/z2h7gc12",
+      "source": "OpenAlex",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "paper",
+      "authors": [
+        "Jiayang Zhang"
+      ],
+      "doi": "10.70088/z2h7gc12",
+      "arxiv_id": null,
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
+      "abstract": "The operational efficiency of the compact edge AI accelerator is susceptible to variations in network structure and data transmission speed. To address this issue, this study proposes a collaborative design scheme for digital integrated circuits. By adjusting the working mode of the computing array and coordinating with storage and power management, the operational efficiency of the accelerator is improved. The research tested three network models trained on the publicly available Digits dataset. The results showed that the average accuracy of integer reasoning ranged from 96.78% to 97.33%, and the average loss was at most 0.11 percentage points compared to floating-point reasoning. In a cost model with 64 processing units and 8 KiB memory, compared to a fixed array, this scheme reduced the inference delay by 14.83% to 18.74%, decreased the single-inference energy consumption by 6.86% to 8.81%, and increased the area by 7.58%. Further experiments demonstrated that reducing the waiting time between data transmission and computation plays a major role in improving operational efficiency. Allowing the computing array to flexibly adjust its working mode can also increase the utilization rate of processing units, but this improvement is still limited by data transmission capabilities. In the hardware resource allocation test, the scheme with 64 computing elements and 1 KB memory further reduced the area while keeping the power consumption basically unchanged. These results indicate that this design can balance operational efficiency and hardware overhead to a certain extent, but the specific effect still needs to be verified through actual hardware testing.",
+      "venue": "GBP Proceedings Series",
+      "topics": [
+        "Computer science",
+        "Overhead (engineering)",
+        "Edge device",
+        "Computer hardware",
+        "Artificial neural network",
+        "Computation",
+        "Transmission (telecommunications)",
+        "Scheme (mathematics)",
+        "Edge computing",
+        "Data transmission",
+        "Mode (computer interface)",
+        "Enhanced Data Rates for GSM Evolution",
+        "Energy consumption",
+        "Real-time computing",
+        "Efficient energy use",
+        "Embedded system",
+        "Hardware acceleration",
+        "Power (physics)",
+        "Resource allocation",
+        "Computer engineering",
+        "Integer (computer science)",
+        "Reduction (mathematics)",
+        "Data processing",
+        "Resource (disambiguation)",
+        "Networking hardware",
+        "Power consumption",
+        "Key (lock)",
+        "Transmission delay",
+        "Inference",
+        "Variable (mathematics)",
+        "Electrical efficiency",
+        "Distributed computing",
+        "Integer programming"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_355783030ec7708c",
+      "score": {
+        "topic_score": 3.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 8.2,
+        "matched_topics": [
+          "Edge AI",
+          "Resource Allocation"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Key research area match: Resource Allocation (+0.4)",
+          "✓ Tier 1 Academic/Standards source: OpenAlex (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates Computer science and Overhead (engineering). It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "To address this issue, this study proposes a collaborative design scheme for digital integrated circuits",
+        "methodology": "The research tested three network models trained on the publicly available Digits dataset",
+        "key_contribution": "The results showed that the average accuracy of integer reasoning ranged from 96.78% to 97.33%, and the average loss was at most 0.11 percentage points compared to floating-point reasoning",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "8.2/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {
+        "cited_by_count": 0
+      }
     },
     {
       "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
@@ -7005,6 +7094,48 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "The State of Tactical Edge Computing",
+      "url": "https://lfedge.org/the-state-of-tactical-edge-computing/",
+      "source": "Linux Foundation / LF Edge Blog",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "standards_update",
+      "authors": [
+        "LF Edge"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
+      "abstract": "Summary of Chapter 7 of the State of the Edge Report 2026 by Joe Pearson, Technology Strategist at IBM. This blog is part of a series highlighting key insights from...",
+      "venue": "Linux Foundation / LF Edge Blog",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_97e003e7c383d311",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.8,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "SOFIA: A Neuro-Symbolic Edge Intelligence Framework for Sustainable, Explainable, and Sovereign AI Based on Edge-Cloud Continuum, Data Gravity, and Knowledge Gravity Principles",
       "url": "https://doi.org/10.5281/zenodo.23845154",
       "source": "OpenAlex",
@@ -7212,18 +7343,71 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] 1tz-j0rdan/P01-11-cross-language-benchmarking-suite (★ 0)",
-      "url": "https://github.com/1tz-j0rdan/P01-11-cross-language-benchmarking-suite",
+      "title": "[Code/Benchmark] nnyycc77-ship-it/riggrade (★ 1)",
+      "url": "https://github.com/nnyycc77-ship-it/riggrade",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "1tz-j0rdan"
+        "nnyycc77-ship-it"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-02",
-      "discovery_date": "2026-11-02",
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
+      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [
+        "ai-agents",
+        "benchmark",
+        "gpu",
+        "mcp",
+        "mcp-server",
+        "x402"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_9932b12fd8b1b7cb",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 1,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] agerardoroque-bot/panel-benchmark-anahuac (★ 0)",
+      "url": "https://github.com/agerardoroque-bot/panel-benchmark-anahuac",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "agerardoroque-bot"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7231,7 +7415,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_37553da7866ab8a8",
+      "id": "item_26906f1f298579e1",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7258,18 +7442,120 @@
       }
     },
     {
-      "title": "[Code/Benchmark] jgera/cloud-gpu-benchmark (★ 0)",
-      "url": "https://github.com/jgera/cloud-gpu-benchmark",
+      "title": "[Code/Benchmark] hawkab/modelmapper-mapstruct-beanutils-benchmark (★ 0)",
+      "url": "https://github.com/hawkab/modelmapper-mapstruct-beanutils-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "jgera"
+        "hawkab"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-02",
-      "discovery_date": "2026-11-02",
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [
+        "beanutils",
+        "benchmark",
+        "java",
+        "mapstruct",
+        "modelmapper"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_407367e33e1874c3",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] hawkab/hashsum-benchmark (★ 0)",
+      "url": "https://github.com/hawkab/hashsum-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "hawkab"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [
+        "benchmark",
+        "java",
+        "perfomance"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_c5e6c6947ca84a31",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] dmelichar/mpi-benchmark (★ 0)",
+      "url": "https://github.com/dmelichar/mpi-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "dmelichar"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7277,7 +7563,53 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_0128e02ed36c8448",
+      "id": "item_7e55f811b830fd4a",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] kanishkambk43/Rag-benchmark-kit (★ 0)",
+      "url": "https://github.com/kanishkambk43/Rag-benchmark-kit",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "kanishkambk43"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_ff5dffc195fcf208",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7314,8 +7646,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-02",
-      "discovery_date": "2026-11-02",
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7352,7 +7684,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 14 days (+0.3)",
+          "Event upcoming in 13 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7411,8 +7743,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-02",
-      "discovery_date": "2026-11-02",
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7506,14 +7838,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-02",
-      "discovery_date": "2026-11-02",
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-03",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
         "Distributed Systems",
-        "Edge Computing",
-        "IoT"
+        "IoT",
+        "Edge Computing"
       ],
       "institution": "",
       "location": "",
@@ -7536,6 +7868,53 @@
           "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
           "✓ Freshly published (0d ago) (+1.5)",
           "✓ Conference CFP / Submission Track (+0.8)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "Dynamic Coalition Formation Under Capacity Constraints: A Regime-Switching Value-Investing Game",
+      "url": "http://arxiv.org/abs/2611.03137v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Rosario Patanè"
+      ],
+      "doi": null,
+      "arxiv_id": "2611.03137v1",
+      "publication_date": "2026-11-02",
+      "discovery_date": "2026-11-03",
+      "abstract": "Edge computing service deployment requires the Network Operator (NO) and Service Providers (SPs) to coordinate investment and resource allocation under uncertain demand. This paper develops an audit-based service management framework for daily coalition formation with fixed capacity and service-level agreement (SLA) reservations. A two-stage coalitional game separates infrastructure investment from operational participation. Demand follows a Geometric Random Walk (GRW), and SPs apply an ordered admission and suspension rule using reported marginal contributions. With the NO held fixed, the operational coalition value is submodular; mandatory reservations can produce negative Shapley payoffs. We derive a separable benchmark, compute operational Shapley allocations, and give a sufficient condition for convergence to an individual equilibrium. A probabilistic audit mechanism provides a conditional daily truthfulness guarantee under verified settlement and enforceable penalties. For five service classes over three years, the reference run gains 12.4% over static grand-coalition membership and recovers 94.6% of the full-information optimum. Across 30 runs, the median gain is 13.3%. Sensitivity tests examine policy parameters, capacity and alternative demand models. The gain depends on capacity and update order; abundant capacity can make the admission rule underperform static membership.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.GT",
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_60293e7a6a2b254c",
+      "score": {
+        "topic_score": 2.6,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.6,
+        "matched_topics": [
+          "Resource Allocation",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Key research area match: Resource Allocation (+0.4)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)"
         ]
       },
       "intelligence": null,

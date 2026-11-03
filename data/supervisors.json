@@ -1392,9 +1392,10 @@
     "profile_url": "",
     "lab_website": "",
     "research_areas": [
-      "Edge AI"
+      "Edge AI",
+      "Edge Computing"
     ],
-    "academic_fit_score": 9.3,
+    "academic_fit_score": 9.8,
     "recruitment_status": "not_verified",
     "recruitment_evidence": "",
     "recruitment_quote": "",
@@ -1412,9 +1413,16 @@
         "date": "2026-09-22",
         "venue": "Linux Foundation / LF Edge Blog",
         "score": 7.8
+      },
+      {
+        "title": "The State of Tactical Edge Computing",
+        "url": "https://lfedge.org/the-state-of-tactical-edge-computing/",
+        "date": "2026-11-03",
+        "venue": "Linux Foundation / LF Edge Blog",
+        "score": 6.8
       }
     ],
-    "publication_count": 3,
+    "publication_count": 4,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -1424,16 +1432,17 @@
     "last_checked": "2026-09-11",
     "current_opportunities": [],
     "reasons": [
-      "Academic Fit: ✓ Strong Edge Computing research fit: edge ai",
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge ai",
       "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
-      "✓ Active recent publication record (3 papers)",
+      "✓ Active recent publication record (4 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
-    "composite_score": 6.9,
-    "average_relevance": 7.8,
+    "composite_score": 7.1,
+    "average_relevance": 7.5,
     "topics": [
-      "Edge AI"
+      "Edge AI",
+      "Edge Computing"
     ]
   },
   "Sourabh Natu": {
@@ -7115,6 +7124,114 @@
       "Data Protection Act 1998",
       "Automated reasoning",
       "Knowledge integration"
+    ]
+  },
+  "Jiayang Zhang": {
+    "name": "Jiayang Zhang",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "Real-time computing",
+      "Key (lock)",
+      "Inference",
+      "Efficient energy use",
+      "Computer science",
+      "Integer programming",
+      "Computer hardware",
+      "Mode (computer interface)",
+      "Networking hardware",
+      "Reduction (mathematics)",
+      "Computation",
+      "Resource (disambiguation)",
+      "Energy consumption",
+      "Artificial neural network",
+      "Transmission delay",
+      "Electrical efficiency",
+      "Power consumption",
+      "Distributed computing",
+      "Variable (mathematics)",
+      "Edge computing",
+      "Edge device",
+      "Data transmission",
+      "Computer engineering",
+      "Overhead (engineering)",
+      "Data processing",
+      "Scheme (mathematics)",
+      "Resource allocation",
+      "Hardware acceleration",
+      "Enhanced Data Rates for GSM Evolution",
+      "Transmission (telecommunications)",
+      "Power (physics)",
+      "Integer (computer science)",
+      "Embedded system"
+    ],
+    "academic_fit_score": 9.8,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Co-Design of a Low-Power RISC-V Processor and a Reconfigurable Neural Network Accelerator for Edge AI Computing",
+        "url": "https://doi.org/10.70088/z2h7gc12",
+        "date": "2026-11-03",
+        "venue": "GBP Proceedings Series",
+        "score": 8.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-03",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge ai",
+      "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.4,
+    "average_relevance": 8.2,
+    "topics": [
+      "Real-time computing",
+      "Key (lock)",
+      "Inference",
+      "Efficient energy use",
+      "Computer science",
+      "Integer programming",
+      "Computer hardware",
+      "Mode (computer interface)",
+      "Networking hardware",
+      "Reduction (mathematics)",
+      "Computation",
+      "Resource (disambiguation)",
+      "Energy consumption",
+      "Artificial neural network",
+      "Transmission delay",
+      "Electrical efficiency",
+      "Power consumption",
+      "Distributed computing",
+      "Variable (mathematics)",
+      "Edge computing",
+      "Edge device",
+      "Data transmission",
+      "Computer engineering",
+      "Overhead (engineering)",
+      "Data processing",
+      "Scheme (mathematics)",
+      "Resource allocation",
+      "Hardware acceleration",
+      "Enhanced Data Rates for GSM Evolution",
+      "Transmission (telecommunications)",
+      "Power (physics)",
+      "Integer (computer science)",
+      "Embedded system"
     ]
   }
 }
