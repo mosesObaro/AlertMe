@@ -5948,5 +5948,58 @@
       "cited_by_count": 0
     },
     "alert_mode": "daily"
+  },
+  {
+    "title": "Distributed Linear Bandits for Freshness-Aware Preprocessing in MEC-Enabled Digital Twin Networks",
+    "url": "http://arxiv.org/abs/2611.05115v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Mariam Yahya",
+      "Setareh Maghsudi"
+    ],
+    "doi": null,
+    "arxiv_id": "2611.05115v1",
+    "publication_date": "2026-11-03",
+    "discovery_date": "2026-11-04",
+    "abstract": "Digital twins (DTs) require timely updates from Internet of Things (IoT) devices to accurately represent the state of the corresponding physical systems, but transmitting large data volumes can compromise freshness. Moreover, different task classes have distinct computational demands and freshness requirements, while stochastic task generation and sizes complicate resource allocation. In this paper, we propose a freshness-aware framework in which multi-access edge computing (MEC) servers preprocess IoT data, reducing transmission volume and DT-server processing load. The framework establishes mutual support between DT and MEC servers. The DTs determine feasible CPU-allocation strategies guaranteeing class-specific age-of-information (AoI) requirements under specified workload, delay, and update-generation bounds. MEC servers collaboratively identify the feasible strategy minimizing expected freshness-normalized preprocessing delay. We formulate CPU-strategy selection as a fixed-confidence distributed best-arm identification problem in linear bandits, with MEC servers as agents and CPU allocations across task classes as arms. We employ DistLinGapE, a distributed collaborative learning method, to coordinate exploration and share observations. Numerical results show that the method identifies the optimal feasible strategy and reduces preprocessing delay when deployed under stationary task-class assignments and workload statistics. Collaboration yields an identification speedup nearly proportional to the number of participating MEC servers in the evaluated settings.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.DC",
+      "cs.LG"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_ff7ff2c8cd6bde34",
+    "score": {
+      "topic_score": 3.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 0.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "Multi-access Edge Computing",
+        "Edge Computing",
+        "MEC",
+        "Resource Allocation",
+        "Internet of Things",
+        "IoT"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge Computing (Abstract), Multi-access Edge Computing (Abstract)",
+        "✓ Key research area match: Resource Allocation (+0.4)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (1d ago) (+1.5)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]

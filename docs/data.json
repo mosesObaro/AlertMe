@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-11-03",
-    "total_items": 82,
+    "last_updated": "2026-11-04",
+    "total_items": 77,
     "high_relevance_count": 47,
-    "papers_count": 32,
+    "papers_count": 33,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -21,7 +21,7 @@
       "topic": "Resource Allocation",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 3,
+      "recent_count": 4,
       "historical_count": 6
     },
     {
@@ -187,6 +187,67 @@
       ]
     },
     {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Edge AI",
+        "Edge Computing"
+      ],
+      "academic_fit_score": 9.8,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "The State of Tactical Edge Computing",
+          "url": "https://lfedge.org/the-state-of-tactical-edge-computing/",
+          "date": "2026-11-03",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 6.8
+        }
+      ],
+      "publication_count": 5,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge ai",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+        "✓ Strong publication volume: 5+ papers in target area",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location: International (Outside primary 6 target countries)"
+      ],
+      "composite_score": 7.4,
+      "average_relevance": 7.4,
+      "topics": [
+        "Edge AI",
+        "Edge Computing"
+      ]
+    },
+    {
       "name": "TinyML Foundation / Harvard University / ICTP",
       "institution": "TinyML Foundation / Harvard University / ICTP",
       "country": "International",
@@ -465,46 +526,6 @@
     },
     {
       "name": "Abdallah Namoun",
-      "institution": "Academic Institution",
-      "country": "",
-      "department": "",
-      "profile_url": "",
-      "lab_website": "",
-      "research_areas": [],
-      "academic_fit_score": 10.0,
-      "recruitment_status": "not_verified",
-      "recruitment_evidence": "",
-      "recruitment_quote": "",
-      "recent_papers": [
-        {
-          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
-          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
-          "date": "2025",
-          "score": 7.7
-        }
-      ],
-      "publication_count": 2,
-      "citations_indicator": "",
-      "h_index": null,
-      "orcid": null,
-      "openalex_id": null,
-      "semantic_scholar_url": null,
-      "google_scholar_url": null,
-      "last_checked": "2026-09-11",
-      "current_opportunities": [],
-      "reasons": [
-        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
-        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
-        "✓ Active recent publication record (2 papers)",
-        "• Active researcher in target field; current recruitment status pending lab confirmation",
-        "• Location to be determined"
-      ],
-      "composite_score": 7.2,
-      "average_relevance": 7.7,
-      "topics": []
-    },
-    {
-      "name": "Mazhar Ali",
       "institution": "Academic Institution",
       "country": "",
       "department": "",
@@ -643,6 +664,67 @@
       ]
     },
     {
+      "name": "LF Edge",
+      "institution": "Academic Institution",
+      "country": "International",
+      "department": "",
+      "profile_url": "",
+      "lab_website": "",
+      "research_areas": [
+        "Edge AI",
+        "Edge Computing"
+      ],
+      "academic_fit_score": 9.8,
+      "recruitment_status": "not_verified",
+      "recruitment_evidence": "",
+      "recruitment_quote": "",
+      "recent_papers": [
+        {
+          "title": "From Classroom to Production: Building Edge AI Infrastructure with EdgeLake and UC Santa Cruz",
+          "url": "https://lfedge.org/from-classroom-to-production-building-edge-ai-infrastructure-with-edgelake-and-uc-santa-cruz/",
+          "date": "2026-09-10",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "InfiniEdge AI Release 4.0 – Distributed AI Agents, Physical AI Communication and AIOps Evaluation on Edge",
+          "url": "https://lfedge.org/infiniedge-ai-release-4-0-distributed-ai-agents-physical-ai-communication-and-aiops-evaluation-on-edge/",
+          "date": "2026-09-22",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 7.8
+        },
+        {
+          "title": "The State of Tactical Edge Computing",
+          "url": "https://lfedge.org/the-state-of-tactical-edge-computing/",
+          "date": "2026-11-03",
+          "venue": "Linux Foundation / LF Edge Blog",
+          "score": 6.8
+        }
+      ],
+      "publication_count": 5,
+      "citations_indicator": "",
+      "h_index": null,
+      "orcid": null,
+      "openalex_id": null,
+      "semantic_scholar_url": null,
+      "google_scholar_url": null,
+      "last_checked": "2026-09-11",
+      "current_opportunities": [],
+      "reasons": [
+        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge ai",
+        "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
+        "✓ Strong publication volume: 5+ papers in target area",
+        "• Active researcher in target field; current recruitment status pending lab confirmation",
+        "• Location: International (Outside primary 6 target countries)"
+      ],
+      "composite_score": 7.4,
+      "average_relevance": 7.4,
+      "topics": [
+        "Edge AI",
+        "Edge Computing"
+      ]
+    },
+    {
       "name": "TinyML Foundation / Harvard University / ICTP",
       "institution": "TinyML Foundation / Harvard University / ICTP",
       "country": "International",
@@ -921,46 +1003,6 @@
     },
     {
       "name": "Abdallah Namoun",
-      "institution": "Academic Institution",
-      "country": "",
-      "department": "",
-      "profile_url": "",
-      "lab_website": "",
-      "research_areas": [],
-      "academic_fit_score": 10.0,
-      "recruitment_status": "not_verified",
-      "recruitment_evidence": "",
-      "recruitment_quote": "",
-      "recent_papers": [
-        {
-          "title": "Deep Reinforcement Learning With Dueling DQN for Partial Computation Offloading and Resource Allocation in Mobile Edge Computing",
-          "url": "https://www.semanticscholar.org/paper/1d57b99fde7fc14b71951f86f661a9bff7bb7880",
-          "date": "2025",
-          "score": 7.7
-        }
-      ],
-      "publication_count": 2,
-      "citations_indicator": "",
-      "h_index": null,
-      "orcid": null,
-      "openalex_id": null,
-      "semantic_scholar_url": null,
-      "google_scholar_url": null,
-      "last_checked": "2026-09-11",
-      "current_opportunities": [],
-      "reasons": [
-        "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, mobile edge computing, computation offloading",
-        "Academic Fit: ✓ Direct alignment with active learning stage: Computation Offloading",
-        "✓ Active recent publication record (2 papers)",
-        "• Active researcher in target field; current recruitment status pending lab confirmation",
-        "• Location to be determined"
-      ],
-      "composite_score": 7.2,
-      "average_relevance": 7.7,
-      "topics": []
-    },
-    {
-      "name": "Mazhar Ali",
       "institution": "Academic Institution",
       "country": "",
       "department": "",
@@ -3107,7 +3149,8 @@
       "opportunity_data": null,
       "raw_metadata": {
         "cited_by_count": 0
-      }
+      },
+      "alert_mode": "daily"
     },
     {
       "title": "Edge AI for Energy-Efficient Smart IoT Systems: A Sustainable Computing Approach",
@@ -5973,6 +6016,58 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Distributed Linear Bandits for Freshness-Aware Preprocessing in MEC-Enabled Digital Twin Networks",
+      "url": "http://arxiv.org/abs/2611.05115v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Mariam Yahya",
+        "Setareh Maghsudi"
+      ],
+      "doi": null,
+      "arxiv_id": "2611.05115v1",
+      "publication_date": "2026-11-03",
+      "discovery_date": "2026-11-04",
+      "abstract": "Digital twins (DTs) require timely updates from Internet of Things (IoT) devices to accurately represent the state of the corresponding physical systems, but transmitting large data volumes can compromise freshness. Moreover, different task classes have distinct computational demands and freshness requirements, while stochastic task generation and sizes complicate resource allocation. In this paper, we propose a freshness-aware framework in which multi-access edge computing (MEC) servers preprocess IoT data, reducing transmission volume and DT-server processing load. The framework establishes mutual support between DT and MEC servers. The DTs determine feasible CPU-allocation strategies guaranteeing class-specific age-of-information (AoI) requirements under specified workload, delay, and update-generation bounds. MEC servers collaboratively identify the feasible strategy minimizing expected freshness-normalized preprocessing delay. We formulate CPU-strategy selection as a fixed-confidence distributed best-arm identification problem in linear bandits, with MEC servers as agents and CPU allocations across task classes as arms. We employ DistLinGapE, a distributed collaborative learning method, to coordinate exploration and share observations. Numerical results show that the method identifies the optimal feasible strategy and reduces preprocessing delay when deployed under stationary task-class assignments and workload statistics. Collaboration yields an identification speedup nearly proportional to the number of participating MEC servers in the evaluated settings.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC",
+        "cs.LG"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_ff7ff2c8cd6bde34",
+      "score": {
+        "topic_score": 3.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "Multi-access Edge Computing",
+          "Edge Computing",
+          "MEC",
+          "Resource Allocation",
+          "Internet of Things",
+          "IoT"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract), Multi-access Edge Computing (Abstract)",
+          "✓ Key research area match: Resource Allocation (+0.4)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Constrained Federated Reinforcement Learning for Secure Offloading in Vehicular Edge Computing",
       "url": "http://arxiv.org/abs/2610.27651v1",
       "source": "arXiv",
@@ -7105,7 +7200,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
+      "discovery_date": "2026-11-04",
       "abstract": "Summary of Chapter 7 of the State of the Edge Report 2026 by Joe Pearson, Technology Strategist at IBM. This blog is part of a series highlighting key insights from...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7128,7 +7223,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)"
+          "✓ Freshly published (1d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -7343,299 +7438,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] nnyycc77-ship-it/riggrade (★ 1)",
-      "url": "https://github.com/nnyycc77-ship-it/riggrade",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "nnyycc77-ship-it"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
-      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [
-        "ai-agents",
-        "benchmark",
-        "gpu",
-        "mcp",
-        "mcp-server",
-        "x402"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_9932b12fd8b1b7cb",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 1,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] agerardoroque-bot/panel-benchmark-anahuac (★ 0)",
-      "url": "https://github.com/agerardoroque-bot/panel-benchmark-anahuac",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "agerardoroque-bot"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_26906f1f298579e1",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] hawkab/modelmapper-mapstruct-beanutils-benchmark (★ 0)",
-      "url": "https://github.com/hawkab/modelmapper-mapstruct-beanutils-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "hawkab"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [
-        "beanutils",
-        "benchmark",
-        "java",
-        "mapstruct",
-        "modelmapper"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_407367e33e1874c3",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] hawkab/hashsum-benchmark (★ 0)",
-      "url": "https://github.com/hawkab/hashsum-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "hawkab"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [
-        "benchmark",
-        "java",
-        "perfomance"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_c5e6c6947ca84a31",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] dmelichar/mpi-benchmark (★ 0)",
-      "url": "https://github.com/dmelichar/mpi-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "dmelichar"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_7e55f811b830fd4a",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] kanishkambk43/Rag-benchmark-kit (★ 0)",
-      "url": "https://github.com/kanishkambk43/Rag-benchmark-kit",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "kanishkambk43"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_ff5dffc195fcf208",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -7646,8 +7448,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
+      "publication_date": "2026-11-04",
+      "discovery_date": "2026-11-04",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7684,7 +7486,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 13 days (+0.3)",
+          "Event upcoming in 12 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7743,8 +7545,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
+      "publication_date": "2026-11-04",
+      "discovery_date": "2026-11-04",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7838,14 +7640,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-03",
+      "publication_date": "2026-11-04",
+      "discovery_date": "2026-11-04",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
+        "Edge Computing",
         "Distributed Systems",
-        "IoT",
-        "Edge Computing"
+        "IoT"
       ],
       "institution": "",
       "location": "",
@@ -7886,7 +7688,7 @@
       "doi": null,
       "arxiv_id": "2611.03137v1",
       "publication_date": "2026-11-02",
-      "discovery_date": "2026-11-03",
+      "discovery_date": "2026-11-04",
       "abstract": "Edge computing service deployment requires the Network Operator (NO) and Service Providers (SPs) to coordinate investment and resource allocation under uncertain demand. This paper develops an audit-based service management framework for daily coalition formation with fixed capacity and service-level agreement (SLA) reservations. A two-stage coalitional game separates infrastructure investment from operational participation. Demand follows a Geometric Random Walk (GRW), and SPs apply an ordered admission and suspension rule using reported marginal contributions. With the NO held fixed, the operational coalition value is submodular; mandatory reservations can produce negative Shapley payoffs. We derive a separable benchmark, compute operational Shapley allocations, and give a sufficient condition for convergence to an individual equilibrium. A probabilistic audit mechanism provides a conditional daily truthfulness guarantee under verified settlement and enforceable penalties. For five service classes over three years, the reference run gains 12.4% over static grand-coalition membership and recovers 94.6% of the full-information optimum. Across 30 runs, the median gain is 13.3%. Sensitivity tests examine policy parameters, capacity and alternative demand models. The gain depends on capacity and update order; abundant capacity can make the admission rule underperform static membership.",
       "venue": "arXiv CS",
       "topics": [
@@ -7907,14 +7709,14 @@
         "negative_penalty": 0.0,
         "final_score": 6.6,
         "matched_topics": [
-          "Resource Allocation",
-          "Edge Computing"
+          "Edge Computing",
+          "Resource Allocation"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Abstract)",
           "✓ Key research area match: Resource Allocation (+0.4)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)"
+          "✓ Freshly published (2d ago) (+1.5)"
         ]
       },
       "intelligence": null,
