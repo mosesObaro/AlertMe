@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-04",
+    "last_updated": "2026-11-05",
     "total_items": 77,
     "high_relevance_count": 47,
     "papers_count": 33,
-    "conferences_count": 9,
+    "conferences_count": 8,
     "opportunities_count": 4,
     "scholarships_count": 1,
     "active_recruitment_count": 3
@@ -224,7 +224,7 @@
           "score": 6.8
         }
       ],
-      "publication_count": 5,
+      "publication_count": 6,
       "citations_indicator": "",
       "h_index": null,
       "orcid": null,
@@ -236,12 +236,12 @@
       "reasons": [
         "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge ai",
         "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
-        "✓ Strong publication volume: 5+ papers in target area",
+        "✓ Strong publication volume: 6+ papers in target area",
         "• Active researcher in target field; current recruitment status pending lab confirmation",
         "• Location: International (Outside primary 6 target countries)"
       ],
       "composite_score": 7.4,
-      "average_relevance": 7.4,
+      "average_relevance": 7.3,
       "topics": [
         "Edge AI",
         "Edge Computing"
@@ -701,7 +701,7 @@
           "score": 6.8
         }
       ],
-      "publication_count": 5,
+      "publication_count": 6,
       "citations_indicator": "",
       "h_index": null,
       "orcid": null,
@@ -713,12 +713,12 @@
       "reasons": [
         "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, edge ai",
         "Academic Fit: ✓ Direct alignment with active learning stage: Edge AI",
-        "✓ Strong publication volume: 5+ papers in target area",
+        "✓ Strong publication volume: 6+ papers in target area",
         "• Active researcher in target field; current recruitment status pending lab confirmation",
         "• Location: International (Outside primary 6 target countries)"
       ],
       "composite_score": 7.4,
-      "average_relevance": 7.4,
+      "average_relevance": 7.3,
       "topics": [
         "Edge AI",
         "Edge Computing"
@@ -6065,7 +6065,8 @@
       },
       "intelligence": null,
       "opportunity_data": null,
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Constrained Federated Reinforcement Learning for Secure Offloading in Vehicular Edge Computing",
@@ -7200,7 +7201,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-04",
+      "discovery_date": "2026-11-05",
       "abstract": "Summary of Chapter 7 of the State of the Edge Report 2026 by Joe Pearson, Technology Strategist at IBM. This blog is part of a series highlighting key insights from...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7223,7 +7224,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)"
+          "✓ Freshly published (2d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -7438,6 +7439,52 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "[Code/Benchmark] Atribu/BenchMarkDemo (★ 0)",
+      "url": "https://github.com/Atribu/BenchMarkDemo",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "Atribu"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-05",
+      "discovery_date": "2026-11-05",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_88e922cc032b2b05",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -7448,8 +7495,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-04",
-      "discovery_date": "2026-11-04",
+      "publication_date": "2026-11-05",
+      "discovery_date": "2026-11-05",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7486,7 +7533,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 12 days (+0.3)",
+          "Event upcoming in 11 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7545,8 +7592,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-04",
-      "discovery_date": "2026-11-04",
+      "publication_date": "2026-11-05",
+      "discovery_date": "2026-11-05",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7630,53 +7677,6 @@
       "raw_metadata": {}
     },
     {
-      "title": "doors 2027 : 7th Edge Computing Workshop",
-      "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203684&copyownerid=160746",
-      "source": "Conference Feed",
-      "source_tier": "tier3_conference",
-      "item_type": "conference_cfp",
-      "authors": [
-        "Professional Organization"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-04",
-      "discovery_date": "2026-11-04",
-      "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
-      "venue": "Conference CFP",
-      "topics": [
-        "Edge Computing",
-        "Distributed Systems",
-        "IoT"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_d8a32a62a2b1134c",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 1.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.8,
-        "negative_penalty": 0.0,
-        "final_score": 6.6,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Title)",
-          "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Conference CFP / Submission Track (+0.8)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
-    },
-    {
       "title": "Dynamic Coalition Formation Under Capacity Constraints: A Regime-Switching Value-Investing Game",
       "url": "http://arxiv.org/abs/2611.03137v1",
       "source": "arXiv",
@@ -7688,7 +7688,7 @@
       "doi": null,
       "arxiv_id": "2611.03137v1",
       "publication_date": "2026-11-02",
-      "discovery_date": "2026-11-04",
+      "discovery_date": "2026-11-05",
       "abstract": "Edge computing service deployment requires the Network Operator (NO) and Service Providers (SPs) to coordinate investment and resource allocation under uncertain demand. This paper develops an audit-based service management framework for daily coalition formation with fixed capacity and service-level agreement (SLA) reservations. A two-stage coalitional game separates infrastructure investment from operational participation. Demand follows a Geometric Random Walk (GRW), and SPs apply an ordered admission and suspension rule using reported marginal contributions. With the NO held fixed, the operational coalition value is submodular; mandatory reservations can produce negative Shapley payoffs. We derive a separable benchmark, compute operational Shapley allocations, and give a sufficient condition for convergence to an individual equilibrium. A probabilistic audit mechanism provides a conditional daily truthfulness guarantee under verified settlement and enforceable penalties. For five service classes over three years, the reference run gains 12.4% over static grand-coalition membership and recovers 94.6% of the full-information optimum. Across 30 runs, the median gain is 13.3%. Sensitivity tests examine policy parameters, capacity and alternative demand models. The gain depends on capacity and update order; abundant capacity can make the admission rule underperform static membership.",
       "venue": "arXiv CS",
       "topics": [
@@ -7716,7 +7716,7 @@
           "✓ Primary topic match: Edge Computing (Abstract)",
           "✓ Key research area match: Resource Allocation (+0.4)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)"
+          "✓ Freshly published (3d ago) (+1.5)"
         ]
       },
       "intelligence": null,
