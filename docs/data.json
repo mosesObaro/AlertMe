@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-07",
+    "last_updated": "2026-11-08",
     "total_items": 76,
     "high_relevance_count": 47,
     "papers_count": 32,
@@ -14,8 +14,8 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 6,
-      "historical_count": 16
+      "recent_count": 4,
+      "historical_count": 18
     },
     {
       "topic": "Resource Allocation",
@@ -23,13 +23,6 @@
       "status": "Declining",
       "recent_count": 3,
       "historical_count": 6
-    },
-    {
-      "topic": "TinyML",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 3,
-      "historical_count": 5
     },
     {
       "topic": "Federated Learning",
@@ -44,6 +37,13 @@
       "status": "Declining",
       "recent_count": 1,
       "historical_count": 3
+    },
+    {
+      "topic": "TinyML",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 7
     },
     {
       "topic": "6G + Edge",
@@ -7397,26 +7397,26 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] dzaragoza/LLM-benchmark (★ 2)",
-      "url": "https://github.com/dzaragoza/LLM-benchmark",
+      "title": "[Code/Benchmark] php/benchmarking-data (★ 18)",
+      "url": "https://github.com/php/benchmarking-data",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "dzaragoza"
+        "php"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-07",
-      "discovery_date": "2026-11-07",
-      "abstract": "Open source edge computing repository. (Stars: 2, Forks: 0)",
+      "publication_date": "2026-11-08",
+      "discovery_date": "2026-11-08",
+      "abstract": "Open source edge computing repository. (Stars: 18, Forks: 5)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_8ee5bf6fd880d598",
+      "id": "item_42ca01588efff080",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7438,8 +7438,8 @@
       "intelligence": null,
       "opportunity_data": null,
       "raw_metadata": {
-        "stars": 2,
-        "forks": 0
+        "stars": 18,
+        "forks": 5
       }
     },
     {
@@ -7453,8 +7453,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-07",
-      "discovery_date": "2026-11-07",
+      "publication_date": "2026-11-08",
+      "discovery_date": "2026-11-08",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7491,7 +7491,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 9 days (+0.3)",
+          "Event upcoming in 8 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7550,8 +7550,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-07",
-      "discovery_date": "2026-11-07",
+      "publication_date": "2026-11-08",
+      "discovery_date": "2026-11-08",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7646,7 +7646,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-07",
+      "discovery_date": "2026-11-08",
       "abstract": "Summary of Chapter 7 of the State of the Edge Report 2026 by Joe Pearson, Technology Strategist at IBM. This blog is part of a series highlighting key insights from...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7669,7 +7669,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "✓ Published within last week (4d ago) (+1.2)"
+          "✓ Published within last week (5d ago) (+1.2)"
         ]
       },
       "intelligence": null,
