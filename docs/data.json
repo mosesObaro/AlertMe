@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-11-08",
-    "total_items": 76,
+    "total_items": 75,
     "high_relevance_count": 47,
     "papers_count": 32,
     "conferences_count": 8,
@@ -7395,52 +7395,6 @@
       "opportunity_data": null,
       "raw_metadata": {},
       "alert_mode": "weekly"
-    },
-    {
-      "title": "[Code/Benchmark] php/benchmarking-data (★ 18)",
-      "url": "https://github.com/php/benchmarking-data",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "php"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-08",
-      "discovery_date": "2026-11-08",
-      "abstract": "Open source edge computing repository. (Stars: 18, Forks: 5)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_42ca01588efff080",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 18,
-        "forks": 5
-      }
     },
     {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
