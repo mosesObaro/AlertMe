@@ -1,10 +1,10 @@
 {
   "meta": {
-    "last_updated": "2026-11-08",
-    "total_items": 75,
-    "high_relevance_count": 47,
-    "papers_count": 32,
-    "conferences_count": 8,
+    "last_updated": "2026-11-09",
+    "total_items": 79,
+    "high_relevance_count": 48,
+    "papers_count": 33,
+    "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
     "active_recruitment_count": 3
@@ -14,7 +14,7 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 4,
+      "recent_count": 5,
       "historical_count": 18
     },
     {
@@ -4345,6 +4345,62 @@
       "alert_mode": "daily"
     },
     {
+      "title": "UniExit: A Unified Latency-Aware Early-Exit Runtime for Heterogeneous Edge AI",
+      "url": "http://arxiv.org/abs/2611.09159v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Yuhang Guan",
+        "Huanle Zhang",
+        "Xiaomin Ouyang",
+        "Zhidan Liu"
+      ],
+      "doi": null,
+      "arxiv_id": "2611.09159v1",
+      "publication_date": "2026-11-06",
+      "discovery_date": "2026-11-09",
+      "abstract": "Edge applications increasingly combine CNN-based perception with edge-deployable Transformer-based language models, but deploying such heterogeneous workloads on resource-constrained devices is challenging because inference latency varies with both input difficulty and runtime hardware state. Early-exit inference reduces computation by terminating at intermediate stages, yet existing methods are often model-specific and rely on static latency profiles that become stale under dynamic edge conditions. This paper presents UniExit, a unified latency-aware early-exit runtime for heterogeneous edge AI. UniExit abstracts CNN blocks and Transformer layers as ordered stages and applies a common latency-aware routing policy while retaining model-specific quality mechanisms. It predicts the cost of reaching the next exit from runtime state and inference progress to make budget-aware continue-or-exit decisions. UniExit combines runtime-state-aware latency prediction, cache-based prediction reuse, trend-aware fallback, and CNN-specific exit stabilization to provide low-overhead and robust online control. We implement UniExit on multiple edge and edge-cloud platforms and evaluate it with representative CNN and Transformer-based language-model workloads. Across single-workload, concurrent heterogeneous, and edge-cloud settings, UniExit consistently improves deadline satisfaction and latency-accuracy trade-offs over existing progressive inference baselines, while reducing redundant exit-module computation and task-level energy consumption.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_7cbcd862ab73daeb",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Title)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (3d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates cs.DC. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Across single-workload, concurrent heterogeneous, and edge-cloud settings, UniExit consistently improves deadline satisfaction and latency-accuracy trade-offs over existing progressive inference baselines, while reducing redundant exit-module computation and task-level energy consumption.",
+        "methodology": "Edge applications increasingly combine CNN-based perception with edge-deployable Transformer-based language models, but deploying such heterogeneous workloads on resource-constrained devices is challenging because inference latency varies with both input difficulty and runtime hardware state",
+        "key_contribution": "Early-exit inference reduces computation by terminating at intermediate stages, yet existing methods are often model-specific and rely on static latency profiles that become stale under dynamic edge conditions",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Neuromorphic Computing Architectures for Low-Power Edge Inference in IoT Applications",
       "url": "https://ecejournals.in/index.php/PECE/article/view/431",
       "source": "OpenAlex",
@@ -7397,6 +7453,98 @@
       "alert_mode": "weekly"
     },
     {
+      "title": "[Code/Benchmark] depot/benchmark-zed (★ 1)",
+      "url": "https://github.com/depot/benchmark-zed",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "depot"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-09",
+      "discovery_date": "2026-11-09",
+      "abstract": "Open source edge computing repository. (Stars: 1, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_893216c33f2317a7",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 1,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] DeepakR-Sastry/icrl_benchmarking (★ 0)",
+      "url": "https://github.com/DeepakR-Sastry/icrl_benchmarking",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "DeepakR-Sastry"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-09",
+      "discovery_date": "2026-11-09",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_1913cfd767a4e6d3",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
       "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
       "url": "https://www.lfedge.org/education/bootcamps/",
       "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
@@ -7407,8 +7555,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-08",
-      "discovery_date": "2026-11-08",
+      "publication_date": "2026-11-09",
+      "discovery_date": "2026-11-09",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7445,7 +7593,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 8 days (+0.3)",
+          "Event upcoming in 7 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7504,8 +7652,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-08",
-      "discovery_date": "2026-11-08",
+      "publication_date": "2026-11-09",
+      "discovery_date": "2026-11-09",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7589,6 +7737,53 @@
       "raw_metadata": {}
     },
     {
+      "title": "doors 2027 : 7th Edge Computing Workshop",
+      "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203684&copyownerid=160746",
+      "source": "Conference Feed",
+      "source_tier": "tier3_conference",
+      "item_type": "conference_cfp",
+      "authors": [
+        "Professional Organization"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-09",
+      "discovery_date": "2026-11-09",
+      "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
+      "venue": "Conference CFP",
+      "topics": [
+        "Distributed Systems",
+        "Edge Computing",
+        "IoT"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_d8a32a62a2b1134c",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 1.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.8,
+        "negative_penalty": 0.0,
+        "final_score": 6.6,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Conference CFP / Submission Track (+0.8)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "The State of Tactical Edge Computing",
       "url": "https://lfedge.org/the-state-of-tactical-edge-computing/",
       "source": "Linux Foundation / LF Edge Blog",
@@ -7600,7 +7795,7 @@
       "doi": null,
       "arxiv_id": null,
       "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-08",
+      "discovery_date": "2026-11-09",
       "abstract": "Summary of Chapter 7 of the State of the Edge Report 2026 by Joe Pearson, Technology Strategist at IBM. This blog is part of a series highlighting key insights from...",
       "venue": "Linux Foundation / LF Edge Blog",
       "topics": [],
@@ -7623,7 +7818,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
           "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "✓ Published within last week (5d ago) (+1.2)"
+          "✓ Published within last week (6d ago) (+1.2)"
         ]
       },
       "intelligence": null,
