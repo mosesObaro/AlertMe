@@ -7499,5 +7499,185 @@
     "topics": [
       "cs.DC"
     ]
+  },
+  "Niraj Kumar": {
+    "name": "Niraj Kumar",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Adapting Multi-Stage Distributed Real-Time Systems Design to Vehicular Edge Computing",
+        "url": "http://arxiv.org/abs/2611.12370v1",
+        "date": "2026-11-09",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-10",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Anant Gautam": {
+    "name": "Anant Gautam",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Adapting Multi-Stage Distributed Real-Time Systems Design to Vehicular Edge Computing",
+        "url": "http://arxiv.org/abs/2611.12370v1",
+        "date": "2026-11-09",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-10",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Panagiotis Savvidis": {
+    "name": "Panagiotis Savvidis",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.CV",
+      "cs.NI"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Edge Computing for Computer Vision in IoT: Feasibility and Directions",
+        "url": "http://arxiv.org/abs/2611.11218v1",
+        "date": "2026-11-08",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-10",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.2,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC",
+      "cs.CV",
+      "cs.NI"
+    ]
+  },
+  "George A. Papakostas": {
+    "name": "George A. Papakostas",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.CV",
+      "cs.NI"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Edge Computing for Computer Vision in IoT: Feasibility and Directions",
+        "url": "http://arxiv.org/abs/2611.11218v1",
+        "date": "2026-11-08",
+        "venue": "arXiv CS",
+        "score": 6.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-10",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.2,
+    "average_relevance": 6.8,
+    "topics": [
+      "cs.DC",
+      "cs.CV",
+      "cs.NI"
+    ]
   }
 }
