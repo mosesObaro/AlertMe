@@ -3,15 +3,8 @@
     "topic": "Edge AI",
     "direction": "↓",
     "status": "Declining",
-    "recent_count": 5,
-    "historical_count": 18
-  },
-  {
-    "topic": "Resource Allocation",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 3,
-    "historical_count": 6
+    "recent_count": 4,
+    "historical_count": 19
   },
   {
     "topic": "Federated Learning",
@@ -26,6 +19,13 @@
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 3
+  },
+  {
+    "topic": "Resource Allocation",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 1,
+    "historical_count": 8
   },
   {
     "topic": "TinyML",

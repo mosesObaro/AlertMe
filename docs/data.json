@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-11-10",
-    "total_items": 81,
+    "last_updated": "2026-11-11",
+    "total_items": 80,
     "high_relevance_count": 48,
     "papers_count": 35,
     "conferences_count": 9,
@@ -14,15 +14,8 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 5,
-      "historical_count": 18
-    },
-    {
-      "topic": "Resource Allocation",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 3,
-      "historical_count": 6
+      "recent_count": 4,
+      "historical_count": 19
     },
     {
       "topic": "Federated Learning",
@@ -37,6 +30,13 @@
       "status": "Declining",
       "recent_count": 1,
       "historical_count": 3
+    },
+    {
+      "topic": "Resource Allocation",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 1,
+      "historical_count": 8
     },
     {
       "topic": "TinyML",
@@ -7259,7 +7259,7 @@
       "doi": null,
       "arxiv_id": "2611.12370v1",
       "publication_date": "2026-11-09",
-      "discovery_date": "2026-11-10",
+      "discovery_date": "2026-11-11",
       "abstract": "Vehicular Edge Computing (VEC) aims to support computation-intensive applications in intelligent transportation systems while meeting stringent latency requirements. When processed remotely, applications require access to different resource types in a specific sequence, forming a multi-stage processing pipeline. This structure closely resembles multi-stage distributed applications executing across heterogeneous resources, making established multi-stage distributed real-time scheduling techniques well suited for modeling VEC systems. The resulting model accommodates diverse resource configurations and access patterns. Building on this model, we propose a joint mapping and scheduling approach that accounts for vehicle mobility and real-time constraints. The proposed heuristic extends optimal priority assignment for multi-stage systems to the VEC setting, to construct feasible schedules while minimizing local-device energy consumption and ensuring that offloaded jobs meet their deadlines. Extensive simulations show that the proposed approach consistently outperforms both a baseline based on the same delay-composition framework and a deadline decomposition-based approach.",
       "venue": "arXiv CS",
       "topics": [
@@ -7284,7 +7284,7 @@
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (1d ago) (+1.5)"
+          "✓ Freshly published (2d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -7304,7 +7304,7 @@
       "doi": "10.4108/eetiot.9404",
       "arxiv_id": "2611.11218v1",
       "publication_date": "2026-11-08",
-      "discovery_date": "2026-11-10",
+      "discovery_date": "2026-11-11",
       "abstract": "The convergence of decentralized architectures integrating Machine Learning, Computer Vision and Low Power Wide Area Networks is increasingly becoming an integral part of our daily existence. Internet of Things serves as a real-time data conduit enhancing decision making via embedded technology and continuous data exchange. This paper explores the feasibility of Edge Computing as a foundational pillar in this evolving landscape. We experiment under real world, dynamic conditions, evaluate the technological aspects, strategies, process flows and key observations under the broad Edge Computing domain. Research pathways include Multi-access Edge topologies in future 6G networks, model quantization, and satellite-enhanced communication platforms. Additionally, a discussion is added supporting the advanced AI functionalities, including zero-shot learning, multi modal perception, and decentralized generative AI, thereby broadening the scope of intelligent applications across various domains. The significance and research objective of this study are threefold: (1) evaluation of LoRaWAN and satellite IoT communication strategies, (2) analysis of CV workloads on edge hardware and (3) future research directions where Edge Computing can support low-latency, energy-efficient and socially impactful IoT applications. By explicitly addressing these aspects, we aim to establish a clear link between the technological feasibility, ultimately with a practical and socioeconomic relevance.",
       "venue": "arXiv CS",
       "topics": [
@@ -7326,15 +7326,15 @@
         "negative_penalty": 0.0,
         "final_score": 6.8,
         "matched_topics": [
-          "Internet of Things",
-          "IoT",
           "6G",
-          "Edge Computing"
+          "Internet of Things",
+          "Edge Computing",
+          "IoT"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)"
+          "✓ Freshly published (3d ago) (+1.5)"
         ]
       },
       "intelligence": null,
@@ -7549,18 +7549,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] Azzinoth/FocalEngineBenchmarkResults (★ 0)",
-      "url": "https://github.com/Azzinoth/FocalEngineBenchmarkResults",
+      "title": "[Code/Benchmark] SongX-1/TinyWOD-Benchmark (★ 0)",
+      "url": "https://github.com/SongX-1/TinyWOD-Benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "Azzinoth"
+        "SongX-1"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-10",
-      "discovery_date": "2026-11-10",
+      "publication_date": "2026-11-11",
+      "discovery_date": "2026-11-11",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7568,7 +7568,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_ef01f9bfe9e4327e",
+      "id": "item_2a27df3abd0aa8ad",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7595,26 +7595,26 @@
       }
     },
     {
-      "title": "[Code/Benchmark] conjure-cp/benchmarking (★ 0)",
-      "url": "https://github.com/conjure-cp/benchmarking",
+      "title": "[Code/Benchmark] futureaihub/agent-trust-benchmark (★ 0)",
+      "url": "https://github.com/futureaihub/agent-trust-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "conjure-cp"
+        "futureaihub"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-10",
-      "discovery_date": "2026-11-10",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 1)",
+      "publication_date": "2026-11-11",
+      "discovery_date": "2026-11-11",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
       "institution": "",
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_5b81892dddd3cf34",
+      "id": "item_7fb3af96f1c0ac3f",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7637,7 +7637,7 @@
       "opportunity_data": null,
       "raw_metadata": {
         "stars": 0,
-        "forks": 1
+        "forks": 0
       }
     },
     {
@@ -7651,8 +7651,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-10",
-      "discovery_date": "2026-11-10",
+      "publication_date": "2026-11-11",
+      "discovery_date": "2026-11-11",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7689,7 +7689,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 6 days (+0.3)",
+          "Event upcoming in 5 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7748,8 +7748,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-10",
-      "discovery_date": "2026-11-10",
+      "publication_date": "2026-11-11",
+      "discovery_date": "2026-11-11",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7843,14 +7843,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-10",
-      "discovery_date": "2026-11-10",
+      "publication_date": "2026-11-11",
+      "discovery_date": "2026-11-11",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
-        "IoT",
         "Distributed Systems",
-        "Edge Computing"
+        "Edge Computing",
+        "IoT"
       ],
       "institution": "",
       "location": "",
@@ -7873,48 +7873,6 @@
           "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
           "✓ Freshly published (0d ago) (+1.5)",
           "✓ Conference CFP / Submission Track (+0.8)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
-    },
-    {
-      "title": "The State of Tactical Edge Computing",
-      "url": "https://lfedge.org/the-state-of-tactical-edge-computing/",
-      "source": "Linux Foundation / LF Edge Blog",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "standards_update",
-      "authors": [
-        "LF Edge"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-03",
-      "discovery_date": "2026-11-10",
-      "abstract": "Summary of Chapter 7 of the State of the Edge Report 2026 by Joe Pearson, Technology Strategist at IBM. This blog is part of a series highlighting key insights from...",
-      "venue": "Linux Foundation / LF Edge Blog",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_97e003e7c383d311",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 2.5,
-        "recency_score": 1.2,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.5,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Title)",
-          "✓ Tier 1 Academic/Standards source: Linux Foundation / LF Edge Blog (+2.5)",
-          "✓ Published within last week (7d ago) (+1.2)"
         ]
       },
       "intelligence": null,
