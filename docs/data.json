@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-11",
+    "last_updated": "2026-11-12",
     "total_items": 80,
     "high_relevance_count": 48,
     "papers_count": 35,
@@ -7259,7 +7259,7 @@
       "doi": null,
       "arxiv_id": "2611.12370v1",
       "publication_date": "2026-11-09",
-      "discovery_date": "2026-11-11",
+      "discovery_date": "2026-11-12",
       "abstract": "Vehicular Edge Computing (VEC) aims to support computation-intensive applications in intelligent transportation systems while meeting stringent latency requirements. When processed remotely, applications require access to different resource types in a specific sequence, forming a multi-stage processing pipeline. This structure closely resembles multi-stage distributed applications executing across heterogeneous resources, making established multi-stage distributed real-time scheduling techniques well suited for modeling VEC systems. The resulting model accommodates diverse resource configurations and access patterns. Building on this model, we propose a joint mapping and scheduling approach that accounts for vehicle mobility and real-time constraints. The proposed heuristic extends optimal priority assignment for multi-stage systems to the VEC setting, to construct feasible schedules while minimizing local-device energy consumption and ensuring that offloaded jobs meet their deadlines. Extensive simulations show that the proposed approach consistently outperforms both a baseline based on the same delay-composition framework and a deadline decomposition-based approach.",
       "venue": "arXiv CS",
       "topics": [
@@ -7280,56 +7280,6 @@
         "final_score": 6.8,
         "matched_topics": [
           "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Title)",
-          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (2d ago) (+1.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
-    },
-    {
-      "title": "Edge Computing for Computer Vision in IoT: Feasibility and Directions",
-      "url": "http://arxiv.org/abs/2611.11218v1",
-      "source": "arXiv",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "preprint",
-      "authors": [
-        "Panagiotis Savvidis",
-        "George A. Papakostas"
-      ],
-      "doi": "10.4108/eetiot.9404",
-      "arxiv_id": "2611.11218v1",
-      "publication_date": "2026-11-08",
-      "discovery_date": "2026-11-11",
-      "abstract": "The convergence of decentralized architectures integrating Machine Learning, Computer Vision and Low Power Wide Area Networks is increasingly becoming an integral part of our daily existence. Internet of Things serves as a real-time data conduit enhancing decision making via embedded technology and continuous data exchange. This paper explores the feasibility of Edge Computing as a foundational pillar in this evolving landscape. We experiment under real world, dynamic conditions, evaluate the technological aspects, strategies, process flows and key observations under the broad Edge Computing domain. Research pathways include Multi-access Edge topologies in future 6G networks, model quantization, and satellite-enhanced communication platforms. Additionally, a discussion is added supporting the advanced AI functionalities, including zero-shot learning, multi modal perception, and decentralized generative AI, thereby broadening the scope of intelligent applications across various domains. The significance and research objective of this study are threefold: (1) evaluation of LoRaWAN and satellite IoT communication strategies, (2) analysis of CV workloads on edge hardware and (3) future research directions where Edge Computing can support low-latency, energy-efficient and socially impactful IoT applications. By explicitly addressing these aspects, we aim to establish a clear link between the technological feasibility, ultimately with a practical and socioeconomic relevance.",
-      "venue": "arXiv CS",
-      "topics": [
-        "cs.NI",
-        "cs.CV",
-        "cs.DC"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_62b9fd3dcc428650",
-      "score": {
-        "topic_score": 2.8,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.8,
-        "matched_topics": [
-          "6G",
-          "Internet of Things",
-          "Edge Computing",
-          "IoT"
         ],
         "reasons": [
           "✓ Primary topic match: Edge Computing (Title)",
@@ -7549,18 +7499,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] SongX-1/TinyWOD-Benchmark (★ 0)",
-      "url": "https://github.com/SongX-1/TinyWOD-Benchmark",
+      "title": "[Code/Benchmark] zitonghe191/gLMs_Benchmark (★ 0)",
+      "url": "https://github.com/zitonghe191/gLMs_Benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "SongX-1"
+        "zitonghe191"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-11",
-      "discovery_date": "2026-11-11",
+      "publication_date": "2026-11-12",
+      "discovery_date": "2026-11-12",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7568,53 +7518,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_2a27df3abd0aa8ad",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] futureaihub/agent-trust-benchmark (★ 0)",
-      "url": "https://github.com/futureaihub/agent-trust-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "futureaihub"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-11",
-      "discovery_date": "2026-11-11",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_7fb3af96f1c0ac3f",
+      "id": "item_fc5bc626f9756a31",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7651,8 +7555,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-11",
-      "discovery_date": "2026-11-11",
+      "publication_date": "2026-11-12",
+      "discovery_date": "2026-11-12",
       "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
       "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
       "topics": [
@@ -7689,7 +7593,7 @@
           "Free virtual track available (+0.8)",
           "Subsidized student rate available (+0.5)",
           "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 5 days (+0.3)",
+          "Event upcoming in 4 days (+0.3)",
           "Dedicated doctoral/researcher training program (+0.7)"
         ]
       },
@@ -7748,8 +7652,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-11",
-      "discovery_date": "2026-11-11",
+      "publication_date": "2026-11-12",
+      "discovery_date": "2026-11-12",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7833,6 +7737,52 @@
       "raw_metadata": {}
     },
     {
+      "title": "[Code/Benchmark] ElmerElla/simultaneous-translation-benchmark (★ 0)",
+      "url": "https://github.com/ElmerElla/simultaneous-translation-benchmark",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "ElmerElla"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-11",
+      "discovery_date": "2026-11-12",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_bf12faa064ff56fb",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
       "title": "doors 2027 : 7th Edge Computing Workshop",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203684&copyownerid=160746",
       "source": "Conference Feed",
@@ -7843,8 +7793,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-11",
-      "discovery_date": "2026-11-11",
+      "publication_date": "2026-11-12",
+      "discovery_date": "2026-11-12",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
@@ -7873,6 +7823,56 @@
           "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
           "✓ Freshly published (0d ago) (+1.5)",
           "✓ Conference CFP / Submission Track (+0.8)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
+      "title": "Edge Computing for Computer Vision in IoT: Feasibility and Directions",
+      "url": "http://arxiv.org/abs/2611.11218v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Panagiotis Savvidis",
+        "George A. Papakostas"
+      ],
+      "doi": "10.4108/eetiot.9404",
+      "arxiv_id": "2611.11218v1",
+      "publication_date": "2026-11-08",
+      "discovery_date": "2026-11-12",
+      "abstract": "The convergence of decentralized architectures integrating Machine Learning, Computer Vision and Low Power Wide Area Networks is increasingly becoming an integral part of our daily existence. Internet of Things serves as a real-time data conduit enhancing decision making via embedded technology and continuous data exchange. This paper explores the feasibility of Edge Computing as a foundational pillar in this evolving landscape. We experiment under real world, dynamic conditions, evaluate the technological aspects, strategies, process flows and key observations under the broad Edge Computing domain. Research pathways include Multi-access Edge topologies in future 6G networks, model quantization, and satellite-enhanced communication platforms. Additionally, a discussion is added supporting the advanced AI functionalities, including zero-shot learning, multi modal perception, and decentralized generative AI, thereby broadening the scope of intelligent applications across various domains. The significance and research objective of this study are threefold: (1) evaluation of LoRaWAN and satellite IoT communication strategies, (2) analysis of CV workloads on edge hardware and (3) future research directions where Edge Computing can support low-latency, energy-efficient and socially impactful IoT applications. By explicitly addressing these aspects, we aim to establish a clear link between the technological feasibility, ultimately with a practical and socioeconomic relevance.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.NI",
+        "cs.CV",
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "doi_62b9fd3dcc428650",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.2,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 6.5,
+        "matched_topics": [
+          "Internet of Things",
+          "6G",
+          "Edge Computing",
+          "IoT"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Published within last week (4d ago) (+1.2)"
         ]
       },
       "intelligence": null,
