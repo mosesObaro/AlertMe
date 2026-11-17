@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-11-16",
-    "total_items": 79,
+    "last_updated": "2026-11-17",
+    "total_items": 77,
     "high_relevance_count": 48,
     "papers_count": 34,
     "conferences_count": 9,
@@ -7454,18 +7454,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] ductdadamn/Document-Image-Forgery-Detection-and-Localization-Benchmarking-and-Adapting-SOTA-Methods (★ 0)",
-      "url": "https://github.com/ductdadamn/Document-Image-Forgery-Detection-and-Localization-Benchmarking-and-Adapting-SOTA-Methods",
+      "title": "[Code/Benchmark] KayalvizhiT513/portfolio-benchmark-hierarchy-builder (★ 0)",
+      "url": "https://github.com/KayalvizhiT513/portfolio-benchmark-hierarchy-builder",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "ductdadamn"
+        "KayalvizhiT513"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-16",
-      "discovery_date": "2026-11-16",
+      "publication_date": "2026-11-17",
+      "discovery_date": "2026-11-17",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7473,7 +7473,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_5e84f607b38f0e0b",
+      "id": "item_1122f5075c693748",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7498,149 +7498,6 @@
         "stars": 0,
         "forks": 0
       }
-    },
-    {
-      "title": "[Code/Benchmark] iyotee/ESP32xBenchmark (★ 0)",
-      "url": "https://github.com/iyotee/ESP32xBenchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "iyotee"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-16",
-      "discovery_date": "2026-11-16",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_c6468525fb31595a",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "LF Edge & Akraino Edge Developer Bootcamp 2026",
-      "url": "https://www.lfedge.org/education/bootcamps/",
-      "source": "The Linux Foundation (LF Edge) & CNCF (Linux Foundation Training Catalog)",
-      "source_tier": "tier4_industry",
-      "item_type": "event",
-      "authors": [
-        "The Linux Foundation (LF Edge) & CNCF"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-16",
-      "discovery_date": "2026-11-16",
-      "abstract": "[Bootcamp] Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices. Dates: 2026-11-16 to 2026-11-18. Location: Online / Virtual (online). Registration Fee: $50 (Student Certification Exam fee optional) / Free Attendance. Subsidies: Free Virtual Bootcamp Attendance: 100% Free access to all hands-on labs, live code walkthroughs, and Slack community; Subsidized LF Edge Certification Voucher: $50 (85% discount vs $350 standard exam fee).",
-      "venue": "LF Edge & Akraino Edge Developer Bootcamp 2026 — Online / Virtual",
-      "topics": [
-        "Edge Computing",
-        "KubeEdge",
-        "Microservices at the Edge",
-        "EdgeX Foundry",
-        "Edge Benchmarking"
-      ],
-      "institution": "The Linux Foundation (LF Edge) & CNCF",
-      "location": "Online / Virtual",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "evt_c1517f0c020979a9",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.0,
-        "recency_score": 1.5,
-        "stage_boost": 1.5,
-        "phd_boost": 0.7,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing",
-          "KubeEdge",
-          "Microservices at the Edge",
-          "EdgeX Foundry",
-          "Edge Benchmarking"
-        ],
-        "reasons": [
-          "Primary Edge topic match in description: Edge Computing (+1.8)",
-          "Adjacency systems topics matched: Microservices at the Edge (+0.4)",
-          "Tier 2 established foundation/university (The Linux Foundation (LF Edge) & CNCF) (+2.0)",
-          "Free virtual track available (+0.8)",
-          "Subsidized student rate available (+0.5)",
-          "Scholarship / attendance fee waiver supported (+0.5)",
-          "Event upcoming in 0 days (+0.3)",
-          "Dedicated doctoral/researcher training program (+0.7)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": {
-        "kind": "event",
-        "domain": "edge_computing",
-        "event_type": "bootcamp",
-        "event_name": "LF Edge & Akraino Edge Developer Bootcamp 2026",
-        "organizer": "The Linux Foundation (LF Edge) & CNCF",
-        "format": "online",
-        "location": "Online / Virtual",
-        "start_date": "2026-11-16",
-        "end_date": "2026-11-18",
-        "fee_status": "hybrid_free",
-        "registration_fee": "$50 (Student Certification Exam fee optional) / Free Attendance",
-        "has_student_discount": true,
-        "has_travel_grant": false,
-        "has_scholarship": false,
-        "has_early_bird": false,
-        "has_fee_waiver": true,
-        "discounts_count": 2,
-        "discounts_subsidies": [
-          {
-            "discount_type": "fee_waiver",
-            "name": "Free Virtual Bootcamp Attendance",
-            "amount_or_rate": "100% Free access to all hands-on labs, live code walkthroughs, and Slack community",
-            "eligibility": "Open to students, academic researchers, and open-source contributors.",
-            "deadline": null,
-            "application_url": null
-          },
-          {
-            "discount_type": "student_rate",
-            "name": "Subsidized LF Edge Certification Voucher",
-            "amount_or_rate": "$50 (85% discount vs $350 standard exam fee)",
-            "eligibility": "Students who complete all hands-on lab exercises during the bootcamp.",
-            "deadline": null,
-            "application_url": null
-          }
-        ],
-        "official_website": "https://www.lfedge.org/education/bootcamps/",
-        "cfp_deadline": null,
-        "description": "Hands-on virtual bootcamp providing step-by-step practical training on deploying distributed microservices, KubeEdge edge clusters, and EdgeX devices.",
-        "relevance_score": 6.7
-      },
-      "raw_metadata": {}
     },
     {
       "title": "IoT Solutions World Congress 2027 (IOTSWC 2027)",
@@ -7653,8 +7510,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-16",
-      "discovery_date": "2026-11-16",
+      "publication_date": "2026-11-17",
+      "discovery_date": "2026-11-17",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7748,14 +7605,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-16",
-      "discovery_date": "2026-11-16",
+      "publication_date": "2026-11-17",
+      "discovery_date": "2026-11-17",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
         "Edge Computing",
-        "IoT",
-        "Distributed Systems"
+        "Distributed Systems",
+        "IoT"
       ],
       "institution": "",
       "location": "",
@@ -7785,20 +7642,21 @@
       "raw_metadata": {}
     },
     {
-      "title": "Adapting Multi-Stage Distributed Real-Time Systems Design to Vehicular Edge Computing",
-      "url": "http://arxiv.org/abs/2611.12370v1",
+      "title": "IA-MoE: An Intensity-Aware Mixture of Experts for DNN Inference",
+      "url": "http://arxiv.org/abs/2611.19669v1",
       "source": "arXiv",
       "source_tier": "tier1_academic_standards",
       "item_type": "preprint",
       "authors": [
-        "Niraj Kumar",
-        "Anant Gautam"
+        "Meiyan Zeng",
+        "Sasu Tarkoma",
+        "Xiaoli Liu"
       ],
-      "doi": null,
-      "arxiv_id": "2611.12370v1",
-      "publication_date": "2026-11-09",
-      "discovery_date": "2026-11-16",
-      "abstract": "Vehicular Edge Computing (VEC) aims to support computation-intensive applications in intelligent transportation systems while meeting stringent latency requirements. When processed remotely, applications require access to different resource types in a specific sequence, forming a multi-stage processing pipeline. This structure closely resembles multi-stage distributed applications executing across heterogeneous resources, making established multi-stage distributed real-time scheduling techniques well suited for modeling VEC systems. The resulting model accommodates diverse resource configurations and access patterns. Building on this model, we propose a joint mapping and scheduling approach that accounts for vehicle mobility and real-time constraints. The proposed heuristic extends optimal priority assignment for multi-stage systems to the VEC setting, to construct feasible schedules while minimizing local-device energy consumption and ensuring that offloaded jobs meet their deadlines. Extensive simulations show that the proposed approach consistently outperforms both a baseline based on the same delay-composition framework and a deadline decomposition-based approach.",
+      "doi": "10.1109/ICNSC66229.2025.00081",
+      "arxiv_id": "2611.19669v1",
+      "publication_date": "2026-11-14",
+      "discovery_date": "2026-11-17",
+      "abstract": "With the ever-increasing parameter scale and structural complexity of deep neural network (DNN) models, traditional cloud-based inference encounters bottlenecks in performance, privacy protection, and energy efficiency. While edge computing and edge intelligence facilitate the migration of inference tasks to edge servers closer to the data source, existing end-edge-cloud collaborative inference still encounters critical challenges, such as sensitivity to heterogeneous resources, complexity in multi-objective optimization, and adaptability to dynamic workloads. To achieve the joint optimization of end-to-end latency and energy consumption under dynamic inference requests with multi-resource constraints, we propose IA-MoE, an intensity-aware Mixture of Experts (MoE) framework. By modeling the model partitioning problem as a bilateral matching problem between layer tasks and virtual machine resources for each inference request, IA-MoE dynamically partitions DNN models in an edge-cloud hybrid computing environment. We evaluate IA-MoE using three representative DNNs (i.e., AlexNet, VGG16, ResNet50) on two public inference datasets in an enhanced CloudSimSDN simulation environment. Experimental results demonstrate that IA-MoE outperforms baseline methods regarding weighted normalized metrics for end-to-end latency and energy consumption. To our knowledge, this is the first study to introduce the MoE paradigm for DNN partitioning and collaborative inference in hybrid computing environments, providing a practical solution for efficient inference in artificial intelligence applications.",
       "venue": "arXiv CS",
       "topics": [
         "cs.DC"
@@ -7807,22 +7665,25 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "arxiv_098e9212de8f35b7",
+      "id": "doi_c5b14732cb1e4c10",
       "score": {
-        "topic_score": 2.8,
+        "topic_score": 2.6,
         "credibility_score": 2.5,
-        "recency_score": 1.2,
+        "recency_score": 1.5,
         "stage_boost": 0.0,
         "phd_boost": 0.0,
         "negative_penalty": 0.0,
-        "final_score": 6.5,
+        "final_score": 6.6,
         "matched_topics": [
-          "Edge Computing"
+          "Edge Intelligence",
+          "Edge Computing",
+          "Energy Efficiency"
         ],
         "reasons": [
-          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Primary topic match: Edge Computing (Abstract), Edge Intelligence (Abstract)",
+          "✓ Key research area match: Energy Efficiency (+0.4)",
           "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Published within last week (7d ago) (+1.2)"
+          "✓ Freshly published (3d ago) (+1.5)"
         ]
       },
       "intelligence": null,
