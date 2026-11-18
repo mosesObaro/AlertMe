@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-11-17",
-    "total_items": 77,
+    "last_updated": "2026-11-18",
+    "total_items": 76,
     "high_relevance_count": 48,
-    "papers_count": 34,
+    "papers_count": 33,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -7454,18 +7454,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] KayalvizhiT513/portfolio-benchmark-hierarchy-builder (★ 0)",
-      "url": "https://github.com/KayalvizhiT513/portfolio-benchmark-hierarchy-builder",
+      "title": "[Code/Benchmark] shruti04112011/single-cell-cross-species-benchmarking (★ 0)",
+      "url": "https://github.com/shruti04112011/single-cell-cross-species-benchmarking",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "KayalvizhiT513"
+        "shruti04112011"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-17",
-      "discovery_date": "2026-11-17",
+      "publication_date": "2026-11-18",
+      "discovery_date": "2026-11-18",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7473,7 +7473,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_1122f5075c693748",
+      "id": "item_726b1451ad7329fd",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7510,8 +7510,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-17",
-      "discovery_date": "2026-11-17",
+      "publication_date": "2026-11-18",
+      "discovery_date": "2026-11-18",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7605,8 +7605,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-17",
-      "discovery_date": "2026-11-17",
+      "publication_date": "2026-11-18",
+      "discovery_date": "2026-11-18",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
@@ -7635,55 +7635,6 @@
           "✓ Tier 3 Conference CFP/Venue: Conference Feed (+1.5)",
           "✓ Freshly published (0d ago) (+1.5)",
           "✓ Conference CFP / Submission Track (+0.8)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {}
-    },
-    {
-      "title": "IA-MoE: An Intensity-Aware Mixture of Experts for DNN Inference",
-      "url": "http://arxiv.org/abs/2611.19669v1",
-      "source": "arXiv",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "preprint",
-      "authors": [
-        "Meiyan Zeng",
-        "Sasu Tarkoma",
-        "Xiaoli Liu"
-      ],
-      "doi": "10.1109/ICNSC66229.2025.00081",
-      "arxiv_id": "2611.19669v1",
-      "publication_date": "2026-11-14",
-      "discovery_date": "2026-11-17",
-      "abstract": "With the ever-increasing parameter scale and structural complexity of deep neural network (DNN) models, traditional cloud-based inference encounters bottlenecks in performance, privacy protection, and energy efficiency. While edge computing and edge intelligence facilitate the migration of inference tasks to edge servers closer to the data source, existing end-edge-cloud collaborative inference still encounters critical challenges, such as sensitivity to heterogeneous resources, complexity in multi-objective optimization, and adaptability to dynamic workloads. To achieve the joint optimization of end-to-end latency and energy consumption under dynamic inference requests with multi-resource constraints, we propose IA-MoE, an intensity-aware Mixture of Experts (MoE) framework. By modeling the model partitioning problem as a bilateral matching problem between layer tasks and virtual machine resources for each inference request, IA-MoE dynamically partitions DNN models in an edge-cloud hybrid computing environment. We evaluate IA-MoE using three representative DNNs (i.e., AlexNet, VGG16, ResNet50) on two public inference datasets in an enhanced CloudSimSDN simulation environment. Experimental results demonstrate that IA-MoE outperforms baseline methods regarding weighted normalized metrics for end-to-end latency and energy consumption. To our knowledge, this is the first study to introduce the MoE paradigm for DNN partitioning and collaborative inference in hybrid computing environments, providing a practical solution for efficient inference in artificial intelligence applications.",
-      "venue": "arXiv CS",
-      "topics": [
-        "cs.DC"
-      ],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "doi_c5b14732cb1e4c10",
-      "score": {
-        "topic_score": 2.6,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.0,
-        "negative_penalty": 0.0,
-        "final_score": 6.6,
-        "matched_topics": [
-          "Edge Intelligence",
-          "Edge Computing",
-          "Energy Efficiency"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract), Edge Intelligence (Abstract)",
-          "✓ Key research area match: Energy Efficiency (+0.4)",
-          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
-          "✓ Freshly published (3d ago) (+1.5)"
         ]
       },
       "intelligence": null,
