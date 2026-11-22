@@ -1,7 +1,7 @@
 {
   "meta": {
     "last_updated": "2026-11-22",
-    "total_items": 75,
+    "total_items": 77,
     "high_relevance_count": 48,
     "papers_count": 33,
     "conferences_count": 9,
@@ -7452,6 +7452,98 @@
       "opportunity_data": null,
       "raw_metadata": {},
       "alert_mode": "weekly"
+    },
+    {
+      "title": "[Code/Benchmark] VaishnavSreekumar/ai-review-benchmarks (★ 0)",
+      "url": "https://github.com/VaishnavSreekumar/ai-review-benchmarks",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "VaishnavSreekumar"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-22",
+      "discovery_date": "2026-11-22",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_09d247fcf9fb85f7",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
+      "title": "[Code/Benchmark] oscarab6/benchmark-php (★ 0)",
+      "url": "https://github.com/oscarab6/benchmark-php",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "oscarab6"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-22",
+      "discovery_date": "2026-11-22",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_fe55f4bd2ceb3b4a",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (0d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
     },
     {
       "title": "IoT Solutions World Congress 2027 (IOTSWC 2027)",
