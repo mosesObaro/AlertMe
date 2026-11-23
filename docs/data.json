@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-11-22",
+    "last_updated": "2026-11-23",
     "total_items": 77,
     "high_relevance_count": 48,
-    "papers_count": 33,
+    "papers_count": 34,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -14,14 +14,14 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 3,
+      "recent_count": 4,
       "historical_count": 20
     },
     {
       "topic": "Federated Learning",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 1,
+      "recent_count": 2,
       "historical_count": 3
     },
     {
@@ -6073,6 +6073,58 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Learning in Symbiosis: Heterogeneous Federated Learning with ANNs and SNNs",
+      "url": "http://arxiv.org/abs/2611.27686v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Manh V. Nguyen",
+        "Liang Zhao",
+        "Bobin Deng",
+        "Xinyue Zhang",
+        "Shaoen Wu"
+      ],
+      "doi": null,
+      "arxiv_id": "2611.27686v1",
+      "publication_date": "2026-11-20",
+      "discovery_date": "2026-11-23",
+      "abstract": "Spiking Neural Networks (SNNs), widely regarded as the third generation of neural networks, represent a promising neuromorphic computing paradigm with the potential to reduce the energy footprint of Artificial Intelligence (AI). Their en-ergy efficiency makes SNNs particularly attractive for resource-constrained Edge AI devices, motivating growing research interest in Federated Learning (FL) with SNNs. Despite these advantages, integrating SNNs into existing FL systems remains challenging, as replacing all conventional Artificial Neural Network (ANN) devices with SNN-based alternatives is impractical. Instead, we envision a gradual transition toward neuromorphic Edge AI, where ANN and SNN devices coexist and collaboratively participate in FL. To facilitate this transition, we propose Hybrid Neuromorphic Federated Learning (HNFL), a framework that enables joint training of heterogeneous ANN and SNN devices within an FL environment. Through experiments on CIFAR-10 using both VGG9 and ResNet architectures, we demonstrate the mutual benefits of collaborative ANN-SNN training. Specifically, HNFL achieves an average improvement of 16.85% when incorporating SNN devices into ANN-based FL and 8.02% when incorporating ANN devices into SNN-based FL. Furthermore, HNFL produces sparser spiking activity in the trained SNN models, with reductions of 12.4% for SResNet and 22.4% for SVGG9. To the best of our knowledge, this is the first work to demonstrate that ANNs and SNNs can coexist and mutually benefit from collaborative training in FL, providing a practical path toward the gradual integration of neuromorphic computing into existing Edge AI systems.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.AI",
+        "cs.DC",
+        "cs.LG"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_bfa7bc5f02977688",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "Federated Learning",
+          "Edge AI"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (3d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Distributed Linear Bandits for Freshness-Aware Preprocessing in MEC-Enabled Digital Twin Networks",
       "url": "http://arxiv.org/abs/2611.05115v1",
       "source": "arXiv",
@@ -7454,18 +7506,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] VaishnavSreekumar/ai-review-benchmarks (★ 0)",
-      "url": "https://github.com/VaishnavSreekumar/ai-review-benchmarks",
+      "title": "[Code/Benchmark] abdallaox/camels-gb-benchmark (★ 0)",
+      "url": "https://github.com/abdallaox/camels-gb-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "VaishnavSreekumar"
+        "abdallaox"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-22",
-      "discovery_date": "2026-11-22",
+      "publication_date": "2026-11-23",
+      "discovery_date": "2026-11-23",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7473,53 +7525,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_09d247fcf9fb85f7",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
-      "title": "[Code/Benchmark] oscarab6/benchmark-php (★ 0)",
-      "url": "https://github.com/oscarab6/benchmark-php",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "oscarab6"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-22",
-      "discovery_date": "2026-11-22",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_fe55f4bd2ceb3b4a",
+      "id": "item_4e967cd3fd49e6cc",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7556,8 +7562,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-22",
-      "discovery_date": "2026-11-22",
+      "publication_date": "2026-11-23",
+      "discovery_date": "2026-11-23",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7651,14 +7657,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-22",
-      "discovery_date": "2026-11-22",
+      "publication_date": "2026-11-23",
+      "discovery_date": "2026-11-23",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
+        "Distributed Systems",
         "Edge Computing",
-        "IoT",
-        "Distributed Systems"
+        "IoT"
       ],
       "institution": "",
       "location": "",

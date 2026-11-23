@@ -6058,5 +6058,58 @@
     "opportunity_data": null,
     "raw_metadata": {},
     "alert_mode": "daily"
+  },
+  {
+    "title": "Learning in Symbiosis: Heterogeneous Federated Learning with ANNs and SNNs",
+    "url": "http://arxiv.org/abs/2611.27686v1",
+    "source": "arXiv",
+    "source_tier": "tier1_academic_standards",
+    "item_type": "preprint",
+    "authors": [
+      "Manh V. Nguyen",
+      "Liang Zhao",
+      "Bobin Deng",
+      "Xinyue Zhang",
+      "Shaoen Wu"
+    ],
+    "doi": null,
+    "arxiv_id": "2611.27686v1",
+    "publication_date": "2026-11-20",
+    "discovery_date": "2026-11-23",
+    "abstract": "Spiking Neural Networks (SNNs), widely regarded as the third generation of neural networks, represent a promising neuromorphic computing paradigm with the potential to reduce the energy footprint of Artificial Intelligence (AI). Their en-ergy efficiency makes SNNs particularly attractive for resource-constrained Edge AI devices, motivating growing research interest in Federated Learning (FL) with SNNs. Despite these advantages, integrating SNNs into existing FL systems remains challenging, as replacing all conventional Artificial Neural Network (ANN) devices with SNN-based alternatives is impractical. Instead, we envision a gradual transition toward neuromorphic Edge AI, where ANN and SNN devices coexist and collaboratively participate in FL. To facilitate this transition, we propose Hybrid Neuromorphic Federated Learning (HNFL), a framework that enables joint training of heterogeneous ANN and SNN devices within an FL environment. Through experiments on CIFAR-10 using both VGG9 and ResNet architectures, we demonstrate the mutual benefits of collaborative ANN-SNN training. Specifically, HNFL achieves an average improvement of 16.85% when incorporating SNN devices into ANN-based FL and 8.02% when incorporating ANN devices into SNN-based FL. Furthermore, HNFL produces sparser spiking activity in the trained SNN models, with reductions of 12.4% for SResNet and 22.4% for SVGG9. To the best of our knowledge, this is the first work to demonstrate that ANNs and SNNs can coexist and mutually benefit from collaborative training in FL, providing a practical path toward the gradual integration of neuromorphic computing into existing Edge AI systems.",
+    "venue": "arXiv CS",
+    "topics": [
+      "cs.AI",
+      "cs.DC",
+      "cs.LG"
+    ],
+    "institution": "",
+    "location": "",
+    "deadline": null,
+    "is_urgent": false,
+    "id": "arxiv_bfa7bc5f02977688",
+    "score": {
+      "topic_score": 2.2,
+      "credibility_score": 2.5,
+      "recency_score": 1.5,
+      "stage_boost": 1.0,
+      "phd_boost": 0.0,
+      "negative_penalty": 0.0,
+      "final_score": 7.2,
+      "matched_topics": [
+        "Federated Learning",
+        "Edge AI"
+      ],
+      "reasons": [
+        "✓ Primary topic match: Edge AI (Abstract)",
+        "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+        "✓ Freshly published (3d ago) (+1.5)",
+        "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+      ]
+    },
+    "intelligence": null,
+    "opportunity_data": null,
+    "raw_metadata": {},
+    "alert_mode": "daily"
   }
 ]
