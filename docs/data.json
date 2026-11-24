@@ -1,6 +1,6 @@
 {
   "meta": {
-    "last_updated": "2026-11-23",
+    "last_updated": "2026-11-24",
     "total_items": 77,
     "high_relevance_count": 48,
     "papers_count": 34,
@@ -6122,7 +6122,8 @@
       },
       "intelligence": null,
       "opportunity_data": null,
-      "raw_metadata": {}
+      "raw_metadata": {},
+      "alert_mode": "daily"
     },
     {
       "title": "Distributed Linear Bandits for Freshness-Aware Preprocessing in MEC-Enabled Digital Twin Networks",
@@ -7506,18 +7507,18 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] abdallaox/camels-gb-benchmark (★ 0)",
-      "url": "https://github.com/abdallaox/camels-gb-benchmark",
+      "title": "[Code/Benchmark] nazndev/long-context-attention-benchmark (★ 0)",
+      "url": "https://github.com/nazndev/long-context-attention-benchmark",
       "source": "GitHub Open Source",
       "source_tier": "tier1_academic_standards",
       "item_type": "benchmark_code",
       "authors": [
-        "abdallaox"
+        "nazndev"
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-23",
-      "discovery_date": "2026-11-23",
+      "publication_date": "2026-11-24",
+      "discovery_date": "2026-11-24",
       "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
       "venue": "GitHub",
       "topics": [],
@@ -7525,7 +7526,7 @@
       "location": "",
       "deadline": null,
       "is_urgent": false,
-      "id": "item_4e967cd3fd49e6cc",
+      "id": "item_2d27cf200ecd49b8",
       "score": {
         "topic_score": 2.2,
         "credibility_score": 2.5,
@@ -7562,8 +7563,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-23",
-      "discovery_date": "2026-11-23",
+      "publication_date": "2026-11-24",
+      "discovery_date": "2026-11-24",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7657,13 +7658,13 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-23",
-      "discovery_date": "2026-11-23",
+      "publication_date": "2026-11-24",
+      "discovery_date": "2026-11-24",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
-        "Distributed Systems",
         "Edge Computing",
+        "Distributed Systems",
         "IoT"
       ],
       "institution": "",
