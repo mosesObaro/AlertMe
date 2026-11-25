@@ -1,9 +1,9 @@
 {
   "meta": {
-    "last_updated": "2026-11-24",
-    "total_items": 77,
-    "high_relevance_count": 48,
-    "papers_count": 34,
+    "last_updated": "2026-11-25",
+    "total_items": 78,
+    "high_relevance_count": 49,
+    "papers_count": 36,
     "conferences_count": 9,
     "opportunities_count": 4,
     "scholarships_count": 1,
@@ -14,7 +14,7 @@
       "topic": "Edge AI",
       "direction": "↓",
       "status": "Declining",
-      "recent_count": 4,
+      "recent_count": 5,
       "historical_count": 20
     },
     {
@@ -25,18 +25,18 @@
       "historical_count": 3
     },
     {
+      "topic": "Resource Allocation",
+      "direction": "↓",
+      "status": "Declining",
+      "recent_count": 2,
+      "historical_count": 8
+    },
+    {
       "topic": "Computation Offloading",
       "direction": "↓",
       "status": "Declining",
       "recent_count": 1,
       "historical_count": 3
-    },
-    {
-      "topic": "Resource Allocation",
-      "direction": "↓",
-      "status": "Declining",
-      "recent_count": 1,
-      "historical_count": 8
     },
     {
       "topic": "TinyML",
@@ -4345,6 +4345,67 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Wi-Fi Enabled Edge Intelligence Framework for Smart City Traffic Monitoring using Low-Power IoT Cameras",
+      "url": "http://arxiv.org/abs/2611.32517v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Raphael Walcher",
+        "Kurt Horvath",
+        "Dragi Kimovski",
+        "Stojan Kitanov"
+      ],
+      "doi": null,
+      "arxiv_id": "2611.32517v1",
+      "publication_date": "2026-11-24",
+      "discovery_date": "2026-11-25",
+      "abstract": "Real-time traffic monitoring in smart cities demands ultra-low latency processing to support time-critical decisions such as incident detection and congestion management. While cloud-based solutions offer robust computation, their inherent latency limits their applicability for such tasks. This work proposes a localized edge AI framework that connects low-power IoT camera sensors to a client, or applies offloading of inference to an NVIDIA Jetson Nano (GPU). Networking is achieved via Wi-Fi, enabling image classification without relying on wide-area infrastructure such as 5G, or wired networks. We evaluate two processing strategies: local inference on camera nodes and GPU-accelerated offloading to the Jetson Nano.We show that local processing is only feasible for lightweight models and low frame rates, whereas offloading enables near-realtime performance even for more complex models. These results demonstrate the viability of cost-effective, Wi-Fi-based edge AI deployments for latency-critical urban monitoring.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC",
+        "cs.AI",
+        "cs.NI"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_669a6dfbcc14df28",
+      "score": {
+        "topic_score": 2.8,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 1.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.8,
+        "matched_topics": [
+          "IoT",
+          "5G",
+          "Edge AI",
+          "Edge Intelligence"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Intelligence (Title), Edge AI (Abstract)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Matches your current learning stage topic: Edge AI (+1.0)"
+        ]
+      },
+      "intelligence": {
+        "why_it_matters": "This work investigates cs.DC and cs.AI. It targets key performance dimensions relevant to Edge Computing PhD preparation.",
+        "research_problem": "Not determinable from available metadata.",
+        "methodology": "This work proposes a localized edge AI framework that connects low-power IoT camera sensors to a client, or applies offloading of inference to an NVIDIA Jetson Nano (GPU)",
+        "key_contribution": "We evaluate two processing strategies: local inference on camera nodes and GPU-accelerated offloading to the Jetson Nano.We show that local processing is only feasible for lightweight models and low frame rates, whereas offloading enables near-realtime performance even for more complex models",
+        "potential_gap": "Potential research direction — requires validation through deeper literature review: Examine whether the proposed methodology scales under heterogeneous, resource-constrained edge devices and dynamic wireless channel conditions.",
+        "relevance_to_phd": "7.8/10",
+        "is_ai_generated": false
+      },
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "UniExit: A Unified Latency-Aware Early-Exit Runtime for Heterogeneous Edge AI",
       "url": "http://arxiv.org/abs/2611.09159v1",
       "source": "arXiv",
@@ -6073,6 +6134,56 @@
       "alert_mode": "daily"
     },
     {
+      "title": "Reliability-aware AI Agent Execution in Collaborative Edge Computing: A World Model Approach",
+      "url": "http://arxiv.org/abs/2611.32520v1",
+      "source": "arXiv",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "preprint",
+      "authors": [
+        "Xiangchun Chen",
+        "Jiannong Cao",
+        "Longxiang Gao",
+        "Xiaoming Wu",
+        "Yusheng Ji"
+      ],
+      "doi": null,
+      "arxiv_id": "2611.32520v1",
+      "publication_date": "2026-11-24",
+      "discovery_date": "2026-11-25",
+      "abstract": "Collaborative edge computing supports AI agent applications by distributing execution across heterogeneous user-controlled devices with limited resources. This paper studies reliability-aware AI agent execution under node failures and wireless disruptions. These disruptions can make agent execution state unavailable or inconsistent, forcing recovery or recomputation that consumes the remaining deadline budget. Maintaining recoverable execution states can therefore improve request completion before deadlines. We formulate an online AI agent execution management problem that jointly selects resource allocations, state protection actions, and recovery targets to maximize the expected task success rate subject to resource, compatibility, and deadline constraints. We develop a world model that jointly captures evolving agent workflows and recoverable execution state under candidate management actions, accounting for node reliability, network conditions, and resource availability. The model enables the controller to simulate future execution and recovery trajectories under candidate actions and estimate their effects on execution progress and task completion before deadlines. We then employ world model-based model predictive control (WorldMPC) with Monte Carlo rollouts to jointly optimize resource allocation, state protection, and recovery decisions for long-term reliable agent execution under the dynamic environment. We evaluate the proposed approach on the simulation and real-world testbed using real-world and synthetic datasets. Experimental results show that WorldMPC improves task success rate over baselines in both simulation and real-world testbed.",
+      "venue": "arXiv CS",
+      "topics": [
+        "cs.DC"
+      ],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "arxiv_44b67cd9b9ac5a5a",
+      "score": {
+        "topic_score": 3.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.0,
+        "negative_penalty": 0.0,
+        "final_score": 7.2,
+        "matched_topics": [
+          "Resource Allocation",
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Title)",
+          "✓ Key research area match: Resource Allocation (+0.4)",
+          "✓ Tier 1 Academic/Standards source: arXiv (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {}
+    },
+    {
       "title": "Learning in Symbiosis: Heterogeneous Federated Learning with ANNs and SNNs",
       "url": "http://arxiv.org/abs/2611.27686v1",
       "source": "arXiv",
@@ -7507,52 +7618,6 @@
       "alert_mode": "weekly"
     },
     {
-      "title": "[Code/Benchmark] nazndev/long-context-attention-benchmark (★ 0)",
-      "url": "https://github.com/nazndev/long-context-attention-benchmark",
-      "source": "GitHub Open Source",
-      "source_tier": "tier1_academic_standards",
-      "item_type": "benchmark_code",
-      "authors": [
-        "nazndev"
-      ],
-      "doi": null,
-      "arxiv_id": null,
-      "publication_date": "2026-11-24",
-      "discovery_date": "2026-11-24",
-      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
-      "venue": "GitHub",
-      "topics": [],
-      "institution": "",
-      "location": "",
-      "deadline": null,
-      "is_urgent": false,
-      "id": "item_2d27cf200ecd49b8",
-      "score": {
-        "topic_score": 2.2,
-        "credibility_score": 2.5,
-        "recency_score": 1.5,
-        "stage_boost": 0.0,
-        "phd_boost": 0.5,
-        "negative_penalty": 0.0,
-        "final_score": 6.7,
-        "matched_topics": [
-          "Edge Computing"
-        ],
-        "reasons": [
-          "✓ Primary topic match: Edge Computing (Abstract)",
-          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
-          "✓ Freshly published (0d ago) (+1.5)",
-          "✓ Open Benchmark / Research Artifact (+0.5)"
-        ]
-      },
-      "intelligence": null,
-      "opportunity_data": null,
-      "raw_metadata": {
-        "stars": 0,
-        "forks": 0
-      }
-    },
-    {
       "title": "IoT Solutions World Congress 2027 (IOTSWC 2027)",
       "url": "https://www.iotsworldcongress.com/",
       "source": "Fira de Barcelona / Industrial IoT Consortium (Industry Event Announcements)",
@@ -7563,8 +7628,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-24",
-      "discovery_date": "2026-11-24",
+      "publication_date": "2026-11-25",
+      "discovery_date": "2026-11-25",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7658,14 +7723,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-24",
-      "discovery_date": "2026-11-24",
+      "publication_date": "2026-11-25",
+      "discovery_date": "2026-11-25",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
-        "Edge Computing",
         "Distributed Systems",
-        "IoT"
+        "IoT",
+        "Edge Computing"
       ],
       "institution": "",
       "location": "",

@@ -6173,9 +6173,16 @@
         "date": "2026-10-15",
         "venue": "arXiv CS",
         "score": 7.8
+      },
+      {
+        "title": "Reliability-aware AI Agent Execution in Collaborative Edge Computing: A World Model Approach",
+        "url": "http://arxiv.org/abs/2611.32520v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.2
       }
     ],
-    "publication_count": 1,
+    "publication_count": 2,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -6186,11 +6193,12 @@
     "current_opportunities": [],
     "reasons": [
       "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "✓ Active recent publication record (2 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
-    "composite_score": 6.0,
-    "average_relevance": 7.8,
+    "composite_score": 6.6,
+    "average_relevance": 7.5,
     "topics": [
       "cs.DC"
     ]
@@ -6259,9 +6267,16 @@
         "date": "2026-10-15",
         "venue": "arXiv CS",
         "score": 7.8
+      },
+      {
+        "title": "Reliability-aware AI Agent Execution in Collaborative Edge Computing: A World Model Approach",
+        "url": "http://arxiv.org/abs/2611.32520v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.2
       }
     ],
-    "publication_count": 1,
+    "publication_count": 2,
     "citations_indicator": "",
     "h_index": null,
     "orcid": null,
@@ -6272,11 +6287,12 @@
     "current_opportunities": [],
     "reasons": [
       "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "✓ Active recent publication record (2 papers)",
       "• Active researcher in target field; current recruitment status pending lab confirmation",
       "• Location: International (Outside primary 6 target countries)"
     ],
-    "composite_score": 6.0,
-    "average_relevance": 7.8,
+    "composite_score": 6.6,
+    "average_relevance": 7.5,
     "topics": [
       "cs.DC"
     ]
@@ -7917,6 +7933,323 @@
       "cs.AI",
       "cs.DC",
       "cs.LG"
+    ]
+  },
+  "Raphael Walcher": {
+    "name": "Raphael Walcher",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Wi-Fi Enabled Edge Intelligence Framework for Smart City Traffic Monitoring using Low-Power IoT Cameras",
+        "url": "http://arxiv.org/abs/2611.32517v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-25",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ]
+  },
+  "Kurt Horvath": {
+    "name": "Kurt Horvath",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Wi-Fi Enabled Edge Intelligence Framework for Smart City Traffic Monitoring using Low-Power IoT Cameras",
+        "url": "http://arxiv.org/abs/2611.32517v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-25",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ]
+  },
+  "Dragi Kimovski": {
+    "name": "Dragi Kimovski",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Wi-Fi Enabled Edge Intelligence Framework for Smart City Traffic Monitoring using Low-Power IoT Cameras",
+        "url": "http://arxiv.org/abs/2611.32517v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-25",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ]
+  },
+  "Stojan Kitanov": {
+    "name": "Stojan Kitanov",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ],
+    "academic_fit_score": 9.0,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Wi-Fi Enabled Edge Intelligence Framework for Smart City Traffic Monitoring using Low-Power IoT Cameras",
+        "url": "http://arxiv.org/abs/2611.32517v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.8
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-25",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge intelligence, iot",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.2,
+    "average_relevance": 7.8,
+    "topics": [
+      "cs.DC",
+      "cs.AI",
+      "cs.NI"
+    ]
+  },
+  "Longxiang Gao": {
+    "name": "Longxiang Gao",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Reliability-aware AI Agent Execution in Collaborative Edge Computing: A World Model Approach",
+        "url": "http://arxiv.org/abs/2611.32520v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-25",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.2,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Xiaoming Wu": {
+    "name": "Xiaoming Wu",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Reliability-aware AI Agent Execution in Collaborative Edge Computing: A World Model Approach",
+        "url": "http://arxiv.org/abs/2611.32520v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-25",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.2,
+    "topics": [
+      "cs.DC"
+    ]
+  },
+  "Yusheng Ji": {
+    "name": "Yusheng Ji",
+    "institution": "Academic Institution",
+    "country": "International",
+    "department": "",
+    "profile_url": "",
+    "lab_website": "",
+    "research_areas": [
+      "cs.DC"
+    ],
+    "academic_fit_score": 8.5,
+    "recruitment_status": "not_verified",
+    "recruitment_evidence": "",
+    "recruitment_quote": "",
+    "recent_papers": [
+      {
+        "title": "Reliability-aware AI Agent Execution in Collaborative Edge Computing: A World Model Approach",
+        "url": "http://arxiv.org/abs/2611.32520v1",
+        "date": "2026-11-24",
+        "venue": "arXiv CS",
+        "score": 7.2
+      }
+    ],
+    "publication_count": 1,
+    "citations_indicator": "",
+    "h_index": null,
+    "orcid": null,
+    "openalex_id": null,
+    "semantic_scholar_url": null,
+    "google_scholar_url": null,
+    "last_checked": "2026-11-25",
+    "current_opportunities": [],
+    "reasons": [
+      "Academic Fit: ✓ Strong Edge Computing research fit: edge computing",
+      "• Active researcher in target field; current recruitment status pending lab confirmation",
+      "• Location: International (Outside primary 6 target countries)"
+    ],
+    "composite_score": 6.0,
+    "average_relevance": 7.2,
+    "topics": [
+      "cs.DC"
     ]
   }
 }

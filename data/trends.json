@@ -3,7 +3,7 @@
     "topic": "Edge AI",
     "direction": "↓",
     "status": "Declining",
-    "recent_count": 4,
+    "recent_count": 5,
     "historical_count": 20
   },
   {
@@ -14,18 +14,18 @@
     "historical_count": 3
   },
   {
+    "topic": "Resource Allocation",
+    "direction": "↓",
+    "status": "Declining",
+    "recent_count": 2,
+    "historical_count": 8
+  },
+  {
     "topic": "Computation Offloading",
     "direction": "↓",
     "status": "Declining",
     "recent_count": 1,
     "historical_count": 3
-  },
-  {
-    "topic": "Resource Allocation",
-    "direction": "↓",
-    "status": "Declining",
-    "recent_count": 1,
-    "historical_count": 8
   },
   {
     "topic": "TinyML",
