@@ -1,7 +1,7 @@
 {
   "meta": {
-    "last_updated": "2026-11-26",
-    "total_items": 78,
+    "last_updated": "2026-11-27",
+    "total_items": 79,
     "high_relevance_count": 49,
     "papers_count": 36,
     "conferences_count": 9,
@@ -7630,8 +7630,8 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-26",
-      "discovery_date": "2026-11-26",
+      "publication_date": "2026-11-27",
+      "discovery_date": "2026-11-27",
       "abstract": "[Industry Conference] International executive and technical event dedicated to industrial IoT platforms, cyber-physical automation, connected sensors, and intelligent edge AI. Dates: 2027-05-18 to 2027-05-20. Location: Barcelona, Spain (hybrid). Registration Fee: Free (Digital Expo Pass) / €750 (Full Congress). Subsidies: Free Digital Visitor Pass: 100% Free online access to keynote livestreams and exhibition showcases; Academic Full Congress Pass: €150 (80% discount vs regular €750).",
       "venue": "IoT Solutions World Congress 2027 (IOTSWC 2027) — Barcelona, Spain",
       "topics": [
@@ -7715,6 +7715,52 @@
       "raw_metadata": {}
     },
     {
+      "title": "[Code/Benchmark] itsPronay/Benchmark-QuantizedHSIC (★ 0)",
+      "url": "https://github.com/itsPronay/Benchmark-QuantizedHSIC",
+      "source": "GitHub Open Source",
+      "source_tier": "tier1_academic_standards",
+      "item_type": "benchmark_code",
+      "authors": [
+        "itsPronay"
+      ],
+      "doi": null,
+      "arxiv_id": null,
+      "publication_date": "2026-11-26",
+      "discovery_date": "2026-11-27",
+      "abstract": "Open source edge computing repository. (Stars: 0, Forks: 0)",
+      "venue": "GitHub",
+      "topics": [],
+      "institution": "",
+      "location": "",
+      "deadline": null,
+      "is_urgent": false,
+      "id": "item_db2b442bae969faf",
+      "score": {
+        "topic_score": 2.2,
+        "credibility_score": 2.5,
+        "recency_score": 1.5,
+        "stage_boost": 0.0,
+        "phd_boost": 0.5,
+        "negative_penalty": 0.0,
+        "final_score": 6.7,
+        "matched_topics": [
+          "Edge Computing"
+        ],
+        "reasons": [
+          "✓ Primary topic match: Edge Computing (Abstract)",
+          "✓ Tier 1 Academic/Standards source: GitHub Open Source (+2.5)",
+          "✓ Freshly published (1d ago) (+1.5)",
+          "✓ Open Benchmark / Research Artifact (+0.5)"
+        ]
+      },
+      "intelligence": null,
+      "opportunity_data": null,
+      "raw_metadata": {
+        "stars": 0,
+        "forks": 0
+      }
+    },
+    {
       "title": "doors 2027 : 7th Edge Computing Workshop",
       "url": "http://www.wikicfp.com/cfp/servlet/event.showcfp?eventid=203684&copyownerid=160746",
       "source": "Conference Feed",
@@ -7725,14 +7771,14 @@
       ],
       "doi": null,
       "arxiv_id": null,
-      "publication_date": "2026-11-26",
-      "discovery_date": "2026-11-26",
+      "publication_date": "2026-11-27",
+      "discovery_date": "2026-11-27",
       "abstract": "7th Edge Computing Workshop [Zhytomyr, Ukraine] [Apr 2, 2027 - Apr 2, 2027]",
       "venue": "Conference CFP",
       "topics": [
-        "Edge Computing",
+        "Distributed Systems",
         "IoT",
-        "Distributed Systems"
+        "Edge Computing"
       ],
       "institution": "",
       "location": "",
